@@ -1,5 +1,9 @@
+const THEME_STORAGE_KEY = "paper-daily-theme";
+const THEMES = new Set(["dark", "light", "eye"]);
+
 const state = {
   data: null,
+  theme: "dark",
   filters: {
     query: "",
     topic: "all",
@@ -24,9 +28,30 @@ const nodes = {
   levelFilter: document.querySelector("#levelFilter"),
   dateFilter: document.querySelector("#dateFilter"),
   searchInput: document.querySelector("#searchInput"),
+  themeSelect: document.querySelector("#themeSelect"),
   tabs: document.querySelectorAll(".tab"),
   template: document.querySelector("#paperTemplate"),
 };
+
+function storedTheme() {
+  try {
+    const theme = localStorage.getItem(THEME_STORAGE_KEY);
+    return THEMES.has(theme) ? theme : "dark";
+  } catch {
+    return "dark";
+  }
+}
+
+function applyTheme(theme) {
+  state.theme = THEMES.has(theme) ? theme : "dark";
+  document.body.dataset.theme = state.theme;
+  if (nodes.themeSelect) nodes.themeSelect.value = state.theme;
+  try {
+    localStorage.setItem(THEME_STORAGE_KEY, state.theme);
+  } catch {
+    // localStorage may be blocked in privacy-focused browser modes.
+  }
+}
 
 function parseDate(value) {
   if (!value) return null;
@@ -269,6 +294,9 @@ function updateStats() {
 }
 
 function bindEvents() {
+  nodes.themeSelect.addEventListener("change", (event) => {
+    applyTheme(event.target.value);
+  });
   nodes.searchInput.addEventListener("input", (event) => {
     state.filters.query = event.target.value.trim();
     render();
@@ -302,6 +330,7 @@ async function loadData() {
 }
 
 async function main() {
+  applyTheme(storedTheme());
   bindEvents();
   try {
     state.data = await loadData();

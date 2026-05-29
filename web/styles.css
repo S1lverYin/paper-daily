@@ -1,12 +1,31 @@
 :root {
   color-scheme: dark;
   --bg: #11100e;
+  --bg-glow-primary: rgba(45, 212, 191, 0.12);
+  --bg-glow-secondary: rgba(251, 113, 133, 0.12);
   --surface: #1b1a17;
   --surface-2: #24221e;
   --surface-3: #2f2a24;
   --text: #f4efe6;
   --muted: #b7afa4;
   --line: rgba(244, 239, 230, 0.13);
+  --topbar-bg: rgba(17, 16, 14, 0.82);
+  --button-bg: rgba(255, 255, 255, 0.05);
+  --control-bg: #141310;
+  --overview-bg:
+    linear-gradient(135deg, rgba(251, 191, 36, 0.14), transparent 42%),
+    linear-gradient(315deg, rgba(45, 212, 191, 0.18), rgba(36, 34, 30, 0.8));
+  --metric-bg: rgba(27, 26, 23, 0.82);
+  --metric-accent-bg: linear-gradient(145deg, rgba(251, 113, 133, 0.18), rgba(27, 26, 23, 0.9));
+  --panel-bg: rgba(27, 26, 23, 0.86);
+  --card-bg: rgba(27, 26, 23, 0.9);
+  --card-footer-bg: rgba(255, 255, 255, 0.035);
+  --empty-bg: rgba(27, 26, 23, 0.7);
+  --summary-text: #e8e0d7;
+  --tag-bg: rgba(251, 191, 36, 0.1);
+  --tag-line: rgba(251, 191, 36, 0.28);
+  --tag-text: #f8d98a;
+  --download-text: #fecdd3;
   --teal: #2dd4bf;
   --coral: #fb7185;
   --gold: #fbbf24;
@@ -14,6 +33,78 @@
   --low: #8b8b84;
   --shadow: 0 20px 55px rgba(0, 0, 0, 0.34);
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f7f3eb;
+  --bg-glow-primary: rgba(20, 184, 166, 0.12);
+  --bg-glow-secondary: rgba(245, 158, 11, 0.1);
+  --surface: #fffaf1;
+  --surface-2: #f0e8dc;
+  --surface-3: #e5dccf;
+  --text: #24211d;
+  --muted: #6f665a;
+  --line: rgba(66, 55, 43, 0.15);
+  --topbar-bg: rgba(255, 250, 241, 0.88);
+  --button-bg: rgba(94, 72, 44, 0.06);
+  --control-bg: #fffdf8;
+  --overview-bg:
+    linear-gradient(135deg, rgba(245, 158, 11, 0.17), transparent 42%),
+    linear-gradient(315deg, rgba(20, 184, 166, 0.16), rgba(255, 250, 241, 0.96));
+  --metric-bg: rgba(255, 250, 241, 0.92);
+  --metric-accent-bg: linear-gradient(145deg, rgba(251, 113, 133, 0.13), rgba(255, 250, 241, 0.96));
+  --panel-bg: rgba(255, 250, 241, 0.92);
+  --card-bg: rgba(255, 253, 248, 0.96);
+  --card-footer-bg: rgba(94, 72, 44, 0.04);
+  --empty-bg: rgba(255, 253, 248, 0.72);
+  --summary-text: #3c362f;
+  --tag-bg: rgba(180, 83, 9, 0.09);
+  --tag-line: rgba(180, 83, 9, 0.26);
+  --tag-text: #8a4b12;
+  --download-text: #a33a4b;
+  --teal: #0f766e;
+  --coral: #be4458;
+  --gold: #b7791f;
+  --green: #15803d;
+  --low: #7d7a70;
+  --shadow: 0 18px 45px rgba(66, 55, 43, 0.12);
+}
+
+body[data-theme="eye"] {
+  color-scheme: light;
+  --bg: #edf6e8;
+  --bg-glow-primary: rgba(34, 197, 94, 0.12);
+  --bg-glow-secondary: rgba(15, 118, 110, 0.1);
+  --surface: #fbfff5;
+  --surface-2: #eef7e6;
+  --surface-3: #dfead8;
+  --text: #213127;
+  --muted: #62715e;
+  --line: rgba(47, 82, 55, 0.16);
+  --topbar-bg: rgba(251, 255, 245, 0.88);
+  --button-bg: rgba(48, 98, 65, 0.07);
+  --control-bg: #fcfff7;
+  --overview-bg:
+    linear-gradient(135deg, rgba(132, 204, 22, 0.16), transparent 42%),
+    linear-gradient(315deg, rgba(15, 118, 110, 0.14), rgba(251, 255, 245, 0.96));
+  --metric-bg: rgba(251, 255, 245, 0.9);
+  --metric-accent-bg: linear-gradient(145deg, rgba(234, 88, 12, 0.1), rgba(251, 255, 245, 0.96));
+  --panel-bg: rgba(251, 255, 245, 0.92);
+  --card-bg: rgba(252, 255, 247, 0.96);
+  --card-footer-bg: rgba(48, 98, 65, 0.05);
+  --empty-bg: rgba(252, 255, 247, 0.76);
+  --summary-text: #2d3e33;
+  --tag-bg: rgba(101, 163, 13, 0.1);
+  --tag-line: rgba(101, 163, 13, 0.28);
+  --tag-text: #4d7c0f;
+  --download-text: #9f3f32;
+  --teal: #0f766e;
+  --coral: #c85543;
+  --gold: #96721c;
+  --green: #2f8f46;
+  --low: #77836f;
+  --shadow: 0 18px 45px rgba(47, 82, 55, 0.12);
 }
 
 * {
@@ -24,8 +115,8 @@ body {
   margin: 0;
   min-height: 100vh;
   background:
-    linear-gradient(140deg, rgba(45, 212, 191, 0.12), transparent 34%),
-    linear-gradient(320deg, rgba(251, 113, 133, 0.12), transparent 30%),
+    linear-gradient(140deg, var(--bg-glow-primary), transparent 34%),
+    linear-gradient(320deg, var(--bg-glow-secondary), transparent 30%),
     var(--bg);
   color: var(--text);
 }
@@ -44,7 +135,7 @@ a {
   gap: 18px;
   padding: 16px clamp(16px, 4vw, 52px);
   border-bottom: 1px solid var(--line);
-  background: rgba(17, 16, 14, 0.82);
+  background: var(--topbar-bg);
   backdrop-filter: blur(18px);
 }
 
@@ -82,7 +173,20 @@ a {
 
 .top-actions {
   display: flex;
+  align-items: center;
   gap: 8px;
+}
+
+.theme-picker {
+  display: grid;
+  grid-template-columns: auto minmax(92px, 1fr);
+  align-items: center;
+  gap: 8px;
+}
+
+.theme-picker span {
+  color: var(--muted);
+  font-size: 12px;
 }
 
 .icon-link {
@@ -92,7 +196,7 @@ a {
   place-items: center;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--button-bg);
   color: var(--text);
   font-size: 18px;
   text-decoration: none;
@@ -119,9 +223,7 @@ a {
   min-height: 158px;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background:
-    linear-gradient(135deg, rgba(251, 191, 36, 0.14), transparent 42%),
-    linear-gradient(315deg, rgba(45, 212, 191, 0.18), rgba(36, 34, 30, 0.8));
+  background: var(--overview-bg);
   box-shadow: var(--shadow);
   padding: 22px;
 }
@@ -153,14 +255,14 @@ a {
   min-height: 158px;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: rgba(27, 26, 23, 0.82);
+  background: var(--metric-bg);
   box-shadow: var(--shadow);
   padding: 18px;
 }
 
 .metric.accent {
   border-color: rgba(251, 113, 133, 0.38);
-  background: linear-gradient(145deg, rgba(251, 113, 133, 0.18), rgba(27, 26, 23, 0.9));
+  background: var(--metric-accent-bg);
 }
 
 .metric-value {
@@ -182,7 +284,7 @@ a {
   align-items: end;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: rgba(27, 26, 23, 0.86);
+  background: var(--panel-bg);
   box-shadow: var(--shadow);
   padding: 14px;
 }
@@ -198,7 +300,7 @@ a {
   min-height: 38px;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--button-bg);
   color: var(--text);
   font: inherit;
   font-size: 13px;
@@ -240,7 +342,7 @@ select {
   min-height: 38px;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: #141310;
+  background: var(--control-bg);
   color: var(--text);
   font: inherit;
   font-size: 14px;
@@ -288,7 +390,7 @@ select:focus,
 .paper-card {
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: rgba(27, 26, 23, 0.9);
+  background: var(--card-bg);
   box-shadow: var(--shadow);
   overflow: hidden;
 }
@@ -355,8 +457,9 @@ select:focus,
 .tag {
   border: 1px solid rgba(251, 191, 36, 0.28);
   border-radius: 999px;
-  background: rgba(251, 191, 36, 0.1);
-  color: #f8d98a;
+  background: var(--tag-bg);
+  color: var(--tag-text);
+  border-color: var(--tag-line);
   padding: 3px 8px;
   font-size: 12px;
 }
@@ -383,7 +486,7 @@ select:focus,
 
 .summary-grid dd {
   margin: 0;
-  color: #e8e0d7;
+  color: var(--summary-text);
   font-size: 14px;
   line-height: 1.58;
   overflow-wrap: anywhere;
@@ -395,7 +498,7 @@ select:focus,
   justify-content: space-between;
   gap: 14px;
   border-top: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.035);
+  background: var(--card-footer-bg);
   padding: 13px 18px;
 }
 
@@ -429,13 +532,13 @@ select:focus,
 
 .download-link {
   border-color: rgba(251, 113, 133, 0.45);
-  color: #fecdd3;
+  color: var(--download-text);
 }
 
 .empty-state {
   border: 1px dashed var(--line);
   border-radius: 8px;
-  background: rgba(27, 26, 23, 0.7);
+  background: var(--empty-bg);
   color: var(--muted);
   padding: 34px;
   text-align: center;
@@ -459,6 +562,15 @@ select:focus,
 @media (max-width: 680px) {
   .topbar {
     align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .top-actions {
+    width: 100%;
+  }
+
+  .theme-picker {
+    flex: 1 1 160px;
   }
 
   .brand-mark {
