@@ -3,126 +3,126 @@
     { "type": "arxiv", "name": "arXiv" }
   ],
   "conference_sources": {
-    "enabled": true,
+    "enabled": false,
     "current_year": 2026,
     "lookback_years": 2,
-    "venues": [
-      {
-        "id": "isca",
-        "name": "ISCA",
-        "group": "computer architecture",
-        "dblp_toc_patterns": ["db/conf/isca/isca{year}.bht"]
-      },
-      {
-        "id": "micro",
-        "name": "MICRO",
-        "group": "computer architecture",
-        "dblp_toc_patterns": ["db/conf/micro/micro{year}.bht"]
-      },
-      {
-        "id": "hpca",
-        "name": "HPCA",
-        "group": "computer architecture",
-        "dblp_toc_patterns": ["db/conf/hpca/hpca{year}.bht"]
-      },
-      {
-        "id": "asplos",
-        "name": "ASPLOS",
-        "group": "computer architecture",
-        "dblp_toc_patterns": [
-          "db/conf/asplos/asplos{year}-1.bht",
-          "db/conf/asplos/asplos{year}-2.bht",
-          "db/conf/asplos/asplos{year}-3.bht",
-          "db/conf/asplos/asplos{year}-4.bht"
-        ]
-      },
-      {
-        "id": "mlsys",
-        "name": "MLSys",
-        "group": "systems for machine learning",
-        "dblp_toc_patterns": ["db/conf/mlsys/mlsys{year}.bht"]
-      },
-      {
-        "id": "eurosys",
-        "name": "EuroSys",
-        "group": "systems",
-        "dblp_toc_patterns": ["db/conf/eurosys/eurosys{year}.bht"]
-      }
-    ]
+    "venues": []
   },
   "topics": [
     {
-      "id": "llm_low_precision_quantization",
-      "name": "大模型低精度量化",
-      "description": "关注大语言模型低比特量化、混合精度、量化感知训练、后训练量化、权重量化、激活量化、KV cache 量化以及量化对推理性能和精度的影响。",
+      "id": "algebraic_geometry",
+      "name": "代数几何",
+      "description": "关注代数簇、概形理论、层论、上同调理论、Hodge 理论、模空间、奇点理论、代数曲线与曲面、双有理几何等代数几何核心领域的最新进展。",
       "keywords": [
-        "large language model quantization",
-        "LLM quantization",
-        "low-bit quantization",
-        "post-training quantization",
-        "weight-only quantization",
-        "activation quantization",
-        "mixed precision",
-        "FP8",
-        "INT4",
-        "INT8",
-        "KV cache quantization"
+        "algebraic geometry",
+        "scheme theory",
+        "coherent sheaf",
+        "derived category",
+        "moduli space",
+        "Hodge theory",
+        "birational geometry",
+        "algebraic variety",
+        "stack",
+        "intersection theory",
+        "Abelian variety",
+        "Calabi-Yau",
+        "Gromov-Witten",
+        "mirror symmetry",
+        "log geometry"
       ],
-      "arxiv_categories": ["cs.CL", "cs.LG", "cs.AI", "cs.DC"]
+      "arxiv_categories": ["math.AG"]
     },
     {
-      "id": "tensor_compute_unit_architecture",
-      "name": "张量计算单元结构",
-      "description": "关注 GPU/NPU/TPU 张量计算单元、矩阵乘加阵列、数据流架构、片上存储层次、低精度张量核、AI 加速器微架构和算子映射。",
+      "id": "algebraic_topology",
+      "name": "代数拓扑",
+      "description": "关注同伦论、同调论、谱序列、K 理论、示性类、椭圆上同调、稳定同伦范畴、导出代数几何、色展同伦论、无穷范畴等代数拓扑方向。",
       "keywords": [
-        "tensor processing unit",
-        "tensor core",
-        "matrix multiply unit",
-        "systolic array",
-        "AI accelerator architecture",
-        "NPU architecture",
-        "GPU tensor core",
-        "low precision tensor compute",
-        "dataflow architecture",
-        "on-chip memory hierarchy"
+        "homotopy theory",
+        "homology",
+        "cohomology",
+        "spectral sequence",
+        "K-theory",
+        "characteristic class",
+        "stable homotopy",
+        "elliptic cohomology",
+        "infinity category",
+        "operad",
+        "topological modular form",
+        "chromatic homotopy",
+        "cobordism",
+        "higher category",
+        "simplicial set"
       ],
-      "arxiv_categories": ["cs.AR", "cs.DC", "cs.LG", "cs.PF"]
+      "arxiv_categories": ["math.AT", "math.KT"]
     },
     {
-      "id": "llm_inference_cluster_communication",
-      "name": "大模型推理集群通信优化",
-      "description": "关注分布式大模型推理、prefill/decode 分离、张量并行、流水并行、专家并行、跨节点通信、调度、负载均衡和 serving 系统吞吐延迟优化。",
+      "id": "number_theory",
+      "name": "数论",
+      "description": "关注解析数论、代数数论、丢番图方程、模形式、自守表示、Langlands 纲领、L 函数、p 进理论、Iwasawa 理论等数论方向。",
       "keywords": [
-        "LLM inference serving",
-        "distributed inference",
-        "inference cluster",
-        "tensor parallelism",
-        "pipeline parallelism",
-        "expert parallelism",
-        "all-reduce",
-        "collective communication",
-        "prefill decode disaggregation",
-        "serving scheduler"
+        "number theory",
+        "automorphic form",
+        "L-function",
+        "modular form",
+        "Galois representation",
+        "Langlands program",
+        "Diophantine equation",
+        "p-adic",
+        "Iwasawa theory",
+        "class field theory",
+        "elliptic curve",
+        "zeta function",
+        "Shimura variety",
+        "trace formula",
+        "Sato-Tate"
       ],
-      "arxiv_categories": ["cs.DC", "cs.PF", "cs.CL", "cs.LG"]
+      "arxiv_categories": ["math.NT"]
     },
     {
-      "id": "kvcache_compression_storage_scheduling",
-      "name": "KV cache 压缩与存储调度",
-      "description": "关注大模型推理中的 KV cache 压缩、淘汰、分页、卸载、预取、层级存储、显存管理和长上下文推理效率优化。",
+      "id": "arithmetic_geometry",
+      "name": "算术几何",
+      "description": "关注算术代数几何、étale 上同调、crystalline 上同调、p 进 Hodge 理论、志村簇、Arakelov 几何、motivic 理论、有理点、Brauer 群等算术几何方向。",
       "keywords": [
-        "KV cache compression",
-        "KV cache eviction",
-        "KV cache scheduling",
-        "paged attention",
-        "attention cache",
-        "long context inference",
-        "memory offloading",
-        "GPU memory management",
-        "cache prefetching",
-        "LLM serving memory"
+        "arithmetic geometry",
+        "étale cohomology",
+        "crystalline cohomology",
+        "p-adic Hodge theory",
+        "Arakelov geometry",
+        "motive",
+        "rational point",
+        "Brauer group",
+        "Weil conjecture",
+        "Fontaine theory",
+        "perfectoid space",
+        "diamond",
+        "prismatic cohomology",
+        "Chow group",
+        "Tamagawa number"
       ],
-      "arxiv_categories": ["cs.CL", "cs.LG", "cs.DC", "cs.PF"]
+      "arxiv_categories": ["math.AG", "math.NT"]
+    },
+    {
+      "id": "k_theory",
+      "name": "K 理论",
+      "description": "关注代数 K 理论、拓扑 K 理论、Milnor K 理论、motivic 上同调、循环同调、非交换几何、A1 同伦论、代数圈、regulator 映射等 K 理论及相关领域。",
+      "keywords": [
+        "algebraic K-theory",
+        "topological K-theory",
+        "Milnor K-theory",
+        "motivic cohomology",
+        "cyclic homology",
+        "noncommutative geometry",
+        "A1 homotopy",
+        "algebraic cycle",
+        "Bloch group",
+        "regulator map",
+        "Waldhausen category",
+        "exact category",
+        "triangulated category",
+        "DG category",
+        "higher algebraic K-theory"
+      ],
+      "arxiv_categories": ["math.KT", "math.AT", "math.AG"]
     }
   ]
 }
