@@ -1,6 +1,6 @@
 {
-  "generated_at": "Thu, 11 Jun 2026 09:06:18 +0000",
-  "generated_at_iso": "2026-06-11T09:06:18.672997+00:00",
+  "generated_at": "Thu, 11 Jun 2026 09:26:27 +0000",
+  "generated_at_iso": "2026-06-11T09:26:27.279056+00:00",
   "config_source": "file",
   "data_kind": "daily",
   "topics": [
@@ -628,7 +628,7 @@
             "algebraic cobordism",
             "hermitian K-theory"
           ],
-          "llm_reason": "论文涉及MGL、MSL、代数配边、Hermitian K-理论等，这些是动机同伦论中的核心对象（如MGL是动机配边谱，MSL是特殊线性配边谱，Hermitian K-理论是KQ）。关键词命中：MGL、MSL、algebraic cobordism、hermitian K-theory。桥接信号：MGL连接动机与K-理论，Hermitian K-理论连接K-理论与动机。"
+          "llm_reason": "论文涉及MGL、MSL、代数配边、Hermitian K-理论，这些是动机同伦论中的核心对象（如MGL是动机配边谱，MSL是特殊线性配边谱，Hermitian K-理论与二次动机同伦论相关）。关键词命中：MGL、MSL、algebraic cobordism、hermitian K-theory。桥接信号：MGL连接动机与K-理论，Hermitian K-理论连接K-理论与动机。"
         },
         {
           "topic_id": "k_theory",
@@ -695,7 +695,7 @@
           "algebraic cobordism",
           "hermitian K-theory"
         ],
-        "llm_reason": "论文涉及MGL、MSL、代数配边、Hermitian K-理论等，这些是动机同伦论中的核心对象（如MGL是动机配边谱，MSL是特殊线性配边谱，Hermitian K-理论是KQ）。关键词命中：MGL、MSL、algebraic cobordism、hermitian K-theory。桥接信号：MGL连接动机与K-理论，Hermitian K-理论连接K-理论与动机。"
+        "llm_reason": "论文涉及MGL、MSL、代数配边、Hermitian K-理论，这些是动机同伦论中的核心对象（如MGL是动机配边谱，MSL是特殊线性配边谱，Hermitian K-理论与二次动机同伦论相关）。关键词命中：MGL、MSL、algebraic cobordism、hermitian K-theory。桥接信号：MGL连接动机与K-理论，Hermitian K-理论连接K-理论与动机。"
       },
       "top_labels": [
         {
@@ -755,15 +755,15 @@
         }
       ],
       "chinese_summary": {
-        "problem": "研究金属线性代数配边谱MML（也称为MSL^c）的结构，建立其与MSL和MGL的关系，并计算其不变量。",
-        "method": "通过构造MSL到MML的典范态射并证明其有收缩，在MSL-模范畴中参数化所有收缩，从而得到MML ≅ MSL ⊕ Σ^{2,1}MGL的等价。利用这一分解，结合非常有效代数K-理论和Hermitian K-理论谱，确定MML的Milnor-Witt茎和几何对角，并计算其切片。",
-        "innovation": "首次系统研究金属线性代数配边谱MML，建立了MML与MSL和MGL之间的精确关系（直和分解），并利用该分解计算了MML的Milnor-Witt茎、几何对角和切片，揭示了其与Stong复自旋配边环的联系。",
-        "evidence": "摘要中给出了理论结果：典范态射MSL→MML有收缩，且存在等价MML≅MSL⊕Σ^{2,1}MGL；并基于此确定了Milnor-Witt茎、几何对角和切片。但未提供具体计算细节或数值结果。",
-        "limitations": "结果仅在域上且倒指数特征后成立；需要阅读全文确认Milnor-Witt茎的具体计算和切片范畴的描述。",
-        "why_relevant": "论文涉及MGL、MSL、代数配边、Hermitian K-理论等，这些是动机同伦论中的核心对象（如MGL是动机配边谱，MSL是特殊线性配边谱，Hermitian K-理论是KQ）。关键词命中：MGL、MSL、algebraic cobordism、hermitian K-theory。桥接信号：MGL连接动机与K-理论，Hermitian K-理论连接K-理论与动机。"
+        "problem": "研究金属线性代数配边谱MML（也称为MSL^c）的结构，它由定向向量丛的结构群构造而来，并建立其与MSL和MGL的关系。",
+        "method": "通过构造MSL到MML的典范态射并证明其有收缩，在MSL-模范畴中参数化所有这样的收缩，固定一个后得到MML ≅ MSL ⊕ Σ^{2,1}MGL的等价。利用该分解，在指数特征倒置后计算MML的Milnor-Witt茎、几何对角以及切片，并描述2-倒置模的范畴。",
+        "innovation": "1. 首次建立MSL与MML之间的精确关系，证明MML是MSL与MGL的直和（带移位）。2. 确定了MML的Milnor-Witt茎与非常有效代数K-理论和Hermitian K-理论谱的关系，以及几何对角与Stong复自旋配边环的关系。3. 计算了MML的切片，并描述了2-倒置模的范畴。",
+        "evidence": "摘要中给出了理论结果：典范态射有收缩、等价分解、Milnor-Witt茎和几何对角的描述、切片计算。但未提供具体数值或实验验证。",
+        "limitations": "结果依赖于指数特征倒置；需要阅读全文确认收缩的具体构造、Milnor-Witt茎的精确计算以及切片谱序列的细节。",
+        "why_relevant": "论文涉及MGL、MSL、代数配边、Hermitian K-理论，这些是动机同伦论中的核心对象（如MGL是动机配边谱，MSL是特殊线性配边谱，Hermitian K-理论与二次动机同伦论相关）。关键词命中：MGL、MSL、algebraic cobordism、hermitian K-theory。桥接信号：MGL连接动机与K-理论，Hermitian K-理论连接K-理论与动机。"
       },
       "first_seen_at": "2026-06-11T04:42:44.276818+00:00",
-      "last_seen_at": "2026-06-11T09:06:18.672997+00:00",
+      "last_seen_at": "2026-06-11T09:26:27.279056+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -1338,7 +1338,7 @@
             "moduli space",
             "descent"
           ],
-          "llm_reason": "论文研究模空间（moduli space）和下降（descent），与研究方向中的模空间、模函子、下降（fpqc descent等）直接相关；arXiv分类math.AG完全匹配；关键词命中moduli space和descent。"
+          "llm_reason": "论文研究模空间（moduli space）和下降（descent）问题，直接命中研究方向关键词'moduli space'和'descent'，且arXiv分类为math.AG，与代数几何高度相关。"
         },
         {
           "topic_id": "arithmetic_geometry",
@@ -1395,7 +1395,7 @@
           "moduli space",
           "descent"
         ],
-        "llm_reason": "论文研究模空间（moduli space）和下降（descent），与研究方向中的模空间、模函子、下降（fpqc descent等）直接相关；arXiv分类math.AG完全匹配；关键词命中moduli space和descent。"
+        "llm_reason": "论文研究模空间（moduli space）和下降（descent）问题，直接命中研究方向关键词'moduli space'和'descent'，且arXiv分类为math.AG，与代数几何高度相关。"
       },
       "top_labels": [
         {
@@ -1437,15 +1437,15 @@
         }
       ],
       "chinese_summary": {
-        "problem": "研究超奇异阿贝尔簇模空间中的极化旗型商的结构，特别是高维（g≤5）情况下这些旗的第一和最后一步的完全分类。",
-        "method": "建立极化旗型商的结构定理，证明顶层旗的精细正规形，并推导出拟极化的显式可计算下降准则。",
-        "innovation": "1. 给出了极化旗型商中顶层旗的精细正规形，这是对已有结构定理的细化；2. 提出了一个显式且可计算的拟极化下降准则，使得分类更具体；3. 完成了g≤5维超奇异阿贝尔簇的极化旗型商的计算，描述了截断态射的纤维作为分类对象。",
-        "evidence": "摘要中声称建立了结构定理、证明了正规形、推导了下降准则，并给出了g≤5的计算结果，但未提供具体数值或实验验证，证据为理论推导。",
-        "limitations": "结果仅限于g≤5维，更高维的情况未涉及；需要阅读全文确认下降准则的显式形式和计算细节。",
-        "why_relevant": "论文研究模空间（moduli space）和下降（descent），与研究方向中的模空间、模函子、下降（fpqc descent等）直接相关；arXiv分类math.AG完全匹配；关键词命中moduli space和descent。"
+        "problem": "研究超奇异阿贝尔簇模空间的极化旗型商的结构，特别是高维（g≤5）情况下的分类问题。",
+        "method": "建立极化旗型商的结构定理，证明顶层旗的精细正规型，并推导出拟极化的显式可计算下降判据。",
+        "innovation": "首次给出极化旗型商中顶层旗的精细正规型；提供可计算的拟极化下降判据；完成g≤5维超奇异阿贝尔簇的极化旗型商分类，描述截断态射纤维作为分类对象。",
+        "evidence": "摘要中明确给出了结构定理、正规型、下降判据，并声称在g≤5维上完成了分类计算，但未提供具体数值或实验验证细节。",
+        "limitations": "仅覆盖g≤5维，更高维情况未涉及；下降判据的可计算性需阅读全文确认；分类结果的具体形式未在摘要中展示。",
+        "why_relevant": "论文研究模空间（moduli space）和下降（descent）问题，直接命中研究方向关键词'moduli space'和'descent'，且arXiv分类为math.AG，与代数几何高度相关。"
       },
       "first_seen_at": "2026-06-11T04:42:44.276818+00:00",
-      "last_seen_at": "2026-06-11T09:06:18.672997+00:00",
+      "last_seen_at": "2026-06-11T09:26:27.279056+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -3152,12 +3152,12 @@
           "score": 0.417,
           "base_score": 0.3,
           "bridge_bonus": 0.117,
-          "level": "medium",
+          "level": "low",
           "reason": "关键词命中：vector bundles；arXiv 分类重合：math.KT；桥接信号「vector bundles」(K-theory ↔ AG / motivic)",
           "keyword_hits": [
             "vector bundles"
           ],
-          "llm_reason": "论文涉及向量丛、Chern类、Schur类等与K-理论密切相关的几何工具，且arXiv分类包含math.KT，与我的研究方向（K-理论）有交集。但论文主要关注C*-代数的结构性质，而非K-理论本身，因此相关性中等。"
+          "llm_reason": "论文涉及向量丛、Schubert演算和K-理论（arXiv分类math.KT），与研究方向中的vector bundles、K-theory of schemes等关键词相关，但主要聚焦于C*-代数而非代数K-理论，相关性有限。"
         },
         {
           "topic_id": "algebraic_geometry",
@@ -3212,12 +3212,12 @@
         "score": 0.417,
         "base_score": 0.3,
         "bridge_bonus": 0.117,
-        "level": "medium",
+        "level": "low",
         "reason": "关键词命中：vector bundles；arXiv 分类重合：math.KT；桥接信号「vector bundles」(K-theory ↔ AG / motivic)",
         "keyword_hits": [
           "vector bundles"
         ],
-        "llm_reason": "论文涉及向量丛、Chern类、Schur类等与K-理论密切相关的几何工具，且arXiv分类包含math.KT，与我的研究方向（K-理论）有交集。但论文主要关注C*-代数的结构性质，而非K-理论本身，因此相关性中等。"
+        "llm_reason": "论文涉及向量丛、Schubert演算和K-理论（arXiv分类math.KT），与研究方向中的vector bundles、K-theory of schemes等关键词相关，但主要聚焦于C*-代数而非代数K-理论，相关性有限。"
       },
       "top_labels": [
         {
@@ -3262,15 +3262,15 @@
         }
       ],
       "chinese_summary": {
-        "problem": "构造一个没有uniform property Γ的简单、可分、单的、单核C*-代数，并揭示其几何障碍。",
-        "method": "利用Thom-Porteous退化轨迹理论中的行列式Schur类，构造向量丛之间的映射，迫使每个映射在基空间某处消失，从而阻碍大平凡子丛的存在；通过二次Schubert演算证明该障碍在归纳系统中持续存在，并最终阻碍迹比较投影。",
-        "innovation": "首次使用行列式Schur类（而非传统的Chern类）来构造病理C*-代数；将uniform property Γ的缺失与二次维数增长联系起来，识别出新的几何阈值。",
-        "evidence": "摘要中明确给出了Schubert演算的计算结果，表明障碍存在于与强制秩损失平方成比例的度中，并导致相同阶的维数增长。",
-        "limitations": "需要阅读全文确认构造的具体细节、归纳系统的建立方式以及uniform property Γ的精确定义和验证。",
-        "why_relevant": "论文涉及向量丛、Chern类、Schur类等与K-理论密切相关的几何工具，且arXiv分类包含math.KT，与我的研究方向（K-理论）有交集。但论文主要关注C*-代数的结构性质，而非K-理论本身，因此相关性中等。"
+        "problem": "构造一个没有uniform property Γ的简单、可分、单的、含幺的核C*-代数，并揭示其几何障碍。",
+        "method": "利用Thom-Porteous退化轨迹理论中的行列式Schur类，迫使等秩向量丛之间的每个丛映射在底空间某处消失；通过二次Schubert演算证明该障碍在归纳系统中持续存在，最终阻碍均匀迹完备化中投影的迹比较。",
+        "innovation": "首次使用行列式Schur类（而非传统的Chern类）来构造病理核C*-代数；将uniform property Γ的缺失与二次维数增长联系起来，识别出核C*-代数结构理论中的新几何阈值。",
+        "evidence": "摘要中明确给出了Schubert演算的计算和维数增长阶的论证，但未提供具体数值或实验数据。",
+        "limitations": "需要阅读全文确认Schubert演算的细节、归纳系统的具体构造以及uniform property Γ的精确定义。",
+        "why_relevant": "论文涉及向量丛、Schubert演算和K-理论（arXiv分类math.KT），与研究方向中的vector bundles、K-theory of schemes等关键词相关，但主要聚焦于C*-代数而非代数K-理论，相关性有限。"
       },
       "first_seen_at": "2026-06-11T07:03:32.811912+00:00",
-      "last_seen_at": "2026-06-11T09:06:18.672997+00:00",
+      "last_seen_at": "2026-06-11T09:26:27.279056+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -3551,7 +3551,7 @@
           "keyword_hits": [
             "Chow motives"
           ],
-          "llm_reason": "论文涉及Chow动机（Chow motives）和超越动机（transcendental motives），属于动机理论范畴，与研究方向中的'Chow motives'、'motives'、'mixed motives'等关键词直接相关。同时，论文使用导出范畴和Fourier-Mukai变换，与研究方向中的'derived category of motives'、'motivic sheaf theory'等有间接联系。但论文主要聚焦于代数几何中的具体簇（四次三维簇），而非motivic同伦论的核心对象（如motivic谱、A1-同伦论等），因此相关性为中等偏低。"
+          "llm_reason": "论文涉及Chow动机（Chow motives），这是动机同伦理论中的核心对象；同时，三次四维簇的超越动机与动机范畴（如DM(k)）相关，可能对理解动机的分解和范畴等价有启发。但论文主要聚焦于代数几何中的派生范畴和动机，而非直接使用动机同伦理论中的技术（如A1-局部化、稳定动机同伦范畴等），因此相关性有限。"
         },
         {
           "topic_id": "algebraic_geometry",
@@ -3609,7 +3609,7 @@
         "keyword_hits": [
           "Chow motives"
         ],
-        "llm_reason": "论文涉及Chow动机（Chow motives）和超越动机（transcendental motives），属于动机理论范畴，与研究方向中的'Chow motives'、'motives'、'mixed motives'等关键词直接相关。同时，论文使用导出范畴和Fourier-Mukai变换，与研究方向中的'derived category of motives'、'motivic sheaf theory'等有间接联系。但论文主要聚焦于代数几何中的具体簇（四次三维簇），而非motivic同伦论的核心对象（如motivic谱、A1-同伦论等），因此相关性为中等偏低。"
+        "llm_reason": "论文涉及Chow动机（Chow motives），这是动机同伦理论中的核心对象；同时，三次四维簇的超越动机与动机范畴（如DM(k)）相关，可能对理解动机的分解和范畴等价有启发。但论文主要聚焦于代数几何中的派生范畴和动机，而非直接使用动机同伦理论中的技术（如A1-局部化、稳定动机同伦范畴等），因此相关性有限。"
       },
       "top_labels": [
         {
@@ -3652,15 +3652,15 @@
         }
       ],
       "chinese_summary": {
-        "problem": "研究光滑四次三维簇的Kuznetsov分量与超越动机之间的关系，特别是当两个四次三维簇是Fourier-Mukai伙伴时，其超越动机的同构性，并探讨有理性和猜想非理性情况下的具体同构描述。",
-        "method": "利用Kuznetsov分量（导出范畴中的半正交分量）和Chow动机范畴中的超越动机，通过Fourier-Mukai等价建立范畴等价与动机同构的联系；对于具有3阶辛自同构的特殊四次三维簇，考虑等变Kuznetsov分量并证明其与另一个四次三维簇的Kuznetsov分量等价，从而导出超越动机的同构。",
-        "innovation": "1. 明确给出了Fourier-Mukai伙伴的四次三维簇之间超越动机的同构描述，包括有理性和猜想非理性情形。2. 对于Hassett除数中可数无穷多特殊四次三维簇（具有3阶辛自同构），构造了等变Kuznetsov分量与另一个四次三维簇的Kuznetsov分量的等价，并得到超越动机的同构。",
-        "evidence": "摘要中未提供具体实验或系统证据，仅陈述了理论结果和构造。",
-        "limitations": "需要阅读全文确认超越动机同构的具体构造细节，以及等变Kuznetsov分量等价的条件和证明。",
-        "why_relevant": "论文涉及Chow动机（Chow motives）和超越动机（transcendental motives），属于动机理论范畴，与研究方向中的'Chow motives'、'motives'、'mixed motives'等关键词直接相关。同时，论文使用导出范畴和Fourier-Mukai变换，与研究方向中的'derived category of motives'、'motivic sheaf theory'等有间接联系。但论文主要聚焦于代数几何中的具体簇（四次三维簇），而非motivic同伦论的核心对象（如motivic谱、A1-同伦论等），因此相关性为中等偏低。"
+        "problem": "研究光滑三次四维簇的Kuznetsov分量与超越动机之间的关系，特别是当两个三次四维簇是Fourier-Mukai伙伴时，它们的超越动机是否同构，并描述这种同构。",
+        "method": "利用Kuznetsov分量和Chow动机范畴，通过考虑具有Fourier-Mukai伙伴的特殊三次四维簇族，在有理和猜想无理的情形下显式构造超越动机的同构。对于具有3阶辛自同构的特殊三次四维簇，使用等变Kuznetsov分量建立等价和动机同构。",
+        "innovation": "1. 在Fourier-Mukai伙伴的三次四维簇之间建立了超越动机的同构，并给出了显式描述。2. 对于具有3阶辛自同构的特殊三次四维簇，证明了等变Kuznetsov分量与另一个三次四维簇的Kuznetsov分量等价，进而得到超越动机同构。",
+        "evidence": "摘要中未提供具体的实验或计算证据，仅陈述了理论结果。",
+        "limitations": "结果依赖于Fourier-Mukai伙伴的存在性和特殊三次四维簇的Hassett除数条件；需要阅读全文确认同构的显式构造细节和证明。",
+        "why_relevant": "论文涉及Chow动机（Chow motives），这是动机同伦理论中的核心对象；同时，三次四维簇的超越动机与动机范畴（如DM(k)）相关，可能对理解动机的分解和范畴等价有启发。但论文主要聚焦于代数几何中的派生范畴和动机，而非直接使用动机同伦理论中的技术（如A1-局部化、稳定动机同伦范畴等），因此相关性有限。"
       },
       "first_seen_at": "2026-06-11T07:23:12.784218+00:00",
-      "last_seen_at": "2026-06-11T09:06:18.672997+00:00",
+      "last_seen_at": "2026-06-11T09:26:27.279056+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -3690,7 +3690,7 @@
           "level": "low",
           "reason": "arXiv 分类重合：math.KT；桥接信号「KO」(homotopy ↔ K-theory)",
           "keyword_hits": [],
-          "llm_reason": "论文涉及KO-理论（KO^{-4}(*)），与研究方向中的拓扑K-理论、Bott周期性、指标理论相关；arXiv分类包含math.KT。"
+          "llm_reason": "论文涉及KO-理论（KO^{-4}），与研究方向中的拓扑K-理论、Bott周期性、Hermitian K-理论等关键词相关，且分类包含math.KT。"
         },
         {
           "topic_id": "homotopy_theory",
@@ -3745,7 +3745,7 @@
         "level": "low",
         "reason": "arXiv 分类重合：math.KT；桥接信号「KO」(homotopy ↔ K-theory)",
         "keyword_hits": [],
-        "llm_reason": "论文涉及KO-理论（KO^{-4}(*)），与研究方向中的拓扑K-理论、Bott周期性、指标理论相关；arXiv分类包含math.KT。"
+        "llm_reason": "论文涉及KO-理论（KO^{-4}），与研究方向中的拓扑K-理论、Bott周期性、Hermitian K-理论等关键词相关，且分类包含math.KT。"
       },
       "top_labels": [
         {
@@ -3770,14 +3770,14 @@
       ],
       "chinese_summary": {
         "problem": "证明亏格至少为3的闭曲面上，对于任何边界自旋结构，Dirac可逆黎曼度量空间的基本群到KO^{-4}(*)的指标差映射是非平凡的。",
-        "method": "利用自旋几何和指标理论，通过计算基本群上的指标差映射，结合KO-同伦论，证明非平凡性。对于两个曲面的乘积，证明Dirac可逆黎曼度量空间非可缩。",
-        "innovation": "首次在亏格≥3的曲面上证明指标差非平凡，并将结果推广到乘积曲面，揭示高维空间中调和旋量存在的拓扑障碍。",
-        "evidence": "摘要中明确给出了非平凡性的结论，但未提供具体计算或实验细节，需阅读全文验证。",
-        "limitations": "仅适用于亏格≥3的曲面及特定自旋结构；未涉及更高维流形或更一般的K-理论对象。",
-        "why_relevant": "论文涉及KO-理论（KO^{-4}(*)），与研究方向中的拓扑K-理论、Bott周期性、指标理论相关；arXiv分类包含math.KT。"
+        "method": "利用自旋几何和指标理论，通过计算Dirac算子的指标差在基本群上的作用，结合KO-同伦论得到非平凡性。",
+        "innovation": "首次在亏格≥3的曲面上证明指标差映射非平凡，并推广到两个曲面的乘积空间，证明其Dirac可逆度量空间非可缩。",
+        "evidence": "摘要明确给出非平凡性结论，并提及与4维调和旋量存在性的关系，但未提供具体计算细节。",
+        "limitations": "需要阅读全文确认证明细节，特别是KO^{-4}的计算和自旋结构的处理。",
+        "why_relevant": "论文涉及KO-理论（KO^{-4}），与研究方向中的拓扑K-理论、Bott周期性、Hermitian K-理论等关键词相关，且分类包含math.KT。"
       },
       "first_seen_at": "2026-06-11T06:53:42.946382+00:00",
-      "last_seen_at": "2026-06-11T09:06:18.672997+00:00",
+      "last_seen_at": "2026-06-11T09:26:27.279056+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -3809,7 +3809,7 @@
           "level": "medium",
           "reason": "arXiv 分类重合：math.AG、math.NT",
           "keyword_hits": [],
-          "llm_reason": "论文涉及p-adic Hodge theory中的基本引理，与研究方向中的p-adic Hodge theory、Fontaine theory、period rings等关键词直接相关。"
+          "llm_reason": "论文涉及p进Hodge理论（关键词：p-adic Hodge theory, Fontaine theory），与研究方向中的p进Hodge理论、周期环等直接相关。"
         },
         {
           "topic_id": "motivic_homotopy_theory",
@@ -3861,7 +3861,7 @@
         "level": "medium",
         "reason": "arXiv 分类重合：math.AG、math.NT",
         "keyword_hits": [],
-        "llm_reason": "论文涉及p-adic Hodge theory中的基本引理，与研究方向中的p-adic Hodge theory、Fontaine theory、period rings等关键词直接相关。"
+        "llm_reason": "论文涉及p进Hodge理论（关键词：p-adic Hodge theory, Fontaine theory），与研究方向中的p进Hodge理论、周期环等直接相关。"
       },
       "top_labels": [
         {
@@ -3891,14 +3891,14 @@
       ],
       "chinese_summary": {
         "problem": "将扩展上半平面中的Farey三角形与p进Hodge理论中Colmez-Fontaine基本引理的变体联系起来。",
-        "method": "通过将每个Farey三角形对应到基本引理的一个变体，并指出原始基本引理对应于特定的Farey三角形(1/0,1/1,0/1)。",
-        "innovation": "建立了Farey三角形与p进Hodge理论基本引理之间的新联系，推广了Colmez-Fontaine的原始结果。",
-        "evidence": "摘要中仅给出了理论对应关系，未提供实验或系统证据。",
-        "limitations": "摘要未详细说明证明方法或应用，需要阅读全文确认具体构造和证明细节。",
-        "why_relevant": "论文涉及p-adic Hodge theory中的基本引理，与研究方向中的p-adic Hodge theory、Fontaine theory、period rings等关键词直接相关。"
+        "method": "通过将每个Farey三角形对应到基本引理的一个变体，并指出原始基本引理对应特定的Farey三角形(1/0,1/1,0/1)。",
+        "innovation": "首次将Farey三角形与p进Hodge理论的基本引理建立系统对应，推广了Colmez-Fontaine的原始结果。",
+        "evidence": "摘要中仅给出概念对应关系，未提供具体证明或实验证据。",
+        "limitations": "摘要未给出任何证明细节或应用，需要阅读全文确认该对应的严格性和具体构造。",
+        "why_relevant": "论文涉及p进Hodge理论（关键词：p-adic Hodge theory, Fontaine theory），与研究方向中的p进Hodge理论、周期环等直接相关。"
       },
       "first_seen_at": "2026-06-11T05:21:54.714863+00:00",
-      "last_seen_at": "2026-06-11T09:06:18.672997+00:00",
+      "last_seen_at": "2026-06-11T09:26:27.279056+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -4040,7 +4040,7 @@
           "keyword_hits": [
             "vector bundle"
           ],
-          "llm_reason": "论文涉及向量丛（vector bundle）和Hopf曲面（代数曲面的一种），与研究方向中的向量丛、层、代数簇等关键词相关，但主题更偏向Poisson几何和辛叶，而非核心的代数几何对象（如概形、模空间等）。"
+          "llm_reason": "论文涉及向量丛（vector bundle），与研究方向中的向量丛、局部自由层等关键词相关；arXiv分类包含math.AG，属于代数几何范畴。但主题为Poisson几何和Hopf曲面，与代数几何核心（概形、模空间等）关联较弱。"
         },
         {
           "topic_id": "motivic_homotopy_theory",
@@ -4094,7 +4094,7 @@
         "keyword_hits": [
           "vector bundle"
         ],
-        "llm_reason": "论文涉及向量丛（vector bundle）和Hopf曲面（代数曲面的一种），与研究方向中的向量丛、层、代数簇等关键词相关，但主题更偏向Poisson几何和辛叶，而非核心的代数几何对象（如概形、模空间等）。"
+        "llm_reason": "论文涉及向量丛（vector bundle），与研究方向中的向量丛、局部自由层等关键词相关；arXiv分类包含math.AG，属于代数几何范畴。但主题为Poisson几何和Hopf曲面，与代数几何核心（概形、模空间等）关联较弱。"
       },
       "top_labels": [
         {
@@ -4126,14 +4126,14 @@
       ],
       "chinese_summary": {
         "problem": "研究如何从Hopf曲面上的秩2 co-Higgs丛构造Poisson三维流形，并描述其辛叶。",
-        "method": "基于先前对Hopf曲面上秩2 co-Higgs丛的分类（根据底层向量丛的数据），通过分析这些丛的几何结构来构造Poisson三维流形，并描述其辛叶。",
-        "innovation": "将co-Higgs丛与Poisson几何联系起来，具体构造了Poisson三维流形并描述了辛叶结构，这是对先前分类工作的几何应用。",
-        "evidence": "摘要未提供实验或系统证据，仅说明方法基于先前分类工作。",
-        "limitations": "需要阅读全文确认构造的具体细节、辛叶描述的完整性以及是否与更广泛的代数几何对象（如模空间）有联系。",
-        "why_relevant": "论文涉及向量丛（vector bundle）和Hopf曲面（代数曲面的一种），与研究方向中的向量丛、层、代数簇等关键词相关，但主题更偏向Poisson几何和辛叶，而非核心的代数几何对象（如概形、模空间等）。"
+        "method": "基于对Hopf曲面上秩2 co-Higgs丛的分类（根据底层向量丛的数据），构造Poisson三维流形，并通过描述辛叶来研究这些流形。",
+        "innovation": "将先前对Hopf曲面上co-Higgs丛的分类工作扩展到构造Poisson三维流形，并具体描述其辛叶结构。",
+        "evidence": "摘要中未提供实验或理论证据，仅说明论文目标。",
+        "limitations": "摘要未给出具体构造细节或结果，需阅读全文确认分类与构造的完整性和正确性。",
+        "why_relevant": "论文涉及向量丛（vector bundle），与研究方向中的向量丛、局部自由层等关键词相关；arXiv分类包含math.AG，属于代数几何范畴。但主题为Poisson几何和Hopf曲面，与代数几何核心（概形、模空间等）关联较弱。"
       },
       "first_seen_at": "2026-06-11T05:41:51.895771+00:00",
-      "last_seen_at": "2026-06-11T09:06:18.672997+00:00",
+      "last_seen_at": "2026-06-11T09:26:27.279056+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -4165,7 +4165,7 @@
           "level": "low",
           "reason": "arXiv 分类重合：math.AG",
           "keyword_hits": [],
-          "llm_reason": "论文涉及完美化环和有限代数，属于代数几何中完美化空间和p进几何的范畴，与研究方向中的scheme、代数簇、模空间等概念相关，但具体问题更偏向交换代数和数论，与代数几何核心问题（如模空间、相交理论）关联较弱。"
+          "llm_reason": "论文涉及完美化环和有限代数，属于代数几何中交换代数与算术几何的交叉，与研究方向中的scheme、sheaf、模空间等概念间接相关，但并非直接研究代数簇或模空间。"
         },
         {
           "topic_id": "arithmetic_geometry",
@@ -4219,7 +4219,7 @@
         "level": "low",
         "reason": "arXiv 分类重合：math.AG",
         "keyword_hits": [],
-        "llm_reason": "论文涉及完美化环和有限代数，属于代数几何中完美化空间和p进几何的范畴，与研究方向中的scheme、代数簇、模空间等概念相关，但具体问题更偏向交换代数和数论，与代数几何核心问题（如模空间、相交理论）关联较弱。"
+        "llm_reason": "论文涉及完美化环和有限代数，属于代数几何中交换代数与算术几何的交叉，与研究方向中的scheme、sheaf、模空间等概念间接相关，但并非直接研究代数簇或模空间。"
       },
       "top_labels": [
         {
@@ -4259,14 +4259,14 @@
       ],
       "chinese_summary": {
         "problem": "研究完美化环上有限代数的完美化的一般性质，并给出显式描述。",
-        "method": "通过判别式条件和有界挠性条件，证明完美化后判别式乘以代数包含于原代数；利用密度准则将完美化归结为模p添加合适的p幂根。",
-        "innovation": "给出了判别式非零因子且满足有界挠性时完美化代数的显式包含关系；提出了密度准则简化完美化构造；对Kummer型扩张和分裂有限代数等例子进行了具体计算。",
-        "evidence": "摘要中给出了定理陈述（如dA_pfd⊂A）和例子计算，但未提供实验或系统验证。",
-        "limitations": "结果依赖于判别式非零因子和有界挠性条件，可能不适用于一般情形；需要阅读全文确认证明细节和适用范围。",
-        "why_relevant": "论文涉及完美化环和有限代数，属于代数几何中完美化空间和p进几何的范畴，与研究方向中的scheme、代数簇、模空间等概念相关，但具体问题更偏向交换代数和数论，与代数几何核心问题（如模空间、相交理论）关联较弱。"
+        "method": "通过判别式条件（如非零因子且有界挠条件）证明完美化后包含原代数；利用密度准则将完美化归结为模p添加适当的p幂根。",
+        "innovation": "给出了判别式非零因子条件下完美化包含原代数的精确包含关系；提出了密度准则简化完美化构造；对Kummer型扩张和分裂有限代数等例子进行了具体计算。",
+        "evidence": "摘要中给出了定理陈述（如dA_pfd ⊂ A）和密度准则，但未提供实验或系统证据。",
+        "limitations": "结果依赖于判别式非零因子及有界挠条件，可能不适用于一般情况；需要阅读全文确认证明细节和例子。",
+        "why_relevant": "论文涉及完美化环和有限代数，属于代数几何中交换代数与算术几何的交叉，与研究方向中的scheme、sheaf、模空间等概念间接相关，但并非直接研究代数簇或模空间。"
       },
       "first_seen_at": "2026-06-11T06:58:33.319883+00:00",
-      "last_seen_at": "2026-06-11T09:06:18.672997+00:00",
+      "last_seen_at": "2026-06-11T09:26:27.279056+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -4299,7 +4299,7 @@
           "keyword_hits": [
             "finite field"
           ],
-          "llm_reason": "论文涉及有限域上的组合构造问题，与研究方向中的finite field关键词相关，但核心是组合数学而非算术几何，仅泛泛相关。"
+          "llm_reason": "论文涉及有限域上的组合问题，与研究方向中的finite field关键词匹配，且arXiv分类包含math.NT，与数论相关。但核心问题属于组合学，与算术几何的深层主题（如Galois表示、p-adic Hodge理论等）关联较弱。"
         },
         {
           "topic_id": "k_theory",
@@ -4353,7 +4353,7 @@
         "keyword_hits": [
           "finite field"
         ],
-        "llm_reason": "论文涉及有限域上的组合构造问题，与研究方向中的finite field关键词相关，但核心是组合数学而非算术几何，仅泛泛相关。"
+        "llm_reason": "论文涉及有限域上的组合问题，与研究方向中的finite field关键词匹配，且arXiv分类包含math.NT，与数论相关。但核心问题属于组合学，与算术几何的深层主题（如Galois表示、p-adic Hodge理论等）关联较弱。"
       },
       "top_labels": [
         {
@@ -4368,15 +4368,15 @@
         }
       ],
       "chinese_summary": {
-        "problem": "在有限域上构造不含非平凡解的线性方程集合，并证明通过直接乘积无法得到渐近最优下界。",
-        "method": "利用平移不变线性方程（genus one）的性质，通过提升维度构造集合B，使得其密度（|B|^{1/m}）大于原集合A的密度（|A|^{1/n}），从而否定直接乘积的渐近最优性。",
-        "innovation": "1. 首次证明对于任意不含非平凡解的genus one线性方程集合，存在更高维度的集合具有更大密度；2. 揭示了直接乘积构造在cap集问题中的局限性。",
-        "evidence": "摘要中给出了数学不等式|B|^{1/m}>|A|^{1/n}，并指出该结果意味着固定cap集不能通过直接乘积得到渐近最优下界。",
-        "limitations": "仅针对genus one的平移不变线性方程，未涉及更一般方程；结果是否适用于其他有限域或更高维情况需阅读全文确认。",
-        "why_relevant": "论文涉及有限域上的组合构造问题，与研究方向中的finite field关键词相关，但核心是组合数学而非算术几何，仅泛泛相关。"
+        "problem": "对于有限域上缺乏非平凡解的平移不变线性方程（属一），是否存在高维集合使得其密度大于低维集合的密度，从而否定通过直接乘积构造渐近最优下界的可能性。",
+        "method": "通过构造高维集合B，使得B也缺乏非平凡解，且|B|^{1/m} > |A|^{1/n}。具体利用属一方程的性质和组合构造，可能涉及线性代数或有限域上的几何方法。",
+        "innovation": "1. 证明了对于属一平移不变线性方程，存在高维集合具有更大的归一化大小，打破了直接乘积构造的密度上限。2. 特别地，表明固定cap set在F_3^n中无法通过直接乘积达到渐近最优下界。",
+        "evidence": "摘要中给出了存在性结论和不等式，但未提供具体构造或实验数据，证据为理论证明。",
+        "limitations": "仅针对属一方程，未涉及更一般的方程；未给出具体构造方法或数值示例；需要阅读全文验证证明的严谨性和适用范围。",
+        "why_relevant": "论文涉及有限域上的组合问题，与研究方向中的finite field关键词匹配，且arXiv分类包含math.NT，与数论相关。但核心问题属于组合学，与算术几何的深层主题（如Galois表示、p-adic Hodge理论等）关联较弱。"
       },
       "first_seen_at": "2026-06-11T07:03:32.811912+00:00",
-      "last_seen_at": "2026-06-11T09:06:18.672997+00:00",
+      "last_seen_at": "2026-06-11T09:26:27.279056+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -4487,15 +4487,15 @@
     "filtered_low_relevance_count": 0,
     "filtered_wrong_category_count": 59,
     "arxiv_category_filter": [
+      "math.CT",
       "math.KT",
-      "math.AT",
       "math.AG",
-      "math.NT",
-      "math.CT"
+      "math.AT",
+      "math.NT"
     ],
     "days": 1,
     "collection_mode": "lookback",
-    "collection_cutoff_iso": "2026-06-10T09:06:18.672997+00:00",
+    "collection_cutoff_iso": "2026-06-10T09:26:27.279056+00:00",
     "max_per_topic": 25,
     "max_new_papers": 50,
     "max_new_conference_papers": 50,
@@ -4543,11 +4543,11 @@
     "paper_count": 31,
     "new_paper_count": 9,
     "retained_paper_count": 22,
-    "retained_recent_low_count": 12,
+    "retained_recent_low_count": 10,
     "dropped_low_relevance_count": 0,
     "max_stored_papers": 200,
     "max_data_bytes": 8388608,
-    "data_bytes": 189440,
+    "data_bytes": 188718,
     "storage_trimmed_count": 0,
     "storage_trimmed_by_level": {
       "high": 0,
