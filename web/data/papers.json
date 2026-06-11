@@ -1,6 +1,6 @@
 {
-  "generated_at": "Thu, 11 Jun 2026 09:37:43 +0000",
-  "generated_at_iso": "2026-06-11T09:37:43.188805+00:00",
+  "generated_at": "Thu, 11 Jun 2026 10:00:38 +0000",
+  "generated_at_iso": "2026-06-11T10:00:38.849823+00:00",
   "config_source": "file",
   "data_kind": "daily",
   "topics": [
@@ -320,7 +320,6 @@
         "infinity category",
         "infinity groupoid",
         "presentable infinity category",
-        "space",
         "spectrum",
         "stable homotopy theory",
         "stable homotopy category",
@@ -479,7 +478,7 @@
             "algebraic cobordism",
             "hermitian K-theory"
           ],
-          "llm_reason": "论文研究代数配边谱MGL、MSL及其变体MML，直接涉及motivic同伦论中的motivic谱（如MGL、MSL）和Hermitian K-理论（KQ），与研究方向关键词高度匹配。此外，使用了切片谱序列、Milnor-Witt茎等motivic同伦论工具。"
+          "llm_reason": "论文研究代数配边谱MGL、MSL和MML，这些是motivic同伦论中的核心对象，特别是MGL是motivic配边谱，MSL是特殊线性配边谱，MML是金属线性配边谱。论文涉及Hermitian K-理论、Milnor-Witt茎、切片等概念，与我的研究方向中的motivic谱、代数配边、Hermitian K-理论、切片谱序列等关键词高度匹配。"
         },
         {
           "topic_id": "k_theory",
@@ -546,7 +545,7 @@
           "algebraic cobordism",
           "hermitian K-theory"
         ],
-        "llm_reason": "论文研究代数配边谱MGL、MSL及其变体MML，直接涉及motivic同伦论中的motivic谱（如MGL、MSL）和Hermitian K-理论（KQ），与研究方向关键词高度匹配。此外，使用了切片谱序列、Milnor-Witt茎等motivic同伦论工具。"
+        "llm_reason": "论文研究代数配边谱MGL、MSL和MML，这些是motivic同伦论中的核心对象，特别是MGL是motivic配边谱，MSL是特殊线性配边谱，MML是金属线性配边谱。论文涉及Hermitian K-理论、Milnor-Witt茎、切片等概念，与我的研究方向中的motivic谱、代数配边、Hermitian K-理论、切片谱序列等关键词高度匹配。"
       },
       "top_labels": [
         {
@@ -606,15 +605,15 @@
         }
       ],
       "chinese_summary": {
-        "problem": "研究金属线性代数配边谱MML（也称为MSL^c）的结构，该谱由定向向量丛的结构群构建，旨在理解其与MSL和MGL的关系，并计算其不变量。",
-        "method": "通过建立MSL到MML的典范态射并证明其有收缩，在MSL-模范畴中参数化所有收缩，固定一个后得到MML ≅ MSL ⊕ Σ^{2,1}MGL的等价。利用该分解，结合非常有效代数K-理论和Hermitian K-理论谱，以及Stong的复旋配边环，计算MML的Milnor-Witt茎和几何对角。还计算了切片，并描述了2-逆模的范畴。",
-        "innovation": "1. 首次建立MML与MSL及MGL之间的精确关系，给出MML作为MSL和MGL直和的分解。2. 确定了MML的Milnor-Witt茎（前几个）和几何对角，将后者与Stong的复旋配边环联系起来。3. 计算了MML的切片，并描述了其2-逆模的范畴结构。",
-        "evidence": "摘要中给出了理论结果：典范态射有收缩、等价分解、Milnor-Witt茎和几何对角的确定、切片计算。但未提供具体数值或实验验证，理论推导需阅读全文确认。",
-        "limitations": "结果依赖于指数特征可逆（即域特征非2？），且仅对域上成立。需要阅读全文验证分解的具体构造和收缩的唯一性。",
-        "why_relevant": "论文研究代数配边谱MGL、MSL及其变体MML，直接涉及motivic同伦论中的motivic谱（如MGL、MSL）和Hermitian K-理论（KQ），与研究方向关键词高度匹配。此外，使用了切片谱序列、Milnor-Witt茎等motivic同伦论工具。"
+        "problem": "研究金属线性代数配边谱MML（也称为MSL^c）的结构，特别是其与MSL和MGL的关系，以及其不变量和切片。",
+        "method": "通过建立MSL到MML的典范态射并证明其有收缩，在MSL-模范畴中参数化所有收缩，固定一个后得到MML同构于MSL与Σ^{2,1}MGL的直和。利用此分解，结合非常有效代数K-理论和Hermitian K-理论谱，确定MML的Milnor-Witt茎和几何对角，并计算切片以描述2-可逆模范畴。",
+        "innovation": "1. 首次建立MML与MSL和MGL之间的精确关系，给出MML的分解。2. 确定了MML的Milnor-Witt茎和几何对角，将后者联系到Stong的复旋配边环。3. 计算了MML的切片，并描述了其2-可逆模范畴。",
+        "evidence": "摘要中给出了理论结果：典范态射有收缩，等价关系，以及Milnor-Witt茎和几何对角的确定。但未提供具体计算细节或实验验证。",
+        "limitations": "结果在域上且需倒转指数特征；具体计算细节和证明需阅读全文；MML的几何对角与复旋配边环的联系可能依赖于特定构造。",
+        "why_relevant": "论文研究代数配边谱MGL、MSL和MML，这些是motivic同伦论中的核心对象，特别是MGL是motivic配边谱，MSL是特殊线性配边谱，MML是金属线性配边谱。论文涉及Hermitian K-理论、Milnor-Witt茎、切片等概念，与我的研究方向中的motivic谱、代数配边、Hermitian K-理论、切片谱序列等关键词高度匹配。"
       },
       "first_seen_at": "2026-06-11T04:42:44.276818+00:00",
-      "last_seen_at": "2026-06-11T09:37:43.188805+00:00",
+      "last_seen_at": "2026-06-11T10:00:38.849823+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -1197,14 +1196,14 @@
           "score": 0.654,
           "base_score": 0.537,
           "bridge_bonus": 0.117,
-          "level": "medium",
+          "level": "high",
           "reason": "关键词命中：Proj、vector bundle、Chern class；桥接信号「vector bundles」(K-theory ↔ AG / motivic)",
           "keyword_hits": [
             "Proj",
             "vector bundle",
             "Chern class"
           ],
-          "llm_reason": "论文核心使用了Schubert演算、行列式Schur类、向量丛、Chern类等代数几何工具，与研究方向中的intersection theory、Chern class、vector bundle、Schubert calculus高度相关。虽然应用于C*-代数，但方法本身是代数几何的，且涉及Proj（射影空间）上的向量丛。"
+          "llm_reason": "论文使用Schubert演算、行列式Schur类、向量丛和Chern类等代数几何工具，这些与我的研究方向（代数几何中的向量丛、Chern类、Schubert演算）高度相关；尽管应用领域是算子代数，但核心方法属于代数几何。"
         },
         {
           "topic_id": "k_theory",
@@ -1231,14 +1230,12 @@
         {
           "topic_id": "homotopy_theory",
           "topic_name": "Homotopy Theory",
-          "score": 0.231,
-          "base_score": 0.231,
+          "score": 0.139,
+          "base_score": 0.139,
           "bridge_bonus": 0.0,
           "level": "low",
-          "reason": "关键词命中：space",
-          "keyword_hits": [
-            "space"
-          ]
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
         },
         {
           "topic_id": "arithmetic_geometry",
@@ -1257,14 +1254,14 @@
         "score": 0.654,
         "base_score": 0.537,
         "bridge_bonus": 0.117,
-        "level": "medium",
+        "level": "high",
         "reason": "关键词命中：Proj、vector bundle、Chern class；桥接信号「vector bundles」(K-theory ↔ AG / motivic)",
         "keyword_hits": [
           "Proj",
           "vector bundle",
           "Chern class"
         ],
-        "llm_reason": "论文核心使用了Schubert演算、行列式Schur类、向量丛、Chern类等代数几何工具，与研究方向中的intersection theory、Chern class、vector bundle、Schubert calculus高度相关。虽然应用于C*-代数，但方法本身是代数几何的，且涉及Proj（射影空间）上的向量丛。"
+        "llm_reason": "论文使用Schubert演算、行列式Schur类、向量丛和Chern类等代数几何工具，这些与我的研究方向（代数几何中的向量丛、Chern类、Schubert演算）高度相关；尽管应用领域是算子代数，但核心方法属于代数几何。"
       },
       "top_labels": [
         {
@@ -1300,24 +1297,22 @@
         {
           "topic_id": "homotopy_theory",
           "topic_name": "Homotopy Theory",
-          "base_score": 0.231,
-          "score": 0.231,
+          "base_score": 0.139,
+          "score": 0.139,
           "level": "low",
-          "keyword_hits": [
-            "space"
-          ]
+          "keyword_hits": []
         }
       ],
       "chinese_summary": {
         "problem": "构造一个没有uniform property Γ的简单、可分、单的、核C*-代数，并揭示核C*-代数结构理论中与二次维数增长相关的新几何阈值。",
-        "method": "利用Thom-Porteous退化轨迹理论中的行列式Schur类，构造向量丛之间的映射，使其在底空间上处处消失，从而阻碍大平凡子丛的存在。通过二次Schubert演算证明该障碍在归纳系统中持续存在，并最终阻碍迹比较投影。",
-        "innovation": "1. 首次使用行列式Schur类（而非传统的Chern类）来构造障碍；2. 将Schubert演算应用于C*-代数结构理论，建立uniform property Γ缺失与二次维数增长之间的精确联系；3. 提出了核C*-代数结构理论中新的几何阈值。",
-        "evidence": "摘要中提供了理论构造和Schubert演算的计算，但未给出具体数值或实验验证，证据为理论推导。",
-        "limitations": "需要阅读全文确认Schubert演算的具体细节、归纳系统的构造以及uniform property Γ的准确定义；可能涉及较深的C*-代数与代数几何交叉知识。",
-        "why_relevant": "论文核心使用了Schubert演算、行列式Schur类、向量丛、Chern类等代数几何工具，与研究方向中的intersection theory、Chern class、vector bundle、Schubert calculus高度相关。虽然应用于C*-代数，但方法本身是代数几何的，且涉及Proj（射影空间）上的向量丛。"
+        "method": "利用Thom-Porteous退化轨迹理论中的行列式Schur类，迫使等秩向量丛之间的每个丛映射在底空间某处消失；通过二次Schubert演算证明该障碍在归纳系统中持续存在，最终阻碍迹在一致迹完备化中对投影的比较。",
+        "innovation": "首次使用行列式Schur类（而非传统的Villadsen Chern类）来构造病理核C*-代数；将uniform property Γ的缺失与二次维数增长联系起来，建立了新的几何阈值。",
+        "evidence": "摘要中未提供具体实验或数值证据，但给出了理论构造和Schubert演算的推理框架。",
+        "limitations": "需要阅读全文以确认Schubert演算的具体计算细节以及归纳系统的构造是否严格；可能依赖于特定的C*-代数框架，与代数几何的直接关联需进一步验证。",
+        "why_relevant": "论文使用Schubert演算、行列式Schur类、向量丛和Chern类等代数几何工具，这些与我的研究方向（代数几何中的向量丛、Chern类、Schubert演算）高度相关；尽管应用领域是算子代数，但核心方法属于代数几何。"
       },
       "first_seen_at": "2026-06-11T07:03:32.811912+00:00",
-      "last_seen_at": "2026-06-11T09:37:43.188805+00:00",
+      "last_seen_at": "2026-06-11T10:00:38.849823+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -1350,7 +1345,7 @@
             "moduli space",
             "descent"
           ],
-          "llm_reason": "论文研究模空间（moduli space）和下降（descent），与研究方向中的模空间、模函子、下降（fpqc descent等）直接相关。关键词命中：moduli space, descent。arXiv分类math.AG完全匹配。"
+          "llm_reason": "论文涉及模空间（moduli space）和下降（descent）理论，与研究方向中的moduli space、descent、fpqc descent等关键词直接相关，且arXiv分类为math.AG。"
         },
         {
           "topic_id": "arithmetic_geometry",
@@ -1375,14 +1370,12 @@
         {
           "topic_id": "homotopy_theory",
           "topic_name": "Homotopy Theory",
-          "score": 0.249,
-          "base_score": 0.162,
+          "score": 0.156,
+          "base_score": 0.069,
           "bridge_bonus": 0.087,
           "level": "low",
-          "reason": "关键词命中：space；桥接信号「descent」(cross-domain: descent)",
-          "keyword_hits": [
-            "space"
-          ]
+          "reason": "桥接信号「descent」(cross-domain: descent)",
+          "keyword_hits": []
         },
         {
           "topic_id": "k_theory",
@@ -1407,7 +1400,7 @@
           "moduli space",
           "descent"
         ],
-        "llm_reason": "论文研究模空间（moduli space）和下降（descent），与研究方向中的模空间、模函子、下降（fpqc descent等）直接相关。关键词命中：moduli space, descent。arXiv分类math.AG完全匹配。"
+        "llm_reason": "论文涉及模空间（moduli space）和下降（descent）理论，与研究方向中的moduli space、descent、fpqc descent等关键词直接相关，且arXiv分类为math.AG。"
       },
       "top_labels": [
         {
@@ -1436,28 +1429,18 @@
           "score": 0.264,
           "level": "low",
           "keyword_hits": []
-        },
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "base_score": 0.162,
-          "score": 0.249,
-          "level": "low",
-          "keyword_hits": [
-            "space"
-          ]
         }
       ],
       "chinese_summary": {
-        "problem": "研究超奇异阿贝尔簇模空间的极化旗型商的结构，特别是对旗的顶层给出精细正规型，并推导可计算的拟极化下降准则，以完成旗的第一和最后步骤的分类。",
-        "method": "建立极化旗型商的结构定理，通过精细正规型描述顶层，并利用下降准则处理拟极化。在维数g≤5时，计算极化旗型商，将截断态射的纤维描述为超奇异阿贝尔簇的分类对象。",
-        "innovation": "1. 给出了极化旗型顶层的精细正规型，这是对已有结构定理的细化。2. 推导了显式且可计算的拟极化下降准则，使得分类更具体。3. 在低维（g≤5）情形下完整计算了极化旗型商，提供了具体的分类结果。",
-        "evidence": "摘要中声称建立了结构定理、证明了精细正规型、推导了下降准则，并给出了g≤5的计算结果，但未提供具体证明或计算细节，需要阅读全文验证。",
-        "limitations": "结果仅针对g≤5，高维情形未涉及；下降准则的可计算性依赖于具体实现，摘要未给出算法复杂度或示例。",
-        "why_relevant": "论文研究模空间（moduli space）和下降（descent），与研究方向中的模空间、模函子、下降（fpqc descent等）直接相关。关键词命中：moduli space, descent。arXiv分类math.AG完全匹配。"
+        "problem": "研究超奇异阿贝尔簇模空间的极化旗型商的结构，特别是高维（g≤5）情况下这些旗的顶端和底端的分类。",
+        "method": "建立极化旗型商的结构定理，证明顶层的精细正规形，并推导出拟极化的显式可计算下降准则。",
+        "innovation": "1. 给出了极化旗型商顶端和底端的完全分类；2. 提供了拟极化的显式下降准则，使得计算成为可能；3. 在g≤5维数下具体计算了极化旗型商，描述了截断态射的纤维。",
+        "evidence": "摘要中声称建立了结构定理、证明了正规形和下降准则，并给出了g≤5的计算结果，但未提供具体证明或数值结果。",
+        "limitations": "结果仅针对g≤5，更高维数的情况未涉及；需要阅读全文验证下降准则的显式性和可计算性。",
+        "why_relevant": "论文涉及模空间（moduli space）和下降（descent）理论，与研究方向中的moduli space、descent、fpqc descent等关键词直接相关，且arXiv分类为math.AG。"
       },
       "first_seen_at": "2026-06-11T04:42:44.276818+00:00",
-      "last_seen_at": "2026-06-11T09:37:43.188805+00:00",
+      "last_seen_at": "2026-06-11T10:00:38.849823+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -3427,7 +3410,7 @@
           "keyword_hits": [
             "Chow motives"
           ],
-          "llm_reason": "论文涉及Chow动机（Chow motives）和动机范畴（motives），与研究方向中的Chow motives、motivic cohomology等关键词相关，但主要聚焦于代数几何中的三次四维簇，而非motivic homotopy theory的核心问题。"
+          "llm_reason": "论文涉及Chow动机（Chow motives）和超越动机（transcendental motives），这些是motivic homotopy theory中动机范畴的核心对象。具体地，Chow动机是DM(k)的子范畴，而超越动机是Chow动机的一部分。论文中使用的Fourier-Mukai等价和导出范畴技术与motivic homotopy theory中的六函子理论和派生范畴方法相关。此外，三次四维簇是代数几何中的重要例子，其动机性质与motivic homotopy theory中的Tate twist和motivic cohomology有关。"
         },
         {
           "topic_id": "k_theory",
@@ -3485,7 +3468,7 @@
         "keyword_hits": [
           "Chow motives"
         ],
-        "llm_reason": "论文涉及Chow动机（Chow motives）和动机范畴（motives），与研究方向中的Chow motives、motivic cohomology等关键词相关，但主要聚焦于代数几何中的三次四维簇，而非motivic homotopy theory的核心问题。"
+        "llm_reason": "论文涉及Chow动机（Chow motives）和超越动机（transcendental motives），这些是motivic homotopy theory中动机范畴的核心对象。具体地，Chow动机是DM(k)的子范畴，而超越动机是Chow动机的一部分。论文中使用的Fourier-Mukai等价和导出范畴技术与motivic homotopy theory中的六函子理论和派生范畴方法相关。此外，三次四维簇是代数几何中的重要例子，其动机性质与motivic homotopy theory中的Tate twist和motivic cohomology有关。"
       },
       "top_labels": [
         {
@@ -3528,143 +3511,15 @@
         }
       ],
       "chinese_summary": {
-        "problem": "研究光滑三次四维簇的Kuznetsov分量与超越动机之间的关系，特别是当两个三次四维簇是Fourier-Mukai伙伴时，其超越动机是否同构。",
-        "method": "利用Kuznetsov分量和Chow动机范畴，通过Fourier-Mukai等价性建立超越动机的同构，并考虑特殊三次四维簇族及其在Hassett除数中的对称自同构。",
-        "innovation": "给出了有理和猜想无理情形下超越动机同构的显式描述；证明了在可数多个Hassett除数中，具有3阶辛自同构的特殊三次四维簇存在另一个特殊三次四维簇，使得等变Kuznetsov分量等价且超越动机同构。",
-        "evidence": "摘要中未提供具体实验或系统证据，仅给出理论结果和构造。",
-        "limitations": "结果依赖于Fourier-Muai伙伴的存在性和特殊三次四维簇的构造；需要阅读全文确认同构的显式描述和证明细节。",
-        "why_relevant": "论文涉及Chow动机（Chow motives）和动机范畴（motives），与研究方向中的Chow motives、motivic cohomology等关键词相关，但主要聚焦于代数几何中的三次四维簇，而非motivic homotopy theory的核心问题。"
+        "problem": "研究光滑三次四维簇的Kuznetsov分量与超越动机之间的关系，特别是当两个三次四维簇是Fourier-Mukai伙伴时，其超越动机的同构性，以及对于具有特定自同构的特殊三次四维簇，其等变Kuznetsov分量与另一个三次四维簇的Kuznetsov分量等价时超越动机的同构性。",
+        "method": "利用Chow动机范畴和导出范畴中的Kuznetsov分量，通过Fourier-Mukai等价和等变导出范畴技术，建立超越动机之间的同构。具体地，对于Fourier-Mukai伙伴X和Y，证明其超越动机t(X)和t(Y)同构；对于具有3阶辛自同构的特殊三次四维簇，构造等变Kuznetsov分量与另一个三次四维簇的Kuznetsov分量的等价，并导出超越动机的同构。",
+        "innovation": "1. 将Fourier-Mukai伙伴的概念应用于三次四维簇，建立了Kuznetsov分量等价与超越动机同构之间的联系。2. 对于具有3阶辛自同构的特殊三次四维簇，给出了等变Kuznetsov分量与另一个三次四维簇的Kuznetsov分量等价的显式构造，并证明了超越动机的同构。3. 考虑了有理和猜想无理情形下超越动机同构的显式描述。",
+        "evidence": "摘要中未提供具体的实验或计算证据，仅给出了理论断言和构造。需要阅读全文以获取证明细节。",
+        "limitations": "结果依赖于Fourier-Mukai伙伴的存在性和特殊三次四维簇的Hassett除数分类，可能不适用于一般三次四维簇。此外，超越动机的同构仅在特定条件下证明，且需要假设某些猜想（如无理情形）。",
+        "why_relevant": "论文涉及Chow动机（Chow motives）和超越动机（transcendental motives），这些是motivic homotopy theory中动机范畴的核心对象。具体地，Chow动机是DM(k)的子范畴，而超越动机是Chow动机的一部分。论文中使用的Fourier-Mukai等价和导出范畴技术与motivic homotopy theory中的六函子理论和派生范畴方法相关。此外，三次四维簇是代数几何中的重要例子，其动机性质与motivic homotopy theory中的Tate twist和motivic cohomology有关。"
       },
       "first_seen_at": "2026-06-11T07:23:12.784218+00:00",
-      "last_seen_at": "2026-06-11T09:37:43.188805+00:00",
-      "retained_from_previous_run": false
-    },
-    {
-      "id": "2606.12283v1",
-      "source": "arXiv",
-      "title": "A non-trivial index difference on surfaces of genus at least $3$",
-      "authors": [
-        "Samuel Lockman"
-      ],
-      "summary": "For any closed surface of genus at least $3$, equipped with any bounding spin structure, we show that the index difference, viewed as a map from the fundamental group of the space of Dirac-invertible Riemannian metrics to $\\KO^{-4}(*)$, is non-trivial. For products of two such surfaces, equipped with any spin structure, we prove that the corresponding space of Dirac-invertible Riemannian metrics is not contractible. We discuss the relationship of this result to the existence of metrics with harmonic spinors in dimension $4$.",
-      "published": "2026-06-10T16:21:03Z",
-      "updated": "2026-06-10T16:21:03Z",
-      "paper_url": "http://arxiv.org/abs/2606.12283v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.12283v1",
-      "categories": [
-        "math.DG",
-        "math.KT"
-      ],
-      "seed_topic": "k_theory",
-      "matches": [
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "score": 0.383,
-          "base_score": 0.208,
-          "bridge_bonus": 0.175,
-          "level": "medium",
-          "reason": "关键词命中：space、KO；桥接信号「KO」(homotopy ↔ K-theory)",
-          "keyword_hits": [
-            "space",
-            "KO"
-          ],
-          "llm_reason": "论文涉及KO-理论（KO^{-4}(*)）和空间的基本群，与研究方向中的KO、空间、同伦群等关键词直接相关。指标差映射的非平凡性涉及同伦不变量，与同伦论中的分类问题相关。"
-        },
-        {
-          "topic_id": "k_theory",
-          "topic_name": "K-Theory",
-          "score": 0.318,
-          "base_score": 0.143,
-          "bridge_bonus": 0.175,
-          "level": "low",
-          "reason": "arXiv 分类重合：math.KT；桥接信号「KO」(homotopy ↔ K-theory)",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "score": 0.102,
-          "base_score": 0.102,
-          "bridge_bonus": 0.0,
-          "level": "low",
-          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "score": 0.057,
-          "base_score": 0.057,
-          "bridge_bonus": 0.0,
-          "level": "low",
-          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "motivic_homotopy_theory",
-          "topic_name": "Motivic Homotopy Theory",
-          "score": 0.041,
-          "base_score": 0.041,
-          "bridge_bonus": 0.0,
-          "level": "low",
-          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
-          "keyword_hits": []
-        }
-      ],
-      "best_match": {
-        "topic_id": "homotopy_theory",
-        "topic_name": "Homotopy Theory",
-        "score": 0.383,
-        "base_score": 0.208,
-        "bridge_bonus": 0.175,
-        "level": "medium",
-        "reason": "关键词命中：space、KO；桥接信号「KO」(homotopy ↔ K-theory)",
-        "keyword_hits": [
-          "space",
-          "KO"
-        ],
-        "llm_reason": "论文涉及KO-理论（KO^{-4}(*)）和空间的基本群，与研究方向中的KO、空间、同伦群等关键词直接相关。指标差映射的非平凡性涉及同伦不变量，与同伦论中的分类问题相关。"
-      },
-      "top_labels": [
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "base_score": 0.208,
-          "score": 0.383,
-          "level": "low",
-          "keyword_hits": [
-            "space",
-            "KO"
-          ]
-        },
-        {
-          "topic_id": "k_theory",
-          "topic_name": "K-Theory",
-          "base_score": 0.143,
-          "score": 0.318,
-          "level": "low",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "base_score": 0.102,
-          "score": 0.102,
-          "level": "low",
-          "keyword_hits": []
-        }
-      ],
-      "chinese_summary": {
-        "problem": "证明亏格至少为3的闭曲面上，Dirac可逆黎曼度量空间的基本群到KO^{-4}(*)的指标差映射非平凡，并证明两个此类曲面乘积的Dirac可逆黎曼度量空间非可缩。",
-        "method": "利用spin结构和Dirac算子，通过分析指标差在基本群上的诱导映射，结合KO-理论中的非平凡元素，证明映射非平凡。对于乘积曲面，通过构造非平凡环路或利用指标差映射的乘积性质证明非可缩性。",
-        "innovation": "首次在亏格≥3的曲面上证明指标差映射非平凡，并将结果推广到乘积曲面，揭示了高亏格曲面与4维流形中调和旋量存在性的联系。",
-        "evidence": "摘要中未提供具体计算或实验证据，仅陈述了结论。",
-        "limitations": "需要阅读全文确认证明细节，特别是如何构造非平凡环路以及KO-理论中非平凡元素的具体选取。",
-        "why_relevant": "论文涉及KO-理论（KO^{-4}(*)）和空间的基本群，与研究方向中的KO、空间、同伦群等关键词直接相关。指标差映射的非平凡性涉及同伦不变量，与同伦论中的分类问题相关。"
-      },
-      "first_seen_at": "2026-06-11T06:53:42.946382+00:00",
-      "last_seen_at": "2026-06-11T09:37:43.188805+00:00",
+      "last_seen_at": "2026-06-11T10:00:38.849823+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -3932,7 +3787,7 @@
           "keyword_hits": [
             "vector bundle"
           ],
-          "llm_reason": "论文涉及向量丛（vector bundle）和代数几何中的Hopf曲面（Hopf surface），与研究方向中的vector bundle、algebraic variety等关键词相关，但Hopf曲面属于复几何，与代数几何中的概形、模空间等核心主题关联较弱。"
+          "llm_reason": "论文涉及向量丛（vector bundle）和代数几何中的分类问题，与研究方向中的向量丛、模空间等关键词相关，但主题偏向Poisson几何和复几何，与代数几何核心问题（如模空间、层论）关联较弱。"
         },
         {
           "topic_id": "motivic_homotopy_theory",
@@ -3986,7 +3841,7 @@
         "keyword_hits": [
           "vector bundle"
         ],
-        "llm_reason": "论文涉及向量丛（vector bundle）和代数几何中的Hopf曲面（Hopf surface），与研究方向中的vector bundle、algebraic variety等关键词相关，但Hopf曲面属于复几何，与代数几何中的概形、模空间等核心主题关联较弱。"
+        "llm_reason": "论文涉及向量丛（vector bundle）和代数几何中的分类问题，与研究方向中的向量丛、模空间等关键词相关，但主题偏向Poisson几何和复几何，与代数几何核心问题（如模空间、层论）关联较弱。"
       },
       "top_labels": [
         {
@@ -4010,14 +3865,137 @@
       ],
       "chinese_summary": {
         "problem": "研究如何从Hopf曲面上的秩2 co-Higgs丛构造Poisson三维流形，并描述其辛叶。",
-        "method": "基于前期对Hopf曲面上秩2 co-Higgs丛的分类（根据底层向量丛的数据），通过分析这些丛的几何结构来构造Poisson三维流形，并描述其辛叶。",
-        "innovation": "将co-Higgs丛与Poisson几何联系起来，利用Hopf曲面上co-Higgs丛的分类结果构造具体的Poisson三维流形，并系统描述其辛叶结构。",
-        "evidence": "摘要未提供实验或理论验证细节，仅说明是前期工作的扩展，证据不足。",
-        "limitations": "需要阅读全文确认构造的具体步骤、辛叶描述的完整性以及是否与已有Poisson结构有对比。",
-        "why_relevant": "论文涉及向量丛（vector bundle）和代数几何中的Hopf曲面（Hopf surface），与研究方向中的vector bundle、algebraic variety等关键词相关，但Hopf曲面属于复几何，与代数几何中的概形、模空间等核心主题关联较弱。"
+        "method": "基于先前对Hopf曲面上秩2 co-Higgs丛的分类（依据底层向量丛的数据），通过分析这些丛的几何结构来构造Poisson三维流形，并描述其辛叶。",
+        "innovation": "将co-Higgs丛与Poisson几何联系起来，利用Hopf曲面上co-Higgs丛的分类结果构造具体的Poisson三维流形，并刻画其辛叶结构。",
+        "evidence": "摘要未提供具体实验或理论证据，仅说明是先前工作的扩展，证据不足。",
+        "limitations": "需要阅读全文确认构造的具体细节、辛叶的描述是否完整，以及是否适用于更一般的Hopf曲面或更高秩的丛。",
+        "why_relevant": "论文涉及向量丛（vector bundle）和代数几何中的分类问题，与研究方向中的向量丛、模空间等关键词相关，但主题偏向Poisson几何和复几何，与代数几何核心问题（如模空间、层论）关联较弱。"
       },
       "first_seen_at": "2026-06-11T05:41:51.895771+00:00",
-      "last_seen_at": "2026-06-11T09:37:43.188805+00:00",
+      "last_seen_at": "2026-06-11T10:00:38.849823+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "2606.12283v1",
+      "source": "arXiv",
+      "title": "A non-trivial index difference on surfaces of genus at least $3$",
+      "authors": [
+        "Samuel Lockman"
+      ],
+      "summary": "For any closed surface of genus at least $3$, equipped with any bounding spin structure, we show that the index difference, viewed as a map from the fundamental group of the space of Dirac-invertible Riemannian metrics to $\\KO^{-4}(*)$, is non-trivial. For products of two such surfaces, equipped with any spin structure, we prove that the corresponding space of Dirac-invertible Riemannian metrics is not contractible. We discuss the relationship of this result to the existence of metrics with harmonic spinors in dimension $4$.",
+      "published": "2026-06-10T16:21:03Z",
+      "updated": "2026-06-10T16:21:03Z",
+      "paper_url": "http://arxiv.org/abs/2606.12283v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.12283v1",
+      "categories": [
+        "math.DG",
+        "math.KT"
+      ],
+      "seed_topic": "k_theory",
+      "matches": [
+        {
+          "topic_id": "k_theory",
+          "topic_name": "K-Theory",
+          "score": 0.318,
+          "base_score": 0.143,
+          "bridge_bonus": 0.175,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.KT；桥接信号「KO」(homotopy ↔ K-theory)",
+          "keyword_hits": [],
+          "llm_reason": "论文涉及KO理论（KO^{-4}(*)），与拓扑K-理论相关；arXiv分类包含math.KT，且指标差映射与K-理论中的指标定理有联系。但具体内容偏向微分几何和指标理论，与代数K-理论的核心方向（如Quillen K-理论、THH等）关联较弱。"
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.291,
+          "base_score": 0.116,
+          "bridge_bonus": 0.175,
+          "level": "low",
+          "reason": "关键词命中：KO；桥接信号「KO」(homotopy ↔ K-theory)",
+          "keyword_hits": [
+            "KO"
+          ]
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.102,
+          "base_score": 0.102,
+          "bridge_bonus": 0.0,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.057,
+          "base_score": 0.057,
+          "bridge_bonus": 0.0,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "motivic_homotopy_theory",
+          "topic_name": "Motivic Homotopy Theory",
+          "score": 0.041,
+          "base_score": 0.041,
+          "bridge_bonus": 0.0,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "k_theory",
+        "topic_name": "K-Theory",
+        "score": 0.318,
+        "base_score": 0.143,
+        "bridge_bonus": 0.175,
+        "level": "low",
+        "reason": "arXiv 分类重合：math.KT；桥接信号「KO」(homotopy ↔ K-theory)",
+        "keyword_hits": [],
+        "llm_reason": "论文涉及KO理论（KO^{-4}(*)），与拓扑K-理论相关；arXiv分类包含math.KT，且指标差映射与K-理论中的指标定理有联系。但具体内容偏向微分几何和指标理论，与代数K-理论的核心方向（如Quillen K-理论、THH等）关联较弱。"
+      },
+      "top_labels": [
+        {
+          "topic_id": "k_theory",
+          "topic_name": "K-Theory",
+          "base_score": 0.143,
+          "score": 0.318,
+          "level": "low",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "base_score": 0.116,
+          "score": 0.291,
+          "level": "low",
+          "keyword_hits": [
+            "KO"
+          ]
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.102,
+          "score": 0.102,
+          "level": "low",
+          "keyword_hits": []
+        }
+      ],
+      "chinese_summary": {
+        "problem": "证明亏格至少为3的闭曲面上，对于任何边界自旋结构，Dirac可逆黎曼度量空间的基本群到KO^{-4}(*)的指标差映射是非平凡的。",
+        "method": "利用指标差映射从Dirac可逆黎曼度量空间的基本群到KO^{-4}(*)，通过分析自旋结构和曲面的拓扑性质，证明该映射非平凡。对于两个此类曲面的乘积，证明相应的Dirac可逆黎曼度量空间不是可缩的。",
+        "innovation": "首次证明亏格≥3的闭曲面上指标差映射非平凡，并推广到乘积曲面，揭示了高亏格曲面上的非平凡拓扑现象。",
+        "evidence": "摘要中明确给出了非平凡性证明和乘积曲面空间不可缩的结论，但未提供具体计算或实验细节。",
+        "limitations": "仅针对亏格≥3的闭曲面和边界自旋结构，未涉及其他亏格或自旋结构；需要阅读全文确认证明细节和假设。",
+        "why_relevant": "论文涉及KO理论（KO^{-4}(*)），与拓扑K-理论相关；arXiv分类包含math.KT，且指标差映射与K-理论中的指标定理有联系。但具体内容偏向微分几何和指标理论，与代数K-理论的核心方向（如Quillen K-理论、THH等）关联较弱。"
+      },
+      "first_seen_at": "2026-06-11T06:53:42.946382+00:00",
+      "last_seen_at": "2026-06-11T10:00:38.849823+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -4145,14 +4123,14 @@
       ],
       "chinese_summary": {
         "problem": "研究完美化环上有限代数的完美化的一般性质，并给出显式描述。",
-        "method": "通过判别式条件和有界挠性条件证明完美化后包含关系；利用密度准则将完美化归结为模p添加适当的p幂根；对Kummer型扩张和分裂有限代数等例子计算完美化。",
-        "innovation": "给出了完美化环上有限代数完美化的显式描述（如判别式非零因子时的包含关系）；提出了密度准则简化构造；通过具体例子展示计算方法。",
-        "evidence": "摘要中给出了定理陈述（如dA_pfd ⊂ A）和例子计算，但未提供实验或系统证据。",
-        "limitations": "结果依赖于判别式非零因子和有界挠性条件；例子仅限于特定类型（Kummer型、分裂代数），一般情况需阅读全文。",
+        "method": "通过判别式条件和有界挠性条件证明完美化后的代数包含原代数；利用密度准则将完美化归结为模p的p幂根添加；对Kummer型扩张和分裂有限代数等例子具体计算完美化。",
+        "innovation": "给出了完美化后代数包含原代数的显式判别条件（基于判别式非零因子和有界挠性），并建立了密度准则简化构造；通过具体例子展示了完美化的计算。",
+        "evidence": "摘要中给出了定理陈述（如dA_pfd ⊂ A）和例子计算，但未提供实验或系统验证。",
+        "limitations": "结果依赖于判别式非零因子和有界挠性条件，可能不适用于一般情形；需要阅读全文确认证明细节和适用范围。",
         "why_relevant": "论文涉及Perf（完美复形）关键词，与K-理论中完美复形范畴相关；但主要关注完美化环的代数性质，而非K-理论本身，相关性较弱。"
       },
       "first_seen_at": "2026-06-11T06:58:33.319883+00:00",
-      "last_seen_at": "2026-06-11T09:37:43.188805+00:00",
+      "last_seen_at": "2026-06-11T10:00:38.849823+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -4184,7 +4162,7 @@
           "level": "medium",
           "reason": "arXiv 分类重合：math.AG、math.NT",
           "keyword_hits": [],
-          "llm_reason": "论文涉及p进Hodge理论（关键词：p-adic Hodge theory, Fontaine theory, period rings），与研究方向中的p-adic Hodge theory直接相关。"
+          "llm_reason": "论文涉及p进Hodge理论（关键词：p-adic Hodge theory, Fontaine theory, period rings），与研究方向中的p进Hodge理论、Galois表示等高度相关。"
         },
         {
           "topic_id": "motivic_homotopy_theory",
@@ -4236,7 +4214,7 @@
         "level": "medium",
         "reason": "arXiv 分类重合：math.AG、math.NT",
         "keyword_hits": [],
-        "llm_reason": "论文涉及p进Hodge理论（关键词：p-adic Hodge theory, Fontaine theory, period rings），与研究方向中的p-adic Hodge theory直接相关。"
+        "llm_reason": "论文涉及p进Hodge理论（关键词：p-adic Hodge theory, Fontaine theory, period rings），与研究方向中的p进Hodge理论、Galois表示等高度相关。"
       },
       "top_labels": [
         {
@@ -4265,15 +4243,15 @@
         }
       ],
       "chinese_summary": {
-        "problem": "将扩展上半平面中的Farey三角形与p进Hodge理论中Colmez-Fontaine基本引理的变体联系起来。",
-        "method": "通过将每个Farey三角形对应到基本引理的一个变体，特别地，原始基本引理对应于基本Farey三角形(1/0,1/1,0/1)。",
-        "innovation": "建立了Farey三角形与p进Hodge理论基本引理之间的新联系，推广了Colmez-Fontaine的原始结果。",
-        "evidence": "摘要中仅给出了对应关系，没有提供实验或理论证据。",
-        "limitations": "摘要未提供证明细节或应用，需要阅读全文确认该联系的具体构造和有效性。",
-        "why_relevant": "论文涉及p进Hodge理论（关键词：p-adic Hodge theory, Fontaine theory, period rings），与研究方向中的p-adic Hodge theory直接相关。"
+        "problem": "将扩展上半平面中的任意Farey三角形与p进Hodge理论中Colmez-Fontaine基本引理的变体联系起来。",
+        "method": "通过将Farey三角形与p进Hodge理论中的基本引理建立对应关系，特别地，原始基本引理对应于基本Farey三角形(1/0,1/1,0/1)。",
+        "innovation": "将Farey三角形与p进Hodge理论的基本引理建立联系，推广了Colmez-Fontaine的原始结果，为模形式与p进Hodge理论的交叉提供了新视角。",
+        "evidence": "摘要中仅给出理论对应关系，未提供具体实验或系统证据。",
+        "limitations": "摘要未提供具体证明细节或应用实例，需要阅读全文确认该变体的具体构造和有效性。",
+        "why_relevant": "论文涉及p进Hodge理论（关键词：p-adic Hodge theory, Fontaine theory, period rings），与研究方向中的p进Hodge理论、Galois表示等高度相关。"
       },
       "first_seen_at": "2026-06-11T05:21:54.714863+00:00",
-      "last_seen_at": "2026-06-11T09:37:43.188805+00:00",
+      "last_seen_at": "2026-06-11T10:00:38.849823+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -4306,7 +4284,7 @@
           "keyword_hits": [
             "finite field"
           ],
-          "llm_reason": "论文涉及有限域（finite field），属于算术几何中数域和局部域的基础对象；arXiv分类包含math.NT，与数论相关。但核心问题是组合学中的cap set和线性方程，与算术几何的主要研究方向（如Galois表示、p-adic Hodge理论、L-函数等）关联较弱。"
+          "llm_reason": "论文涉及有限域上的组合构造，与研究方向中的finite field关键词匹配，且arXiv分类包含math.NT，与数论相关。但核心问题（线性方程的解集）与算术几何中的具体对象（如Galois表示、p-adic Hodge理论）关联较弱。"
         },
         {
           "topic_id": "k_theory",
@@ -4360,7 +4338,7 @@
         "keyword_hits": [
           "finite field"
         ],
-        "llm_reason": "论文涉及有限域（finite field），属于算术几何中数域和局部域的基础对象；arXiv分类包含math.NT，与数论相关。但核心问题是组合学中的cap set和线性方程，与算术几何的主要研究方向（如Galois表示、p-adic Hodge理论、L-函数等）关联较弱。"
+        "llm_reason": "论文涉及有限域上的组合构造，与研究方向中的finite field关键词匹配，且arXiv分类包含math.NT，与数论相关。但核心问题（线性方程的解集）与算术几何中的具体对象（如Galois表示、p-adic Hodge理论）关联较弱。"
       },
       "top_labels": [
         {
@@ -4375,15 +4353,15 @@
         }
       ],
       "chinese_summary": {
-        "problem": "对于有限域上的平移不变线性方程，寻找比直接乘积构造更好的集合，以打破已知下界的渐近最优性。",
-        "method": "通过构造高维集合B，使得其密度（|B|^{1/m}）大于低维集合A的密度（|A|^{1/n}），且B同样不含非平凡解。该构造基于对系数子集和为零的排除条件（genus one）。",
-        "innovation": "1. 证明了对于任何不含非平凡解的genus one线性方程的低维集合A，存在更高维的集合B具有更大的密度，从而直接乘积构造无法达到渐近最优下界。2. 特别地，该结果否定了固定cap set通过直接乘积达到渐近最优下界的可能性。",
-        "evidence": "摘要中给出了数学定理陈述，但未提供实验或系统证据。",
-        "limitations": "结果仅针对genus one的平移不变线性方程，且未给出具体构造或数值例子；需要阅读全文验证证明细节。",
-        "why_relevant": "论文涉及有限域（finite field），属于算术几何中数域和局部域的基础对象；arXiv分类包含math.NT，与数论相关。但核心问题是组合学中的cap set和线性方程，与算术几何的主要研究方向（如Galois表示、p-adic Hodge理论、L-函数等）关联较弱。"
+        "problem": "对于有限域上的平移不变线性方程，寻找比直接乘积构造更好的集合，以打破已知下界。",
+        "method": "通过构造高维集合B，使得其密度（|B|^{1/m}）超过低维集合A的密度（|A|^{1/n}），从而证明直接乘积无法达到渐近最优下界。",
+        "innovation": "1. 证明了对于任意缺乏非平凡解的平移不变线性方程（属一），存在更高维的集合具有更大的密度。2. 特别地，表明固定帽集在F_3^n中通过直接乘积无法给出渐近最优下界。",
+        "evidence": "摘要中给出了不等式|B|^{1/m}>|A|^{1/n}，但未提供具体构造或实验数据，证据不足。",
+        "limitations": "仅针对属一的平移不变线性方程，且未给出具体构造方法或数值例子，需要阅读全文确认构造细节和适用范围。",
+        "why_relevant": "论文涉及有限域上的组合构造，与研究方向中的finite field关键词匹配，且arXiv分类包含math.NT，与数论相关。但核心问题（线性方程的解集）与算术几何中的具体对象（如Galois表示、p-adic Hodge理论）关联较弱。"
       },
       "first_seen_at": "2026-06-11T07:03:32.811912+00:00",
-      "last_seen_at": "2026-06-11T09:37:43.188805+00:00",
+      "last_seen_at": "2026-06-11T10:00:38.849823+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -4495,14 +4473,14 @@
     "filtered_wrong_category_count": 59,
     "arxiv_category_filter": [
       "math.AG",
-      "math.KT",
+      "math.NT",
       "math.AT",
       "math.CT",
-      "math.NT"
+      "math.KT"
     ],
     "days": 1,
     "collection_mode": "lookback",
-    "collection_cutoff_iso": "2026-06-10T09:37:43.188805+00:00",
+    "collection_cutoff_iso": "2026-06-10T10:00:38.849823+00:00",
     "max_per_topic": 25,
     "max_new_papers": 50,
     "max_new_conference_papers": 50,
@@ -4554,7 +4532,7 @@
     "dropped_low_relevance_count": 0,
     "max_stored_papers": 200,
     "max_data_bytes": 8388608,
-    "data_bytes": 189254,
+    "data_bytes": 189921,
     "storage_trimmed_count": 0,
     "storage_trimmed_by_level": {
       "high": 0,
