@@ -1,6 +1,6 @@
 {
-  "generated_at": "Thu, 11 Jun 2026 15:35:30 +0000",
-  "generated_at_iso": "2026-06-11T15:35:30.397677+00:00",
+  "generated_at": "Thu, 11 Jun 2026 15:42:00 +0000",
+  "generated_at_iso": "2026-06-11T15:42:00.501161+00:00",
   "config_source": "file",
   "data_kind": "daily",
   "topics": [
@@ -782,7 +782,7 @@
             "Spec",
             "vector bundle"
           ],
-          "llm_reason": "论文直接使用代数几何核心概念（scheme, vector bundle, normal bundle, Weil restriction）和动机同伦论，与研究方向的关键词如scheme, vector bundle, algebraic geometry高度匹配，且属于代数几何前沿。"
+          "llm_reason": "论文直接涉及代数几何核心对象（方案、向量丛、法丛），并与用户的代数几何研究方向（schemes, vector bundles）高度匹配；同时，外尔限制和动机Thom空间的概念与模空间、导出代数几何等方向有潜在联系。"
         },
         {
           "topic_id": "motivic_k_theory",
@@ -834,7 +834,7 @@
           "Spec",
           "vector bundle"
         ],
-        "llm_reason": "论文直接使用代数几何核心概念（scheme, vector bundle, normal bundle, Weil restriction）和动机同伦论，与研究方向的关键词如scheme, vector bundle, algebraic geometry高度匹配，且属于代数几何前沿。"
+        "llm_reason": "论文直接涉及代数几何核心对象（方案、向量丛、法丛），并与用户的代数几何研究方向（schemes, vector bundles）高度匹配；同时，外尔限制和动机Thom空间的概念与模空间、导出代数几何等方向有潜在联系。"
       },
       "top_labels": [
         {
@@ -882,15 +882,15 @@
       ],
       "backfilled_from_recent_arxiv": true,
       "chinese_summary": {
-        "problem": "研究Weil restriction在动机同伦论中的几何方面，特别是其与norm functors和motivic Thom spaces的关系。",
-        "method": "通过Weil restriction of schemes，证明它保持向量丛；扩展已有关于正规丛的结果；再结合Bachmann和Hoyois的结论，建立Weil restriction与motivic Thom spaces的兼容性；最后在有理系数动机上同调中证明Weil restriction与norm functor诱导的norm map一致，并保持Thom类。",
-        "innovation": "1. 证明Weil restriction保持向量丛并推广正规丛的结果；2. 首次将Weil restriction与norm functors联系起来，并证明其与motivic Thom spaces兼容；3. 在有理系数动机上同调中证明Weil restriction与norm map一致且保持Thom类。",
-        "evidence": "摘要中声称证明了若干个命题和兼容性，但未提供具体实验或理论验证细节；需要阅读全文确认证明的完整性和严格性。",
-        "limitations": "依赖Bachmann和Hoyois的深层结果，可能只适用于特定的动机范畴或系数；实际应用范围需全文确认。",
-        "why_relevant": "论文直接使用代数几何核心概念（scheme, vector bundle, normal bundle, Weil restriction）和动机同伦论，与研究方向的关键词如scheme, vector bundle, algebraic geometry高度匹配，且属于代数几何前沿。"
+        "problem": "研究范函子（norm functors）的几何方面，特别是通过方案的外尔限制（Weil restriction）来揭示其与向量丛、法丛以及动机Thom空间的关系。",
+        "method": "利用外尔限制保持向量丛的性质，扩展关于法丛的已知结果；将外尔限制与范函子联系起来，并借助Bachmann和Hoyois的结果证明其与动机Thom空间的兼容性；最后在有理系数动机上同调中证明外尔限制映射与范函子诱导的范映射一致且保持Thom类。",
+        "innovation": "1. 证明了外尔限制保持向量丛，并推广了法丛的相关结果；2. 建立了外尔限制与范函子之间的直接联系，并证明其与动机Thom空间的兼容性；3. 在动机上同调中证明了外尔限制映射与范映射的等价性以及Thom类的保持性。",
+        "evidence": "摘要中仅给出了理论证明的断言，未提供具体的实验或系统证据；需要阅读全文验证定理的证明细节。",
+        "limitations": "可能需要确认文中关于外尔限制保持向量丛的具体条件，以及定理证明中对基变换、光滑性等假设的依赖；另外，动机同伦论背景知识可能对理解有影响。",
+        "why_relevant": "论文直接涉及代数几何核心对象（方案、向量丛、法丛），并与用户的代数几何研究方向（schemes, vector bundles）高度匹配；同时，外尔限制和动机Thom空间的概念与模空间、导出代数几何等方向有潜在联系。"
       },
       "first_seen_at": "2026-06-11T10:10:04.063496+00:00",
-      "last_seen_at": "2026-06-11T15:35:30.397677+00:00",
+      "last_seen_at": "2026-06-11T15:42:00.501161+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -1332,7 +1332,7 @@
             "homotopy colimit",
             "spectral sequence"
           ],
-          "llm_reason": "论文核心概念包括fibration, cofibration, homotopy colimit, spectral sequence，直接匹配您研究方向中的'fibration'、'cofibration'、'homotopy colimit'、'spectral sequence'等关键词。此外，arXiv分类为math.AT（代数拓扑），与您的稳定同伦论等方向高度相关。论文构造的层次化同伦理论为理解不同精度的同伦等价提供了新框架。"
+          "llm_reason": "论文直接使用了同伦理论中的核心概念：fibration、cofibration、homotopy colimit、spectral sequence，这些正是你研究方向的关键词；同时 arXiv 分类 math.AT（代数拓扑）与你高度相关。尽管该工作处理的是度量空间而非经典拓扑空间或谱，但其范畴结构（Brown 范畴）与模型范畴、无穷范畴有潜在联系。"
         },
         {
           "topic_id": "motivic_k_theory",
@@ -1381,7 +1381,7 @@
           "homotopy colimit",
           "spectral sequence"
         ],
-        "llm_reason": "论文核心概念包括fibration, cofibration, homotopy colimit, spectral sequence，直接匹配您研究方向中的'fibration'、'cofibration'、'homotopy colimit'、'spectral sequence'等关键词。此外，arXiv分类为math.AT（代数拓扑），与您的稳定同伦论等方向高度相关。论文构造的层次化同伦理论为理解不同精度的同伦等价提供了新框架。"
+        "llm_reason": "论文直接使用了同伦理论中的核心概念：fibration、cofibration、homotopy colimit、spectral sequence，这些正是你研究方向的关键词；同时 arXiv 分类 math.AT（代数拓扑）与你高度相关。尽管该工作处理的是度量空间而非经典拓扑空间或谱，但其范畴结构（Brown 范畴）与模型范畴、无穷范畴有潜在联系。"
       },
       "top_labels": [
         {
@@ -1410,15 +1410,15 @@
       ],
       "backfilled_from_recent_arxiv": true,
       "chinese_summary": {
-        "problem": "针对带有自然数距离的广义度量空间，如何建立一套层次化的同伦理论，并通过幅度-路径谱序列的页面来区分不同的同伦等价概念。",
-        "method": "利用幅度-路径谱序列（MPSS），对每个自然数r定义r-拟同构（诱导谱序列第r页拟同构的映射），并引入r-纤维化等概念，使得谱序列每一页满足Eilenberg-Steenrod公理的度量类比；通过Brown范畴结构显式计算同伦余极限，并应用于r-球面和r-悬垂。",
-        "innovation": "1. 首次将幅度-路径谱序列的不同页面作为同伦理论的层次分类工具，定义了r-拟同构并建立了相应的同伦理论族。2. 证明了谱序列的每一页满足Eilenberg-Steenrod公理的度量类比，并引入了r-纤维化和Mayer-Vietoris定理。3. 建立了Brown范畴结构以显式计算同伦余极限，并展示了r-球面和r-悬垂的谱序列计算。",
-        "evidence": "摘要中给出了理论构建和形式化结果：定义了r-拟同构、r-纤维化，证明了Mayer-Vietoris定理，建立了Brown范畴结构，并给出了r-球面和r-悬垂的谱序列计算示例。未提供实验数据，理论证据充分。",
-        "limitations": "该理论限制于带有自然数距离的度量空间，且r=1时退化为有向图；与经典拓扑空间或单纯集上的同伦论的关系需进一步阅读确认；实际应用场景和计算可行性需更详细评估。",
-        "why_relevant": "论文核心概念包括fibration, cofibration, homotopy colimit, spectral sequence，直接匹配您研究方向中的'fibration'、'cofibration'、'homotopy colimit'、'spectral sequence'等关键词。此外，arXiv分类为math.AT（代数拓扑），与您的稳定同伦论等方向高度相关。论文构造的层次化同伦理论为理解不同精度的同伦等价提供了新框架。"
+        "problem": "为带有自然数距离的广义度量空间构建一种层次化的同伦理论，利用幅度-路径谱序列的定义来引导等价关系和同伦构造。",
+        "method": "引入幅度-路径谱序列（MPSS），针对每一页 r 定义 r-拟同构（诱导谱序列该页拟同构的映射）和 r-余纤维化，证明谱序列每页满足度量化的 Eilenberg-Steenrod 公理，并建立 Brown 范畴结构以显式计算同伦余极限，最后应用于 r-球面等例子。",
+        "innovation": "1. 首次将同伦理论推广到带有自然数距离的广义度量空间，通过谱序列分页给出层次化的等价概念（r-拟同构）。\n2. 建立了度量空间上的 Brown 范畴结构，从而能用范畴论工具处理同伦余极限。\n3. 将理论与图论连接：当 r=1 时，理论限制为有向图的经典同伦论。",
+        "evidence": "摘要中给出了定义、Eilenberg-Steenrod 公理的类比、Mayer-Vietoris 定理的证明框架，并显式计算了 r-球面的谱序列。但未涉及实验数据或大型系统验证。",
+        "limitations": "该理论针对带有自然数距离的度量空间，推广到一般度量空间尚未提及；r-余纤维化等概念的技术细节需要阅读全文确认；与经典稳定同伦理论的直接联系（如谱）未在摘要中体现。",
+        "why_relevant": "论文直接使用了同伦理论中的核心概念：fibration、cofibration、homotopy colimit、spectral sequence，这些正是你研究方向的关键词；同时 arXiv 分类 math.AT（代数拓扑）与你高度相关。尽管该工作处理的是度量空间而非经典拓扑空间或谱，但其范畴结构（Brown 范畴）与模型范畴、无穷范畴有潜在联系。"
       },
       "first_seen_at": "2026-06-11T04:42:44.276818+00:00",
-      "last_seen_at": "2026-06-11T15:35:30.397677+00:00",
+      "last_seen_at": "2026-06-11T15:42:00.501161+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -1719,7 +1719,7 @@
             "moduli space",
             "descent"
           ],
-          "llm_reason": "直接涉及代数几何中的模空间理论（moduli space of abelian varieties）与下降技术（descent），与研究方向关键词高度匹配；论文中出现的‘moduli space’、‘descent’、‘flag type quotients’均为方向核心概念，且分类math.AG重合。"
+          "llm_reason": "论文研究超奇异阿贝尔簇的模空间，直接涉及模空间理论（moduli space）和下降（descent）概念，与研究方向中的moduli space、moduli functor、descent、algebraic stack等关键词高度相关，且arXiv分类为math.AG。"
         },
         {
           "topic_id": "arithmetic_geometry",
@@ -1764,7 +1764,7 @@
           "moduli space",
           "descent"
         ],
-        "llm_reason": "直接涉及代数几何中的模空间理论（moduli space of abelian varieties）与下降技术（descent），与研究方向关键词高度匹配；论文中出现的‘moduli space’、‘descent’、‘flag type quotients’均为方向核心概念，且分类math.AG重合。"
+        "llm_reason": "论文研究超奇异阿贝尔簇的模空间，直接涉及模空间理论（moduli space）和下降（descent）概念，与研究方向中的moduli space、moduli functor、descent、algebraic stack等关键词高度相关，且arXiv分类为math.AG。"
       },
       "top_labels": [
         {
@@ -1788,15 +1788,15 @@
         }
       ],
       "chinese_summary": {
-        "problem": "解决超奇异阿贝尔簇模空间中极化旗型商的结构与分类问题，特别针对维度g≤5的情况。",
-        "method": "建立极化旗型商的结构定理，证明顶层旗的精细正规形式；导出准极化的显式可计算下降判别准则；利用这些结果分类旗的第一步和最后一步，并计算g≤5时的极化旗型商，将截断态射的纤维解释为超奇异阿贝尔簇的分类对象。",
-        "innovation": "1. 给出极化旗型商中顶层旗的精细正规形式，为后续计算提供基础；2. 导出准极化的显式可计算下降准则，简化模空间分类；3. 完成g≤5时极化旗型商的完整分类，描述截断态射纤维的具体结构。",
-        "evidence": "摘要声称证明了正规形式并导出了下降准则，且对g≤5完成了分类并描述了纤维，但未提供具体结果或计算细节，需阅读全文验证。",
-        "limitations": "仅适用于超奇异阿贝尔簇，维度限于g≤5；准极化下降判别准则的适用范围可能需要进一步验证；分类结果的显式性和计算复杂度依赖全文。",
-        "why_relevant": "直接涉及代数几何中的模空间理论（moduli space of abelian varieties）与下降技术（descent），与研究方向关键词高度匹配；论文中出现的‘moduli space’、‘descent’、‘flag type quotients’均为方向核心概念，且分类math.AG重合。"
+        "problem": "建立超奇异阿贝尔簇的模空间中极化旗型商的结构定理，以分类这些簇并计算低维情形下的显式描述。",
+        "method": "通过分析旗型商顶层结构的精细规范形式，推导拟极化的显式可计算下降准则；利用这些结果对旗型商的第一步和最后一步进行完整分类，并计算维度g≤5的极化旗型商，描述截断态射的纤维。",
+        "innovation": "1. 证明了旗型商顶层的精细规范形式；2. 给出了拟极化的显式可计算下降准则；3. 对旗型商的第一步和最后一步提供了完整分类，并具体计算了g≤5的极化旗型商。",
+        "evidence": "摘要中明确提到计算了维度g≤5的极化旗型商，并描述了截断态射的纤维，但未提供详细数值或图表证据。",
+        "limitations": "仅覆盖维度g≤5，高维情形未涉及；需要阅读全文确认下降准则的显式表达式和分类的完备性。",
+        "why_relevant": "论文研究超奇异阿贝尔簇的模空间，直接涉及模空间理论（moduli space）和下降（descent）概念，与研究方向中的moduli space、moduli functor、descent、algebraic stack等关键词高度相关，且arXiv分类为math.AG。"
       },
       "first_seen_at": "2026-06-11T04:42:44.276818+00:00",
-      "last_seen_at": "2026-06-11T15:35:30.397677+00:00",
+      "last_seen_at": "2026-06-11T15:42:00.501161+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -1828,7 +1828,7 @@
             "homotopy theory",
             "stable homotopy theory"
           ],
-          "llm_reason": "论文直接涉及稳定同伦论（stable homotopy theory）中的核心概念：谱（spectra）、望远镜猜想（Telescope Conjecture）、循环谱（cyclotomic spectra）和循环扩张（cyclotomic extensions）。这些与我的研究方向中同伦论、稳定同伦、谱、Bousfield局部化等关键词高度匹配。特别是望远镜猜想是稳定同伦论中的重要未解决问题，该论文对其解决进行了阐释，对理解领域前沿有直接帮助。"
+          "llm_reason": "论文直接研究 stable homotopy theory 中的 cyclotomic extensions，与研究方向中的稳定同伦、谱、Galois 下界等关键词密切相关，且涉及望远镜猜想这一重要问题。"
         },
         {
           "topic_id": "arithmetic_geometry",
@@ -1879,7 +1879,7 @@
           "homotopy theory",
           "stable homotopy theory"
         ],
-        "llm_reason": "论文直接涉及稳定同伦论（stable homotopy theory）中的核心概念：谱（spectra）、望远镜猜想（Telescope Conjecture）、循环谱（cyclotomic spectra）和循环扩张（cyclotomic extensions）。这些与我的研究方向中同伦论、稳定同伦、谱、Bousfield局部化等关键词高度匹配。特别是望远镜猜想是稳定同伦论中的重要未解决问题，该论文对其解决进行了阐释，对理解领域前沿有直接帮助。"
+        "llm_reason": "论文直接研究 stable homotopy theory 中的 cyclotomic extensions，与研究方向中的稳定同伦、谱、Galois 下界等关键词密切相关，且涉及望远镜猜想这一重要问题。"
       },
       "top_labels": [
         {
@@ -1926,15 +1926,15 @@
       ],
       "backfilled_from_recent_arxiv": true,
       "chinese_summary": {
-        "problem": "阐明Burklund、Hahn、Levy和Schlank最近解决望远镜猜想（Telescope Conjecture）的证明中涉及的关键概念——谱的循环扩张（cyclotomic extensions）和循环谱（cyclotomic spectra）。",
-        "method": "本文是解释性论文，与另一篇关于循环谱的论文互为补充。核心方法是通过类比p-进数域的Galois扩张，引入交换环谱的高阶循环扩张，并系统阐述这些扩张在望远镜猜想证明中的作用。文章主要依赖于已有的谱论和同伦论框架，并未提出新的技术组件。",
-        "innovation": "这篇论文的主要贡献在于以自包含的方式解释了循环扩张这一相对较新的概念，并将其与经典代数数论中的Galois理论相关联，从而为稳定同伦论学者提供了理解望远镜猜想证明的桥梁。然而，本文属于综述/解释性质，并非原始研究，因此不包含全新的理论或方法。",
-        "evidence": "摘要中明确指出这是解释性论文（expository paper），没有提供新的实验、理论或系统证据。证据不足，需要阅读全文以确认其阐述的准确性和完整性。",
-        "limitations": "作为解释性论文，可能没有提供完整的证明细节，而是概述和直观解释。读者可能需要参考原始文献（如BHLS的论文）才能完全理解。此外，对循环扩张的类比可能不够精确，需要谨慎对待。",
-        "why_relevant": "论文直接涉及稳定同伦论（stable homotopy theory）中的核心概念：谱（spectra）、望远镜猜想（Telescope Conjecture）、循环谱（cyclotomic spectra）和循环扩张（cyclotomic extensions）。这些与我的研究方向中同伦论、稳定同伦、谱、Bousfield局部化等关键词高度匹配。特别是望远镜猜想是稳定同伦论中的重要未解决问题，该论文对其解决进行了阐释，对理解领域前沿有直接帮助。"
+        "problem": "解释 recent resolution of the telescope conjecture 中使用的 cyclotomic extensions of spectra 的概念和性质。",
+        "method": "该论文是综述性文章，通过类比 p-adic 数域的 Galois 扩张来介绍高阶环谱的 cyclotomic extensions，并配合另一篇关于 cyclotomic spectra 的论文共同阐明望远镜猜想的证明框架。",
+        "innovation": "1. 将 cyclotomic extensions 概念系统引入稳定同伦论，类比数论中的 Galois 扩张；2. 为望远镜猜想的证明提供背景和语言支持；3. 是解说性论文，整合了相关领域的最新进展。",
+        "evidence": "证据不足；摘要仅声明是解说性论文，未给出具体定理或实验验证。",
+        "limitations": "这是解说性论文，可能缺乏原始技术细节；需要阅读原文及配套论文才能理解完整的证明。",
+        "why_relevant": "论文直接研究 stable homotopy theory 中的 cyclotomic extensions，与研究方向中的稳定同伦、谱、Galois 下界等关键词密切相关，且涉及望远镜猜想这一重要问题。"
       },
       "first_seen_at": "2026-06-11T05:21:54.714863+00:00",
-      "last_seen_at": "2026-06-11T15:35:30.397677+00:00",
+      "last_seen_at": "2026-06-11T15:42:00.501161+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -1969,7 +1969,7 @@
             "L-function",
             "zeta function"
           ],
-          "llm_reason": "论文涉及local field、finite field、L-function、zeta function等关键词与研究方向高度重合；正特征zeta函数与经典zeta函数类比，与算术几何中L-函数理论有概念联系；方法用到Drinfeld模、shtuka等算术几何工具。"
+          "llm_reason": "论文正特征局部域上的zeta函数、相对zeta函数（与Dedekind zeta类比）、L函数等概念与研究方向中局部域、有限域、L函数、zeta函数等关键词高度匹配，且使用shtuka、Anderson motive等工具与算术几何中p-adic Hodge理论、Frobenius等有潜在联系。"
         },
         {
           "topic_id": "algebraic_geometry",
@@ -2018,7 +2018,7 @@
           "L-function",
           "zeta function"
         ],
-        "llm_reason": "论文涉及local field、finite field、L-function、zeta function等关键词与研究方向高度重合；正特征zeta函数与经典zeta函数类比，与算术几何中L-函数理论有概念联系；方法用到Drinfeld模、shtuka等算术几何工具。"
+        "llm_reason": "论文正特征局部域上的zeta函数、相对zeta函数（与Dedekind zeta类比）、L函数等概念与研究方向中局部域、有限域、L函数、zeta函数等关键词高度匹配，且使用shtuka、Anderson motive等工具与算术几何中p-adic Hodge理论、Frobenius等有潜在联系。"
       },
       "top_labels": [
         {
@@ -2047,15 +2047,15 @@
       ],
       "backfilled_from_recent_arxiv": true,
       "chinese_summary": {
-        "problem": "综述正特征局部域上的zeta函数构造理论，比较Goss经典理论与基于有限域上曲线的新方法，并展示Ferraro关于整函数性质的结果。",
-        "method": "回顾Goss理论（Carlitz zeta值、形式级数），引入shtuka因子、Drinfeld模、Anderson motive等工具，通过Ferraro有理性和Anglès等人公式证明相对zeta函数的整性。",
-        "innovation": "系统比较两种zeta函数构造（Goss类型与曲线基类型），引入Ferraro有理性和整函数性质证明，并给出相对zeta函数在特殊点Ξ处的消去阶数值猜想。",
-        "evidence": "摘要提及Ferraro有理性和Anglès等人公式用于证明整性，以及附录中基于这些公式的推导和数值验证。",
-        "limitations": "主要综述性质，原创性结果集中在附录；新方法只对特殊情形给出完整证明；具体计算细节和常数需要阅读全文。",
-        "why_relevant": "论文涉及local field、finite field、L-function、zeta function等关键词与研究方向高度重合；正特征zeta函数与经典zeta函数类比，与算术几何中L-函数理论有概念联系；方法用到Drinfeld模、shtuka等算术几何工具。"
+        "problem": "综述David Goss自1979年发展的正特征局部域上的zeta函数理论，并比较另一种基于有限域上曲线、标量扩张到完备代数闭正特征域的zeta与L函数构造方法。",
+        "method": "通过介绍shtuka因子与函数、特殊函数、Anderson motives、Drinfeld模等工具，利用Ferraro的有理性定理证明相对zeta函数（类似Dedekind zeta函数的对应物）可延拓为整函数。",
+        "innovation": "系统比较Goss理论与基于曲线的zeta函数构造，指出两者根本不同但存在交互；推广了相对zeta函数的整性结果，并首次提出关于该函数在规范点Ξ处零点阶的猜想。",
+        "evidence": "摘要中仅给出理论阐述和定理陈述，没有提供数值实验或系统验证。证据不足。",
+        "limitations": "综述性质，细节需阅读全文；附录中特殊情形下整性的证明依赖Anglès等公式，一般情形可能另有条件；猜想的证据仅为数值例证。",
+        "why_relevant": "论文正特征局部域上的zeta函数、相对zeta函数（与Dedekind zeta类比）、L函数等概念与研究方向中局部域、有限域、L函数、zeta函数等关键词高度匹配，且使用shtuka、Anderson motive等工具与算术几何中p-adic Hodge理论、Frobenius等有潜在联系。"
       },
       "first_seen_at": "2026-06-11T13:12:04.834996+00:00",
-      "last_seen_at": "2026-06-11T15:35:30.397677+00:00",
+      "last_seen_at": "2026-06-11T15:42:00.501161+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -2230,7 +2230,7 @@
             "cyclic homology",
             "cyclotomic spectra"
           ],
-          "llm_reason": "论文涉及代数K理论、THH、TC和环状谱，这些正是研究方向中'代数K理论、迹方法（THH/TC）'的核心关键词。此外，环状谱是理解TC的基石，而TC在动机同伦论中用于构造K理论局部化序列。"
+          "llm_reason": "直接命中研究方向的多个核心关键词：algebraic K-theory、topological Hochschild homology (THH)、topological cyclic homology (TC)、cyclotomic spectra，且与近期反例相关，对理解色理论在K理论中的应用至关重要。"
         },
         {
           "topic_id": "homotopy_theory",
@@ -2287,7 +2287,7 @@
           "cyclic homology",
           "cyclotomic spectra"
         ],
-        "llm_reason": "论文涉及代数K理论、THH、TC和环状谱，这些正是研究方向中'代数K理论、迹方法（THH/TC）'的核心关键词。此外，环状谱是理解TC的基石，而TC在动机同伦论中用于构造K理论局部化序列。"
+        "llm_reason": "直接命中研究方向的多个核心关键词：algebraic K-theory、topological Hochschild homology (THH)、topological cyclic homology (TC)、cyclotomic spectra，且与近期反例相关，对理解色理论在K理论中的应用至关重要。"
       },
       "top_labels": [
         {
@@ -2332,15 +2332,15 @@
       ],
       "backfilled_from_recent_arxiv": true,
       "chinese_summary": {
-        "problem": "解释环状谱（cyclotomic spectra）的定义及其在代数K理论、拓扑Hochschild同调（THH）和拓扑循环同调（TC）中的关键作用，并说明为何这些对象近期成为研究热点。",
-        "method": "本文为综述性文章，系统阐述环状谱作为带有圆群作用的谱对象的结构，回顾其在THH和TC中的出现方式，并介绍Burklund等人在高色高环同调非平凡性证明中对环状谱的应用。",
-        "innovation": "本文不是原创研究，其贡献在于以综述形式清晰梳理环状谱的基本概念、历史背景及最新进展，特别是解释了环状谱在近期关于TC的突破性结果中的核心角色，为读者提供理解相关前沿工作的入门指引。",
-        "evidence": "摘要中提到Burklund等人利用环状谱证明了对于每个n≥1和素数p，存在p-局部环谱X使得L_{K(n+1)}TC(X)与L_{T(n+1)}TC(X)不同，但未提供具体实验或理论验证细节。",
-        "limitations": "本文为综述，不包含原始研究结果；对环状谱深入技术细节（如具体构造、稳定∞范畴框架）可能略过，需阅读全文确认是否涵盖动机同伦论视角。",
-        "why_relevant": "论文涉及代数K理论、THH、TC和环状谱，这些正是研究方向中'代数K理论、迹方法（THH/TC）'的核心关键词。此外，环状谱是理解TC的基石，而TC在动机同伦论中用于构造K理论局部化序列。"
+        "problem": "解释环状谱（cyclotomic spectra）的定义、性质及其在代数K理论、拓扑Hochschild同调（THH）和拓扑循环同调（TC）中的核心作用，并帮助读者理解Burklund等人最近关于色高大于1时TC失效的反例。",
+        "method": "本文是一篇说明性文章，系统介绍环状谱的结构（包括圆群作用）及其在稳定同伦论中的位置，并结合Burklund、Hahn、Levy和Schlank的最新结果（对每个n≥1和素数p构造一个色高为n的p-局部环谱X，使得L_{K(n+1)}TC(X)与L_{T(n+1)}TC(X)不同），解释这些反例如何挑战传统的TC猜想。",
+        "innovation": "以简明易懂的方式梳理环状谱的理论背景，并首次将Burklund等人的突破性反例置于环状谱的语境下进行讲解，帮助非专家理解该反例对代数K理论中TC猜想的深远影响。",
+        "evidence": "摘要中无实验或新理论证据，仅引用了Burklund等人的工作（已发表结果）。本文为综述，证据需依赖原始文献。",
+        "limitations": "作为说明性文章，不包含新的原创定理或证明；对环状谱的深入技术细节（如具体模型构造）可能需要参考原始文献或更专业的教材。",
+        "why_relevant": "直接命中研究方向的多个核心关键词：algebraic K-theory、topological Hochschild homology (THH)、topological cyclic homology (TC)、cyclotomic spectra，且与近期反例相关，对理解色理论在K理论中的应用至关重要。"
       },
       "first_seen_at": "2026-06-11T05:21:54.714863+00:00",
-      "last_seen_at": "2026-06-11T15:35:30.397677+00:00",
+      "last_seen_at": "2026-06-11T15:42:00.501161+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -2748,7 +2748,7 @@
             "projective scheme",
             "Proj"
           ],
-          "llm_reason": "论文核心研究对象为概形(scheme)、射影概形(projective scheme)、超曲面交，并使用重数(multiplicity)等概念，与研究方向的scheme、projective scheme、Hilbert-Samuel重数等关键词直接相关，且分类为math.AG。"
+          "llm_reason": "论文直接涉及代数几何中scheme、projective scheme、Proj、hypersurface intersection、multiplicity等核心概念，与研究方向关键词高度重合；有限域上的几何问题在算术代数几何中也有重要地位。"
         },
         {
           "topic_id": "arithmetic_geometry",
@@ -2796,7 +2796,7 @@
           "projective scheme",
           "Proj"
         ],
-        "llm_reason": "论文核心研究对象为概形(scheme)、射影概形(projective scheme)、超曲面交，并使用重数(multiplicity)等概念，与研究方向的scheme、projective scheme、Hilbert-Samuel重数等关键词直接相关，且分类为math.AG。"
+        "llm_reason": "论文直接涉及代数几何中scheme、projective scheme、Proj、hypersurface intersection、multiplicity等核心概念，与研究方向关键词高度重合；有限域上的几何问题在算术代数几何中也有重要地位。"
       },
       "top_labels": [
         {
@@ -2822,17 +2822,18 @@
           ]
         }
       ],
+      "backfilled_from_recent_arxiv": true,
       "chinese_summary": {
-        "problem": "证明有限域上约化等维拟射影概形X存在正密度的超曲面H_f，使得交X∩H_f的每个闭点处的Hilbert-Samuel重数保持不变。",
-        "method": "利用有限域上超曲面的密度估计和局部代数几何中的重数理论，通过控制超曲面在闭点处的切方程阶数来保持重数，可能结合Bertini定理的有限域变体。",
-        "innovation": "将经典的Hilbert-Samuel重数保持的Bertini定理从特征0或代数闭域推广到有限域，并给出正密度而非存在性结果。",
-        "evidence": "摘要仅声称存在正密度集合，未提供具体证明步骤或实验数据，证据不足以独立验证。",
-        "limitations": "需阅读全文确认正密度的精确构造、超曲面的次数范围、以及重数保持条件是否对任意闭点成立；可能依赖于X的特定条件。",
-        "why_relevant": "论文核心研究对象为概形(scheme)、射影概形(projective scheme)、超曲面交，并使用重数(multiplicity)等概念，与研究方向的scheme、projective scheme、Hilbert-Samuel重数等关键词直接相关，且分类为math.AG。"
+        "problem": "在有限域上，对于任意约化、等维、拟射影概形，是否存在足够多的超曲面使得交点的Hilbert-Samuel重数与原始点重数相等且超曲面在该点光滑？",
+        "method": "利用概率方法或计数论证，证明存在一个正密度集合的超曲面（由齐次多项式定义）满足条件；核心技术可能涉及超曲面在闭点处切空间性质与重数比较，以及有限域上的几何Bertini定理。",
+        "innovation": "1. 将经典Bertini定理中关于光滑性的结论推广到Hilbert-Samuel重数保持；2. 在有限域背景下给出正密度存在性结果，而非特征零域中的一般位置结论；3. 可能提供了构造性下界或显式密度估计。",
+        "evidence": "摘要中声称证明了正密度集合的存在性，但未给出具体数值或实验验证；需阅读全文确认密度定量估计或构造方法。",
+        "limitations": "1. 仅适用于有限域上的约化等维拟射影概形；2. 未说明超曲面次数的限制（可能要求大次数？）；3. 重数保持的条件（ord_P(f)=1）隐含超曲面与X横截相交，但未讨论非横截情形。",
+        "why_relevant": "论文直接涉及代数几何中scheme、projective scheme、Proj、hypersurface intersection、multiplicity等核心概念，与研究方向关键词高度重合；有限域上的几何问题在算术代数几何中也有重要地位。"
       },
       "first_seen_at": "2026-06-11T15:15:36.567953+00:00",
-      "last_seen_at": "2026-06-11T15:15:36.567953+00:00",
-      "retained_from_previous_run": true
+      "last_seen_at": "2026-06-11T15:42:00.501161+00:00",
+      "retained_from_previous_run": false
     },
     {
       "id": "2606.08599v1",
@@ -5213,7 +5214,7 @@
           "keyword_hits": [
             "vector bundle"
           ],
-          "llm_reason": "论文涉及向量丛（vector bundle）和Hopf曲面，与代数几何中向量丛、纤维丛、复几何研究交叉；对理解代数几何中的丛构造与Poisson结构联系有参考价值。但主要工具是复几何和Poisson几何，而非核心代数几何（如层、模空间等），故相关性有限。"
+          "llm_reason": "涉及向量丛（vector bundle）这一代数几何核心对象，且arXiv分类含math.AG，但论文主题偏向复几何和Poisson几何，与代数几何中模空间、层论等方向关联较弱。"
         },
         {
           "topic_id": "arithmetic_geometry",
@@ -5257,7 +5258,7 @@
         "keyword_hits": [
           "vector bundle"
         ],
-        "llm_reason": "论文涉及向量丛（vector bundle）和Hopf曲面，与代数几何中向量丛、纤维丛、复几何研究交叉；对理解代数几何中的丛构造与Poisson结构联系有参考价值。但主要工具是复几何和Poisson几何，而非核心代数几何（如层、模空间等），故相关性有限。"
+        "llm_reason": "涉及向量丛（vector bundle）这一代数几何核心对象，且arXiv分类含math.AG，但论文主题偏向复几何和Poisson几何，与代数几何中模空间、层论等方向关联较弱。"
       },
       "top_labels": [
         {
@@ -5280,15 +5281,15 @@
         }
       ],
       "chinese_summary": {
-        "problem": "基于Hopf曲面上的co-Higgs丛构造Poisson三维流形，并描述其辛叶，以推广先前对秩2 co-Higgs丛的分类结果。",
-        "method": "利用先前对Hopf曲面上秩2 co-Higgs丛的分类数据，构造相应的Poisson 3-流形；通过分析底向量丛的结构，描述这些Poisson流形的辛叶分解。",
-        "innovation": "将co-Higgs丛的应用从分类扩展到Poisson几何的构造；首次建立Hopf曲面上co-Higgs丛与Poisson三维流形之间的具体对应关系，并给出辛叶的显式描述。",
-        "evidence": "摘要仅陈述目标和扩展性工作，未提供具体实验结果或理论证明。证据不足，需阅读全文确认构造细节和辛叶描述的完备性。",
-        "limitations": "可能仅适用于秩2情形，且依赖于Hopf曲面的特定几何；构造方法未必适用于其他曲面或更高秩丛。需全文验证辛叶描述是否严格。",
-        "why_relevant": "论文涉及向量丛（vector bundle）和Hopf曲面，与代数几何中向量丛、纤维丛、复几何研究交叉；对理解代数几何中的丛构造与Poisson结构联系有参考价值。但主要工具是复几何和Poisson几何，而非核心代数几何（如层、模空间等），故相关性有限。"
+        "problem": "研究如何利用Hopf曲面上的秩2 co-Higgs丛构造Poisson三流形，并描述其辛叶。",
+        "method": "基于先前对Hopf曲面上秩2 co-Higgs丛的分类结果，分析底层向量丛的数据，进而构造Poisson三流形，并通过辛叶分解研究其几何结构。",
+        "innovation": "将co-Higgs丛理论应用于Hopf曲面，延伸至Poisson几何；给出了从特定向量丛构造Poisson三流形的具体方法，并明确了辛叶的刻画。",
+        "evidence": "摘要未提供实验或理论验证细节，仅陈述扩展了先前分类工作并研究辛叶。证据不足。",
+        "limitations": "仅限于Hopf曲面和秩2 co-Higgs丛；构造的Poisson三流形性质需阅读全文确认；辛叶描述缺乏具体例子。",
+        "why_relevant": "涉及向量丛（vector bundle）这一代数几何核心对象，且arXiv分类含math.AG，但论文主题偏向复几何和Poisson几何，与代数几何中模空间、层论等方向关联较弱。"
       },
       "first_seen_at": "2026-06-11T05:41:51.895771+00:00",
-      "last_seen_at": "2026-06-11T15:35:30.397677+00:00",
+      "last_seen_at": "2026-06-11T15:42:00.501161+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -5845,7 +5846,7 @@
       },
       "first_seen_at": "2026-06-11T06:58:33.319883+00:00",
       "last_seen_at": "2026-06-11T15:35:30.397677+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2606.12194v1",
@@ -6458,23 +6459,23 @@
     "daily_candidate_paper_count": 8,
     "conference_candidate_paper_count": 0,
     "raw_daily_candidate_count": 99,
-    "daily_outside_cutoff_count": 49,
+    "daily_outside_cutoff_count": 50,
     "daily_backfill_days": 14,
-    "daily_backfill_candidate_count": 25,
-    "daily_backfill_added_count": 5,
+    "daily_backfill_candidate_count": 26,
+    "daily_backfill_added_count": 6,
     "min_daily_papers": 8,
     "filtered_low_relevance_count": 0,
     "filtered_wrong_category_count": 47,
     "arxiv_category_filter": [
-      "math.CT",
+      "math.AG",
       "math.AT",
-      "math.NT",
       "math.KT",
-      "math.AG"
+      "math.CT",
+      "math.NT"
     ],
     "days": 1,
     "collection_mode": "lookback",
-    "collection_cutoff_iso": "2026-06-10T15:35:30.397677+00:00",
+    "collection_cutoff_iso": "2026-06-10T15:42:00.501161+00:00",
     "max_per_topic": 25,
     "max_new_papers": 50,
     "max_new_conference_papers": 50,
@@ -6526,7 +6527,7 @@
     "dropped_low_relevance_count": 0,
     "max_stored_papers": 200,
     "max_data_bytes": 8388608,
-    "data_bytes": 308887,
+    "data_bytes": 307355,
     "storage_trimmed_count": 0,
     "storage_trimmed_by_level": {
       "high": 0,
