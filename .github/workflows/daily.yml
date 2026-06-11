@@ -59,3 +59,60 @@ jobs:
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
+
+      - name: PushPlus notification
+        if: ${{ secrets.PUSHPLUS_TOKEN != '' }}
+        env:
+          PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
+        run: |
+          papers_file="web/data/papers.json"
+          if [ ! -f "$papers_file" ]; then echo "No papers file"; exit 0; fi
+
+          total=$(python3 -c "import json; d=json.load(open('$papers_file')); print(len(d.get('papers',[])))")
+          today=$(date +%Y-%m-%d)
+          today_count=$(python3 -c "
+          import json; d=json.load(open('$papers_file'))
+          today='$today'
+          count=0
+          for p in d.get('papers',[]):
+              pub=p.get('published','') or p.get('last_seen_at','') or ''
+              if pub.startswith(today): count+=1
+          print(count)
+          ")
+
+          paper_list=$(python3 -c "
+          import json, html
+          d=json.load(open('$papers_file'))
+          today='$today'
+          lines=[]
+          for p in d.get('papers',[]):
+              pub=p.get('published','') or p.get('last_seen_at','') or ''
+              if not pub.startswith(today): continue
+              title=html.escape(p.get('title','?'))
+              score=p.get('best_match',{}).get('score',0)
+              lines.append(f'<li>💡 {title} <span style=\"color:#999\">({score:.2f})</span></li>')
+          print('<ol>' + ''.join(lines) + '</ol>' if lines else '<p>今日暂无新增论文</p>')
+          ")
+
+          content="
+          <h3>📄 Paper Daily 今日更新</h3>
+          <p>今日新论文: <strong>${today_count}</strong> 篇 | 总论文: <strong>${total}</strong> 篇</p>
+          ${paper_list}
+          <p style='margin-top:12px;color:#999;font-size:12px'>
+            👉 <a href='https://s1lveryin.github.io/paper-daily/'>查看完整列表</a>
+          </p>
+          "
+
+          payload=$(cat <<EOF
+          {
+            "token": "${PUSHPLUS_TOKEN}",
+            "title": "Paper Daily — 今日 ${today_count} 篇新论文",
+            "content": $(echo "$content" | python3 -c "import sys,json; print(json.dumps(sys.stdin.read()))"),
+            "template": "html"
+          }
+          EOF
+          )
+
+          curl -s -X POST "https://www.pushplus.plus/send" \
+            -H "Content-Type: application/json" \
+            -d "$payload" | python3 -c "import sys,json; r=json.load(sys.stdin); print('PushPlus:', r.get('msg','ok') if r.get('code')==200 else r)"
