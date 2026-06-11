@@ -289,16 +289,20 @@ function matchesBaseFilters(paper) {
 
 function matchesView(paper) {
   if (state.filters.view === "all") return true;
-  const date = selectedDate();
   const pubDate = parseDate(paper.published || paper.last_seen_at || "");
   if (!pubDate) return false;
-  const windowEnd = endOfWindow(date);
 
-  if (state.filters.view === "daily") return dateKey(paper.published || paper.last_seen_at) === state.filters.date;
-  if (state.filters.view === "week") return pubDate >= startOfWindow(date, WEEK_WINDOW_DAYS) && pubDate < windowEnd;
-  if (state.filters.view === "month") return pubDate >= startOfMonth(date) && pubDate < endOfMonth(date);
+  // week/month/highlights always use today as reference, not the date picker
+  if (state.filters.view === "daily") {
+    const date = selectedDate();
+    return dateKey(paper.published || paper.last_seen_at) === state.filters.date;
+  }
+  const today = new Date();
+  const windowEnd = endOfWindow(today);
+  if (state.filters.view === "week") return pubDate >= startOfWindow(today, WEEK_WINDOW_DAYS) && pubDate < windowEnd;
+  if (state.filters.view === "month") return pubDate >= startOfMonth(today) && pubDate < endOfMonth(today);
   if (state.filters.view === "highlights") {
-    return pubDate >= startOfWindow(date, HIGHLIGHTS_WINDOW_DAYS) && pubDate < windowEnd && topicScore(paper) >= 0.42;
+    return pubDate >= startOfWindow(today, HIGHLIGHTS_WINDOW_DAYS) && pubDate < windowEnd && topicScore(paper) >= 0.42;
   }
   return true;
 }
@@ -399,11 +403,12 @@ function renderPaper(paper) {
 function viewLabels() {
   const date = selectedDate();
   const dayLabel = formatDate(date.toISOString());
-  const weekStart = formatDate(startOfWeek(date).toISOString());
-  const weekEndDate = endOfWeek(date);
+  const today = new Date();
+  const weekStart = formatDate(startOfWeek(today).toISOString());
+  const weekEndDate = endOfWeek(today);
   weekEndDate.setDate(weekEndDate.getDate() - 1);
   const weekEnd = formatDate(weekEndDate.toISOString());
-  const monthLabel = `${date.getFullYear()} 年 ${String(date.getMonth() + 1).padStart(2, "0")} 月`;
+  const monthLabel = `${today.getFullYear()} 年 ${String(today.getMonth() + 1).padStart(2, "0")} 月`;
   return {
     all: [state.filters.collection === "conference" ? "顶会精品" : "全部论文", "全部已收录论文"],
     daily: ["当日论文", dayLabel],
@@ -479,15 +484,15 @@ function hydrateDateFilter() {
 
 function updateStats() {
   const papers = activeData().papers || [];
-  const date = selectedDate();
-  const windowEnd = endOfWindow(date);
+  const today = new Date();
+  const windowEnd = endOfWindow(today);
   const weekPapers = papers.filter((paper) => {
     const d = parseDate(paper.published || paper.last_seen_at || "");
-    return d && d >= startOfWindow(date, WEEK_WINDOW_DAYS) && d < windowEnd;
+    return d && d >= startOfWindow(today, WEEK_WINDOW_DAYS) && d < windowEnd;
   });
   const monthPapers = papers.filter((paper) => {
     const d = parseDate(paper.published || paper.last_seen_at || "");
-    return d && d >= startOfMonth(date) && d < endOfMonth(date);
+    return d && d >= startOfMonth(today) && d < endOfMonth(today);
   });
   const top = papers.reduce((max, paper) => Math.max(max, topicScore(paper)), 0);
   nodes.paperCount.textContent = String(papers.length);
