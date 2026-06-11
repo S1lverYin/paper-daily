@@ -1666,7 +1666,11 @@ def compute_cross_domain_bonus(paper: dict[str, Any], topic_id: str) -> tuple[fl
 
 
 def keyword_score(topic: Topic, paper: dict[str, Any]) -> tuple[float, list[str]]:
-    haystack = f"{paper.get('title', '')} {paper.get('summary', '')}".lower()
+    raw = f"{paper.get('title', '')} {paper.get('summary', '')}".lower()
+    # Strip LaTeX math delimiters and common commands so that
+    # "$K$-theory", "$K(R)$", "\(X\)" etc match plain keywords.
+    haystack = re.sub(r"[$\\](?:[a-z]+\s)?", " ", raw)
+    haystack = re.sub(r"\s+", " ", haystack)
     hits = []
     weighted = 0.0
     for keyword in topic.keywords:
