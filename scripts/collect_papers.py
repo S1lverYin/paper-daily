@@ -1760,10 +1760,10 @@ def score_paper(topic: Topic, paper: dict[str, Any]) -> dict[str, Any]:
     k_score, hits = keyword_score(topic, paper)
     c_score = category_score(topic, paper)
     l_score = lexical_overlap_score(topic, paper)
-    # Weights from doc §8.2: 0.20 ontology, 0.15 category, 0.15 embedding
-    base_score = round(0.20 * k_score + 0.15 * c_score + 0.15 * l_score, 3)
+    # Weights: keyword is most specific signal; category and lexical provide floor
+    base_score = round(0.40 * k_score + 0.20 * c_score + 0.20 * l_score, 3)
 
-    # Cross-domain bridge bonus (§10.2) — weight 0.20
+    # Cross-domain bridge bonus (§10.2) — weight ~0.15
     bridge_bonus, bridge_reasons = compute_bridge_score(paper, topic.id)
     adjusted_score = round(base_score + bridge_bonus, 3)
 
@@ -1771,10 +1771,10 @@ def score_paper(topic: Topic, paper: dict[str, Any]) -> dict[str, Any]:
     a_score = author_boost_score(paper)
     adjusted_score = round(adjusted_score + a_score, 3)
 
-    # Recency boost — 0.05 for papers published in the last 30 days
+    # Recency boost — 0.05 for papers published in the last 90 days
     pub = parse_datetime(paper.get("published", ""))
     now = dt.datetime.now(dt.timezone.utc)
-    r_score = 0.05 if pub and (now - pub).days <= 30 else 0.0
+    r_score = 0.05 if pub and (now - pub).days <= 90 else 0.0
     adjusted_score = round(adjusted_score + r_score, 3)
 
     # Negative penalty (§11) applied after all boosts
