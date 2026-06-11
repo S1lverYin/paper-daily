@@ -7,6 +7,12 @@ on:
 
 permissions:
   contents: write
+  id-token: write
+  pages: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
 
 jobs:
   collect:
@@ -35,3 +41,11 @@ jobs:
           git add web/data/
           git diff --staged --quiet || git commit -m "data: daily update $(date +%Y-%m-%d)"
           git push
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: web
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
