@@ -1397,80 +1397,42 @@ def collection_cutoff(
     return now - dt.timedelta(days=max(0, days)), "lookback"
 
 
-# Bridge terms that signal cross-domain relevance.
-# When a paper hits bridge terms shared by TWO topics, both topics get a boost.
-# Each topic's list collects the strongest cross-domain keywords from the ontology
-# (sections 6.1–6.10: Motivic∩AG, Motivic∩Arithmetic, …, Homotopy∩K-Theory).
-BRIDGE_TERMS: dict[str, list[str]] = {
-    "motivic_homotopy_theory": [
-        "motivic spectra", "SH(k)", "SH(S)", "Nisnevich topology",
-        "A1-homotopy theory", "KGL", "MGL", "KQ", "motivic cohomology",
-        "six functor formalism", "l-adic realization", "etale realization",
-        "motivic sphere spectrum", "HZ", "slice filtration",
-        "algebraic cobordism", "motivic cobordism", "Tate motives",
-        "purity theorem", "homotopy purity", "Gysin map",
-        "Chow-Witt groups", "Milnor-Witt K-theory", "A1-degree",
-        "higher Chow groups", "simplicial presheaves",
-        "Betti realization", "Hodge realization", "crystalline realization",
-        "motivic Galois group", "motivic ring spectrum",
-        "motivic Adams spectral sequence", "motivic Steenrod algebra",
-        "S^{p,q}", "bigraded homotopy groups", "Grothendieck-Witt ring",
-    ],
-    "algebraic_geometry": [
-        "Nisnevich topology", "etale topology", "perfect complexes",
-        "derived stack", "higher stack", "moduli stack", "descent",
-        "fpqc descent", "coherent sheaf", "quasi-coherent sheaf",
-        "algebraic stack", "Deligne-Mumford stack", "Artin stack",
-        "smooth morphism", "etale morphism", "proper morphism",
-        "moduli space", "Hilbert scheme", "Chow group",
-        "intersection theory", "Gysin map", "vector bundle",
-        "line bundle", "Picard group", "Cartier divisor", "blow-up",
-        "derived algebraic geometry", "spectral algebraic geometry",
-        "higher stacks", "derived stack", "infinity stack",
-        "homotopical algebraic geometry", "sheaf",
-    ],
-    "arithmetic_geometry": [
-        "etale cohomology", "l-adic cohomology", "etale realization",
-        "Galois representation", "mixed Tate motives", "L-function",
-        "zeta function", "Shimura variety", "modular forms",
-        "abelian variety", "elliptic curve", "Tate module",
-        "Selmer group", "Frobenius", "p-adic Hodge theory",
-        "crystalline cohomology", "de Rham cohomology", "period rings",
-        "Fontaine", "Iwasawa theory", "Diophantine geometry",
-        "rational points", "integral points", "height function",
-        "Arakelov geometry", "Beilinson conjectures", "Bloch-Kato",
-        "Tate conjecture", "etale fundamental group", "Weil group",
-        "Langlands", "arithmetic surfaces", "Dedekind schemes",
-        "regulator", "special values",
-    ],
-    "homotopy_theory": [
-        "spectra", "stable homotopy theory", "localization sequence",
-        "THH", "TC", "E_infinity algebra", "K-theory spectrum",
-        "Adams spectral sequence", "Steenrod algebra", "chromatic homotopy theory",
-        "model category", "infinity category", "spectrum",
-        "sphere spectrum", "suspension spectrum", "Eilenberg-Mac Lane",
-        "Bousfield localization", "operad", "Thom spectrum",
-        "cobordism", "equivariant homotopy", "parametrized spectra",
-        "homotopy groups", "spectral sequence", "Brown representability",
-        "fiber sequence", "cofiber sequence", "infinite loop space",
-        "chromatic", "etale homotopy type", "p-adic homotopy theory",
-        "Galois descent", "profinite homotopy theory",
-        "homotopy fixed points",
-    ],
-    "k_theory": [
-        "perfect complexes", "localization sequence", "THH", "TC",
-        "KGL", "K-theory of schemes", "motivic spectra", "K-theory spectrum",
-        "stable infinity category", "additive invariant", "Grothendieck-Witt theory",
-        "Waldhausen K-theory", "Quillen K-theory", "connective K-theory",
-        "topological Hochschild homology", "topological cyclic homology",
-        "cyclotomic trace", "Dennis trace", "Bass", "devissage",
-        "Karoubi", "Bott periodicity", "Hermitian K-theory",
-        "Witt groups", "assembly map", "Baum-Connes", "Farrell-Jones",
-        "excision", "Morita invariance",
-        "G-theory", "Thomason-Trobaugh", "etale K-theory",
-        "K-theory of number rings", "K-theory of finite fields",
-        "cyclotomic spectra", "additive invariant",
-    ],
+# ── Bridge terms (from doc §10) ──
+# Signal lists for each of the 4 topics.  When a paper hits terms from
+# TWO different lists, both topics get a bridge bonus (§10.2 algorithm).
+ALGEBRAIC_GEOMETRY_BRIDGE = [
+    "scheme", "schemes", "algebraic stack", "derived stack",
+    "quasi-coherent sheaf", "coherent sheaf", "perfect complexes",
+    "smooth morphism", "etale morphism", "proper morphism",
+    "descent", "moduli space", "intersection theory",
+]
+ARITHMETIC_GEOMETRY_BRIDGE = [
+    "arithmetic geometry", "number field", "p-adic",
+    "galois representation", "etale cohomology", "l-adic cohomology",
+    "frobenius", "shimura variety", "l-function", "regulator",
+    "syntomic cohomology", "galois cohomology",
+]
+HOMOTOPY_THEORY_BRIDGE = [
+    "homotopy theory", "spectrum", "spectra", "stable homotopy",
+    "sphere spectrum", "adams spectral sequence", "steenrod algebra",
+    "generalized cohomology", "e_infinity", "stable infinity category",
+    "thh", "tc", "cyclotomic spectra",
+]
+K_THEORY_MOTIVIC_BRIDGE = [
+    "k-theory", "algebraic k-theory", "motivic k-theory",
+    "kgl", "kq", "mgl", "motivic homotopy", "a1-homotopy",
+    "stable motivic homotopy", "motivic spectra", "sh(k)", "sh(s)",
+    "motivic cohomology", "dm(k)", "nisnevich", "cdh descent",
+    "six functor formalism", "purity", "cyclotomic trace",
+    "localizing invariant",
+]
+
+# Map topic_id to its bridge-signal list
+_TOPIC_BRIDGE_SIGNALS: dict[str, list[str]] = {
+    "motivic_k_theory":  K_THEORY_MOTIVIC_BRIDGE,
+    "algebraic_geometry":   ALGEBRAIC_GEOMETRY_BRIDGE,
+    "arithmetic_geometry":  ARITHMETIC_GEOMETRY_BRIDGE,
+    "homotopy_theory":      HOMOTOPY_THEORY_BRIDGE,
 }
 
 # Cross-domain pairs: (term_substring, [topic_ids_that_get_bonus])
@@ -1635,34 +1597,76 @@ CROSS_DOMAIN_SIGNALS: list[tuple[str, list[str], str]] = [
 ]
 
 
-def compute_cross_domain_bonus(paper: dict[str, Any], topic_id: str) -> tuple[float, list[str]]:
-    """Return (bonus_score, [cross_domain_reasons]) for a given topic on this paper.
 
-    With ~90 cross-domain signals covering all 10 inter-domain pairs, the per-signal
-    contribution is scaled to 0.35/n_targets so that a paper typically needs 2–4
-    bridge matches to saturate the 0.30 cap.  Heavyweight 3-way/4-way bridges
-    (e.g. motivic ↔ AG / homotopy / K-theory) contribute less per-target but
-    distribute bonus across more topics.
+# ── Negative keywords (§11) ──
+NEGATIVE_TERMS: dict[str, float] = {
+    "machine learning": 0.25, "neural network": 0.25,
+    "large language model": 0.25, "computer vision": 0.30,
+    "data mining": 0.30, "statistics": 0.30,
+    "persistent homology": 0.30, "topological data analysis": 0.30,
+    "quantum computing": 0.45, "condensed matter": 0.45,
+    "d-brane": 0.45, "string theory": 0.45,
+    "operator algebra": 0.55, "c*-algebra": 0.55,
+}
+
+
+def apply_negative_penalty(text: str, score: float) -> float:
+    """Penalize papers containing out-of-scope keywords (§11)."""
+    t = text.lower()
+    factor = 1.0
+    for term, penalty in NEGATIVE_TERMS.items():
+        if term in t:
+            factor = min(factor, penalty)
+    return score * factor
+
+
+# ── Author boost (§15) ──
+AUTHOR_BOOST: list[str] = [
+    "Marc Hoyois", "Tom Bachmann", "Elden Elmanto", "Shane Kelly",
+    "Adeel Khan", "Denis-Charles Cisinski", "Frederic Deglise",
+    "Fabien Morel", "Vladimir Voevodsky", "Markus Spitzweck",
+    "Paul Arne Ostvaer", "Oliver Rondigs", "Daniel Isaksen",
+    "Kyle Ormsby", "Marc Levine", "Thomas Nikolaus",
+    "Peter Scholze", "Dustin Clausen", "Akhil Mathew",
+    "Matthew Morrow", "Clark Barwick", "Andrew Blumberg",
+    "David Gepner", "Goncalo Tabuada", "Benjamin Antieau",
+    "Jacob Lurie", "Bertrand Toen", "Gabriele Vezzosi",
+    "David Rydh", "Bhargav Bhatt",
+]
+
+
+def author_boost_score(paper: dict[str, Any]) -> float:
+    """Return 0.05 if any author is in the boost list, 0.0 otherwise."""
+    authors_lower = [a.lower() for a in paper.get("authors", [])]
+    for name in AUTHOR_BOOST:
+        if name.lower() in authors_lower:
+            return 0.05
+    return 0.0
+
+
+def compute_bridge_score(paper: dict[str, Any], topic_id: str) -> tuple[float, list[str]]:
+    """Bridge score (§10.2): count hits in each topic's bridge-signal list,
+    then award bonus proportional to min(own_score, other_score) for each
+    pairing.  This rewards papers that genuinely span two fields.
     """
     haystack = f"{paper.get('title', '')} {paper.get('summary', '')}".lower()
-    total_bonus = 0.0
-    reasons: list[str] = []
-    counted_signals: set[int] = set()
-    for idx, (term, target_topics, label) in enumerate(CROSS_DOMAIN_SIGNALS):
-        if term.lower() not in haystack:
+
+    def _hits(signal_list: list[str]) -> int:
+        return sum(1 for term in signal_list if term.lower() in haystack)
+
+    own = _hits(_TOPIC_BRIDGE_SIGNALS.get(topic_id, []))
+    pairs = []
+    total = 0.0
+    for other_id, other_signals in _TOPIC_BRIDGE_SIGNALS.items():
+        if other_id == topic_id:
             continue
-        if topic_id not in target_topics:
-            continue
-        if idx in counted_signals:
-            continue
-        counted_signals.add(idx)
-        n_targets = len(target_topics)
-        # 0.35 / n_targets: fine-grained enough that 2–4 hits saturate the 0.30 cap
-        share = 0.35 / n_targets if n_targets else 0.0
-        total_bonus += share
-        other = [t for t in target_topics if t != topic_id]
-        reasons.append(f"桥接信号「{term}」({label})" if other else f"桥接信号「{term}」")
-    return round(min(0.30, total_bonus), 3), reasons[:4]
+        oh = _hits(other_signals)
+        if own > 0 and oh > 0:
+            bridge = min(own, oh) / max(2, own)  # normalized min
+            total += round(bridge * 0.15, 3)
+            pairs.append(f"桥接 {topic_id}↔{other_id} (hits={own}/{oh})")
+    bonus = round(min(0.30, total), 3)
+    return bonus, pairs[:3]
 
 
 def keyword_score(topic: Topic, paper: dict[str, Any]) -> tuple[float, list[str]]:
@@ -1754,19 +1758,42 @@ def score_paper(topic: Topic, paper: dict[str, Any]) -> dict[str, Any]:
     k_score, hits = keyword_score(topic, paper)
     c_score = category_score(topic, paper)
     l_score = lexical_overlap_score(topic, paper)
-    base_score = round(0.55 * k_score + 0.15 * c_score + 0.30 * l_score, 3)
+    # Weights from doc §8.2: 0.20 ontology, 0.15 category, 0.15 embedding
+    base_score = round(0.20 * k_score + 0.15 * c_score + 0.15 * l_score, 3)
 
-    # Cross-domain bridge bonus
-    bridge_bonus, bridge_reasons = compute_cross_domain_bonus(paper, topic.id)
-    bridge_bonus_raw = bridge_bonus  # store before clamping
-    adjusted_score = round(min(1.0, base_score + bridge_bonus), 3)
+    # Cross-domain bridge bonus (§10.2) — weight 0.20
+    bridge_bonus, bridge_reasons = compute_bridge_score(paper, topic.id)
+    adjusted_score = round(base_score + bridge_bonus, 3)
+
+    # Author boost (§15) — weight 0.05
+    a_score = author_boost_score(paper)
+    adjusted_score = round(adjusted_score + a_score, 3)
+
+    # Recency boost — 0.05 for papers published in the last 30 days
+    pub = parse_datetime(paper.get("published", ""))
+    now = dt.datetime.now(dt.timezone.utc)
+    r_score = 0.05 if pub and (now - pub).days <= 30 else 0.0
+    adjusted_score = round(adjusted_score + r_score, 3)
+
+    # Negative penalty (§11) applied after all boosts
+    text = f"{paper.get('title', '')} {paper.get('summary', '')}"
+    adjusted_score = round(apply_negative_penalty(text, adjusted_score), 3)
+    adjusted_score = round(min(1.0, max(0.0, adjusted_score)), 3)
 
     reason_parts = []
     if hits:
         reason_parts.append("关键词命中：" + "、".join(hits))
     if c_score > 0:
         reason_parts.append("arXiv 分类重合：" + "、".join(sorted(set(topic.arxiv_categories) & set(paper.get("categories", [])))))
-    reason_parts.extend(bridge_reasons)
+    if bridge_reasons:
+        reason_parts.extend(bridge_reasons)
+    if a_score > 0:
+        reason_parts.append("作者加分")
+    if r_score > 0:
+        reason_parts.append("近期论文")
+    neg = apply_negative_penalty(text, 1.0)
+    if neg < 1.0:
+        reason_parts.append(f"负关键词惩罚 (×{neg:.2f})")
     if not reason_parts:
         reason_parts.append("文本语义与方向描述存在弱相关，需要人工复核。")
     return {
@@ -1774,7 +1801,7 @@ def score_paper(topic: Topic, paper: dict[str, Any]) -> dict[str, Any]:
         "topic_name": topic.name,
         "score": adjusted_score,
         "base_score": base_score,
-        "bridge_bonus": bridge_bonus_raw,
+        "bridge_bonus": bridge_bonus,
         "level": match_level(adjusted_score),
         "reason": "；".join(reason_parts),
         "keyword_hits": hits,
