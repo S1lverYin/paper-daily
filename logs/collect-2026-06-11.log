@@ -1,0 +1,201 @@
+2026-06-11 10:52:14,371 Collecting papers...
+2026-06-11 10:54:38,660 Fetching arXiv papers for topic: Algebraic Geometry
+Fetching arXiv papers for topic: Algebraic Topology
+Fetching arXiv papers for topic: Number Theory
+Fetching arXiv papers for topic: Arithmetic Geometry
+Fetching arXiv papers for topic: K-Theory
+Fetching arXiv papers for topic: Motivic homotopy theory
+Summarizing 19 papers with LLM using concurrency=2
+Finished summary: 2602.14380v3
+Finished summary: 2606.12001v1
+Finished summary: 2606.12351v1
+Finished summary: 2606.11979v1
+Finished summary: 2606.12376v1
+Finished summary: 2502.01504v3
+Finished summary: 2606.12115v1
+Finished summary: 2606.12220v1
+Finished summary: 2306.15519v5
+Finished summary: 2606.12257v1
+Finished summary: 2606.12229v1
+Finished summary: 2606.12359v1
+Finished summary: 2606.12194v1
+Finished summary: 2606.12188v1
+Finished summary: 2606.12037v1
+Finished summary: 2606.12206v1
+Finished summary: 2606.12315v1
+Finished summary: 2508.10706v2
+Finished summary: 2606.12283v1
+Wrote 41 daily papers to web/data/papers.json
+Daily arXiv stats: raw=56, selected=19, backfilled=0, filtered=0
+Category filter: allowed=['math.AT', 'math.AG', 'math.NT', 'math.KT'], dropped=22
+Wrote 0 conference papers to web/data/conference_papers.json
+
+2026-06-11 10:54:38,781 PushPlus result: 执行成功
+2026-06-11 11:02:25,563 Collecting papers...
+2026-06-11 11:04:53,618 Fetching arXiv papers for topic: Algebraic Geometry
+Fetching arXiv papers for topic: Algebraic Topology
+Fetching arXiv papers for topic: Number Theory
+Fetching arXiv papers for topic: Arithmetic Geometry
+Fetching arXiv papers for topic: K-Theory
+Fetching arXiv papers for topic: Motivic homotopy theory
+Fetching arXiv papers for topic: Category Theory
+Summarizing 20 papers with LLM using concurrency=2
+Finished summary: 2602.14380v3
+Finished summary: 2606.12351v1
+Finished summary: 2606.12220v1
+Finished summary: 2606.12376v1
+Finished summary: 2606.12115v1
+Finished summary: 2306.15519v5
+Finished summary: 2606.12315v1
+Finished summary: 2606.12257v1
+Finished summary: 2606.12359v1
+Finished summary: 2606.12229v1
+Finished summary: 2606.11641v1
+Finished summary: 2606.12194v1
+Finished summary: 2606.12037v1
+Finished summary: 2606.12188v1
+Finished summary: 2606.11895v1
+Finished summary: 2606.12357v1
+Finished summary: 2606.12206v1
+Finished summary: 2508.10706v2
+Finished summary: 2606.12283v1
+Finished summary: 2510.02959v2
+Wrote 45 daily papers to web/data/papers.json
+Daily arXiv stats: raw=67, selected=20, backfilled=0, filtered=0
+Category filter: allowed=['math.KT', 'math.CT', 'math.AT', 'math.AG', 'math.NT'], dropped=27
+Wrote 0 conference papers to web/data/conference_papers.json
+
+2026-06-11 11:04:53,788 PushPlus result: 执行成功
+2026-06-11 11:09:49,631 Collecting papers...
+2026-06-11 11:11:27,245 Fetching arXiv papers for topic: Motivic Homotopy Theory
+Fetching arXiv papers for topic: Algebraic Geometry
+Fetching arXiv papers for topic: Arithmetic Geometry
+Fetching arXiv papers for topic: Homotopy Theory
+Fetching arXiv papers for topic: K-Theory
+Summarizing 11 papers with LLM using concurrency=2
+Finished summary: 2602.14380v3
+Finished summary: 2606.12001v1
+Finished summary: 2606.12351v1
+Finished summary: 2408.08012v2
+Finished summary: 2606.12315v1
+Finished summary: 2203.12266v6
+Finished summary: 2606.12188v1
+Finished summary: 2606.11641v1
+Finished summary: 2508.10706v2
+Finished summary: 2606.12194v1
+Finished summary: 2606.12283v1
+Wrote 47 daily papers to web/data/papers.json
+Daily arXiv stats: raw=49, selected=11, backfilled=0, filtered=0
+Category filter: allowed=['math.AG', 'math.NT', 'math.AT', 'math.KT', 'math.CT'], dropped=19
+Wrote 0 conference papers to web/data/conference_papers.json
+
+2026-06-11 11:11:27,359 PushPlus result: 执行成功
+2026-06-11 11:35:13,652 Collecting papers...
+2026-06-11 11:36:49,129 Fetching arXiv papers for topic: Motivic Homotopy Theory
+Fetching arXiv papers for topic: Algebraic Geometry
+Fetching arXiv papers for topic: Arithmetic Geometry
+Fetching arXiv papers for topic: Homotopy Theory
+Fetching arXiv papers for topic: K-Theory
+Summarizing 11 papers with LLM using concurrency=2
+Finished summary: 2602.14380v3
+Finished summary: 2606.12001v1
+Finished summary: 2606.12351v1
+Finished summary: 2408.08012v2
+Finished summary: 2606.12315v1
+Finished summary: 2203.12266v6
+Finished summary: 2606.12188v1
+Finished summary: 2606.11641v1
+Finished summary: 2508.10706v2
+Finished summary: 2606.12194v1
+Finished summary: 2606.12283v1
+Wrote 47 daily papers to web/data/papers.json
+Daily arXiv stats: raw=49, selected=11, backfilled=0, filtered=0
+Category filter: allowed=['math.CT', 'math.AT', 'math.KT', 'math.NT', 'math.AG'], dropped=19
+Wrote 0 conference papers to web/data/conference_papers.json
+
+2026-06-11 11:36:49,362 PushPlus result: 执行成功
+2026-06-11 11:42:34,481 Collecting papers...
+2026-06-11 11:43:41,665 Fetching arXiv papers for topic: Motivic Homotopy Theory
+Fetching arXiv papers for topic: Algebraic Geometry
+Fetching arXiv papers for topic: Arithmetic Geometry
+Fetching arXiv papers for topic: Homotopy Theory
+Fetching arXiv papers for topic: K-Theory
+
+2026-06-11 11:43:41,665 Traceback (most recent call last):
+  File "/Users/silver/Documents/paper-daily/scripts/collect_papers.py", line 2439, in <module>
+    main()
+    ~~~~^^
+  File "/Users/silver/Documents/paper-daily/scripts/collect_papers.py", line 2402, in main
+    payload = collect(
+        args.config,
+    ...<12 lines>...
+        args.clear_cache,
+    )
+  File "/Users/silver/Documents/paper-daily/scripts/collect_papers.py", line 2185, in collect
+    matches = [score_paper(topic, paper) for topic in topics]
+               ~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/Users/silver/Documents/paper-daily/scripts/collect_papers.py", line 1520, in score_paper
+    k_score, hits = keyword_score(topic, paper)
+                    ^^^^^^^^^^^^^
+NameError: name 'keyword_score' is not defined
+
+2026-06-11 11:43:41,973 PushPlus result: 执行成功
+2026-06-11 12:40:53,984 Clearing cache and regenerating all paper data...
+2026-06-11 12:42:01,165 Fetching arXiv papers for topic: Motivic Homotopy Theory
+Fetching arXiv papers for topic: Algebraic Geometry
+Fetching arXiv papers for topic: Arithmetic Geometry
+Fetching arXiv papers for topic: Homotopy Theory
+Fetching arXiv papers for topic: K-Theory
+
+2026-06-11 12:42:01,165 Traceback (most recent call last):
+  File "/Users/silver/Documents/paper-daily/scripts/collect_papers.py", line 2439, in <module>
+    main()
+    ~~~~^^
+  File "/Users/silver/Documents/paper-daily/scripts/collect_papers.py", line 2402, in main
+    payload = collect(
+        args.config,
+    ...<12 lines>...
+        args.clear_cache,
+    )
+  File "/Users/silver/Documents/paper-daily/scripts/collect_papers.py", line 2185, in collect
+    matches = [score_paper(topic, paper) for topic in topics]
+               ~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/Users/silver/Documents/paper-daily/scripts/collect_papers.py", line 1520, in score_paper
+    k_score, hits = keyword_score(topic, paper)
+                    ^^^^^^^^^^^^^
+NameError: name 'keyword_score' is not defined
+
+2026-06-11 12:42:01,333 PushPlus result: 执行成功
+2026-06-11 12:42:44,193 Clearing cache and regenerating all paper data...
+2026-06-11 12:44:36,176 Fetching arXiv papers for topic: Motivic Homotopy Theory
+Fetching arXiv papers for topic: Algebraic Geometry
+Fetching arXiv papers for topic: Arithmetic Geometry
+Fetching arXiv papers for topic: Homotopy Theory
+Fetching arXiv papers for topic: K-Theory
+Summarizing 20 papers with LLM using concurrency=2
+Finished summary: 2606.12001v1
+Finished summary: 2606.09747v1
+Finished summary: 2606.11412v1
+Finished summary: 2606.09796v1
+Finished summary: 2606.10453v1
+Finished summary: 2602.14380v3
+Finished summary: 2606.12351v1
+Finished summary: 2602.00274v2
+Finished summary: 2408.08012v2
+Finished summary: 2203.12266v6
+Finished summary: 2606.11451v1
+Finished summary: 2407.07877v6
+Finished summary: 2606.10830v1
+Finished summary: 2606.12315v1
+Finished summary: 2606.12188v1
+Finished summary: 2606.11641v1
+Finished summary: 2508.10706v2
+Finished summary: 2606.12194v1
+Finished summary: 2606.12283v1
+Finished summary: 2501.13909v2
+Wrote 20 daily papers to web/data/papers.json
+Daily arXiv stats: raw=49, selected=21, backfilled=0, filtered=0
+Category filter: allowed=['math.CT', 'math.KT', 'math.NT', 'math.AG', 'math.AT'], dropped=19
+Wrote 0 conference papers to web/data/conference_papers.json
+
+2026-06-11 12:44:36,349 PushPlus result: 执行成功

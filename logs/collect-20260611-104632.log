@@ -1,0 +1,34 @@
+=== Paper Daily 采集开始 Thu Jun 11 10:46:32 CST 2026 ===
+Fetching arXiv papers for topic: Algebraic Geometry
+Fetching arXiv papers for topic: Algebraic Topology
+Fetching arXiv papers for topic: Number Theory
+Fetching arXiv papers for topic: Arithmetic Geometry
+Fetching arXiv papers for topic: K-Theory
+Fetching arXiv papers for topic: Motivic homotopy theory
+Summarizing 19 papers with LLM using concurrency=2
+Finished summary: 2602.14380v3
+Finished summary: 2606.12001v1
+Finished summary: 2606.12351v1
+Finished summary: 2606.11979v1
+Finished summary: 2606.12376v1
+Finished summary: 2502.01504v3
+Finished summary: 2606.12115v1
+Finished summary: 2606.12220v1
+Finished summary: 2306.15519v5
+Finished summary: 2606.12257v1
+Finished summary: 2606.12229v1
+Finished summary: 2606.12359v1
+Finished summary: 2606.12194v1
+Finished summary: 2606.12188v1
+Finished summary: 2606.12037v1
+Finished summary: 2606.12206v1
+Finished summary: 2606.12315v1
+Finished summary: 2508.10706v2
+Finished summary: 2606.12283v1
+Wrote 41 daily papers to web/data/papers.json
+Daily arXiv stats: raw=56, selected=19, backfilled=0, filtered=0
+Category filter: allowed=['math.AT', 'math.KT', 'math.NT', 'math.AG'], dropped=25
+Wrote 0 conference papers to web/data/conference_papers.json
+=== Paper Daily 采集完成 Thu Jun 11 10:48:58 CST 2026 ===
+PushPlus: 执行成功
+=== 推送完成 Thu Jun 11 10:48:59 CST 2026 ===

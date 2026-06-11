@@ -109,7 +109,11 @@ function dateKey(value) {
 }
 
 function collectionTime(paper) {
-  return paper.last_seen_at || paper.first_seen_at || paper.published || paper.updated || "";
+  // Prioritise the paper's real publication date so that daily /
+  // weekly / monthly views show the actual submission rhythm.
+  // last_seen_at / first_seen_at are collection timestamps (all
+  // the same for a single run) — use them only as fallback.
+  return paper.published || paper.last_seen_at || paper.first_seen_at || paper.updated || "";
 }
 
 function startOfDay(date) {
@@ -129,6 +133,25 @@ function endOfWeek(date) {
   return end;
 }
 
+// window sizes for "this week" / "this month" (papers published within
+// the last N days, because arXiv posts are continuous, not calendar-bound).
+const WEEK_WINDOW_DAYS = 60;
+const MONTH_WINDOW_DAYS = 120;
+const HIGHLIGHTS_WINDOW_DAYS = 60;
+
+function startOfWindow(date, days) {
+  const d = startOfDay(date);
+  d.setDate(d.getDate() - days);
+  return d;
+}
+
+function endOfWindow(date) {
+  // "now" is always start of the next day after the selected date
+  const d = startOfDay(date);
+  d.setDate(d.getDate() + 1);
+  return d;
+}
+
 function startOfMonth(date) {
   return new Date(date.getFullYear(), date.getMonth(), 1);
 }
@@ -146,13 +169,36 @@ function selectedDate() {
   return parseDate(`${state.filters.date}T12:00:00`) || new Date();
 }
 
+// When showing "all" topics, display the best_match score (includes
+// bridge bonus for ranking).  When a specific topic is selected, use
+// base_score so the list is sorted by raw relevance to that topic.
 function scoreOf(paper) {
+  if (state.filters.topic !== "all") {
+    const label = topicLabel(paper);
+    return label ? (label.base_score ?? label.score ?? 0) : Number(paper.best_match?.score || 0);
+  }
   return Number(paper.best_match?.score || 0);
 }
 
 function levelOf(paper) {
+  if (state.filters.topic !== "all") {
+    return topicLevel(paper);
+  }
   return String(paper.best_match?.level || "low").toLowerCase();
 }
+
+// Topic tag eligibility — per-topic strong thresholds (no keyword hit
+// required above) plus a weak rule (>= 0.12 AND has keyword hits).
+// Motivic is highest because it shares the most vocabulary with other
+// fields; K-theory is lowest because some real papers score lower there.
+const TOPIC_STRONG = {
+  motivic_homotopy_theory: 0.28,
+  algebraic_geometry: 0.25,
+  arithmetic_geometry: 0.25,
+  homotopy_theory: 0.22,
+  k_theory: 0.20,
+};
+const MIN_TOPIC_BASE_WEAK = 0.12;
 
 // Return the best matching label for the currently selected topic filter.
 // When "all" is selected, use best_match (overall winner).  When a specific
@@ -222,8 +268,14 @@ function matchesBaseFilters(paper) {
   if (state.filters.topic !== "all") {
     const label = topicLabel(paper);
     if (!label) return false;
-    // base_score >= 0.12: matches the backend top_labels cutoff
-    if ((label.base_score ?? label.score ?? 0) < 0.12) return false;
+    // Must have per-topic strong score, OR weak + keyword hits
+    const base = label.base_score ?? label.score ?? 0;
+    const hasHits = (label.keyword_hits || []).length > 0;
+    const tid = label.topic_id || "";
+    const strong = TOPIC_STRONG[tid] ?? 0.22;
+    if (base >= strong) { /* passes */ }
+    else if (base >= MIN_TOPIC_BASE_WEAK && hasHits) { /* passes */ }
+    else return false;
   }
 
   if (state.filters.level !== "all") {
@@ -240,12 +292,15 @@ function matchesBaseFilters(paper) {
 function matchesView(paper) {
   if (state.filters.view === "all") return true;
   const date = selectedDate();
-  const collectedAt = collectionTime(paper);
-  if (state.filters.view === "daily") return dateKey(collectedAt) === state.filters.date;
-  if (state.filters.view === "week") return inRange(collectedAt, startOfWeek(date), endOfWeek(date));
-  if (state.filters.view === "month") return inRange(collectedAt, startOfMonth(date), endOfMonth(date));
+  const pubDate = parseDate(paper.published || paper.last_seen_at || "");
+  if (!pubDate) return false;
+  const windowEnd = endOfWindow(date);
+
+  if (state.filters.view === "daily") return dateKey(paper.published || paper.last_seen_at) === state.filters.date;
+  if (state.filters.view === "week") return pubDate >= startOfWindow(date, WEEK_WINDOW_DAYS) && pubDate < windowEnd;
+  if (state.filters.view === "month") return pubDate >= startOfWindow(date, MONTH_WINDOW_DAYS) && pubDate < windowEnd;
   if (state.filters.view === "highlights") {
-    return inRange(collectedAt, startOfWeek(date), endOfWeek(date)) && scoreOf(paper) >= 0.42;
+    return pubDate >= startOfWindow(date, HIGHLIGHTS_WINDOW_DAYS) && pubDate < windowEnd && topicScore(paper) >= 0.42;
   }
   return true;
 }
@@ -398,9 +453,22 @@ function hydrateTopicFilter() {
 
 function hydrateDateFilter() {
   const data = activeData();
-  const dates = [...new Set((data.papers || []).map((paper) => dateKey(collectionTime(paper))).filter(Boolean))].sort().reverse();
-  const fallback = dateKey(data.generated_at_iso || new Date().toISOString());
-  const options = dates.length ? dates : [fallback];
+  const now = new Date();
+
+  // Build synthetic date options for daily/weekly/monthly views
+  // so the user can always go back through the last 7 days.
+  const recent = [];
+  for (let i = 0; i < 7; i++) {
+    const d = new Date(now.getFullYear(), now.getMonth(), now.getDate() - i);
+    recent.push(dateKey(d.toISOString()));
+  }
+
+  // Merge with actual paper dates so nothing is hidden
+  const paperDates = [...new Set((data.papers || []).map((paper) => dateKey(collectionTime(paper))).filter(Boolean))];
+  const all = [...new Set([...recent, ...paperDates])].sort().reverse();
+
+  const fallback = dateKey(data.generated_at_iso || now.toISOString());
+  const options = all.length ? all : [fallback];
   state.filters.date = options[0];
   nodes.dateFilter.textContent = "";
   for (const key of options) {
@@ -414,8 +482,15 @@ function hydrateDateFilter() {
 function updateStats() {
   const papers = activeData().papers || [];
   const date = selectedDate();
-  const weekPapers = papers.filter((paper) => inRange(collectionTime(paper), startOfWeek(date), endOfWeek(date)));
-  const monthPapers = papers.filter((paper) => inRange(collectionTime(paper), startOfMonth(date), endOfMonth(date)));
+  const windowEnd = endOfWindow(date);
+  const weekPapers = papers.filter((paper) => {
+    const d = parseDate(paper.published || paper.last_seen_at || "");
+    return d && d >= startOfWindow(date, WEEK_WINDOW_DAYS) && d < windowEnd;
+  });
+  const monthPapers = papers.filter((paper) => {
+    const d = parseDate(paper.published || paper.last_seen_at || "");
+    return d && d >= startOfWindow(date, MONTH_WINDOW_DAYS) && d < windowEnd;
+  });
   const top = papers.reduce((max, paper) => Math.max(max, topicScore(paper)), 0);
   nodes.paperCount.textContent = String(papers.length);
   nodes.weekCount.textContent = String(weekPapers.length);

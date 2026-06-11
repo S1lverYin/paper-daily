@@ -35,7 +35,7 @@ DEFAULT_OUTPUT = Path("web/data/papers.json")
 DEFAULT_CONFERENCE_OUTPUT = Path("web/data/conference_papers.json")
 RETAINED_MATCH_LEVELS = {"high", "medium"}
 DEFAULT_MAX_NEW_PAPERS = 50
-DEFAULT_MAX_STORED_PAPERS = 50
+DEFAULT_MAX_STORED_PAPERS = 200
 DEFAULT_MAX_NEW_CONFERENCE_PAPERS = 50
 DEFAULT_MAX_STORED_CONFERENCE_PAPERS = 300
 DEFAULT_MAX_DATA_BYTES = 8 * 1024 * 1024
@@ -532,7 +532,7 @@ def fetch_arxiv_query(search_query: str, max_results: int, sort_by: str, sort_or
 
 
 def fetch_arxiv(topic: Topic, max_results: int) -> list[dict[str, Any]]:
-    sort_by = os.getenv("ARXIV_SORT_BY", "lastUpdatedDate").strip() or "lastUpdatedDate"
+    sort_by = os.getenv("ARXIV_SORT_BY", "submittedDate").strip() or "submittedDate"
     papers = fetch_arxiv_query(
         arxiv_query_for_topic(topic),
         max_results,
@@ -1671,9 +1671,21 @@ def keyword_score(topic: Topic, paper: dict[str, Any]) -> tuple[float, list[str]
     weighted = 0.0
     for keyword in topic.keywords:
         normalized = keyword.lower()
-        if normalized in haystack:
+        # Short keywords (<= 3 chars, e.g. TC, KO, KU, HZ) must match as
+        # whole words to avoid false positives inside longer words
+        # (e.g. 'TC' inside 'patchkoria').
+        if len(normalized) <= 3 and not normalized.replace("_", "").isalpha():
+            # contains numbers/symbols like K_0, S^{p,q} — match normally
+            matched = normalized in haystack
+        elif len(normalized) <= 3:
+            matched = bool(re.search(rf"\b{re.escape(normalized)}\b", haystack))
+        else:
+            matched = normalized in haystack
+        if matched:
             hits.append(keyword)
-            weighted += min(1.0, max(0.35, len(normalized.split()) / 5))
+            # Multi-word keywords get a bigger boost (more specific match)
+            word_count = len(normalized.split())
+            weighted += min(1.5, max(0.40, word_count * 0.22))
     score = min(1.0, weighted / max(2.0, min(5.0, len(topic.keywords) / 2)))
     return score, hits[:6]
 
@@ -1686,12 +1698,41 @@ def category_score(topic: Topic, paper: dict[str, Any]) -> float:
     return len(paper_categories & topic_categories) / len(topic_categories)
 
 
+# English stop-words that carry little domain information and inflate
+# lexical-overlap scores across all mathematics papers.
+_STOP_WORDS: set[str] = {
+    "a", "an", "the", "and", "or", "of", "in", "on", "to", "for",
+    "with", "by", "at", "from", "as", "is", "are", "was", "be",
+    "it", "its", "we", "they", "this", "that", "which", "all",
+    "not", "no", "but", "if", "can", "has", "have", "been", "will",
+    "each", "some", "any", "also", "more", "over", "into", "than",
+    "one", "two", "new", "via", "up", "out", "so", "using", "may",
+    "such", "only", "these", "those", "between", "both", "does",
+    "how", "what", "when", "where", "who", "why", "their",
+    "about", "after", "before", "during", "under", "within",
+    "toward", "along", "above", "below", "just", "most",
+    "other", "well", "much", "many", "very",
+}
+
+
 def lexical_overlap_score(topic: Topic, paper: dict[str, Any]) -> float:
-    topic_terms = set(re.findall(r"[a-zA-Z0-9]+", f"{topic.description} {' '.join(topic.keywords)}".lower()))
-    paper_terms = set(re.findall(r"[a-zA-Z0-9]+", f"{paper.get('title', '')} {paper.get('summary', '')}".lower()))
+    """Content-word lexical overlap between topic keywords and paper content.
+
+    Filters out common English stop-words and generic academic terms so that
+    only meaningful mathematical vocabulary contributes.
+    """
+    topic_terms = set(
+        w for w in re.findall(r"[a-zA-Z0-9]+", f"{topic.description} {' '.join(topic.keywords)}".lower())
+        if w not in _STOP_WORDS and len(w) > 2
+    )
+    paper_terms = set(
+        w for w in re.findall(r"[a-zA-Z0-9]+", f"{paper.get('title', '')} {paper.get('summary', '')}".lower())
+        if w not in _STOP_WORDS and len(w) > 2
+    )
     if not topic_terms or not paper_terms:
         return 0.0
     overlap = topic_terms & paper_terms
+    # Denominator: at least 8, at most topic_terms * 0.18
     return min(1.0, len(overlap) / max(8, len(topic_terms) * 0.18))
 
 
@@ -2377,21 +2418,39 @@ def collect(
             continue
         paper["matches"] = matches
         paper["best_match"] = best_match
-        # top_labels uses base_score (without bridge bonus) to keep topic
-        # filtering discriminative.  When the user selects a topic, the
-        # frontend matches against base_score >= 0.15 and sorts by it.
-        paper["top_labels"] = [
-            {
-                "topic_id": m["topic_id"],
-                "topic_name": m["topic_name"],
-                "base_score": m["base_score"],
-                "score": m["score"],
-                "level": m["level"],
-                "keyword_hits": m.get("keyword_hits", []),
-            }
-            for m in matches
-            if m["base_score"] >= 0.12
-        ][:5]
+        # Cache the full match for each topic so we can use bridge-adjusted
+        # scores for global ranking but base_score for topic-specific labels.
+        # Tiered rule (tuned 2026-06-12):
+        #   strong: base_score >= 0.15 → always keeps the tag
+        #   weak:   base_score >= 0.10 AND >= 1 keyword hit → keeps tag
+        # Below 0.10: suppressed — that topic is not genuinely relevant.
+        # ── Topic tag eligibility ──
+        # Per-topic strong thresholds (no keyword hit required above this):
+        #   motivic_homotopy_theory: 0.28  (most cross-contaminated)
+        #   algebraic_geometry:       0.25
+        #   arithmetic_geometry:      0.25
+        #   homotopy_theory:          0.22
+        #   k_theory:                 0.20
+        # Weak rule: base_score >= 0.12 AND at least one keyword hit.
+        _STRONG = {"motivic_homotopy_theory": 0.28, "algebraic_geometry": 0.25,
+                   "arithmetic_geometry": 0.25, "homotopy_theory": 0.22,
+                   "k_theory": 0.20}
+        _WEAK_MIN = 0.12
+        top_labels = []
+        for m in matches:
+            base = m.get("base_score", 0.0)
+            has_hit = bool(m.get("keyword_hits", []))
+            strong = _STRONG.get(m["topic_id"], 0.22)
+            if base >= strong or (base >= _WEAK_MIN and has_hit):
+                top_labels.append({
+                    "topic_id": m["topic_id"],
+                    "topic_name": m["topic_name"],
+                    "base_score": base,
+                    "score": m["score"],
+                    "level": m["level"],
+                    "keyword_hits": m.get("keyword_hits", []),
+                })
+        paper["top_labels"] = top_labels[:5]
         if in_backfill_window:
             paper["backfilled_from_recent_arxiv"] = True
             daily_outside_cutoff_count += 1

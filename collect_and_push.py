@@ -144,8 +144,8 @@ def main():
         [
             sys.executable, "scripts/collect_papers.py",
             "--days", "1", "--max-per-topic", "25",
-            "--max-summaries", "40", "--max-new-papers", "30",
-            "--max-stored-papers", "30",
+            "--max-summaries", "40", "--max-new-papers", "50",
+            "--max-stored-papers", "200",
         ],
         capture_output=True, text=True, timeout=600,
     )
