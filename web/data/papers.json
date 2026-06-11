@@ -1,6 +1,6 @@
 {
-  "generated_at": "Thu, 11 Jun 2026 15:42:00 +0000",
-  "generated_at_iso": "2026-06-11T15:42:00.501161+00:00",
+  "generated_at": "Thu, 11 Jun 2026 15:46:07 +0000",
+  "generated_at_iso": "2026-06-11T15:46:07.209230+00:00",
   "config_source": "file",
   "data_kind": "daily",
   "topics": [
@@ -782,7 +782,7 @@
             "Spec",
             "vector bundle"
           ],
-          "llm_reason": "论文直接涉及代数几何核心对象（方案、向量丛、法丛），并与用户的代数几何研究方向（schemes, vector bundles）高度匹配；同时，外尔限制和动机Thom空间的概念与模空间、导出代数几何等方向有潜在联系。"
+          "llm_reason": "论文研究Weil限制（代数几何中的标准构造）在动机同伦论中的应用，直接涉及scheme、vector bundle、motivic等用户研究方向的关键词，且arXiv分类math.AG与用户研究方向完全匹配。"
         },
         {
           "topic_id": "motivic_k_theory",
@@ -834,7 +834,7 @@
           "Spec",
           "vector bundle"
         ],
-        "llm_reason": "论文直接涉及代数几何核心对象（方案、向量丛、法丛），并与用户的代数几何研究方向（schemes, vector bundles）高度匹配；同时，外尔限制和动机Thom空间的概念与模空间、导出代数几何等方向有潜在联系。"
+        "llm_reason": "论文研究Weil限制（代数几何中的标准构造）在动机同伦论中的应用，直接涉及scheme、vector bundle、motivic等用户研究方向的关键词，且arXiv分类math.AG与用户研究方向完全匹配。"
       },
       "top_labels": [
         {
@@ -882,15 +882,15 @@
       ],
       "backfilled_from_recent_arxiv": true,
       "chinese_summary": {
-        "problem": "研究范函子（norm functors）的几何方面，特别是通过方案的外尔限制（Weil restriction）来揭示其与向量丛、法丛以及动机Thom空间的关系。",
-        "method": "利用外尔限制保持向量丛的性质，扩展关于法丛的已知结果；将外尔限制与范函子联系起来，并借助Bachmann和Hoyois的结果证明其与动机Thom空间的兼容性；最后在有理系数动机上同调中证明外尔限制映射与范函子诱导的范映射一致且保持Thom类。",
-        "innovation": "1. 证明了外尔限制保持向量丛，并推广了法丛的相关结果；2. 建立了外尔限制与范函子之间的直接联系，并证明其与动机Thom空间的兼容性；3. 在动机上同调中证明了外尔限制映射与范映射的等价性以及Thom类的保持性。",
-        "evidence": "摘要中仅给出了理论证明的断言，未提供具体的实验或系统证据；需要阅读全文验证定理的证明细节。",
-        "limitations": "可能需要确认文中关于外尔限制保持向量丛的具体条件，以及定理证明中对基变换、光滑性等假设的依赖；另外，动机同伦论背景知识可能对理解有影响。",
-        "why_relevant": "论文直接涉及代数几何核心对象（方案、向量丛、法丛），并与用户的代数几何研究方向（schemes, vector bundles）高度匹配；同时，外尔限制和动机Thom空间的概念与模空间、导出代数几何等方向有潜在联系。"
+        "problem": "研究Weil限制在动机同伦论中的几何性质，特别是与范函子、法丛和动机Thom空间的关系。",
+        "method": "利用Weil限制保持向量丛的性质，扩展法丛的已有结果，并通过Bachmann和Hoyois的结果建立与动机Thom空间的兼容性，最后在有理系数动机上同调中证明Weil限制映射与范函子诱导的范映射一致且保持Thom类。",
+        "innovation": "1. 证明了Weil限制保持向量丛，并推广了法丛的相关结果；2. 将Weil限制与动机Thom空间联系起来，证明其兼容性；3. 在有理系数动机上同调中证明Weil限制映射与范映射一致且保持Thom类。",
+        "evidence": "摘要中声称给出了Weil限制保持向量丛的证明，并通过Bachmann和Hoyois的结果建立了与动机Thom空间的兼容性，但未提供具体实验或系统证据细节。",
+        "limitations": "需要阅读全文确认证明细节和具体假设条件；摘要未讨论计算实例或局限性。",
+        "why_relevant": "论文研究Weil限制（代数几何中的标准构造）在动机同伦论中的应用，直接涉及scheme、vector bundle、motivic等用户研究方向的关键词，且arXiv分类math.AG与用户研究方向完全匹配。"
       },
       "first_seen_at": "2026-06-11T10:10:04.063496+00:00",
-      "last_seen_at": "2026-06-11T15:42:00.501161+00:00",
+      "last_seen_at": "2026-06-11T15:46:07.209230+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -1332,7 +1332,7 @@
             "homotopy colimit",
             "spectral sequence"
           ],
-          "llm_reason": "论文直接使用了同伦理论中的核心概念：fibration、cofibration、homotopy colimit、spectral sequence，这些正是你研究方向的关键词；同时 arXiv 分类 math.AT（代数拓扑）与你高度相关。尽管该工作处理的是度量空间而非经典拓扑空间或谱，但其范畴结构（Brown 范畴）与模型范畴、无穷范畴有潜在联系。"
+          "llm_reason": "研究直接定义了fibration、cofibration、homotopy colimit、spectral sequence等概念，并利用谱序列构造同伦范畴，完全匹配研究方向中的关键词，且arXiv分类为math.AT，属于同伦论范畴。"
         },
         {
           "topic_id": "motivic_k_theory",
@@ -1381,7 +1381,7 @@
           "homotopy colimit",
           "spectral sequence"
         ],
-        "llm_reason": "论文直接使用了同伦理论中的核心概念：fibration、cofibration、homotopy colimit、spectral sequence，这些正是你研究方向的关键词；同时 arXiv 分类 math.AT（代数拓扑）与你高度相关。尽管该工作处理的是度量空间而非经典拓扑空间或谱，但其范畴结构（Brown 范畴）与模型范畴、无穷范畴有潜在联系。"
+        "llm_reason": "研究直接定义了fibration、cofibration、homotopy colimit、spectral sequence等概念，并利用谱序列构造同伦范畴，完全匹配研究方向中的关键词，且arXiv分类为math.AT，属于同伦论范畴。"
       },
       "top_labels": [
         {
@@ -1410,15 +1410,15 @@
       ],
       "backfilled_from_recent_arxiv": true,
       "chinese_summary": {
-        "problem": "为带有自然数距离的广义度量空间构建一种层次化的同伦理论，利用幅度-路径谱序列的定义来引导等价关系和同伦构造。",
-        "method": "引入幅度-路径谱序列（MPSS），针对每一页 r 定义 r-拟同构（诱导谱序列该页拟同构的映射）和 r-余纤维化，证明谱序列每页满足度量化的 Eilenberg-Steenrod 公理，并建立 Brown 范畴结构以显式计算同伦余极限，最后应用于 r-球面等例子。",
-        "innovation": "1. 首次将同伦理论推广到带有自然数距离的广义度量空间，通过谱序列分页给出层次化的等价概念（r-拟同构）。\n2. 建立了度量空间上的 Brown 范畴结构，从而能用范畴论工具处理同伦余极限。\n3. 将理论与图论连接：当 r=1 时，理论限制为有向图的经典同伦论。",
-        "evidence": "摘要中给出了定义、Eilenberg-Steenrod 公理的类比、Mayer-Vietoris 定理的证明框架，并显式计算了 r-球面的谱序列。但未涉及实验数据或大型系统验证。",
-        "limitations": "该理论针对带有自然数距离的度量空间，推广到一般度量空间尚未提及；r-余纤维化等概念的技术细节需要阅读全文确认；与经典稳定同伦理论的直接联系（如谱）未在摘要中体现。",
-        "why_relevant": "论文直接使用了同伦理论中的核心概念：fibration、cofibration、homotopy colimit、spectral sequence，这些正是你研究方向的关键词；同时 arXiv 分类 math.AT（代数拓扑）与你高度相关。尽管该工作处理的是度量空间而非经典拓扑空间或谱，但其范畴结构（Brown 范畴）与模型范畴、无穷范畴有潜在联系。"
+        "problem": "如何为广义度量空间（自然数距离）建立同伦理论，并将经典的Eilenberg-Steenrod公理、纤维化、共纤维化、同伦余极限等概念推广到该设定下。",
+        "method": "引入量级-路径谱序列（MPSS），定义其每一页上的r-拟同构、r-弱等价、r-纤维化和r-共纤维化；利用MPSS建立一族Brown范畴结构，从而显式计算同伦余极限；并证明每个页面满足度量空间版的Eilenberg-Steenrod公理，包括Mayer-Vietoris定理。",
+        "innovation": "1. 首次将同伦理论推广到广义度量空间，并利用MPSS的页码参数化不同精度的同伦概念。2. 定义了r-共纤维化并证明了相应的Mayer-Vietoris定理，将经典同伦论中的工具系统迁移到度量空间。3. 通过Brown范畴结构显式计算r-同伦余极限，并构造了r-球面及其谱序列，且当r=1时理论退化为有向图的情形。",
+        "evidence": "摘要中给出了理论构造和定理陈述（如Mayer-Vietoris定理、Brown范畴结构、r-球面计算），但未提供具体数值实验或系统实现。",
+        "limitations": "1. 论文未提供与经典同伦论（如拓扑空间或单纯集）之间的直接联系或嵌入。2. 广义度量空间的同伦理论可能不直接适用于标准拓扑空间或单纯集。3. 需要阅读全文确认r-同伦共限等构造的显式例子和理解程度。",
+        "why_relevant": "研究直接定义了fibration、cofibration、homotopy colimit、spectral sequence等概念，并利用谱序列构造同伦范畴，完全匹配研究方向中的关键词，且arXiv分类为math.AT，属于同伦论范畴。"
       },
       "first_seen_at": "2026-06-11T04:42:44.276818+00:00",
-      "last_seen_at": "2026-06-11T15:42:00.501161+00:00",
+      "last_seen_at": "2026-06-11T15:46:07.209230+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -1690,254 +1690,6 @@
       "retained_from_previous_run": true
     },
     {
-      "id": "2606.12351v1",
-      "source": "arXiv",
-      "title": "Moduli of Supersingular Abelian Varieties in Dimensions $g\\leq 5$",
-      "authors": [
-        "Michael Burger"
-      ],
-      "summary": "We establish structure theorems for polarised flag type quotients arising in the study of the moduli space of supersingular abelian varieties. In particular, we prove a refined normal form for the top level of these flags and derive an explicit, computable descent criterion for quasi-polarisations. These results provide a complete classification of the first and last step of these flags. As an application, we compute polarised flag type quotients in dimensions $g\\leq 5$, describing the fibers of the truncation morphisms as classification objects of supersingular abelian varieties.",
-      "published": "2026-06-10T17:23:56Z",
-      "updated": "2026-06-10T17:23:56Z",
-      "paper_url": "http://arxiv.org/abs/2606.12351v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.12351v1",
-      "categories": [
-        "math.AG",
-        "math.NT"
-      ],
-      "seed_topic": "algebraic_geometry",
-      "matches": [
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "score": 0.717,
-          "base_score": 0.467,
-          "bridge_bonus": 0.0,
-          "level": "high",
-          "reason": "关键词命中：moduli space、descent；arXiv 分类重合：math.AG；近期论文",
-          "keyword_hits": [
-            "moduli space",
-            "descent"
-          ],
-          "llm_reason": "论文研究超奇异阿贝尔簇的模空间，直接涉及模空间理论（moduli space）和下降（descent）概念，与研究方向中的moduli space、moduli functor、descent、algebraic stack等关键词高度相关，且arXiv分类为math.AG。"
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "score": 0.277,
-          "base_score": 0.227,
-          "bridge_bonus": 0.0,
-          "level": "low",
-          "reason": "arXiv 分类重合：math.AG、math.NT；近期论文",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "score": 0.117,
-          "base_score": 0.067,
-          "bridge_bonus": 0.0,
-          "level": "low",
-          "reason": "arXiv 分类重合：math.AG；近期论文",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "score": 0.098,
-          "base_score": 0.048,
-          "bridge_bonus": 0.0,
-          "level": "low",
-          "reason": "近期论文",
-          "keyword_hits": []
-        }
-      ],
-      "best_match": {
-        "topic_id": "algebraic_geometry",
-        "topic_name": "Algebraic Geometry",
-        "score": 0.717,
-        "base_score": 0.467,
-        "bridge_bonus": 0.0,
-        "level": "high",
-        "reason": "关键词命中：moduli space、descent；arXiv 分类重合：math.AG；近期论文",
-        "keyword_hits": [
-          "moduli space",
-          "descent"
-        ],
-        "llm_reason": "论文研究超奇异阿贝尔簇的模空间，直接涉及模空间理论（moduli space）和下降（descent）概念，与研究方向中的moduli space、moduli functor、descent、algebraic stack等关键词高度相关，且arXiv分类为math.AG。"
-      },
-      "top_labels": [
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "base_score": 0.467,
-          "score": 0.517,
-          "level": "medium",
-          "keyword_hits": [
-            "moduli space",
-            "descent"
-          ]
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "base_score": 0.227,
-          "score": 0.277,
-          "level": "low",
-          "keyword_hits": []
-        }
-      ],
-      "chinese_summary": {
-        "problem": "建立超奇异阿贝尔簇的模空间中极化旗型商的结构定理，以分类这些簇并计算低维情形下的显式描述。",
-        "method": "通过分析旗型商顶层结构的精细规范形式，推导拟极化的显式可计算下降准则；利用这些结果对旗型商的第一步和最后一步进行完整分类，并计算维度g≤5的极化旗型商，描述截断态射的纤维。",
-        "innovation": "1. 证明了旗型商顶层的精细规范形式；2. 给出了拟极化的显式可计算下降准则；3. 对旗型商的第一步和最后一步提供了完整分类，并具体计算了g≤5的极化旗型商。",
-        "evidence": "摘要中明确提到计算了维度g≤5的极化旗型商，并描述了截断态射的纤维，但未提供详细数值或图表证据。",
-        "limitations": "仅覆盖维度g≤5，高维情形未涉及；需要阅读全文确认下降准则的显式表达式和分类的完备性。",
-        "why_relevant": "论文研究超奇异阿贝尔簇的模空间，直接涉及模空间理论（moduli space）和下降（descent）概念，与研究方向中的moduli space、moduli functor、descent、algebraic stack等关键词高度相关，且arXiv分类为math.AG。"
-      },
-      "first_seen_at": "2026-06-11T04:42:44.276818+00:00",
-      "last_seen_at": "2026-06-11T15:42:00.501161+00:00",
-      "retained_from_previous_run": false
-    },
-    {
-      "id": "2606.08166v1",
-      "source": "arXiv",
-      "title": "Cyclotomic extensions in stable homotopy theory",
-      "authors": [
-        "Douglas C. Ravenel"
-      ],
-      "summary": "This expository paper is a companion to \\cite{Rav:gjmcyc}, in which we discuss cyclotomic spectra. Both papers are intended to shed light on the recent resolution of the telescope conjecture by Robert Burklund, Jeremy Hahn, Ishan Levy and Tomer Schlank (hereafter referred to as BHLS) in \\cite{BHLS}. Their proof involves both cyclotomic spectra, the subject of \\cite{Rav:gjmcyc}, and cyclotomic extensions of spectra, the subject of this paper. Higher cyclotomic extensions of commutative ring spectra are analogous to Galois extensions of $p$-adic number fields (or rings of integers thereof) obtained by adjoining roots of unity.",
-      "published": "2026-06-06T13:29:41Z",
-      "updated": "2026-06-06T13:29:41Z",
-      "paper_url": "http://arxiv.org/abs/2606.08166v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.08166v1",
-      "categories": [
-        "math.AT"
-      ],
-      "seed_topic": "homotopy_theory",
-      "matches": [
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "score": 0.705,
-          "base_score": 0.518,
-          "bridge_bonus": 0.037,
-          "level": "high",
-          "reason": "关键词命中：homotopy theory、stable homotopy theory；arXiv 分类重合：math.AT；桥接 homotopy_theory↔arithmetic_geometry (hits=4/1)；近期论文",
-          "keyword_hits": [
-            "homotopy theory",
-            "stable homotopy theory"
-          ],
-          "llm_reason": "论文直接研究 stable homotopy theory 中的 cyclotomic extensions，与研究方向中的稳定同伦、谱、Galois 下界等关键词密切相关，且涉及望远镜猜想这一重要问题。"
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "score": 0.349,
-          "base_score": 0.224,
-          "bridge_bonus": 0.075,
-          "level": "low",
-          "reason": "关键词命中：number field；桥接 arithmetic_geometry↔homotopy_theory (hits=1/4)；近期论文",
-          "keyword_hits": [
-            "number field"
-          ]
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "score": 0.328,
-          "base_score": 0.278,
-          "bridge_bonus": 0.0,
-          "level": "low",
-          "reason": "关键词命中：cyclotomic spectra；arXiv 分类重合：math.AT；近期论文",
-          "keyword_hits": [
-            "cyclotomic spectra"
-          ]
-        },
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "score": 0.159,
-          "base_score": 0.109,
-          "bridge_bonus": 0.0,
-          "level": "low",
-          "reason": "关键词命中：Spec；近期论文",
-          "keyword_hits": [
-            "Spec"
-          ]
-        }
-      ],
-      "best_match": {
-        "topic_id": "homotopy_theory",
-        "topic_name": "Homotopy Theory",
-        "score": 0.705,
-        "base_score": 0.518,
-        "bridge_bonus": 0.037,
-        "level": "high",
-        "reason": "关键词命中：homotopy theory、stable homotopy theory；arXiv 分类重合：math.AT；桥接 homotopy_theory↔arithmetic_geometry (hits=4/1)；近期论文",
-        "keyword_hits": [
-          "homotopy theory",
-          "stable homotopy theory"
-        ],
-        "llm_reason": "论文直接研究 stable homotopy theory 中的 cyclotomic extensions，与研究方向中的稳定同伦、谱、Galois 下界等关键词密切相关，且涉及望远镜猜想这一重要问题。"
-      },
-      "top_labels": [
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "base_score": 0.518,
-          "score": 0.605,
-          "level": "medium",
-          "keyword_hits": [
-            "homotopy theory",
-            "stable homotopy theory"
-          ]
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "base_score": 0.224,
-          "score": 0.349,
-          "level": "low",
-          "keyword_hits": [
-            "number field"
-          ]
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "base_score": 0.278,
-          "score": 0.328,
-          "level": "low",
-          "keyword_hits": [
-            "cyclotomic spectra"
-          ]
-        },
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "base_score": 0.109,
-          "score": 0.159,
-          "level": "low",
-          "keyword_hits": [
-            "Spec"
-          ]
-        }
-      ],
-      "backfilled_from_recent_arxiv": true,
-      "chinese_summary": {
-        "problem": "解释 recent resolution of the telescope conjecture 中使用的 cyclotomic extensions of spectra 的概念和性质。",
-        "method": "该论文是综述性文章，通过类比 p-adic 数域的 Galois 扩张来介绍高阶环谱的 cyclotomic extensions，并配合另一篇关于 cyclotomic spectra 的论文共同阐明望远镜猜想的证明框架。",
-        "innovation": "1. 将 cyclotomic extensions 概念系统引入稳定同伦论，类比数论中的 Galois 扩张；2. 为望远镜猜想的证明提供背景和语言支持；3. 是解说性论文，整合了相关领域的最新进展。",
-        "evidence": "证据不足；摘要仅声明是解说性论文，未给出具体定理或实验验证。",
-        "limitations": "这是解说性论文，可能缺乏原始技术细节；需要阅读原文及配套论文才能理解完整的证明。",
-        "why_relevant": "论文直接研究 stable homotopy theory 中的 cyclotomic extensions，与研究方向中的稳定同伦、谱、Galois 下界等关键词密切相关，且涉及望远镜猜想这一重要问题。"
-      },
-      "first_seen_at": "2026-06-11T05:21:54.714863+00:00",
-      "last_seen_at": "2026-06-11T15:42:00.501161+00:00",
-      "retained_from_previous_run": false
-    },
-    {
       "id": "2606.08848v1",
       "source": "arXiv",
       "title": "Zeta functions over curves",
@@ -1969,7 +1721,7 @@
             "L-function",
             "zeta function"
           ],
-          "llm_reason": "论文正特征局部域上的zeta函数、相对zeta函数（与Dedekind zeta类比）、L函数等概念与研究方向中局部域、有限域、L函数、zeta函数等关键词高度匹配，且使用shtuka、Anderson motive等工具与算术几何中p-adic Hodge理论、Frobenius等有潜在联系。"
+          "llm_reason": "严格匹配关键词：local field（正特征局部域）、finite field（有限域）、L-function/functions、zeta function、Dedekind zeta函数类比；涉及函数域算术几何，与数域算术几何（如有理点、L函数特殊值）有类比性，但非直接研究数域情形。"
         },
         {
           "topic_id": "algebraic_geometry",
@@ -2018,7 +1770,7 @@
           "L-function",
           "zeta function"
         ],
-        "llm_reason": "论文正特征局部域上的zeta函数、相对zeta函数（与Dedekind zeta类比）、L函数等概念与研究方向中局部域、有限域、L函数、zeta函数等关键词高度匹配，且使用shtuka、Anderson motive等工具与算术几何中p-adic Hodge理论、Frobenius等有潜在联系。"
+        "llm_reason": "严格匹配关键词：local field（正特征局部域）、finite field（有限域）、L-function/functions、zeta function、Dedekind zeta函数类比；涉及函数域算术几何，与数域算术几何（如有理点、L函数特殊值）有类比性，但非直接研究数域情形。"
       },
       "top_labels": [
         {
@@ -2047,15 +1799,15 @@
       ],
       "backfilled_from_recent_arxiv": true,
       "chinese_summary": {
-        "problem": "综述David Goss自1979年发展的正特征局部域上的zeta函数理论，并比较另一种基于有限域上曲线、标量扩张到完备代数闭正特征域的zeta与L函数构造方法。",
-        "method": "通过介绍shtuka因子与函数、特殊函数、Anderson motives、Drinfeld模等工具，利用Ferraro的有理性定理证明相对zeta函数（类似Dedekind zeta函数的对应物）可延拓为整函数。",
-        "innovation": "系统比较Goss理论与基于曲线的zeta函数构造，指出两者根本不同但存在交互；推广了相对zeta函数的整性结果，并首次提出关于该函数在规范点Ξ处零点阶的猜想。",
-        "evidence": "摘要中仅给出理论阐述和定理陈述，没有提供数值实验或系统验证。证据不足。",
-        "limitations": "综述性质，细节需阅读全文；附录中特殊情形下整性的证明依赖Anglès等公式，一般情形可能另有条件；猜想的证据仅为数值例证。",
-        "why_relevant": "论文正特征局部域上的zeta函数、相对zeta函数（与Dedekind zeta类比）、L函数等概念与研究方向中局部域、有限域、L函数、zeta函数等关键词高度匹配，且使用shtuka、Anderson motive等工具与算术几何中p-adic Hodge理论、Frobenius等有潜在联系。"
+        "problem": "如何将数域上的Dedekind zeta函数类比推广到正特征局部域和有限域曲线上，并证明相应zeta函数的整函数性质。",
+        "method": "综述Goss理论（基于Carlitz zeta值和形式级数）及其与新兴的曲线zeta函数（定义域为有限域曲线，标量扩张到完备代数闭正特征域）的比较；利用shtuka除子、特殊函数、Anderson motives、Drinfeld模块等工具；通过Ferraro的有理性定理引入类Riemann ξ函数，并借助Anglès-Ngo Dac-Tavares Ribeiro公式推导相对zeta函数的整函数性质。",
+        "innovation": "首次系统比较Goss理论与基于有限域曲线的zeta函数，并证明一类相对zeta函数（作为Dedekind zeta函数的类比）为整函数，Ferraro在附录中提出关于该函数在规范点Ξ处消去阶的猜想并给出数值证据。",
+        "evidence": "摘要中提及Ferraro的有理性定理、Anglès等人公式、整函数性质的证明（含特殊情形）以及数值验证，但未提供具体数学陈述或数据细节。",
+        "limitations": "该论文为综述性质，核心新结果限于附录；需要阅读全文以评估证明的严谨性和猜想的背景；正特征环境与数域算术几何的直接关联需人工判断。",
+        "why_relevant": "严格匹配关键词：local field（正特征局部域）、finite field（有限域）、L-function/functions、zeta function、Dedekind zeta函数类比；涉及函数域算术几何，与数域算术几何（如有理点、L函数特殊值）有类比性，但非直接研究数域情形。"
       },
       "first_seen_at": "2026-06-11T13:12:04.834996+00:00",
-      "last_seen_at": "2026-06-11T15:42:00.501161+00:00",
+      "last_seen_at": "2026-06-11T15:46:07.209230+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -2230,7 +1982,7 @@
             "cyclic homology",
             "cyclotomic spectra"
           ],
-          "llm_reason": "直接命中研究方向的多个核心关键词：algebraic K-theory、topological Hochschild homology (THH)、topological cyclic homology (TC)、cyclotomic spectra，且与近期反例相关，对理解色理论在K理论中的应用至关重要。"
+          "llm_reason": "直接命中多个关键词：algebraic K-theory、topological Hochschild homology (THH)、topological cyclic homology (TC)、cyclotomic spectra，这些均属于我的研究方向中trace methods的核心工具，与THH/TC及代数K理论紧密相关。"
         },
         {
           "topic_id": "homotopy_theory",
@@ -2287,7 +2039,7 @@
           "cyclic homology",
           "cyclotomic spectra"
         ],
-        "llm_reason": "直接命中研究方向的多个核心关键词：algebraic K-theory、topological Hochschild homology (THH)、topological cyclic homology (TC)、cyclotomic spectra，且与近期反例相关，对理解色理论在K理论中的应用至关重要。"
+        "llm_reason": "直接命中多个关键词：algebraic K-theory、topological Hochschild homology (THH)、topological cyclic homology (TC)、cyclotomic spectra，这些均属于我的研究方向中trace methods的核心工具，与THH/TC及代数K理论紧密相关。"
       },
       "top_labels": [
         {
@@ -2332,15 +2084,15 @@
       ],
       "backfilled_from_recent_arxiv": true,
       "chinese_summary": {
-        "problem": "解释环状谱（cyclotomic spectra）的定义、性质及其在代数K理论、拓扑Hochschild同调（THH）和拓扑循环同调（TC）中的核心作用，并帮助读者理解Burklund等人最近关于色高大于1时TC失效的反例。",
-        "method": "本文是一篇说明性文章，系统介绍环状谱的结构（包括圆群作用）及其在稳定同伦论中的位置，并结合Burklund、Hahn、Levy和Schlank的最新结果（对每个n≥1和素数p构造一个色高为n的p-局部环谱X，使得L_{K(n+1)}TC(X)与L_{T(n+1)}TC(X)不同），解释这些反例如何挑战传统的TC猜想。",
-        "innovation": "以简明易懂的方式梳理环状谱的理论背景，并首次将Burklund等人的突破性反例置于环状谱的语境下进行讲解，帮助非专家理解该反例对代数K理论中TC猜想的深远影响。",
-        "evidence": "摘要中无实验或新理论证据，仅引用了Burklund等人的工作（已发表结果）。本文为综述，证据需依赖原始文献。",
-        "limitations": "作为说明性文章，不包含新的原创定理或证明；对环状谱的深入技术细节（如具体模型构造）可能需要参考原始文献或更专业的教材。",
-        "why_relevant": "直接命中研究方向的多个核心关键词：algebraic K-theory、topological Hochschild homology (THH)、topological cyclic homology (TC)、cyclotomic spectra，且与近期反例相关，对理解色理论在K理论中的应用至关重要。"
+        "problem": "解释cyclotomic spectra的定义及其在代数K理论、拓扑Hochschild同调（THH）和拓扑循环同调（TC）中的核心作用，特别说明近期发现的TC对色高大于1的环谱不唯一这一反例。",
+        "method": "以综述形式系统介绍cyclotomic spectra及其附加结构（圆群作用），并阐述其在代数K理论相关领域中的出现；结合Burklund等人关于TC在色高大于1时反例的工作，展示该概念的重要性。",
+        "innovation": "作为综述，创新在于清晰梳理cyclotomic spectra的理论背景和关键性质，并首次从该角度解释近期TC反例的意义，为理解该反例提供必要的知识框架。",
+        "evidence": "证据不足：摘要本身未提供新实验或理论证据，仅引用他人结果。",
+        "limitations": "内容为综述性质，可能缺乏技术细节；反例的具体构造和证明需阅读原始论文。",
+        "why_relevant": "直接命中多个关键词：algebraic K-theory、topological Hochschild homology (THH)、topological cyclic homology (TC)、cyclotomic spectra，这些均属于我的研究方向中trace methods的核心工具，与THH/TC及代数K理论紧密相关。"
       },
       "first_seen_at": "2026-06-11T05:21:54.714863+00:00",
-      "last_seen_at": "2026-06-11T15:42:00.501161+00:00",
+      "last_seen_at": "2026-06-11T15:46:07.209230+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -2716,6 +2468,142 @@
       "retained_from_previous_run": true
     },
     {
+      "id": "2606.08166v1",
+      "source": "arXiv",
+      "title": "Cyclotomic extensions in stable homotopy theory",
+      "authors": [
+        "Douglas C. Ravenel"
+      ],
+      "summary": "This expository paper is a companion to \\cite{Rav:gjmcyc}, in which we discuss cyclotomic spectra. Both papers are intended to shed light on the recent resolution of the telescope conjecture by Robert Burklund, Jeremy Hahn, Ishan Levy and Tomer Schlank (hereafter referred to as BHLS) in \\cite{BHLS}. Their proof involves both cyclotomic spectra, the subject of \\cite{Rav:gjmcyc}, and cyclotomic extensions of spectra, the subject of this paper. Higher cyclotomic extensions of commutative ring spectra are analogous to Galois extensions of $p$-adic number fields (or rings of integers thereof) obtained by adjoining roots of unity.",
+      "published": "2026-06-06T13:29:41Z",
+      "updated": "2026-06-06T13:29:41Z",
+      "paper_url": "http://arxiv.org/abs/2606.08166v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.08166v1",
+      "categories": [
+        "math.AT"
+      ],
+      "seed_topic": "homotopy_theory",
+      "matches": [
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.605,
+          "base_score": 0.518,
+          "bridge_bonus": 0.037,
+          "level": "medium",
+          "reason": "关键词命中：homotopy theory、stable homotopy theory；arXiv 分类重合：math.AT；桥接 homotopy_theory↔arithmetic_geometry (hits=4/1)；近期论文",
+          "keyword_hits": [
+            "homotopy theory",
+            "stable homotopy theory"
+          ]
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.349,
+          "base_score": 0.224,
+          "bridge_bonus": 0.075,
+          "level": "low",
+          "reason": "关键词命中：number field；桥接 arithmetic_geometry↔homotopy_theory (hits=1/4)；近期论文",
+          "keyword_hits": [
+            "number field"
+          ]
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.328,
+          "base_score": 0.278,
+          "bridge_bonus": 0.0,
+          "level": "low",
+          "reason": "关键词命中：cyclotomic spectra；arXiv 分类重合：math.AT；近期论文",
+          "keyword_hits": [
+            "cyclotomic spectra"
+          ]
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.159,
+          "base_score": 0.109,
+          "bridge_bonus": 0.0,
+          "level": "low",
+          "reason": "关键词命中：Spec；近期论文",
+          "keyword_hits": [
+            "Spec"
+          ]
+        }
+      ],
+      "best_match": {
+        "topic_id": "homotopy_theory",
+        "topic_name": "Homotopy Theory",
+        "score": 0.605,
+        "base_score": 0.518,
+        "bridge_bonus": 0.037,
+        "level": "medium",
+        "reason": "关键词命中：homotopy theory、stable homotopy theory；arXiv 分类重合：math.AT；桥接 homotopy_theory↔arithmetic_geometry (hits=4/1)；近期论文",
+        "keyword_hits": [
+          "homotopy theory",
+          "stable homotopy theory"
+        ]
+      },
+      "top_labels": [
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "base_score": 0.518,
+          "score": 0.605,
+          "level": "medium",
+          "keyword_hits": [
+            "homotopy theory",
+            "stable homotopy theory"
+          ]
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.224,
+          "score": 0.349,
+          "level": "low",
+          "keyword_hits": [
+            "number field"
+          ]
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "base_score": 0.278,
+          "score": 0.328,
+          "level": "low",
+          "keyword_hits": [
+            "cyclotomic spectra"
+          ]
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.109,
+          "score": 0.159,
+          "level": "low",
+          "keyword_hits": [
+            "Spec"
+          ]
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "This expository paper is a companion to \\cite{Rav:gjmcyc}, in which we discuss cyclotomic spectra.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：homotopy theory、stable homotopy theory；arXiv 分类重合：math.AT；桥接 homotopy_theory↔arithmetic_geometry (hits=4/1)；近期论文"
+      },
+      "first_seen_at": "2026-06-11T05:21:54.714863+00:00",
+      "last_seen_at": "2026-06-11T15:46:07.209230+00:00",
+      "retained_from_previous_run": false
+    },
+    {
       "id": "2606.09693v1",
       "source": "arXiv",
       "title": "Bertini theorems for Hilbert-Samuel multiplicity over finite fields",
@@ -2741,14 +2629,14 @@
           "score": 0.556,
           "base_score": 0.506,
           "bridge_bonus": 0.0,
-          "level": "medium",
+          "level": "high",
           "reason": "关键词命中：scheme、projective scheme、Proj；arXiv 分类重合：math.AG；近期论文",
           "keyword_hits": [
             "scheme",
             "projective scheme",
             "Proj"
           ],
-          "llm_reason": "论文直接涉及代数几何中scheme、projective scheme、Proj、hypersurface intersection、multiplicity等核心概念，与研究方向关键词高度重合；有限域上的几何问题在算术代数几何中也有重要地位。"
+          "llm_reason": "论文直接研究射影概形、闭点处的交点多重性，属于代数几何中概形理论和交点理论的范畴，与研究方向中'scheme', 'projective scheme', 'intersection theory', 'multiplicity'等关键词高度匹配。"
         },
         {
           "topic_id": "arithmetic_geometry",
@@ -2789,14 +2677,14 @@
         "score": 0.556,
         "base_score": 0.506,
         "bridge_bonus": 0.0,
-        "level": "medium",
+        "level": "high",
         "reason": "关键词命中：scheme、projective scheme、Proj；arXiv 分类重合：math.AG；近期论文",
         "keyword_hits": [
           "scheme",
           "projective scheme",
           "Proj"
         ],
-        "llm_reason": "论文直接涉及代数几何中scheme、projective scheme、Proj、hypersurface intersection、multiplicity等核心概念，与研究方向关键词高度重合；有限域上的几何问题在算术代数几何中也有重要地位。"
+        "llm_reason": "论文直接研究射影概形、闭点处的交点多重性，属于代数几何中概形理论和交点理论的范畴，与研究方向中'scheme', 'projective scheme', 'intersection theory', 'multiplicity'等关键词高度匹配。"
       },
       "top_labels": [
         {
@@ -2824,15 +2712,15 @@
       ],
       "backfilled_from_recent_arxiv": true,
       "chinese_summary": {
-        "problem": "在有限域上，对于任意约化、等维、拟射影概形，是否存在足够多的超曲面使得交点的Hilbert-Samuel重数与原始点重数相等且超曲面在该点光滑？",
-        "method": "利用概率方法或计数论证，证明存在一个正密度集合的超曲面（由齐次多项式定义）满足条件；核心技术可能涉及超曲面在闭点处切空间性质与重数比较，以及有限域上的几何Bertini定理。",
-        "innovation": "1. 将经典Bertini定理中关于光滑性的结论推广到Hilbert-Samuel重数保持；2. 在有限域背景下给出正密度存在性结果，而非特征零域中的一般位置结论；3. 可能提供了构造性下界或显式密度估计。",
-        "evidence": "摘要中声称证明了正密度集合的存在性，但未给出具体数值或实验验证；需阅读全文确认密度定量估计或构造方法。",
-        "limitations": "1. 仅适用于有限域上的约化等维拟射影概形；2. 未说明超曲面次数的限制（可能要求大次数？）；3. 重数保持的条件（ord_P(f)=1）隐含超曲面与X横截相交，但未讨论非横截情形。",
-        "why_relevant": "论文直接涉及代数几何中scheme、projective scheme、Proj、hypersurface intersection、multiplicity等核心概念，与研究方向关键词高度重合；有限域上的几何问题在算术代数几何中也有重要地位。"
+        "problem": "在有限域上，证明对于约化、等维、拟射影概形，存在正密度的超曲面使得交点处的Hilbert-Samuel多重性保持不变。",
+        "method": "利用正密度集合的方法证明存在足够多的超曲面，通过局部环的结构和序数条件（ord_P(f)=1）确保多重性不变。",
+        "innovation": "将经典的Bertini定理推广到有限域上的Hilbert-Samuel多重性情形，克服了有限域上超曲面密度和多重性计算的技术困难。",
+        "evidence": "摘要中仅给出理论断言，无具体实验或数值验证，证据限于数学证明。",
+        "limitations": "需要阅读全文确认证明细节、正密度集合的构造方法以及对一般概形（非约化或非等维）的适用性。",
+        "why_relevant": "论文直接研究射影概形、闭点处的交点多重性，属于代数几何中概形理论和交点理论的范畴，与研究方向中'scheme', 'projective scheme', 'intersection theory', 'multiplicity'等关键词高度匹配。"
       },
       "first_seen_at": "2026-06-11T15:15:36.567953+00:00",
-      "last_seen_at": "2026-06-11T15:42:00.501161+00:00",
+      "last_seen_at": "2026-06-11T15:46:07.209230+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -3334,6 +3222,116 @@
       "first_seen_at": "2026-06-11T04:42:44.276818+00:00",
       "last_seen_at": "2026-06-11T07:03:32.811912+00:00",
       "retained_from_previous_run": true
+    },
+    {
+      "id": "2606.12351v1",
+      "source": "arXiv",
+      "title": "Moduli of Supersingular Abelian Varieties in Dimensions $g\\leq 5$",
+      "authors": [
+        "Michael Burger"
+      ],
+      "summary": "We establish structure theorems for polarised flag type quotients arising in the study of the moduli space of supersingular abelian varieties. In particular, we prove a refined normal form for the top level of these flags and derive an explicit, computable descent criterion for quasi-polarisations. These results provide a complete classification of the first and last step of these flags. As an application, we compute polarised flag type quotients in dimensions $g\\leq 5$, describing the fibers of the truncation morphisms as classification objects of supersingular abelian varieties.",
+      "published": "2026-06-10T17:23:56Z",
+      "updated": "2026-06-10T17:23:56Z",
+      "paper_url": "http://arxiv.org/abs/2606.12351v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.12351v1",
+      "categories": [
+        "math.AG",
+        "math.NT"
+      ],
+      "seed_topic": "algebraic_geometry",
+      "matches": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.517,
+          "base_score": 0.467,
+          "bridge_bonus": 0.0,
+          "level": "high",
+          "reason": "关键词命中：moduli space、descent；arXiv 分类重合：math.AG；近期论文",
+          "keyword_hits": [
+            "moduli space",
+            "descent"
+          ],
+          "llm_reason": "论文研究模空间和下降理论，直接命中用户研究方向中的'moduli space'和'descent'关键词，且使用代数几何的核心工具（旗型商、下降判据），与用户的研究领域（代数几何中的模空间理论）高度吻合。"
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.277,
+          "base_score": 0.227,
+          "bridge_bonus": 0.0,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG、math.NT；近期论文",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.117,
+          "base_score": 0.067,
+          "bridge_bonus": 0.0,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；近期论文",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.098,
+          "base_score": 0.048,
+          "bridge_bonus": 0.0,
+          "level": "low",
+          "reason": "近期论文",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "algebraic_geometry",
+        "topic_name": "Algebraic Geometry",
+        "score": 0.517,
+        "base_score": 0.467,
+        "bridge_bonus": 0.0,
+        "level": "high",
+        "reason": "关键词命中：moduli space、descent；arXiv 分类重合：math.AG；近期论文",
+        "keyword_hits": [
+          "moduli space",
+          "descent"
+        ],
+        "llm_reason": "论文研究模空间和下降理论，直接命中用户研究方向中的'moduli space'和'descent'关键词，且使用代数几何的核心工具（旗型商、下降判据），与用户的研究领域（代数几何中的模空间理论）高度吻合。"
+      },
+      "top_labels": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.467,
+          "score": 0.517,
+          "level": "medium",
+          "keyword_hits": [
+            "moduli space",
+            "descent"
+          ]
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.227,
+          "score": 0.277,
+          "level": "low",
+          "keyword_hits": []
+        }
+      ],
+      "chinese_summary": {
+        "problem": "建立超奇异阿贝尔簇模空间中极化旗型商的结构定理，并分类旗型的首尾步骤，特别在低维数（g≤5）给出具体计算。",
+        "method": "通过证明顶层旗型的精细标准型和推导拟极化的可计算下降判据，利用旗型商的结构分析，分类旗型的第一步和最后一步，并计算截断态射的纤维。",
+        "innovation": "1. 证明了顶层旗型的精细标准型，这是对已知结构更细致的刻画；2. 给出了拟极化的显式可计算下降判据，使计算成为可能；3. 完全分类了旗型的第一步和最后一步，并在g≤5时得到了完整描述。",
+        "evidence": "摘要声称建立了结构定理并得到了分类结果，但未提供具体的证明细节或计算实例，属于理论性结论。",
+        "limitations": "结果仅适用于维数g≤5，更高维情况需进一步研究；依赖于超奇异阿贝尔簇的特殊性质，可能不适用于一般阿贝尔簇；具体下降判据的应用条件需阅读全文确认。",
+        "why_relevant": "论文研究模空间和下降理论，直接命中用户研究方向中的'moduli space'和'descent'关键词，且使用代数几何的核心工具（旗型商、下降判据），与用户的研究领域（代数几何中的模空间理论）高度吻合。"
+      },
+      "first_seen_at": "2026-06-11T04:42:44.276818+00:00",
+      "last_seen_at": "2026-06-11T15:46:07.209230+00:00",
+      "retained_from_previous_run": false
     },
     {
       "id": "2101.07819v5",
@@ -5214,7 +5212,7 @@
           "keyword_hits": [
             "vector bundle"
           ],
-          "llm_reason": "涉及向量丛（vector bundle）这一代数几何核心对象，且arXiv分类含math.AG，但论文主题偏向复几何和Poisson几何，与代数几何中模空间、层论等方向关联较弱。"
+          "llm_reason": "论文涉及向量丛分类，与用户研究方向中的vector bundle、coherent sheaf等关键词部分匹配；arXiv分类包含math.AG，但核心问题（泊松三折叠和Hopf曲面）与用户以概形、模空间为主的代数几何领域关联度较低，可能需要人工复核。"
         },
         {
           "topic_id": "arithmetic_geometry",
@@ -5258,7 +5256,7 @@
         "keyword_hits": [
           "vector bundle"
         ],
-        "llm_reason": "涉及向量丛（vector bundle）这一代数几何核心对象，且arXiv分类含math.AG，但论文主题偏向复几何和Poisson几何，与代数几何中模空间、层论等方向关联较弱。"
+        "llm_reason": "论文涉及向量丛分类，与用户研究方向中的vector bundle、coherent sheaf等关键词部分匹配；arXiv分类包含math.AG，但核心问题（泊松三折叠和Hopf曲面）与用户以概形、模空间为主的代数几何领域关联度较低，可能需要人工复核。"
       },
       "top_labels": [
         {
@@ -5281,15 +5279,15 @@
         }
       ],
       "chinese_summary": {
-        "problem": "研究如何利用Hopf曲面上的秩2 co-Higgs丛构造Poisson三流形，并描述其辛叶。",
-        "method": "基于先前对Hopf曲面上秩2 co-Higgs丛的分类结果，分析底层向量丛的数据，进而构造Poisson三流形，并通过辛叶分解研究其几何结构。",
-        "innovation": "将co-Higgs丛理论应用于Hopf曲面，延伸至Poisson几何；给出了从特定向量丛构造Poisson三流形的具体方法，并明确了辛叶的刻画。",
-        "evidence": "摘要未提供实验或理论验证细节，仅陈述扩展了先前分类工作并研究辛叶。证据不足。",
-        "limitations": "仅限于Hopf曲面和秩2 co-Higgs丛；构造的Poisson三流形性质需阅读全文确认；辛叶描述缺乏具体例子。",
-        "why_relevant": "涉及向量丛（vector bundle）这一代数几何核心对象，且arXiv分类含math.AG，但论文主题偏向复几何和Poisson几何，与代数几何中模空间、层论等方向关联较弱。"
+        "problem": "扩展之前对Hopf曲面上秩2 co-Higgs丛的分类，并研究由此构造的泊松三折叠的辛叶结构。",
+        "method": "基于之前对底层向量丛数据的分类结果，描述如何从co-Higgs丛构造泊松三折叠，并通过刻画其辛叶来研究这些泊松结构的几何。",
+        "innovation": "首次将Hopf曲面上的co-Higgs丛与泊松三折叠的构造联系起来，并系统描述了这些泊松结构的辛叶分解，推广了之前对co-Higgs丛分类的工作。",
+        "evidence": "摘要中未提供具体的实验或理论证据，仅陈述了研究目标和方法。",
+        "limitations": "需要阅读全文确认构造的具体步骤、辛叶的描述是否严格，以及是否依赖特定的Hopf曲面或向量丛条件。",
+        "why_relevant": "论文涉及向量丛分类，与用户研究方向中的vector bundle、coherent sheaf等关键词部分匹配；arXiv分类包含math.AG，但核心问题（泊松三折叠和Hopf曲面）与用户以概形、模空间为主的代数几何领域关联度较低，可能需要人工复核。"
       },
       "first_seen_at": "2026-06-11T05:41:51.895771+00:00",
-      "last_seen_at": "2026-06-11T15:42:00.501161+00:00",
+      "last_seen_at": "2026-06-11T15:46:07.209230+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -6467,15 +6465,15 @@
     "filtered_low_relevance_count": 0,
     "filtered_wrong_category_count": 47,
     "arxiv_category_filter": [
-      "math.AG",
-      "math.AT",
       "math.KT",
+      "math.NT",
       "math.CT",
-      "math.NT"
+      "math.AT",
+      "math.AG"
     ],
     "days": 1,
     "collection_mode": "lookback",
-    "collection_cutoff_iso": "2026-06-10T15:42:00.501161+00:00",
+    "collection_cutoff_iso": "2026-06-10T15:46:07.209230+00:00",
     "max_per_topic": 25,
     "max_new_papers": 50,
     "max_new_conference_papers": 50,
@@ -6527,7 +6525,7 @@
     "dropped_low_relevance_count": 0,
     "max_stored_papers": 200,
     "max_data_bytes": 8388608,
-    "data_bytes": 307355,
+    "data_bytes": 305641,
     "storage_trimmed_count": 0,
     "storage_trimmed_by_level": {
       "high": 0,
