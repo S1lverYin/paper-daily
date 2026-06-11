@@ -1,6 +1,6 @@
 {
-  "generated_at": "Thu, 11 Jun 2026 13:21:06 +0000",
-  "generated_at_iso": "2026-06-11T13:21:06.591463+00:00",
+  "generated_at": "Thu, 11 Jun 2026 13:26:49 +0000",
+  "generated_at_iso": "2026-06-11T13:26:49.255035+00:00",
   "config_source": "file",
   "data_kind": "daily",
   "topics": [
@@ -632,6 +632,149 @@
       "retained_from_previous_run": true
     },
     {
+      "id": "2603.22199v3",
+      "source": "arXiv",
+      "title": "Weil restriction, normal bundles and motivic Thom spaces",
+      "authors": [
+        "Guangzhao Zhu"
+      ],
+      "summary": "Recent developments in motivic homotopy theory, particularly the construction of norm functors by Bachmann and Hoyois, have revealed deep connections between algebraic geometry and homotopy-theoretic structures. In this paper, we investigate certain geometric aspects of norm functors through the Weil restriction of schemes, which underlies these constructions. We show that Weil restriction preserves vector bundles and extend existing results concerning normal bundles. We then relate the Weil restriction to norm functors and, using a result of Bachmann and Hoyois, establish its compatibility with motivic Thom spaces. Finally, in the setting of motivic cohomology with rational coefficients, we prove that the Weil restriction map agrees with the norm map induced by a norm functor and that it preserves Thom classes.",
+      "published": "2026-03-23T16:58:47Z",
+      "updated": "2026-05-29T02:08:41Z",
+      "paper_url": "http://arxiv.org/abs/2603.22199v3",
+      "pdf_url": "https://arxiv.org/pdf/2603.22199v3",
+      "categories": [
+        "math.AG",
+        "math.AT"
+      ],
+      "seed_topic": "motivic_k_theory",
+      "matches": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.939,
+          "base_score": 0.664,
+          "bridge_bonus": 0.225,
+          "level": "high",
+          "reason": "关键词命中：algebraic geometry、scheme、Spec、vector bundle；arXiv 分类重合：math.AG；桥接 algebraic_geometry↔motivic_k_theory (hits=2/2)；桥接 algebraic_geometry↔homotopy_theory (hits=2/1)；近期论文",
+          "keyword_hits": [
+            "algebraic geometry",
+            "scheme",
+            "Spec",
+            "vector bundle"
+          ],
+          "llm_reason": "论文研究概形的 Weil 限制，涉及向量丛、法丛、motivic Thom 空间等概念，直接关联代数几何中的概形、向量丛、法丛、上同调等核心内容。关键词命中：algebraic geometry, scheme, vector bundle, motivic cohomology。此外，论文属于 math.AG 分类，与研究方向高度一致。"
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.767,
+          "base_score": 0.492,
+          "bridge_bonus": 0.225,
+          "level": "high",
+          "reason": "关键词命中：motivic homotopy theory、motivic cohomology；arXiv 分类重合：math.AG、math.AT；桥接 motivic_k_theory↔algebraic_geometry (hits=2/2)；桥接 motivic_k_theory↔homotopy_theory (hits=2/1)；近期论文",
+          "keyword_hits": [
+            "motivic homotopy theory",
+            "motivic cohomology"
+          ]
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.566,
+          "base_score": 0.366,
+          "bridge_bonus": 0.15,
+          "level": "medium",
+          "reason": "关键词命中：homotopy theory；arXiv 分类重合：math.AT；桥接 homotopy_theory↔motivic_k_theory (hits=1/2)；桥接 homotopy_theory↔algebraic_geometry (hits=1/2)；近期论文",
+          "keyword_hits": [
+            "homotopy theory"
+          ]
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.231,
+          "base_score": 0.181,
+          "bridge_bonus": 0.0,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；近期论文",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "algebraic_geometry",
+        "topic_name": "Algebraic Geometry",
+        "score": 0.939,
+        "base_score": 0.664,
+        "bridge_bonus": 0.225,
+        "level": "high",
+        "reason": "关键词命中：algebraic geometry、scheme、Spec、vector bundle；arXiv 分类重合：math.AG；桥接 algebraic_geometry↔motivic_k_theory (hits=2/2)；桥接 algebraic_geometry↔homotopy_theory (hits=2/1)；近期论文",
+        "keyword_hits": [
+          "algebraic geometry",
+          "scheme",
+          "Spec",
+          "vector bundle"
+        ],
+        "llm_reason": "论文研究概形的 Weil 限制，涉及向量丛、法丛、motivic Thom 空间等概念，直接关联代数几何中的概形、向量丛、法丛、上同调等核心内容。关键词命中：algebraic geometry, scheme, vector bundle, motivic cohomology。此外，论文属于 math.AG 分类，与研究方向高度一致。"
+      },
+      "top_labels": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.664,
+          "score": 0.939,
+          "level": "high",
+          "keyword_hits": [
+            "algebraic geometry",
+            "scheme",
+            "Spec",
+            "vector bundle"
+          ]
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "base_score": 0.492,
+          "score": 0.767,
+          "level": "high",
+          "keyword_hits": [
+            "motivic homotopy theory",
+            "motivic cohomology"
+          ]
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "base_score": 0.366,
+          "score": 0.566,
+          "level": "medium",
+          "keyword_hits": [
+            "homotopy theory"
+          ]
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.181,
+          "score": 0.231,
+          "level": "low",
+          "keyword_hits": []
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "chinese_summary": {
+        "problem": "在 motivic 同伦论中，Bachmann 和 Hoyois 构造的 norm 函子揭示了代数几何与同伦论结构之间的深层联系，但 norm 函子的几何方面，特别是通过 Weil 限制（Weil restriction）的几何性质，尚未被充分研究。本文旨在探究 Weil 限制在向量丛、法丛以及 motivic Thom 空间上的几何性质，并建立其与 norm 函子的联系。",
+        "method": "本文通过研究概形的 Weil 限制，证明其保持向量丛，并推广了关于法丛的已有结果。然后，利用 Bachmann 和 Hoyois 的结果，将 Weil 限制与 norm 函子联系起来，并证明其与 motivic Thom 空间的兼容性。最后，在有理系数 motivic 上同调中，证明 Weil 限制映射与 norm 函子诱导的 norm 映射一致，并保持 Thom 类。",
+        "innovation": "1. 证明了 Weil 限制保持向量丛，并推广了法丛的相关结果；2. 建立了 Weil 限制与 norm 函子之间的联系，并证明了其与 motivic Thom 空间的兼容性；3. 在有理系数 motivic 上同调中，证明了 Weil 限制映射与 norm 映射一致，且保持 Thom 类。",
+        "evidence": "摘要中明确给出了理论证明：Weil restriction preserves vector bundles, extends results on normal bundles, relates to norm functors, and is compatible with motivic Thom spaces. 在 motivic cohomology with rational coefficients 中，证明了 Weil restriction map agrees with the norm map and preserves Thom classes. 但未提供实验或系统证据。",
+        "limitations": "摘要未提及具体应用场景或计算实例，也未讨论一般系数（如有限系数）下的情况。需要阅读全文确认证明细节和适用范围。",
+        "why_relevant": "论文研究概形的 Weil 限制，涉及向量丛、法丛、motivic Thom 空间等概念，直接关联代数几何中的概形、向量丛、法丛、上同调等核心内容。关键词命中：algebraic geometry, scheme, vector bundle, motivic cohomology。此外，论文属于 math.AG 分类，与研究方向高度一致。"
+      },
+      "first_seen_at": "2026-06-11T10:10:04.063496+00:00",
+      "last_seen_at": "2026-06-11T13:26:49.255035+00:00",
+      "retained_from_previous_run": false
+    },
+    {
       "id": "2502.01504v3",
       "source": "arXiv",
       "title": "Finiteness of formal pushforwards",
@@ -766,135 +909,6 @@
       },
       "first_seen_at": "2026-06-11T05:21:54.714863+00:00",
       "last_seen_at": "2026-06-11T07:16:10.904244+00:00",
-      "retained_from_previous_run": true
-    },
-    {
-      "id": "2606.10830v1",
-      "source": "arXiv",
-      "title": "PCMI lecture notes: Motivic explorations in enumerative geometry",
-      "authors": [
-        "Sabrina Pauli"
-      ],
-      "summary": "These are lecture notes for the PCMI 2024 Graduate Summer School for the mini-workshop on motivic explorations in enumerative geometry. Motivic homotopy theory allows to do enumerative geometry over an arbitrary field, which leads to additional arithmetic and geometric information. The goal of the mini-workshop is to explain why and how this works. We will also provide a toolbox for solving enumerative geometry problems in this setting, including the use of tropical geometry. We start with two classical examples in enumerative geometry, namely Bezout's theorem and the count of lines on a smooth cubic surface. We then explain how to solve these problems, first over the complex and real numbers, and then over an arbitrary field, using the A1-degree from motivic homotopy theory. Then we introduce tropical geometry, more precisely we focus on tropical plane curves and show how they can be used to prove Bezout's theorem for curves over an arbitrary field. Finally, we discuss tropical correspondence theorems.",
-      "published": "2026-06-09T13:17:28Z",
-      "updated": "2026-06-09T13:17:28Z",
-      "paper_url": "http://arxiv.org/abs/2606.10830v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.10830v1",
-      "categories": [
-        "math.AG"
-      ],
-      "seed_topic": "motivic_homotopy_theory",
-      "matches": [
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy Theory",
-          "score": 0.668,
-          "base_score": 0.493,
-          "bridge_bonus": 0.175,
-          "level": "medium",
-          "reason": "关键词命中：motivic homotopy theory、A1-degree；arXiv 分类重合：math.AG；桥接信号「A1-degree」(motivic ↔ AG)",
-          "keyword_hits": [
-            "motivic homotopy theory",
-            "A1-degree"
-          ]
-        },
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "score": 0.476,
-          "base_score": 0.301,
-          "bridge_bonus": 0.175,
-          "level": "medium",
-          "reason": "arXiv 分类重合：math.AG；桥接信号「A1-degree」(motivic ↔ AG)",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "score": 0.22,
-          "base_score": 0.22,
-          "bridge_bonus": 0.0,
-          "level": "low",
-          "reason": "arXiv 分类重合：math.AG",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "score": 0.121,
-          "base_score": 0.121,
-          "bridge_bonus": 0.0,
-          "level": "low",
-          "reason": "关键词命中：homotopy theory",
-          "keyword_hits": [
-            "homotopy theory"
-          ]
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "K-Theory",
-          "score": 0.056,
-          "base_score": 0.056,
-          "bridge_bonus": 0.0,
-          "level": "low",
-          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
-          "keyword_hits": []
-        }
-      ],
-      "best_match": {
-        "topic_id": "motivic_k_theory",
-        "topic_name": "Motivic Homotopy Theory",
-        "score": 0.668,
-        "base_score": 0.493,
-        "bridge_bonus": 0.175,
-        "level": "medium",
-        "reason": "关键词命中：motivic homotopy theory、A1-degree；arXiv 分类重合：math.AG；桥接信号「A1-degree」(motivic ↔ AG)",
-        "keyword_hits": [
-          "motivic homotopy theory",
-          "A1-degree"
-        ]
-      },
-      "top_labels": [
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy Theory",
-          "base_score": 0.493,
-          "score": 0.668,
-          "level": "medium",
-          "keyword_hits": [
-            "motivic homotopy theory",
-            "A1-degree"
-          ]
-        },
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "base_score": 0.301,
-          "score": 0.476,
-          "level": "medium",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "base_score": 0.121,
-          "score": 0.121,
-          "level": "low",
-          "keyword_hits": [
-            "homotopy theory"
-          ]
-        }
-      ],
-      "chinese_summary": {
-        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
-        "method": "These are lecture notes for the PCMI 2024 Graduate Summer School for the mini-workshop on motivic explorations in enumerative geometry.",
-        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
-        "evidence": "来源摘要可在论文原文中核验。",
-        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
-        "why_relevant": "关键词命中：motivic homotopy theory、A1-degree；arXiv 分类重合：math.AG；桥接信号「A1-degree」(motivic ↔ AG)"
-      },
-      "first_seen_at": "2026-06-11T04:42:44.276818+00:00",
-      "last_seen_at": "2026-06-11T07:03:32.811912+00:00",
       "retained_from_previous_run": true
     },
     {
@@ -1163,147 +1177,6 @@
       },
       "first_seen_at": "2026-06-11T05:21:54.714863+00:00",
       "last_seen_at": "2026-06-11T07:03:32.811912+00:00",
-      "retained_from_previous_run": true
-    },
-    {
-      "id": "2603.22199v3",
-      "source": "arXiv",
-      "title": "Weil restriction, normal bundles and motivic Thom spaces",
-      "authors": [
-        "Guangzhao Zhu"
-      ],
-      "summary": "Recent developments in motivic homotopy theory, particularly the construction of norm functors by Bachmann and Hoyois, have revealed deep connections between algebraic geometry and homotopy-theoretic structures. In this paper, we investigate certain geometric aspects of norm functors through the Weil restriction of schemes, which underlies these constructions. We show that Weil restriction preserves vector bundles and extend existing results concerning normal bundles. We then relate the Weil restriction to norm functors and, using a result of Bachmann and Hoyois, establish its compatibility with motivic Thom spaces. Finally, in the setting of motivic cohomology with rational coefficients, we prove that the Weil restriction map agrees with the norm map induced by a norm functor and that it preserves Thom classes.",
-      "published": "2026-03-23T16:58:47Z",
-      "updated": "2026-05-29T02:08:41Z",
-      "paper_url": "http://arxiv.org/abs/2603.22199v3",
-      "pdf_url": "https://arxiv.org/pdf/2603.22199v3",
-      "categories": [
-        "math.AG",
-        "math.AT"
-      ],
-      "seed_topic": "motivic_k_theory",
-      "matches": [
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "score": 0.638,
-          "base_score": 0.413,
-          "bridge_bonus": 0.225,
-          "level": "medium",
-          "reason": "关键词命中：algebraic geometry、scheme、Spec、vector bundle；arXiv 分类重合：math.AG；桥接 algebraic_geometry↔motivic_k_theory (hits=2/2)；桥接 algebraic_geometry↔homotopy_theory (hits=2/1)",
-          "keyword_hits": [
-            "algebraic geometry",
-            "scheme",
-            "Spec",
-            "vector bundle"
-          ]
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "score": 0.534,
-          "base_score": 0.309,
-          "bridge_bonus": 0.225,
-          "level": "medium",
-          "reason": "关键词命中：motivic homotopy theory、motivic cohomology；arXiv 分类重合：math.AG、math.AT；桥接 motivic_k_theory↔algebraic_geometry (hits=2/2)；桥接 motivic_k_theory↔homotopy_theory (hits=2/1)",
-          "keyword_hits": [
-            "motivic homotopy theory",
-            "motivic cohomology"
-          ]
-        },
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "score": 0.399,
-          "base_score": 0.249,
-          "bridge_bonus": 0.15,
-          "level": "low",
-          "reason": "关键词命中：homotopy theory；arXiv 分类重合：math.AT；桥接 homotopy_theory↔motivic_k_theory (hits=1/2)；桥接 homotopy_theory↔algebraic_geometry (hits=1/2)",
-          "keyword_hits": [
-            "homotopy theory"
-          ]
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "score": 0.136,
-          "base_score": 0.136,
-          "bridge_bonus": 0.0,
-          "level": "low",
-          "reason": "arXiv 分类重合：math.AG",
-          "keyword_hits": []
-        }
-      ],
-      "best_match": {
-        "topic_id": "algebraic_geometry",
-        "topic_name": "Algebraic Geometry",
-        "score": 0.638,
-        "base_score": 0.413,
-        "bridge_bonus": 0.225,
-        "level": "medium",
-        "reason": "关键词命中：algebraic geometry、scheme、Spec、vector bundle；arXiv 分类重合：math.AG；桥接 algebraic_geometry↔motivic_k_theory (hits=2/2)；桥接 algebraic_geometry↔homotopy_theory (hits=2/1)",
-        "keyword_hits": [
-          "algebraic geometry",
-          "scheme",
-          "Spec",
-          "vector bundle"
-        ]
-      },
-      "top_labels": [
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "base_score": 0.413,
-          "score": 0.638,
-          "level": "medium",
-          "keyword_hits": [
-            "algebraic geometry",
-            "scheme",
-            "Spec",
-            "vector bundle"
-          ]
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "base_score": 0.309,
-          "score": 0.534,
-          "level": "medium",
-          "keyword_hits": [
-            "motivic homotopy theory",
-            "motivic cohomology"
-          ]
-        },
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "base_score": 0.249,
-          "score": 0.399,
-          "level": "low",
-          "keyword_hits": [
-            "homotopy theory"
-          ]
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "base_score": 0.136,
-          "score": 0.136,
-          "level": "low",
-          "keyword_hits": []
-        }
-      ],
-      "backfilled_from_recent_arxiv": true,
-      "chinese_summary": {
-        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
-        "method": "Recent developments in motivic homotopy theory, particularly the construction of norm functors by Bachmann and Hoyois, have revealed deep connections between algebraic geometry and homotopy-theoretic structures.",
-        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
-        "evidence": "来源摘要可在论文原文中核验。",
-        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
-        "why_relevant": "关键词命中：algebraic geometry、scheme、Spec、vector bundle；arXiv 分类重合：math.AG；桥接 algebraic_geometry↔motivic_k_theory (hits=2/2)；桥接 algebraic_geometry↔homotopy_theory (hits=2/1)"
-      },
-      "first_seen_at": "2026-06-11T10:10:04.063496+00:00",
-      "last_seen_at": "2026-06-11T13:12:04.834996+00:00",
       "retained_from_previous_run": true
     },
     {
@@ -2199,6 +2072,136 @@
       "first_seen_at": "2026-06-11T05:21:54.714863+00:00",
       "last_seen_at": "2026-06-11T07:03:32.811912+00:00",
       "retained_from_previous_run": true
+    },
+    {
+      "id": "2606.10830v1",
+      "source": "arXiv",
+      "title": "PCMI lecture notes: Motivic explorations in enumerative geometry",
+      "authors": [
+        "Sabrina Pauli"
+      ],
+      "summary": "These are lecture notes for the PCMI 2024 Graduate Summer School for the mini-workshop on motivic explorations in enumerative geometry. Motivic homotopy theory allows to do enumerative geometry over an arbitrary field, which leads to additional arithmetic and geometric information. The goal of the mini-workshop is to explain why and how this works. We will also provide a toolbox for solving enumerative geometry problems in this setting, including the use of tropical geometry. We start with two classical examples in enumerative geometry, namely Bezout's theorem and the count of lines on a smooth cubic surface. We then explain how to solve these problems, first over the complex and real numbers, and then over an arbitrary field, using the A1-degree from motivic homotopy theory. Then we introduce tropical geometry, more precisely we focus on tropical plane curves and show how they can be used to prove Bezout's theorem for curves over an arbitrary field. Finally, we discuss tropical correspondence theorems.",
+      "published": "2026-06-09T13:17:28Z",
+      "updated": "2026-06-09T13:17:28Z",
+      "paper_url": "http://arxiv.org/abs/2606.10830v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.10830v1",
+      "categories": [
+        "math.AG"
+      ],
+      "seed_topic": "motivic_k_theory",
+      "matches": [
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.471,
+          "base_score": 0.346,
+          "bridge_bonus": 0.075,
+          "level": "medium",
+          "reason": "关键词命中：motivic homotopy theory、A1-degree；arXiv 分类重合：math.AG；桥接 motivic_k_theory↔homotopy_theory (hits=1/1)；近期论文",
+          "keyword_hits": [
+            "motivic homotopy theory",
+            "A1-degree"
+          ],
+          "llm_reason": "论文核心使用 motivic homotopy theory 中的 A1-degree，直接对应研究方向中的 A1-homotopy theory 和 A1-degree；涉及枚举几何与 motivic 方法结合，与 quadratic enumerative geometry 相关；热带几何部分可能提供新视角。"
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.292,
+          "base_score": 0.242,
+          "bridge_bonus": 0.0,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；近期论文",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.291,
+          "base_score": 0.166,
+          "bridge_bonus": 0.075,
+          "level": "low",
+          "reason": "关键词命中：homotopy theory；桥接 homotopy_theory↔motivic_k_theory (hits=1/1)；近期论文",
+          "keyword_hits": [
+            "homotopy theory"
+          ]
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.218,
+          "base_score": 0.168,
+          "bridge_bonus": 0.0,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；近期论文",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "motivic_k_theory",
+        "topic_name": "Motivic Homotopy & K-Theory",
+        "score": 0.471,
+        "base_score": 0.346,
+        "bridge_bonus": 0.075,
+        "level": "medium",
+        "reason": "关键词命中：motivic homotopy theory、A1-degree；arXiv 分类重合：math.AG；桥接 motivic_k_theory↔homotopy_theory (hits=1/1)；近期论文",
+        "keyword_hits": [
+          "motivic homotopy theory",
+          "A1-degree"
+        ],
+        "llm_reason": "论文核心使用 motivic homotopy theory 中的 A1-degree，直接对应研究方向中的 A1-homotopy theory 和 A1-degree；涉及枚举几何与 motivic 方法结合，与 quadratic enumerative geometry 相关；热带几何部分可能提供新视角。"
+      },
+      "top_labels": [
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "base_score": 0.346,
+          "score": 0.471,
+          "level": "medium",
+          "keyword_hits": [
+            "motivic homotopy theory",
+            "A1-degree"
+          ]
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.242,
+          "score": 0.292,
+          "level": "low",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "base_score": 0.166,
+          "score": 0.291,
+          "level": "low",
+          "keyword_hits": [
+            "homotopy theory"
+          ]
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.168,
+          "score": 0.218,
+          "level": "low",
+          "keyword_hits": []
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "chinese_summary": {
+        "problem": "论文旨在利用 motivic homotopy theory 在任意域上进行枚举几何计数，解决经典枚举问题（如 Bezout 定理、光滑三次曲面上直线计数）在任意域上的推广，并引入热带几何作为工具。",
+        "method": "首先回顾经典枚举几何问题在复数域和实数域上的解法，然后引入 motivic homotopy theory 中的 A1-degree 作为计数工具，将计数推广到任意域。接着介绍热带平面曲线，并展示如何用热带几何证明任意域上的 Bezout 定理。最后讨论热带对应定理。",
+        "innovation": "1. 将 motivic homotopy theory 系统应用于枚举几何，提供统一的框架处理任意域上的计数问题。2. 结合热带几何，为枚举几何问题提供新的计算工具和证明方法。3. 以讲义形式呈现，降低入门门槛，促进交叉领域研究。",
+        "evidence": "摘要中未提供具体实验或理论证据，仅说明将用经典例子演示方法。",
+        "limitations": "作为讲义，可能缺乏原创性结果；具体技术细节和证明需阅读全文；热带几何与 motivic 方法的结合深度未知。",
+        "why_relevant": "论文核心使用 motivic homotopy theory 中的 A1-degree，直接对应研究方向中的 A1-homotopy theory 和 A1-degree；涉及枚举几何与 motivic 方法结合，与 quadratic enumerative geometry 相关；热带几何部分可能提供新视角。"
+      },
+      "first_seen_at": "2026-06-11T04:42:44.276818+00:00",
+      "last_seen_at": "2026-06-11T13:26:49.255035+00:00",
+      "retained_from_previous_run": false
     },
     {
       "id": "2512.07707v2",
@@ -4428,27 +4431,27 @@
     }
   ],
   "stats": {
-    "candidate_paper_count": 0,
-    "daily_candidate_paper_count": 0,
+    "candidate_paper_count": 2,
+    "daily_candidate_paper_count": 2,
     "conference_candidate_paper_count": 0,
-    "raw_daily_candidate_count": 0,
-    "daily_outside_cutoff_count": 0,
+    "raw_daily_candidate_count": 25,
+    "daily_outside_cutoff_count": 25,
     "daily_backfill_days": 14,
-    "daily_backfill_candidate_count": 0,
-    "daily_backfill_added_count": 0,
+    "daily_backfill_candidate_count": 2,
+    "daily_backfill_added_count": 2,
     "min_daily_papers": 8,
     "filtered_low_relevance_count": 0,
     "filtered_wrong_category_count": 0,
     "arxiv_category_filter": [
-      "math.AT",
-      "math.NT",
       "math.AG",
       "math.CT",
+      "math.AT",
+      "math.NT",
       "math.KT"
     ],
     "days": 1,
     "collection_mode": "lookback",
-    "collection_cutoff_iso": "2026-06-10T13:21:06.591463+00:00",
+    "collection_cutoff_iso": "2026-06-10T13:26:49.255035+00:00",
     "max_per_topic": 25,
     "max_new_papers": 50,
     "max_new_conference_papers": 50,
@@ -4466,16 +4469,16 @@
     "source_stats": {
       "arXiv": {
         "type": "arxiv",
-        "successful_fetches": 0,
-        "failed_fetches": 4,
-        "last_error": "HTTP Error 429: Unknown Error"
+        "successful_fetches": 1,
+        "failed_fetches": 3,
+        "last_error": "HTTP Error 429: Too Many Requests"
       }
     },
     "llm_enabled": true,
     "llm_concurrency": 2,
     "recent_history_days": 45,
-    "successful_fetches": 0,
-    "failed_fetches": 4,
+    "successful_fetches": 1,
+    "failed_fetches": 3,
     "successful_conference_fetches": 0,
     "failed_conference_fetches": 0,
     "skipped_cached_conference_years": 0,
@@ -4495,13 +4498,13 @@
     "conference_arxiv_enrichment_skipped": 0,
     "conference_arxiv_enrichment_last_error": "",
     "paper_count": 33,
-    "new_paper_count": 0,
-    "retained_paper_count": 33,
+    "new_paper_count": 2,
+    "retained_paper_count": 31,
     "retained_recent_low_count": 12,
     "dropped_low_relevance_count": 0,
     "max_stored_papers": 200,
     "max_data_bytes": 8388608,
-    "data_bytes": 183939,
+    "data_bytes": 187394,
     "storage_trimmed_count": 0,
     "storage_trimmed_by_level": {
       "high": 0,
