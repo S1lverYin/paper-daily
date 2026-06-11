@@ -191,11 +191,10 @@ function levelOf(paper) {
 //   strong: base_score >= 0.10 → always in
 //   weak:   base_score >= 0.06 AND has keyword hits → in
 const TOPIC_STRONG = {
-  motivic_homotopy_theory: 0.10,
+  motivic_k_theory: 0.10,
   algebraic_geometry: 0.10,
   arithmetic_geometry: 0.10,
   homotopy_theory: 0.10,
-  k_theory: 0.10,
 };
 const MIN_TOPIC_BASE_WEAK = 0.06;
 
