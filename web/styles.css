@@ -247,6 +247,25 @@ a {
   text-decoration: none;
 }
 
+.lang-toggle {
+  display: inline-grid;
+  width: 40px;
+  height: 40px;
+  place-items: center;
+  border: 1px solid rgba(45, 212, 191, 0.42);
+  border-radius: 8px;
+  background: rgba(45, 212, 191, 0.16);
+  color: var(--teal);
+  font-size: 13px;
+  font-weight: 850;
+  cursor: pointer;
+}
+
+.lang-toggle:hover {
+  border-color: var(--teal);
+  background: rgba(45, 212, 191, 0.28);
+}
+
 .shell {
   display: grid;
   gap: 18px;

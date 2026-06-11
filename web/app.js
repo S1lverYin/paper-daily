@@ -1,4 +1,5 @@
 const THEME_STORAGE_KEY = "paper-daily-theme";
+const LANG_STORAGE_KEY = "paper-daily-lang";
 const THEMES = new Set(["dark", "light", "eye"]);
 
 const state = {
@@ -7,6 +8,7 @@ const state = {
     conference: null,
   },
   theme: "dark",
+  lang: "zh",
   filters: {
     query: "",
     topic: "all",
@@ -32,6 +34,7 @@ const nodes = {
   levelFilter: document.querySelector("#levelFilter"),
   dateFilter: document.querySelector("#dateFilter"),
   searchInput: document.querySelector("#searchInput"),
+  langToggle: document.querySelector("#langToggle"),
   themeOptions: document.querySelectorAll("[data-theme-option]"),
   collectionTabs: document.querySelectorAll("[data-collection]"),
   tabs: document.querySelectorAll(".tab"),
@@ -49,6 +52,24 @@ function storedTheme() {
   } catch {
     return "dark";
   }
+}
+
+function storedLang() {
+  try {
+    const lang = localStorage.getItem(LANG_STORAGE_KEY);
+    return lang === "en" ? "en" : "zh";
+  } catch {
+    return "zh";
+  }
+}
+
+function applyLang(lang) {
+  state.lang = lang === "en" ? "en" : "zh";
+  nodes.langToggle.textContent = state.lang === "en" ? "EN" : "中";
+  try {
+    localStorage.setItem(LANG_STORAGE_KEY, state.lang);
+  } catch {}
+  render();
 }
 
 function applyTheme(theme) {
@@ -133,6 +154,28 @@ function levelOf(paper) {
   return String(paper.best_match?.level || "low").toLowerCase();
 }
 
+// Return the best matching label for the currently selected topic filter.
+// When "all" is selected, use best_match (overall winner).  When a specific
+// topic is chosen, look up its entry in top_labels to get the per-topic
+// base_score and level, which are not inflated by cross-domain bridge bonus.
+function topicLabel(paper) {
+  const filterTopic = state.filters.topic;
+  if (filterTopic === "all") return paper.best_match || null;
+  if (paper.best_match?.topic_id === filterTopic) return paper.best_match;
+  const extra = paper.top_labels || [];
+  return extra.find(l => l.topic_id === filterTopic) || null;
+}
+
+function topicScore(paper) {
+  const label = topicLabel(paper);
+  return label ? (label.base_score ?? label.score ?? 0) : 0;
+}
+
+function topicLevel(paper) {
+  const label = topicLabel(paper);
+  return label ? String(label.level || "low").toLowerCase() : "low";
+}
+
 function textIncludes(paper, query) {
   if (!query) return true;
   const haystack = [
@@ -151,10 +194,46 @@ function textIncludes(paper, query) {
   return haystack.includes(query.toLowerCase());
 }
 
+function enField(paper, field) {
+  // Generate English summary from raw paper metadata
+  const enSummary = paper.summary || "";
+  const firstSent = enSummary.split(/[.!?]\s+/)[0] || "";
+  const fields = {
+    problem: firstSent || enSummary.slice(0, 300) || "See paper for details.",
+    method: enSummary.slice(0, 400) || "Please open the paper link to view method details.",
+    innovation: firstSent ? firstSent.slice(0, 300) : enSummary.slice(0, 300) || "Core contribution extracted from abstract.",
+    evidence: enSummary ? enSummary.slice(0, 250) : "Evidence not available in metadata.",
+    limitations: "Full-text reading required for comprehensive evaluation.",
+    why_relevant: (paper.best_match?.reason || "Matched by keyword / category overlap."),
+  };
+  return fields[field] || "See paper for details.";
+}
+
+function enRelReason(paper, best) {
+  // Pair English abstract with the topic classification reason
+  const topicName = best.topic_name || "Uncategorized";
+  const reason = best.reason || "Matched by keyword / category overlap.";
+  return `Matched to "${topicName}": ${reason}. See abstract for full details.`;
+}
+
 function matchesBaseFilters(paper) {
   if (!textIncludes(paper, state.filters.query)) return false;
-  if (state.filters.topic !== "all" && paper.best_match?.topic_id !== state.filters.topic) return false;
-  if (state.filters.level !== "all" && levelOf(paper) !== state.filters.level) return false;
+
+  if (state.filters.topic !== "all") {
+    const label = topicLabel(paper);
+    if (!label) return false;
+    // base_score >= 0.12: matches the backend top_labels cutoff
+    if ((label.base_score ?? label.score ?? 0) < 0.12) return false;
+  }
+
+  if (state.filters.level !== "all") {
+    if (state.filters.topic !== "all") {
+      if (topicLevel(paper) !== state.filters.level) return false;
+    } else {
+      if (levelOf(paper) !== state.filters.level) return false;
+    }
+  }
+
   return true;
 }
 
@@ -174,7 +253,7 @@ function matchesView(paper) {
 function filteredPapers() {
   return (activeData().papers || [])
     .filter((paper) => matchesBaseFilters(paper) && matchesView(paper))
-    .sort((a, b) => scoreOf(b) - scoreOf(a) || String(b.published || "").localeCompare(String(a.published || "")));
+    .sort((a, b) => topicScore(b) - topicScore(a) || String(b.published || "").localeCompare(String(a.published || "")));
 }
 
 function setText(parent, selector, text) {
@@ -195,25 +274,56 @@ function renderPaper(paper) {
   const best = paper.best_match || {};
   const summary = paper.chinese_summary || {};
   const badge = node.querySelector(".match-badge");
-  const level = levelOf(paper);
 
-  badge.textContent = `${level} ${scoreOf(paper).toFixed(2)}`;
-  badge.classList.add(level);
+  // When a topic filter is active, show per-topic score/level;
+  // otherwise show the overall best_match.
+  const showScore = topicScore(paper);
+  const showLevel = topicLevel(paper);
 
+  badge.textContent = `${showLevel} ${showScore.toFixed(2)}`;
+  badge.classList.add(showLevel);
+
+  // Multi-topic labels — use base_score so labels aren't bridge-inflated
+  const topLabels = paper.top_labels || [];
+  const allLabels = topLabels.slice(0, 4);
+  // If best_match isn't already in top_labels (rare), prepend it
+  if (!allLabels.some(l => l.topic_id === best.topic_id)) {
+    allLabels.unshift({
+      topic_id: best.topic_id,
+      topic_name: best.topic_name,
+      base_score: best.base_score ?? best.score,
+      score: best.score,
+      level: best.level,
+    });
+  }
+
+  const isZh = state.lang === "zh";
   setText(node, ".paper-date", `发布 ${formatDate(paper.published)} · 收录 ${formatDate(collectionTime(paper))}`);
   setText(node, ".paper-source", paper.source || "paper");
   setText(node, ".paper-title", paper.title);
   setText(node, ".paper-authors", (paper.authors || []).slice(0, 8).join(", "));
-  setText(node, ".summary-problem", summary.problem);
-  setText(node, ".summary-method", summary.method);
-  setText(node, ".summary-innovation", summary.innovation);
-  setText(node, ".summary-evidence", summary.evidence);
-  setText(node, ".summary-limitations", summary.limitations);
-  setText(node, ".summary-relevant", summary.why_relevant);
+
+  setText(node, ".summary-problem", isZh ? summary.problem : enField(paper, "problem"));
+  setText(node, ".summary-method", isZh ? summary.method : enField(paper, "method"));
+  setText(node, ".summary-innovation", isZh ? summary.innovation : enField(paper, "innovation"));
+  setText(node, ".summary-evidence", isZh ? summary.evidence : enField(paper, "evidence"));
+  setText(node, ".summary-limitations", isZh ? summary.limitations : enField(paper, "limitations"));
+  setText(node, ".summary-relevant", isZh ? summary.why_relevant : enRelReason(paper, best));
+
   setText(node, ".match-reason", `${best.topic_name || "未分类"}：${best.reason || ""}`);
 
   const tags = node.querySelector(".paper-tags");
-  for (const category of (paper.categories || []).slice(0, 8)) {
+  // Show multi-topic labels as colored tags
+  const labelColors = ["#2dd4bf", "#fbbf24", "#fb7185", "#a78bfa"];
+  for (let i = 0; i < allLabels.length; i++) {
+    const lbl = allLabels[i];
+    const tag = document.createElement("span");
+    tag.className = "topic-label";
+    tag.textContent = lbl.topic_name;
+    tag.style.cssText = `border:1px solid ${labelColors[i]};color:${labelColors[i]};border-radius:999px;padding:2px 8px;font-size:11px;font-weight:700;margin-right:4px;`;
+    tags.appendChild(tag);
+  }
+  for (const category of (paper.categories || []).slice(0, 6)) {
     const tag = document.createElement("span");
     tag.className = "tag";
     tag.textContent = category;
@@ -306,7 +416,7 @@ function updateStats() {
   const date = selectedDate();
   const weekPapers = papers.filter((paper) => inRange(collectionTime(paper), startOfWeek(date), endOfWeek(date)));
   const monthPapers = papers.filter((paper) => inRange(collectionTime(paper), startOfMonth(date), endOfMonth(date)));
-  const top = papers.reduce((max, paper) => Math.max(max, scoreOf(paper)), 0);
+  const top = papers.reduce((max, paper) => Math.max(max, topicScore(paper)), 0);
   nodes.paperCount.textContent = String(papers.length);
   nodes.weekCount.textContent = String(weekPapers.length);
   nodes.monthCount.textContent = String(monthPapers.length);
@@ -319,6 +429,9 @@ function bindEvents() {
       applyTheme(option.dataset.themeOption);
     });
   }
+  nodes.langToggle.addEventListener("click", () => {
+    applyLang(state.lang === "zh" ? "en" : "zh");
+  });
   nodes.searchInput.addEventListener("input", (event) => {
     state.filters.query = event.target.value.trim();
     render();
@@ -385,6 +498,7 @@ function updateUpdatedAt(message = "") {
 
 async function main() {
   applyTheme(storedTheme());
+  applyLang(storedLang());
   bindEvents();
   try {
     state.datasets.daily = await loadData();

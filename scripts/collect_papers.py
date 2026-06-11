@@ -134,6 +134,13 @@ def parse_topics(config: dict[str, Any]) -> list[Topic]:
     return topics
 
 
+def category_whitelist(config: dict[str, Any]) -> set[str] | None:
+    values = config.get("arxiv_categories_whitelist", [])
+    if not isinstance(values, list) or not values:
+        return None
+    return {str(v) for v in values}
+
+
 def parse_sources(config: dict[str, Any]) -> list[SourceConfig]:
     configured = config.get("sources")
     if not configured:
@@ -1390,6 +1397,274 @@ def collection_cutoff(
     return now - dt.timedelta(days=max(0, days)), "lookback"
 
 
+# Bridge terms that signal cross-domain relevance.
+# When a paper hits bridge terms shared by TWO topics, both topics get a boost.
+# Each topic's list collects the strongest cross-domain keywords from the ontology
+# (sections 6.1–6.10: Motivic∩AG, Motivic∩Arithmetic, …, Homotopy∩K-Theory).
+BRIDGE_TERMS: dict[str, list[str]] = {
+    "motivic_homotopy_theory": [
+        "motivic spectra", "SH(k)", "SH(S)", "Nisnevich topology",
+        "A1-homotopy theory", "KGL", "MGL", "KQ", "motivic cohomology",
+        "six functor formalism", "l-adic realization", "etale realization",
+        "motivic sphere spectrum", "HZ", "slice filtration",
+        "algebraic cobordism", "motivic cobordism", "Tate motives",
+        "purity theorem", "homotopy purity", "Gysin map",
+        "Chow-Witt groups", "Milnor-Witt K-theory", "A1-degree",
+        "higher Chow groups", "simplicial presheaves",
+        "Betti realization", "Hodge realization", "crystalline realization",
+        "motivic Galois group", "motivic ring spectrum",
+        "motivic Adams spectral sequence", "motivic Steenrod algebra",
+        "S^{p,q}", "bigraded homotopy groups", "Grothendieck-Witt ring",
+    ],
+    "algebraic_geometry": [
+        "Nisnevich topology", "etale topology", "perfect complexes",
+        "derived stack", "higher stack", "moduli stack", "descent",
+        "fpqc descent", "coherent sheaf", "quasi-coherent sheaf",
+        "algebraic stack", "Deligne-Mumford stack", "Artin stack",
+        "smooth morphism", "etale morphism", "proper morphism",
+        "moduli space", "Hilbert scheme", "Chow group",
+        "intersection theory", "Gysin map", "vector bundle",
+        "line bundle", "Picard group", "Cartier divisor", "blow-up",
+        "derived algebraic geometry", "spectral algebraic geometry",
+        "higher stacks", "derived stack", "infinity stack",
+        "homotopical algebraic geometry", "sheaf",
+    ],
+    "arithmetic_geometry": [
+        "etale cohomology", "l-adic cohomology", "etale realization",
+        "Galois representation", "mixed Tate motives", "L-function",
+        "zeta function", "Shimura variety", "modular forms",
+        "abelian variety", "elliptic curve", "Tate module",
+        "Selmer group", "Frobenius", "p-adic Hodge theory",
+        "crystalline cohomology", "de Rham cohomology", "period rings",
+        "Fontaine", "Iwasawa theory", "Diophantine geometry",
+        "rational points", "integral points", "height function",
+        "Arakelov geometry", "Beilinson conjectures", "Bloch-Kato",
+        "Tate conjecture", "etale fundamental group", "Weil group",
+        "Langlands", "arithmetic surfaces", "Dedekind schemes",
+        "regulator", "special values",
+    ],
+    "homotopy_theory": [
+        "spectra", "stable homotopy theory", "localization sequence",
+        "THH", "TC", "E_infinity algebra", "K-theory spectrum",
+        "Adams spectral sequence", "Steenrod algebra", "chromatic homotopy theory",
+        "model category", "infinity category", "spectrum",
+        "sphere spectrum", "suspension spectrum", "Eilenberg-Mac Lane",
+        "Bousfield localization", "operad", "Thom spectrum",
+        "cobordism", "equivariant homotopy", "parametrized spectra",
+        "homotopy groups", "spectral sequence", "Brown representability",
+        "fiber sequence", "cofiber sequence", "infinite loop space",
+        "chromatic", "etale homotopy type", "p-adic homotopy theory",
+        "Galois descent", "profinite homotopy theory",
+        "homotopy fixed points",
+    ],
+    "k_theory": [
+        "perfect complexes", "localization sequence", "THH", "TC",
+        "KGL", "K-theory of schemes", "motivic spectra", "K-theory spectrum",
+        "stable infinity category", "additive invariant", "Grothendieck-Witt theory",
+        "Waldhausen K-theory", "Quillen K-theory", "connective K-theory",
+        "topological Hochschild homology", "topological cyclic homology",
+        "cyclotomic trace", "Dennis trace", "Bass", "devissage",
+        "Karoubi", "Bott periodicity", "Hermitian K-theory",
+        "Witt groups", "assembly map", "Baum-Connes", "Farrell-Jones",
+        "excision", "Morita invariance",
+        "G-theory", "Thomason-Trobaugh", "etale K-theory",
+        "K-theory of number rings", "K-theory of finite fields",
+        "cyclotomic spectra", "additive invariant",
+    ],
+}
+
+# Cross-domain pairs: (term_substring, [topic_ids_that_get_bonus])
+# When a paper contains one of these substrings, all listed topics get partial credit.
+# Covers all 10 inter-domain pairs from the ontology:
+#   Motivic∩AG, Motivic∩Arithmetic, Motivic∩Homotopy, Motivic∩K-theory,
+#   AG∩Arithmetic, AG∩Homotopy, AG∩K-theory,
+#   Arithmetic∩Homotopy, Arithmetic∩K-theory, Homotopy∩K-theory.
+# Also includes the 3-way/4-way bridges (e.g. Motivic↔AG/Homotopy/K-theory).
+CROSS_DOMAIN_SIGNALS: list[tuple[str, list[str], str]] = [
+    # ── Motivic ∩ Algebraic Geometry (6.1) ──
+    ("motivic spaces", ["motivic_homotopy_theory", "algebraic_geometry"], "motivic ↔ AG"),
+    ("smooth schemes", ["motivic_homotopy_theory", "algebraic_geometry"], "motivic ↔ AG"),
+    ("torsors", ["motivic_homotopy_theory", "algebraic_geometry"], "motivic ↔ AG"),
+    ("algebraic vector bundles", ["motivic_homotopy_theory", "algebraic_geometry", "k_theory"], "motivic ↔ AG / K-theory"),
+    ("classifying spaces", ["motivic_homotopy_theory", "algebraic_geometry", "homotopy_theory"], "motivic ↔ AG / homotopy"),
+    ("algebraic cycles", ["motivic_homotopy_theory", "algebraic_geometry"], "motivic ↔ AG"),
+    ("A1-representability", ["motivic_homotopy_theory", "algebraic_geometry"], "motivic ↔ AG"),
+    ("motivic cohomology", ["motivic_homotopy_theory", "algebraic_geometry"], "motivic ↔ AG"),
+    ("simplicial presheaves", ["motivic_homotopy_theory", "algebraic_geometry"], "motivic ↔ AG"),
+    ("simplicial sheaves", ["motivic_homotopy_theory", "algebraic_geometry"], "motivic ↔ AG"),
+    ("A1-weak equivalence", ["motivic_homotopy_theory", "algebraic_geometry", "homotopy_theory"], "motivic ↔ AG / homotopy"),
+    ("Chow-Witt", ["motivic_homotopy_theory", "algebraic_geometry"], "motivic ↔ AG"),
+    ("A1-degree", ["motivic_homotopy_theory", "algebraic_geometry"], "motivic ↔ AG"),
+    ("Euler class", ["motivic_homotopy_theory", "algebraic_geometry"], "motivic ↔ AG"),
+
+    # ── Motivic ∩ Arithmetic Geometry (6.2) ──
+    ("l-adic realization", ["motivic_homotopy_theory", "arithmetic_geometry"], "motivic ↔ arithmetic"),
+    ("arithmetic motives", ["motivic_homotopy_theory", "arithmetic_geometry"], "motivic ↔ arithmetic"),
+    ("mixed motives", ["motivic_homotopy_theory", "arithmetic_geometry"], "motivic ↔ arithmetic"),
+    ("Tate motives", ["motivic_homotopy_theory", "arithmetic_geometry"], "motivic ↔ arithmetic"),
+    ("motivic Galois group", ["motivic_homotopy_theory", "arithmetic_geometry"], "motivic ↔ arithmetic"),
+    ("periods", ["motivic_homotopy_theory", "arithmetic_geometry"], "motivic ↔ arithmetic"),
+    ("Hodge realization", ["motivic_homotopy_theory", "arithmetic_geometry"], "motivic ↔ arithmetic"),
+    ("de Rham realization", ["motivic_homotopy_theory", "arithmetic_geometry"], "motivic ↔ arithmetic"),
+    ("crystalline realization", ["motivic_homotopy_theory", "arithmetic_geometry"], "motivic ↔ arithmetic"),
+    ("special values", ["motivic_homotopy_theory", "arithmetic_geometry", "k_theory"], "motivic ↔ arithmetic / K-theory"),
+    ("Beilinson conjectures", ["motivic_homotopy_theory", "arithmetic_geometry", "k_theory"], "motivic ↔ arithmetic / K-theory"),
+    ("Bloch-Kato", ["motivic_homotopy_theory", "arithmetic_geometry"], "motivic ↔ arithmetic"),
+    ("Tate conjecture", ["motivic_homotopy_theory", "arithmetic_geometry"], "motivic ↔ arithmetic"),
+
+    # ── Motivic ∩ Homotopy Theory (6.3) ──
+    ("motivic spectra", ["motivic_homotopy_theory", "homotopy_theory", "k_theory"], "motivic ↔ homotopy / K-theory"),
+    ("motivic sphere spectrum", ["motivic_homotopy_theory", "homotopy_theory"], "motivic ↔ homotopy"),
+    ("bigraded homotopy groups", ["motivic_homotopy_theory", "homotopy_theory"], "motivic ↔ homotopy"),
+    ("motivic Adams spectral sequence", ["motivic_homotopy_theory", "homotopy_theory"], "motivic ↔ homotopy"),
+    ("motivic Steenrod algebra", ["motivic_homotopy_theory", "homotopy_theory"], "motivic ↔ homotopy"),
+    ("motivic E_infinity", ["motivic_homotopy_theory", "homotopy_theory"], "motivic ↔ homotopy"),
+    ("motivic ring spectrum", ["motivic_homotopy_theory", "homotopy_theory", "k_theory"], "motivic ↔ homotopy / K-theory"),
+    ("motivic stable stems", ["motivic_homotopy_theory", "homotopy_theory"], "motivic ↔ homotopy"),
+    ("slice spectral sequence", ["motivic_homotopy_theory", "homotopy_theory"], "motivic ↔ homotopy"),
+    ("S^{p,q}", ["motivic_homotopy_theory", "homotopy_theory"], "motivic ↔ homotopy"),
+
+    # ── Motivic ∩ K-Theory (6.4) ──
+    ("KGL", ["motivic_homotopy_theory", "k_theory"], "motivic ↔ K-theory"),
+    ("KQ", ["motivic_homotopy_theory", "k_theory"], "motivic ↔ K-theory (hermitian)"),
+    ("MGL", ["motivic_homotopy_theory", "k_theory", "homotopy_theory"], "motivic ↔ K-theory / homotopy"),
+    ("motivic K-theory", ["motivic_homotopy_theory", "k_theory"], "motivic ↔ K-theory"),
+    ("algebraic K-theory spectrum", ["motivic_homotopy_theory", "k_theory"], "motivic ↔ K-theory"),
+    ("Thomason-Trobaugh", ["motivic_homotopy_theory", "k_theory"], "motivic ↔ K-theory"),
+    ("K-theory of schemes", ["k_theory", "algebraic_geometry", "motivic_homotopy_theory"], "K-theory ↔ AG / motivic"),
+    ("K-theory of finite fields", ["k_theory", "arithmetic_geometry"], "K-theory ↔ arithmetic"),
+
+    # ── Algebraic Geometry ∩ Arithmetic Geometry (6.5) ──
+    ("schemes over Spec Z", ["algebraic_geometry", "arithmetic_geometry"], "AG ↔ arithmetic"),
+    ("arithmetic schemes", ["algebraic_geometry", "arithmetic_geometry"], "AG ↔ arithmetic"),
+    ("Dedekind schemes", ["algebraic_geometry", "arithmetic_geometry"], "AG ↔ arithmetic"),
+    ("regular models", ["algebraic_geometry", "arithmetic_geometry"], "AG ↔ arithmetic"),
+    ("arithmetic surfaces", ["algebraic_geometry", "arithmetic_geometry"], "AG ↔ arithmetic"),
+    ("abelian schemes", ["algebraic_geometry", "arithmetic_geometry"], "AG ↔ arithmetic"),
+    ("modular curves", ["algebraic_geometry", "arithmetic_geometry"], "AG ↔ arithmetic"),
+    ("Shimura variety", ["algebraic_geometry", "arithmetic_geometry"], "AG ↔ arithmetic"),
+    ("Arakelov", ["algebraic_geometry", "arithmetic_geometry"], "AG ↔ arithmetic"),
+    ("rational points", ["algebraic_geometry", "arithmetic_geometry"], "AG ↔ arithmetic"),
+    ("integral points", ["algebraic_geometry", "arithmetic_geometry"], "AG ↔ arithmetic"),
+    ("height function", ["algebraic_geometry", "arithmetic_geometry"], "AG ↔ arithmetic"),
+
+    # ── Algebraic Geometry ∩ Homotopy Theory (6.6) ──
+    ("derived algebraic geometry", ["algebraic_geometry", "homotopy_theory"], "AG ↔ homotopy"),
+    ("spectral algebraic geometry", ["algebraic_geometry", "homotopy_theory"], "AG ↔ homotopy"),
+    ("higher stack", ["algebraic_geometry", "homotopy_theory"], "AG ↔ homotopy"),
+    ("derived stack", ["algebraic_geometry", "homotopy_theory"], "AG ↔ homotopy"),
+    ("infinity stack", ["algebraic_geometry", "homotopy_theory"], "AG ↔ homotopy"),
+    ("homotopical algebraic geometry", ["algebraic_geometry", "homotopy_theory"], "AG ↔ homotopy"),
+    ("moduli stack", ["algebraic_geometry", "homotopy_theory", "arithmetic_geometry"], "AG ↔ homotopy / arithmetic"),
+
+    # ── Algebraic Geometry ∩ K-Theory (6.7) ──
+    ("perfect complexes", ["k_theory", "algebraic_geometry"], "K-theory ↔ AG"),
+    ("locally free sheaves", ["k_theory", "algebraic_geometry"], "K-theory ↔ AG"),
+    ("G-theory", ["k_theory", "algebraic_geometry"], "K-theory ↔ AG"),
+    ("devissage", ["k_theory", "algebraic_geometry"], "K-theory ↔ AG"),
+    ("Bass negative K-theory", ["k_theory", "algebraic_geometry"], "K-theory ↔ AG"),
+    ("vector bundles", ["k_theory", "algebraic_geometry", "motivic_homotopy_theory"], "K-theory ↔ AG / motivic"),
+    ("coherent sheaf", ["algebraic_geometry", "k_theory"], "AG ↔ K-theory"),
+
+    # ── Arithmetic Geometry ∩ Homotopy Theory (6.8) ──
+    ("etale homotopy type", ["arithmetic_geometry", "homotopy_theory"], "arithmetic ↔ homotopy"),
+    ("profinite homotopy theory", ["arithmetic_geometry", "homotopy_theory"], "arithmetic ↔ homotopy"),
+    ("arithmetic homotopy", ["arithmetic_geometry", "homotopy_theory"], "arithmetic ↔ homotopy"),
+    ("p-adic homotopy", ["arithmetic_geometry", "homotopy_theory"], "arithmetic ↔ homotopy"),
+    ("Galois descent", ["arithmetic_geometry", "homotopy_theory"], "arithmetic ↔ homotopy"),
+    ("homotopy fixed points", ["arithmetic_geometry", "homotopy_theory"], "arithmetic ↔ homotopy"),
+    ("chromatic homotopy", ["homotopy_theory", "arithmetic_geometry", "k_theory"], "homotopy ↔ arithmetic / K-theory"),
+
+    # ── Arithmetic Geometry ∩ K-Theory (6.9) ──
+    ("Quillen-Lichtenbaum", ["arithmetic_geometry", "k_theory"], "arithmetic ↔ K-theory"),
+    ("regulator", ["arithmetic_geometry", "k_theory"], "arithmetic ↔ K-theory"),
+    ("Beilinson regulator", ["arithmetic_geometry", "k_theory"], "arithmetic ↔ K-theory"),
+    ("Borel regulator", ["arithmetic_geometry", "k_theory"], "arithmetic ↔ K-theory"),
+    ("L-function", ["arithmetic_geometry", "k_theory", "motivic_homotopy_theory"], "arithmetic ↔ K-theory / motivic"),
+    ("etale K-theory", ["arithmetic_geometry", "k_theory"], "arithmetic ↔ K-theory"),
+    ("K-theory of number rings", ["arithmetic_geometry", "k_theory"], "arithmetic ↔ K-theory"),
+
+    # ── Homotopy Theory ∩ K-Theory (6.10) ──
+    ("topological K-theory", ["homotopy_theory", "k_theory"], "homotopy ↔ K-theory"),
+    ("K-theory spectrum", ["homotopy_theory", "k_theory"], "homotopy ↔ K-theory"),
+    ("Bott periodicity", ["homotopy_theory", "k_theory"], "homotopy ↔ K-theory"),
+    ("KU", ["homotopy_theory", "k_theory"], "homotopy ↔ K-theory"),
+    ("KO", ["homotopy_theory", "k_theory"], "homotopy ↔ K-theory"),
+    ("connective K-theory", ["homotopy_theory", "k_theory"], "homotopy ↔ K-theory"),
+    ("THH", ["homotopy_theory", "k_theory"], "homotopy ↔ K-theory"),
+    ("TC", ["homotopy_theory", "k_theory"], "homotopy ↔ K-theory"),
+    ("cyclotomic spectra", ["homotopy_theory", "k_theory"], "homotopy ↔ K-theory"),
+    ("trace methods", ["homotopy_theory", "k_theory"], "homotopy ↔ K-theory"),
+    ("cyclotomic trace", ["homotopy_theory", "k_theory"], "homotopy ↔ K-theory"),
+    ("Dennis trace", ["homotopy_theory", "k_theory"], "homotopy ↔ K-theory"),
+    ("Hochschild homology", ["homotopy_theory", "k_theory"], "homotopy ↔ K-theory"),
+    ("cyclic homology", ["homotopy_theory", "k_theory"], "homotopy ↔ K-theory"),
+    ("assembly map", ["homotopy_theory", "k_theory"], "homotopy ↔ K-theory"),
+    ("Baum-Connes", ["homotopy_theory", "k_theory"], "homotopy ↔ K-theory"),
+    ("Farrell-Jones", ["homotopy_theory", "k_theory"], "homotopy ↔ K-theory"),
+
+    # ── 3-way / 4-way core bridges (repeated to ensure coverage) ──
+    ("A1-homotopy theory", ["motivic_homotopy_theory", "algebraic_geometry", "homotopy_theory"], "motivic ↔ AG / homotopy"),
+    ("Nisnevich topology", ["motivic_homotopy_theory", "algebraic_geometry"], "motivic ↔ AG"),
+    ("etale cohomology", ["arithmetic_geometry", "algebraic_geometry"], "arithmetic ↔ AG"),
+    ("l-adic cohomology", ["arithmetic_geometry", "algebraic_geometry"], "arithmetic ↔ AG"),
+    ("etale realization", ["motivic_homotopy_theory", "arithmetic_geometry"], "motivic ↔ arithmetic"),
+    ("localization sequence", ["k_theory", "homotopy_theory"], "K-theory ↔ homotopy"),
+    ("E_infinity algebra", ["homotopy_theory", "k_theory", "motivic_homotopy_theory"], "homotopy ↔ K-theory / motivic"),
+    ("stable infinity category", ["k_theory", "homotopy_theory"], "K-theory ↔ homotopy"),
+    ("Galois representation", ["arithmetic_geometry", "motivic_homotopy_theory"], "arithmetic ↔ motivic"),
+    ("modular forms", ["arithmetic_geometry", "algebraic_geometry"], "arithmetic ↔ AG"),
+    ("Adams spectral sequence", ["homotopy_theory", "motivic_homotopy_theory"], "homotopy ↔ motivic"),
+    ("Steenrod algebra", ["homotopy_theory", "motivic_homotopy_theory"], "homotopy ↔ motivic"),
+    ("six functor", ["motivic_homotopy_theory", "algebraic_geometry", "arithmetic_geometry"], "motivic ↔ AG / arithmetic"),
+    ("SH(k)", ["motivic_homotopy_theory", "homotopy_theory"], "motivic ↔ homotopy"),
+    ("SH(S)", ["motivic_homotopy_theory", "algebraic_geometry", "homotopy_theory"], "motivic ↔ AG / homotopy"),
+    ("Grothendieck-Witt", ["k_theory", "motivic_homotopy_theory"], "K-theory ↔ motivic"),
+    ("Witt groups", ["k_theory", "motivic_homotopy_theory"], "K-theory ↔ motivic"),
+    ("Hermitian K-theory", ["k_theory", "motivic_homotopy_theory"], "K-theory ↔ motivic"),
+    ("Milnor-Witt K-theory", ["motivic_homotopy_theory", "k_theory"], "motivic ↔ K-theory"),
+    ("higher Chow groups", ["motivic_homotopy_theory", "algebraic_geometry"], "motivic ↔ AG"),
+    ("descent", ["algebraic_geometry", "arithmetic_geometry", "homotopy_theory", "motivic_homotopy_theory"], "cross-domain: descent"),
+    ("purity theorem", ["motivic_homotopy_theory", "algebraic_geometry"], "motivic ↔ AG"),
+    ("Gysin map", ["motivic_homotopy_theory", "algebraic_geometry"], "motivic ↔ AG"),
+    ("Thom space", ["motivic_homotopy_theory", "homotopy_theory"], "motivic ↔ homotopy"),
+    ("Thom spectrum", ["homotopy_theory", "motivic_homotopy_theory", "k_theory"], "homotopy ↔ motivic / K-theory"),
+    ("Bousfield localization", ["homotopy_theory", "motivic_homotopy_theory"], "homotopy ↔ motivic"),
+    ("zeta function", ["arithmetic_geometry", "k_theory", "motivic_homotopy_theory"], "arithmetic ↔ K-theory / motivic"),
+    ("Serre spectral sequence", ["homotopy_theory", "algebraic_geometry"], "homotopy ↔ AG"),
+]
+
+
+def compute_cross_domain_bonus(paper: dict[str, Any], topic_id: str) -> tuple[float, list[str]]:
+    """Return (bonus_score, [cross_domain_reasons]) for a given topic on this paper.
+
+    With ~90 cross-domain signals covering all 10 inter-domain pairs, the per-signal
+    contribution is scaled to 0.35/n_targets so that a paper typically needs 2–4
+    bridge matches to saturate the 0.30 cap.  Heavyweight 3-way/4-way bridges
+    (e.g. motivic ↔ AG / homotopy / K-theory) contribute less per-target but
+    distribute bonus across more topics.
+    """
+    haystack = f"{paper.get('title', '')} {paper.get('summary', '')}".lower()
+    total_bonus = 0.0
+    reasons: list[str] = []
+    counted_signals: set[int] = set()
+    for idx, (term, target_topics, label) in enumerate(CROSS_DOMAIN_SIGNALS):
+        if term.lower() not in haystack:
+            continue
+        if topic_id not in target_topics:
+            continue
+        if idx in counted_signals:
+            continue
+        counted_signals.add(idx)
+        n_targets = len(target_topics)
+        # 0.35 / n_targets: fine-grained enough that 2–4 hits saturate the 0.30 cap
+        share = 0.35 / n_targets if n_targets else 0.0
+        total_bonus += share
+        other = [t for t in target_topics if t != topic_id]
+        reasons.append(f"桥接信号「{term}」({label})" if other else f"桥接信号「{term}」")
+    return round(min(0.30, total_bonus), 3), reasons[:4]
+
+
 def keyword_score(topic: Topic, paper: dict[str, Any]) -> tuple[float, list[str]]:
     haystack = f"{paper.get('title', '')} {paper.get('summary', '')}".lower()
     hits = []
@@ -1433,18 +1708,27 @@ def score_paper(topic: Topic, paper: dict[str, Any]) -> dict[str, Any]:
     c_score = category_score(topic, paper)
     l_score = lexical_overlap_score(topic, paper)
     base_score = round(0.50 * k_score + 0.25 * c_score + 0.25 * l_score, 3)
+
+    # Cross-domain bridge bonus
+    bridge_bonus, bridge_reasons = compute_cross_domain_bonus(paper, topic.id)
+    bridge_bonus_raw = bridge_bonus  # store before clamping
+    adjusted_score = round(min(1.0, base_score + bridge_bonus), 3)
+
     reason_parts = []
     if hits:
         reason_parts.append("关键词命中：" + "、".join(hits))
     if c_score > 0:
         reason_parts.append("arXiv 分类重合：" + "、".join(sorted(set(topic.arxiv_categories) & set(paper.get("categories", [])))))
+    reason_parts.extend(bridge_reasons)
     if not reason_parts:
         reason_parts.append("文本语义与方向描述存在弱相关，需要人工复核。")
     return {
         "topic_id": topic.id,
         "topic_name": topic.name,
-        "score": base_score,
-        "level": match_level(base_score),
+        "score": adjusted_score,
+        "base_score": base_score,
+        "bridge_bonus": bridge_bonus_raw,
+        "level": match_level(adjusted_score),
         "reason": "；".join(reason_parts),
         "keyword_hits": hits,
     }
@@ -1929,6 +2213,7 @@ def collect(
     config = load_issue_config(default_config)
     topics = parse_topics(config)
     sources = parse_sources(config)
+    arxiv_category_filter = category_whitelist(config)
     now = dt.datetime.now(dt.timezone.utc)
     conference_sources = parse_conference_sources(config, now)
     active_conference_years_by_source = active_conference_years(conference_sources)
@@ -2057,6 +2342,7 @@ def collect(
     recent_papers = []
     daily_backfill_candidates = []
     filtered_low_relevance = 0
+    filtered_wrong_category = 0
     raw_daily_candidate_count = 0
     daily_outside_cutoff_count = 0
     backfill_days = max(days, env_int("DAILY_BACKFILL_DAYS", 14))
@@ -2077,6 +2363,12 @@ def collect(
                 daily_outside_cutoff_count += 1
             continue
 
+        if arxiv_category_filter and not is_conference_paper:
+            paper_cats = set(paper.get("categories", []))
+            if not paper_cats & arxiv_category_filter:
+                filtered_wrong_category += 1
+                continue
+
         matches = [score_paper(topic, paper) for topic in topics]
         matches.sort(key=lambda item: item["score"], reverse=True)
         best_match = matches[0]
@@ -2085,6 +2377,21 @@ def collect(
             continue
         paper["matches"] = matches
         paper["best_match"] = best_match
+        # top_labels uses base_score (without bridge bonus) to keep topic
+        # filtering discriminative.  When the user selects a topic, the
+        # frontend matches against base_score >= 0.15 and sorts by it.
+        paper["top_labels"] = [
+            {
+                "topic_id": m["topic_id"],
+                "topic_name": m["topic_name"],
+                "base_score": m["base_score"],
+                "score": m["score"],
+                "level": m["level"],
+                "keyword_hits": m.get("keyword_hits", []),
+            }
+            for m in matches
+            if m["base_score"] >= 0.12
+        ][:5]
         if in_backfill_window:
             paper["backfilled_from_recent_arxiv"] = True
             daily_outside_cutoff_count += 1
@@ -2190,6 +2497,8 @@ def collect(
         "daily_backfill_added_count": daily_backfill_added_count,
         "min_daily_papers": min_daily_papers,
         "filtered_low_relevance_count": filtered_low_relevance,
+        "filtered_wrong_category_count": filtered_wrong_category,
+        "arxiv_category_filter": list(arxiv_category_filter) if arxiv_category_filter else [],
         "days": days,
         "collection_mode": collection_mode,
         "collection_cutoff_iso": cutoff.isoformat(),
@@ -2313,6 +2622,12 @@ def main() -> None:
         f"backfilled={stats.get('daily_backfill_added_count', 0)}, "
         f"filtered={stats.get('filtered_low_relevance_count', 0)}"
     )
+    if stats.get("arxiv_category_filter"):
+        print(
+            "Category filter: "
+            f"allowed={stats.get('arxiv_category_filter')}, "
+            f"dropped={stats.get('filtered_wrong_category_count', 0)}"
+        )
     if args.conference_output.exists():
         conference_payload = load_json(args.conference_output)
         print(f"Wrote {len(conference_payload.get('papers', []))} conference papers to {args.conference_output}")
