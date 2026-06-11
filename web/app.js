@@ -296,7 +296,7 @@ function matchesView(paper) {
 
   if (state.filters.view === "daily") return dateKey(paper.published || paper.last_seen_at) === state.filters.date;
   if (state.filters.view === "week") return pubDate >= startOfWindow(date, WEEK_WINDOW_DAYS) && pubDate < windowEnd;
-  if (state.filters.view === "month") return pubDate >= startOfWindow(date, MONTH_WINDOW_DAYS) && pubDate < windowEnd;
+  if (state.filters.view === "month") return pubDate >= startOfMonth(date) && pubDate < endOfMonth(date);
   if (state.filters.view === "highlights") {
     return pubDate >= startOfWindow(date, HIGHLIGHTS_WINDOW_DAYS) && pubDate < windowEnd && topicScore(paper) >= 0.42;
   }
@@ -487,7 +487,7 @@ function updateStats() {
   });
   const monthPapers = papers.filter((paper) => {
     const d = parseDate(paper.published || paper.last_seen_at || "");
-    return d && d >= startOfWindow(date, MONTH_WINDOW_DAYS) && d < windowEnd;
+    return d && d >= startOfMonth(date) && d < endOfMonth(date);
   });
   const top = papers.reduce((max, paper) => Math.max(max, topicScore(paper)), 0);
   nodes.paperCount.textContent = String(papers.length);
