@@ -1675,7 +1675,6 @@ def keyword_score(topic: Topic, paper: dict[str, Any]) -> tuple[float, list[str]
         # whole words to avoid false positives inside longer words
         # (e.g. 'TC' inside 'patchkoria').
         if len(normalized) <= 3 and not normalized.replace("_", "").isalpha():
-            # contains numbers/symbols like K_0, S^{p,q} — match normally
             matched = normalized in haystack
         elif len(normalized) <= 3:
             matched = bool(re.search(rf"\b{re.escape(normalized)}\b", haystack))
@@ -1683,11 +1682,14 @@ def keyword_score(topic: Topic, paper: dict[str, Any]) -> tuple[float, list[str]
             matched = normalized in haystack
         if matched:
             hits.append(keyword)
-            # Multi-word keywords get a bigger boost (more specific match)
+            # Multi-word keywords are much more specific — give higher weight.
+            # 1-word: 0.25, 2-word: 0.45, 3-word: 0.65, 4+: 0.85
             word_count = len(normalized.split())
-            weighted += min(1.5, max(0.40, word_count * 0.22))
-    score = min(1.0, weighted / max(2.0, min(5.0, len(topic.keywords) / 2)))
-    return score, hits[:6]
+            weighted += min(0.85, 0.20 + word_count * 0.22)
+    # Score saturates quickly: 1 good multi-word hit → 0.3+, 2 hits → 0.6+
+    # But single-word hits need 3+ to get to 0.4.
+    score = min(1.0, weighted / 2.5)
+    return score, hits[:8]
 
 
 def category_score(topic: Topic, paper: dict[str, Any]) -> float:
@@ -1748,7 +1750,7 @@ def score_paper(topic: Topic, paper: dict[str, Any]) -> dict[str, Any]:
     k_score, hits = keyword_score(topic, paper)
     c_score = category_score(topic, paper)
     l_score = lexical_overlap_score(topic, paper)
-    base_score = round(0.50 * k_score + 0.25 * c_score + 0.25 * l_score, 3)
+    base_score = round(0.55 * k_score + 0.15 * c_score + 0.30 * l_score, 3)
 
     # Cross-domain bridge bonus
     bridge_bonus, bridge_reasons = compute_cross_domain_bonus(paper, topic.id)
@@ -2432,6 +2434,7 @@ def collect(
         #   homotopy_theory:          0.22
         #   k_theory:                 0.20
         # Weak rule: base_score >= 0.12 AND at least one keyword hit.
+        # Weak rule: base_score >= 0.06 AND at least one keyword hit.
         _STRONG = {"motivic_homotopy_theory": 0.10, "algebraic_geometry": 0.10,
                    "arithmetic_geometry": 0.10, "homotopy_theory": 0.10,
                    "k_theory": 0.10}

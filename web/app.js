@@ -187,8 +187,9 @@ function levelOf(paper) {
   return String(paper.best_match?.level || "low").toLowerCase();
 }
 
-// Topic tag eligibility — lowered so more papers get topic labels.
-// Strong: base_score >= 0.10, Weak: base_score >= 0.06 with keyword hits.
+// Topic tag eligibility:
+//   strong: base_score >= 0.10 → always in
+//   weak:   base_score >= 0.06 AND has keyword hits → in
 const TOPIC_STRONG = {
   motivic_homotopy_theory: 0.10,
   algebraic_geometry: 0.10,
