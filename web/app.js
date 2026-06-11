@@ -133,11 +133,11 @@ function endOfWeek(date) {
   return end;
 }
 
-// window sizes for "this week" / "this month" (papers published within
-// the last N days, because arXiv posts are continuous, not calendar-bound).
-const WEEK_WINDOW_DAYS = 60;
-const MONTH_WINDOW_DAYS = 120;
-const HIGHLIGHTS_WINDOW_DAYS = 60;
+// window sizes for "this week" / "this month" — papers published
+// within the last N days from the selected date.
+const WEEK_WINDOW_DAYS = 7;
+const MONTH_WINDOW_DAYS = 30;
+const HIGHLIGHTS_WINDOW_DAYS = 7;
 
 function startOfWindow(date, days) {
   const d = startOfDay(date);
