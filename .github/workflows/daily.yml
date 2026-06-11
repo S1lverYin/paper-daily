@@ -2,8 +2,18 @@ name: Daily Papers
 
 on:
   schedule:
-    - cron: '0 22 * * *'  # 6am Beijing time
+    - cron: '3 1 * * *'  # 9:03am Beijing time (UTC+8)
   workflow_dispatch:
+    inputs:
+      lookback_days:
+        description: '回看天数（留空则使用 cron 默认值 1）'
+        required: false
+        type: number
+      clear_cache:
+        description: '清空历史缓存重新采集'
+        required: false
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -13,6 +23,10 @@ permissions:
 concurrency:
   group: pages
   cancel-in-progress: false
+
+env:
+  LOOKBACK_DAYS: ${{ inputs.lookback_days || 1 }}
+  CLEAR_PAPER_CACHE: ${{ inputs.clear_cache && 'true' || 'false' }}
 
 jobs:
   collect:
@@ -27,12 +41,8 @@ jobs:
       - name: Collect papers
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
-          LOOKBACK_DAYS: 1
-          MAX_PER_TOPIC: 25
-          MAX_SUMMARIES: 40
-          MAX_NEW_PAPERS: 50
-          MAX_STORED_PAPERS: 200
-        run: python3 scripts/collect_papers.py --days 1 --max-per-topic 25 --max-summaries 40 --max-new-papers 50 --max-stored-papers 200
+          LLM_MODEL: deepseek-v4-flash
+        run: python3 scripts/collect_papers.py --days ${{ env.LOOKBACK_DAYS }} --max-per-topic 25 --max-summaries 40 --max-new-papers 50 --max-stored-papers 200
 
       - name: Commit and push
         run: |
