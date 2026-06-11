@@ -61,7 +61,6 @@ jobs:
         uses: actions/deploy-pages@v4
 
       - name: PushPlus notification
-        if: ${{ secrets.PUSHPLUS_TOKEN != '' }}
         env:
           PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
         run: |
