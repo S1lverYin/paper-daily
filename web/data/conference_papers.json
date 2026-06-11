@@ -1,6 +1,6 @@
 {
-  "generated_at": "Thu, 11 Jun 2026 15:50:52 +0000",
-  "generated_at_iso": "2026-06-11T15:50:52.183162+00:00",
+  "generated_at": "Thu, 11 Jun 2026 15:54:22 +0000",
+  "generated_at_iso": "2026-06-11T15:54:22.687734+00:00",
   "config_source": "file",
   "data_kind": "conference",
   "topics": [
@@ -338,14 +338,14 @@
     "filtered_wrong_category_count": 47,
     "arxiv_category_filter": [
       "math.AG",
-      "math.NT",
       "math.CT",
+      "math.NT",
       "math.KT",
       "math.AT"
     ],
     "days": 1,
     "collection_mode": "lookback",
-    "collection_cutoff_iso": "2026-06-10T15:50:52.183162+00:00",
+    "collection_cutoff_iso": "2026-06-10T15:54:22.687734+00:00",
     "max_per_topic": 25,
     "max_new_papers": 50,
     "max_new_conference_papers": 50,
