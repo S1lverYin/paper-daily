@@ -1,6 +1,6 @@
 {
-  "generated_at": "Thu, 11 Jun 2026 11:00:36 +0000",
-  "generated_at_iso": "2026-06-11T11:00:36.447071+00:00",
+  "generated_at": "Thu, 11 Jun 2026 13:12:04 +0000",
+  "generated_at_iso": "2026-06-11T13:12:04.834996+00:00",
   "config_source": "file",
   "data_kind": "daily",
   "topics": [
@@ -345,7 +345,7 @@
       "seed_topic": "k_theory",
       "matches": [
         {
-          "topic_id": "motivic_homotopy_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "Motivic Homotopy Theory",
           "score": 1.0,
           "base_score": 0.876,
@@ -360,7 +360,7 @@
           ]
         },
         {
-          "topic_id": "k_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "K-Theory",
           "score": 1.0,
           "base_score": 0.749,
@@ -411,7 +411,7 @@
         }
       ],
       "best_match": {
-        "topic_id": "motivic_homotopy_theory",
+        "topic_id": "motivic_k_theory",
         "topic_name": "Motivic Homotopy Theory",
         "score": 1.0,
         "base_score": 0.876,
@@ -427,7 +427,7 @@
       },
       "top_labels": [
         {
-          "topic_id": "motivic_homotopy_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "Motivic Homotopy Theory",
           "base_score": 0.876,
           "score": 1.0,
@@ -437,18 +437,6 @@
             "MSL",
             "algebraic cobordism",
             "hermitian K-theory"
-          ]
-        },
-        {
-          "topic_id": "k_theory",
-          "topic_name": "K-Theory",
-          "base_score": 0.749,
-          "score": 1.0,
-          "level": "high",
-          "keyword_hits": [
-            "K-theory",
-            "vector bundles",
-            "Hermitian K-theory"
           ]
         },
         {
@@ -512,7 +500,7 @@
       "seed_topic": "homotopy_theory",
       "matches": [
         {
-          "topic_id": "k_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "K-Theory",
           "score": 0.994,
           "base_score": 0.694,
@@ -555,7 +543,7 @@
           ]
         },
         {
-          "topic_id": "motivic_homotopy_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "Motivic Homotopy Theory",
           "score": 0.114,
           "base_score": 0.114,
@@ -576,7 +564,7 @@
         }
       ],
       "best_match": {
-        "topic_id": "k_theory",
+        "topic_id": "motivic_k_theory",
         "topic_name": "K-Theory",
         "score": 0.994,
         "base_score": 0.694,
@@ -594,7 +582,7 @@
       },
       "top_labels": [
         {
-          "topic_id": "k_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "K-Theory",
           "base_score": 0.694,
           "score": 0.994,
@@ -678,7 +666,7 @@
           ]
         },
         {
-          "topic_id": "k_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "K-Theory",
           "score": 0.356,
           "base_score": 0.056,
@@ -701,7 +689,7 @@
           ]
         },
         {
-          "topic_id": "motivic_homotopy_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "Motivic Homotopy Theory",
           "score": 0.284,
           "base_score": 0.284,
@@ -760,7 +748,7 @@
           ]
         },
         {
-          "topic_id": "motivic_homotopy_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "Motivic Homotopy Theory",
           "base_score": 0.284,
           "score": 0.284,
@@ -798,7 +786,7 @@
       "seed_topic": "motivic_homotopy_theory",
       "matches": [
         {
-          "topic_id": "motivic_homotopy_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "Motivic Homotopy Theory",
           "score": 0.668,
           "base_score": 0.493,
@@ -843,7 +831,7 @@
           ]
         },
         {
-          "topic_id": "k_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "K-Theory",
           "score": 0.056,
           "base_score": 0.056,
@@ -854,7 +842,7 @@
         }
       ],
       "best_match": {
-        "topic_id": "motivic_homotopy_theory",
+        "topic_id": "motivic_k_theory",
         "topic_name": "Motivic Homotopy Theory",
         "score": 0.668,
         "base_score": 0.493,
@@ -868,7 +856,7 @@
       },
       "top_labels": [
         {
-          "topic_id": "motivic_homotopy_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "Motivic Homotopy Theory",
           "base_score": 0.493,
           "score": 0.668,
@@ -942,7 +930,7 @@
           ]
         },
         {
-          "topic_id": "k_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "K-Theory",
           "score": 0.49,
           "base_score": 0.373,
@@ -954,7 +942,7 @@
           ]
         },
         {
-          "topic_id": "motivic_homotopy_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "Motivic Homotopy Theory",
           "score": 0.24,
           "base_score": 0.123,
@@ -1012,7 +1000,7 @@
           ]
         },
         {
-          "topic_id": "k_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "K-Theory",
           "base_score": 0.373,
           "score": 0.49,
@@ -1020,14 +1008,6 @@
           "keyword_hits": [
             "vector bundles"
           ]
-        },
-        {
-          "topic_id": "motivic_homotopy_theory",
-          "topic_name": "Motivic Homotopy Theory",
-          "base_score": 0.123,
-          "score": 0.24,
-          "level": "low",
-          "keyword_hits": []
         },
         {
           "topic_id": "homotopy_theory",
@@ -1081,7 +1061,7 @@
           ]
         },
         {
-          "topic_id": "k_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "K-Theory",
           "score": 0.494,
           "base_score": 0.319,
@@ -1105,7 +1085,7 @@
           ]
         },
         {
-          "topic_id": "motivic_homotopy_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "Motivic Homotopy Theory",
           "score": 0.114,
           "base_score": 0.114,
@@ -1153,7 +1133,7 @@
           ]
         },
         {
-          "topic_id": "k_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "K-Theory",
           "base_score": 0.319,
           "score": 0.494,
@@ -1216,8 +1196,7 @@
             "scheme",
             "Spec",
             "vector bundle"
-          ],
-          "llm_reason": "论文涉及代数几何核心概念（概形、向量丛、法丛、Spec），且与 motivic 同伦论交叉，直接匹配研究方向中的代数几何关键词，并桥接了代数几何与同伦论。"
+          ]
         },
         {
           "topic_id": "motivic_k_theory",
@@ -1268,8 +1247,7 @@
           "scheme",
           "Spec",
           "vector bundle"
-        ],
-        "llm_reason": "论文涉及代数几何核心概念（概形、向量丛、法丛、Spec），且与 motivic 同伦论交叉，直接匹配研究方向中的代数几何关键词，并桥接了代数几何与同伦论。"
+        ]
       },
       "top_labels": [
         {
@@ -1317,15 +1295,15 @@
       ],
       "backfilled_from_recent_arxiv": true,
       "chinese_summary": {
-        "problem": "在 motivic 同伦论中，norm 函子与代数几何的深层联系已被揭示，但 Weil 限制在其中的几何角色尚未被充分探索，特别是其与向量丛、法丛以及 motivic Thom 空间的兼容性。",
-        "method": "通过研究概形的 Weil 限制，证明其保持向量丛并推广法丛的已有结果；然后利用 Bachmann-Hoyois 的结果，建立 Weil 限制与 norm 函子的联系，并证明其与 motivic Thom 空间的兼容性；最后在有理系数 motivic 上同调中，证明 Weil 限制映射与 norm 函子诱导的 norm 映射一致且保持 Thom 类。",
-        "innovation": "1. 首次系统研究 Weil 限制在 motivic 同伦论中的几何性质，证明其保持向量丛并推广法丛结果。2. 建立 Weil 限制与 norm 函子的联系，并证明其与 motivic Thom 空间的兼容性。3. 在有理系数 motivic 上同调中，证明 Weil 限制映射与 norm 映射一致且保持 Thom 类。",
-        "evidence": "摘要中未提供具体实验或系统证据，仅给出理论证明的陈述。",
-        "limitations": "结果依赖于 Bachmann-Hoyois 的 norm 函子理论，且仅覆盖有理系数情形；具体证明细节需阅读全文确认。",
-        "why_relevant": "论文涉及代数几何核心概念（概形、向量丛、法丛、Spec），且与 motivic 同伦论交叉，直接匹配研究方向中的代数几何关键词，并桥接了代数几何与同伦论。"
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Recent developments in motivic homotopy theory, particularly the construction of norm functors by Bachmann and Hoyois, have revealed deep connections between algebraic geometry and homotopy-theoretic structures.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：algebraic geometry、scheme、Spec、vector bundle；arXiv 分类重合：math.AG；桥接 algebraic_geometry↔motivic_k_theory (hits=2/2)；桥接 algebraic_geometry↔homotopy_theory (hits=2/1)"
       },
       "first_seen_at": "2026-06-11T10:10:04.063496+00:00",
-      "last_seen_at": "2026-06-11T11:00:36.447071+00:00",
+      "last_seen_at": "2026-06-11T13:12:04.834996+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -1373,7 +1351,7 @@
           ]
         },
         {
-          "topic_id": "motivic_homotopy_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "Motivic Homotopy Theory",
           "score": 0.273,
           "base_score": 0.273,
@@ -1396,7 +1374,7 @@
           ]
         },
         {
-          "topic_id": "k_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "K-Theory",
           "score": 0.019,
           "base_score": 0.019,
@@ -1497,7 +1475,7 @@
           ]
         },
         {
-          "topic_id": "k_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "K-Theory",
           "score": 0.536,
           "base_score": 0.536,
@@ -1522,7 +1500,7 @@
           ]
         },
         {
-          "topic_id": "motivic_homotopy_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "Motivic Homotopy Theory",
           "score": 0.102,
           "base_score": 0.102,
@@ -1570,7 +1548,7 @@
           ]
         },
         {
-          "topic_id": "k_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "K-Theory",
           "base_score": 0.536,
           "score": 0.536,
@@ -1646,7 +1624,7 @@
           ]
         },
         {
-          "topic_id": "motivic_homotopy_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "Motivic Homotopy Theory",
           "score": 0.352,
           "base_score": 0.352,
@@ -1666,7 +1644,7 @@
           "keyword_hits": []
         },
         {
-          "topic_id": "k_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "K-Theory",
           "score": 0.269,
           "base_score": 0.094,
@@ -1710,7 +1688,7 @@
           ]
         },
         {
-          "topic_id": "motivic_homotopy_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "Motivic Homotopy Theory",
           "base_score": 0.352,
           "score": 0.352,
@@ -1851,7 +1829,7 @@
       },
       "first_seen_at": "2026-06-11T04:42:44.276818+00:00",
       "last_seen_at": "2026-06-11T11:00:36.447071+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2606.09796v1",
@@ -1883,7 +1861,7 @@
           ]
         },
         {
-          "topic_id": "k_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "K-Theory",
           "score": 0.356,
           "base_score": 0.056,
@@ -1893,7 +1871,7 @@
           "keyword_hits": []
         },
         {
-          "topic_id": "motivic_homotopy_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "Motivic Homotopy Theory",
           "score": 0.034,
           "base_score": 0.034,
@@ -1993,7 +1971,7 @@
           ]
         },
         {
-          "topic_id": "k_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "K-Theory",
           "score": 0.313,
           "base_score": 0.313,
@@ -2015,7 +1993,7 @@
           ]
         },
         {
-          "topic_id": "motivic_homotopy_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "Motivic Homotopy Theory",
           "score": 0.125,
           "base_score": 0.125,
@@ -2061,7 +2039,7 @@
           ]
         },
         {
-          "topic_id": "k_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "K-Theory",
           "base_score": 0.313,
           "score": 0.313,
@@ -2122,7 +2100,7 @@
           ]
         },
         {
-          "topic_id": "motivic_homotopy_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "Motivic Homotopy Theory",
           "score": 0.318,
           "base_score": 0.318,
@@ -2155,7 +2133,7 @@
           ]
         },
         {
-          "topic_id": "k_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "K-Theory",
           "score": 0.094,
           "base_score": 0.094,
@@ -2191,7 +2169,7 @@
           ]
         },
         {
-          "topic_id": "motivic_homotopy_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "Motivic Homotopy Theory",
           "base_score": 0.318,
           "score": 0.318,
@@ -2269,7 +2247,7 @@
           ]
         },
         {
-          "topic_id": "k_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "K-Theory",
           "score": 0.163,
           "base_score": 0.163,
@@ -2289,7 +2267,7 @@
           "keyword_hits": []
         },
         {
-          "topic_id": "motivic_homotopy_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "Motivic Homotopy Theory",
           "score": 0.091,
           "base_score": 0.091,
@@ -2384,7 +2362,7 @@
           ]
         },
         {
-          "topic_id": "motivic_homotopy_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "Motivic Homotopy Theory",
           "score": 0.261,
           "base_score": 0.261,
@@ -2418,7 +2396,7 @@
           ]
         },
         {
-          "topic_id": "k_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "K-Theory",
           "score": 0.019,
           "base_score": 0.019,
@@ -2512,7 +2490,7 @@
           ]
         },
         {
-          "topic_id": "k_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "K-Theory",
           "score": 0.434,
           "base_score": 0.259,
@@ -2536,7 +2514,7 @@
           ]
         },
         {
-          "topic_id": "motivic_homotopy_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "Motivic Homotopy Theory",
           "score": 0.352,
           "base_score": 0.352,
@@ -2582,7 +2560,7 @@
           ]
         },
         {
-          "topic_id": "k_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "K-Theory",
           "base_score": 0.259,
           "score": 0.434,
@@ -2600,14 +2578,6 @@
           "keyword_hits": [
             "space"
           ]
-        },
-        {
-          "topic_id": "motivic_homotopy_theory",
-          "topic_name": "Motivic Homotopy Theory",
-          "base_score": 0.352,
-          "score": 0.352,
-          "level": "low",
-          "keyword_hits": []
         },
         {
           "topic_id": "arithmetic_geometry",
@@ -2654,7 +2624,7 @@
       "seed_topic": "k_theory",
       "matches": [
         {
-          "topic_id": "k_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "K-Theory",
           "score": 0.438,
           "base_score": 0.263,
@@ -2700,7 +2670,7 @@
           "keyword_hits": []
         },
         {
-          "topic_id": "motivic_homotopy_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "Motivic Homotopy Theory",
           "score": 0.057,
           "base_score": 0.057,
@@ -2711,7 +2681,7 @@
         }
       ],
       "best_match": {
-        "topic_id": "k_theory",
+        "topic_id": "motivic_k_theory",
         "topic_name": "K-Theory",
         "score": 0.438,
         "base_score": 0.263,
@@ -2724,7 +2694,7 @@
       },
       "top_labels": [
         {
-          "topic_id": "k_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "K-Theory",
           "base_score": 0.263,
           "score": 0.438,
@@ -2757,6 +2727,125 @@
       "retained_from_previous_run": true
     },
     {
+      "id": "2606.08848v1",
+      "source": "arXiv",
+      "title": "Zeta functions over curves",
+      "authors": [
+        "F. Pellarin",
+        "with an appendix by G. H. Ferraro"
+      ],
+      "summary": "In this paper we review the theory that David Goss developed, starting from 1979, to construct zeta functions around Carlitz zeta values and other remarkable formal series in local fields of positive characteristic. In the description of Goss' theory, we will see how it is primarily motivated by analogies with the classical theory of complex valued zeta and $L$-functions. We compare Goss' theory with another way of constructing zeta and $L$-functions that emerged in more recent times. The functions in the second type have as domains curves over finite fields, with the scalars extended to complete and algebraically closed fields of positive characteristic. The second type of functions interacts with Goss' functions but remains fundamentally different. We shall review a rationality theorem of Ferraro that allows, among others, to introduce some kind of analogue of the function $ξ$ of Riemann. In the path of describing Ferraro's proof, we present some essential tools useful to get into the theory: shtuka divisors and functions, special functions, Anderson motives, Drinfeld modules, among others. We discuss certain relative zeta functions that can be considered as counterparts of Dedekind zeta functions. In particular, we use methods introduced by Goss to prove that these functions extend to entire functions. The paper contains an appendix by Ferraro where the property of entireness of the above relative zeta functions is deduced (in a special case) from the conjunction of a formula by Anglès, Ngo Dac and Tavares Ribeiro and Ferraro's rationality formula. Ferraro also presents a conjecture on the order of vanishing of this function at the canonical point $Ξ$ and some numerical evidences.",
+      "published": "2026-06-07T21:33:40Z",
+      "updated": "2026-06-07T21:33:40Z",
+      "paper_url": "http://arxiv.org/abs/2606.08848v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.08848v1",
+      "categories": [
+        "math.NT"
+      ],
+      "seed_topic": "arithmetic_geometry",
+      "matches": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.434,
+          "base_score": 0.384,
+          "bridge_bonus": 0.0,
+          "level": "medium",
+          "reason": "关键词命中：local field、finite field、L-function、zeta function；arXiv 分类重合：math.NT；近期论文",
+          "keyword_hits": [
+            "local field",
+            "finite field",
+            "L-function",
+            "zeta function"
+          ]
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.136,
+          "base_score": 0.086,
+          "bridge_bonus": 0.0,
+          "level": "low",
+          "reason": "关键词命中：Spec；近期论文",
+          "keyword_hits": [
+            "Spec"
+          ]
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.098,
+          "base_score": 0.048,
+          "bridge_bonus": 0.0,
+          "level": "low",
+          "reason": "近期论文",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.091,
+          "base_score": 0.041,
+          "bridge_bonus": 0.0,
+          "level": "low",
+          "reason": "近期论文",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "arithmetic_geometry",
+        "topic_name": "Arithmetic Geometry",
+        "score": 0.434,
+        "base_score": 0.384,
+        "bridge_bonus": 0.0,
+        "level": "medium",
+        "reason": "关键词命中：local field、finite field、L-function、zeta function；arXiv 分类重合：math.NT；近期论文",
+        "keyword_hits": [
+          "local field",
+          "finite field",
+          "L-function",
+          "zeta function"
+        ]
+      },
+      "top_labels": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.384,
+          "score": 0.434,
+          "level": "medium",
+          "keyword_hits": [
+            "local field",
+            "finite field",
+            "L-function",
+            "zeta function"
+          ]
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.086,
+          "score": 0.136,
+          "level": "low",
+          "keyword_hits": [
+            "Spec"
+          ]
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "In this paper we review the theory that David Goss developed, starting from 1979, to construct zeta functions around Carlitz zeta values and other remarkable formal series in local fields of positive characteristic.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：local field、finite field、L-function、zeta function；arXiv 分类重合：math.NT；近期论文"
+      },
+      "first_seen_at": "2026-06-11T13:12:04.834996+00:00",
+      "last_seen_at": "2026-06-11T13:12:04.834996+00:00",
+      "retained_from_previous_run": false
+    },
+    {
       "id": "2602.14380v3",
       "source": "arXiv",
       "title": "Syntomic cohomology of truncated Brown--Peterson spectra",
@@ -2787,7 +2876,7 @@
           ]
         },
         {
-          "topic_id": "k_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "K-Theory",
           "score": 0.409,
           "base_score": 0.409,
@@ -2812,7 +2901,7 @@
           ]
         },
         {
-          "topic_id": "motivic_homotopy_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "Motivic Homotopy Theory",
           "score": 0.091,
           "base_score": 0.091,
@@ -2858,7 +2947,7 @@
           ]
         },
         {
-          "topic_id": "k_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "K-Theory",
           "base_score": 0.409,
           "score": 0.409,
@@ -2935,7 +3024,7 @@
           ]
         },
         {
-          "topic_id": "motivic_homotopy_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "Motivic Homotopy Theory",
           "score": 0.296,
           "base_score": 0.296,
@@ -2955,7 +3044,7 @@
           "keyword_hits": []
         },
         {
-          "topic_id": "k_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "K-Theory",
           "score": 0.056,
           "base_score": 0.056,
@@ -2999,7 +3088,7 @@
           ]
         },
         {
-          "topic_id": "motivic_homotopy_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "Motivic Homotopy Theory",
           "base_score": 0.296,
           "score": 0.296,
@@ -3041,7 +3130,7 @@
       "seed_topic": "k_theory",
       "matches": [
         {
-          "topic_id": "k_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "K-Theory",
           "score": 0.419,
           "base_score": 0.244,
@@ -3075,7 +3164,7 @@
           ]
         },
         {
-          "topic_id": "motivic_homotopy_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "Motivic Homotopy Theory",
           "score": 0.068,
           "base_score": 0.068,
@@ -3096,7 +3185,7 @@
         }
       ],
       "best_match": {
-        "topic_id": "k_theory",
+        "topic_id": "motivic_k_theory",
         "topic_name": "K-Theory",
         "score": 0.419,
         "base_score": 0.244,
@@ -3109,7 +3198,7 @@
       },
       "top_labels": [
         {
-          "topic_id": "k_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "K-Theory",
           "base_score": 0.244,
           "score": 0.419,
@@ -3173,7 +3262,7 @@
           "keyword_hits": []
         },
         {
-          "topic_id": "motivic_homotopy_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "Motivic Homotopy Theory",
           "score": 0.284,
           "base_score": 0.284,
@@ -3193,7 +3282,7 @@
           "keyword_hits": []
         },
         {
-          "topic_id": "k_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "K-Theory",
           "score": 0.038,
           "base_score": 0.038,
@@ -3235,7 +3324,7 @@
           "keyword_hits": []
         },
         {
-          "topic_id": "motivic_homotopy_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "Motivic Homotopy Theory",
           "base_score": 0.284,
           "score": 0.284,
@@ -3297,7 +3386,7 @@
           "keyword_hits": []
         },
         {
-          "topic_id": "motivic_homotopy_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "Motivic Homotopy Theory",
           "score": 0.284,
           "base_score": 0.284,
@@ -3307,7 +3396,7 @@
           "keyword_hits": []
         },
         {
-          "topic_id": "k_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "K-Theory",
           "score": 0.056,
           "base_score": 0.056,
@@ -3361,7 +3450,7 @@
           "keyword_hits": []
         },
         {
-          "topic_id": "motivic_homotopy_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "Motivic Homotopy Theory",
           "base_score": 0.284,
           "score": 0.284,
@@ -3405,13 +3494,12 @@
           "score": 0.358,
           "base_score": 0.308,
           "bridge_bonus": 0.0,
-          "level": "medium",
+          "level": "low",
           "reason": "关键词命中：moduli space、descent；arXiv 分类重合：math.AG；近期论文",
           "keyword_hits": [
             "moduli space",
             "descent"
-          ],
-          "llm_reason": "论文研究模空间（moduli space）和下降（descent）问题，直接匹配研究方向中的moduli space、descent、fppf descent等关键词；arXiv分类math.AG与研究方向一致。"
+          ]
         },
         {
           "topic_id": "arithmetic_geometry",
@@ -3450,13 +3538,12 @@
         "score": 0.358,
         "base_score": 0.308,
         "bridge_bonus": 0.0,
-        "level": "medium",
+        "level": "low",
         "reason": "关键词命中：moduli space、descent；arXiv 分类重合：math.AG；近期论文",
         "keyword_hits": [
           "moduli space",
           "descent"
-        ],
-        "llm_reason": "论文研究模空间（moduli space）和下降（descent）问题，直接匹配研究方向中的moduli space、descent、fppf descent等关键词；arXiv分类math.AG与研究方向一致。"
+        ]
       },
       "top_labels": [
         {
@@ -3480,15 +3567,15 @@
         }
       ],
       "chinese_summary": {
-        "problem": "研究超奇异阿贝尔簇模空间的极化旗型商的结构，特别是对旗型商的第一层和最后一层进行分类，并给出拟极化的显式可计算下降判据。",
-        "method": "建立极化旗型商的结构定理，证明顶层旗型的精细正规型，推导拟极化的显式下降判据，并利用这些结果计算g≤5维的极化旗型商，将截断态射的纤维描述为超奇异阿贝尔簇的分类对象。",
-        "innovation": "1. 给出了极化旗型商顶层结构的精细正规型，这是对已有结构定理的细化；2. 推导了拟极化的显式可计算下降判据，使得计算成为可能；3. 完成了g≤5维极化旗型商的完整分类，描述了截断态射的纤维。",
-        "evidence": "摘要中明确提到计算了g≤5维的极化旗型商，并描述了截断态射的纤维，但未提供具体数值或实验细节。",
-        "limitations": "结果仅限于g≤5维，更高维的情况未涉及；需要阅读全文确认下降判据的具体形式及计算细节。",
-        "why_relevant": "论文研究模空间（moduli space）和下降（descent）问题，直接匹配研究方向中的moduli space、descent、fppf descent等关键词；arXiv分类math.AG与研究方向一致。"
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "We establish structure theorems for polarised flag type quotients arising in the study of the moduli space of supersingular abelian varieties.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：moduli space、descent；arXiv 分类重合：math.AG；近期论文"
       },
       "first_seen_at": "2026-06-11T04:42:44.276818+00:00",
-      "last_seen_at": "2026-06-11T11:00:36.447071+00:00",
+      "last_seen_at": "2026-06-11T13:12:04.834996+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -3534,7 +3621,7 @@
           ]
         },
         {
-          "topic_id": "motivic_homotopy_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "Motivic Homotopy Theory",
           "score": 0.057,
           "base_score": 0.057,
@@ -3554,7 +3641,7 @@
           "keyword_hits": []
         },
         {
-          "topic_id": "k_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "K-Theory",
           "score": 0.019,
           "base_score": 0.019,
@@ -3601,6 +3688,113 @@
       "retained_from_previous_run": true
     },
     {
+      "id": "2606.12220v1",
+      "source": "arXiv",
+      "title": "Modular variants of p-adic fundamental sequence",
+      "authors": [
+        "Heng Du",
+        "Qingyuan Jiang",
+        "Yucheng Liu"
+      ],
+      "summary": "In this article, we relate any Farey triangle in the extended upper half-plane to a variant of Colmez--Fontaine's fundamental lemma in $p$-adic Hodge theory. In particular, their original fundamental lemma corresponds to the fundamental Farey triangle $(\\frac{1}{0},\\frac{1}{1},\\frac{0}{1})$.",
+      "published": "2026-06-10T15:32:16Z",
+      "updated": "2026-06-10T15:32:16Z",
+      "paper_url": "http://arxiv.org/abs/2606.12220v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.12220v1",
+      "categories": [
+        "math.NT",
+        "math.AG"
+      ],
+      "seed_topic": "algebraic_geometry",
+      "matches": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.329,
+          "base_score": 0.279,
+          "bridge_bonus": 0.0,
+          "level": "low",
+          "reason": "关键词命中：p-adic Hodge theory；arXiv 分类重合：math.AG、math.NT；近期论文",
+          "keyword_hits": [
+            "p-adic Hodge theory"
+          ]
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.21,
+          "base_score": 0.16,
+          "bridge_bonus": 0.0,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；近期论文",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.141,
+          "base_score": 0.091,
+          "bridge_bonus": 0.0,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；近期论文",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.074,
+          "base_score": 0.024,
+          "bridge_bonus": 0.0,
+          "level": "low",
+          "reason": "近期论文",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "arithmetic_geometry",
+        "topic_name": "Arithmetic Geometry",
+        "score": 0.329,
+        "base_score": 0.279,
+        "bridge_bonus": 0.0,
+        "level": "low",
+        "reason": "关键词命中：p-adic Hodge theory；arXiv 分类重合：math.AG、math.NT；近期论文",
+        "keyword_hits": [
+          "p-adic Hodge theory"
+        ]
+      },
+      "top_labels": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.279,
+          "score": 0.329,
+          "level": "low",
+          "keyword_hits": [
+            "p-adic Hodge theory"
+          ]
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.16,
+          "score": 0.21,
+          "level": "low",
+          "keyword_hits": []
+        }
+      ],
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "In this article, we relate any Farey triangle in the extended upper half-plane to a variant of Colmez--Fontaine's fundamental lemma in $p$-adic Hodge theory.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：p-adic Hodge theory；arXiv 分类重合：math.AG、math.NT；近期论文"
+      },
+      "first_seen_at": "2026-06-11T05:21:54.714863+00:00",
+      "last_seen_at": "2026-06-11T13:12:04.834996+00:00",
+      "retained_from_previous_run": false
+    },
+    {
       "id": "2606.12283v1",
       "source": "arXiv",
       "title": "A non-trivial index difference on surfaces of genus at least $3$",
@@ -3619,7 +3813,7 @@
       "seed_topic": "k_theory",
       "matches": [
         {
-          "topic_id": "k_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "K-Theory",
           "score": 0.318,
           "base_score": 0.143,
@@ -3661,7 +3855,7 @@
           "keyword_hits": []
         },
         {
-          "topic_id": "motivic_homotopy_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "Motivic Homotopy Theory",
           "score": 0.041,
           "base_score": 0.041,
@@ -3672,7 +3866,7 @@
         }
       ],
       "best_match": {
-        "topic_id": "k_theory",
+        "topic_id": "motivic_k_theory",
         "topic_name": "K-Theory",
         "score": 0.318,
         "base_score": 0.143,
@@ -3683,7 +3877,7 @@
       },
       "top_labels": [
         {
-          "topic_id": "k_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "K-Theory",
           "base_score": 0.143,
           "score": 0.318,
@@ -3744,12 +3938,11 @@
           "score": 0.275,
           "base_score": 0.225,
           "bridge_bonus": 0.0,
-          "level": "high",
+          "level": "low",
           "reason": "关键词命中：Spec；arXiv 分类重合：math.AG；近期论文",
           "keyword_hits": [
             "Spec"
-          ],
-          "llm_reason": "论文涉及代数几何中的三次四维簇、Kuznetsov分量、Chow动机、Fourier-Mukai变换等概念，与研究方向中的scheme、morphism、sheaf、moduli space、derived category等关键词高度相关，且arXiv分类为math.AG。"
+          ]
         },
         {
           "topic_id": "motivic_k_theory",
@@ -3790,12 +3983,11 @@
         "score": 0.275,
         "base_score": 0.225,
         "bridge_bonus": 0.0,
-        "level": "high",
+        "level": "low",
         "reason": "关键词命中：Spec；arXiv 分类重合：math.AG；近期论文",
         "keyword_hits": [
           "Spec"
-        ],
-        "llm_reason": "论文涉及代数几何中的三次四维簇、Kuznetsov分量、Chow动机、Fourier-Mukai变换等概念，与研究方向中的scheme、morphism、sheaf、moduli space、derived category等关键词高度相关，且arXiv分类为math.AG。"
+        ]
       },
       "top_labels": [
         {
@@ -3820,15 +4012,15 @@
         }
       ],
       "chinese_summary": {
-        "problem": "研究光滑三次四维簇的Kuznetsov分量与超越动机之间的关系，特别是当两个三次四维簇是Fourier-Mukai伙伴时，其超越动机是否同构，并给出显式描述。",
-        "method": "利用Kuznetsov分量和Chow动机范畴，通过考虑特殊三次四维簇族及其Fourier-Mukai伙伴，构造超越动机之间的同构。对于具有3阶辛自同构的特殊三次四维簇，使用等变Kuznetsov分量建立范畴等价，进而导出超越动机同构。",
-        "innovation": "1. 在Fourier-Mukai伙伴情形下，建立了Kuznetsov分量等价与超越动机同构之间的联系。2. 对可约和猜想不可约的特殊三次四维簇，给出了超越动机同构的显式描述。3. 在可数无穷多个Hassett除子中，利用3阶辛自同构构造了新的范畴等价和动机同构。",
-        "evidence": "摘要中未提供具体实验或计算证据，仅给出理论断言和构造。",
-        "limitations": "结果依赖于特殊三次四维簇的Hassett除子分类和Fourier-Mukai伙伴的存在性，未给出一般三次四维簇的结论。需要阅读全文确认构造细节和证明。",
-        "why_relevant": "论文涉及代数几何中的三次四维簇、Kuznetsov分量、Chow动机、Fourier-Mukai变换等概念，与研究方向中的scheme、morphism、sheaf、moduli space、derived category等关键词高度相关，且arXiv分类为math.AG。"
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Let $X \\subset ¶^5_{\\C}$ be a smooth cubic fourfold.The Kuznetsov component $\\sA_X$ is contained in the derived category $D^b(X)$ and the transcendental motive $t(X)$ is contained in the category of Chow motives $\\sM_{rat}(\\C))$.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：Spec；arXiv 分类重合：math.AG；近期论文"
       },
       "first_seen_at": "2026-06-11T07:23:12.784218+00:00",
-      "last_seen_at": "2026-06-11T11:00:36.447071+00:00",
+      "last_seen_at": "2026-06-11T13:12:04.834996+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -3860,8 +4052,7 @@
           "reason": "关键词命中：vector bundle；arXiv 分类重合：math.AG；近期论文",
           "keyword_hits": [
             "vector bundle"
-          ],
-          "llm_reason": "论文涉及向量丛（vector bundle）和代数几何（math.AG分类），与研究方向中的向量丛、层论相关，但主题是Poisson几何和Hopf曲面，与代数几何核心问题（如模空间、相交理论）关联较弱。"
+          ]
         },
         {
           "topic_id": "arithmetic_geometry",
@@ -3904,8 +4095,7 @@
         "reason": "关键词命中：vector bundle；arXiv 分类重合：math.AG；近期论文",
         "keyword_hits": [
           "vector bundle"
-        ],
-        "llm_reason": "论文涉及向量丛（vector bundle）和代数几何（math.AG分类），与研究方向中的向量丛、层论相关，但主题是Poisson几何和Hopf曲面，与代数几何核心问题（如模空间、相交理论）关联较弱。"
+        ]
       },
       "top_labels": [
         {
@@ -3920,118 +4110,15 @@
         }
       ],
       "chinese_summary": {
-        "problem": "研究如何从Hopf曲面上的秩2 co-Higgs丛构造Poisson三维流形，并描述其辛叶。",
-        "method": "基于先前对Hopf曲面上秩2 co-Higgs丛的分类（根据底层向量丛的数据），通过分析这些丛的几何结构来构造Poisson三维流形，并描述其辛叶。",
-        "innovation": "将co-Higgs丛的分类结果应用于Poisson几何，构造了具体的Poisson三维流形，并给出了辛叶的描述，这是对先前工作的扩展。",
-        "evidence": "摘要中未提供实验或理论证据，仅说明是先前工作的扩展，具体结果需阅读全文。",
-        "limitations": "摘要未提供具体构造细节或证明，需阅读全文确认方法的严谨性和结果的有效性。",
-        "why_relevant": "论文涉及向量丛（vector bundle）和代数几何（math.AG分类），与研究方向中的向量丛、层论相关，但主题是Poisson几何和Hopf曲面，与代数几何核心问题（如模空间、相交理论）关联较弱。"
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "This paper extends a previous work in which the rank-2 co-Higgs bundles on a Hopf surface are classified based on the data of the underlying vector bundle.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：vector bundle；arXiv 分类重合：math.AG；近期论文"
       },
       "first_seen_at": "2026-06-11T05:41:51.895771+00:00",
-      "last_seen_at": "2026-06-11T11:00:36.447071+00:00",
-      "retained_from_previous_run": false
-    },
-    {
-      "id": "2606.12220v1",
-      "source": "arXiv",
-      "title": "Modular variants of p-adic fundamental sequence",
-      "authors": [
-        "Heng Du",
-        "Qingyuan Jiang",
-        "Yucheng Liu"
-      ],
-      "summary": "In this article, we relate any Farey triangle in the extended upper half-plane to a variant of Colmez--Fontaine's fundamental lemma in $p$-adic Hodge theory. In particular, their original fundamental lemma corresponds to the fundamental Farey triangle $(\\frac{1}{0},\\frac{1}{1},\\frac{0}{1})$.",
-      "published": "2026-06-10T15:32:16Z",
-      "updated": "2026-06-10T15:32:16Z",
-      "paper_url": "http://arxiv.org/abs/2606.12220v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.12220v1",
-      "categories": [
-        "math.NT",
-        "math.AG"
-      ],
-      "seed_topic": "algebraic_geometry",
-      "matches": [
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "score": 0.261,
-          "base_score": 0.211,
-          "bridge_bonus": 0.0,
-          "level": "medium",
-          "reason": "arXiv 分类重合：math.AG、math.NT；近期论文",
-          "keyword_hits": [],
-          "llm_reason": "论文涉及p-adic Hodge理论（如Colmez-Fontaine引理），与研究方向中的p-adic Hodge theory、Fontaine theory、period rings等关键词直接相关。"
-        },
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "score": 0.21,
-          "base_score": 0.16,
-          "bridge_bonus": 0.0,
-          "level": "low",
-          "reason": "arXiv 分类重合：math.AG；近期论文",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "score": 0.141,
-          "base_score": 0.091,
-          "bridge_bonus": 0.0,
-          "level": "low",
-          "reason": "arXiv 分类重合：math.AG；近期论文",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "score": 0.074,
-          "base_score": 0.024,
-          "bridge_bonus": 0.0,
-          "level": "low",
-          "reason": "近期论文",
-          "keyword_hits": []
-        }
-      ],
-      "best_match": {
-        "topic_id": "arithmetic_geometry",
-        "topic_name": "Arithmetic Geometry",
-        "score": 0.261,
-        "base_score": 0.211,
-        "bridge_bonus": 0.0,
-        "level": "medium",
-        "reason": "arXiv 分类重合：math.AG、math.NT；近期论文",
-        "keyword_hits": [],
-        "llm_reason": "论文涉及p-adic Hodge理论（如Colmez-Fontaine引理），与研究方向中的p-adic Hodge theory、Fontaine theory、period rings等关键词直接相关。"
-      },
-      "top_labels": [
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "base_score": 0.211,
-          "score": 0.261,
-          "level": "low",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "base_score": 0.16,
-          "score": 0.21,
-          "level": "low",
-          "keyword_hits": []
-        }
-      ],
-      "chinese_summary": {
-        "problem": "将Farey三角形与p进Hodge理论中的Colmez-Fontaine基本引理建立联系，并推广其变体。",
-        "method": "通过扩展上半平面中的Farey三角形，构造p进基本序列的模变体，并证明其与Colmez-Fontaine引理的对应关系。",
-        "innovation": "首次将Farey三角形（如基本三角形(1/0,1/1,0/1)）与p进Hodge理论中的基本引理系统地联系起来，并推广到一般Farey三角形。",
-        "evidence": "摘要中明确给出了基本Farey三角形与原始基本引理的对应关系，但未提供具体证明或实验数据。",
-        "limitations": "摘要未说明推广的具体形式、适用范围或潜在应用，需阅读全文确认技术细节和严格性。",
-        "why_relevant": "论文涉及p-adic Hodge理论（如Colmez-Fontaine引理），与研究方向中的p-adic Hodge theory、Fontaine theory、period rings等关键词直接相关。"
-      },
-      "first_seen_at": "2026-06-11T05:21:54.714863+00:00",
-      "last_seen_at": "2026-06-11T11:00:36.447071+00:00",
+      "last_seen_at": "2026-06-11T13:12:04.834996+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -4062,8 +4149,7 @@
           "bridge_bonus": 0.0,
           "level": "low",
           "reason": "arXiv 分类重合：math.AG；近期论文",
-          "keyword_hits": [],
-          "llm_reason": "论文涉及完美化环（perfectoid ring）和代数几何中的环论构造，与研究方向中的scheme、local ring、finite morphism等概念相关，但主题更偏向交换代数和数论，与代数几何核心问题（如模空间、层论）关联较弱。"
+          "keyword_hits": []
         },
         {
           "topic_id": "arithmetic_geometry",
@@ -4106,8 +4192,7 @@
         "bridge_bonus": 0.0,
         "level": "low",
         "reason": "arXiv 分类重合：math.AG；近期论文",
-        "keyword_hits": [],
-        "llm_reason": "论文涉及完美化环（perfectoid ring）和代数几何中的环论构造，与研究方向中的scheme、local ring、finite morphism等概念相关，但主题更偏向交换代数和数论，与代数几何核心问题（如模空间、层论）关联较弱。"
+        "keyword_hits": []
       },
       "top_labels": [
         {
@@ -4138,15 +4223,15 @@
         }
       ],
       "chinese_summary": {
-        "problem": "研究完美化环上有限代数的完美化过程的一般性质，并给出显式描述。",
-        "method": "通过判别式条件和有界挠性条件证明完美化后包含关系；利用密度准则将完美化构造简化为模p的p幂根添加；对Kummer型扩张和分裂有限代数等例子进行具体计算。",
-        "innovation": "1. 给出判别式非零因子且满足有界挠性时完美化后包含关系的显式条件；2. 建立密度准则，简化完美化构造；3. 提供多种非平凡例子的显式完美化计算。",
-        "evidence": "摘要中给出了定理陈述（如dA_pfd⊂A）和例子计算，但未提供具体证明或实验数据。",
-        "limitations": "结果依赖于判别式非零因子和有界挠性条件，可能不适用于一般情形；需要阅读全文确认证明细节和例子计算。",
-        "why_relevant": "论文涉及完美化环（perfectoid ring）和代数几何中的环论构造，与研究方向中的scheme、local ring、finite morphism等概念相关，但主题更偏向交换代数和数论，与代数几何核心问题（如模空间、层论）关联较弱。"
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "We study general properties of the perfectoidization of finite algebras over a perfectoid ring, which helps to understand some precise and explicit descriptions.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "arXiv 分类重合：math.AG；近期论文"
       },
       "first_seen_at": "2026-06-11T06:58:33.319883+00:00",
-      "last_seen_at": "2026-06-11T11:00:36.447071+00:00",
+      "last_seen_at": "2026-06-11T13:12:04.834996+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -4178,8 +4263,7 @@
           "reason": "关键词命中：finite field；arXiv 分类重合：math.NT；近期论文",
           "keyword_hits": [
             "finite field"
-          ],
-          "llm_reason": "论文涉及有限域上的组合构造，与研究方向中的有限域、算术几何中的线性方程解集相关，但更偏向组合数论，与算术几何核心问题（如伽罗瓦表示、p进霍奇理论）关联较弱。"
+          ]
         },
         {
           "topic_id": "algebraic_geometry",
@@ -4222,8 +4306,7 @@
         "reason": "关键词命中：finite field；arXiv 分类重合：math.NT；近期论文",
         "keyword_hits": [
           "finite field"
-        ],
-        "llm_reason": "论文涉及有限域上的组合构造，与研究方向中的有限域、算术几何中的线性方程解集相关，但更偏向组合数论，与算术几何核心问题（如伽罗瓦表示、p进霍奇理论）关联较弱。"
+        ]
       },
       "top_labels": [
         {
@@ -4238,15 +4321,15 @@
         }
       ],
       "chinese_summary": {
-        "problem": "在有限域上寻找不含非平凡解的线性方程集合，并构造出比直接乘积构造具有更高指数下界的例子。",
-        "method": "通过将低维无解集提升到更高维度，构造新的无解集，使得其密度（取1/m次幂）超过原集合的密度（取1/n次幂）。",
-        "innovation": "证明了对于任何亏格一的平移不变线性方程，不存在一个固定的无解集能通过直接乘积达到渐近最优下界；构造了超越直接乘积的指数增长例子。",
-        "evidence": "摘要中给出了明确的数学不等式|B|^{1/m} > |A|^{1/n}，并指出该结果意味着固定cap集不能通过直接乘积达到渐近最优下界。",
-        "limitations": "仅针对亏格一的平移不变线性方程，且结果依赖于有限域特征；需要阅读全文确认构造的具体细节和适用范围。",
-        "why_relevant": "论文涉及有限域上的组合构造，与研究方向中的有限域、算术几何中的线性方程解集相关，但更偏向组合数论，与算术几何核心问题（如伽罗瓦表示、p进霍奇理论）关联较弱。"
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "We show that for any $A\\subseteq \\mathbb{F}_q^n$ lacking non-trivial solutions to a translation-invariant linear equation of genus one, meaning that no nonempty proper subset of the coefficients sums to $0$, there is a set $B\\subseteq \\mathbb{F}_q^m$ in some higher dimension which also lacks non-tri",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：finite field；arXiv 分类重合：math.NT；近期论文"
       },
       "first_seen_at": "2026-06-11T07:03:32.811912+00:00",
-      "last_seen_at": "2026-06-11T11:00:36.447071+00:00",
+      "last_seen_at": "2026-06-11T13:12:04.834996+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -4290,7 +4373,7 @@
           "keyword_hits": []
         },
         {
-          "topic_id": "k_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "K-Theory",
           "score": 0.056,
           "base_score": 0.056,
@@ -4300,7 +4383,7 @@
           "keyword_hits": []
         },
         {
-          "topic_id": "motivic_homotopy_theory",
+          "topic_id": "motivic_k_theory",
           "topic_name": "Motivic Homotopy Theory",
           "score": 0.046,
           "base_score": 0.046,
@@ -4348,24 +4431,24 @@
     "candidate_paper_count": 8,
     "daily_candidate_paper_count": 8,
     "conference_candidate_paper_count": 0,
-    "raw_daily_candidate_count": 99,
-    "daily_outside_cutoff_count": 46,
+    "raw_daily_candidate_count": 75,
+    "daily_outside_cutoff_count": 35,
     "daily_backfill_days": 14,
-    "daily_backfill_candidate_count": 22,
+    "daily_backfill_candidate_count": 12,
     "daily_backfill_added_count": 2,
     "min_daily_papers": 8,
     "filtered_low_relevance_count": 0,
-    "filtered_wrong_category_count": 47,
+    "filtered_wrong_category_count": 34,
     "arxiv_category_filter": [
-      "math.AG",
       "math.NT",
       "math.AT",
       "math.KT",
-      "math.CT"
+      "math.CT",
+      "math.AG"
     ],
     "days": 1,
     "collection_mode": "lookback",
-    "collection_cutoff_iso": "2026-06-10T11:00:36.447071+00:00",
+    "collection_cutoff_iso": "2026-06-10T13:12:04.834996+00:00",
     "max_per_topic": 25,
     "max_new_papers": 50,
     "max_new_conference_papers": 50,
@@ -4383,15 +4466,16 @@
     "source_stats": {
       "arXiv": {
         "type": "arxiv",
-        "successful_fetches": 4,
-        "failed_fetches": 0
+        "successful_fetches": 3,
+        "failed_fetches": 1,
+        "last_error": "HTTP Error 503: Service Unavailable"
       }
     },
-    "llm_enabled": true,
+    "llm_enabled": false,
     "llm_concurrency": 2,
     "recent_history_days": 45,
-    "successful_fetches": 4,
-    "failed_fetches": 0,
+    "successful_fetches": 3,
+    "failed_fetches": 1,
     "successful_conference_fetches": 0,
     "failed_conference_fetches": 0,
     "skipped_cached_conference_years": 0,
@@ -4410,14 +4494,14 @@
     "conference_arxiv_enrichment_succeeded": 0,
     "conference_arxiv_enrichment_skipped": 0,
     "conference_arxiv_enrichment_last_error": "",
-    "paper_count": 32,
+    "paper_count": 33,
     "new_paper_count": 8,
-    "retained_paper_count": 24,
+    "retained_paper_count": 25,
     "retained_recent_low_count": 9,
     "dropped_low_relevance_count": 0,
     "max_stored_papers": 200,
     "max_data_bytes": 8388608,
-    "data_bytes": 185678,
+    "data_bytes": 183957,
     "storage_trimmed_count": 0,
     "storage_trimmed_by_level": {
       "high": 0,

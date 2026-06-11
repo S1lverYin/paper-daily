@@ -1675,6 +1675,8 @@ def keyword_score(topic: Topic, paper: dict[str, Any]) -> tuple[float, list[str]
     # "$K$-theory", "$K(R)$", "\(X\)" etc match plain keywords.
     haystack = re.sub(r"[$\\](?:[a-z]+\s)?", " ", raw)
     haystack = re.sub(r"\s+", " ", haystack)
+    # Collapse "k -theory" back to "k-theory" (from LaTeX $K$-theory stripping)
+    haystack = re.sub(r"\s*-\s*", "-", haystack)
     hits = []
     weighted = 0.0
     for keyword in topic.keywords:
