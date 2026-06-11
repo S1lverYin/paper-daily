@@ -73,7 +73,7 @@ jobs:
           MAX_PER_TOPIC: ${{ vars.MAX_PER_TOPIC || '10' }}
           MAX_SUMMARIES: ${{ vars.MAX_SUMMARIES || '20' }}
           MAX_NEW_PAPERS: ${{ vars.MAX_NEW_PAPERS || '50' }}
-          MAX_STORED_PAPERS: ${{ vars.MAX_STORED_PAPERS || '50' }}
+          MAX_STORED_PAPERS: ${{ vars.MAX_STORED_PAPERS || '200' }}
           MAX_NEW_CONFERENCE_PAPERS: ${{ vars.MAX_NEW_CONFERENCE_PAPERS || '50' }}
           MAX_STORED_CONFERENCE_PAPERS: ${{ vars.MAX_STORED_CONFERENCE_PAPERS || '300' }}
           MAX_DATA_BYTES: ${{ vars.MAX_DATA_BYTES || '8388608' }}
@@ -88,7 +88,7 @@ jobs:
           DBLP_RETRIES: ${{ vars.DBLP_RETRIES || '3' }}
           MAX_PER_CONFERENCE: ${{ vars.MAX_PER_CONFERENCE || '1000' }}
           ARXIV_QUERY_MODE: ${{ vars.ARXIV_QUERY_MODE || 'keyword' }}
-          ARXIV_SORT_BY: ${{ vars.ARXIV_SORT_BY || 'lastUpdatedDate' }}
+          ARXIV_SORT_BY: ${{ vars.ARXIV_SORT_BY || 'submittedDate' }}
           ARXIV_EXPAND_CATEGORY_SEARCH: ${{ vars.ARXIV_EXPAND_CATEGORY_SEARCH || 'false' }}
           ARXIV_CATEGORY_MAX_RESULTS: ${{ vars.ARXIV_CATEGORY_MAX_RESULTS || vars.MAX_PER_TOPIC || '10' }}
           ARXIV_IN_TOPIC_DELAY_SECONDS: ${{ vars.ARXIV_IN_TOPIC_DELAY_SECONDS || '3' }}
