@@ -91,7 +91,12 @@ jobs:
               if not pub.startswith(today): continue
               title=html.escape(p.get('title','?'))
               score=p.get('best_match',{}).get('score',0)
-              lines.append(f'<li>💡 {title} <span style=\"color:#999\">({score:.2f})</span></li>')
+              summary = p.get('chinese_summary',{}) or {}
+              innovation = html.escape(summary.get('innovation','') or summary.get('method','') or '')
+              if innovation:
+                  lines.append(f'<li><b>{title}</b> <span style=\"color:#999\">({score:.2f})</span><br><span style=\"color:#666;font-size:12px\">{innovation[:120]}</span></li>')
+              else:
+                  lines.append(f'<li><b>{title}</b> <span style=\"color:#999\">({score:.2f})</span></li>')
           print('<ol>' + ''.join(lines[:10]) + '</ol>' if lines else '<p>今日暂无新增论文</p>')
           ")
 
