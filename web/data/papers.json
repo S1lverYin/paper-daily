@@ -1,6 +1,6 @@
 {
-  "generated_at": "Thu, 11 Jun 2026 10:43:29 +0000",
-  "generated_at_iso": "2026-06-11T10:43:29.401201+00:00",
+  "generated_at": "Thu, 11 Jun 2026 10:46:55 +0000",
+  "generated_at_iso": "2026-06-11T10:46:55.160235+00:00",
   "config_source": "file",
   "data_kind": "daily",
   "topics": [
@@ -526,7 +526,7 @@
             "Spec",
             "vector bundle"
           ],
-          "llm_reason": "论文涉及代数几何核心概念（scheme、vector bundle、Weil restriction）和motivic同伦论（与代数几何深度交叉），直接匹配研究方向关键词如algebraic geometry、scheme、vector bundle，且arXiv分类math.AG完全重合。"
+          "llm_reason": "论文涉及代数几何核心概念（scheme、vector bundle、Weil restriction）和motivic同伦论（与代数几何深度交叉），直接匹配研究方向中的scheme、vector bundle、motivic结构等关键词。"
         },
         {
           "topic_id": "motivic_k_theory",
@@ -578,7 +578,7 @@
           "Spec",
           "vector bundle"
         ],
-        "llm_reason": "论文涉及代数几何核心概念（scheme、vector bundle、Weil restriction）和motivic同伦论（与代数几何深度交叉），直接匹配研究方向关键词如algebraic geometry、scheme、vector bundle，且arXiv分类math.AG完全重合。"
+        "llm_reason": "论文涉及代数几何核心概念（scheme、vector bundle、Weil restriction）和motivic同伦论（与代数几何深度交叉），直接匹配研究方向中的scheme、vector bundle、motivic结构等关键词。"
       },
       "top_labels": [
         {
@@ -627,14 +627,14 @@
       "backfilled_from_recent_arxiv": true,
       "chinese_summary": {
         "problem": "研究Weil restriction在motivic同伦论中的几何性质，特别是其与norm functor和motivic Thom space的兼容性。",
-        "method": "通过证明Weil restriction保持向量丛并推广法丛的已有结果，建立其与norm functor的联系；利用Bachmann-Hoyois的结果证明其与motivic Thom space兼容；在有理系数motivic上同调中证明Weil restriction映射与norm functor诱导的norm映射一致并保持Thom类。",
-        "innovation": "首次系统研究Weil restriction在motivic同伦论中的几何角色，证明其保持向量丛并推广法丛结果；建立Weil restriction与norm functor及motivic Thom space的兼容性；在有理系数motivic上同调中证明其与norm映射一致并保持Thom类。",
-        "evidence": "摘要中未提供具体实验或理论验证细节，仅陈述了证明结果，证据不足。",
-        "limitations": "结果依赖于Bachmann-Hoyois的norm functor构造，可能仅适用于特定范畴；有理系数条件可能限制一般性；需阅读全文确认证明细节和适用范围。",
-        "why_relevant": "论文涉及代数几何核心概念（scheme、vector bundle、Weil restriction）和motivic同伦论（与代数几何深度交叉），直接匹配研究方向关键词如algebraic geometry、scheme、vector bundle，且arXiv分类math.AG完全重合。"
+        "method": "通过证明Weil restriction保持向量丛并推广法丛的已有结果，利用Bachmann-Hoyois的norm functor构造，建立Weil restriction与motivic Thom space的兼容性，并在有理系数motivic上同调中证明Weil restriction映射与norm映射一致且保持Thom类。",
+        "innovation": "1. 证明Weil restriction保持向量丛并推广法丛结果；2. 建立Weil restriction与norm functor及motivic Thom space的兼容性；3. 在有理系数motivic上同调中证明Weil restriction映射与norm映射一致且保持Thom类。",
+        "evidence": "摘要中提供了理论证明，但未给出具体实验或系统证据。",
+        "limitations": "结果依赖于Bachmann-Hoyois的norm functor构造，且仅覆盖有理系数情形；需要阅读全文确认证明细节和适用范围。",
+        "why_relevant": "论文涉及代数几何核心概念（scheme、vector bundle、Weil restriction）和motivic同伦论（与代数几何深度交叉），直接匹配研究方向中的scheme、vector bundle、motivic结构等关键词。"
       },
       "first_seen_at": "2026-06-11T10:10:04.063496+00:00",
-      "last_seen_at": "2026-06-11T10:43:29.401201+00:00",
+      "last_seen_at": "2026-06-11T10:46:55.160235+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -820,7 +820,7 @@
             "homotopy colimit",
             "spectral sequence"
           ],
-          "llm_reason": "论文核心概念包括纤维化、余纤维化、同伦余极限、谱序列，直接匹配研究方向中的fibration, cofibration, homotopy colimit, spectral sequence。此外，涉及Brown可表示性（Brown范畴结构）和广义度量空间，与同伦论中的模型范畴和无穷范畴有潜在联系。"
+          "llm_reason": "论文核心概念包括上纤维化、同伦余极限、谱序列，与研究方向中的fibration、cofibration、homotopy colimit、spectral sequence高度匹配；且分类math.AT直接相关。"
         },
         {
           "topic_id": "motivic_k_theory",
@@ -869,7 +869,7 @@
           "homotopy colimit",
           "spectral sequence"
         ],
-        "llm_reason": "论文核心概念包括纤维化、余纤维化、同伦余极限、谱序列，直接匹配研究方向中的fibration, cofibration, homotopy colimit, spectral sequence。此外，涉及Brown可表示性（Brown范畴结构）和广义度量空间，与同伦论中的模型范畴和无穷范畴有潜在联系。"
+        "llm_reason": "论文核心概念包括上纤维化、同伦余极限、谱序列，与研究方向中的fibration、cofibration、homotopy colimit、spectral sequence高度匹配；且分类math.AT直接相关。"
       },
       "top_labels": [
         {
@@ -906,15 +906,15 @@
       ],
       "backfilled_from_recent_arxiv": true,
       "chinese_summary": {
-        "problem": "为广义度量空间（自然数距离）建立同伦理论，通过幅度-路径谱序列（MPSS）的各页定义r-拟同构，并验证其满足Eilenberg-Steenrod公理的度量类比。",
-        "method": "利用MPSS的每一页定义r-拟同构和r-纤维化/余纤维化，证明Mayer-Vietoris定理，并构造Brown范畴结构以计算同伦余极限。具体包括r-球面和r-悬垂的谱序列计算，以及r=1时理论退化为有向图的情形。",
-        "innovation": "1. 首次将幅度-路径谱序列的各页作为同伦理论的基石，定义了一族参数化的同伦理论（r-同伦理论）。2. 建立了谱序列页的Eilenberg-Steenrod公理度量类比，包括Mayer-Vietoris定理。3. 通过Brown范畴结构显式计算同伦余极限，并给出r-球面和r-悬垂的具体例子。",
-        "evidence": "摘要中明确给出了r-拟同构、r-余纤维化的定义，证明了Mayer-Vietoris定理，构造了Brown范畴结构，并计算了r-球面和r-悬垂的谱序列。此外，指出r=1时理论限制于有向图。",
-        "limitations": "需要阅读全文确认Brown范畴结构的具体构造、r-同伦理论与经典同伦理论（如CW复形）的精确关系，以及该理论在非度量空间（如拓扑空间）上的推广可能性。",
-        "why_relevant": "论文核心概念包括纤维化、余纤维化、同伦余极限、谱序列，直接匹配研究方向中的fibration, cofibration, homotopy colimit, spectral sequence。此外，涉及Brown可表示性（Brown范畴结构）和广义度量空间，与同伦论中的模型范畴和无穷范畴有潜在联系。"
+        "problem": "为广义度量空间（自然数距离）建立同伦理论，通过幅度-路径谱序列（MPSS）定义r-拟同构和r-上纤维化，并推广Eilenberg-Steenrod公理。",
+        "method": "利用MPSS的每一页定义r-拟同构和r-上纤维化，证明每页满足度量版本的Eilenberg-Steenrod公理（包括Mayer-Vietoris定理），并构造Brown范畴结构以计算同伦余极限。",
+        "innovation": "1. 将同伦理论推广到广义度量空间，通过谱序列页面分级定义同伦等价类；2. 建立r-上纤维化并证明Mayer-Vietoris定理；3. 构造Brown范畴结构显式计算同伦余极限，并应用于r-球面等例子。",
+        "evidence": "摘要中给出了r-球面和r-悬垂的谱序列计算，并指出r=1时理论限制为有向图。",
+        "limitations": "仅针对自然数距离的广义度量空间，未涉及无穷距离或连续度量；r-拟同构的具体性质（如与经典同伦等价的关系）需阅读全文确认。",
+        "why_relevant": "论文核心概念包括上纤维化、同伦余极限、谱序列，与研究方向中的fibration、cofibration、homotopy colimit、spectral sequence高度匹配；且分类math.AT直接相关。"
       },
       "first_seen_at": "2026-06-11T04:42:44.276818+00:00",
-      "last_seen_at": "2026-06-11T10:43:29.401201+00:00",
+      "last_seen_at": "2026-06-11T10:46:55.160235+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -1489,7 +1489,7 @@
             "moduli space",
             "descent"
           ],
-          "llm_reason": "论文研究模空间（moduli space）和下降（descent），直接匹配研究方向中的moduli space、descent、fppf descent等关键词；arXiv分类math.AG完全重合；超奇异阿贝尔簇是代数几何中的重要对象，与模空间理论紧密相关。"
+          "llm_reason": "论文研究模空间（moduli space）和下降（descent）问题，直接命中研究方向关键词'moduli space'和'descent'；arXiv分类math.AG与研究方向一致；超奇异阿贝尔簇模空间是代数几何中模空间理论的重要例子，与研究方向中的'moduli space'、'algebraic stack'等概念相关。"
         },
         {
           "topic_id": "arithmetic_geometry",
@@ -1534,7 +1534,7 @@
           "moduli space",
           "descent"
         ],
-        "llm_reason": "论文研究模空间（moduli space）和下降（descent），直接匹配研究方向中的moduli space、descent、fppf descent等关键词；arXiv分类math.AG完全重合；超奇异阿贝尔簇是代数几何中的重要对象，与模空间理论紧密相关。"
+        "llm_reason": "论文研究模空间（moduli space）和下降（descent）问题，直接命中研究方向关键词'moduli space'和'descent'；arXiv分类math.AG与研究方向一致；超奇异阿贝尔簇模空间是代数几何中模空间理论的重要例子，与研究方向中的'moduli space'、'algebraic stack'等概念相关。"
       },
       "top_labels": [
         {
@@ -1558,15 +1558,15 @@
         }
       ],
       "chinese_summary": {
-        "problem": "研究超奇异阿贝尔簇模空间的极化旗商结构，特别是对旗的顶层和底层进行完整分类，并推导拟极化的显式可计算下降判据。",
-        "method": "建立极化旗商的结构定理，证明顶层的精细正规形，并利用下降理论给出拟极化的显式判据。通过计算维数g≤5的极化旗商，描述截断态射的纤维作为超奇异阿贝尔簇的分类对象。",
-        "innovation": "1. 证明了极化旗顶层的精细正规形，这是对已有正规形的细化；2. 推导了拟极化的显式可计算下降判据，使得计算成为可能；3. 对g≤5的情形给出了极化旗商的完整分类，描述了截断态射的纤维。",
-        "evidence": "摘要中未提供实验或系统证据，但声称给出了g≤5的完整分类和显式判据，理论推导是主要证据。",
-        "limitations": "仅覆盖维数g≤5，更高维情形未涉及；需要阅读全文验证下降判据的具体可计算性以及分类的完整性。",
-        "why_relevant": "论文研究模空间（moduli space）和下降（descent），直接匹配研究方向中的moduli space、descent、fppf descent等关键词；arXiv分类math.AG完全重合；超奇异阿贝尔簇是代数几何中的重要对象，与模空间理论紧密相关。"
+        "problem": "研究超奇异阿贝尔簇模空间中极化旗型商的结构，特别是高维（g≤5）情形下的分类问题。",
+        "method": "建立极化旗型商的结构定理，证明顶层旗的精细正规型，并推导出拟极化的显式可计算下降判据。利用这些结果对旗的第一和最后一步进行完全分类，并计算g≤5时的极化旗型商，将截断态射的纤维描述为超奇异阿贝尔簇的分类对象。",
+        "innovation": "1. 给出了极化旗型商顶层旗的精细正规型，这是对已有结构定理的细化。2. 提出了拟极化的显式可计算下降判据，使得下降条件可操作。3. 完成了g≤5维超奇异阿贝尔簇的极化旗型商分类，填补了低维分类的空白。",
+        "evidence": "摘要中未提供实验或系统证据，仅给出理论结果和分类描述。",
+        "limitations": "结果仅限于g≤5维，高维情形未涉及；需要阅读全文验证下降判据的显式性和可计算性。",
+        "why_relevant": "论文研究模空间（moduli space）和下降（descent）问题，直接命中研究方向关键词'moduli space'和'descent'；arXiv分类math.AG与研究方向一致；超奇异阿贝尔簇模空间是代数几何中模空间理论的重要例子，与研究方向中的'moduli space'、'algebraic stack'等概念相关。"
       },
       "first_seen_at": "2026-06-11T04:42:44.276818+00:00",
-      "last_seen_at": "2026-06-11T10:43:29.401201+00:00",
+      "last_seen_at": "2026-06-11T10:46:55.160235+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -3638,7 +3638,7 @@
           "keyword_hits": [
             "vector bundle"
           ],
-          "llm_reason": "论文涉及向量丛（vector bundle）和代数几何中的Hopf曲面（属于复代数几何），与研究方向中的vector bundle、scheme等关键词部分匹配，但Hopf曲面和co-Higgs丛非核心内容，相关性较低。"
+          "llm_reason": "论文涉及向量丛（vector bundle）和代数几何（math.AG分类），与研究方向中的向量丛、层论相关，但主题偏向复几何和Poisson几何，与代数几何核心问题（如模空间、相交理论）关联较弱。"
         },
         {
           "topic_id": "arithmetic_geometry",
@@ -3682,7 +3682,7 @@
         "keyword_hits": [
           "vector bundle"
         ],
-        "llm_reason": "论文涉及向量丛（vector bundle）和代数几何中的Hopf曲面（属于复代数几何），与研究方向中的vector bundle、scheme等关键词部分匹配，但Hopf曲面和co-Higgs丛非核心内容，相关性较低。"
+        "llm_reason": "论文涉及向量丛（vector bundle）和代数几何（math.AG分类），与研究方向中的向量丛、层论相关，但主题偏向复几何和Poisson几何，与代数几何核心问题（如模空间、相交理论）关联较弱。"
       },
       "top_labels": [
         {
@@ -3698,14 +3698,14 @@
       ],
       "chinese_summary": {
         "problem": "研究如何从Hopf曲面上的秩2 co-Higgs丛构造Poisson三维流形，并描述其辛叶。",
-        "method": "基于前期对Hopf曲面上秩2 co-Higgs丛的分类结果，利用底层向量丛的数据，构造Poisson三维流形，并通过分析其辛叶结构来研究这些流形。",
-        "innovation": "将co-Higgs丛与Poisson几何联系起来，通过Hopf曲面上的向量丛数据构造Poisson三维流形，并系统描述其辛叶，这是对前期分类工作的几何应用。",
-        "evidence": "摘要未提供具体实验或理论证据，仅说明论文目标是描述辛叶，证据不足。",
-        "limitations": "摘要未给出具体构造细节或定理，需要阅读全文验证构造的有效性和辛叶描述的完整性。",
-        "why_relevant": "论文涉及向量丛（vector bundle）和代数几何中的Hopf曲面（属于复代数几何），与研究方向中的vector bundle、scheme等关键词部分匹配，但Hopf曲面和co-Higgs丛非核心内容，相关性较低。"
+        "method": "基于先前对Hopf曲面上秩2 co-Higgs丛的分类（依据底层向量丛的数据），通过分析这些丛的几何结构来构造Poisson三维流形，并进一步描述其辛叶。",
+        "innovation": "将co-Higgs丛的分类结果应用于Poisson几何，构造了具体的Poisson三维流形，并给出了辛叶的描述，这是对先前工作的扩展。",
+        "evidence": "摘要中未提供实验或理论证据，仅说明是先前工作的扩展，证据不足。",
+        "limitations": "需要阅读全文确认构造的具体细节、辛叶描述的完整性以及是否适用于更一般的Hopf曲面或更高秩的丛。",
+        "why_relevant": "论文涉及向量丛（vector bundle）和代数几何（math.AG分类），与研究方向中的向量丛、层论相关，但主题偏向复几何和Poisson几何，与代数几何核心问题（如模空间、相交理论）关联较弱。"
       },
       "first_seen_at": "2026-06-11T05:41:51.895771+00:00",
-      "last_seen_at": "2026-06-11T10:43:29.401201+00:00",
+      "last_seen_at": "2026-06-11T10:46:55.160235+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -3736,7 +3736,7 @@
           "keyword_hits": [
             "Spec"
           ],
-          "llm_reason": "论文研究代数几何中的三次四维簇、Kuznetsov分量和Chow动机，涉及Spec、模空间等概念，与研究方向中的代数簇、Chow群、模空间等关键词高度相关。"
+          "llm_reason": "论文涉及代数几何中的三次四维簇、Kuznetsov分量、Chow动机、超越动机、Fourier-Mukai变换、等变范畴等概念，与研究方向中的scheme、morphism、sheaf、moduli space、algebraic stack等关键词高度相关，且arXiv分类为math.AG。"
         },
         {
           "topic_id": "homotopy_theory",
@@ -3782,7 +3782,7 @@
         "keyword_hits": [
           "Spec"
         ],
-        "llm_reason": "论文研究代数几何中的三次四维簇、Kuznetsov分量和Chow动机，涉及Spec、模空间等概念，与研究方向中的代数簇、Chow群、模空间等关键词高度相关。"
+        "llm_reason": "论文涉及代数几何中的三次四维簇、Kuznetsov分量、Chow动机、超越动机、Fourier-Mukai变换、等变范畴等概念，与研究方向中的scheme、morphism、sheaf、moduli space、algebraic stack等关键词高度相关，且arXiv分类为math.AG。"
       },
       "top_labels": [
         {
@@ -3816,14 +3816,14 @@
       ],
       "chinese_summary": {
         "problem": "研究光滑三次四维簇的Kuznetsov分量与超越动机之间的关系，特别是当两个三次四维簇是Fourier-Mukai伙伴时，其超越动机是否同构。",
-        "method": "利用Kuznetsov分量和Chow动机范畴，通过考虑特殊三次四维簇及其FM伙伴，构造超越动机之间的显式同构。对于具有3阶辛自同构的特殊三次四维簇，引入等变Kuznetsov分量并建立范畴等价。",
-        "innovation": "1. 证明了Fourier-Mukai伙伴的三次四维簇的超越动机同构；2. 对可理性和猜想不可理性的情形给出了超越动机同构的显式描述；3. 在可数多个Hassett除子中，利用等变Kuznetsov分量建立了新的范畴等价和动机同构。",
-        "evidence": "摘要中未提供具体实验或系统证据，仅给出理论构造和结论。",
-        "limitations": "需要阅读全文确认显式同构的构造细节以及等变Kuznetsov分量的定义；结果依赖于特殊三次四维簇的Hassett除子分类。",
-        "why_relevant": "论文研究代数几何中的三次四维簇、Kuznetsov分量和Chow动机，涉及Spec、模空间等概念，与研究方向中的代数簇、Chow群、模空间等关键词高度相关。"
+        "method": "利用Kuznetsov分量和Chow动机范畴，通过考虑特殊三次四维簇族及其FM伙伴，显式构造超越动机之间的同构。对于具有3阶辛自同构的特殊三次四维簇，使用等变Kuznetsov分量建立范畴等价并诱导超越动机同构。",
+        "innovation": "1. 在有理和猜想无理情形下，显式描述FM伙伴之间超越动机的同构。2. 对可数无穷多个Hassett除子中的特殊三次四维簇，利用等变Kuznetsov分量建立新的范畴等价并证明超越动机同构。",
+        "evidence": "摘要中未提供具体实验或系统证据，仅给出理论构造和断言。",
+        "limitations": "需要阅读全文确认同构构造的细节和证明，以及Hassett除子的具体条件。",
+        "why_relevant": "论文涉及代数几何中的三次四维簇、Kuznetsov分量、Chow动机、超越动机、Fourier-Mukai变换、等变范畴等概念，与研究方向中的scheme、morphism、sheaf、moduli space、algebraic stack等关键词高度相关，且arXiv分类为math.AG。"
       },
       "first_seen_at": "2026-06-11T07:23:12.784218+00:00",
-      "last_seen_at": "2026-06-11T10:43:29.401201+00:00",
+      "last_seen_at": "2026-06-11T10:46:55.160235+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -3973,10 +3973,10 @@
           "score": 0.272,
           "base_score": 0.272,
           "bridge_bonus": 0.0,
-          "level": "medium",
+          "level": "high",
           "reason": "arXiv 分类重合：math.AG、math.NT",
           "keyword_hits": [],
-          "llm_reason": "论文涉及p进Hodge理论（Colmez-Fontaine基本引理），与研究方向中的p-adic Hodge theory、Fontaine theory、period rings等关键词直接相关。"
+          "llm_reason": "论文涉及p-adic Hodge理论（关键词：p-adic Hodge theory, Colmez-Fontaine基本引理），与我的研究方向中p-adic Hodge理论、Galois表示等关键词高度相关。"
         },
         {
           "topic_id": "algebraic_geometry",
@@ -4015,10 +4015,10 @@
         "score": 0.272,
         "base_score": 0.272,
         "bridge_bonus": 0.0,
-        "level": "medium",
+        "level": "high",
         "reason": "arXiv 分类重合：math.AG、math.NT",
         "keyword_hits": [],
-        "llm_reason": "论文涉及p进Hodge理论（Colmez-Fontaine基本引理），与研究方向中的p-adic Hodge theory、Fontaine theory、period rings等关键词直接相关。"
+        "llm_reason": "论文涉及p-adic Hodge理论（关键词：p-adic Hodge theory, Colmez-Fontaine基本引理），与我的研究方向中p-adic Hodge理论、Galois表示等关键词高度相关。"
       },
       "top_labels": [
         {
@@ -4039,15 +4039,15 @@
         }
       ],
       "chinese_summary": {
-        "problem": "将Farey三角形与p进Hodge理论中Colmez-Fontaine基本引理的变体建立联系，并推广原始基本引理对应的基本Farey三角形。",
-        "method": "通过扩展上半平面中的Farey三角形，构造p进基本序列的模变体，并证明其与Colmez-Fontaine基本引理的对应关系。",
-        "innovation": "首次将Farey三角形与p进Hodge理论的基本引理联系起来；推广了原始基本引理，使其对应于更一般的Farey三角形而非仅基本三角形。",
-        "evidence": "摘要中未提供具体实验或理论验证，仅声称建立了联系，证据不足。",
-        "limitations": "摘要未给出证明细节或应用实例，需阅读全文确认联系的具体构造和有效性。",
-        "why_relevant": "论文涉及p进Hodge理论（Colmez-Fontaine基本引理），与研究方向中的p-adic Hodge theory、Fontaine theory、period rings等关键词直接相关。"
+        "problem": "论文旨在将扩展上半平面中的Farey三角形与p-adic Hodge理论中Colmez-Fontaine基本引理的变体联系起来，从而推广该基本引理。",
+        "method": "通过建立Farey三角形与p-adic Hodge理论中基本引理变体之间的对应关系，特别地，将基本Farey三角形(1/0,1/1,0/1)对应到原始基本引理，从而构造模块化变体。",
+        "innovation": "1. 首次将Farey三角形与p-adic Hodge理论的基本引理建立联系，提供了新的几何视角。2. 推广了Colmez-Fontaine的基本引理，使其适用于更一般的Farey三角形。3. 可能为p-adic Hodge理论中的模性问题提供新的工具。",
+        "evidence": "摘要中仅给出了理论对应关系，未提供实验或系统证据，证据不足。",
+        "limitations": "摘要未详细说明推广的具体技术细节和证明方法，需要阅读全文确认其严格性和适用范围。",
+        "why_relevant": "论文涉及p-adic Hodge理论（关键词：p-adic Hodge theory, Colmez-Fontaine基本引理），与我的研究方向中p-adic Hodge理论、Galois表示等关键词高度相关。"
       },
       "first_seen_at": "2026-06-11T05:21:54.714863+00:00",
-      "last_seen_at": "2026-06-11T10:43:29.401201+00:00",
+      "last_seen_at": "2026-06-11T10:46:55.160235+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -4080,7 +4080,7 @@
           "keyword_hits": [
             "finite field"
           ],
-          "llm_reason": "论文涉及有限域上的组合构造，与算术几何中有限域上的几何和数论问题（如有限域上的代数簇、线性方程解的存在性）有一定关联，但更偏向组合与加性组合，而非算术几何的核心方向（如伽罗瓦表示、p进霍奇理论等）。"
+          "llm_reason": "论文涉及有限域上的组合构造问题，与研究方向中的有限域、算术几何中的结构问题间接相关，但核心是组合数论而非算术几何。"
         },
         {
           "topic_id": "algebraic_geometry",
@@ -4124,7 +4124,7 @@
         "keyword_hits": [
           "finite field"
         ],
-        "llm_reason": "论文涉及有限域上的组合构造，与算术几何中有限域上的几何和数论问题（如有限域上的代数簇、线性方程解的存在性）有一定关联，但更偏向组合与加性组合，而非算术几何的核心方向（如伽罗瓦表示、p进霍奇理论等）。"
+        "llm_reason": "论文涉及有限域上的组合构造问题，与研究方向中的有限域、算术几何中的结构问题间接相关，但核心是组合数论而非算术几何。"
       },
       "top_labels": [
         {
@@ -4139,15 +4139,15 @@
         }
       ],
       "chinese_summary": {
-        "problem": "在有限域上寻找无平凡解的线性方程集合，并构造出比直接乘积构造更好的集合，以改进下界。",
-        "method": "通过提升维度，将低维中无平凡解的集合A（对应亏格一的平移不变线性方程）构造为高维中的集合B，使得B的密度（|B|^{1/m}）大于A的密度（|A|^{1/n}）。",
-        "innovation": "证明了对于亏格一的平移不变线性方程，直接乘积构造并非最优，存在更高维度的构造能获得更大的密度，从而否定了通过固定cap set直接乘积得到渐近最优下界的可能性。",
-        "evidence": "摘要中给出了不等式|B|^{1/m}>|A|^{1/n}，并指出这直接否定了固定cap set在F_3^n中通过直接乘积得到渐近最优下界的结论。",
-        "limitations": "仅针对亏格一的平移不变线性方程，且未给出具体构造或数值例子，需要阅读全文确认构造细节和适用范围。",
-        "why_relevant": "论文涉及有限域上的组合构造，与算术几何中有限域上的几何和数论问题（如有限域上的代数簇、线性方程解的存在性）有一定关联，但更偏向组合与加性组合，而非算术几何的核心方向（如伽罗瓦表示、p进霍奇理论等）。"
+        "problem": "在有限域上构造不含特定线性方程非平凡解的大集合，并证明直接乘积构造无法达到渐近最优下界。",
+        "method": "通过提升维度构造新集合：给定有限域F_q^n中无平凡解的集合A，构造更高维F_q^m中的集合B，使得B的密度（|B|^{1/m}）大于A的密度（|A|^{1/n}）。",
+        "innovation": "1. 证明对于任何亏格为1的平移不变线性方程，直接乘积构造不能给出渐近最优下界；2. 提供了一种系统性的维度提升方法，能获得比原集合更高密度的无解集。",
+        "evidence": "摘要中给出了数学不等式|B|^{1/m}>|A|^{1/n}，并指出该结果意味着固定cap集在F_3^n中不能通过直接乘积达到渐近最优下界。",
+        "limitations": "仅针对亏格为1的平移不变线性方程；未给出具体构造的显式例子或数值结果；需要阅读全文确认构造的普适性。",
+        "why_relevant": "论文涉及有限域上的组合构造问题，与研究方向中的有限域、算术几何中的结构问题间接相关，但核心是组合数论而非算术几何。"
       },
       "first_seen_at": "2026-06-11T07:03:32.811912+00:00",
-      "last_seen_at": "2026-06-11T10:43:29.401201+00:00",
+      "last_seen_at": "2026-06-11T10:46:55.160235+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -4179,7 +4179,7 @@
           "level": "low",
           "reason": "arXiv 分类重合：math.AG",
           "keyword_hits": [],
-          "llm_reason": "论文涉及完美化环和有限代数，与代数几何中的环论、模空间（如Hilbert scheme）相关，但主题更偏向交换代数和数论，与我的研究方向（代数几何核心概念如层、模空间、导出代数几何）相关性较低。"
+          "llm_reason": "论文涉及完美化环和有限代数，与代数几何中的环论、模空间（如Hilbert scheme）和导出代数几何中的完美化构造相关，但关键词匹配度低。"
         },
         {
           "topic_id": "homotopy_theory",
@@ -4223,7 +4223,7 @@
         "level": "low",
         "reason": "arXiv 分类重合：math.AG",
         "keyword_hits": [],
-        "llm_reason": "论文涉及完美化环和有限代数，与代数几何中的环论、模空间（如Hilbert scheme）相关，但主题更偏向交换代数和数论，与我的研究方向（代数几何核心概念如层、模空间、导出代数几何）相关性较低。"
+        "llm_reason": "论文涉及完美化环和有限代数，与代数几何中的环论、模空间（如Hilbert scheme）和导出代数几何中的完美化构造相关，但关键词匹配度低。"
       },
       "top_labels": [
         {
@@ -4255,14 +4255,14 @@
       ],
       "chinese_summary": {
         "problem": "研究完美化环上有限代数的完美化的一般性质，并给出显式描述。",
-        "method": "通过判别式条件和有界挠条件证明完美化包含原代数；利用密度准则将完美化归结为模p添加p幂根；对Kummer型扩张和分裂有限代数等例子进行具体计算。",
-        "innovation": "给出了完美化包含原代数的充分条件（判别式非零因子且满足有界挠）；建立了密度准则简化完美化构造；提供了多种非平凡例子的显式完美化。",
-        "evidence": "摘要中给出了定理陈述（dA_pfd ⊂ A）和密度准则，以及例子计算，但未提供详细证明或实验数据。",
-        "limitations": "结果依赖于判别式条件和有界挠条件，可能不适用于一般情形；例子有限，需阅读全文确认适用范围。",
-        "why_relevant": "论文涉及完美化环和有限代数，与代数几何中的环论、模空间（如Hilbert scheme）相关，但主题更偏向交换代数和数论，与我的研究方向（代数几何核心概念如层、模空间、导出代数几何）相关性较低。"
+        "method": "通过判别式条件和有界挠性条件证明完美化包含原代数；利用密度准则将完美化约化为模p的p幂根添加；对Kummer型扩张和分裂有限代数等例子进行具体计算。",
+        "innovation": "1. 给出了完美化包含原代数的判别式条件；2. 建立了密度准则简化完美化构造；3. 提供了多个非平凡例子的显式计算。",
+        "evidence": "摘要中给出了定理陈述（如dA_pfd⊂A）和例子（Kummer型扩张、分裂有限代数），但未提供实验或系统验证。",
+        "limitations": "结果依赖于判别式非零因子和有界挠性条件；例子可能局限于特定类型；需要阅读全文确认证明细节和适用范围。",
+        "why_relevant": "论文涉及完美化环和有限代数，与代数几何中的环论、模空间（如Hilbert scheme）和导出代数几何中的完美化构造相关，但关键词匹配度低。"
       },
       "first_seen_at": "2026-06-11T06:58:33.319883+00:00",
-      "last_seen_at": "2026-06-11T10:43:29.401201+00:00",
+      "last_seen_at": "2026-06-11T10:46:55.160235+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -4373,15 +4373,15 @@
     "filtered_low_relevance_count": 0,
     "filtered_wrong_category_count": 47,
     "arxiv_category_filter": [
-      "math.AT",
-      "math.CT",
       "math.NT",
       "math.AG",
-      "math.KT"
+      "math.CT",
+      "math.KT",
+      "math.AT"
     ],
     "days": 1,
     "collection_mode": "lookback",
-    "collection_cutoff_iso": "2026-06-10T10:43:29.401201+00:00",
+    "collection_cutoff_iso": "2026-06-10T10:46:55.160235+00:00",
     "max_per_topic": 25,
     "max_new_papers": 50,
     "max_new_conference_papers": 50,
@@ -4433,7 +4433,7 @@
     "dropped_low_relevance_count": 0,
     "max_stored_papers": 200,
     "max_data_bytes": 8388608,
-    "data_bytes": 186828,
+    "data_bytes": 185922,
     "storage_trimmed_count": 0,
     "storage_trimmed_by_level": {
       "high": 0,
