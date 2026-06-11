@@ -15,7 +15,6 @@ const state = {
     level: "all",
     collection: "daily",
     view: "daily",
-    date: "",
   },
 };
 
@@ -32,7 +31,6 @@ const nodes = {
   paperList: document.querySelector("#paperList"),
   topicFilter: document.querySelector("#topicFilter"),
   levelFilter: document.querySelector("#levelFilter"),
-  dateFilter: document.querySelector("#dateFilter"),
   searchInput: document.querySelector("#searchInput"),
   langToggle: document.querySelector("#langToggle"),
   themeOptions: document.querySelectorAll("[data-theme-option]"),
@@ -165,9 +163,6 @@ function inRange(value, start, end) {
   return Boolean(date && date >= start && date < end);
 }
 
-function selectedDate() {
-  return parseDate(`${state.filters.date}T12:00:00`) || new Date();
-}
 
 // When showing "all" topics, display the best_match score (includes
 // bridge bonus for ranking).  When a specific topic is selected, use
@@ -292,13 +287,9 @@ function matchesView(paper) {
   const pubDate = parseDate(paper.published || paper.last_seen_at || "");
   if (!pubDate) return false;
 
-  // week/month/highlights always use today as reference, not the date picker
-  if (state.filters.view === "daily") {
-    const date = selectedDate();
-    return dateKey(paper.published || paper.last_seen_at) === state.filters.date;
-  }
   const today = new Date();
   const windowEnd = endOfWindow(today);
+  if (state.filters.view === "daily") return dateKey(paper.published || paper.last_seen_at) === dateKey(today.toISOString());
   if (state.filters.view === "week") return pubDate >= startOfWindow(today, WEEK_WINDOW_DAYS) && pubDate < windowEnd;
   if (state.filters.view === "month") return pubDate >= startOfMonth(today) && pubDate < endOfMonth(today);
   if (state.filters.view === "highlights") {
@@ -401,9 +392,8 @@ function renderPaper(paper) {
 }
 
 function viewLabels() {
-  const date = selectedDate();
-  const dayLabel = formatDate(date.toISOString());
   const today = new Date();
+  const dayLabel = formatDate(today.toISOString());
   const weekStart = formatDate(startOfWeek(today).toISOString());
   const weekEndDate = endOfWeek(today);
   weekEndDate.setDate(weekEndDate.getDate() - 1);
@@ -451,34 +441,6 @@ function hydrateTopicFilter() {
     option.value = topic.id;
     option.textContent = topic.name;
     nodes.topicFilter.appendChild(option);
-  }
-}
-
-function hydrateDateFilter() {
-  const data = activeData();
-  const now = new Date();
-
-  // Build synthetic date options for daily/weekly/monthly views
-  // so the user can always go back through the last 7 days.
-  const recent = [];
-  for (let i = 0; i < 7; i++) {
-    const d = new Date(now.getFullYear(), now.getMonth(), now.getDate() - i);
-    recent.push(dateKey(d.toISOString()));
-  }
-
-  // Merge with actual paper dates so nothing is hidden
-  const paperDates = [...new Set((data.papers || []).map((paper) => dateKey(collectionTime(paper))).filter(Boolean))];
-  const all = [...new Set([...recent, ...paperDates])].sort().reverse();
-
-  const fallback = dateKey(data.generated_at_iso || now.toISOString());
-  const options = all.length ? all : [fallback];
-  state.filters.date = options[0];
-  nodes.dateFilter.textContent = "";
-  for (const key of options) {
-    const option = document.createElement("option");
-    option.value = key;
-    option.textContent = formatDate(`${key}T12:00:00`);
-    nodes.dateFilter.appendChild(option);
   }
 }
 
@@ -530,17 +492,11 @@ function bindEvents() {
       for (const item of nodes.collectionTabs) item.classList.toggle("active", item === tab);
       for (const item of nodes.tabs) item.classList.toggle("active", item.dataset.view === state.filters.view);
       hydrateTopicFilter();
-      hydrateDateFilter();
       updateStats();
       updateUpdatedAt();
       render();
     });
   }
-  nodes.dateFilter.addEventListener("change", (event) => {
-    state.filters.date = event.target.value;
-    updateStats();
-    render();
-  });
   for (const tab of nodes.tabs) {
     tab.addEventListener("click", () => {
       state.filters.view = tab.dataset.view;
@@ -599,7 +555,6 @@ async function main() {
 
   updateUpdatedAt();
   hydrateTopicFilter();
-  hydrateDateFilter();
   updateStats();
   render();
 }
