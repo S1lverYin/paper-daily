@@ -69,34 +69,36 @@ jobs:
 
           total=$(python3 -c "import json; d=json.load(open('$papers_file')); print(len(d.get('papers',[])))")
           today=$(date +%Y-%m-%d)
-          today_count=$(python3 -c "
-          import json; d=json.load(open('$papers_file'))
+
+          new_count=$(python3 -c "
+          import json
+          d=json.load(open('$papers_file'))
           today='$today'
           count=0
           for p in d.get('papers',[]):
-              seen=p.get('first_seen_at','') or p.get('last_seen_at','') or ''
-              if seen.startswith(today): count+=1
+              pub=p.get('published','') or ''
+              if pub.startswith(today): count+=1
           print(count)
           ")
 
-          paper_list=$(python3 -c "
+          new_list=$(python3 -c "
           import json, html
           d=json.load(open('$papers_file'))
           today='$today'
           lines=[]
           for p in d.get('papers',[]):
-              seen=p.get('first_seen_at','') or p.get('last_seen_at','') or ''
-              if not seen.startswith(today): continue
+              pub=p.get('published','') or ''
+              if not pub.startswith(today): continue
               title=html.escape(p.get('title','?'))
               score=p.get('best_match',{}).get('score',0)
               lines.append(f'<li>💡 {title} <span style=\"color:#999\">({score:.2f})</span></li>')
-          print('<ol>' + ''.join(lines) + '</ol>' if lines else '<p>今日暂无新增论文</p>')
+          print('<ol>' + ''.join(lines[:10]) + '</ol>' if lines else '<p>今日暂无新增论文</p>')
           ")
 
           content="
           <h3>📄 Paper Daily 今日更新</h3>
-          <p>今日新论文: <strong>${today_count}</strong> 篇 | 总论文: <strong>${total}</strong> 篇</p>
-          ${paper_list}
+          <p>今日新论文: <strong>${new_count}</strong> 篇 | 总论文: <strong>${total}</strong> 篇</p>
+          ${new_list}
           <p style='margin-top:12px;color:#999;font-size:12px'>
             👉 <a href='https://s1lveryin.github.io/paper-daily/'>查看完整列表</a>
           </p>
@@ -105,7 +107,7 @@ jobs:
           payload=$(cat <<EOF
           {
             "token": "${PUSHPLUS_TOKEN}",
-            "title": "Paper Daily — 今日 ${today_count} 篇新论文",
+            "title": "Paper Daily — 今日 ${new_count} 篇新论文",
             "content": $(echo "$content" | python3 -c "import sys,json; print(json.dumps(sys.stdin.read()))"),
             "template": "html"
           }
