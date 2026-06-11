@@ -187,18 +187,16 @@ function levelOf(paper) {
   return String(paper.best_match?.level || "low").toLowerCase();
 }
 
-// Topic tag eligibility — per-topic strong thresholds (no keyword hit
-// required above) plus a weak rule (>= 0.12 AND has keyword hits).
-// Motivic is highest because it shares the most vocabulary with other
-// fields; K-theory is lowest because some real papers score lower there.
+// Topic tag eligibility — all topics share the same threshold now.
+// Strong: base_score >= 0.15, Weak: base_score >= 0.08 with keyword hits.
 const TOPIC_STRONG = {
-  motivic_homotopy_theory: 0.28,
-  algebraic_geometry: 0.25,
-  arithmetic_geometry: 0.25,
-  homotopy_theory: 0.22,
-  k_theory: 0.20,
+  motivic_homotopy_theory: 0.15,
+  algebraic_geometry: 0.15,
+  arithmetic_geometry: 0.15,
+  homotopy_theory: 0.15,
+  k_theory: 0.15,
 };
-const MIN_TOPIC_BASE_WEAK = 0.12;
+const MIN_TOPIC_BASE_WEAK = 0.08;
 
 // Return the best matching label for the currently selected topic filter.
 // When "all" is selected, use best_match (overall winner).  When a specific

@@ -2432,10 +2432,10 @@ def collect(
         #   homotopy_theory:          0.22
         #   k_theory:                 0.20
         # Weak rule: base_score >= 0.12 AND at least one keyword hit.
-        _STRONG = {"motivic_homotopy_theory": 0.28, "algebraic_geometry": 0.25,
-                   "arithmetic_geometry": 0.25, "homotopy_theory": 0.22,
-                   "k_theory": 0.20}
-        _WEAK_MIN = 0.12
+        _STRONG = {"motivic_homotopy_theory": 0.15, "algebraic_geometry": 0.15,
+                   "arithmetic_geometry": 0.15, "homotopy_theory": 0.15,
+                   "k_theory": 0.15}
+        _WEAK_MIN = 0.08
         top_labels = []
         for m in matches:
             base = m.get("base_score", 0.0)
