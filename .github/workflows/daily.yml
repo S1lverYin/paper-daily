@@ -74,8 +74,8 @@ jobs:
           today='$today'
           count=0
           for p in d.get('papers',[]):
-              pub=p.get('published','') or p.get('last_seen_at','') or ''
-              if pub.startswith(today): count+=1
+              seen=p.get('first_seen_at','') or p.get('last_seen_at','') or ''
+              if seen.startswith(today): count+=1
           print(count)
           ")
 
@@ -85,8 +85,8 @@ jobs:
           today='$today'
           lines=[]
           for p in d.get('papers',[]):
-              pub=p.get('published','') or p.get('last_seen_at','') or ''
-              if not pub.startswith(today): continue
+              seen=p.get('first_seen_at','') or p.get('last_seen_at','') or ''
+              if not seen.startswith(today): continue
               title=html.escape(p.get('title','?'))
               score=p.get('best_match',{}).get('score',0)
               lines.append(f'<li>💡 {title} <span style=\"color:#999\">({score:.2f})</span></li>')
