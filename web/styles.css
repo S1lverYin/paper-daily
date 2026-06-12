@@ -596,6 +596,29 @@ select:focus,
   padding: 7px 11px;
 }
 
+.like-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 11px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--card-bg);
+  color: var(--muted);
+  transition: background .2s, border-color .2s, color .2s;
+}
+.like-btn:hover {
+  border-color: var(--teal);
+  color: var(--teal);
+}
+.like-btn.liked {
+  border-color: var(--teal);
+  color: var(--teal);
+  background: rgba(45, 212, 191, 0.08);
+}
+
 .paper-link:hover,
 .icon-link:hover,
 .collection-tab:hover,

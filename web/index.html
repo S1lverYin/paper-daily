@@ -73,6 +73,7 @@
           <button class="tab" type="button" data-view="week">本周</button>
           <button class="tab" type="button" data-view="month">本月</button>
           <button class="tab" type="button" data-view="highlights">本周精选</button>
+          <button class="tab" type="button" data-view="liked">已收藏</button>
         </div>
         <div class="filters">
           <label class="field">
@@ -148,6 +149,7 @@
         <footer class="paper-footer">
           <span class="match-reason"></span>
           <div class="paper-links">
+            <button class="like-btn" type="button" title="收藏此论文"></button>
             <a class="paper-link abs-link" target="_blank" rel="noreferrer">原文</a>
             <a class="paper-link pdf-link" target="_blank" rel="noreferrer">PDF</a>
             <a class="paper-link download-link">下载 PDF</a>
@@ -156,6 +158,8 @@
       </article>
     </template>
 
-    <script src="./app.js?v=20260530-split-sources"></script>
+    <script src="./config/github_token.js"></script>
+    <script src="./api.js?v=20260612"></script>
+    <script src="./app.js?v=20260612-likes"></script>
   </body>
 </html>

@@ -4,3 +4,4 @@ __pycache__/
 *.pyc
 site/
 .DS_Store
+config/github_token.js

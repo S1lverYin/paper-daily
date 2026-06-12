@@ -1,5 +1,6 @@
 const THEME_STORAGE_KEY = "paper-daily-theme";
 const LANG_STORAGE_KEY = "paper-daily-lang";
+const LIKES_FALLBACK_KEY = "paper-daily-likes-fallback";
 const THEMES = new Set(["dark", "light", "eye"]);
 
 const state = {
@@ -16,6 +17,8 @@ const state = {
     collection: "daily",
     view: "daily",
   },
+  likes: {},
+  likesSha: null,
 };
 
 const nodes = {
@@ -44,29 +47,17 @@ function activeData() {
 }
 
 function storedTheme() {
-  try {
-    const theme = localStorage.getItem(THEME_STORAGE_KEY);
-    return THEMES.has(theme) ? theme : "dark";
-  } catch {
-    return "dark";
-  }
+  try { const theme = localStorage.getItem(THEME_STORAGE_KEY); return THEMES.has(theme) ? theme : "dark"; } catch { return "dark"; }
 }
 
 function storedLang() {
-  try {
-    const lang = localStorage.getItem(LANG_STORAGE_KEY);
-    return lang === "en" ? "en" : "zh";
-  } catch {
-    return "zh";
-  }
+  try { const lang = localStorage.getItem(LANG_STORAGE_KEY); return lang === "en" ? "en" : "zh"; } catch { return "zh"; }
 }
 
 function applyLang(lang) {
   state.lang = lang === "en" ? "en" : "zh";
   nodes.langToggle.textContent = state.lang === "en" ? "EN" : "中";
-  try {
-    localStorage.setItem(LANG_STORAGE_KEY, state.lang);
-  } catch {}
+  try { localStorage.setItem(LANG_STORAGE_KEY, state.lang); } catch {}
   render();
 }
 
@@ -78,11 +69,7 @@ function applyTheme(theme) {
     option.classList.toggle("active", active);
     option.setAttribute("aria-checked", String(active));
   }
-  try {
-    localStorage.setItem(THEME_STORAGE_KEY, state.theme);
-  } catch {
-    // localStorage may be blocked in privacy-focused browser modes.
-  }
+  try { localStorage.setItem(THEME_STORAGE_KEY, state.theme); } catch {}
 }
 
 function parseDate(value) {
@@ -107,10 +94,6 @@ function dateKey(value) {
 }
 
 function collectionTime(paper) {
-  // Prioritise the paper's real publication date so that daily /
-  // weekly / monthly views show the actual submission rhythm.
-  // last_seen_at / first_seen_at are collection timestamps (all
-  // the same for a single run) — use them only as fallback.
   return paper.published || paper.last_seen_at || paper.first_seen_at || paper.updated || "";
 }
 
@@ -131,8 +114,6 @@ function endOfWeek(date) {
   return end;
 }
 
-// window sizes for "this week" / "this month" — papers published
-// within the last N days from the selected date.
 const WEEK_WINDOW_DAYS = 7;
 const MONTH_WINDOW_DAYS = 30;
 const HIGHLIGHTS_WINDOW_DAYS = 7;
@@ -144,7 +125,6 @@ function startOfWindow(date, days) {
 }
 
 function endOfWindow(date) {
-  // "now" is always start of the next day after the selected date
   const d = startOfDay(date);
   d.setDate(d.getDate() + 1);
   return d;
@@ -163,10 +143,14 @@ function inRange(value, start, end) {
   return Boolean(date && date >= start && date < end);
 }
 
+function paperId(paper) {
+  return paper.id || paper.paper_url || paper.title || "";
+}
 
-// When showing "all" topics, display the best_match score (includes
-// bridge bonus for ranking).  When a specific topic is selected, use
-// base_score so the list is sorted by raw relevance to that topic.
+function isLiked(paper) {
+  return Boolean(state.likes[paperId(paper)]);
+}
+
 function scoreOf(paper) {
   if (state.filters.topic !== "all") {
     const label = topicLabel(paper);
@@ -182,9 +166,6 @@ function levelOf(paper) {
   return String(paper.best_match?.level || "low").toLowerCase();
 }
 
-// Topic tag eligibility:
-//   strong: base_score >= 0.10 → always in
-//   weak:   base_score >= 0.06 AND has keyword hits → in
 const TOPIC_STRONG = {
   motivic_k_theory: 0.08,
   algebraic_geometry: 0.08,
@@ -193,10 +174,6 @@ const TOPIC_STRONG = {
 };
 const MIN_TOPIC_BASE_WEAK = 0.04;
 
-// Return the best matching label for the currently selected topic filter.
-// When "all" is selected, use best_match (overall winner).  When a specific
-// topic is chosen, look up its entry in top_labels to get the per-topic
-// base_score and level, which are not inflated by cross-domain bridge bonus.
 function topicLabel(paper) {
   const filterTopic = state.filters.topic;
   if (filterTopic === "all") return paper.best_match || null;
@@ -234,7 +211,6 @@ function textIncludes(paper, query) {
 }
 
 function enField(paper, field) {
-  // Generate English summary from raw paper metadata
   const enSummary = paper.summary || "";
   const firstSent = enSummary.split(/[.!?]\s+/)[0] || "";
   const fields = {
@@ -249,7 +225,6 @@ function enField(paper, field) {
 }
 
 function enRelReason(paper, best) {
-  // Pair English abstract with the topic classification reason
   const topicName = best.topic_name || "Uncategorized";
   const reason = best.reason || "Matched by keyword / category overlap.";
   return `Matched to "${topicName}": ${reason}. See abstract for full details.`;
@@ -261,7 +236,6 @@ function matchesBaseFilters(paper) {
   if (state.filters.topic !== "all") {
     const label = topicLabel(paper);
     if (!label) return false;
-    // Must have per-topic strong score, OR weak + keyword hits
     const base = label.base_score ?? label.score ?? 0;
     const hasHits = (label.keyword_hits || []).length > 0;
     const tid = label.topic_id || "";
@@ -284,14 +258,18 @@ function matchesBaseFilters(paper) {
 
 function matchesView(paper) {
   if (state.filters.view === "all") return true;
+  // liked view: show all liked papers in the current collection
+  if (state.filters.view === "liked") return isLiked(paper);
+
   const pubDate = parseDate(paper.published || paper.last_seen_at || "");
-  if (!pubDate) return false;
+  if (!pubDate) return isLiked(paper);
 
   const today = new Date();
   const windowEnd = endOfWindow(today);
   if (state.filters.view === "daily") return dateKey(paper.published || paper.last_seen_at) === dateKey(today.toISOString());
   if (state.filters.view === "week") return pubDate >= startOfWindow(today, WEEK_WINDOW_DAYS) && pubDate < windowEnd;
-  if (state.filters.view === "month") return pubDate >= startOfMonth(today) && pubDate < endOfMonth(today);
+  // month view includes liked papers regardless of date
+  if (state.filters.view === "month") return (pubDate >= startOfMonth(today) && pubDate < endOfMonth(today)) || isLiked(paper);
   if (state.filters.view === "highlights") {
     return pubDate >= startOfWindow(today, HIGHLIGHTS_WINDOW_DAYS) && pubDate < windowEnd && topicScore(paper) >= 0.42;
   }
@@ -301,7 +279,15 @@ function matchesView(paper) {
 function filteredPapers() {
   return (activeData().papers || [])
     .filter((paper) => matchesBaseFilters(paper) && matchesView(paper))
-    .sort((a, b) => topicScore(b) - topicScore(a) || String(b.published || "").localeCompare(String(a.published || "")));
+    .sort((a, b) => {
+      // liked papers float to top in month view
+      if (state.filters.view === "month") {
+        const aLiked = isLiked(a), bLiked = isLiked(b);
+        if (aLiked && !bLiked) return -1;
+        if (!aLiked && bLiked) return 1;
+      }
+      return topicScore(b) - topicScore(a) || String(b.published || "").localeCompare(String(a.published || ""));
+    });
 }
 
 function setText(parent, selector, text) {
@@ -323,18 +309,15 @@ function renderPaper(paper) {
   const summary = paper.chinese_summary || {};
   const badge = node.querySelector(".match-badge");
 
-  // When a topic filter is active, show per-topic score/level;
-  // otherwise show the overall best_match.
   const showScore = topicScore(paper);
   const showLevel = topicLevel(paper);
 
   badge.textContent = `${showLevel} ${showScore.toFixed(2)}`;
   badge.classList.add(showLevel);
 
-  // Multi-topic labels — use base_score so labels aren't bridge-inflated
+  // Multi-topic labels
   const topLabels = paper.top_labels || [];
   const allLabels = topLabels.slice(0, 4);
-  // If best_match isn't already in top_labels (rare), prepend it
   if (!allLabels.some(l => l.topic_id === best.topic_id)) {
     allLabels.unshift({
       topic_id: best.topic_id,
@@ -361,7 +344,6 @@ function renderPaper(paper) {
   setText(node, ".match-reason", `${best.topic_name || "未分类"}：${best.reason || ""}`);
 
   const tags = node.querySelector(".paper-tags");
-  // Show multi-topic labels as colored tags
   const labelColors = ["#2dd4bf", "#fbbf24", "#fb7185", "#a78bfa"];
   for (let i = 0; i < allLabels.length; i++) {
     const lbl = allLabels[i];
@@ -376,6 +358,18 @@ function renderPaper(paper) {
     tag.className = "tag";
     tag.textContent = category;
     tags.appendChild(tag);
+  }
+
+  // Like button
+  const likeBtn = node.querySelector(".like-btn");
+  if (likeBtn) {
+    const pid = paperId(paper);
+    const liked = isLiked(paper);
+    likeBtn.textContent = liked ? "✓" : "○";
+    likeBtn.classList.toggle("liked", liked);
+    likeBtn.addEventListener("click", () => {
+      toggleLike(pid);
+    });
   }
 
   const absLink = node.querySelector(".abs-link");
@@ -399,17 +393,19 @@ function viewLabels() {
   weekEndDate.setDate(weekEndDate.getDate() - 1);
   const weekEnd = formatDate(weekEndDate.toISOString());
   const monthLabel = `${today.getFullYear()} 年 ${String(today.getMonth() + 1).padStart(2, "0")} 月`;
+  const likedCount = Object.keys(state.likes).length;
   return {
     all: [state.filters.collection === "conference" ? "顶会精品" : "全部论文", "全部已收录论文"],
     daily: ["当日论文", dayLabel],
     week: ["本周论文", `${weekStart} - ${weekEnd}`],
     month: ["月度论文", monthLabel],
     highlights: ["本周精选", `${weekStart} - ${weekEnd}`],
+    liked: [`已收藏 (${likedCount})`, `${likedCount} 篇收藏`],
   };
 }
 
 function updateHeadings(papers) {
-  const labels = viewLabels()[state.filters.view];
+  const labels = viewLabels()[state.filters.view] || viewLabels().all;
   nodes.viewTitle.textContent = labels[0];
   nodes.listTitle.textContent = labels[0];
   nodes.scopeLabel.textContent = labels[1];
@@ -424,7 +420,11 @@ function render() {
   if (!papers.length) {
     const empty = document.createElement("div");
     empty.className = "empty-state";
-    empty.textContent = "当前筛选条件下没有论文。";
+    if (state.filters.view === "liked") {
+      empty.textContent = "还没有收藏的论文";
+    } else {
+      empty.textContent = "当前筛选条件下没有论文。";
+    }
     nodes.paperList.appendChild(empty);
     return;
   }
@@ -501,6 +501,9 @@ function bindEvents() {
     tab.addEventListener("click", () => {
       state.filters.view = tab.dataset.view;
       for (const item of nodes.tabs) item.classList.toggle("active", item === tab);
+      if (tab.dataset.view === "liked" && !Object.keys(state.likes).length) {
+        // empty, still re-render to show empty state
+      }
       render();
     });
   }
@@ -518,21 +521,75 @@ async function loadOptionalData(path) {
   return response.json();
 }
 
+function loadLikesFromStorage() {
+  try {
+    const raw = localStorage.getItem(LIKES_FALLBACK_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch { return {}; }
+}
+
+function saveLikesToStorage(likes) {
+  try { localStorage.setItem(LIKES_FALLBACK_KEY, JSON.stringify(likes)); } catch {}
+}
+
+async function loadLikes() {
+  try {
+    if (typeof getLikesFromRepo === 'function') {
+      const result = await getLikesFromRepo();
+      state.likes = result.likes || {};
+      state.likesSha = result.sha;
+    } else {
+      state.likes = loadLikesFromStorage();
+    }
+  } catch {
+    state.likes = loadLikesFromStorage();
+  }
+}
+
+async function syncLikesToRepo() {
+  try {
+    if (typeof putLikesToRepo === 'function') {
+      const newSha = await putLikesToRepo(state.likes, state.likesSha);
+      state.likesSha = newSha;
+    }
+  } catch (err) {
+    console.warn('GitHub sync failed, falling back to localStorage:', err);
+    saveLikesToStorage(state.likes);
+  }
+}
+
+async function toggleLike(paperId) {
+  if (!paperId) return;
+  const now = new Date().toISOString();
+  if (state.likes[paperId]) {
+    delete state.likes[paperId];
+  } else {
+    state.likes[paperId] = { liked_at: now };
+  }
+  await syncLikesToRepo();
+  // Re-render to update the button state and liked count
+  updateUpdatedAt();
+  render();
+}
+
 function updateUpdatedAt(message = "") {
+  const likedCount = Object.keys(state.likes).length;
   if (message) {
-    nodes.updatedAt.textContent = message;
+    nodes.updatedAt.textContent = `${likedCount ? `♥ ${likedCount} 收藏 | ` : ""}${message}`;
     return;
   }
   const data = activeData();
   const stats = data.stats || {};
   const mode = stats.collection_mode === "incremental" ? "增量" : "初始化";
   const kind = state.filters.collection === "conference" ? "顶会精品" : "每日新论文";
-  nodes.updatedAt.textContent = `${kind} · 更新于 ${formatDate(data.generated_at_iso)} · ${mode} · ${stats.llm_enabled ? "LLM" : "基础"}`;
+  const likePart = likedCount ? `♥ ${likedCount} 收藏 · ` : "";
+  nodes.updatedAt.textContent = `${likePart}${kind} · 更新于 ${formatDate(data.generated_at_iso)} · ${mode} · ${stats.llm_enabled ? "LLM" : "基础"}`;
 }
 
 async function main() {
   applyTheme(storedTheme());
   applyLang(storedLang());
+  await loadLikes();
   bindEvents();
   try {
     state.datasets.daily = await loadData();
@@ -557,6 +614,19 @@ async function main() {
   hydrateTopicFilter();
   updateStats();
   render();
+
+  // Periodic auto-sync of likes (in case of concurrent edits)
+  setInterval(async () => {
+    try {
+      if (typeof getLikesFromRepo === 'function') {
+        const result = await getLikesFromRepo();
+        state.likes = result.likes || {};
+        state.likesSha = result.sha;
+        updateUpdatedAt();
+        render();
+      }
+    } catch {}
+  }, 120000);
 }
 
 main();

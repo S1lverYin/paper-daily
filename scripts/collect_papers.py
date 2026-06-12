@@ -34,16 +34,90 @@ DEFAULT_CONFIG = Path("config/interests.json")
 DEFAULT_OUTPUT = Path("web/data/papers.json")
 DEFAULT_CONFERENCE_OUTPUT = Path("web/data/conference_papers.json")
 RETAINED_MATCH_LEVELS = {"high", "medium"}
-DEFAULT_MAX_NEW_PAPERS = 50
-DEFAULT_MAX_STORED_PAPERS = 200
+DEFAULT_MAX_NEW_PAPERS = 30
+DEFAULT_MAX_STORED_PAPERS = 150
 DEFAULT_MAX_NEW_CONFERENCE_PAPERS = 50
 DEFAULT_MAX_STORED_CONFERENCE_PAPERS = 300
 DEFAULT_MAX_DATA_BYTES = 8 * 1024 * 1024
-DEFAULT_RECENT_HISTORY_DAYS = 45
+DEFAULT_RECENT_HISTORY_DAYS = 90
 TRANSIENT_HTTP_CODES = {429, 500, 502, 503, 504}
 DBLP_TRANSIENT_HTTP_CODES = {429, 502, 503, 504}
 DEFAULT_SOURCE_TYPES = ["arxiv", "openalex", "crossref"]
 FEED_NAMESPACES = {"atom": "http://www.w3.org/2005/Atom"}
+LIKES_PATH = Path("web/data/likes.json")
+PREFERENCES_PATH = Path("web/data/preferences.json")
+
+
+def load_likes() -> set[str]:
+    """Load liked paper ids from the likes file."""
+    try:
+        likes_data = json.loads(LIKES_PATH.read_text())
+        return set(likes_data.get("likes", {}).keys())
+    except (FileNotFoundError, json.JSONDecodeError, OSError):
+        return set()
+
+
+def save_preferences(prefs: dict[str, Any]) -> None:
+    """Write learned preference data to a JSON file."""
+    try:
+        PREFERENCES_PATH.write_text(json.dumps(prefs, indent=2, ensure_ascii=False))
+        print(f"Saved preferences to {PREFERENCES_PATH}", flush=True)
+    except OSError as exc:
+        print(f"Warning: could not save preferences: {exc}", file=sys.stderr, flush=True)
+
+
+def learn_preferences(liked_papers: list[dict[str, Any]], all_papers: list[dict[str, Any]]) -> dict[str, Any]:
+    """Learn user preferences from liked papers: boosted keywords, categories, authors."""
+    from collections import Counter
+    stop_words = {
+        "the", "a", "an", "and", "or", "of", "in", "on", "at", "to", "for",
+        "with", "by", "is", "are", "was", "were", "be", "been", "being",
+        "have", "has", "had", "do", "does", "did", "will", "would", "could",
+        "should", "may", "might", "shall", "can", "need", "dare", "ought",
+        "used", "this", "that", "these", "those", "i", "we", "you", "they",
+        "he", "she", "it", "from", "as", "into", "through", "during", "before",
+        "after", "above", "below", "between", "such", "which", "what", "who",
+        "whom", "whose", "not", "no", "nor", "so", "but", "if", "then", "else",
+        "than", "also", "very", "just", "about", "each", "all", "both", "some",
+        "any", "more", "most", "other", "many", "much", "new", "one", "two",
+    }
+
+    title_words = Counter()
+    categories = Counter()
+    authors = Counter()
+
+    for paper in liked_papers:
+        title = str(paper.get("title", "")).lower()
+        summary = str(paper.get("summary", "")).lower()
+        text = title + " " + summary.split(". ")[0]  # title + first sentence
+        words = text.split()
+        for w in words:
+            w_clean = w.strip(" ,.;:!?\"'()[]{}-").strip("$\\")
+            if len(w_clean) < 4 or w_clean in stop_words:
+                continue
+            title_words[w_clean] += 1
+
+        for cat in paper.get("categories", []):
+            cat_str = str(cat).strip()
+            if cat_str:
+                categories[cat_str] += 1
+
+        for author in paper.get("authors", []):
+            name = str(author).strip()
+            if name:
+                authors[name] += 1
+
+    # Only keep keywords seen in >= 3 liked papers
+    keyword_boosts = {word: count for word, count in title_words.items() if count >= 3}
+    category_boosts = {cat: count for cat, count in categories.items() if count >= 2}
+    author_boosts = {name: count for name, count in authors.items() if count >= 2}
+
+    return {
+        "keyword_boosts": keyword_boosts,
+        "category_boosts": category_boosts,
+        "author_boosts": author_boosts,
+        "liked_count": len(liked_papers),
+    }
 
 
 @dataclass(frozen=True)
@@ -2161,6 +2235,7 @@ def merge_with_retained_papers(
     now: dt.datetime,
     recent_history_days: int,
     active_conference_years_by_source: dict[str, set[int]] | None = None,
+    liked_set: set[str] | None = None,
 ) -> tuple[list[dict[str, Any]], dict[str, int]]:
     existing_papers = existing_payload.get("papers", []) if isinstance(existing_payload, dict) else []
     existing_generated_at = str(existing_payload.get("generated_at_iso") or existing_payload.get("generated_at") or now.isoformat())
@@ -2186,9 +2261,10 @@ def merge_with_retained_papers(
         if paper.get("source_type") == "conference" and active_conference_years_by_source is not None and not is_active_conference:
             dropped_low += 1
             continue
-        if best_match_level(paper) in RETAINED_MATCH_LEVELS or is_recent or is_active_conference:
+        liked_badge = bool(liked_set and key in liked_set)
+        if liked_badge or best_match_level(paper) in RETAINED_MATCH_LEVELS or is_recent or is_active_conference:
             retained_by_key[key] = paper
-            if is_recent and best_match_level(paper) not in RETAINED_MATCH_LEVELS:
+            if not liked_badge and is_recent and best_match_level(paper) not in RETAINED_MATCH_LEVELS:
                 retained_recent += 1
         else:
             dropped_low += 1
@@ -2227,7 +2303,9 @@ def merge_with_retained_papers(
     }
 
 
-def deletion_sort_key(paper: dict[str, Any]) -> tuple[int, dt.datetime]:
+def deletion_sort_key(paper: dict[str, Any], liked_set: set[str] | None = None) -> tuple[int, dt.datetime]:
+    if liked_set and paper_key(paper) in liked_set:
+        return 999, dt.datetime.max  # never delete liked papers
     level = best_match_level(paper)
     if paper.get("source_type") == "conference":
         relevance_priority = 1
@@ -2240,6 +2318,7 @@ def trim_papers_for_storage(
     payload: dict[str, Any],
     max_stored_papers: int,
     max_data_bytes: int,
+    liked_set: set[str] | None = None,
 ) -> tuple[list[dict[str, Any]], dict[str, Any]]:
     papers = list(payload.get("papers", []))
     removed_by_level = {"high": 0, "medium": 0, "low": 0, "unknown": 0}
@@ -2254,7 +2333,7 @@ def trim_papers_for_storage(
         (max_stored_papers > 0 and len(papers) > max_stored_papers)
         or (max_data_bytes > 0 and data_bytes > max_data_bytes)
     ):
-        remove_index = min(range(len(papers)), key=lambda index: deletion_sort_key(papers[index]))
+        remove_index = min(range(len(papers)), key=lambda index: deletion_sort_key(papers[index], liked_set))
         removed = papers.pop(remove_index)
         level = best_match_level(removed)
         removed_by_level[level if level in removed_by_level else "unknown"] += 1
@@ -2285,6 +2364,7 @@ def collect(
     recent_history_days: int,
     clear_cache: bool,
 ) -> dict[str, Any]:
+    liked_set = load_likes()
     default_config = load_json(config_path)
     config = load_issue_config(default_config)
     topics = parse_topics(config)
@@ -2569,7 +2649,7 @@ def collect(
     daily_recent_papers = [paper for paper in recent_papers if paper.get("source_type") != "conference"]
     conference_recent_papers = [paper for paper in recent_papers if paper.get("source_type") == "conference"]
     daily_merged_papers, daily_retention_stats = merge_with_retained_papers(
-        daily_recent_papers, existing_payload, now, recent_history_days
+        daily_recent_papers, existing_payload, now, recent_history_days, liked_set=liked_set
     )
     conference_merged_papers, conference_retention_stats = merge_with_retained_papers(
         conference_recent_papers,
@@ -2577,6 +2657,7 @@ def collect(
         now,
         recent_history_days,
         active_conference_years_by_source,
+        liked_set=liked_set,
     )
     daily_merged_papers.sort(key=lambda p: (p["best_match"]["score"], paper_activity_datetime(p)), reverse=True)
     conference_merged_papers.sort(key=lambda p: (p["best_match"]["score"], paper_activity_datetime(p)), reverse=True)
@@ -2631,7 +2712,7 @@ def collect(
             **daily_retention_stats,
         },
     }
-    trimmed_papers, storage_stats = trim_papers_for_storage(payload, max_stored_papers, max_data_bytes)
+    trimmed_papers, storage_stats = trim_papers_for_storage(payload, max_stored_papers, max_data_bytes, liked_set)
     trimmed_papers.sort(key=lambda p: (p["best_match"]["score"], p.get("published", "")), reverse=True)
     payload["papers"] = trimmed_papers
     payload["stats"].update(storage_stats)
@@ -2657,6 +2738,7 @@ def collect(
         conference_payload,
         max_stored_conference_papers,
         max_data_bytes,
+        liked_set,
     )
     conference_trimmed_papers.sort(key=lambda p: (p["best_match"]["score"], p.get("published", "")), reverse=True)
     conference_payload["papers"] = conference_trimmed_papers
@@ -2664,6 +2746,17 @@ def collect(
     conference_payload["stats"]["paper_count"] = len(conference_trimmed_papers)
     conference_payload["stats"]["data_bytes"] = json_size_bytes(conference_payload)
     write_json(conference_output_path, conference_payload)
+
+    # Learn preferences from liked papers
+    if liked_set:
+        all_papers = trimmed_papers + conference_trimmed_papers
+        liked_papers_list = [p for p in all_papers if paper_key(p) in liked_set]
+        if len(liked_papers_list) >= 3:
+            prefs = learn_preferences(liked_papers_list, all_papers)
+            save_preferences(prefs)
+        else:
+            print(f"Not enough liked papers for preference learning ({len(liked_papers_list)} < 3)", flush=True)
+
     return payload
 
 
