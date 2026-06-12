@@ -2,10 +2,25 @@
   "sources": [
     { "type": "arxiv", "name": "arXiv" }
   ],
-  "conference_sources": { "enabled": false },
   "arxiv_categories_whitelist": [
     "math.AG", "math.AT", "math.KT", "math.NT", "math.CT"
   ],
+  "negative_terms": {
+    "machine learning": 0.25,
+    "neural network": 0.25,
+    "large language model": 0.25,
+    "computer vision": 0.30,
+    "data mining": 0.30,
+    "statistics": 0.30,
+    "persistent homology": 0.30,
+    "topological data analysis": 0.30,
+    "quantum computing": 0.45,
+    "condensed matter": 0.45,
+    "d-brane": 0.45,
+    "string theory": 0.45,
+    "operator algebra": 0.55,
+    "c*-algebra": 0.55
+  },
   "topics": [
     {
       "id": "motivic_k_theory",

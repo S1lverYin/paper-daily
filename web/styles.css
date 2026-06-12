@@ -343,7 +343,7 @@ a {
 
 .toolbar {
   display: grid;
-  grid-template-columns: auto auto minmax(0, 1fr);
+  grid-template-columns: auto minmax(0, 1fr);
   gap: 14px;
   align-items: end;
   border: 1px solid var(--line);
@@ -353,14 +353,12 @@ a {
   padding: 14px;
 }
 
-.collection-tabs,
 .tabs {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
 }
 
-.collection-tab,
 .tab,
 .paper-link {
   min-height: 38px;
@@ -375,15 +373,10 @@ a {
   cursor: pointer;
 }
 
-.collection-tab {
-  padding: 8px 13px;
-}
-
 .tab {
   padding: 8px 13px;
 }
 
-.collection-tab.active,
 .tab.active {
   border-color: rgba(45, 212, 191, 0.62);
   background: rgba(45, 212, 191, 0.16);
@@ -392,7 +385,7 @@ a {
 
 .filters {
   display: grid;
-  grid-template-columns: minmax(130px, 0.7fr) minmax(160px, 1fr) minmax(120px, 0.6fr) minmax(220px, 1.4fr);
+  grid-template-columns: minmax(130px, 0.7fr) minmax(120px, 0.6fr) minmax(220px, 1.4fr);
   gap: 10px;
 }
 
@@ -424,7 +417,6 @@ input:focus,
 select:focus,
 .icon-link:focus,
 .theme-option:focus,
-.collection-tab:focus,
 .tab:focus,
 .paper-link:focus {
   outline: 2px solid rgba(45, 212, 191, 0.34);
@@ -621,7 +613,6 @@ select:focus,
 
 .paper-link:hover,
 .icon-link:hover,
-.collection-tab:hover,
 .tab:hover {
   border-color: var(--teal);
   color: var(--teal);

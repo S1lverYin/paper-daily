@@ -1,4 +1,4 @@
-name: Daily Papers
+name: Paper Daily
 
 on:
   schedule:
@@ -43,8 +43,21 @@ jobs:
       - name: Collect papers
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
-          LLM_MODEL: deepseek-v4-flash
-        run: python3 scripts/collect_papers.py --days ${{ env.LOOKBACK_DAYS }} --max-per-topic 25 --max-summaries 40 --max-new-papers 50 --max-stored-papers 200
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_BASE_URL: ${{ vars.LLM_BASE_URL }}
+          LLM_MODEL: ${{ vars.LLM_MODEL }}
+          MAX_NEW_PAPERS: ${{ vars.MAX_NEW_PAPERS || '30' }}
+          MAX_STORED_PAPERS: ${{ vars.MAX_STORED_PAPERS || '150' }}
+          MAX_SUMMARIES: ${{ vars.MAX_SUMMARIES || '20' }}
+        run: >-
+          python3 scripts/collect_papers.py
+          --days "${{ env.LOOKBACK_DAYS }}"
+          --max-per-topic 25
+          --max-summaries "${MAX_SUMMARIES}"
+          --max-new-papers "${MAX_NEW_PAPERS}"
+          --max-stored-papers "${MAX_STORED_PAPERS}"
+          --incremental-since-last-run
 
       - name: Commit and push
         run: |
@@ -61,11 +74,6 @@ jobs:
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
-
-      - name: Commit and push likes
-        run: |
-          git add web/data/likes.json web/data/preferences.json
-          git diff --staged --quiet || (git commit -m "data: update likes/preferences $(date +%Y-%m-%d)" && git push)
 
       - name: PushPlus notification
         env:

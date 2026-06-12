@@ -13,11 +13,9 @@ const state = {
     query: "",
     topic: "all",
     level: "all",
-    collection: "daily",
     view: "daily",
   },
   likes: {},
-  likesSha: null,
 };
 
 const nodes = {
@@ -36,7 +34,6 @@ const nodes = {
   searchInput: document.querySelector("#searchInput"),
   langToggle: document.querySelector("#langToggle"),
   themeOptions: document.querySelectorAll("[data-theme-option]"),
-  collectionTabs: document.querySelectorAll("[data-collection]"),
   tabs: document.querySelectorAll(".tab"),
   template: document.querySelector("#paperTemplate"),
 };
@@ -93,33 +90,19 @@ function dateKey(value) {
 }
 
 function collectionTime(paper) {
-  return paper.published || paper.last_seen_at || paper.first_seen_at || paper.updated || "";
+  return paper.last_seen_at || paper.first_seen_at || paper.updated || paper.published || "";
 }
 
 function startOfDay(date) {
   return new Date(date.getFullYear(), date.getMonth(), date.getDate());
 }
 
-function startOfWeek(date) {
-  const day = startOfDay(date);
-  const offset = (day.getDay() + 6) % 7;
-  day.setDate(day.getDate() - offset);
-  return day;
-}
-
-function endOfWeek(date) {
-  const end = startOfWeek(date);
-  end.setDate(end.getDate() + 7);
-  return end;
-}
-
 const WEEK_WINDOW_DAYS = 7;
-const MONTH_WINDOW_DAYS = 30;
 const HIGHLIGHTS_WINDOW_DAYS = 7;
 
 function startOfWindow(date, days) {
   const d = startOfDay(date);
-  d.setDate(d.getDate() - days);
+  d.setDate(d.getDate() - Math.max(0, days - 1));
   return d;
 }
 
@@ -150,28 +133,12 @@ function isLiked(paper) {
   return Boolean(state.likes[paperId(paper)]);
 }
 
-function scoreOf(paper) {
-  if (state.filters.topic !== "all") {
-    const label = topicLabel(paper);
-    return label ? (label.base_score ?? label.score ?? 0) : Number(paper.best_match?.score || 0);
-  }
-  return Number(paper.best_match?.score || 0);
-}
-
 function levelOf(paper) {
   if (state.filters.topic !== "all") {
     return topicLevel(paper);
   }
   return String(paper.best_match?.level || "low").toLowerCase();
 }
-
-const TOPIC_STRONG = {
-  motivic_k_theory: 0.08,
-  algebraic_geometry: 0.08,
-  arithmetic_geometry: 0.08,
-  homotopy_theory: 0.08,
-};
-const MIN_TOPIC_BASE_WEAK = 0.04;
 
 function topicLabel(paper) {
   const filterTopic = state.filters.topic;
@@ -235,13 +202,6 @@ function matchesBaseFilters(paper) {
   if (state.filters.topic !== "all") {
     const label = topicLabel(paper);
     if (!label) return false;
-    const base = label.base_score ?? label.score ?? 0;
-    const hasHits = (label.keyword_hits || []).length > 0;
-    const tid = label.topic_id || "";
-    const strong = TOPIC_STRONG[tid] ?? 0.22;
-    if (base >= strong) { /* passes */ }
-    else if (base >= MIN_TOPIC_BASE_WEAK && hasHits) { /* passes */ }
-    else return false;
   }
 
   if (state.filters.level !== "all") {
@@ -387,10 +347,8 @@ function renderPaper(paper) {
 function viewLabels() {
   const today = new Date();
   const dayLabel = formatDate(today.toISOString());
-  const weekStart = formatDate(startOfWeek(today).toISOString());
-  const weekEndDate = endOfWeek(today);
-  weekEndDate.setDate(weekEndDate.getDate() - 1);
-  const weekEnd = formatDate(weekEndDate.toISOString());
+  const weekStart = formatDate(startOfWindow(today, WEEK_WINDOW_DAYS).toISOString());
+  const weekEnd = dayLabel;
   const monthLabel = `${today.getFullYear()} 年 ${String(today.getMonth() + 1).padStart(2, "0")} 月`;
   const likedCount = Object.keys(state.likes).length;
   return {
@@ -501,12 +459,6 @@ async function loadData() {
   return response.json();
 }
 
-async function loadOptionalData(path) {
-  const response = await fetch(path, { cache: "no-store" });
-  if (!response.ok) return { generated_at_iso: new Date().toISOString(), topics: [], papers: [], stats: {} };
-  return response.json();
-}
-
 function loadLikesFromStorage() {
   try {
     const raw = localStorage.getItem(LIKES_FALLBACK_KEY);
@@ -519,32 +471,14 @@ function saveLikesToStorage(likes) {
 }
 
 async function loadLikes() {
-  try {
-    if (typeof getLikesFromRepo === 'function') {
-      const result = await getLikesFromRepo();
-      state.likes = result.likes || {};
-      state.likesSha = result.sha;
-    } else {
-      state.likes = loadLikesFromStorage();
-    }
-  } catch {
-    state.likes = loadLikesFromStorage();
-  }
+  state.likes = loadLikesFromStorage();
 }
 
-async function syncLikesToRepo() {
-  try {
-    if (typeof putLikesToRepo === 'function') {
-      const newSha = await putLikesToRepo(state.likes, state.likesSha);
-      state.likesSha = newSha;
-    }
-  } catch (err) {
-    console.warn('GitHub sync failed, falling back to localStorage:', err);
-    saveLikesToStorage(state.likes);
-  }
+function saveLikes() {
+  saveLikesToStorage(state.likes);
 }
 
-async function toggleLike(paperId) {
+function toggleLike(paperId) {
   if (!paperId) return;
   const now = new Date().toISOString();
   if (state.likes[paperId]) {
@@ -552,7 +486,7 @@ async function toggleLike(paperId) {
   } else {
     state.likes[paperId] = { liked_at: now };
   }
-  await syncLikesToRepo();
+  saveLikes();
   // Re-render to update the button state and liked count
   updateUpdatedAt();
   render();
@@ -592,19 +526,6 @@ async function main() {
   hydrateTopicFilter();
   updateStats();
   render();
-
-  // Periodic auto-sync of likes (in case of concurrent edits)
-  setInterval(async () => {
-    try {
-      if (typeof getLikesFromRepo === 'function') {
-        const result = await getLikesFromRepo();
-        state.likes = result.likes || {};
-        state.likesSha = result.sha;
-        updateUpdatedAt();
-        render();
-      }
-    } catch {}
-  }, 120000);
 }
 
 main();

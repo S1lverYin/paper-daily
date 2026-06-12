@@ -5,11 +5,10 @@ import argparse
 import concurrent.futures
 import copy
 import datetime as dt
-import difflib
 import email.utils
 import html
-import http.client
 import json
+import math
 import os
 import re
 import sys
@@ -21,10 +20,10 @@ import xml.etree.ElementTree as ET
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
+from collections import Counter
 
 
 ARXIV_API_URL = "https://export.arxiv.org/api/query"
-DBLP_API_URL = os.getenv("DBLP_API_URL", "http://dblp.org/search/publ/api")
 OPENALEX_WORKS_URL = "https://api.openalex.org/works"
 CROSSREF_WORKS_URL = "https://api.crossref.org/works"
 SEMANTIC_SCHOLAR_SEARCH_URL = "https://api.semanticscholar.org/graph/v1/paper/search"
@@ -38,82 +37,130 @@ DEFAULT_MAX_STORED_PAPERS = 150
 DEFAULT_MAX_DATA_BYTES = 8 * 1024 * 1024
 DEFAULT_RECENT_HISTORY_DAYS = 90
 TRANSIENT_HTTP_CODES = {429, 500, 502, 503, 504}
-DBLP_TRANSIENT_HTTP_CODES = {429, 502, 503, 504}
 DEFAULT_SOURCE_TYPES = ["arxiv", "openalex", "crossref"]
 FEED_NAMESPACES = {"atom": "http://www.w3.org/2005/Atom"}
 LIKES_PATH = Path("web/data/likes.json")
 PREFERENCES_PATH = Path("web/data/preferences.json")
 
 
-def load_likes() -> set[str]:
+def load_likes(path: Path = LIKES_PATH) -> set[str]:
     """Load liked paper ids from the likes file."""
     try:
-        likes_data = json.loads(LIKES_PATH.read_text())
+        likes_data = json.loads(path.read_text(encoding="utf-8"))
         return set(likes_data.get("likes", {}).keys())
     except (FileNotFoundError, json.JSONDecodeError, OSError):
         return set()
 
 
-def save_preferences(prefs: dict[str, Any]) -> None:
+def load_preferences(path: Path = PREFERENCES_PATH) -> dict[str, Any]:
+    """Load learned preferences, tolerating missing or malformed files."""
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except (FileNotFoundError, json.JSONDecodeError, OSError):
+        return {}
+    return data if isinstance(data, dict) else {}
+
+
+def save_preferences(prefs: dict[str, Any], path: Path = PREFERENCES_PATH) -> None:
     """Write learned preference data to a JSON file."""
     try:
-        PREFERENCES_PATH.write_text(json.dumps(prefs, indent=2, ensure_ascii=False))
-        print(f"Saved preferences to {PREFERENCES_PATH}", flush=True)
+        write_json(path, prefs)
+        print(f"Saved preferences to {path}", flush=True)
     except OSError as exc:
         print(f"Warning: could not save preferences: {exc}", file=sys.stderr, flush=True)
 
 
-def learn_preferences(liked_papers: list[dict[str, Any]], all_papers: list[dict[str, Any]]) -> dict[str, Any]:
-    """Learn user preferences from liked papers: boosted keywords, categories, authors."""
-    from collections import Counter
-    stop_words = {
-        "the", "a", "an", "and", "or", "of", "in", "on", "at", "to", "for",
-        "with", "by", "is", "are", "was", "were", "be", "been", "being",
-        "have", "has", "had", "do", "does", "did", "will", "would", "could",
-        "should", "may", "might", "shall", "can", "need", "dare", "ought",
-        "used", "this", "that", "these", "those", "i", "we", "you", "they",
-        "he", "she", "it", "from", "as", "into", "through", "during", "before",
-        "after", "above", "below", "between", "such", "which", "what", "who",
-        "whom", "whose", "not", "no", "nor", "so", "but", "if", "then", "else",
-        "than", "also", "very", "just", "about", "each", "all", "both", "some",
-        "any", "more", "most", "other", "many", "much", "new", "one", "two",
-    }
+_PREFERENCE_STOP_WORDS = {
+    "the", "a", "an", "and", "or", "of", "in", "on", "at", "to", "for",
+    "with", "by", "is", "are", "was", "were", "be", "been", "being",
+    "have", "has", "had", "do", "does", "did", "will", "would", "could",
+    "should", "may", "might", "can", "this", "that", "these", "those",
+    "from", "as", "into", "through", "during", "before", "after", "between",
+    "which", "what", "who", "not", "no", "than", "also", "about", "each",
+    "all", "both", "some", "any", "more", "most", "other", "many", "much",
+    "new", "one", "two", "paper", "study", "approach", "method", "results",
+}
 
-    title_words = Counter()
-    categories = Counter()
-    authors = Counter()
+
+def preference_terms(text: str) -> set[str]:
+    """Extract stable unigram and bigram signals from a paper."""
+    words = [
+        word
+        for word in re.findall(r"[a-z][a-z0-9-]{2,}", text.lower())
+        if len(word) >= 4 and word not in _PREFERENCE_STOP_WORDS
+    ]
+    terms = set(words)
+    terms.update(
+        f"{left} {right}"
+        for left, right in zip(words, words[1:])
+        if left != right
+    )
+    return terms
+
+
+def _preference_strength(
+    liked_frequency: int,
+    liked_count: int,
+    corpus_frequency: int,
+    corpus_count: int,
+) -> float:
+    liked_rate = liked_frequency / max(1, liked_count)
+    corpus_rate = corpus_frequency / max(1, corpus_count)
+    lift = liked_rate / max(0.05, corpus_rate)
+    return round(min(1.0, liked_rate * math.log2(1.0 + lift)), 3)
+
+
+def learn_preferences(liked_papers: list[dict[str, Any]], all_papers: list[dict[str, Any]]) -> dict[str, Any]:
+    """Learn preference signals using per-paper frequency and corpus lift."""
+    liked_count = len(liked_papers)
+    corpus = all_papers or liked_papers
+    corpus_count = len(corpus)
+    min_keyword_papers = max(2, math.ceil(liked_count * 0.4))
+
+    liked_term_counts: Counter[str] = Counter()
+    corpus_term_counts: Counter[str] = Counter()
+    liked_categories: Counter[str] = Counter()
+    corpus_categories: Counter[str] = Counter()
+    liked_authors: Counter[str] = Counter()
+
+    for paper in corpus:
+        text = f"{paper.get('title', '')} {str(paper.get('summary', ''))[:500]}"
+        corpus_term_counts.update(preference_terms(text))
+        corpus_categories.update({str(cat).strip() for cat in paper.get("categories", []) if str(cat).strip()})
 
     for paper in liked_papers:
-        title = str(paper.get("title", "")).lower()
-        summary = str(paper.get("summary", "")).lower()
-        text = title + " " + summary.split(". ")[0]  # title + first sentence
-        words = text.split()
-        for w in words:
-            w_clean = w.strip(" ,.;:!?\"'()[]{}-").strip("$\\")
-            if len(w_clean) < 4 or w_clean in stop_words:
-                continue
-            title_words[w_clean] += 1
+        text = f"{paper.get('title', '')} {str(paper.get('summary', ''))[:500]}"
+        liked_term_counts.update(preference_terms(text))
+        liked_categories.update({str(cat).strip() for cat in paper.get("categories", []) if str(cat).strip()})
+        liked_authors.update({str(author).strip() for author in paper.get("authors", []) if str(author).strip()})
 
-        for cat in paper.get("categories", []):
-            cat_str = str(cat).strip()
-            if cat_str:
-                categories[cat_str] += 1
+    ranked_terms = []
+    for term, count in liked_term_counts.items():
+        if count < min_keyword_papers:
+            continue
+        strength = _preference_strength(count, liked_count, corpus_term_counts[term], corpus_count)
+        if strength >= 0.25:
+            ranked_terms.append((term, strength))
+    ranked_terms.sort(key=lambda item: (item[1], len(item[0])), reverse=True)
 
-        for author in paper.get("authors", []):
-            name = str(author).strip()
-            if name:
-                authors[name] += 1
-
-    # Only keep keywords seen in >= 3 liked papers
-    keyword_boosts = {word: count for word, count in title_words.items() if count >= 3}
-    category_boosts = {cat: count for cat, count in categories.items() if count >= 2}
-    author_boosts = {name: count for name, count in authors.items() if count >= 2}
+    category_boosts = {
+        category: _preference_strength(count, liked_count, corpus_categories[category], corpus_count)
+        for category, count in liked_categories.items()
+        if count >= 2
+    }
+    author_boosts = {
+        author: round(min(1.0, count / max(2, liked_count)), 3)
+        for author, count in liked_authors.items()
+        if count >= 2
+    }
 
     return {
-        "keyword_boosts": keyword_boosts,
+        "version": 2,
+        "keyword_boosts": dict(ranked_terms[:40]),
         "category_boosts": category_boosts,
         "author_boosts": author_boosts,
-        "liked_count": len(liked_papers),
+        "liked_count": liked_count,
+        "learned_at": dt.datetime.now(dt.timezone.utc).isoformat(),
     }
 
 
@@ -134,16 +181,6 @@ class SourceConfig:
     enabled: bool = True
     headers_env: str = ""
     bearer_token_env: str = ""
-
-
-@dataclass(frozen=True)
-class ConferenceSource:
-    id: str
-    name: str
-    group: str
-    dblp_toc_patterns: list[str]
-    years: list[int]
-    enabled: bool = True
 
 
 def load_json(path: Path) -> dict[str, Any]:
@@ -212,6 +249,19 @@ def category_whitelist(config: dict[str, Any]) -> set[str] | None:
     return {str(v) for v in values}
 
 
+def parse_negative_terms(config: dict[str, Any]) -> dict[str, float]:
+    configured = config.get("negative_terms")
+    if not isinstance(configured, dict):
+        return {}
+    result = {}
+    for term, value in configured.items():
+        try:
+            result[str(term).lower()] = min(1.0, max(0.0, float(value)))
+        except (TypeError, ValueError):
+            continue
+    return result
+
+
 def parse_sources(config: dict[str, Any]) -> list[SourceConfig]:
     configured = config.get("sources")
     if not configured:
@@ -252,57 +302,11 @@ def merge_config(default_config: dict[str, Any], override_config: dict[str, Any]
         return default_config
 
     merged = copy.deepcopy(default_config)
+    if "topics" in override_config and "negative_terms" not in override_config:
+        merged["negative_terms"] = {}
     for key, value in override_config.items():
         merged[key] = value
     return merged
-
-
-def parse_years(value: Any) -> list[int]:
-    years = []
-    if not isinstance(value, list):
-        return years
-    for item in value:
-        try:
-            years.append(int(item))
-        except (TypeError, ValueError):
-            continue
-    return sorted(set(years), reverse=True)
-
-
-def default_conference_years(config: dict[str, Any], now: dt.datetime) -> list[int]:
-    configured = parse_years(config.get("years"))
-    if configured:
-        return configured
-    current_year = int(config.get("current_year") or now.year)
-    lookback_years = max(1, int(config.get("lookback_years", 2) or 2))
-    return [current_year - offset for offset in range(lookback_years)]
-
-
-def parse_conference_sources(config: dict[str, Any], now: dt.datetime) -> list[ConferenceSource]:
-    source_config = config.get("conference_sources", {})
-    if not isinstance(source_config, dict) or not source_config.get("enabled", False):
-        return []
-
-    default_years = default_conference_years(source_config, now)
-    sources = []
-    for item in source_config.get("venues", []):
-        if not isinstance(item, dict):
-            continue
-        patterns = item.get("dblp_toc_patterns") or item.get("dblp_toc_pattern") or []
-        if isinstance(patterns, str):
-            patterns = [patterns]
-        years = parse_years(item.get("years")) or default_years
-        source = ConferenceSource(
-            id=str(item.get("id") or slugify(str(item.get("name", "venue")))),
-            name=str(item.get("name") or item.get("id") or "Venue"),
-            group=str(item.get("group") or "conference"),
-            dblp_toc_patterns=[str(pattern) for pattern in patterns if str(pattern).strip()],
-            years=years,
-            enabled=bool(item.get("enabled", True)),
-        )
-        if source.enabled and source.dblp_toc_patterns:
-            sources.append(source)
-    return sources
 
 
 def github_request(url: str, token: str) -> Any:
@@ -399,11 +403,6 @@ def arxiv_category_query_for_topic(topic: Topic) -> str:
     if category_terms:
         return "(" + " OR ".join(category_terms) + ")"
     return arxiv_query_for_topic(topic)
-
-
-def topic_text_query(topic: Topic, limit: int = 6) -> str:
-    terms = topic.keywords[:limit] or [topic.name]
-    return " OR ".join(terms)
 
 
 def topic_plain_query(topic: Topic, limit: int = 6) -> str:
@@ -592,45 +591,6 @@ def fetch_arxiv(topic: Topic, max_results: int) -> list[dict[str, Any]]:
     return papers
 
 
-def title_match_key(title: str) -> str:
-    text = html.unescape(title).lower()
-    text = re.sub(r"\barxiv:\d{4}\.\d+(v\d+)?\b", " ", text)
-    text = re.sub(r"[^a-z0-9]+", " ", text)
-    return normalize_space(text)
-
-
-def titles_match(left: str, right: str) -> bool:
-    left_key = title_match_key(left)
-    right_key = title_match_key(right)
-    if not left_key or not right_key:
-        return False
-    if left_key == right_key:
-        return True
-    return difflib.SequenceMatcher(None, left_key, right_key).ratio() >= env_float("ARXIV_TITLE_MATCH_RATIO", 0.90)
-
-
-def arxiv_title_query(title: str) -> str:
-    safe_title = normalize_space(title).replace('"', " ")
-    if not safe_title:
-        return 'all:""'
-    # Exact title search first; arXiv still returns close matches when punctuation differs.
-    return f'ti:"{safe_title}"'
-
-
-def find_arxiv_by_title(title: str, max_results: int = 5) -> dict[str, Any] | None:
-    papers = fetch_arxiv_query(
-        arxiv_title_query(title),
-        max_results=max(1, max_results),
-        sort_by="relevance",
-        sort_order="descending",
-        label=f"title:{title[:80]}",
-    )
-    for candidate in papers:
-        if titles_match(title, str(candidate.get("title") or "")) and has_meaningful_summary(candidate):
-            return candidate
-    return None
-
-
 def semantic_scholar_paper_from_item(item: dict[str, Any]) -> dict[str, Any] | None:
     paper_id = str(item.get("paperId") or "")
     title = normalize_space(str(item.get("title") or ""))
@@ -656,25 +616,6 @@ def semantic_scholar_paper_from_item(item: dict[str, Any]) -> dict[str, Any] | N
         "pdf_url": pdf_url,
         "categories": categories[:8],
     }
-
-
-def find_semantic_scholar_by_title(title: str, max_results: int = 5) -> dict[str, Any] | None:
-    params = {
-        "query": title,
-        "limit": str(min(max(1, max_results), 100)),
-        "fields": "paperId,title,abstract,authors,year,publicationDate,url,openAccessPdf,venue,externalIds,fieldsOfStudy",
-    }
-    headers = {"User-Agent": "paper-daily-collector/1.0"}
-    api_key = os.getenv("SEMANTIC_SCHOLAR_API_KEY", "")
-    if api_key:
-        headers["x-api-key"] = api_key
-    url = f"{SEMANTIC_SCHOLAR_SEARCH_URL}?{urllib.parse.urlencode(params)}"
-    data = request_json(url, headers=headers, timeout=float(os.getenv("SEMANTIC_SCHOLAR_TIMEOUT_SECONDS", "60")))
-    for item in data.get("data") or []:
-        candidate = semantic_scholar_paper_from_item(item)
-        if candidate and titles_match(title, candidate["title"]) and has_meaningful_summary(candidate):
-            return candidate
-    return None
 
 
 def openalex_paper_from_work(work: dict[str, Any], source_name: str = "OpenAlex") -> dict[str, Any] | None:
@@ -713,23 +654,6 @@ def openalex_paper_from_work(work: dict[str, Any], source_name: str = "OpenAlex"
     }
 
 
-def find_openalex_by_title(title: str, max_results: int = 5) -> dict[str, Any] | None:
-    params = {
-        "search": title,
-        "per-page": str(min(max(1, max_results), 25)),
-    }
-    mailto = os.getenv("CONTACT_EMAIL") or os.getenv("OPENALEX_EMAIL")
-    if mailto:
-        params["mailto"] = mailto
-    url = f"{OPENALEX_WORKS_URL}?{urllib.parse.urlencode(params)}"
-    data = request_json(url, timeout=float(os.getenv("OPENALEX_TIMEOUT_SECONDS", "60")))
-    for work in data.get("results", []):
-        candidate = openalex_paper_from_work(work)
-        if candidate and titles_match(title, candidate["title"]) and has_meaningful_summary(candidate):
-            return candidate
-    return None
-
-
 def crossref_paper_from_item(item: dict[str, Any], source_name: str = "Crossref") -> dict[str, Any] | None:
     title = normalize_space(" ".join(str(part) for part in item.get("title", []) if part))
     doi = str(item.get("DOI") or "")
@@ -760,346 +684,6 @@ def crossref_paper_from_item(item: dict[str, Any], source_name: str = "Crossref"
     }
 
 
-def find_crossref_by_title(title: str, max_results: int = 5) -> dict[str, Any] | None:
-    params = {
-        "query.title": title,
-        "rows": str(min(max(1, max_results), 20)),
-        "sort": "score",
-        "order": "desc",
-    }
-    mailto = os.getenv("CONTACT_EMAIL") or os.getenv("CROSSREF_EMAIL")
-    if mailto:
-        params["mailto"] = mailto
-    headers = {"User-Agent": f"paper-daily-collector/1.0 (mailto:{mailto or 'unknown@example.com'})"}
-    url = f"{CROSSREF_WORKS_URL}?{urllib.parse.urlencode(params)}"
-    data = request_json(url, headers=headers, timeout=float(os.getenv("CROSSREF_TIMEOUT_SECONDS", "60")))
-    for item in (data.get("message") or {}).get("items", []):
-        candidate = crossref_paper_from_item(item)
-        if candidate and titles_match(title, candidate["title"]) and has_meaningful_summary(candidate):
-            return candidate
-    return None
-
-
-def find_conference_abstract_by_title(title: str, max_results: int = 5) -> dict[str, Any] | None:
-    finders = {
-        "arxiv": find_arxiv_by_title,
-        "semantic_scholar": find_semantic_scholar_by_title,
-        "semanticscholar": find_semantic_scholar_by_title,
-        "openalex": find_openalex_by_title,
-        "crossref": find_crossref_by_title,
-    }
-    for source_type in conference_abstract_sources():
-        finder = finders.get(source_type.strip().lower())
-        if not finder:
-            continue
-        try:
-            candidate = finder(title, max_results=max_results)
-        except Exception as exc:
-            print(f"Warning: {source_type} title enrichment failed for {title[:80]}: {exc}", file=sys.stderr)
-            continue
-        if candidate and has_meaningful_summary(candidate):
-            return candidate
-    return None
-
-
-def conference_abstract_sources() -> list[str]:
-    sources = env_list("CONFERENCE_ABSTRACT_SOURCES", ["arxiv", "openalex", "crossref"])
-    if env_flag("ENABLE_SEMANTIC_SCHOLAR", False):
-        return sources
-    return [
-        source
-        for source in sources
-        if source.strip().lower() not in {"semantic_scholar", "semanticscholar", "semantic-scholar"}
-    ]
-
-
-def enrich_conference_paper_from_arxiv(paper: dict[str, Any], arxiv_paper: dict[str, Any]) -> bool:
-    return enrich_conference_paper_from_candidate(paper, arxiv_paper, "arXiv")
-
-
-def enrich_conference_paper_from_candidate(
-    paper: dict[str, Any],
-    candidate: dict[str, Any],
-    abstract_source: str | None = None,
-) -> bool:
-    if not has_meaningful_summary(candidate):
-        return False
-    source = abstract_source or str(candidate.get("source") or "external")
-    paper["summary"] = candidate["summary"]
-    paper["abstract_source"] = source
-    paper["enriched"] = True
-    paper["abstract_source_id"] = candidate.get("id", "")
-    paper["abstract_source_url"] = candidate.get("paper_url", "")
-    if source.lower() == "arxiv":
-        paper["arxiv_id"] = candidate.get("id", "")
-        paper["arxiv_url"] = candidate.get("paper_url", "")
-    paper["source"] = f"{paper.get('source', 'DBLP')} + {source}"
-    if candidate.get("paper_url"):
-        paper["paper_url"] = candidate["paper_url"]
-    if candidate.get("pdf_url"):
-        paper["pdf_url"] = candidate["pdf_url"]
-    if candidate.get("authors"):
-        paper["authors"] = candidate["authors"]
-    categories = list(dict.fromkeys([*paper.get("categories", []), *candidate.get("categories", [])]))
-    paper["categories"] = [category for category in categories if category]
-    return True
-
-
-def dblp_retry_wait_seconds(exc: Exception, attempt: int) -> float:
-    min_wait = float(os.getenv("DBLP_RETRY_MIN_SECONDS", "5"))
-    if isinstance(exc, urllib.error.HTTPError):
-        retry_after = exc.headers.get("Retry-After")
-        if retry_after and retry_after.isdigit():
-            return max(min_wait, float(retry_after))
-    base = float(os.getenv("DBLP_RETRY_BASE_SECONDS", "5"))
-    cap = float(os.getenv("DBLP_RETRY_MAX_SECONDS", "60"))
-    return max(min_wait, min(cap, base * (2**attempt)))
-
-
-def is_retryable_dblp_error(exc: Exception) -> bool:
-    if isinstance(exc, urllib.error.HTTPError):
-        return exc.code in DBLP_TRANSIENT_HTTP_CODES
-    return isinstance(exc, (TimeoutError, urllib.error.URLError, OSError, http.client.RemoteDisconnected))
-
-
-def fetch_json_url(url: str, user_agent: str, timeout_seconds: float) -> dict[str, Any]:
-    req = urllib.request.Request(url, headers={"User-Agent": user_agent})
-    with urllib.request.urlopen(req, timeout=timeout_seconds) as resp:
-        return json.loads(resp.read().decode("utf-8"))
-
-
-def fetch_dblp_json(query: str, max_results: int) -> dict[str, Any]:
-    params = {
-        "format": "json",
-        "h": str(max_results),
-        "q": query,
-    }
-    url = f"{DBLP_API_URL}?{urllib.parse.urlencode(params)}"
-    retry_count = max(1, int(os.getenv("DBLP_RETRIES", "3")))
-    timeout_seconds = float(os.getenv("DBLP_TIMEOUT_SECONDS", "45"))
-    last_error: Exception | None = None
-    for attempt in range(retry_count):
-        try:
-            return fetch_json_url(url, "paper-daily-collector/1.0 (+https://github.com/Futuresxy/paper-daily)", timeout_seconds)
-        except Exception as exc:
-            last_error = exc
-            if not is_retryable_dblp_error(exc) or attempt == retry_count - 1:
-                raise
-            wait_seconds = dblp_retry_wait_seconds(exc, attempt)
-            print(f"DBLP temporary error for query {query}: {exc}; retrying in {wait_seconds:.0f}s", flush=True)
-            time.sleep(wait_seconds)
-    raise RuntimeError(f"DBLP request failed: {last_error}")
-
-
-def ensure_list(value: Any) -> list[Any]:
-    if value is None:
-        return []
-    if isinstance(value, list):
-        return value
-    return [value]
-
-
-def parse_dblp_authors(info: dict[str, Any]) -> list[str]:
-    authors = info.get("authors", {}).get("author", []) if isinstance(info.get("authors"), dict) else []
-    names = []
-    for author in ensure_list(authors):
-        if isinstance(author, dict):
-            name = author.get("text", "")
-        else:
-            name = str(author)
-        name = normalize_space(str(name))
-        if name:
-            names.append(name)
-    return names
-
-
-def parse_dblp_hits(data: dict[str, Any], source: ConferenceSource, year: int, toc_key: str) -> list[dict[str, Any]]:
-    hits_data = data.get("result", {}).get("hits", {}).get("hit", [])
-    papers = []
-    for hit in ensure_list(hits_data):
-        if not isinstance(hit, dict):
-            continue
-        info = hit.get("info", {})
-        if not isinstance(info, dict):
-            continue
-        key = str(info.get("key") or "")
-        title = normalize_space(str(info.get("title") or ""))
-        if not key or not title or key.endswith(f"/{year}"):
-            continue
-        venue = str(info.get("venue") or source.name)
-        pages = str(info.get("pages") or "").strip()
-        doi = str(info.get("doi") or "").strip()
-        ee = str(info.get("ee") or "").strip()
-        url = str(info.get("url") or "").strip()
-        paper_url = url or f"https://dblp.org/rec/{key}"
-        summary_parts = [f"DBLP 题录：{source.name} {year} 会议论文。"]
-        if pages:
-            summary_parts.append(f"页码：{pages}。")
-        if doi:
-            summary_parts.append(f"DOI：{doi}。")
-        papers.append(
-            {
-                "id": f"dblp:{key}",
-                "source": f"DBLP · {source.name}",
-                "source_type": "conference",
-                "title": html.unescape(title).rstrip("."),
-                "authors": parse_dblp_authors(info),
-                "summary": " ".join(summary_parts),
-                "published": f"{year}-01-01T00:00:00+00:00",
-                "updated": f"{year}-01-01T00:00:00+00:00",
-                "paper_url": paper_url,
-                "pdf_url": ee or paper_url,
-                "categories": [source.name, source.group, str(year)],
-                "venue": venue,
-                "conference": {
-                    "id": source.id,
-                    "name": source.name,
-                    "group": source.group,
-                    "year": year,
-                    "dblp_key": key,
-                    "dblp_toc": toc_key,
-                    "doi": doi,
-                    "ee": ee,
-                    "pages": pages,
-                },
-            }
-        )
-    return papers
-
-
-def strip_html_tags(value: str) -> str:
-    return normalize_space(re.sub(r"<[^>]+>", "", html.unescape(value)))
-
-
-def dblp_html_url_for_toc(toc_key: str) -> str:
-    path = toc_key
-    if path.endswith(".bht"):
-        path = path[:-4] + ".html"
-    elif not path.endswith(".html"):
-        path += ".html"
-    return "http://dblp.org/" + path.lstrip("/")
-
-
-def conference_paper_from_dblp_html_chunk(
-    key: str,
-    chunk: str,
-    source: ConferenceSource,
-    year: int,
-    toc_key: str,
-) -> dict[str, Any] | None:
-    title_match = re.search(r'<span class="title"[^>]*>(.*?)</span>', chunk, flags=re.S)
-    if not title_match:
-        return None
-    title = strip_html_tags(title_match.group(1)).rstrip(".")
-    if not title or title.lower().startswith("proceedings of"):
-        return None
-
-    authors = [
-        strip_html_tags(author)
-        for author in re.findall(r'<span itemprop="name" title="([^"]+)">', chunk)
-    ]
-    pages_match = re.search(r'<span itemprop="pagination">(.*?)</span>', chunk, flags=re.S)
-    pages = strip_html_tags(pages_match.group(1)) if pages_match else ""
-    ee_match = re.search(r'<li class="ee">\s*<a href="([^"]+)"', chunk, flags=re.S)
-    ee = html.unescape(ee_match.group(1)) if ee_match else ""
-    paper_url = f"https://dblp.org/rec/{key}"
-    summary_parts = [f"DBLP 题录：{source.name} {year} 会议论文。"]
-    if pages:
-        summary_parts.append(f"页码：{pages}。")
-    return {
-        "id": f"dblp:{key}",
-        "source": f"DBLP · {source.name}",
-        "source_type": "conference",
-        "title": title,
-        "authors": authors,
-        "summary": " ".join(summary_parts),
-        "published": f"{year}-01-01T00:00:00+00:00",
-        "updated": f"{year}-01-01T00:00:00+00:00",
-        "paper_url": paper_url,
-        "pdf_url": ee or paper_url,
-        "categories": [source.name, source.group, str(year)],
-        "venue": source.name,
-        "conference": {
-            "id": source.id,
-            "name": source.name,
-            "group": source.group,
-            "year": year,
-            "dblp_key": key,
-            "dblp_toc": toc_key,
-            "doi": "",
-            "ee": ee,
-            "pages": pages,
-        },
-    }
-
-
-def parse_dblp_html_toc(html_text: str, source: ConferenceSource, year: int, toc_key: str) -> list[dict[str, Any]]:
-    starts = list(re.finditer(r'<li class="entry inproceedings" id="([^"]+)"', html_text))
-    papers = []
-    for index, match in enumerate(starts):
-        key = html.unescape(match.group(1))
-        if key.endswith(f"/{year}"):
-            continue
-        end = starts[index + 1].start() if index + 1 < len(starts) else len(html_text)
-        paper = conference_paper_from_dblp_html_chunk(key, html_text[match.start():end], source, year, toc_key)
-        if paper:
-            papers.append(paper)
-    return papers
-
-
-def fetch_dblp_html_toc(toc_key: str, source: ConferenceSource, year: int) -> list[dict[str, Any]]:
-    url = dblp_html_url_for_toc(toc_key)
-    timeout_seconds = float(os.getenv("DBLP_TIMEOUT_SECONDS", "45"))
-    retry_count = max(1, int(os.getenv("DBLP_RETRIES", "3")))
-    last_error: Exception | None = None
-    for attempt in range(retry_count):
-        req = urllib.request.Request(url, headers={"User-Agent": "paper-daily-collector/1.0 (+https://github.com/Futuresxy/paper-daily)"})
-        try:
-            with urllib.request.urlopen(req, timeout=timeout_seconds) as resp:
-                html_text = resp.read().decode("utf-8", "replace")
-            return parse_dblp_html_toc(html_text, source, year, toc_key)
-        except Exception as exc:
-            last_error = exc
-            if not is_retryable_dblp_error(exc) or attempt == retry_count - 1:
-                raise
-            wait_seconds = dblp_retry_wait_seconds(exc, attempt)
-            print(f"DBLP temporary HTML error for {source.name} {year}: {exc}; retrying in {wait_seconds:.0f}s", flush=True)
-            time.sleep(wait_seconds)
-    raise RuntimeError(f"DBLP HTML request failed: {last_error}")
-
-
-def fetch_dblp_conference(source: ConferenceSource, max_results: int) -> list[dict[str, Any]]:
-    papers = []
-    errors = []
-    request_count = 0
-    pattern_delay_seconds = float(os.getenv("DBLP_PATTERN_DELAY_SECONDS", "3"))
-    for year in source.years:
-        for pattern_index, pattern in enumerate(source.dblp_toc_patterns):
-            if request_count:
-                time.sleep(pattern_delay_seconds)
-            toc_key = pattern.format(year=year)
-            query = f"toc:{toc_key}:"
-            request_count += 1
-            try:
-                data = fetch_dblp_json(query, max_results)
-            except Exception as exc:
-                try:
-                    fallback_papers = fetch_dblp_html_toc(toc_key, source, year)
-                except Exception as fallback_exc:
-                    errors.append(fallback_exc)
-                    print(
-                        f"Warning: DBLP TOC request failed for {source.name} {year} pattern {pattern_index + 1}: {exc}; HTML fallback failed: {fallback_exc}",
-                        file=sys.stderr,
-                    )
-                    continue
-                papers.extend(fallback_papers[:max_results])
-                continue
-            papers.extend(parse_dblp_hits(data, source, year, toc_key))
-    if not papers and errors:
-        raise errors[-1]
-    return dedupe_papers(papers)
-
-
 def openalex_abstract_text(work: dict[str, Any]) -> str:
     inverted = work.get("abstract_inverted_index")
     if not isinstance(inverted, dict):
@@ -1127,41 +711,11 @@ def fetch_openalex(topic: Topic, max_results: int, source: SourceConfig) -> list
     data = request_json(url, timeout=float(os.getenv("OPENALEX_TIMEOUT_SECONDS", "60")))
     papers = []
     for work in data.get("results", []):
-        locations = work.get("locations") or []
-        primary = work.get("primary_location") or {}
-        best_oa = work.get("best_oa_location") or {}
-        pdf_url = (
-            primary.get("pdf_url")
-            or best_oa.get("pdf_url")
-            or next((location.get("pdf_url") for location in locations if location.get("pdf_url")), "")
-        )
-        authors = [
-            str((authorship.get("author") or {}).get("display_name") or "")
-            for authorship in work.get("authorships", [])
-        ]
-        concepts = [
-            str(concept.get("display_name") or "")
-            for concept in work.get("concepts", [])[:8]
-            if concept.get("display_name")
-        ]
-        work_id = str(work.get("id") or work.get("doi") or work.get("title") or "")
-        if not work_id:
+        paper = openalex_paper_from_work(work, source.name)
+        if not paper:
             continue
-        papers.append(
-            {
-                "id": f"openalex:{work_id.rsplit('/', 1)[-1]}",
-                "source": source.name,
-                "title": normalize_space(str(work.get("title") or "")),
-                "authors": [author for author in authors if author],
-                "summary": normalize_space(openalex_abstract_text(work)),
-                "published": date_to_iso(work.get("publication_date") or work.get("publication_year")),
-                "updated": "",
-                "paper_url": str(work.get("doi") or work.get("id") or ""),
-                "pdf_url": str(pdf_url or ""),
-                "categories": concepts,
-                "seed_topic": topic.id,
-            }
-        )
+        paper["seed_topic"] = topic.id
+        papers.append(paper)
     return papers
 
 
@@ -1192,32 +746,11 @@ def fetch_crossref(topic: Topic, max_results: int, source: SourceConfig) -> list
     data = request_json(url, headers=headers, timeout=float(os.getenv("CROSSREF_TIMEOUT_SECONDS", "60")))
     papers = []
     for item in (data.get("message") or {}).get("items", []):
-        title = normalize_space(" ".join(str(part) for part in item.get("title", []) if part))
-        doi = str(item.get("DOI") or "")
-        paper_url = str(item.get("URL") or (f"https://doi.org/{doi}" if doi else ""))
-        if not title or not (doi or paper_url):
+        paper = crossref_paper_from_item(item, source.name)
+        if not paper:
             continue
-        authors = []
-        for author in item.get("author", [])[:12]:
-            name = normalize_space(f"{author.get('given', '')} {author.get('family', '')}")
-            if name:
-                authors.append(name)
-        subjects = [str(subject) for subject in item.get("subject", [])[:8]]
-        papers.append(
-            {
-                "id": f"crossref:{doi or slugify(title)}",
-                "source": source.name,
-                "title": title,
-                "authors": authors,
-                "summary": html_to_text(str(item.get("abstract") or "")),
-                "published": crossref_date(item),
-                "updated": "",
-                "paper_url": paper_url,
-                "pdf_url": "",
-                "categories": subjects,
-                "seed_topic": topic.id,
-            }
-        )
+        paper["seed_topic"] = topic.id
+        papers.append(paper)
     return papers
 
 
@@ -1644,104 +1177,97 @@ NEGATIVE_TERMS: dict[str, float] = {
 }
 
 
-def apply_negative_penalty(text: str, score: float) -> float:
-    """Penalize papers containing out-of-scope keywords (§11)."""
+def apply_negative_penalty(
+    text: str,
+    score: float,
+    positive_signal: float = 0.0,
+    negative_terms: dict[str, float] | None = None,
+) -> float:
+    """Apply a bounded penalty without erasing strong positive evidence."""
     t = text.lower()
     factor = 1.0
-    for term, penalty in NEGATIVE_TERMS.items():
+    for term, penalty in (NEGATIVE_TERMS if negative_terms is None else negative_terms).items():
         if term in t:
             factor = min(factor, penalty)
-    return score * factor
-
-
-# ── Author boost (§15) ──
-AUTHOR_BOOST: list[str] = [
-    "Marc Hoyois", "Tom Bachmann", "Elden Elmanto", "Shane Kelly",
-    "Adeel Khan", "Denis-Charles Cisinski", "Frederic Deglise",
-    "Fabien Morel", "Vladimir Voevodsky", "Markus Spitzweck",
-    "Paul Arne Ostvaer", "Oliver Rondigs", "Daniel Isaksen",
-    "Kyle Ormsby", "Marc Levine", "Thomas Nikolaus",
-    "Peter Scholze", "Dustin Clausen", "Akhil Mathew",
-    "Matthew Morrow", "Clark Barwick", "Andrew Blumberg",
-    "David Gepner", "Goncalo Tabuada", "Benjamin Antieau",
-    "Jacob Lurie", "Bertrand Toen", "Gabriele Vezzosi",
-    "David Rydh", "Bhargav Bhatt",
-]
-
-
-def author_boost_score(paper: dict[str, Any]) -> float:
-    """Return 0.05 if any author is in the boost list, 0.0 otherwise."""
-    authors_lower = [a.lower() for a in paper.get("authors", [])]
-    for name in AUTHOR_BOOST:
-        if name.lower() in authors_lower:
-            return 0.05
-    return 0.0
+    if factor >= 1.0:
+        return score
+    confidence = min(1.0, max(0.0, positive_signal))
+    effective_factor = 1.0 - (1.0 - factor) * 0.35 * (1.0 - 0.75 * confidence)
+    return score * effective_factor
 
 
 def compute_bridge_score(paper: dict[str, Any], topic_id: str) -> tuple[float, list[str]]:
-    """Bridge score (§10.2): count hits in each topic's bridge-signal list,
-    then award bonus proportional to min(own_score, other_score) for each
-    pairing.  This rewards papers that genuinely span two fields.
-    """
+    """Reward genuine cross-topic papers while keeping the bonus bounded."""
     haystack = f"{paper.get('title', '')} {paper.get('summary', '')}".lower()
 
     def _hits(signal_list: list[str]) -> int:
         return sum(1 for term in signal_list if term.lower() in haystack)
 
     own = _hits(_TOPIC_BRIDGE_SIGNALS.get(topic_id, []))
+    if own == 0:
+        return 0.0, []
     pairs = []
     total = 0.0
     for other_id, other_signals in _TOPIC_BRIDGE_SIGNALS.items():
         if other_id == topic_id:
             continue
         oh = _hits(other_signals)
-        if own > 0 and oh > 0:
-            bridge = min(own, oh) / max(2, own)  # normalized min
-            total += round(bridge * 0.15, 3)
+        if oh > 0:
+            shared_strength = min(own, oh)
+            total += min(0.035, 0.012 + 0.008 * shared_strength)
             pairs.append(f"桥接 {topic_id}↔{other_id} (hits={own}/{oh})")
-    bonus = round(min(0.30, total), 3)
+    bonus = round(min(0.08, total), 3)
     return bonus, pairs[:3]
 
 
+def normalized_match_text(value: str) -> str:
+    text = value.lower()
+    text = re.sub(r"[$\\](?:[a-z]+\s)?", " ", text)
+    text = re.sub(r"\s*-\s*", "-", text)
+    return normalize_space(text)
+
+
+def contains_signal(text: str, signal: str) -> bool:
+    normalized = normalized_match_text(signal)
+    if not normalized:
+        return False
+    if len(normalized) <= 3 and normalized.replace("_", "").isalpha():
+        return bool(re.search(rf"\b{re.escape(normalized)}\b", text))
+    return normalized in text
+
+
 def keyword_score(topic: Topic, paper: dict[str, Any]) -> tuple[float, list[str]]:
-    raw = f"{paper.get('title', '')} {paper.get('summary', '')}".lower()
-    # Strip LaTeX math delimiters and common commands so that
-    # "$K$-theory", "$K(R)$", "\(X\)" etc match plain keywords.
-    haystack = re.sub(r"[$\\](?:[a-z]+\s)?", " ", raw)
-    haystack = re.sub(r"\s+", " ", haystack)
-    # Collapse "k -theory" back to "k-theory" (from LaTeX $K$-theory stripping)
-    haystack = re.sub(r"\s*-\s*", "-", haystack)
-    hits = []
+    title = normalized_match_text(str(paper.get("title", "")))
+    summary = normalized_match_text(str(paper.get("summary", "")))
+    matched: list[tuple[str, str, bool]] = []
+    for keyword in sorted(topic.keywords, key=lambda item: len(normalized_match_text(item)), reverse=True):
+        normalized = normalized_match_text(keyword)
+        in_title = contains_signal(title, normalized)
+        if not in_title and not contains_signal(summary, normalized):
+            continue
+        # Avoid double-counting nested ontology entries such as
+        # "motivic homotopy theory" and "homotopy theory".
+        if any(normalized in longer for _, longer, _ in matched):
+            continue
+        matched.append((keyword, normalized, in_title))
+
     weighted = 0.0
-    for keyword in topic.keywords:
-        normalized = keyword.lower()
-        # Short keywords (<= 3 chars, e.g. TC, KO, KU, HZ) must match as
-        # whole words to avoid false positives inside longer words
-        # (e.g. 'TC' inside 'patchkoria').
-        if len(normalized) <= 3 and not normalized.replace("_", "").isalpha():
-            matched = normalized in haystack
-        elif len(normalized) <= 3:
-            matched = bool(re.search(rf"\b{re.escape(normalized)}\b", haystack))
-        else:
-            matched = normalized in haystack
-        if matched:
-            hits.append(keyword)
-            # Multi-word keywords are much more specific — give higher weight.
-            # 1-word: 0.25, 2-word: 0.45, 3-word: 0.65, 4+: 0.85
-            word_count = len(normalized.split())
-            weighted += min(0.85, 0.20 + word_count * 0.22)
-    # Score saturates quickly: 1 good multi-word hit → 0.3+, 2 hits → 0.6+
-    # But single-word hits need 3+ to get to 0.4.
-    score = min(1.0, weighted / 2.5)
-    return score, hits[:8]
+    for _, normalized, in_title in matched:
+        word_count = max(1, len(normalized.split()))
+        specificity = min(0.85, 0.20 + 0.18 * word_count)
+        weighted += specificity * (1.35 if in_title else 1.0)
+    score = 1.0 - math.exp(-weighted / 1.35)
+    return round(min(1.0, score), 3), [keyword for keyword, _, _ in matched[:8]]
 
 
 def category_score(topic: Topic, paper: dict[str, Any]) -> float:
-    paper_categories = set(paper.get("categories", []))
+    paper_categories = [str(category) for category in paper.get("categories", [])]
     topic_categories = set(topic.arxiv_categories)
     if not paper_categories or not topic_categories:
         return 0.0
-    return len(paper_categories & topic_categories) / len(topic_categories)
+    if paper_categories[0] in topic_categories:
+        return 1.0
+    return 0.65 if set(paper_categories) & topic_categories else 0.0
 
 
 # English stop-words that carry little domain information and inflate
@@ -1778,8 +1304,61 @@ def lexical_overlap_score(topic: Topic, paper: dict[str, Any]) -> float:
     if not topic_terms or not paper_terms:
         return 0.0
     overlap = topic_terms & paper_terms
-    # Denominator: at least 8, at most topic_terms * 0.18
-    return min(1.0, len(overlap) / max(8, len(topic_terms) * 0.18))
+    return min(1.0, len(overlap) / max(10, math.sqrt(len(topic_terms) * len(paper_terms))))
+
+
+def _stored_preference_strength(value: Any, liked_count: int) -> float:
+    try:
+        numeric = float(value)
+    except (TypeError, ValueError):
+        return 0.0
+    if numeric > 1.0:
+        numeric /= max(1, liked_count)
+    return min(1.0, max(0.0, numeric))
+
+
+def preference_boost_score(
+    paper: dict[str, Any],
+    preferences: dict[str, Any] | None,
+) -> tuple[float, list[str]]:
+    if not preferences:
+        return 0.0, []
+
+    liked_count = int(preferences.get("liked_count") or 0)
+    haystack = normalized_match_text(f"{paper.get('title', '')} {paper.get('summary', '')}")
+    keyword_matches = []
+    for term, value in (preferences.get("keyword_boosts") or {}).items():
+        if contains_signal(haystack, str(term)):
+            strength = _stored_preference_strength(value, liked_count)
+            keyword_matches.append((str(term), strength))
+    keyword_matches.sort(key=lambda item: item[1], reverse=True)
+    keyword_bonus = min(0.06, sum(0.025 * strength for _, strength in keyword_matches[:3]))
+
+    paper_categories = {str(category) for category in paper.get("categories", [])}
+    category_strength = max(
+        (
+            _stored_preference_strength(value, liked_count)
+            for category, value in (preferences.get("category_boosts") or {}).items()
+            if str(category) in paper_categories
+        ),
+        default=0.0,
+    )
+    paper_authors = {str(author).lower() for author in paper.get("authors", [])}
+    author_strength = max(
+        (
+            _stored_preference_strength(value, liked_count)
+            for author, value in (preferences.get("author_boosts") or {}).items()
+            if str(author).lower() in paper_authors
+        ),
+        default=0.0,
+    )
+    bonus = min(0.10, keyword_bonus + 0.025 * category_strength + 0.025 * author_strength)
+    reasons = [f"偏好词：{term}" for term, _ in keyword_matches[:2]]
+    if category_strength:
+        reasons.append("收藏分类偏好")
+    if author_strength:
+        reasons.append("收藏作者偏好")
+    return round(bonus, 3), reasons
 
 
 def match_level(score: float) -> str:
@@ -1790,30 +1369,37 @@ def match_level(score: float) -> str:
     return "low"
 
 
-def score_paper(topic: Topic, paper: dict[str, Any]) -> dict[str, Any]:
+def score_paper(
+    topic: Topic,
+    paper: dict[str, Any],
+    preferences: dict[str, Any] | None = None,
+    now: dt.datetime | None = None,
+    negative_terms: dict[str, float] | None = None,
+) -> dict[str, Any]:
     k_score, hits = keyword_score(topic, paper)
     c_score = category_score(topic, paper)
     l_score = lexical_overlap_score(topic, paper)
-    # Weights: keyword is most specific signal; category and lexical provide floor
-    base_score = round(0.40 * k_score + 0.20 * c_score + 0.20 * l_score, 3)
+    base_score = round(0.55 * k_score + 0.18 * c_score + 0.17 * l_score, 3)
 
-    # Cross-domain bridge bonus (§10.2) — weight ~0.15
     bridge_bonus, bridge_reasons = compute_bridge_score(paper, topic.id)
     adjusted_score = round(base_score + bridge_bonus, 3)
 
-    # Author boost (§15) — weight 0.05
-    a_score = author_boost_score(paper)
-    adjusted_score = round(adjusted_score + a_score, 3)
+    preference_bonus, preference_reasons = preference_boost_score(paper, preferences)
+    adjusted_score = round(adjusted_score + preference_bonus, 3)
 
-    # Recency boost — 0.05 for papers published in the last 90 days
-    pub = parse_datetime(paper.get("published", ""))
-    now = dt.datetime.now(dt.timezone.utc)
-    r_score = 0.05 if pub and (now - pub).days <= 90 else 0.0
+    reference_time = now or dt.datetime.now(dt.timezone.utc)
+    pub = paper_activity_datetime(paper)
+    age_days = max(0.0, (reference_time - pub).total_seconds() / 86400)
+    r_score = 0.05 * math.exp(-age_days / 30.0) if pub > dt.datetime.min.replace(tzinfo=dt.timezone.utc) else 0.0
     adjusted_score = round(adjusted_score + r_score, 3)
 
-    # Negative penalty (§11) applied after all boosts
     text = f"{paper.get('title', '')} {paper.get('summary', '')}"
-    adjusted_score = round(apply_negative_penalty(text, adjusted_score), 3)
+    active_negative_terms = negative_terms or {}
+    penalty_factor = apply_negative_penalty(text, 1.0, k_score, active_negative_terms)
+    adjusted_score = round(
+        apply_negative_penalty(text, adjusted_score, k_score, active_negative_terms),
+        3,
+    )
     adjusted_score = round(min(1.0, max(0.0, adjusted_score)), 3)
 
     reason_parts = []
@@ -1823,13 +1409,12 @@ def score_paper(topic: Topic, paper: dict[str, Any]) -> dict[str, Any]:
         reason_parts.append("arXiv 分类重合：" + "、".join(sorted(set(topic.arxiv_categories) & set(paper.get("categories", [])))))
     if bridge_reasons:
         reason_parts.extend(bridge_reasons)
-    if a_score > 0:
-        reason_parts.append("作者加分")
+    if preference_reasons:
+        reason_parts.extend(preference_reasons)
     if r_score > 0:
-        reason_parts.append("近期论文")
-    neg = apply_negative_penalty(text, 1.0)
-    if neg < 1.0:
-        reason_parts.append(f"负关键词惩罚 (×{neg:.2f})")
+        reason_parts.append(f"时效加分 +{r_score:.2f}")
+    if penalty_factor < 1.0:
+        reason_parts.append(f"跨领域降权 (×{penalty_factor:.2f})")
     if not reason_parts:
         reason_parts.append("文本语义与方向描述存在弱相关，需要人工复核。")
     return {
@@ -1838,6 +1423,8 @@ def score_paper(topic: Topic, paper: dict[str, Any]) -> dict[str, Any]:
         "score": adjusted_score,
         "base_score": base_score,
         "bridge_bonus": bridge_bonus,
+        "preference_bonus": preference_bonus,
+        "recency_bonus": round(r_score, 3),
         "level": match_level(adjusted_score),
         "reason": "；".join(reason_parts),
         "keyword_hits": hits,
@@ -1854,91 +1441,22 @@ def env_float(name: str, default: float) -> float:
         return default
 
 
-def is_placeholder_conference_summary(paper: dict[str, Any]) -> bool:
-    if paper.get("source_type") != "conference" or paper.get("abstract_source"):
-        return False
-    summary = normalize_space(str(paper.get("summary") or ""))
-    return summary.startswith("DBLP 题录")
-
-
 def has_meaningful_summary(paper: dict[str, Any], min_chars: int = 80) -> bool:
-    if is_placeholder_conference_summary(paper):
-        return False
     summary = normalize_space(str(paper.get("summary") or ""))
     return len(summary) >= min_chars
 
 
 def is_relevant_enough(paper: dict[str, Any], best_match: dict[str, Any]) -> bool:
-    if best_match.get("keyword_hits"):
-        return True
-
     score = float(best_match.get("score") or 0.0)
-    if paper.get("source_type") == "conference":
-        return score >= env_float("MIN_CONFERENCE_SCORE", 0.18)
+    if best_match.get("keyword_hits"):
+        return score >= env_float("MIN_KEYWORD_MATCH_SCORE", 0.10)
     if not has_meaningful_summary(paper):
-        return score >= env_float("MIN_TITLE_ONLY_SCORE", 0.18)
-    return score >= env_float("MIN_PAPER_SCORE", 0.08)
-
-
-def enrich_conference_papers_from_arxiv(papers: list[dict[str, Any]]) -> dict[str, Any]:
-    max_enrichments = max(
-        0,
-        int(os.getenv("MAX_CONFERENCE_ABSTRACT_ENRICHMENTS", os.getenv("MAX_CONFERENCE_ARXIV_ENRICHMENTS", "50"))),
-    )
-    delay_seconds = float(os.getenv("CONFERENCE_ABSTRACT_DELAY_SECONDS", os.getenv("CONFERENCE_ARXIV_DELAY_SECONDS", "3")))
-    search_results = max(
-        1,
-        int(os.getenv("CONFERENCE_ABSTRACT_SEARCH_RESULTS", os.getenv("CONFERENCE_ARXIV_SEARCH_RESULTS", "5"))),
-    )
-    abstract_sources = conference_abstract_sources()
-    arxiv_enrichment_enabled = "arxiv" in {source.strip().lower() for source in abstract_sources}
-    stats: dict[str, Any] = {
-        "conference_abstract_enrichment_attempted": 0,
-        "conference_abstract_enrichment_succeeded": 0,
-        "conference_abstract_enrichment_skipped": 0,
-        "conference_abstract_enrichment_sources": abstract_sources,
-        "conference_arxiv_enrichment_attempted": 0,
-        "conference_arxiv_enrichment_succeeded": 0,
-        "conference_arxiv_enrichment_skipped": 0,
-        "conference_arxiv_enrichment_last_error": "",
-    }
-    if max_enrichments <= 0:
-        return stats
-
-    attempts = 0
-    for paper in papers:
-        if paper.get("source_type") != "conference" or has_meaningful_summary(paper):
-            continue
-        if attempts >= max_enrichments:
-            stats["conference_abstract_enrichment_skipped"] += 1
-            stats["conference_arxiv_enrichment_skipped"] += 1
-            continue
-        title = str(paper.get("title") or "")
-        if not title:
-            continue
-
-        attempts += 1
-        stats["conference_abstract_enrichment_attempted"] += 1
-        if arxiv_enrichment_enabled:
-            stats["conference_arxiv_enrichment_attempted"] += 1
-        candidate = find_conference_abstract_by_title(title, max_results=search_results)
-        if candidate and enrich_conference_paper_from_candidate(paper, candidate):
-            stats["conference_abstract_enrichment_succeeded"] += 1
-            if str(paper.get("abstract_source") or "").lower() == "arxiv":
-                stats["conference_arxiv_enrichment_succeeded"] += 1
-            print(f"Enriched conference paper from {paper.get('abstract_source')}: {paper.get('title')}", flush=True)
-
-        if attempts < max_enrichments and delay_seconds > 0:
-            time.sleep(delay_seconds)
-    return stats
+        return score >= env_float("MIN_TITLE_ONLY_SCORE", 0.20)
+    return score >= env_float("MIN_PAPER_SCORE", 0.10)
 
 
 def should_summarize_paper_with_llm(paper: dict[str, Any]) -> bool:
     has_summary = has_meaningful_summary(paper)
-    if paper.get("source_type") == "conference" and not has_summary:
-        return env_flag("LLM_SUMMARIZE_CONFERENCE", False) and env_flag("LLM_SUMMARIZE_TITLE_ONLY", False)
-    if paper.get("source_type") == "conference" and not env_flag("LLM_SUMMARIZE_CONFERENCE", True):
-        return False
     if not has_summary and not env_flag("LLM_SUMMARIZE_TITLE_ONLY", False):
         return False
     return True
@@ -1947,15 +1465,6 @@ def should_summarize_paper_with_llm(paper: dict[str, Any]) -> bool:
 def fallback_summary(paper: dict[str, Any], best_match: dict[str, Any]) -> dict[str, str]:
     abstract = paper.get("summary", "")
     first_sentence = re.split(r"(?<=[.!?])\s+", abstract)[0] if abstract else ""
-    if paper.get("source_type") == "conference" and not has_meaningful_summary(paper):
-        return {
-            "problem": "DBLP 题录没有摘要，且未在外部论文索引中找到足够可靠的同题论文摘要。",
-            "method": "请打开论文链接查看方法和系统设计细节。",
-            "innovation": "仅凭标题无法可靠判断创新点，已避免占用模型翻译额度。",
-            "evidence": "题录信息来自会议索引，技术细节需要在原文中核验。",
-            "limitations": "DBLP 通常不提供摘要；如果 arXiv、Semantic Scholar、OpenAlex 或 Crossref 暂未收录摘要，自动摘要会缺失。",
-            "why_relevant": best_match.get("reason", "与配置方向存在文本匹配。"),
-        }
     if not has_meaningful_summary(paper):
         return {
             "problem": "来源没有提供足够摘要，当前不调用模型做标题猜测。",
@@ -2019,7 +1528,6 @@ def call_openai_compatible(prompt: str) -> dict[str, Any]:
 
 
 def build_llm_prompt(topic: Topic, paper: dict[str, Any], base_match: dict[str, Any]) -> str:
-    abstract_label = "摘要/题录信息" if paper.get("source_type") == "conference" else "摘要"
     return f"""
 请根据论文标题、摘要、分类和我的研究方向，输出精确中文分析。目标不是逐句翻译，而是综合整篇摘要快速判断这篇论文是否值得阅读。
 要求：
@@ -2037,7 +1545,7 @@ def build_llm_prompt(topic: Topic, paper: dict[str, Any], base_match: dict[str, 
 标题：{paper.get("title", "")}
 作者：{", ".join(paper.get("authors", [])[:8])}
 arXiv 分类：{", ".join(paper.get("categories", []))}
-{abstract_label}：{paper.get("summary", "")}
+摘要：{paper.get("summary", "")}
 
 基础匹配信息：
 分数：{base_match.get("score")}
@@ -2108,62 +1616,46 @@ def dedupe_papers(papers: list[dict[str, Any]]) -> list[dict[str, Any]]:
     return unique
 
 
+def title_similarity(left: dict[str, Any], right: dict[str, Any]) -> float:
+    left_terms = set(re.findall(r"[a-z0-9]+", str(left.get("title", "")).lower()))
+    right_terms = set(re.findall(r"[a-z0-9]+", str(right.get("title", "")).lower()))
+    if not left_terms or not right_terms:
+        return 0.0
+    return len(left_terms & right_terms) / len(left_terms | right_terms)
+
+
+def select_diverse_papers(papers: list[dict[str, Any]], limit: int) -> list[dict[str, Any]]:
+    """Select high-quality papers with soft topic and near-duplicate penalties."""
+    if limit <= 0 or len(papers) <= limit:
+        return list(papers)
+
+    pool = list(papers)
+    selected: list[dict[str, Any]] = []
+    topic_counts: Counter[str] = Counter()
+    while pool and len(selected) < limit:
+        def selection_key(paper: dict[str, Any]) -> tuple[float, dt.datetime]:
+            best_match = paper.get("best_match") or {}
+            topic_id = str(best_match.get("topic_id") or "")
+            relevance = float(best_match.get("score") or 0.0)
+            topic_penalty = min(0.14, topic_counts[topic_id] * 0.03)
+            duplicate_penalty = 0.0
+            if selected:
+                duplicate_penalty = max(title_similarity(paper, chosen) for chosen in selected) * 0.10
+            return relevance - topic_penalty - duplicate_penalty, paper_activity_datetime(paper)
+
+        best = max(pool, key=selection_key)
+        pool.remove(best)
+        selected.append(best)
+        topic_counts[str((best.get("best_match") or {}).get("topic_id") or "")] += 1
+    return selected
+
+
 def paper_key(paper: dict[str, Any]) -> str:
     return str(paper.get("id") or paper.get("paper_url") or "")
 
 
 def best_match_level(paper: dict[str, Any]) -> str:
     return str((paper.get("best_match") or {}).get("level") or "low").lower()
-
-
-def conference_identity(paper: dict[str, Any]) -> tuple[str, int] | None:
-    conference = paper.get("conference")
-    if not isinstance(conference, dict):
-        return None
-    conference_id = str(conference.get("id") or "")
-    try:
-        year = int(conference.get("year"))
-    except (TypeError, ValueError):
-        return None
-    if not conference_id or year <= 0:
-        return None
-    return conference_id, year
-
-
-def cached_conference_years(existing_payload: dict[str, Any]) -> dict[str, set[int]]:
-    cached: dict[str, set[int]] = {}
-    papers = existing_payload.get("papers", []) if isinstance(existing_payload, dict) else []
-    for paper in papers:
-        if not isinstance(paper, dict) or paper.get("source_type") != "conference":
-            continue
-        identity = conference_identity(paper)
-        if not identity:
-            continue
-        conference_id, year = identity
-        cached.setdefault(conference_id, set()).add(year)
-    return cached
-
-
-def active_conference_years(sources: list[ConferenceSource]) -> dict[str, set[int]]:
-    return {source.id: set(source.years) for source in sources}
-
-
-def uncached_conference_years(source: ConferenceSource, cached_years_by_source: dict[str, set[int]]) -> list[int]:
-    cached_years = cached_years_by_source.get(source.id, set())
-    return [year for year in source.years if year not in cached_years]
-
-
-def should_retain_conference_paper(
-    paper: dict[str, Any],
-    active_years_by_source: dict[str, set[int]] | None,
-) -> bool:
-    if paper.get("source_type") != "conference" or active_years_by_source is None:
-        return False
-    identity = conference_identity(paper)
-    if not identity:
-        return False
-    conference_id, year = identity
-    return year in active_years_by_source.get(conference_id, set())
 
 
 def load_existing_payload(output_path: Path) -> dict[str, Any]:
@@ -2269,7 +1761,14 @@ def trim_papers_for_storage(
         (max_stored_papers > 0 and len(papers) > max_stored_papers)
         or (max_data_bytes > 0 and data_bytes > max_data_bytes)
     ):
-        remove_index = min(range(len(papers)), key=lambda index: deletion_sort_key(papers[index], liked_set))
+        removable_indexes = [
+            index
+            for index, paper in enumerate(papers)
+            if not liked_set or paper_key(paper) not in liked_set
+        ]
+        if not removable_indexes:
+            break
+        remove_index = min(removable_indexes, key=lambda index: deletion_sort_key(papers[index], liked_set))
         removed = papers.pop(remove_index)
         level = best_match_level(removed)
         removed_by_level[level if level in removed_by_level else "unknown"] += 1
@@ -2281,6 +1780,10 @@ def trim_papers_for_storage(
         "data_bytes": data_bytes,
         "storage_trimmed_count": sum(removed_by_level.values()),
         "storage_trimmed_by_level": removed_by_level,
+        "storage_limit_exceeded_by_likes": bool(
+            (max_stored_papers > 0 and len(papers) > max_stored_papers)
+            or (max_data_bytes > 0 and data_bytes > max_data_bytes)
+        ),
     }
 
 
@@ -2297,11 +1800,16 @@ def collect(
     recent_history_days: int,
     clear_cache: bool,
 ) -> dict[str, Any]:
-    liked_set = load_likes()
+    data_dir = output_path.parent
+    likes_path = data_dir / "likes.json"
+    preferences_path = data_dir / "preferences.json"
+    liked_set = load_likes(likes_path)
+    preferences = load_preferences(preferences_path) if len(liked_set) >= 3 else {}
     default_config = load_json(config_path)
     config = load_issue_config(default_config)
     topics = parse_topics(config)
     sources = parse_sources(config)
+    negative_terms = parse_negative_terms(config)
     arxiv_category_filter = category_whitelist(config)
     now = dt.datetime.now(dt.timezone.utc)
     existing_payload = {} if clear_cache else load_existing_payload(output_path)
@@ -2384,7 +1892,16 @@ def collect(
                 filtered_wrong_category += 1
                 continue
 
-        matches = [score_paper(topic, paper) for topic in topics]
+        matches = [
+            score_paper(
+                topic,
+                paper,
+                preferences=preferences,
+                now=now,
+                negative_terms=negative_terms,
+            )
+            for topic in topics
+        ]
         matches.sort(key=lambda item: item["score"], reverse=True)
         best_match = matches[0]
         if not is_relevant_enough(paper, best_match):
@@ -2392,31 +1909,13 @@ def collect(
             continue
         paper["matches"] = matches
         paper["best_match"] = best_match
-        # Cache the full match for each topic so we can use bridge-adjusted
-        # scores for global ranking but base_score for topic-specific labels.
-        # Tiered rule (tuned 2026-06-12):
-        #   strong: base_score >= 0.15 → always keeps the tag
-        #   weak:   base_score >= 0.10 AND >= 1 keyword hit → keeps tag
-        # Below 0.10: suppressed — that topic is not genuinely relevant.
-        # ── Topic tag eligibility ──
-        # Per-topic strong thresholds (no keyword hit required above this):
-        #   motivic_homotopy_theory: 0.28  (most cross-contaminated)
-        #   algebraic_geometry:       0.25
-        #   arithmetic_geometry:      0.25
-        #   homotopy_theory:          0.22
-        #   k_theory:                 0.20
-        # Weak rule: base_score >= 0.12 AND at least one keyword hit.
-        # Weak rule: base_score >= 0.06 AND at least one keyword hit.
-        _STRONG = {"motivic_homotopy_theory": 0.10, "algebraic_geometry": 0.10,
-                   "arithmetic_geometry": 0.10, "homotopy_theory": 0.10,
-                   "k_theory": 0.10}
-        _WEAK_MIN = 0.06
+        strong_label_score = env_float("TOPIC_LABEL_STRONG_SCORE", 0.18)
+        weak_label_score = env_float("TOPIC_LABEL_WEAK_SCORE", 0.10)
         top_labels = []
         for m in matches:
             base = m.get("base_score", 0.0)
             has_hit = bool(m.get("keyword_hits", []))
-            strong = _STRONG.get(m["topic_id"], 0.22)
-            if base >= strong or (base >= _WEAK_MIN and has_hit):
+            if base >= strong_label_score or (base >= weak_label_score and has_hit):
                 top_labels.append({
                     "topic_id": m["topic_id"],
                     "topic_name": m["topic_name"],
@@ -2455,7 +1954,7 @@ def collect(
     candidate_paper_count = len(daily_recent_papers)
     daily_candidate_paper_count = len(daily_recent_papers)
     if max_new_papers > 0:
-        daily_recent_papers = daily_recent_papers[:max_new_papers]
+        daily_recent_papers = select_diverse_papers(daily_recent_papers, max_new_papers)
     recent_papers = sorted(
         daily_recent_papers,
         key=lambda p: (p["best_match"]["score"], paper_activity_datetime(p)),
@@ -2519,6 +2018,8 @@ def collect(
         "source_stats": source_stats,
         "llm_enabled": llm_enabled(),
         "llm_concurrency": int(os.getenv("LLM_CONCURRENCY", "2")),
+        "preferences_active": bool(preferences),
+        "preference_liked_count": int(preferences.get("liked_count") or 0),
         "recent_history_days": recent_history_days,
         "successful_fetches": successful_fetches,
         "failed_fetches": failed_fetches,
@@ -2551,7 +2052,7 @@ def collect(
         liked_papers_list = [p for p in trimmed_papers if paper_key(p) in liked_set]
         if len(liked_papers_list) >= 3:
             prefs = learn_preferences(liked_papers_list, trimmed_papers)
-            save_preferences(prefs)
+            save_preferences(prefs, preferences_path)
         else:
             print(f"Not enough liked papers for preference learning ({len(liked_papers_list)} < 3)", flush=True)
 

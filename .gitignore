@@ -2,6 +2,9 @@
 .venv/
 __pycache__/
 *.pyc
+*.bak
 site/
 .DS_Store
+.claude/worktrees/
+logs/*.log
 config/github_token.js
