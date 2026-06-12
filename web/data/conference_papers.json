@@ -1,6 +1,6 @@
 {
-  "generated_at": "Fri, 12 Jun 2026 03:09:02 +0000",
-  "generated_at_iso": "2026-06-12T03:09:02.842110+00:00",
+  "generated_at": "Fri, 12 Jun 2026 03:10:03 +0000",
+  "generated_at_iso": "2026-06-12T03:10:03.491931+00:00",
   "config_source": "file",
   "data_kind": "conference",
   "topics": [
@@ -337,15 +337,15 @@
     "filtered_low_relevance_count": 0,
     "filtered_wrong_category_count": 0,
     "arxiv_category_filter": [
-      "math.AG",
-      "math.KT",
-      "math.CT",
       "math.AT",
-      "math.NT"
+      "math.CT",
+      "math.NT",
+      "math.KT",
+      "math.AG"
     ],
-    "days": 2,
+    "days": 7,
     "collection_mode": "lookback",
-    "collection_cutoff_iso": "2026-06-10T03:09:02.842110+00:00",
+    "collection_cutoff_iso": "2026-06-05T03:10:03.491931+00:00",
     "max_per_topic": 25,
     "max_new_papers": 50,
     "max_new_conference_papers": 50,
@@ -365,7 +365,7 @@
         "type": "arxiv",
         "successful_fetches": 0,
         "failed_fetches": 4,
-        "last_error": "HTTP Error 429: Too Many Requests"
+        "last_error": "HTTP Error 503: Service Unavailable"
       }
     },
     "llm_enabled": true,
@@ -398,7 +398,7 @@
     "dropped_low_relevance_count": 0,
     "max_stored_papers": 300,
     "max_data_bytes": 8388608,
-    "data_bytes": 11700,
+    "data_bytes": 11702,
     "storage_trimmed_count": 0,
     "storage_trimmed_by_level": {
       "high": 0,
