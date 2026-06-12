@@ -6,7 +6,6 @@ const THEMES = new Set(["dark", "light", "eye"]);
 const state = {
   datasets: {
     daily: null,
-    conference: null,
   },
   theme: "dark",
   lang: "zh",
@@ -43,7 +42,7 @@ const nodes = {
 };
 
 function activeData() {
-  return state.datasets[state.filters.collection] || state.datasets.daily || { papers: [], topics: [], stats: {} };
+  return state.datasets.daily || { papers: [], topics: [], stats: {} };
 }
 
 function storedTheme() {
@@ -395,7 +394,7 @@ function viewLabels() {
   const monthLabel = `${today.getFullYear()} 年 ${String(today.getMonth() + 1).padStart(2, "0")} 月`;
   const likedCount = Object.keys(state.likes).length;
   return {
-    all: [state.filters.collection === "conference" ? "顶会精品" : "全部论文", "全部已收录论文"],
+    all: ["全部论文", "全部已收录论文"],
     daily: ["当日论文", dayLabel],
     week: ["本周论文", `${weekStart} - ${weekEnd}`],
     month: ["月度论文", monthLabel],
@@ -484,19 +483,6 @@ function bindEvents() {
     state.filters.level = event.target.value;
     render();
   });
-  for (const tab of nodes.collectionTabs) {
-    tab.addEventListener("click", () => {
-      state.filters.collection = tab.dataset.collection;
-      state.filters.view = state.filters.collection === "conference" ? "all" : "daily";
-      state.filters.topic = "all";
-      for (const item of nodes.collectionTabs) item.classList.toggle("active", item === tab);
-      for (const item of nodes.tabs) item.classList.toggle("active", item.dataset.view === state.filters.view);
-      hydrateTopicFilter();
-      updateStats();
-      updateUpdatedAt();
-      render();
-    });
-  }
   for (const tab of nodes.tabs) {
     tab.addEventListener("click", () => {
       state.filters.view = tab.dataset.view;
@@ -581,9 +567,8 @@ function updateUpdatedAt(message = "") {
   const data = activeData();
   const stats = data.stats || {};
   const mode = stats.collection_mode === "incremental" ? "增量" : "初始化";
-  const kind = state.filters.collection === "conference" ? "顶会精品" : "每日新论文";
   const likePart = likedCount ? `♥ ${likedCount} 收藏 · ` : "";
-  nodes.updatedAt.textContent = `${likePart}${kind} · 更新于 ${formatDate(data.generated_at_iso)} · ${mode} · ${stats.llm_enabled ? "LLM" : "基础"}`;
+  nodes.updatedAt.textContent = `${likePart}每日新论文 · 更新于 ${formatDate(data.generated_at_iso)} · ${mode} · ${stats.llm_enabled ? "LLM" : "基础"}`;
 }
 
 async function main() {
@@ -593,15 +578,8 @@ async function main() {
   bindEvents();
   try {
     state.datasets.daily = await loadData();
-    state.datasets.conference = await loadOptionalData("./data/conference_papers.json");
   } catch (error) {
     state.datasets.daily = {
-      generated_at_iso: new Date().toISOString(),
-      topics: [],
-      papers: [],
-      stats: { llm_enabled: false },
-    };
-    state.datasets.conference = {
       generated_at_iso: new Date().toISOString(),
       topics: [],
       papers: [],
