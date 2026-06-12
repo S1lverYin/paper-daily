@@ -468,6 +468,91 @@ https://你的用户名.github.io/你的仓库名/
 - 按日期回看本周每天拉取的新论文
 - 直接点击 `下载 PDF` 保存论文
 
+## 系统架构
+
+### 一、整体流程
+
+```
+arXiv API / DBLP / RSS 
+       ↓
+GitHub Actions (每天 UTC 01:03 = 北京时间 09:03)
+       ↓
+scripts/collect_papers.py
+       ↓
+web/data/papers.json              ← 每日论文（最多 150 篇，当日 ≤ 30 篇）
+web/data/conference_papers.json   ← 顶会精品（最多 300 篇）
+web/data/preferences.json         ← 学习到的偏好
+       ↓
+GitHub Pages 部署 (web/ 目录)
+       ↓
+用户浏览器 → 收藏 → GitHub API 写回 web/data/likes.json
+```
+
+### 二、收藏与偏好学习
+
+用户可以在网页上对论文点 **✓** 收藏，收藏数据通过 GitHub Contents API 写回仓库 `web/data/likes.json`。
+
+收藏的论文在后续运行中**永不删除**（merge 时强制保留、trim 时跳过裁剪），且在月视图中**始终优先显示**。
+
+每次 workflow 运行后，如果收藏论文数 ≥ 3，系统自动学习偏好并写入 `web/data/preferences.json`：
+
+| 偏好类型 | 来源 | 阈值 |
+|----------|------|------|
+| `keyword_boosts` | 收藏论文标题/摘要高频词 | ≥ 3 次 |
+| `category_boosts` | 收藏论文 arXiv 分类 | ≥ 2 次 |
+| `author_boosts` | 收藏论文作者 | ≥ 2 次 |
+
+GitHub Token 配置：复制 `config/github_token.js`，填入你的 Fine-Grained PAT（需要有 contents:write 权限）。
+
+### 三、评分机制
+
+```
+base_score = 0.40 × 关键词分 + 0.20 × 分类分 + 0.20 × 语义重叠分
+final_score = base_score + 桥接奖励 + 作者加分 + 时效加分
+评分级别: ≥0.72 = high, ≥0.42 = medium, <0.42 = low
+```
+
+每篇论文最多匹配 5 个研究方向，取最优匹配作为 `best_match`。
+
+### 四、前端视图
+
+| 视图 | 过滤逻辑 |
+|------|----------|
+| **全部** | 所有已收录论文 |
+| **当日** | 当天发表的论文 |
+| **本周** | 今天往前 7 天 |
+| **本月** | 当前自然月 + 收藏论文始终显示 |
+| **本周精选** | 本周内且评分 ≥ 0.42 |
+| **已收藏** | 所有被收藏的论文 |
+
+### 五、关键文件
+
+| 文件 | 作用 |
+|------|------|
+| `scripts/collect_papers.py` | 采集、打分、摘要、合并、裁剪、偏好学习 |
+| `.github/workflows/daily.yml` | GitHub Actions 定时触发 & 手动触发 |
+| `web/index.html` | 前端页面 + 论文卡片模板 |
+| `web/app.js` | 前端逻辑（筛选、排序、收藏、渲染） |
+| `web/api.js` | GitHub Contents API 封装（收藏写回） |
+| `web/styles.css` | 样式 |
+| `web/data/papers.json` | 每日论文数据 |
+| `web/data/conference_papers.json` | 顶会论文数据 |
+| `web/data/likes.json` | 用户收藏数据 |
+| `web/data/preferences.json` | 学习到的用户偏好 |
+| `config/github_token.js` | 用户 GitHub PAT（已 .gitignore） |
+
+### 六、PushPlus 推送
+
+每天 09:03 自动推送到微信，包含当日新论文数量、论文标题、评分和中文摘要创新点。
+
+配置方法：
+
+| 名称 | 说明 |
+|------|------|
+| `PUSHPLUS_TOKEN` | Secrets，你的 PushPlus Token |
+
+---
+
 ## 本地预览
 
 如果你想在自己电脑上预览页面：
