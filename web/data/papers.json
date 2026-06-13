@@ -1,6 +1,6 @@
 {
-  "generated_at": "Fri, 12 Jun 2026 05:51:12 +0000",
-  "generated_at_iso": "2026-06-12T05:51:12.767206+00:00",
+  "generated_at": "Sat, 13 Jun 2026 05:22:26 +0000",
+  "generated_at_iso": "2026-06-13T05:22:26.558670+00:00",
   "config_source": "file",
   "topics": [
     {
@@ -1317,11 +1317,11 @@
         {
           "topic_id": "motivic_k_theory",
           "topic_name": "Motivic Homotopy & K-Theory",
-          "score": 0.759,
+          "score": 0.758,
           "base_score": 0.718,
           "bridge_bonus": 0.0,
           "preference_bonus": 0.0,
-          "recency_bonus": 0.041,
+          "recency_bonus": 0.04,
           "level": "high",
           "reason": "关键词命中：topological Hochschild homology、topological cyclic homology、algebraic K-theory、cyclotomic spectra、THH、TC；arXiv 分类重合：math.AT；时效加分 +0.04",
           "keyword_hits": [
@@ -1336,11 +1336,11 @@
         {
           "topic_id": "homotopy_theory",
           "topic_name": "Homotopy Theory",
-          "score": 0.512,
+          "score": 0.511,
           "base_score": 0.471,
           "bridge_bonus": 0.0,
           "preference_bonus": 0.0,
-          "recency_bonus": 0.041,
+          "recency_bonus": 0.04,
           "level": "medium",
           "reason": "关键词命中：homotopy theory、spectrum；arXiv 分类重合：math.AT；时效加分 +0.04",
           "keyword_hits": [
@@ -1351,11 +1351,11 @@
         {
           "topic_id": "algebraic_geometry",
           "topic_name": "Algebraic Geometry",
-          "score": 0.357,
+          "score": 0.356,
           "base_score": 0.316,
           "bridge_bonus": 0.0,
           "preference_bonus": 0.0,
-          "recency_bonus": 0.041,
+          "recency_bonus": 0.04,
           "level": "low",
           "reason": "关键词命中：local ring、Spec；时效加分 +0.04",
           "keyword_hits": [
@@ -1366,11 +1366,11 @@
         {
           "topic_id": "arithmetic_geometry",
           "topic_name": "Arithmetic Geometry",
-          "score": 0.053,
+          "score": 0.052,
           "base_score": 0.012,
           "bridge_bonus": 0.0,
           "preference_bonus": 0.0,
-          "recency_bonus": 0.041,
+          "recency_bonus": 0.04,
           "level": "low",
           "reason": "时效加分 +0.04",
           "keyword_hits": []
@@ -1379,11 +1379,11 @@
       "best_match": {
         "topic_id": "motivic_k_theory",
         "topic_name": "Motivic Homotopy & K-Theory",
-        "score": 0.759,
+        "score": 0.758,
         "base_score": 0.718,
         "bridge_bonus": 0.0,
         "preference_bonus": 0.0,
-        "recency_bonus": 0.041,
+        "recency_bonus": 0.04,
         "level": "high",
         "reason": "关键词命中：topological Hochschild homology、topological cyclic homology、algebraic K-theory、cyclotomic spectra、THH、TC；arXiv 分类重合：math.AT；时效加分 +0.04",
         "keyword_hits": [
@@ -1400,7 +1400,7 @@
           "topic_id": "motivic_k_theory",
           "topic_name": "Motivic Homotopy & K-Theory",
           "base_score": 0.718,
-          "score": 0.759,
+          "score": 0.758,
           "level": "high",
           "keyword_hits": [
             "topological Hochschild homology",
@@ -1415,7 +1415,7 @@
           "topic_id": "homotopy_theory",
           "topic_name": "Homotopy Theory",
           "base_score": 0.471,
-          "score": 0.512,
+          "score": 0.511,
           "level": "medium",
           "keyword_hits": [
             "homotopy theory",
@@ -1426,7 +1426,7 @@
           "topic_id": "algebraic_geometry",
           "topic_name": "Algebraic Geometry",
           "base_score": 0.316,
-          "score": 0.357,
+          "score": 0.356,
           "level": "low",
           "keyword_hits": [
             "local ring",
@@ -1444,7 +1444,7 @@
         "why_relevant": "关键词命中：topological Hochschild homology、topological cyclic homology、algebraic K-theory、cyclotomic spectra、THH、TC；arXiv 分类重合：math.AT；时效加分 +0.04"
       },
       "first_seen_at": "2026-06-11T05:21:54.714863+00:00",
-      "last_seen_at": "2026-06-12T05:51:12.767206+00:00",
+      "last_seen_at": "2026-06-13T05:22:26.558670+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -2129,11 +2129,11 @@
         {
           "topic_id": "homotopy_theory",
           "topic_name": "Homotopy Theory",
-          "score": 0.651,
+          "score": 0.65,
           "base_score": 0.607,
           "bridge_bonus": 0.0,
           "preference_bonus": 0.0,
-          "recency_bonus": 0.044,
+          "recency_bonus": 0.043,
           "level": "medium",
           "reason": "关键词命中：spectral sequence、homotopy colimit、cofibration；arXiv 分类重合：math.AT；时效加分 +0.04",
           "keyword_hits": [
@@ -2145,11 +2145,11 @@
         {
           "topic_id": "motivic_k_theory",
           "topic_name": "Motivic Homotopy & K-Theory",
-          "score": 0.246,
+          "score": 0.245,
           "base_score": 0.202,
           "bridge_bonus": 0.0,
           "preference_bonus": 0.0,
-          "recency_bonus": 0.044,
+          "recency_bonus": 0.043,
           "level": "low",
           "reason": "arXiv 分类重合：math.AT；时效加分 +0.04",
           "keyword_hits": []
@@ -2157,11 +2157,11 @@
         {
           "topic_id": "algebraic_geometry",
           "topic_name": "Algebraic Geometry",
-          "score": 0.229,
+          "score": 0.228,
           "base_score": 0.185,
           "bridge_bonus": 0.0,
           "preference_bonus": 0.0,
-          "recency_bonus": 0.044,
+          "recency_bonus": 0.043,
           "level": "low",
           "reason": "关键词命中：Spec；时效加分 +0.04",
           "keyword_hits": [
@@ -2171,11 +2171,11 @@
         {
           "topic_id": "arithmetic_geometry",
           "topic_name": "Arithmetic Geometry",
-          "score": 0.051,
+          "score": 0.05,
           "base_score": 0.007,
           "bridge_bonus": 0.0,
           "preference_bonus": 0.0,
-          "recency_bonus": 0.044,
+          "recency_bonus": 0.043,
           "level": "low",
           "reason": "时效加分 +0.04",
           "keyword_hits": []
@@ -2184,11 +2184,11 @@
       "best_match": {
         "topic_id": "homotopy_theory",
         "topic_name": "Homotopy Theory",
-        "score": 0.651,
+        "score": 0.65,
         "base_score": 0.607,
         "bridge_bonus": 0.0,
         "preference_bonus": 0.0,
-        "recency_bonus": 0.044,
+        "recency_bonus": 0.043,
         "level": "medium",
         "reason": "关键词命中：spectral sequence、homotopy colimit、cofibration；arXiv 分类重合：math.AT；时效加分 +0.04",
         "keyword_hits": [
@@ -2202,7 +2202,7 @@
           "topic_id": "homotopy_theory",
           "topic_name": "Homotopy Theory",
           "base_score": 0.607,
-          "score": 0.651,
+          "score": 0.65,
           "level": "medium",
           "keyword_hits": [
             "spectral sequence",
@@ -2214,7 +2214,7 @@
           "topic_id": "motivic_k_theory",
           "topic_name": "Motivic Homotopy & K-Theory",
           "base_score": 0.202,
-          "score": 0.246,
+          "score": 0.245,
           "level": "low",
           "keyword_hits": []
         },
@@ -2222,7 +2222,7 @@
           "topic_id": "algebraic_geometry",
           "topic_name": "Algebraic Geometry",
           "base_score": 0.185,
-          "score": 0.229,
+          "score": 0.228,
           "level": "low",
           "keyword_hits": [
             "Spec"
@@ -2239,7 +2239,7 @@
         "why_relevant": "关键词命中：spectral sequence、homotopy colimit、cofibration；arXiv 分类重合：math.AT；时效加分 +0.04"
       },
       "first_seen_at": "2026-06-11T04:42:44.276818+00:00",
-      "last_seen_at": "2026-06-12T05:51:12.767206+00:00",
+      "last_seen_at": "2026-06-13T05:22:26.558670+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -2391,11 +2391,11 @@
         {
           "topic_id": "algebraic_geometry",
           "topic_name": "Algebraic Geometry",
-          "score": 0.599,
+          "score": 0.597,
           "base_score": 0.556,
           "bridge_bonus": 0.0,
           "preference_bonus": 0.0,
-          "recency_bonus": 0.043,
+          "recency_bonus": 0.041,
           "level": "medium",
           "reason": "关键词命中：line bundle、variety、Proj；arXiv 分类重合：math.AG；时效加分 +0.04",
           "keyword_hits": [
@@ -2407,11 +2407,11 @@
         {
           "topic_id": "arithmetic_geometry",
           "topic_name": "Arithmetic Geometry",
-          "score": 0.464,
+          "score": 0.462,
           "base_score": 0.421,
           "bridge_bonus": 0.0,
           "preference_bonus": 0.0,
-          "recency_bonus": 0.043,
+          "recency_bonus": 0.041,
           "level": "medium",
           "reason": "关键词命中：elliptic curve；arXiv 分类重合：math.AG；时效加分 +0.04",
           "keyword_hits": [
@@ -2421,11 +2421,11 @@
         {
           "topic_id": "motivic_k_theory",
           "topic_name": "Motivic Homotopy & K-Theory",
-          "score": 0.223,
+          "score": 0.221,
           "base_score": 0.18,
           "bridge_bonus": 0.0,
           "preference_bonus": 0.0,
-          "recency_bonus": 0.043,
+          "recency_bonus": 0.041,
           "level": "low",
           "reason": "arXiv 分类重合：math.AG；时效加分 +0.04",
           "keyword_hits": []
@@ -2433,11 +2433,11 @@
         {
           "topic_id": "homotopy_theory",
           "topic_name": "Homotopy Theory",
-          "score": 0.186,
+          "score": 0.184,
           "base_score": 0.143,
           "bridge_bonus": 0.0,
           "preference_bonus": 0.0,
-          "recency_bonus": 0.043,
+          "recency_bonus": 0.041,
           "level": "low",
           "reason": "关键词命中：fibration；时效加分 +0.04",
           "keyword_hits": [
@@ -2448,11 +2448,11 @@
       "best_match": {
         "topic_id": "algebraic_geometry",
         "topic_name": "Algebraic Geometry",
-        "score": 0.599,
+        "score": 0.597,
         "base_score": 0.556,
         "bridge_bonus": 0.0,
         "preference_bonus": 0.0,
-        "recency_bonus": 0.043,
+        "recency_bonus": 0.041,
         "level": "medium",
         "reason": "关键词命中：line bundle、variety、Proj；arXiv 分类重合：math.AG；时效加分 +0.04",
         "keyword_hits": [
@@ -2466,7 +2466,7 @@
           "topic_id": "algebraic_geometry",
           "topic_name": "Algebraic Geometry",
           "base_score": 0.556,
-          "score": 0.599,
+          "score": 0.597,
           "level": "medium",
           "keyword_hits": [
             "line bundle",
@@ -2478,7 +2478,7 @@
           "topic_id": "arithmetic_geometry",
           "topic_name": "Arithmetic Geometry",
           "base_score": 0.421,
-          "score": 0.464,
+          "score": 0.462,
           "level": "medium",
           "keyword_hits": [
             "elliptic curve"
@@ -2488,7 +2488,7 @@
           "topic_id": "motivic_k_theory",
           "topic_name": "Motivic Homotopy & K-Theory",
           "base_score": 0.18,
-          "score": 0.223,
+          "score": 0.221,
           "level": "low",
           "keyword_hits": []
         },
@@ -2496,7 +2496,7 @@
           "topic_id": "homotopy_theory",
           "topic_name": "Homotopy Theory",
           "base_score": 0.143,
-          "score": 0.186,
+          "score": 0.184,
           "level": "low",
           "keyword_hits": [
             "fibration"
@@ -2513,7 +2513,7 @@
         "why_relevant": "关键词命中：line bundle、variety、Proj；arXiv 分类重合：math.AG；时效加分 +0.04"
       },
       "first_seen_at": "2026-06-11T05:21:54.714863+00:00",
-      "last_seen_at": "2026-06-12T05:51:12.767206+00:00",
+      "last_seen_at": "2026-06-13T05:22:26.558670+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -2537,13 +2537,13 @@
         {
           "topic_id": "arithmetic_geometry",
           "topic_name": "Arithmetic Geometry",
-          "score": 0.587,
+          "score": 0.586,
           "base_score": 0.542,
           "bridge_bonus": 0.0,
           "preference_bonus": 0.0,
-          "recency_bonus": 0.045,
+          "recency_bonus": 0.044,
           "level": "medium",
-          "reason": "关键词命中：ring of integers、number field；arXiv 分类重合：math.NT；时效加分 +0.05",
+          "reason": "关键词命中：ring of integers、number field；arXiv 分类重合：math.NT；时效加分 +0.04",
           "keyword_hits": [
             "ring of integers",
             "number field"
@@ -2552,50 +2552,50 @@
         {
           "topic_id": "algebraic_geometry",
           "topic_name": "Algebraic Geometry",
-          "score": 0.054,
+          "score": 0.053,
           "base_score": 0.009,
           "bridge_bonus": 0.0,
           "preference_bonus": 0.0,
-          "recency_bonus": 0.045,
+          "recency_bonus": 0.044,
           "level": "low",
-          "reason": "时效加分 +0.05",
+          "reason": "时效加分 +0.04",
           "keyword_hits": []
         },
         {
           "topic_id": "motivic_k_theory",
           "topic_name": "Motivic Homotopy & K-Theory",
-          "score": 0.053,
+          "score": 0.052,
           "base_score": 0.008,
           "bridge_bonus": 0.0,
           "preference_bonus": 0.0,
-          "recency_bonus": 0.045,
+          "recency_bonus": 0.044,
           "level": "low",
-          "reason": "时效加分 +0.05",
+          "reason": "时效加分 +0.04",
           "keyword_hits": []
         },
         {
           "topic_id": "homotopy_theory",
           "topic_name": "Homotopy Theory",
-          "score": 0.048,
+          "score": 0.047,
           "base_score": 0.003,
           "bridge_bonus": 0.0,
           "preference_bonus": 0.0,
-          "recency_bonus": 0.045,
+          "recency_bonus": 0.044,
           "level": "low",
-          "reason": "时效加分 +0.05",
+          "reason": "时效加分 +0.04",
           "keyword_hits": []
         }
       ],
       "best_match": {
         "topic_id": "arithmetic_geometry",
         "topic_name": "Arithmetic Geometry",
-        "score": 0.587,
+        "score": 0.586,
         "base_score": 0.542,
         "bridge_bonus": 0.0,
         "preference_bonus": 0.0,
-        "recency_bonus": 0.045,
+        "recency_bonus": 0.044,
         "level": "medium",
-        "reason": "关键词命中：ring of integers、number field；arXiv 分类重合：math.NT；时效加分 +0.05",
+        "reason": "关键词命中：ring of integers、number field；arXiv 分类重合：math.NT；时效加分 +0.04",
         "keyword_hits": [
           "ring of integers",
           "number field"
@@ -2606,7 +2606,7 @@
           "topic_id": "arithmetic_geometry",
           "topic_name": "Arithmetic Geometry",
           "base_score": 0.542,
-          "score": 0.587,
+          "score": 0.586,
           "level": "medium",
           "keyword_hits": [
             "ring of integers",
@@ -2621,10 +2621,10 @@
         "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
         "evidence": "来源摘要可在论文原文中核验。",
         "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
-        "why_relevant": "关键词命中：ring of integers、number field；arXiv 分类重合：math.NT；时效加分 +0.05"
+        "why_relevant": "关键词命中：ring of integers、number field；arXiv 分类重合：math.NT；时效加分 +0.04"
       },
       "first_seen_at": "2026-06-11T15:15:36.567953+00:00",
-      "last_seen_at": "2026-06-12T05:51:12.767206+00:00",
+      "last_seen_at": "2026-06-13T05:22:26.558670+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -2648,11 +2648,11 @@
         {
           "topic_id": "arithmetic_geometry",
           "topic_name": "Arithmetic Geometry",
-          "score": 0.584,
+          "score": 0.583,
           "base_score": 0.516,
           "bridge_bonus": 0.02,
           "preference_bonus": 0.0,
-          "recency_bonus": 0.048,
+          "recency_bonus": 0.047,
           "level": "medium",
           "reason": "关键词命中：arithmetic geometry、finite field；arXiv 分类重合：math.AG、math.NT；桥接 arithmetic_geometry↔algebraic_geometry (hits=1/2)；时效加分 +0.05",
           "keyword_hits": [
@@ -2663,11 +2663,11 @@
         {
           "topic_id": "algebraic_geometry",
           "topic_name": "Algebraic Geometry",
-          "score": 0.481,
+          "score": 0.48,
           "base_score": 0.413,
           "bridge_bonus": 0.02,
           "preference_bonus": 0.0,
-          "recency_bonus": 0.048,
+          "recency_bonus": 0.047,
           "level": "medium",
           "reason": "关键词命中：normal scheme、variety；arXiv 分类重合：math.AG；桥接 algebraic_geometry↔arithmetic_geometry (hits=2/1)；时效加分 +0.05",
           "keyword_hits": [
@@ -2678,11 +2678,11 @@
         {
           "topic_id": "motivic_k_theory",
           "topic_name": "Motivic Homotopy & K-Theory",
-          "score": 0.181,
+          "score": 0.18,
           "base_score": 0.133,
           "bridge_bonus": 0.0,
           "preference_bonus": 0.0,
-          "recency_bonus": 0.048,
+          "recency_bonus": 0.047,
           "level": "low",
           "reason": "arXiv 分类重合：math.AG；时效加分 +0.05",
           "keyword_hits": []
@@ -2690,11 +2690,11 @@
         {
           "topic_id": "homotopy_theory",
           "topic_name": "Homotopy Theory",
-          "score": 0.061,
+          "score": 0.06,
           "base_score": 0.013,
           "bridge_bonus": 0.0,
           "preference_bonus": 0.0,
-          "recency_bonus": 0.048,
+          "recency_bonus": 0.047,
           "level": "low",
           "reason": "时效加分 +0.05",
           "keyword_hits": []
@@ -2703,11 +2703,11 @@
       "best_match": {
         "topic_id": "arithmetic_geometry",
         "topic_name": "Arithmetic Geometry",
-        "score": 0.584,
+        "score": 0.583,
         "base_score": 0.516,
         "bridge_bonus": 0.02,
         "preference_bonus": 0.0,
-        "recency_bonus": 0.048,
+        "recency_bonus": 0.047,
         "level": "medium",
         "reason": "关键词命中：arithmetic geometry、finite field；arXiv 分类重合：math.AG、math.NT；桥接 arithmetic_geometry↔algebraic_geometry (hits=1/2)；时效加分 +0.05",
         "keyword_hits": [
@@ -2720,7 +2720,7 @@
           "topic_id": "arithmetic_geometry",
           "topic_name": "Arithmetic Geometry",
           "base_score": 0.516,
-          "score": 0.584,
+          "score": 0.583,
           "level": "medium",
           "keyword_hits": [
             "arithmetic geometry",
@@ -2731,7 +2731,7 @@
           "topic_id": "algebraic_geometry",
           "topic_name": "Algebraic Geometry",
           "base_score": 0.413,
-          "score": 0.481,
+          "score": 0.48,
           "level": "medium",
           "keyword_hits": [
             "normal scheme",
@@ -2749,7 +2749,7 @@
         "why_relevant": "关键词命中：arithmetic geometry、finite field；arXiv 分类重合：math.AG、math.NT；桥接 arithmetic_geometry↔algebraic_geometry (hits=1/2)；时效加分 +0.05"
       },
       "first_seen_at": "2026-06-12T05:51:12.767206+00:00",
-      "last_seen_at": "2026-06-12T05:51:12.767206+00:00",
+      "last_seen_at": "2026-06-13T05:22:26.558670+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -2772,13 +2772,13 @@
         {
           "topic_id": "motivic_k_theory",
           "topic_name": "Motivic Homotopy & K-Theory",
-          "score": 0.571,
+          "score": 0.569,
           "base_score": 0.505,
           "bridge_bonus": 0.02,
           "preference_bonus": 0.0,
-          "recency_bonus": 0.046,
+          "recency_bonus": 0.044,
           "level": "medium",
-          "reason": "关键词命中：motivic homotopy theory、A1-degree；arXiv 分类重合：math.AG；桥接 motivic_k_theory↔homotopy_theory (hits=1/1)；时效加分 +0.05",
+          "reason": "关键词命中：motivic homotopy theory、A1-degree；arXiv 分类重合：math.AG；桥接 motivic_k_theory↔homotopy_theory (hits=1/1)；时效加分 +0.04",
           "keyword_hits": [
             "motivic homotopy theory",
             "A1-degree"
@@ -2787,13 +2787,13 @@
         {
           "topic_id": "homotopy_theory",
           "topic_name": "Homotopy Theory",
-          "score": 0.263,
+          "score": 0.261,
           "base_score": 0.197,
           "bridge_bonus": 0.02,
           "preference_bonus": 0.0,
-          "recency_bonus": 0.046,
+          "recency_bonus": 0.044,
           "level": "low",
-          "reason": "关键词命中：homotopy theory；桥接 homotopy_theory↔motivic_k_theory (hits=1/1)；时效加分 +0.05",
+          "reason": "关键词命中：homotopy theory；桥接 homotopy_theory↔motivic_k_theory (hits=1/1)；时效加分 +0.04",
           "keyword_hits": [
             "homotopy theory"
           ]
@@ -2801,38 +2801,38 @@
         {
           "topic_id": "arithmetic_geometry",
           "topic_name": "Arithmetic Geometry",
-          "score": 0.238,
+          "score": 0.236,
           "base_score": 0.192,
           "bridge_bonus": 0.0,
           "preference_bonus": 0.0,
-          "recency_bonus": 0.046,
+          "recency_bonus": 0.044,
           "level": "low",
-          "reason": "arXiv 分类重合：math.AG；时效加分 +0.05",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.04",
           "keyword_hits": []
         },
         {
           "topic_id": "algebraic_geometry",
           "topic_name": "Algebraic Geometry",
-          "score": 0.233,
+          "score": 0.231,
           "base_score": 0.187,
           "bridge_bonus": 0.0,
           "preference_bonus": 0.0,
-          "recency_bonus": 0.046,
+          "recency_bonus": 0.044,
           "level": "low",
-          "reason": "arXiv 分类重合：math.AG；时效加分 +0.05",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.04",
           "keyword_hits": []
         }
       ],
       "best_match": {
         "topic_id": "motivic_k_theory",
         "topic_name": "Motivic Homotopy & K-Theory",
-        "score": 0.571,
+        "score": 0.569,
         "base_score": 0.505,
         "bridge_bonus": 0.02,
         "preference_bonus": 0.0,
-        "recency_bonus": 0.046,
+        "recency_bonus": 0.044,
         "level": "medium",
-        "reason": "关键词命中：motivic homotopy theory、A1-degree；arXiv 分类重合：math.AG；桥接 motivic_k_theory↔homotopy_theory (hits=1/1)；时效加分 +0.05",
+        "reason": "关键词命中：motivic homotopy theory、A1-degree；arXiv 分类重合：math.AG；桥接 motivic_k_theory↔homotopy_theory (hits=1/1)；时效加分 +0.04",
         "keyword_hits": [
           "motivic homotopy theory",
           "A1-degree"
@@ -2843,7 +2843,7 @@
           "topic_id": "motivic_k_theory",
           "topic_name": "Motivic Homotopy & K-Theory",
           "base_score": 0.505,
-          "score": 0.571,
+          "score": 0.569,
           "level": "medium",
           "keyword_hits": [
             "motivic homotopy theory",
@@ -2854,7 +2854,7 @@
           "topic_id": "homotopy_theory",
           "topic_name": "Homotopy Theory",
           "base_score": 0.197,
-          "score": 0.263,
+          "score": 0.261,
           "level": "low",
           "keyword_hits": [
             "homotopy theory"
@@ -2864,7 +2864,7 @@
           "topic_id": "arithmetic_geometry",
           "topic_name": "Arithmetic Geometry",
           "base_score": 0.192,
-          "score": 0.238,
+          "score": 0.236,
           "level": "low",
           "keyword_hits": []
         },
@@ -2872,7 +2872,7 @@
           "topic_id": "algebraic_geometry",
           "topic_name": "Algebraic Geometry",
           "base_score": 0.187,
-          "score": 0.233,
+          "score": 0.231,
           "level": "low",
           "keyword_hits": []
         }
@@ -2884,10 +2884,10 @@
         "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
         "evidence": "来源摘要可在论文原文中核验。",
         "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
-        "why_relevant": "关键词命中：motivic homotopy theory、A1-degree；arXiv 分类重合：math.AG；桥接 motivic_k_theory↔homotopy_theory (hits=1/1)；时效加分 +0.05"
+        "why_relevant": "关键词命中：motivic homotopy theory、A1-degree；arXiv 分类重合：math.AG；桥接 motivic_k_theory↔homotopy_theory (hits=1/1)；时效加分 +0.04"
       },
       "first_seen_at": "2026-06-11T04:42:44.276818+00:00",
-      "last_seen_at": "2026-06-12T05:51:12.767206+00:00",
+      "last_seen_at": "2026-06-13T05:22:26.558670+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -3272,13 +3272,13 @@
         {
           "topic_id": "arithmetic_geometry",
           "topic_name": "Arithmetic Geometry",
-          "score": 0.547,
+          "score": 0.546,
           "base_score": 0.481,
           "bridge_bonus": 0.02,
           "preference_bonus": 0.0,
-          "recency_bonus": 0.046,
+          "recency_bonus": 0.045,
           "level": "medium",
-          "reason": "关键词命中：number field、L-function；arXiv 分类重合：math.NT；桥接 arithmetic_geometry↔homotopy_theory (hits=1/1)；时效加分 +0.05",
+          "reason": "关键词命中：number field、L-function；arXiv 分类重合：math.NT；桥接 arithmetic_geometry↔homotopy_theory (hits=1/1)；时效加分 +0.04",
           "keyword_hits": [
             "number field",
             "L-function"
@@ -3287,13 +3287,13 @@
         {
           "topic_id": "algebraic_geometry",
           "topic_name": "Algebraic Geometry",
-          "score": 0.224,
+          "score": 0.223,
           "base_score": 0.178,
           "bridge_bonus": 0.0,
           "preference_bonus": 0.0,
-          "recency_bonus": 0.046,
+          "recency_bonus": 0.045,
           "level": "low",
-          "reason": "关键词命中：Spec；时效加分 +0.05",
+          "reason": "关键词命中：Spec；时效加分 +0.04",
           "keyword_hits": [
             "Spec"
           ]
@@ -3301,38 +3301,38 @@
         {
           "topic_id": "homotopy_theory",
           "topic_name": "Homotopy Theory",
-          "score": 0.068,
+          "score": 0.067,
           "base_score": 0.002,
           "bridge_bonus": 0.02,
           "preference_bonus": 0.0,
-          "recency_bonus": 0.046,
+          "recency_bonus": 0.045,
           "level": "low",
-          "reason": "桥接 homotopy_theory↔arithmetic_geometry (hits=1/1)；时效加分 +0.05",
+          "reason": "桥接 homotopy_theory↔arithmetic_geometry (hits=1/1)；时效加分 +0.04",
           "keyword_hits": []
         },
         {
           "topic_id": "motivic_k_theory",
           "topic_name": "Motivic Homotopy & K-Theory",
-          "score": 0.048,
+          "score": 0.047,
           "base_score": 0.002,
           "bridge_bonus": 0.0,
           "preference_bonus": 0.0,
-          "recency_bonus": 0.046,
+          "recency_bonus": 0.045,
           "level": "low",
-          "reason": "时效加分 +0.05",
+          "reason": "时效加分 +0.04",
           "keyword_hits": []
         }
       ],
       "best_match": {
         "topic_id": "arithmetic_geometry",
         "topic_name": "Arithmetic Geometry",
-        "score": 0.547,
+        "score": 0.546,
         "base_score": 0.481,
         "bridge_bonus": 0.02,
         "preference_bonus": 0.0,
-        "recency_bonus": 0.046,
+        "recency_bonus": 0.045,
         "level": "medium",
-        "reason": "关键词命中：number field、L-function；arXiv 分类重合：math.NT；桥接 arithmetic_geometry↔homotopy_theory (hits=1/1)；时效加分 +0.05",
+        "reason": "关键词命中：number field、L-function；arXiv 分类重合：math.NT；桥接 arithmetic_geometry↔homotopy_theory (hits=1/1)；时效加分 +0.04",
         "keyword_hits": [
           "number field",
           "L-function"
@@ -3343,7 +3343,7 @@
           "topic_id": "arithmetic_geometry",
           "topic_name": "Arithmetic Geometry",
           "base_score": 0.481,
-          "score": 0.547,
+          "score": 0.546,
           "level": "medium",
           "keyword_hits": [
             "number field",
@@ -3354,7 +3354,7 @@
           "topic_id": "algebraic_geometry",
           "topic_name": "Algebraic Geometry",
           "base_score": 0.178,
-          "score": 0.224,
+          "score": 0.223,
           "level": "low",
           "keyword_hits": [
             "Spec"
@@ -3368,10 +3368,10 @@
         "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
         "evidence": "来源摘要可在论文原文中核验。",
         "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
-        "why_relevant": "关键词命中：number field、L-function；arXiv 分类重合：math.NT；桥接 arithmetic_geometry↔homotopy_theory (hits=1/1)；时效加分 +0.05"
+        "why_relevant": "关键词命中：number field、L-function；arXiv 分类重合：math.NT；桥接 arithmetic_geometry↔homotopy_theory (hits=1/1)；时效加分 +0.04"
       },
       "first_seen_at": "2026-06-11T04:42:44.276818+00:00",
-      "last_seen_at": "2026-06-12T05:51:12.767206+00:00",
+      "last_seen_at": "2026-06-13T05:22:26.558670+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -3394,11 +3394,11 @@
         {
           "topic_id": "homotopy_theory",
           "topic_name": "Homotopy Theory",
-          "score": 0.543,
+          "score": 0.542,
           "base_score": 0.482,
           "bridge_bonus": 0.02,
           "preference_bonus": 0.0,
-          "recency_bonus": 0.041,
+          "recency_bonus": 0.04,
           "level": "medium",
           "reason": "关键词命中：stable homotopy theory；arXiv 分类重合：math.AT；桥接 homotopy_theory↔arithmetic_geometry (hits=4/1)；时效加分 +0.04",
           "keyword_hits": [
@@ -3408,11 +3408,11 @@
         {
           "topic_id": "motivic_k_theory",
           "topic_name": "Motivic Homotopy & K-Theory",
-          "score": 0.432,
+          "score": 0.431,
           "base_score": 0.391,
           "bridge_bonus": 0.0,
           "preference_bonus": 0.0,
-          "recency_bonus": 0.041,
+          "recency_bonus": 0.04,
           "level": "medium",
           "reason": "关键词命中：cyclotomic spectra；arXiv 分类重合：math.AT；时效加分 +0.04",
           "keyword_hits": [
@@ -3422,11 +3422,11 @@
         {
           "topic_id": "arithmetic_geometry",
           "topic_name": "Arithmetic Geometry",
-          "score": 0.272,
+          "score": 0.271,
           "base_score": 0.211,
           "bridge_bonus": 0.02,
           "preference_bonus": 0.0,
-          "recency_bonus": 0.041,
+          "recency_bonus": 0.04,
           "level": "low",
           "reason": "关键词命中：number field；桥接 arithmetic_geometry↔homotopy_theory (hits=1/4)；时效加分 +0.04",
           "keyword_hits": [
@@ -3436,11 +3436,11 @@
         {
           "topic_id": "algebraic_geometry",
           "topic_name": "Algebraic Geometry",
-          "score": 0.184,
+          "score": 0.183,
           "base_score": 0.143,
           "bridge_bonus": 0.0,
           "preference_bonus": 0.0,
-          "recency_bonus": 0.041,
+          "recency_bonus": 0.04,
           "level": "low",
           "reason": "关键词命中：Spec；时效加分 +0.04",
           "keyword_hits": [
@@ -3451,11 +3451,11 @@
       "best_match": {
         "topic_id": "homotopy_theory",
         "topic_name": "Homotopy Theory",
-        "score": 0.543,
+        "score": 0.542,
         "base_score": 0.482,
         "bridge_bonus": 0.02,
         "preference_bonus": 0.0,
-        "recency_bonus": 0.041,
+        "recency_bonus": 0.04,
         "level": "medium",
         "reason": "关键词命中：stable homotopy theory；arXiv 分类重合：math.AT；桥接 homotopy_theory↔arithmetic_geometry (hits=4/1)；时效加分 +0.04",
         "keyword_hits": [
@@ -3467,7 +3467,7 @@
           "topic_id": "homotopy_theory",
           "topic_name": "Homotopy Theory",
           "base_score": 0.482,
-          "score": 0.543,
+          "score": 0.542,
           "level": "medium",
           "keyword_hits": [
             "stable homotopy theory"
@@ -3477,7 +3477,7 @@
           "topic_id": "motivic_k_theory",
           "topic_name": "Motivic Homotopy & K-Theory",
           "base_score": 0.391,
-          "score": 0.432,
+          "score": 0.431,
           "level": "medium",
           "keyword_hits": [
             "cyclotomic spectra"
@@ -3487,7 +3487,7 @@
           "topic_id": "arithmetic_geometry",
           "topic_name": "Arithmetic Geometry",
           "base_score": 0.211,
-          "score": 0.272,
+          "score": 0.271,
           "level": "low",
           "keyword_hits": [
             "number field"
@@ -3497,7 +3497,7 @@
           "topic_id": "algebraic_geometry",
           "topic_name": "Algebraic Geometry",
           "base_score": 0.143,
-          "score": 0.184,
+          "score": 0.183,
           "level": "low",
           "keyword_hits": [
             "Spec"
@@ -3514,7 +3514,7 @@
         "why_relevant": "关键词命中：stable homotopy theory；arXiv 分类重合：math.AT；桥接 homotopy_theory↔arithmetic_geometry (hits=4/1)；时效加分 +0.04"
       },
       "first_seen_at": "2026-06-11T05:21:54.714863+00:00",
-      "last_seen_at": "2026-06-12T05:51:12.767206+00:00",
+      "last_seen_at": "2026-06-13T05:22:26.558670+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -6662,7 +6662,7 @@
     ],
     "days": 1,
     "collection_mode": "incremental",
-    "collection_cutoff_iso": "2026-06-11T15:54:22.687734+00:00",
+    "collection_cutoff_iso": "2026-06-12T05:51:12.767206+00:00",
     "max_per_topic": 25,
     "max_new_papers": 30,
     "sources": [
@@ -6697,7 +6697,7 @@
     "dropped_low_relevance_count": 0,
     "max_stored_papers": 150,
     "max_data_bytes": 8388608,
-    "data_bytes": 306357,
+    "data_bytes": 306339,
     "storage_trimmed_count": 0,
     "storage_trimmed_by_level": {
       "high": 0,
