@@ -28,6 +28,7 @@ from scripts.collect_papers import (
     parse_negative_terms,
     parse_sources,
     preference_boost_score,
+    resolve_llm_model,
     score_paper,
     select_diverse_papers,
     should_retry_arxiv_error,
@@ -92,8 +93,18 @@ class CollectorTest(unittest.TestCase):
             "MIN_KEYWORD_MATCH_SCORE",
             "MIN_TITLE_ONLY_SCORE",
             "MIN_PAPER_SCORE",
+            "LLM_MODEL",
+            "DEEPSEEK_API_KEY",
         ):
             os.environ.pop(name, None)
+
+    def test_empty_model_uses_current_deepseek_default(self) -> None:
+        os.environ["DEEPSEEK_API_KEY"] = "test-key"
+        os.environ["LLM_MODEL"] = ""
+        self.assertEqual(resolve_llm_model(), "deepseek-v4-flash")
+
+        os.environ["LLM_MODEL"] = " custom-model "
+        self.assertEqual(resolve_llm_model(), "custom-model")
 
     def test_arxiv_retry_wait_uses_retry_after_and_cap(self) -> None:
         os.environ["ARXIV_RETRY_MIN_SECONDS"] = "30"

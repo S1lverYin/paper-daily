@@ -46,7 +46,7 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
           LLM_BASE_URL: ${{ vars.LLM_BASE_URL }}
-          LLM_MODEL: ${{ vars.LLM_MODEL }}
+          LLM_MODEL: ${{ vars.LLM_MODEL || 'deepseek-v4-flash' }}
           MAX_NEW_PAPERS: ${{ vars.MAX_NEW_PAPERS || '30' }}
           MAX_STORED_PAPERS: ${{ vars.MAX_STORED_PAPERS || '150' }}
           MAX_SUMMARIES: ${{ vars.MAX_SUMMARIES || '20' }}
