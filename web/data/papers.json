@@ -1,6 +1,6 @@
 {
-  "generated_at": "Sun, 14 Jun 2026 05:52:32 +0000",
-  "generated_at_iso": "2026-06-14T05:52:32.817814+00:00",
+  "generated_at": "Sun, 14 Jun 2026 08:26:14 +0000",
+  "generated_at_iso": "2026-06-14T08:26:14.390793+00:00",
   "config_source": "file",
   "topics": [
     {
@@ -1164,6 +1164,131 @@
       "retained_from_previous_run": true
     },
     {
+      "id": "2606.11451v1",
+      "source": "arXiv",
+      "title": "Rankin--Selberg Subconvexity via Spectral Reciprocity",
+      "authors": [
+        "Peter Humphries",
+        "Liyang Yang"
+      ],
+      "summary": "We establish explicit subconvex bounds for central values of Rankin--Selberg $L$-functions $L(1/2,π\\timesπ')$ associated with pairs of unitary cuspidal automorphic representations of $\\mathrm{GL}_2$ over a number field. Building on the spectral reciprocity framework of Michel and Venkatesh, we develop a refined, fully explicit form of spectral reciprocity that allows for precise control of conductors and local test vectors. As a consequence, we obtain an explicit subconvex bound, which, even over $F=\\mathbb{Q}$, improves all previously known results. We further apply these bounds to several arithmetic problems. These include effective equidistribution of CM suborbits on quaternionic Shimura varieties, quantitative equidistribution of totally geodesic submanifolds, a uniform quantitative form of dihedral quantum unique ergodicity over number fields, and an application to distinguishing cuspidal automorphic representations.",
+      "published": "2026-06-09T21:03:33Z",
+      "updated": "2026-06-09T21:03:33Z",
+      "paper_url": "http://arxiv.org/abs/2606.11451v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.11451v1",
+      "categories": [
+        "math.NT"
+      ],
+      "seed_topic": "arithmetic_geometry",
+      "matches": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.844,
+          "base_score": 0.481,
+          "bridge_bonus": 0.02,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.043,
+          "level": "high",
+          "reason": "关键词命中：number field、L-function；arXiv 分类重合：math.NT；桥接 arithmetic_geometry↔homotopy_theory (hits=1/1)；时效加分 +0.04",
+          "keyword_hits": [
+            "number field",
+            "L-function"
+          ],
+          "llm_reason": "论文研究数域上自守表示L函数的次凸性，直接涉及‘number field’、‘L-function’、‘automorphic forms’、‘Langlands program’等关键词，与用户研究方向‘Arithmetic Geometry’中模形式、L函数、朗兰兹纲领等主题高度相关。"
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.221,
+          "base_score": 0.178,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.043,
+          "level": "low",
+          "reason": "关键词命中：Spec；时效加分 +0.04",
+          "keyword_hits": [
+            "Spec"
+          ]
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.065,
+          "base_score": 0.002,
+          "bridge_bonus": 0.02,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.043,
+          "level": "low",
+          "reason": "桥接 homotopy_theory↔arithmetic_geometry (hits=1/1)；时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.045,
+          "base_score": 0.002,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.043,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "arithmetic_geometry",
+        "topic_name": "Arithmetic Geometry",
+        "score": 0.844,
+        "base_score": 0.481,
+        "bridge_bonus": 0.02,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.043,
+        "level": "high",
+        "reason": "关键词命中：number field、L-function；arXiv 分类重合：math.NT；桥接 arithmetic_geometry↔homotopy_theory (hits=1/1)；时效加分 +0.04",
+        "keyword_hits": [
+          "number field",
+          "L-function"
+        ],
+        "llm_reason": "论文研究数域上自守表示L函数的次凸性，直接涉及‘number field’、‘L-function’、‘automorphic forms’、‘Langlands program’等关键词，与用户研究方向‘Arithmetic Geometry’中模形式、L函数、朗兰兹纲领等主题高度相关。"
+      },
+      "top_labels": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.481,
+          "score": 0.544,
+          "level": "medium",
+          "keyword_hits": [
+            "number field",
+            "L-function"
+          ]
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.178,
+          "score": 0.221,
+          "level": "low",
+          "keyword_hits": [
+            "Spec"
+          ]
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "chinese_summary": {
+        "problem": "建立数域上GL(2)酉尖点自守表示对的Rankin-Selberg L函数中心值L(1/2,π×π')的显式次凸上界。",
+        "method": "基于Michel和Venkatesh的谱互反性框架，发展精细化的显式谱互反公式，从而精确控制导子与局部测试向量，最终推导出显式的次凸界。",
+        "innovation": "1. 给出了谱互反性的完全显式形式，使得对导子和局部测试向量的控制更精确；2. 得到的次凸界即使在有理数域上也改进了所有先前已知结果；3. 将次凸界应用于多个算术问题（如CM子轨道在四元数Shimura簇上的有效等分布、全测地子流形的定量等分布、数域上二面体量子唯一遍历性的定量形式以及自守表示的区分）。",
+        "evidence": "摘要明确声称获得了显式次凸界，且在有理数域上改进所有先前已知结果；还列出了多个具体应用。",
+        "limitations": "摘要未给出具体界的形式，也未详细说明谱互反性推导过程中的技术假设；需要阅读全文确认方法的适用范围（如对一般数域是否完全成立）及额外条件。",
+        "why_relevant": "论文研究数域上自守表示L函数的次凸性，直接涉及‘number field’、‘L-function’、‘automorphic forms’、‘Langlands program’等关键词，与用户研究方向‘Arithmetic Geometry’中模形式、L函数、朗兰兹纲领等主题高度相关。"
+      },
+      "first_seen_at": "2026-06-11T04:42:44.276818+00:00",
+      "last_seen_at": "2026-06-14T08:26:14.390793+00:00",
+      "retained_from_previous_run": false
+    },
+    {
       "id": "2605.14470v1",
       "source": "arXiv",
       "title": "The Localization Theorem for the Motivic Homotopy Theory of Complex Analytic Stacks and other Geometric Settings",
@@ -1296,6 +1421,144 @@
       "first_seen_at": "2026-06-11T15:15:36.567953+00:00",
       "last_seen_at": "2026-06-11T15:15:36.567953+00:00",
       "retained_from_previous_run": true
+    },
+    {
+      "id": "2606.09747v1",
+      "source": "arXiv",
+      "title": "Homotopy theories via the magnitude-path spectral sequence",
+      "authors": [
+        "Muriel Livernet",
+        "Emily Roff",
+        "Sarah Whitehouse"
+      ],
+      "summary": "We introduce a family of homotopy theories for generalized metric spaces with natural number distances, via the magnitude-path spectral sequence (MPSS). The first page of the MPSS is known as magnitude homology; the second page is known as bigraded path homology, and contains GLMY path homology as its top row. For each natural number r, we define a class of maps of metric spaces called r-quasi-isomorphisms: those maps that induce a quasi-isomorphism at page r of the MPSS. We show that every page of the spectral sequence satisfies a suitable metric analogue of each of the Eilenberg-Steenrod axioms. In particular, we introduce the notion of r-cofibration and prove a Mayer-Vietoris theorem for page r with respect to r-cofibrations. We establish a family of Brown category structures on generalized metric spaces which allow us to explicitly compute homotopy colimits. We apply this to describe r-suspension and r-spheres of dimension n, and compute their spectral sequences. Finally we prove that for r = 1 the entire theory restricts to directed graphs.",
+      "published": "2026-06-08T17:07:00Z",
+      "updated": "2026-06-08T17:07:00Z",
+      "paper_url": "http://arxiv.org/abs/2606.09747v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.09747v1",
+      "categories": [
+        "math.AT",
+        "math.CT"
+      ],
+      "seed_topic": "homotopy_theory",
+      "matches": [
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.798,
+          "base_score": 0.607,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.041,
+          "level": "high",
+          "reason": "关键词命中：spectral sequence、homotopy colimit、cofibration；arXiv 分类重合：math.AT；时效加分 +0.04",
+          "keyword_hits": [
+            "spectral sequence",
+            "homotopy colimit",
+            "cofibration"
+          ],
+          "llm_reason": "直接命中研究方向关键词：spectral sequence、homotopy colimit、cofibration、Eilenberg-Steenrod axioms、Brown representability（通过Brown范畴结构）；与同伦论中谱序列、模型范畴和同伦余极限的核心概念高度相关。"
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.243,
+          "base_score": 0.202,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.041,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AT；时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.226,
+          "base_score": 0.185,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.041,
+          "level": "low",
+          "reason": "关键词命中：Spec；时效加分 +0.04",
+          "keyword_hits": [
+            "Spec"
+          ]
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.048,
+          "base_score": 0.007,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.041,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "homotopy_theory",
+        "topic_name": "Homotopy Theory",
+        "score": 0.798,
+        "base_score": 0.607,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.041,
+        "level": "high",
+        "reason": "关键词命中：spectral sequence、homotopy colimit、cofibration；arXiv 分类重合：math.AT；时效加分 +0.04",
+        "keyword_hits": [
+          "spectral sequence",
+          "homotopy colimit",
+          "cofibration"
+        ],
+        "llm_reason": "直接命中研究方向关键词：spectral sequence、homotopy colimit、cofibration、Eilenberg-Steenrod axioms、Brown representability（通过Brown范畴结构）；与同伦论中谱序列、模型范畴和同伦余极限的核心概念高度相关。"
+      },
+      "top_labels": [
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "base_score": 0.607,
+          "score": 0.648,
+          "level": "medium",
+          "keyword_hits": [
+            "spectral sequence",
+            "homotopy colimit",
+            "cofibration"
+          ]
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "base_score": 0.202,
+          "score": 0.243,
+          "level": "low",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.185,
+          "score": 0.226,
+          "level": "low",
+          "keyword_hits": [
+            "Spec"
+          ]
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "chinese_summary": {
+        "problem": "为具有自然数距离的广义度量空间建立一族分层同伦理论，通过幅度-路径谱序列（MPSS）的页面定义不同精度的同伦结构。",
+        "method": "利用MPSS，对每个自然数r定义r-拟同构和r-上纤维，证明每一页满足Eilenberg-Steenrod公理的度量类比（包括Mayer-Vietoris定理），并构造广义度量空间上的Brown范畴结构以显式计算同伦余极限。",
+        "innovation": "首次将谱序列页面作为同伦信息层级，每页对应一个同伦理论；引入度量空间中的r-拟同构和r-上纤维，并建立相应的同伦论框架（如Mayer-Vietoris）；提供计算r-悬垂和r-球面谱序列的具体例子，并显示r=1时理论限制到有向图。",
+        "evidence": "摘要中明确给出了理论结果：每个页面满足Eilenberg-Steenrod公理类比、Mayer-Vietoris定理、Brown范畴结构；并计算了r-悬垂和r-球面的谱序列作为实例。",
+        "limitations": "结果主要基于理论构建，实际应用和与标准同伦论（如拓扑空间或单纯集）的联系需阅读全文；r-拟同构的具体定义和性质未完全展开。",
+        "why_relevant": "直接命中研究方向关键词：spectral sequence、homotopy colimit、cofibration、Eilenberg-Steenrod axioms、Brown representability（通过Brown范畴结构）；与同伦论中谱序列、模型范畴和同伦余极限的核心概念高度相关。"
+      },
+      "first_seen_at": "2026-06-11T04:42:44.276818+00:00",
+      "last_seen_at": "2026-06-14T08:26:14.390793+00:00",
+      "retained_from_previous_run": false
     },
     {
       "id": "2511.09371v2",
@@ -1453,11 +1716,11 @@
         {
           "topic_id": "motivic_k_theory",
           "topic_name": "Motivic Homotopy & K-Theory",
-          "score": 0.757,
+          "score": 0.756,
           "base_score": 0.718,
           "bridge_bonus": 0.0,
           "preference_bonus": 0.0,
-          "recency_bonus": 0.039,
+          "recency_bonus": 0.038,
           "level": "high",
           "reason": "关键词命中：topological Hochschild homology、topological cyclic homology、algebraic K-theory、cyclotomic spectra、THH、TC；arXiv 分类重合：math.AT；时效加分 +0.04",
           "keyword_hits": [
@@ -1467,16 +1730,17 @@
             "cyclotomic spectra",
             "THH",
             "TC"
-          ]
+          ],
+          "llm_reason": "直接命中核心关键词：topological Hochschild homology (THH)、topological cyclic homology (TC)、algebraic K-theory、cyclotomic spectra，这些是我研究方向中 trace methods 和 K-theory 的关键组成部分。"
         },
         {
           "topic_id": "homotopy_theory",
           "topic_name": "Homotopy Theory",
-          "score": 0.51,
+          "score": 0.509,
           "base_score": 0.471,
           "bridge_bonus": 0.0,
           "preference_bonus": 0.0,
-          "recency_bonus": 0.039,
+          "recency_bonus": 0.038,
           "level": "medium",
           "reason": "关键词命中：homotopy theory、spectrum；arXiv 分类重合：math.AT；时效加分 +0.04",
           "keyword_hits": [
@@ -1487,11 +1751,11 @@
         {
           "topic_id": "algebraic_geometry",
           "topic_name": "Algebraic Geometry",
-          "score": 0.355,
+          "score": 0.354,
           "base_score": 0.316,
           "bridge_bonus": 0.0,
           "preference_bonus": 0.0,
-          "recency_bonus": 0.039,
+          "recency_bonus": 0.038,
           "level": "low",
           "reason": "关键词命中：local ring、Spec；时效加分 +0.04",
           "keyword_hits": [
@@ -1502,11 +1766,11 @@
         {
           "topic_id": "arithmetic_geometry",
           "topic_name": "Arithmetic Geometry",
-          "score": 0.051,
+          "score": 0.05,
           "base_score": 0.012,
           "bridge_bonus": 0.0,
           "preference_bonus": 0.0,
-          "recency_bonus": 0.039,
+          "recency_bonus": 0.038,
           "level": "low",
           "reason": "时效加分 +0.04",
           "keyword_hits": []
@@ -1515,11 +1779,11 @@
       "best_match": {
         "topic_id": "motivic_k_theory",
         "topic_name": "Motivic Homotopy & K-Theory",
-        "score": 0.757,
+        "score": 0.756,
         "base_score": 0.718,
         "bridge_bonus": 0.0,
         "preference_bonus": 0.0,
-        "recency_bonus": 0.039,
+        "recency_bonus": 0.038,
         "level": "high",
         "reason": "关键词命中：topological Hochschild homology、topological cyclic homology、algebraic K-theory、cyclotomic spectra、THH、TC；arXiv 分类重合：math.AT；时效加分 +0.04",
         "keyword_hits": [
@@ -1529,14 +1793,15 @@
           "cyclotomic spectra",
           "THH",
           "TC"
-        ]
+        ],
+        "llm_reason": "直接命中核心关键词：topological Hochschild homology (THH)、topological cyclic homology (TC)、algebraic K-theory、cyclotomic spectra，这些是我研究方向中 trace methods 和 K-theory 的关键组成部分。"
       },
       "top_labels": [
         {
           "topic_id": "motivic_k_theory",
           "topic_name": "Motivic Homotopy & K-Theory",
           "base_score": 0.718,
-          "score": 0.757,
+          "score": 0.756,
           "level": "high",
           "keyword_hits": [
             "topological Hochschild homology",
@@ -1551,7 +1816,7 @@
           "topic_id": "homotopy_theory",
           "topic_name": "Homotopy Theory",
           "base_score": 0.471,
-          "score": 0.51,
+          "score": 0.509,
           "level": "medium",
           "keyword_hits": [
             "homotopy theory",
@@ -1562,7 +1827,7 @@
           "topic_id": "algebraic_geometry",
           "topic_name": "Algebraic Geometry",
           "base_score": 0.316,
-          "score": 0.355,
+          "score": 0.354,
           "level": "low",
           "keyword_hits": [
             "local ring",
@@ -1572,15 +1837,160 @@
       ],
       "backfilled_from_recent_arxiv": true,
       "chinese_summary": {
-        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
-        "method": "This paper is an expository account of cyclotomic spectra.",
-        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
-        "evidence": "来源摘要可在论文原文中核验。",
-        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
-        "why_relevant": "关键词命中：topological Hochschild homology、topological cyclic homology、algebraic K-theory、cyclotomic spectra、THH、TC；arXiv 分类重合：math.AT；时效加分 +0.04"
+        "problem": "为理解 cyclotomic spectra 及其在代数 K 理论、THH 和 TC 中的作用提供系统综述，并辅助理解 Burklund 等人关于不同色高 TC 区别的最新工作。",
+        "method": "以综述形式系统介绍 cyclotomic spectra 的定义、结构（包括圆周群作用）及其与 THH、TC 和代数 K 理论的关系，并引用最新结果（如 TC 在色高 >1 时的反例）。",
+        "innovation": "作为综述，本文的贡献在于清晰梳理了 cyclotomic spectra 这一高级概念，将其与核心应用（代数 K 理论、THH/TC）联系，并为非专家提供了理解前沿证明（如 TC 区别）所需的背景知识。",
+        "evidence": "摘要中未提供新的实验或理论证据；本文为解释性综述，主要依赖已有文献结果。",
+        "limitations": "作为综述，可能缺乏深入技术细节；需要阅读全文以确认是否覆盖具体构造（如 cyclotomic structure 的模型）或提供新视角。",
+        "why_relevant": "直接命中核心关键词：topological Hochschild homology (THH)、topological cyclic homology (TC)、algebraic K-theory、cyclotomic spectra，这些是我研究方向中 trace methods 和 K-theory 的关键组成部分。"
       },
       "first_seen_at": "2026-06-11T05:21:54.714863+00:00",
-      "last_seen_at": "2026-06-14T05:52:32.817814+00:00",
+      "last_seen_at": "2026-06-14T08:26:14.390793+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "2606.08166v1",
+      "source": "arXiv",
+      "title": "Cyclotomic extensions in stable homotopy theory",
+      "authors": [
+        "Douglas C. Ravenel"
+      ],
+      "summary": "This expository paper is a companion to \\cite{Rav:gjmcyc}, in which we discuss cyclotomic spectra. Both papers are intended to shed light on the recent resolution of the telescope conjecture by Robert Burklund, Jeremy Hahn, Ishan Levy and Tomer Schlank (hereafter referred to as BHLS) in \\cite{BHLS}. Their proof involves both cyclotomic spectra, the subject of \\cite{Rav:gjmcyc}, and cyclotomic extensions of spectra, the subject of this paper. Higher cyclotomic extensions of commutative ring spectra are analogous to Galois extensions of $p$-adic number fields (or rings of integers thereof) obtained by adjoining roots of unity.",
+      "published": "2026-06-06T13:29:41Z",
+      "updated": "2026-06-06T13:29:41Z",
+      "paper_url": "http://arxiv.org/abs/2606.08166v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.08166v1",
+      "categories": [
+        "math.AT"
+      ],
+      "seed_topic": "homotopy_theory",
+      "matches": [
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.741,
+          "base_score": 0.482,
+          "bridge_bonus": 0.02,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.039,
+          "level": "high",
+          "reason": "关键词命中：stable homotopy theory；arXiv 分类重合：math.AT；桥接 homotopy_theory↔arithmetic_geometry (hits=4/1)；时效加分 +0.04",
+          "keyword_hits": [
+            "stable homotopy theory"
+          ],
+          "llm_reason": "直接涉及稳定同伦论中的核心对象（谱）和重要问题（望远镜猜想），且关键词覆盖‘stable homotopy theory’、‘spectrum’、‘cyclotomic extensions’。与我的研究方向中的‘stable homotopy category’、‘Bousfield localization’等概念紧密相关。"
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.43,
+          "base_score": 0.391,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.039,
+          "level": "medium",
+          "reason": "关键词命中：cyclotomic spectra；arXiv 分类重合：math.AT；时效加分 +0.04",
+          "keyword_hits": [
+            "cyclotomic spectra"
+          ]
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.27,
+          "base_score": 0.211,
+          "bridge_bonus": 0.02,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.039,
+          "level": "low",
+          "reason": "关键词命中：number field；桥接 arithmetic_geometry↔homotopy_theory (hits=1/4)；时效加分 +0.04",
+          "keyword_hits": [
+            "number field"
+          ]
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.182,
+          "base_score": 0.143,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.039,
+          "level": "low",
+          "reason": "关键词命中：Spec；时效加分 +0.04",
+          "keyword_hits": [
+            "Spec"
+          ]
+        }
+      ],
+      "best_match": {
+        "topic_id": "homotopy_theory",
+        "topic_name": "Homotopy Theory",
+        "score": 0.741,
+        "base_score": 0.482,
+        "bridge_bonus": 0.02,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.039,
+        "level": "high",
+        "reason": "关键词命中：stable homotopy theory；arXiv 分类重合：math.AT；桥接 homotopy_theory↔arithmetic_geometry (hits=4/1)；时效加分 +0.04",
+        "keyword_hits": [
+          "stable homotopy theory"
+        ],
+        "llm_reason": "直接涉及稳定同伦论中的核心对象（谱）和重要问题（望远镜猜想），且关键词覆盖‘stable homotopy theory’、‘spectrum’、‘cyclotomic extensions’。与我的研究方向中的‘stable homotopy category’、‘Bousfield localization’等概念紧密相关。"
+      },
+      "top_labels": [
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "base_score": 0.482,
+          "score": 0.541,
+          "level": "medium",
+          "keyword_hits": [
+            "stable homotopy theory"
+          ]
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "base_score": 0.391,
+          "score": 0.43,
+          "level": "medium",
+          "keyword_hits": [
+            "cyclotomic spectra"
+          ]
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.211,
+          "score": 0.27,
+          "level": "low",
+          "keyword_hits": [
+            "number field"
+          ]
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.143,
+          "score": 0.182,
+          "level": "low",
+          "keyword_hits": [
+            "Spec"
+          ]
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "chinese_summary": {
+        "problem": "为最近解决的望远镜猜想提供一个易于理解的解释，重点阐述其中使用的cyclotomic extensions of spectra这一关键工具。",
+        "method": "本文是一篇说明性文章，首先澄清cyclotomic spectra的基本概念，然后详细解释cyclotomic extensions of spectra的构造，将其类比为p-adic数域中添加单位根的Galois扩张，并展示这些概念如何用于Burklund等人对望远镜猜想的证明。",
+        "innovation": "1. 将cyclotomic extensions of commutative ring spectra与经典数域中的Galois扩张建立类比，提供了直观理解。\n2. 系统梳理了cyclotomic spectra和cyclotomic extensions的定义与性质，为后续研究提供参考。\n3. 以说明性方式呈现了望远镜猜想证明中的关键步骤，降低了技术门槛。",
+        "evidence": "摘要中未提供具体的实验或理论数据，但表明该文是给定参考文献的同伴，并引用了BHLS的证明。属于说明性综述，缺乏可独立核验的新证据。",
+        "limitations": "作为说明性文章，可能不包含原始定理或新的计算；需要结合原文及BHLS的论文才能完整理解证明细节。",
+        "why_relevant": "直接涉及稳定同伦论中的核心对象（谱）和重要问题（望远镜猜想），且关键词覆盖‘stable homotopy theory’、‘spectrum’、‘cyclotomic extensions’。与我的研究方向中的‘stable homotopy category’、‘Bousfield localization’等概念紧密相关。"
+      },
+      "first_seen_at": "2026-06-11T05:21:54.714863+00:00",
+      "last_seen_at": "2026-06-14T08:26:14.390793+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -2107,142 +2517,6 @@
       "retained_from_previous_run": true
     },
     {
-      "id": "2606.09747v1",
-      "source": "arXiv",
-      "title": "Homotopy theories via the magnitude-path spectral sequence",
-      "authors": [
-        "Muriel Livernet",
-        "Emily Roff",
-        "Sarah Whitehouse"
-      ],
-      "summary": "We introduce a family of homotopy theories for generalized metric spaces with natural number distances, via the magnitude-path spectral sequence (MPSS). The first page of the MPSS is known as magnitude homology; the second page is known as bigraded path homology, and contains GLMY path homology as its top row. For each natural number r, we define a class of maps of metric spaces called r-quasi-isomorphisms: those maps that induce a quasi-isomorphism at page r of the MPSS. We show that every page of the spectral sequence satisfies a suitable metric analogue of each of the Eilenberg-Steenrod axioms. In particular, we introduce the notion of r-cofibration and prove a Mayer-Vietoris theorem for page r with respect to r-cofibrations. We establish a family of Brown category structures on generalized metric spaces which allow us to explicitly compute homotopy colimits. We apply this to describe r-suspension and r-spheres of dimension n, and compute their spectral sequences. Finally we prove that for r = 1 the entire theory restricts to directed graphs.",
-      "published": "2026-06-08T17:07:00Z",
-      "updated": "2026-06-08T17:07:00Z",
-      "paper_url": "http://arxiv.org/abs/2606.09747v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.09747v1",
-      "categories": [
-        "math.AT",
-        "math.CT"
-      ],
-      "seed_topic": "homotopy_theory",
-      "matches": [
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "score": 0.649,
-          "base_score": 0.607,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.042,
-          "level": "medium",
-          "reason": "关键词命中：spectral sequence、homotopy colimit、cofibration；arXiv 分类重合：math.AT；时效加分 +0.04",
-          "keyword_hits": [
-            "spectral sequence",
-            "homotopy colimit",
-            "cofibration"
-          ]
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "score": 0.244,
-          "base_score": 0.202,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.042,
-          "level": "low",
-          "reason": "arXiv 分类重合：math.AT；时效加分 +0.04",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "score": 0.227,
-          "base_score": 0.185,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.042,
-          "level": "low",
-          "reason": "关键词命中：Spec；时效加分 +0.04",
-          "keyword_hits": [
-            "Spec"
-          ]
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "score": 0.049,
-          "base_score": 0.007,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.042,
-          "level": "low",
-          "reason": "时效加分 +0.04",
-          "keyword_hits": []
-        }
-      ],
-      "best_match": {
-        "topic_id": "homotopy_theory",
-        "topic_name": "Homotopy Theory",
-        "score": 0.649,
-        "base_score": 0.607,
-        "bridge_bonus": 0.0,
-        "preference_bonus": 0.0,
-        "recency_bonus": 0.042,
-        "level": "medium",
-        "reason": "关键词命中：spectral sequence、homotopy colimit、cofibration；arXiv 分类重合：math.AT；时效加分 +0.04",
-        "keyword_hits": [
-          "spectral sequence",
-          "homotopy colimit",
-          "cofibration"
-        ]
-      },
-      "top_labels": [
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "base_score": 0.607,
-          "score": 0.649,
-          "level": "medium",
-          "keyword_hits": [
-            "spectral sequence",
-            "homotopy colimit",
-            "cofibration"
-          ]
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "base_score": 0.202,
-          "score": 0.244,
-          "level": "low",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "base_score": 0.185,
-          "score": 0.227,
-          "level": "low",
-          "keyword_hits": [
-            "Spec"
-          ]
-        }
-      ],
-      "backfilled_from_recent_arxiv": true,
-      "chinese_summary": {
-        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
-        "method": "We introduce a family of homotopy theories for generalized metric spaces with natural number distances, via the magnitude-path spectral sequence (MPSS).",
-        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
-        "evidence": "来源摘要可在论文原文中核验。",
-        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
-        "why_relevant": "关键词命中：spectral sequence、homotopy colimit、cofibration；arXiv 分类重合：math.AT；时效加分 +0.04"
-      },
-      "first_seen_at": "2026-06-11T04:42:44.276818+00:00",
-      "last_seen_at": "2026-06-14T05:52:32.817814+00:00",
-      "retained_from_previous_run": false
-    },
-    {
       "id": "2604.12679v1",
       "source": "arXiv",
       "title": "Kahn-Priddy theorems via the norm",
@@ -2402,7 +2676,8 @@
             "line bundle",
             "variety",
             "Proj"
-          ]
+          ],
+          "llm_reason": "研究方向（代数几何）紧密相关：涉及line bundle、代数簇、投影概念，并且分类射影子簇是代数几何核心问题；尽管流形非凯勒，但使用方案语言和线束理论，与Spec、Proj、光滑态射等概念有交集。"
         },
         {
           "topic_id": "arithmetic_geometry",
@@ -2459,7 +2734,8 @@
           "line bundle",
           "variety",
           "Proj"
-        ]
+        ],
+        "llm_reason": "研究方向（代数几何）紧密相关：涉及line bundle、代数簇、投影概念，并且分类射影子簇是代数几何核心问题；尽管流形非凯勒，但使用方案语言和线束理论，与Spec、Proj、光滑态射等概念有交集。"
       },
       "top_labels": [
         {
@@ -2505,15 +2781,15 @@
       ],
       "backfilled_from_recent_arxiv": true,
       "chinese_summary": {
-        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
-        "method": "We study complex subvarieties in certain non-Kahler holomorphically symplectic manifolds $X$, called the Bogomolov-Guan manifolds.",
-        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
-        "evidence": "来源摘要可在论文原文中核验。",
-        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
-        "why_relevant": "关键词命中：line bundle、variety、Proj；arXiv 分类重合：math.AG；时效加分 +0.04"
+        "problem": "分类Bogomolov-Guan非凯勒全纯辛流形中的射影子簇，将其描述为通过拟对角线相关的纤维或曲线。",
+        "method": "引入椭圆曲线上的拟对角线概念（曲线S使得p1*L⊗p2*L^{-1}为torsion line bundle），证明其可数性；然后利用Bogomolov-Guan流形上的Lagrangian纤维化，证明不可约复子簇Z为Moishezon当且仅当π(Z)是点或由拟对角线描述的曲线，从而完成射影子簇的分类。",
+        "innovation": "1. 在非凯勒全纯辛流形中给出了射影子簇的完全分类；2. 通过拟对角线将射影子簇与纤维化投影的像联系起来，并证明对一般流形射影子簇完全落在纤维中。",
+        "evidence": "摘要中给出了拟对角线的可数性证明以及子簇为Moishezon的充要条件，但未提供计算或实验验证。",
+        "limitations": "拟对角线的具体构造和可数性证明需阅读全文；流形的一般性条件未明确；仅针对Bogomolov-Guan流形，普适性有限。",
+        "why_relevant": "研究方向（代数几何）紧密相关：涉及line bundle、代数簇、投影概念，并且分类射影子簇是代数几何核心问题；尽管流形非凯勒，但使用方案语言和线束理论，与Spec、Proj、光滑态射等概念有交集。"
       },
       "first_seen_at": "2026-06-11T05:21:54.714863+00:00",
-      "last_seen_at": "2026-06-14T05:52:32.817814+00:00",
+      "last_seen_at": "2026-06-14T08:26:14.390793+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -2547,7 +2823,8 @@
           "keyword_hits": [
             "ring of integers",
             "number field"
-          ]
+          ],
+          "llm_reason": "该论文研究数域中的序及其整数环中的导子，涉及数域的算术结构，与研究方向中的number field、ring of integers、conductor等关键词直接相关，但核心内容更偏交换代数而非算术几何的深度主题（如Galois表示、p-adic Hodge理论等）。"
         },
         {
           "topic_id": "algebraic_geometry",
@@ -2599,7 +2876,8 @@
         "keyword_hits": [
           "ring of integers",
           "number field"
-        ]
+        ],
+        "llm_reason": "该论文研究数域中的序及其整数环中的导子，涉及数域的算术结构，与研究方向中的number field、ring of integers、conductor等关键词直接相关，但核心内容更偏交换代数而非算术几何的深度主题（如Galois表示、p-adic Hodge理论等）。"
       },
       "top_labels": [
         {
@@ -2616,15 +2894,15 @@
       ],
       "backfilled_from_recent_arxiv": true,
       "chinese_summary": {
-        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
-        "method": "We establish a Fundamental Theorem of Orders (FTO), which allows us to express any order (in a number field) uniquely as an intersection of \\textit{irreducible orders}.",
-        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
-        "evidence": "来源摘要可在论文原文中核验。",
-        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
-        "why_relevant": "关键词命中：ring of integers、number field；arXiv 分类重合：math.NT；时效加分 +0.04"
+        "problem": "建立数域中序（order）的唯一分解定理，即任何序可唯一表示为不可约序的交，并研究该分解中索引的乘法性和导子的分解性质。",
+        "method": "通过定义不可约序的概念，证明任意序可唯一表示为不可约序的交，且索引在整数环中按乘法分布，导子分解为两两互素的理想。应用该分解推广Furtwängler准则，处理关于序的导子结构的广泛问题。",
+        "innovation": "首次建立序的基本定理（FTO），实现任意序的唯一分解并表示；推广经典的Furtwängler准则至更一般情形；未来将应用于数域的加权计数。",
+        "evidence": "摘要中明确给出了分解的存在唯一性、索引的乘法性质以及导子的互素分解，并声称推广了Furtwängler准则。但未提供具体证明或实验数据。",
+        "limitations": "摘要未提供证明细节或实例，需要阅读全文确认定理的正确性和适用条件；未来应用部分仅提及计划，尚无结果。",
+        "why_relevant": "该论文研究数域中的序及其整数环中的导子，涉及数域的算术结构，与研究方向中的number field、ring of integers、conductor等关键词直接相关，但核心内容更偏交换代数而非算术几何的深度主题（如Galois表示、p-adic Hodge理论等）。"
       },
       "first_seen_at": "2026-06-11T15:15:36.567953+00:00",
-      "last_seen_at": "2026-06-14T05:52:32.817814+00:00",
+      "last_seen_at": "2026-06-14T08:26:14.390793+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -2654,11 +2932,12 @@
           "preference_bonus": 0.0,
           "recency_bonus": 0.045,
           "level": "medium",
-          "reason": "关键词命中：arithmetic geometry、finite field；arXiv 分类重合：math.AG、math.NT；桥接 arithmetic_geometry↔algebraic_geometry (hits=1/2)；时效加分 +0.05",
+          "reason": "关键词命中：arithmetic geometry、finite field；arXiv 分类重合：math.AG、math.NT；桥接 arithmetic_geometry↔algebraic_geometry (hits=1/2)；时效加分 +0.04",
           "keyword_hits": [
             "arithmetic geometry",
             "finite field"
-          ]
+          ],
+          "llm_reason": "论文涉及有限域、伽罗瓦理论、Kummer扩张，并提及推广到étale基本群，与研究方向中的arithmetic geometry、finite field、Galois theory等关键词匹配；但方法偏向经典，未涉及p-adic Hodge、模形式等核心内容，故匹配度中等。"
         },
         {
           "topic_id": "algebraic_geometry",
@@ -2669,7 +2948,7 @@
           "preference_bonus": 0.0,
           "recency_bonus": 0.045,
           "level": "medium",
-          "reason": "关键词命中：normal scheme、variety；arXiv 分类重合：math.AG；桥接 algebraic_geometry↔arithmetic_geometry (hits=2/1)；时效加分 +0.05",
+          "reason": "关键词命中：normal scheme、variety；arXiv 分类重合：math.AG；桥接 algebraic_geometry↔arithmetic_geometry (hits=2/1)；时效加分 +0.04",
           "keyword_hits": [
             "normal scheme",
             "variety"
@@ -2684,7 +2963,7 @@
           "preference_bonus": 0.0,
           "recency_bonus": 0.045,
           "level": "low",
-          "reason": "arXiv 分类重合：math.AG；时效加分 +0.05",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.04",
           "keyword_hits": []
         },
         {
@@ -2696,7 +2975,7 @@
           "preference_bonus": 0.0,
           "recency_bonus": 0.045,
           "level": "low",
-          "reason": "时效加分 +0.05",
+          "reason": "时效加分 +0.04",
           "keyword_hits": []
         }
       ],
@@ -2709,11 +2988,12 @@
         "preference_bonus": 0.0,
         "recency_bonus": 0.045,
         "level": "medium",
-        "reason": "关键词命中：arithmetic geometry、finite field；arXiv 分类重合：math.AG、math.NT；桥接 arithmetic_geometry↔algebraic_geometry (hits=1/2)；时效加分 +0.05",
+        "reason": "关键词命中：arithmetic geometry、finite field；arXiv 分类重合：math.AG、math.NT；桥接 arithmetic_geometry↔algebraic_geometry (hits=1/2)；时效加分 +0.04",
         "keyword_hits": [
           "arithmetic geometry",
           "finite field"
-        ]
+        ],
+        "llm_reason": "论文涉及有限域、伽罗瓦理论、Kummer扩张，并提及推广到étale基本群，与研究方向中的arithmetic geometry、finite field、Galois theory等关键词匹配；但方法偏向经典，未涉及p-adic Hodge、模形式等核心内容，故匹配度中等。"
       },
       "top_labels": [
         {
@@ -2741,15 +3021,15 @@
       ],
       "backfilled_from_recent_arxiv": true,
       "chinese_summary": {
-        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
-        "method": "We study the splitting behavior of parametrized families of polynomials over finite fields through a geometric and Galois-theoretic approach.",
-        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
-        "evidence": "来源摘要可在论文原文中核验。",
-        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
-        "why_relevant": "关键词命中：arithmetic geometry、finite field；arXiv 分类重合：math.AG、math.NT；桥接 arithmetic_geometry↔algebraic_geometry (hits=1/2)；时效加分 +0.05"
+        "problem": "研究参数化多项式族在有限域上的分裂行为，并推广Slavov关于多个多项式取平方值独立性的结果到n次幂剩余的情形。",
+        "method": "利用经典伽罗瓦理论和仿射正规簇上的Chebotarev密度定理，通过Kummer扩张的线性无关性条件刻画n次幂剩余的独立性，避免使用étale上同调等重工具。",
+        "innovation": "1. 将Slavov关于平方值的独立性条件推广到n次幂剩余，并重新解释为Kummer扩张的线性无关性。\n2. 采用经典伽罗瓦理论框架，使得结论更易理解，同时指出可翻译为现代étale基本群语言。",
+        "evidence": "摘要明确说明推广了Slavov的结果，并给出q≡1 mod n情形下的推广；但未提供具体数值实验或详细证明，理论推导需依赖全文。",
+        "limitations": "仅适用q≡1 mod n的情形，且未讨论一般情况；涉及有限域特征与n互质，未覆盖特征整除n的情况；缺乏性能或实验数据对比。",
+        "why_relevant": "论文涉及有限域、伽罗瓦理论、Kummer扩张，并提及推广到étale基本群，与研究方向中的arithmetic geometry、finite field、Galois theory等关键词匹配；但方法偏向经典，未涉及p-adic Hodge、模形式等核心内容，故匹配度中等。"
       },
       "first_seen_at": "2026-06-12T05:51:12.767206+00:00",
-      "last_seen_at": "2026-06-14T05:52:32.817814+00:00",
+      "last_seen_at": "2026-06-14T08:26:14.390793+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -2782,7 +3062,8 @@
           "keyword_hits": [
             "motivic homotopy theory",
             "A1-degree"
-          ]
+          ],
+          "llm_reason": "直接使用动机同伦理论中的核心概念A1-度来解决枚举几何问题，与研究方向中的‘motivic homotopy theory’和‘A1-degree’高度相关；同时内容涉及A1-局部化与枚举几何的交叉，虽未直接讨论K-理论或谱，但为动机同伦理论的应用提供了鲜活案例。"
         },
         {
           "topic_id": "homotopy_theory",
@@ -2836,7 +3117,8 @@
         "keyword_hits": [
           "motivic homotopy theory",
           "A1-degree"
-        ]
+        ],
+        "llm_reason": "直接使用动机同伦理论中的核心概念A1-度来解决枚举几何问题，与研究方向中的‘motivic homotopy theory’和‘A1-degree’高度相关；同时内容涉及A1-局部化与枚举几何的交叉，虽未直接讨论K-理论或谱，但为动机同伦理论的应用提供了鲜活案例。"
       },
       "top_labels": [
         {
@@ -2879,15 +3161,15 @@
       ],
       "backfilled_from_recent_arxiv": true,
       "chinese_summary": {
-        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
-        "method": "These are lecture notes for the PCMI 2024 Graduate Summer School for the mini-workshop on motivic explorations in enumerative geometry.",
-        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
-        "evidence": "来源摘要可在论文原文中核验。",
-        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
-        "why_relevant": "关键词命中：motivic homotopy theory、A1-degree；arXiv 分类重合：math.AG；桥接 motivic_k_theory↔homotopy_theory (hits=1/1)；时效加分 +0.04"
+        "problem": "将古典枚举几何（如贝祖定理、光滑三次曲面上直线的计数）从复数和实数域推广到任意域，并解释如何利用动机同伦理论中的A1-度获得附加的算术和几何信息。",
+        "method": "以动机同伦理论中的A1-度为核心工具，通过A1-同伦分类的数值不变量来计数几何对象；同时引入热带几何（如热带平面曲线）作为辅助手段，简化并证明计数结果在任意域上的正确性。",
+        "innovation": "1. 系统阐述如何用A1-度统一处理任意域上的枚举几何问题，突破传统仅限复/实数的限制；2. 将热带几何与动机方法结合，提供新的证明工具（如用热带曲线证明贝祖定理）；3. 以教学讲义的框架梳理核心概念与流程，便于非动机同伦方向的研究者快速入门。",
+        "evidence": "摘要中明确提及通过两个经典例子（贝祖定理、光滑三次曲面直线计数）展示A1-度的应用，并说明使用热带几何工具证明贝祖定理与对应定理，但未提供数值结果或实验数据；作为讲义，缺乏原创性实验或理论证明细节。",
+        "limitations": "属于入门级综述讲义，可能不包含新定理或原创性技术突破；需要阅读全文才能确认A1-度实现的具体条件和热带对应定理的严格叙述。",
+        "why_relevant": "直接使用动机同伦理论中的核心概念A1-度来解决枚举几何问题，与研究方向中的‘motivic homotopy theory’和‘A1-degree’高度相关；同时内容涉及A1-局部化与枚举几何的交叉，虽未直接讨论K-理论或谱，但为动机同伦理论的应用提供了鲜活案例。"
       },
       "first_seen_at": "2026-06-11T04:42:44.276818+00:00",
-      "last_seen_at": "2026-06-14T05:52:32.817814+00:00",
+      "last_seen_at": "2026-06-14T08:26:14.390793+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -3250,272 +3532,6 @@
       "first_seen_at": "2026-06-11T15:15:36.567953+00:00",
       "last_seen_at": "2026-06-11T15:15:36.567953+00:00",
       "retained_from_previous_run": true
-    },
-    {
-      "id": "2606.11451v1",
-      "source": "arXiv",
-      "title": "Rankin--Selberg Subconvexity via Spectral Reciprocity",
-      "authors": [
-        "Peter Humphries",
-        "Liyang Yang"
-      ],
-      "summary": "We establish explicit subconvex bounds for central values of Rankin--Selberg $L$-functions $L(1/2,π\\timesπ')$ associated with pairs of unitary cuspidal automorphic representations of $\\mathrm{GL}_2$ over a number field. Building on the spectral reciprocity framework of Michel and Venkatesh, we develop a refined, fully explicit form of spectral reciprocity that allows for precise control of conductors and local test vectors. As a consequence, we obtain an explicit subconvex bound, which, even over $F=\\mathbb{Q}$, improves all previously known results. We further apply these bounds to several arithmetic problems. These include effective equidistribution of CM suborbits on quaternionic Shimura varieties, quantitative equidistribution of totally geodesic submanifolds, a uniform quantitative form of dihedral quantum unique ergodicity over number fields, and an application to distinguishing cuspidal automorphic representations.",
-      "published": "2026-06-09T21:03:33Z",
-      "updated": "2026-06-09T21:03:33Z",
-      "paper_url": "http://arxiv.org/abs/2606.11451v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.11451v1",
-      "categories": [
-        "math.NT"
-      ],
-      "seed_topic": "arithmetic_geometry",
-      "matches": [
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "score": 0.544,
-          "base_score": 0.481,
-          "bridge_bonus": 0.02,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.043,
-          "level": "medium",
-          "reason": "关键词命中：number field、L-function；arXiv 分类重合：math.NT；桥接 arithmetic_geometry↔homotopy_theory (hits=1/1)；时效加分 +0.04",
-          "keyword_hits": [
-            "number field",
-            "L-function"
-          ]
-        },
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "score": 0.221,
-          "base_score": 0.178,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.043,
-          "level": "low",
-          "reason": "关键词命中：Spec；时效加分 +0.04",
-          "keyword_hits": [
-            "Spec"
-          ]
-        },
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "score": 0.065,
-          "base_score": 0.002,
-          "bridge_bonus": 0.02,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.043,
-          "level": "low",
-          "reason": "桥接 homotopy_theory↔arithmetic_geometry (hits=1/1)；时效加分 +0.04",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "score": 0.045,
-          "base_score": 0.002,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.043,
-          "level": "low",
-          "reason": "时效加分 +0.04",
-          "keyword_hits": []
-        }
-      ],
-      "best_match": {
-        "topic_id": "arithmetic_geometry",
-        "topic_name": "Arithmetic Geometry",
-        "score": 0.544,
-        "base_score": 0.481,
-        "bridge_bonus": 0.02,
-        "preference_bonus": 0.0,
-        "recency_bonus": 0.043,
-        "level": "medium",
-        "reason": "关键词命中：number field、L-function；arXiv 分类重合：math.NT；桥接 arithmetic_geometry↔homotopy_theory (hits=1/1)；时效加分 +0.04",
-        "keyword_hits": [
-          "number field",
-          "L-function"
-        ]
-      },
-      "top_labels": [
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "base_score": 0.481,
-          "score": 0.544,
-          "level": "medium",
-          "keyword_hits": [
-            "number field",
-            "L-function"
-          ]
-        },
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "base_score": 0.178,
-          "score": 0.221,
-          "level": "low",
-          "keyword_hits": [
-            "Spec"
-          ]
-        }
-      ],
-      "backfilled_from_recent_arxiv": true,
-      "chinese_summary": {
-        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
-        "method": "We establish explicit subconvex bounds for central values of Rankin--Selberg $L$-functions $L(1/2,π\\timesπ')$ associated with pairs of unitary cuspidal automorphic representations of $\\mathrm{GL}_2$ over a number field.",
-        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
-        "evidence": "来源摘要可在论文原文中核验。",
-        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
-        "why_relevant": "关键词命中：number field、L-function；arXiv 分类重合：math.NT；桥接 arithmetic_geometry↔homotopy_theory (hits=1/1)；时效加分 +0.04"
-      },
-      "first_seen_at": "2026-06-11T04:42:44.276818+00:00",
-      "last_seen_at": "2026-06-14T05:52:32.817814+00:00",
-      "retained_from_previous_run": false
-    },
-    {
-      "id": "2606.08166v1",
-      "source": "arXiv",
-      "title": "Cyclotomic extensions in stable homotopy theory",
-      "authors": [
-        "Douglas C. Ravenel"
-      ],
-      "summary": "This expository paper is a companion to \\cite{Rav:gjmcyc}, in which we discuss cyclotomic spectra. Both papers are intended to shed light on the recent resolution of the telescope conjecture by Robert Burklund, Jeremy Hahn, Ishan Levy and Tomer Schlank (hereafter referred to as BHLS) in \\cite{BHLS}. Their proof involves both cyclotomic spectra, the subject of \\cite{Rav:gjmcyc}, and cyclotomic extensions of spectra, the subject of this paper. Higher cyclotomic extensions of commutative ring spectra are analogous to Galois extensions of $p$-adic number fields (or rings of integers thereof) obtained by adjoining roots of unity.",
-      "published": "2026-06-06T13:29:41Z",
-      "updated": "2026-06-06T13:29:41Z",
-      "paper_url": "http://arxiv.org/abs/2606.08166v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.08166v1",
-      "categories": [
-        "math.AT"
-      ],
-      "seed_topic": "homotopy_theory",
-      "matches": [
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "score": 0.541,
-          "base_score": 0.482,
-          "bridge_bonus": 0.02,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.039,
-          "level": "medium",
-          "reason": "关键词命中：stable homotopy theory；arXiv 分类重合：math.AT；桥接 homotopy_theory↔arithmetic_geometry (hits=4/1)；时效加分 +0.04",
-          "keyword_hits": [
-            "stable homotopy theory"
-          ]
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "score": 0.43,
-          "base_score": 0.391,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.039,
-          "level": "medium",
-          "reason": "关键词命中：cyclotomic spectra；arXiv 分类重合：math.AT；时效加分 +0.04",
-          "keyword_hits": [
-            "cyclotomic spectra"
-          ]
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "score": 0.27,
-          "base_score": 0.211,
-          "bridge_bonus": 0.02,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.039,
-          "level": "low",
-          "reason": "关键词命中：number field；桥接 arithmetic_geometry↔homotopy_theory (hits=1/4)；时效加分 +0.04",
-          "keyword_hits": [
-            "number field"
-          ]
-        },
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "score": 0.182,
-          "base_score": 0.143,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.039,
-          "level": "low",
-          "reason": "关键词命中：Spec；时效加分 +0.04",
-          "keyword_hits": [
-            "Spec"
-          ]
-        }
-      ],
-      "best_match": {
-        "topic_id": "homotopy_theory",
-        "topic_name": "Homotopy Theory",
-        "score": 0.541,
-        "base_score": 0.482,
-        "bridge_bonus": 0.02,
-        "preference_bonus": 0.0,
-        "recency_bonus": 0.039,
-        "level": "medium",
-        "reason": "关键词命中：stable homotopy theory；arXiv 分类重合：math.AT；桥接 homotopy_theory↔arithmetic_geometry (hits=4/1)；时效加分 +0.04",
-        "keyword_hits": [
-          "stable homotopy theory"
-        ]
-      },
-      "top_labels": [
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "base_score": 0.482,
-          "score": 0.541,
-          "level": "medium",
-          "keyword_hits": [
-            "stable homotopy theory"
-          ]
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "base_score": 0.391,
-          "score": 0.43,
-          "level": "medium",
-          "keyword_hits": [
-            "cyclotomic spectra"
-          ]
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "base_score": 0.211,
-          "score": 0.27,
-          "level": "low",
-          "keyword_hits": [
-            "number field"
-          ]
-        },
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "base_score": 0.143,
-          "score": 0.182,
-          "level": "low",
-          "keyword_hits": [
-            "Spec"
-          ]
-        }
-      ],
-      "backfilled_from_recent_arxiv": true,
-      "chinese_summary": {
-        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
-        "method": "This expository paper is a companion to \\cite{Rav:gjmcyc}, in which we discuss cyclotomic spectra.",
-        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
-        "evidence": "来源摘要可在论文原文中核验。",
-        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
-        "why_relevant": "关键词命中：stable homotopy theory；arXiv 分类重合：math.AT；桥接 homotopy_theory↔arithmetic_geometry (hits=4/1)；时效加分 +0.04"
-      },
-      "first_seen_at": "2026-06-11T05:21:54.714863+00:00",
-      "last_seen_at": "2026-06-14T05:52:32.817814+00:00",
-      "retained_from_previous_run": false
     },
     {
       "id": "2602.00274v2",
@@ -6654,15 +6670,15 @@
     "filtered_low_relevance_count": 1,
     "filtered_wrong_category_count": 53,
     "arxiv_category_filter": [
-      "math.AG",
       "math.NT",
       "math.KT",
       "math.CT",
+      "math.AG",
       "math.AT"
     ],
     "days": 1,
     "collection_mode": "incremental",
-    "collection_cutoff_iso": "2026-06-13T05:22:26.558670+00:00",
+    "collection_cutoff_iso": "2026-06-14T05:52:32.817814+00:00",
     "max_per_topic": 25,
     "max_new_papers": 30,
     "sources": [
@@ -6697,7 +6713,7 @@
     "dropped_low_relevance_count": 0,
     "max_stored_papers": 150,
     "max_data_bytes": 8388608,
-    "data_bytes": 306339,
+    "data_bytes": 317193,
     "storage_trimmed_count": 0,
     "storage_trimmed_by_level": {
       "high": 0,
