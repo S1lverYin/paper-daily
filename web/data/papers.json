@@ -1,6 +1,6 @@
 {
-  "generated_at": "Mon, 15 Jun 2026 05:50:50 +0000",
-  "generated_at_iso": "2026-06-15T05:50:50.450877+00:00",
+  "generated_at": "Mon, 15 Jun 2026 05:58:38 +0000",
+  "generated_at_iso": "2026-06-15T05:58:38.976818+00:00",
   "config_source": "file",
   "topics": [
     {
@@ -323,164 +323,6 @@
     }
   ],
   "papers": [
-    {
-      "id": "2606.12001v1",
-      "source": "arXiv",
-      "title": "On the metalinear algebraic cobordism spectrum",
-      "authors": [
-        "Ahina Nandy",
-        "Egor Zolotarev"
-      ],
-      "summary": "In this paper, we study the metalinear algebraic cobordism spectrum $\\mathrm{MML}$ (also sometimes denoted $\\mathrm{MSL}^c$), which is built from the structure groups of oriented vector bundles. We establish an interpolation between $\\mathrm{MSL}$ and $\\mathrm{MML}$ and deduce that the canonical morphism $\\mathrm{MSL}\\to \\mathrm{MML}$ admits a retraction. We parametrize all such retractions in the category of $\\mathrm{MSL}$-modules and, after fixing one of them, obtain an equivalence $\\mathrm{MML}\\cong\\mathrm{MSL}\\oplus Σ^{2,1}\\mathrm{MGL}$. As an application of these results, we determine various invariants of the metalinear algebraic cobordism spectrum over a field (after inverting the exponential characteristic). More precisely, we determine the first few Milnor-Witt stems of $\\mathrm{MML}$ in terms of the very effective algebraic and hermitian K-theory spectra, and the geometric diagonal of $\\mathrm{MML}$ in terms of Stong's complex-spin cobordism ring. We also compute the slices and use them to describe the category of 2-inverted modules over the $\\mathbb{E}_\\infty$-ring spectrum $\\mathrm{MML}$.",
-      "published": "2026-06-10T12:26:27Z",
-      "updated": "2026-06-10T12:26:27Z",
-      "paper_url": "http://arxiv.org/abs/2606.12001v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.12001v1",
-      "categories": [
-        "math.AT",
-        "math.AG",
-        "math.KT"
-      ],
-      "seed_topic": "k_theory",
-      "matches": [
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy Theory",
-          "score": 1.0,
-          "base_score": 0.876,
-          "bridge_bonus": 0.3,
-          "level": "high",
-          "reason": "关键词命中：MGL、MSL、algebraic cobordism、hermitian K-theory；arXiv 分类重合：math.AG；桥接信号「MGL」(motivic ↔ K-theory / homotopy)；桥接信号「vector bundles」(K-theory ↔ AG / motivic)；桥接信号「Hermitian K-theory」(K-theory ↔ motivic)",
-          "keyword_hits": [
-            "MGL",
-            "MSL",
-            "algebraic cobordism",
-            "hermitian K-theory"
-          ]
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "K-Theory",
-          "score": 1.0,
-          "base_score": 0.749,
-          "bridge_bonus": 0.3,
-          "level": "high",
-          "reason": "关键词命中：K-theory、vector bundles、Hermitian K-theory；arXiv 分类重合：math.AT、math.KT；桥接信号「MGL」(motivic ↔ K-theory / homotopy)；桥接信号「vector bundles」(K-theory ↔ AG / motivic)；桥接信号「Hermitian K-theory」(K-theory ↔ motivic)",
-          "keyword_hits": [
-            "K-theory",
-            "vector bundles",
-            "Hermitian K-theory"
-          ]
-        },
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "score": 0.685,
-          "base_score": 0.568,
-          "bridge_bonus": 0.117,
-          "level": "medium",
-          "reason": "关键词命中：spectrum、cobordism spectrum；arXiv 分类重合：math.AT；桥接信号「MGL」(motivic ↔ K-theory / homotopy)",
-          "keyword_hits": [
-            "spectrum",
-            "cobordism spectrum"
-          ]
-        },
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "score": 0.622,
-          "base_score": 0.505,
-          "bridge_bonus": 0.117,
-          "level": "medium",
-          "reason": "关键词命中：Spec、vector bundle；arXiv 分类重合：math.AG；桥接信号「vector bundles」(K-theory ↔ AG / motivic)",
-          "keyword_hits": [
-            "Spec",
-            "vector bundle"
-          ]
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "score": 0.132,
-          "base_score": 0.132,
-          "bridge_bonus": 0.0,
-          "level": "low",
-          "reason": "arXiv 分类重合：math.AG",
-          "keyword_hits": []
-        }
-      ],
-      "best_match": {
-        "topic_id": "motivic_k_theory",
-        "topic_name": "Motivic Homotopy Theory",
-        "score": 1.0,
-        "base_score": 0.876,
-        "bridge_bonus": 0.3,
-        "level": "high",
-        "reason": "关键词命中：MGL、MSL、algebraic cobordism、hermitian K-theory；arXiv 分类重合：math.AG；桥接信号「MGL」(motivic ↔ K-theory / homotopy)；桥接信号「vector bundles」(K-theory ↔ AG / motivic)；桥接信号「Hermitian K-theory」(K-theory ↔ motivic)",
-        "keyword_hits": [
-          "MGL",
-          "MSL",
-          "algebraic cobordism",
-          "hermitian K-theory"
-        ]
-      },
-      "top_labels": [
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy Theory",
-          "base_score": 0.876,
-          "score": 1.0,
-          "level": "high",
-          "keyword_hits": [
-            "MGL",
-            "MSL",
-            "algebraic cobordism",
-            "hermitian K-theory"
-          ]
-        },
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "base_score": 0.568,
-          "score": 0.685,
-          "level": "medium",
-          "keyword_hits": [
-            "spectrum",
-            "cobordism spectrum"
-          ]
-        },
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "base_score": 0.505,
-          "score": 0.622,
-          "level": "medium",
-          "keyword_hits": [
-            "Spec",
-            "vector bundle"
-          ]
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "base_score": 0.132,
-          "score": 0.132,
-          "level": "low",
-          "keyword_hits": []
-        }
-      ],
-      "chinese_summary": {
-        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
-        "method": "In this paper, we study the metalinear algebraic cobordism spectrum $\\mathrm{MML}$ (also sometimes denoted $\\mathrm{MSL}^c$), which is built from the structure groups of oriented vector bundles.",
-        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
-        "evidence": "来源摘要可在论文原文中核验。",
-        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
-        "why_relevant": "关键词命中：MGL、MSL、algebraic cobordism、hermitian K-theory；arXiv 分类重合：math.AG；桥接信号「MGL」(motivic ↔ K-theory / homotopy)；桥接信号「vector bundles」(K-theory ↔ AG / motivic)；桥接信号「Hermitian K-theory」(K-theory ↔ motivic)"
-      },
-      "first_seen_at": "2026-06-11T04:42:44.276818+00:00",
-      "last_seen_at": "2026-06-11T10:03:53.242050+00:00",
-      "retained_from_previous_run": true
-    },
     {
       "id": "2605.29432v1",
       "source": "arXiv",
@@ -1298,6 +1140,453 @@
       "retained_from_previous_run": true
     },
     {
+      "id": "2606.13866v1",
+      "source": "arXiv",
+      "title": "AKSZ Construction for Shifted Contact Structures",
+      "authors": [
+        "Efe İzbudak",
+        "Kadri İlker Berktav"
+      ],
+      "summary": "This paper establishes the AKSZ theorem for shifted contact structures and its applications. In brief, to resolve certain obstructions, we first define the quotient mapping stack as the quotient of the symplectified mapping space by the constant multiplicative group action. We then prove that if $X$ is an $n$-shifted contact derived Artin stack and $Y$ is an $\\mathcal{O}$-compact, $d$-oriented derived stack, the quotient mapping stack $$[\\mathrm{Map}(Y, \\widetilde{X})/\\mathbb{G}_m]$$ admits an $(n-d)$-shifted contact structure. In addition, by formalizing the derived analogue of the graded contact AKSZ formalism, we also introduce the notion of weak shifted contact structures in derived algebraic geometry and prove that under global trivialization of the contact line bundle, the unmodified mapping stack inherits a weak contact structure. Extending this setup to spaces with boundary, we demonstrate that derived fillings naturally induce Legendrian morphisms between quotient mapping stacks, and that topological gluing of cobordisms evaluates to derived Legendrian intersections. Furthermore, we trace the transgression of the canonical shifted $1$-form to prove that our quotient mapping stacks satisfy the derived Classical Master Equation (CME). As applications of our quotient mapping stack formalism, we define the derived analogues of specific topological field theories, including the Jacobi, Courant-Jacobi, and Loop Space Sigma Models. Finally, by composing this geometric construction with the perverse linearization developed in a companion paper, we elevate these moduli spaces to generate Cohomological Contact Extended Topological Field Theories.",
+      "published": "2026-06-11T19:46:34Z",
+      "updated": "2026-06-11T19:46:34Z",
+      "paper_url": "http://arxiv.org/abs/2606.13866v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13866v1",
+      "categories": [
+        "math.AG",
+        "math.SG"
+      ],
+      "seed_topic": "motivic_k_theory",
+      "matches": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.798,
+          "base_score": 0.713,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.045,
+          "level": "high",
+          "reason": "关键词命中：derived algebraic geometry、derived stack、moduli space、line bundle、Artin stack、Spec；arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": [
+            "derived algebraic geometry",
+            "derived stack",
+            "moduli space",
+            "line bundle",
+            "Artin stack",
+            "Spec"
+          ],
+          "llm_reason": "论文核心研究对象是导出Artin栈、商映射栈、线丛和模空间，直接匹配研究方向中的‘derived algebraic geometry’、‘algebraic stack’、‘Artin stack’、‘line bundle’、‘moduli space’等关键词，且涉及变形理论和主方程，属于代数几何与辛几何的交叉前沿。"
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.242,
+          "base_score": 0.197,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.045,
+          "level": "low",
+          "reason": "关键词命中：loop space；时效加分 +0.04",
+          "keyword_hits": [
+            "loop space"
+          ]
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.24,
+          "base_score": 0.195,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.045,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.236,
+          "base_score": 0.191,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.045,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "algebraic_geometry",
+        "topic_name": "Algebraic Geometry",
+        "score": 0.798,
+        "base_score": 0.713,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.045,
+        "level": "high",
+        "reason": "关键词命中：derived algebraic geometry、derived stack、moduli space、line bundle、Artin stack、Spec；arXiv 分类重合：math.AG；时效加分 +0.04",
+        "keyword_hits": [
+          "derived algebraic geometry",
+          "derived stack",
+          "moduli space",
+          "line bundle",
+          "Artin stack",
+          "Spec"
+        ],
+        "llm_reason": "论文核心研究对象是导出Artin栈、商映射栈、线丛和模空间，直接匹配研究方向中的‘derived algebraic geometry’、‘algebraic stack’、‘Artin stack’、‘line bundle’、‘moduli space’等关键词，且涉及变形理论和主方程，属于代数几何与辛几何的交叉前沿。"
+      },
+      "top_labels": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.713,
+          "score": 0.758,
+          "level": "high",
+          "keyword_hits": [
+            "derived algebraic geometry",
+            "derived stack",
+            "moduli space",
+            "line bundle",
+            "Artin stack",
+            "Spec"
+          ]
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "base_score": 0.197,
+          "score": 0.242,
+          "level": "low",
+          "keyword_hits": [
+            "loop space"
+          ]
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "base_score": 0.195,
+          "score": 0.24,
+          "level": "low",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.191,
+          "score": 0.236,
+          "level": "low",
+          "keyword_hits": []
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "chinese_summary": {
+        "problem": "在导出代数几何中，如何构造移位接触结构并建立其AKSZ定理，以解决映射栈上接触结构的障碍问题。",
+        "method": "首先定义辛化映射空间在常数乘法群作用下的商作为商映射栈，然后证明若X为n-移位接触导出Artin栈且Y为O-紧致d-导向导出栈，则该商映射栈具有(n-d)-移位接触结构；同时引入弱移位接触结构的概念，证明在接触线丛全局平凡化下未修改的映射栈继承弱接触结构。",
+        "innovation": "1. 建立了移位接触结构的AKSZ定理，将接触结构通过商映射栈进行移位；2. 引入了弱移位接触结构的概念，放宽了全局平凡化条件；3. 将构造推广到带边界空间，证明导出填充分自然诱导Legendre态射，并将拓扑粘合转化为Legendre交。",
+        "evidence": "摘要中给出了理论推导，包括商映射栈的接触结构存在性、弱接触结构、边界情况下的Legendre态射以及导出经典主方程（CME）的满足，但未提供具体实验或计算验证。",
+        "limitations": "未提供具体的计算实例或与现有接触结构的比较；弱接触结构的唯一性或稳定性需全文确认；边界构造的几何解释可能依赖于具体的附录或后续工作。",
+        "why_relevant": "论文核心研究对象是导出Artin栈、商映射栈、线丛和模空间，直接匹配研究方向中的‘derived algebraic geometry’、‘algebraic stack’、‘Artin stack’、‘line bundle’、‘moduli space’等关键词，且涉及变形理论和主方程，属于代数几何与辛几何的交叉前沿。"
+      },
+      "first_seen_at": "2026-06-15T05:58:38.976818+00:00",
+      "last_seen_at": "2026-06-15T05:58:38.976818+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "2606.05020v1",
+      "source": "arXiv",
+      "title": "Slices of the special linear algebraic cobordism spectrum",
+      "authors": [
+        "Ahina Nandy",
+        "Oliver Röndigs",
+        "Egor Zolotarev"
+      ],
+      "summary": "Let $F$ be a field of exponential characteristic $e$. We compute the slices of $\\mathbf{MSL}[e^{-1}]$, where $\\mathbf{MSL}$ is the special linear algebraic cobordism spectrum defined by Panin and Walter. The answer is expressed in terms of the second page of the Adams-Novikov spectral sequence for the special unitary cobordism spectrum, which was explicitly determined by Novikov. Its applicability is demonstrated by computations with the slice spectral sequence for $\\mathbf{MSL}$, which determine the first few Milnor-Witt stems of its homotopy groups (up to the third) in terms of very effective hermitian $K$-theory. We also establish a decomposition of the rational special linear algebraic cobordism spectrum over an arbitrary qcqs scheme.",
+      "published": "2026-06-03T15:42:50Z",
+      "updated": "2026-06-03T15:42:50Z",
+      "paper_url": "http://arxiv.org/abs/2606.05020v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.05020v1",
+      "categories": [
+        "math.AT",
+        "math.AG",
+        "math.KT"
+      ],
+      "seed_topic": "homotopy_theory",
+      "matches": [
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.79,
+          "base_score": 0.636,
+          "bridge_bonus": 0.02,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.034,
+          "level": "high",
+          "reason": "关键词命中：Adams-Novikov spectral sequence、cobordism spectrum、homotopy groups；arXiv 分类重合：math.AT；桥接 homotopy_theory↔algebraic_geometry (hits=2/1)；时效加分 +0.03",
+          "keyword_hits": [
+            "Adams-Novikov spectral sequence",
+            "cobordism spectrum",
+            "homotopy groups"
+          ],
+          "llm_reason": "论文核心技术包括Adams-Novikov谱序列、配边谱、同伦群计算，直接匹配研究方向中的'Adams-Novikov spectral sequence'、'cobordism spectrum'、'homotopy groups'等关键词，且分类math.AT属于代数拓扑核心领域。"
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.677,
+          "base_score": 0.643,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.034,
+          "level": "medium",
+          "reason": "关键词命中：slice spectral sequence、algebraic cobordism、Hermitian K-theory；arXiv 分类重合：math.AG、math.AT、math.KT；时效加分 +0.03",
+          "keyword_hits": [
+            "slice spectral sequence",
+            "algebraic cobordism",
+            "Hermitian K-theory"
+          ]
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.448,
+          "base_score": 0.394,
+          "bridge_bonus": 0.02,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.034,
+          "level": "medium",
+          "reason": "关键词命中：scheme、Spec；arXiv 分类重合：math.AG；桥接 algebraic_geometry↔homotopy_theory (hits=1/2)；时效加分 +0.03",
+          "keyword_hits": [
+            "scheme",
+            "Spec"
+          ]
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.164,
+          "base_score": 0.13,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.034,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.03",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "homotopy_theory",
+        "topic_name": "Homotopy Theory",
+        "score": 0.79,
+        "base_score": 0.636,
+        "bridge_bonus": 0.02,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.034,
+        "level": "high",
+        "reason": "关键词命中：Adams-Novikov spectral sequence、cobordism spectrum、homotopy groups；arXiv 分类重合：math.AT；桥接 homotopy_theory↔algebraic_geometry (hits=2/1)；时效加分 +0.03",
+        "keyword_hits": [
+          "Adams-Novikov spectral sequence",
+          "cobordism spectrum",
+          "homotopy groups"
+        ],
+        "llm_reason": "论文核心技术包括Adams-Novikov谱序列、配边谱、同伦群计算，直接匹配研究方向中的'Adams-Novikov spectral sequence'、'cobordism spectrum'、'homotopy groups'等关键词，且分类math.AT属于代数拓扑核心领域。"
+      },
+      "top_labels": [
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "base_score": 0.636,
+          "score": 0.69,
+          "level": "medium",
+          "keyword_hits": [
+            "Adams-Novikov spectral sequence",
+            "cobordism spectrum",
+            "homotopy groups"
+          ]
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "base_score": 0.643,
+          "score": 0.677,
+          "level": "medium",
+          "keyword_hits": [
+            "slice spectral sequence",
+            "algebraic cobordism",
+            "Hermitian K-theory"
+          ]
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.394,
+          "score": 0.448,
+          "level": "medium",
+          "keyword_hits": [
+            "scheme",
+            "Spec"
+          ]
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "chinese_summary": {
+        "problem": "计算特殊线性代数配边谱MSL的切片，并利用切片谱序列确定其同伦群的若干Milnor-Witt茎。",
+        "method": "采用切片理论，将MSL的切片转化为特殊酉配边谱的Adams-Novikov谱序列第二页上的对象，结合非常有效埃尔米特K-理论进行计算，并进一步建立有理MSL在任意qcqs概形上的分解。",
+        "innovation": "首次将代数配边谱的切片计算与经典拓扑中的Adams-Novikov谱序列联系起来，从而导出MSL同伦群的显式信息；同时给出了有理MSL的劈裂分解，推广了之前的结果。",
+        "evidence": "摘要中陈述了已计算出MSL同伦群的前几个Milnor-Witt茎（直到第三茎），并给出了有理MSL的分解，但未列出具体数值或证明细节，证据需全文确认。",
+        "limitations": "结果依赖于指数特征e的取倒，可能限制到一般环上的推广；切片谱序列的计算仅涉及前几个茎，更高茎的计算未讨论。",
+        "why_relevant": "论文核心技术包括Adams-Novikov谱序列、配边谱、同伦群计算，直接匹配研究方向中的'Adams-Novikov spectral sequence'、'cobordism spectrum'、'homotopy groups'等关键词，且分类math.AT属于代数拓扑核心领域。"
+      },
+      "first_seen_at": "2026-06-15T05:58:38.976818+00:00",
+      "last_seen_at": "2026-06-15T05:58:38.976818+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "2606.12001v1",
+      "source": "arXiv",
+      "title": "On the metalinear algebraic cobordism spectrum",
+      "authors": [
+        "Ahina Nandy",
+        "Egor Zolotarev"
+      ],
+      "summary": "In this paper, we study the metalinear algebraic cobordism spectrum $\\mathrm{MML}$ (also sometimes denoted $\\mathrm{MSL}^c$), which is built from the structure groups of oriented vector bundles. We establish an interpolation between $\\mathrm{MSL}$ and $\\mathrm{MML}$ and deduce that the canonical morphism $\\mathrm{MSL}\\to \\mathrm{MML}$ admits a retraction. We parametrize all such retractions in the category of $\\mathrm{MSL}$-modules and, after fixing one of them, obtain an equivalence $\\mathrm{MML}\\cong\\mathrm{MSL}\\oplus Σ^{2,1}\\mathrm{MGL}$. As an application of these results, we determine various invariants of the metalinear algebraic cobordism spectrum over a field (after inverting the exponential characteristic). More precisely, we determine the first few Milnor-Witt stems of $\\mathrm{MML}$ in terms of the very effective algebraic and hermitian K-theory spectra, and the geometric diagonal of $\\mathrm{MML}$ in terms of Stong's complex-spin cobordism ring. We also compute the slices and use them to describe the category of 2-inverted modules over the $\\mathbb{E}_\\infty$-ring spectrum $\\mathrm{MML}$.",
+      "published": "2026-06-10T12:26:27Z",
+      "updated": "2026-06-10T12:26:27Z",
+      "paper_url": "http://arxiv.org/abs/2606.12001v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.12001v1",
+      "categories": [
+        "math.AT",
+        "math.AG",
+        "math.KT"
+      ],
+      "seed_topic": "motivic_k_theory",
+      "matches": [
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.771,
+          "base_score": 0.6,
+          "bridge_bonus": 0.028,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.043,
+          "level": "high",
+          "reason": "关键词命中：algebraic cobordism、Hermitian K-theory、MGL；arXiv 分类重合：math.AG、math.AT、math.KT；桥接 motivic_k_theory↔homotopy_theory (hits=2/2)；时效加分 +0.04",
+          "keyword_hits": [
+            "algebraic cobordism",
+            "Hermitian K-theory",
+            "MGL"
+          ],
+          "llm_reason": "论文核心对象MML是代数配边谱MGL的变体，其研究涉及motivic谱（如MSL, MGL）和Hermitian K理论（KQ），直接匹配用户关键词中 algebraic cobordism（MGL）、Hermitian K-theory（KQ）以及 motivic spectra 等。分类math.KT和math.AG也与用户方向高度重合，是motivic homotopy理论与代数K理论的交叉前沿。"
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.507,
+          "base_score": 0.436,
+          "bridge_bonus": 0.028,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.043,
+          "level": "medium",
+          "reason": "关键词命中：cobordism spectrum；arXiv 分类重合：math.AT；桥接 homotopy_theory↔motivic_k_theory (hits=2/2)；时效加分 +0.04",
+          "keyword_hits": [
+            "cobordism spectrum"
+          ]
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.475,
+          "base_score": 0.432,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.043,
+          "level": "medium",
+          "reason": "关键词命中：vector bundle、Spec；arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": [
+            "vector bundle",
+            "Spec"
+          ]
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.167,
+          "base_score": 0.124,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.043,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "motivic_k_theory",
+        "topic_name": "Motivic Homotopy & K-Theory",
+        "score": 0.771,
+        "base_score": 0.6,
+        "bridge_bonus": 0.028,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.043,
+        "level": "high",
+        "reason": "关键词命中：algebraic cobordism、Hermitian K-theory、MGL；arXiv 分类重合：math.AG、math.AT、math.KT；桥接 motivic_k_theory↔homotopy_theory (hits=2/2)；时效加分 +0.04",
+        "keyword_hits": [
+          "algebraic cobordism",
+          "Hermitian K-theory",
+          "MGL"
+        ],
+        "llm_reason": "论文核心对象MML是代数配边谱MGL的变体，其研究涉及motivic谱（如MSL, MGL）和Hermitian K理论（KQ），直接匹配用户关键词中 algebraic cobordism（MGL）、Hermitian K-theory（KQ）以及 motivic spectra 等。分类math.KT和math.AG也与用户方向高度重合，是motivic homotopy理论与代数K理论的交叉前沿。"
+      },
+      "top_labels": [
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "base_score": 0.6,
+          "score": 0.671,
+          "level": "medium",
+          "keyword_hits": [
+            "algebraic cobordism",
+            "Hermitian K-theory",
+            "MGL"
+          ]
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "base_score": 0.436,
+          "score": 0.507,
+          "level": "medium",
+          "keyword_hits": [
+            "cobordism spectrum"
+          ]
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.432,
+          "score": 0.475,
+          "level": "medium",
+          "keyword_hits": [
+            "vector bundle",
+            "Spec"
+          ]
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "chinese_summary": {
+        "problem": "研究金属线性代数配边谱MML（MSL^c）的结构，建立其与已知谱MSL和MGL的关系，并计算其不变量（如Milnor-Witt茎、几何对角、切片）。",
+        "method": "通过构建MSL到MML的典范态射并证明其有收缩，在MSL-模范畴中参数化所有收缩，固定一个后得到MML同构于MSL与Σ^{2,1}MGL的直和。利用该等价，借助非常有效代数K理论和Hermitian K理论谱确定前几个Milnor-Witt茎，并利用Stong的复自旋配边环描述几何对角；此外计算切片以研究2-倒置模的范畴。",
+        "innovation": "1. 首次系统引入并研究金属线性代数配边谱MML，给出其作为MSL和MGL的直和分解。2. 具体计算了MML的Milnor-Witt茎（通过代数与Hermitian K理论）和几何对角（通过复自旋配边环），填补了对该谱不变量认识的空白。3. 通过切片计算，刻画了2-倒置E_∞环谱模的范畴结构。",
+        "evidence": "摘要中明确给出了等价MML ≅ MSL ⊕ Σ^{2,1}MGL，以及Milnor-Witt茎和几何对角的具体描述（分别用代数/Hermitian K理论和Stong环）；还提及切片计算。但未提供具体数值或验证细节，需阅读全文确认。",
+        "limitations": "结果只在域上且要求指数特征可逆（inverting exponential characteristic），未推广到一般基概形；依赖经典配边理论工具，可能对motivic homotopy theory的某些深层次结构（如A^1-局部化、六函子）连接不足。",
+        "why_relevant": "论文核心对象MML是代数配边谱MGL的变体，其研究涉及motivic谱（如MSL, MGL）和Hermitian K理论（KQ），直接匹配用户关键词中 algebraic cobordism（MGL）、Hermitian K-theory（KQ）以及 motivic spectra 等。分类math.KT和math.AG也与用户方向高度重合，是motivic homotopy理论与代数K理论的交叉前沿。"
+      },
+      "first_seen_at": "2026-06-11T04:42:44.276818+00:00",
+      "last_seen_at": "2026-06-15T05:58:38.976818+00:00",
+      "retained_from_previous_run": false
+    },
+    {
       "id": "2511.09371v2",
       "source": "arXiv",
       "title": "Geometric Criteria for 6-Functor Formalisms in the Setting of Pullback Formalisms",
@@ -1468,7 +1757,7 @@
             "THH",
             "TC"
           ],
-          "llm_reason": "论文核心对象 cyclotomic spectra 直接关联研究方向中的 THH、TC 和代数 K 理论，这些均是 trace methods 的核心工具；反例涉及高色环谱，对理解 K 理论局部化与 chromatic 层次有重要意义。具体匹配关键词：topological Hochschild homology, topological cyclic homology, algebraic K-theory, cyclotomic spectra, THH, TC。"
+          "llm_reason": "直接命中研究方向中的关键词：topological Hochschild homology、topological cyclic homology、algebraic K-theory和cyclotomic spectra，且使用math.AT分类；有助于理解本方向的核心工具环状谱及其在K理论中的应用。"
         },
         {
           "topic_id": "homotopy_theory",
@@ -1531,7 +1820,7 @@
           "THH",
           "TC"
         ],
-        "llm_reason": "论文核心对象 cyclotomic spectra 直接关联研究方向中的 THH、TC 和代数 K 理论，这些均是 trace methods 的核心工具；反例涉及高色环谱，对理解 K 理论局部化与 chromatic 层次有重要意义。具体匹配关键词：topological Hochschild homology, topological cyclic homology, algebraic K-theory, cyclotomic spectra, THH, TC。"
+        "llm_reason": "直接命中研究方向中的关键词：topological Hochschild homology、topological cyclic homology、algebraic K-theory和cyclotomic spectra，且使用math.AT分类；有助于理解本方向的核心工具环状谱及其在K理论中的应用。"
       },
       "top_labels": [
         {
@@ -1574,15 +1863,153 @@
       ],
       "backfilled_from_recent_arxiv": true,
       "chinese_summary": {
-        "problem": "如何理解 cyclotomic spectra 这一概念及其在代数 K 理论和拓扑循环同调 (TC) 反例中的核心作用。",
-        "method": "采用综述性阐述，首先定义 cyclotomic spectra 为带有圆群作用的谱对象，然后解释它们如何出现在代数 K 理论、拓扑 Hochschild 同调 (THH) 和拓扑循环同调 (TC) 中，并联系 Burklund–Hahn–Levy–Schlank 关于更高色高环谱 TC 的反例。",
-        "innovation": "作为概述性文章，将 cyclotomic spectra 这一抽象概念与近期突破性反例（色高 >1 时 TC 丧失某些性质）联系起来，为读者搭建从经典 trace 方法到前沿进展的桥梁；同时系统梳理 cyclotomic spectra 的定义和 motivation，便于后续研究者快速入门。",
-        "evidence": "摘要未提供实验或理论验证的具体结果，仅提及反例的存在及作者自身试图理解该反例的背景，因此证据不足。",
-        "limitations": "本文为 expository，不包含新的定理或计算；读者需进一步查阅 Burklund 等人的原始论文以获取反例的完整论证。",
-        "why_relevant": "论文核心对象 cyclotomic spectra 直接关联研究方向中的 THH、TC 和代数 K 理论，这些均是 trace methods 的核心工具；反例涉及高色环谱，对理解 K 理论局部化与 chromatic 层次有重要意义。具体匹配关键词：topological Hochschild homology, topological cyclic homology, algebraic K-theory, cyclotomic spectra, THH, TC。"
+        "problem": "解释环状谱（cyclotomic spectra）的定义及其在代数K理论、拓扑循环同调（TC）等中的应用，以帮助读者理解近期关于TC反例的工作。",
+        "method": "通过综述性介绍，定义环状谱为带有圆群作用的谱，阐述其与THH、TC的关系，并引用Burklund等人构造反例的工作来展示其重要性。",
+        "innovation": "作为解释性文章，创新在于以清晰易懂的方式综合梳理环状谱的概念、结构及其在最新反例（高色高TC不等）中的关键作用，便于研究者快速理解该领域的前沿进展。",
+        "evidence": "摘要中提及Burklund等人关于不同色高环状谱TC区别的反例，但无该论文自身的实验或系统证据；证据不足需阅读全文。",
+        "limitations": "论文为综述性质，未提出新结果；对环状谱的深入技术细节（如具体构造）可能需参考原始文献。",
+        "why_relevant": "直接命中研究方向中的关键词：topological Hochschild homology、topological cyclic homology、algebraic K-theory和cyclotomic spectra，且使用math.AT分类；有助于理解本方向的核心工具环状谱及其在K理论中的应用。"
       },
       "first_seen_at": "2026-06-11T05:21:54.714863+00:00",
-      "last_seen_at": "2026-06-15T05:50:50.450877+00:00",
+      "last_seen_at": "2026-06-15T05:58:38.976818+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "2606.11727v1",
+      "source": "arXiv",
+      "title": "Stratification of moduli spaces of instantons on the Segre product of three lines via 't Hooft bundles",
+      "authors": [
+        "Vincenzo Antonelli",
+        "Francesco Malaspina"
+      ],
+      "summary": "Let $X$ be the Segre product of three projective lines. For a fixed effective divisor $D$ on $X$, we introduce the notions of $D$-'t Hooft, $(D_i,D_j)$-special and $D$-sectional special bundle. The varieties parameterizing these bundles yield a natural stratification of the moduli space of stable instanton bundles with fixed Chern classes. After characterizing the curves associated with these bundles via Serre correspondence, we describe the corresponding Hilbert schemes. Using this description, we analyze the moduli spaces of $h_i$-'t Hooft bundles and the smaller strata of $(h_i,h_j)$-special and $(h_i)$-sectional special bundles. Finally, we provide a detailed study of the low-charge cases.",
+      "published": "2026-06-10T07:01:17Z",
+      "updated": "2026-06-10T07:01:17Z",
+      "paper_url": "http://arxiv.org/abs/2606.11727v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.11727v1",
+      "categories": [
+        "math.AG"
+      ],
+      "seed_topic": "motivic_k_theory",
+      "matches": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.721,
+          "base_score": 0.679,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.042,
+          "level": "high",
+          "reason": "关键词命中：Hilbert scheme、moduli space、Chern class、Spec、Proj；arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": [
+            "Hilbert scheme",
+            "moduli space",
+            "Chern class",
+            "Spec",
+            "Proj"
+          ],
+          "llm_reason": "论文直接研究模空间、Hilbert 方案、陈类，并涉及 Spec、Proj 等概念，完全符合代数几何研究方向中的模空间理论和 Hilbert 方案。"
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.23,
+          "base_score": 0.188,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.042,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.229,
+          "base_score": 0.187,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.042,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.054,
+          "base_score": 0.012,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.042,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "algebraic_geometry",
+        "topic_name": "Algebraic Geometry",
+        "score": 0.721,
+        "base_score": 0.679,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.042,
+        "level": "high",
+        "reason": "关键词命中：Hilbert scheme、moduli space、Chern class、Spec、Proj；arXiv 分类重合：math.AG；时效加分 +0.04",
+        "keyword_hits": [
+          "Hilbert scheme",
+          "moduli space",
+          "Chern class",
+          "Spec",
+          "Proj"
+        ],
+        "llm_reason": "论文直接研究模空间、Hilbert 方案、陈类，并涉及 Spec、Proj 等概念，完全符合代数几何研究方向中的模空间理论和 Hilbert 方案。"
+      },
+      "top_labels": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.679,
+          "score": 0.721,
+          "level": "high",
+          "keyword_hits": [
+            "Hilbert scheme",
+            "moduli space",
+            "Chern class",
+            "Spec",
+            "Proj"
+          ]
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.188,
+          "score": 0.23,
+          "level": "low",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "base_score": 0.187,
+          "score": 0.229,
+          "level": "low",
+          "keyword_hits": []
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "chinese_summary": {
+        "problem": "对 Segre product of three lines 上具有固定陈类的稳定瞬子丛的模空间进行分层，引入新的丛概念并研究低电荷情况。",
+        "method": "引入 D-'t Hooft 丛、(D_i,D_j)-special 和 D-sectional special 丛的概念，这些丛的族参数化模空间中的不同层。通过 Serre 对应将这些丛与曲线关联，并描述相应的 Hilbert 方案，从而分析模空间的分层结构。",
+        "innovation": "1. 首次对 Segre product of three lines 上的瞬子模空间引入基于 't Hooft 丛及其变体的分层；2. 通过 Serre 对应将丛与曲线对应，并利用 Hilbert 方案刻画各层；3. 提供了低电荷情况的详细分析。",
+        "evidence": "摘要中描述了理论构造和分层方法，但未提供具体计算或实验验证，证据限于理论推导。",
+        "limitations": "仅针对特定空间（Segre product of three lines），可能不具一般性；需要阅读全文确认构造的详细步骤和分层的完备性。",
+        "why_relevant": "论文直接研究模空间、Hilbert 方案、陈类，并涉及 Spec、Proj 等概念，完全符合代数几何研究方向中的模空间理论和 Hilbert 方案。"
+      },
+      "first_seen_at": "2026-06-15T05:58:38.976818+00:00",
+      "last_seen_at": "2026-06-15T05:58:38.976818+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -1716,6 +2143,141 @@
       "first_seen_at": "2026-06-11T15:15:36.567953+00:00",
       "last_seen_at": "2026-06-11T15:15:36.567953+00:00",
       "retained_from_previous_run": true
+    },
+    {
+      "id": "2606.11179v1",
+      "source": "arXiv",
+      "title": "Equivariant Contact Darboux Quotients and Perversely Categorified Legendrian Correspondences",
+      "authors": [
+        "Efe İzbudak"
+      ],
+      "summary": "Prior work has shown that shifted contact derived Artin stacks admit smooth Darboux atlases. However, establishing enumerative invariants and linearizing these categorical structures requires equivariant local models. We establish an equivariant Darboux theorem for $-1$-shifted contact derived Artin stacks. We prove that, in the smooth topology, these stacks admit smooth atlases by the derived contact Darboux scheme $Δ\\mathrm{loc}(s)$ associated to the derived discriminant locus of a relative section $s$. In the presence of reductive stabilizers $G$, this refines to the equivariant geometric quotient stack $[Δ\\mathrm{loc}(s)/G]$. By applying the BBDJS minimal model to the derived symplectification and descending algebraically along the structural free $\\mathbb{G}_m$-action, we construct an $\\ell$-adic perverse sheaf on any oriented $-1$-shifted contact stack. We utilize Verdier's specialization equivalence for monodromic sheaves to equip this perverse sheaf with a tame geometric monodromy automorphism $T$. This structure allows for the extraction of derived enumerative invariants via the $\\ell$-adic Grothendieck-Lefschetz trace, thereby resolving the issue of generic topological acyclicity. The content of the other main results in this paper relies on a prior work, in which we have shown that derived intersections of $n$-shifted Legendrians yield $(n-1)$-shifted contact stacks and formulated the non-linear 2-categories of Legendrians $\\mathcal{F}_c(X)$ and $Leg_n$. Using this geometric setup, we formulate in this paper a contact analogue of Joyce's conjecture to linearize these structures. We then construct the categorified Legendrian 2-categories $\\mathfrak{L}\\mathcal{F}c(X)$ and $LLeg_0$ via $\\ell$-adic Fourier-Mukai pull-push functors, connecting the study of derived contact moduli spaces to microlocal sheaf theory.",
+      "published": "2026-06-09T17:56:01Z",
+      "updated": "2026-06-09T17:56:01Z",
+      "paper_url": "http://arxiv.org/abs/2606.11179v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.11179v1",
+      "categories": [
+        "math.AG"
+      ],
+      "seed_topic": "motivic_k_theory",
+      "matches": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.695,
+          "base_score": 0.653,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.042,
+          "level": "medium",
+          "reason": "关键词命中：moduli space、Artin stack、scheme、sheaf、Spec；arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": [
+            "moduli space",
+            "Artin stack",
+            "scheme",
+            "sheaf",
+            "Spec"
+          ]
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.24,
+          "base_score": 0.198,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.042,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.232,
+          "base_score": 0.19,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.042,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.055,
+          "base_score": 0.013,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.042,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "algebraic_geometry",
+        "topic_name": "Algebraic Geometry",
+        "score": 0.695,
+        "base_score": 0.653,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.042,
+        "level": "medium",
+        "reason": "关键词命中：moduli space、Artin stack、scheme、sheaf、Spec；arXiv 分类重合：math.AG；时效加分 +0.04",
+        "keyword_hits": [
+          "moduli space",
+          "Artin stack",
+          "scheme",
+          "sheaf",
+          "Spec"
+        ]
+      },
+      "top_labels": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.653,
+          "score": 0.695,
+          "level": "medium",
+          "keyword_hits": [
+            "moduli space",
+            "Artin stack",
+            "scheme",
+            "sheaf",
+            "Spec"
+          ]
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "base_score": 0.198,
+          "score": 0.24,
+          "level": "low",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.19,
+          "score": 0.232,
+          "level": "low",
+          "keyword_hits": []
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Prior work has shown that shifted contact derived Artin stacks admit smooth Darboux atlases.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：moduli space、Artin stack、scheme、sheaf、Spec；arXiv 分类重合：math.AG；时效加分 +0.04"
+      },
+      "first_seen_at": "2026-06-15T05:58:38.976818+00:00",
+      "last_seen_at": "2026-06-15T05:58:38.976818+00:00",
+      "retained_from_previous_run": false
     },
     {
       "id": "2606.08848v1",
@@ -1976,6 +2538,279 @@
       "retained_from_previous_run": true
     },
     {
+      "id": "2606.13907v1",
+      "source": "arXiv",
+      "title": "Nonsimplicial toric Nullstellensatz and stacky GKZ theory",
+      "authors": [
+        "Christine Berkesch",
+        "Daniel Erman",
+        "David Favero"
+      ],
+      "summary": "We introduce a variant of the Cox ring using $\\mathbb{Q}$-Cartier divisors and use this to remedy various deficiencies of nonsimplicial toric varieties. Our main applications are: Cox's ideal-variety correspondence, an explicit classification of subschemes and sheaves in terms of multigraded modules, an associated toric Deligne-Mumford stack, and a stacky extension of the GKZ/Mori theory of toric varieties.",
+      "published": "2026-06-11T20:59:36Z",
+      "updated": "2026-06-11T20:59:36Z",
+      "paper_url": "http://arxiv.org/abs/2606.13907v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13907v1",
+      "categories": [
+        "math.AG",
+        "math.AC"
+      ],
+      "seed_topic": "motivic_k_theory",
+      "matches": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.667,
+          "base_score": 0.622,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.045,
+          "level": "high",
+          "reason": "关键词命中：Deligne-Mumford stack、Cartier divisor、variety、scheme；arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": [
+            "Deligne-Mumford stack",
+            "Cartier divisor",
+            "variety",
+            "scheme"
+          ],
+          "llm_reason": "论文核心概念包括Deligne-Mumford堆、Cartier除数、代数变体、层等，与我的研究方向中的代数堆、模空间、相交理论等高度相关；arXiv分类math.AG直接匹配；涉及GKZ理论属于代数几何前沿。"
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.244,
+          "base_score": 0.199,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.045,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.233,
+          "base_score": 0.188,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.045,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.048,
+          "base_score": 0.003,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.045,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "algebraic_geometry",
+        "topic_name": "Algebraic Geometry",
+        "score": 0.667,
+        "base_score": 0.622,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.045,
+        "level": "high",
+        "reason": "关键词命中：Deligne-Mumford stack、Cartier divisor、variety、scheme；arXiv 分类重合：math.AG；时效加分 +0.04",
+        "keyword_hits": [
+          "Deligne-Mumford stack",
+          "Cartier divisor",
+          "variety",
+          "scheme"
+        ],
+        "llm_reason": "论文核心概念包括Deligne-Mumford堆、Cartier除数、代数变体、层等，与我的研究方向中的代数堆、模空间、相交理论等高度相关；arXiv分类math.AG直接匹配；涉及GKZ理论属于代数几何前沿。"
+      },
+      "top_labels": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.622,
+          "score": 0.667,
+          "level": "medium",
+          "keyword_hits": [
+            "Deligne-Mumford stack",
+            "Cartier divisor",
+            "variety",
+            "scheme"
+          ]
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.199,
+          "score": 0.244,
+          "level": "low",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "base_score": 0.188,
+          "score": 0.233,
+          "level": "low",
+          "keyword_hits": []
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "chinese_summary": {
+        "problem": "非单纯锥形环变体（nonsimplicial toric varieties）的Cox环存在缺陷，导致缺乏理想的簇对应以及子簇和层的良好分类，限制了相关工具的应用。",
+        "method": "通过引入基于Q-Cartier除数的Cox环变体，建立了新的框架，实现了Cox的理想-簇对应，并给出了子簇和层在多重分次模下的显式分类；进一步关联到锥形Deligne-Mumford堆，并推广了GKZ/Mori理论到堆的层面。",
+        "innovation": "1) 提出基于Q-Cartier除数的Cox环变体，弥补了经典Cox环在非单纯情形下的不足；2) 建立了非单纯锥形环变体上的理想-簇对应和子簇/层的显式分类；3) 将GKZ/Mori理论从单纯情形扩展至堆化版本。",
+        "evidence": "摘要未提供具体的实验或理论证明细节，仅声称有主要应用，因此证据不足。",
+        "limitations": "缺乏对技术细节和证明的详细说明，需要阅读全文以验证方法的正确性和适用范围。",
+        "why_relevant": "论文核心概念包括Deligne-Mumford堆、Cartier除数、代数变体、层等，与我的研究方向中的代数堆、模空间、相交理论等高度相关；arXiv分类math.AG直接匹配；涉及GKZ理论属于代数几何前沿。"
+      },
+      "first_seen_at": "2026-06-15T05:58:38.976818+00:00",
+      "last_seen_at": "2026-06-15T05:58:38.976818+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "2606.05051v1",
+      "source": "arXiv",
+      "title": "Universal Assembly and Cellular Loop Spaces on Regular CW Complexes",
+      "authors": [
+        "Serhii Dylda",
+        "Tibor Macko"
+      ],
+      "summary": "We develop a regular CW analogue of the classical assembly formalism for chain complexes appearing in algebraic surgery theory. From the cell poset, we construct combinatorial path and loop objects using fences of comparable cells and prove that their classifying spaces recover the homotopy types of the ordinary based path and loop spaces. The resulting loop object carries a natural monoid structure, giving rise to a DG algebra defined directly from the cellular structure. For complexes of cellular cosheaves, we introduce a universal assembly functor to modules over the group ring of the fundamental group and study the localization determined by global equivalences. The associated homotopy category is identified with a Verdier quotient of the derived category of cellular cosheaves, and its fibrant objects are precisely the homotopy locally constant complexes. A single elementary cosheaf becomes a compact generator after localization, and its derived endomorphism DG algebra is identified with singular chains on the cellular loop space. Consequently, the localized theory admits a Morita description in terms of DG modules over the loop DG algebra. The formalism provides a regular CW counterpart of the classical delta-set approach to assembly in algebraic surgery theory due to Ranicki and Weiss.",
+      "published": "2026-06-03T16:10:58Z",
+      "updated": "2026-06-03T16:10:58Z",
+      "paper_url": "http://arxiv.org/abs/2606.05051v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.05051v1",
+      "categories": [
+        "math.AT"
+      ],
+      "seed_topic": "homotopy_theory",
+      "matches": [
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.667,
+          "base_score": 0.633,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.034,
+          "level": "medium",
+          "reason": "关键词命中：homotopy category、loop space、CW complex；arXiv 分类重合：math.AT；时效加分 +0.03",
+          "keyword_hits": [
+            "homotopy category",
+            "loop space",
+            "CW complex"
+          ],
+          "llm_reason": "论文核心对象是CW复形、环路空间、同伦范畴，直接匹配关键词'CW complex'、'loop space'、'homotopy category'；且构建的DG代数与同伦论中的谱序列可能相关，但更偏向代数手术理论，而非主流的同伦论（如模型范畴、稳定同伦）。"
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.241,
+          "base_score": 0.207,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.034,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AT；时效加分 +0.03",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.193,
+          "base_score": 0.159,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.034,
+          "level": "low",
+          "reason": "关键词命中：sheaf；时效加分 +0.03",
+          "keyword_hits": [
+            "sheaf"
+          ]
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.046,
+          "base_score": 0.012,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.034,
+          "level": "low",
+          "reason": "时效加分 +0.03",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "homotopy_theory",
+        "topic_name": "Homotopy Theory",
+        "score": 0.667,
+        "base_score": 0.633,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.034,
+        "level": "medium",
+        "reason": "关键词命中：homotopy category、loop space、CW complex；arXiv 分类重合：math.AT；时效加分 +0.03",
+        "keyword_hits": [
+          "homotopy category",
+          "loop space",
+          "CW complex"
+        ],
+        "llm_reason": "论文核心对象是CW复形、环路空间、同伦范畴，直接匹配关键词'CW complex'、'loop space'、'homotopy category'；且构建的DG代数与同伦论中的谱序列可能相关，但更偏向代数手术理论，而非主流的同伦论（如模型范畴、稳定同伦）。"
+      },
+      "top_labels": [
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "base_score": 0.633,
+          "score": 0.667,
+          "level": "medium",
+          "keyword_hits": [
+            "homotopy category",
+            "loop space",
+            "CW complex"
+          ]
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "base_score": 0.207,
+          "score": 0.241,
+          "level": "low",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.159,
+          "score": 0.193,
+          "level": "low",
+          "keyword_hits": [
+            "sheaf"
+          ]
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "chinese_summary": {
+        "problem": "在正则CW复形上建立代数手术理论中链复形组装形式主义的类比，提供基于细胞结构的路径和环路空间组合模型。",
+        "method": "从细胞偏序集出发，利用可比细胞的栅栏构造组合路径和环路对象，并证明其分类空间与普通基于点和环路空间同伦等价。引入通用组装函子，将细胞上层的复形映到基本群群环上的模，并通过全局等价进行局部化，得到同伦范畴与导出范畴的Verdier商之间的等价。",
+        "innovation": "首次为正则CW复形提供组装形式主义，替代经典delta-set方法；直接利用细胞结构定义DG代数，避免额外选择；给出局部化理论的Morita描述，用环路DG代数上的DG模刻画。",
+        "evidence": "摘要声称证明了组合路径/环路对象的分类空间恢复普通同伦类型，并识别了局部化后的同伦范畴为Verdier商；但未提供具体实验或数值证据，理论证据需阅读全文验证。",
+        "limitations": "仅适用于正则CW复形，对一般CW复形不一定成立；核心定理的证明细节需全文确认；与经典delta-set方法的等价性未在摘要中完全展开。",
+        "why_relevant": "论文核心对象是CW复形、环路空间、同伦范畴，直接匹配关键词'CW complex'、'loop space'、'homotopy category'；且构建的DG代数与同伦论中的谱序列可能相关，但更偏向代数手术理论，而非主流的同伦论（如模型范畴、稳定同伦）。"
+      },
+      "first_seen_at": "2026-06-15T05:58:38.976818+00:00",
+      "last_seen_at": "2026-06-15T05:58:38.976818+00:00",
+      "retained_from_previous_run": false
+    },
+    {
       "id": "2606.14212v1",
       "source": "arXiv",
       "title": "Coarse Homotopy Theory and Shape Theory",
@@ -2109,7 +2944,7 @@
       },
       "first_seen_at": "2026-06-15T05:42:17.613247+00:00",
       "last_seen_at": "2026-06-15T05:50:50.450877+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2606.12188v1",
@@ -2380,7 +3215,7 @@
       },
       "first_seen_at": "2026-06-11T04:42:44.276818+00:00",
       "last_seen_at": "2026-06-15T05:50:50.450877+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2604.12679v1",
@@ -2650,7 +3485,7 @@
       },
       "first_seen_at": "2026-06-11T05:21:54.714863+00:00",
       "last_seen_at": "2026-06-15T05:50:50.450877+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2606.08599v1",
@@ -2801,7 +3636,7 @@
       },
       "first_seen_at": "2026-06-11T05:21:54.714863+00:00",
       "last_seen_at": "2026-06-15T05:50:50.450877+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2606.10521v1",
@@ -3041,7 +3876,7 @@
       },
       "first_seen_at": "2026-06-12T05:51:12.767206+00:00",
       "last_seen_at": "2026-06-15T05:50:50.450877+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2606.10830v1",
@@ -3181,7 +4016,7 @@
       },
       "first_seen_at": "2026-06-11T04:42:44.276818+00:00",
       "last_seen_at": "2026-06-15T05:50:50.450877+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2606.09693v1",
@@ -3667,7 +4502,7 @@
       },
       "first_seen_at": "2026-06-11T04:42:44.276818+00:00",
       "last_seen_at": "2026-06-15T05:50:50.450877+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2602.00274v2",
@@ -6797,24 +7632,24 @@
   "stats": {
     "candidate_paper_count": 8,
     "daily_candidate_paper_count": 8,
-    "raw_daily_candidate_count": 98,
-    "daily_outside_cutoff_count": 48,
+    "raw_daily_candidate_count": 258,
+    "daily_outside_cutoff_count": 207,
     "daily_backfill_days": 14,
-    "daily_backfill_candidate_count": 23,
+    "daily_backfill_candidate_count": 159,
     "daily_backfill_added_count": 8,
     "min_daily_papers": 8,
-    "filtered_low_relevance_count": 1,
+    "filtered_low_relevance_count": 2,
     "filtered_wrong_category_count": 49,
     "arxiv_category_filter": [
-      "math.NT",
+      "math.CT",
       "math.AT",
       "math.AG",
-      "math.CT",
+      "math.NT",
       "math.KT"
     ],
-    "days": 1,
+    "days": 3,
     "collection_mode": "incremental",
-    "collection_cutoff_iso": "2026-06-15T05:46:33.759880+00:00",
+    "collection_cutoff_iso": "2026-06-15T05:50:50.450877+00:00",
     "max_per_topic": 25,
     "max_new_papers": 30,
     "sources": [
@@ -6842,14 +7677,14 @@
     "successful_fetches": 4,
     "failed_fetches": 0,
     "clear_cache": false,
-    "paper_count": 52,
+    "paper_count": 58,
     "new_paper_count": 8,
-    "retained_paper_count": 44,
+    "retained_paper_count": 50,
     "retained_recent_low_count": 12,
     "dropped_low_relevance_count": 0,
     "max_stored_papers": 150,
     "max_data_bytes": 8388608,
-    "data_bytes": 324039,
+    "data_bytes": 366943,
     "storage_trimmed_count": 0,
     "storage_trimmed_by_level": {
       "high": 0,
