@@ -1820,6 +1820,11 @@ def collect(
     arxiv_category_filter = category_whitelist(config)
     now = dt.datetime.now(dt.timezone.utc)
     existing_payload = {} if clear_cache else load_existing_payload(output_path)
+    existing_paper_ids = {
+        str(paper.get("id", ""))
+        for paper in existing_payload.get("papers", [])
+        if isinstance(paper, dict) and paper.get("id")
+    }
     cutoff, collection_mode = collection_cutoff(existing_payload, now, days, incremental_since_last_run)
     all_candidates = []
     successful_fetches = 0
@@ -1882,6 +1887,7 @@ def collect(
     filtered_wrong_category = 0
     raw_daily_candidate_count = 0
     daily_outside_cutoff_count = 0
+    newly_discovered_backfill_count = 0
     backfill_days = max(days, env_int("DAILY_BACKFILL_DAYS", 14))
     daily_backfill_cutoff = now - dt.timedelta(days=max(0, backfill_days))
     for paper in dedupe_papers(all_candidates):
@@ -1935,7 +1941,12 @@ def collect(
         if in_backfill_window:
             paper["backfilled_from_recent_arxiv"] = True
             daily_outside_cutoff_count += 1
-            daily_backfill_candidates.append(paper)
+            if str(paper.get("id", "")) not in existing_paper_ids:
+                paper["newly_discovered_from_recent_arxiv"] = True
+                recent_papers.append(paper)
+                newly_discovered_backfill_count += 1
+            else:
+                daily_backfill_candidates.append(paper)
         else:
             recent_papers.append(paper)
 
@@ -2009,6 +2020,7 @@ def collect(
         "daily_candidate_paper_count": daily_candidate_paper_count,
         "raw_daily_candidate_count": raw_daily_candidate_count,
         "daily_outside_cutoff_count": daily_outside_cutoff_count,
+        "newly_discovered_backfill_count": newly_discovered_backfill_count,
         "daily_backfill_days": backfill_days,
         "daily_backfill_candidate_count": len(daily_backfill_candidates),
         "daily_backfill_added_count": daily_backfill_added_count,

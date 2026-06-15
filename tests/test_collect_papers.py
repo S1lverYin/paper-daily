@@ -430,8 +430,10 @@ class CollectorTest(unittest.TestCase):
                     clear_cache=True,
                 )
 
-        self.assertEqual(payload["stats"]["daily_backfill_added_count"], 1)
+        self.assertEqual(payload["stats"]["daily_backfill_added_count"], 0)
+        self.assertEqual(payload["stats"]["newly_discovered_backfill_count"], 1)
         self.assertTrue(payload["papers"][0]["backfilled_from_recent_arxiv"])
+        self.assertTrue(payload["papers"][0]["newly_discovered_from_recent_arxiv"])
 
 
 if __name__ == "__main__":
