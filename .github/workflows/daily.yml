@@ -2,7 +2,9 @@ name: Paper Daily
 
 on:
   schedule:
-    - cron: '3 1 * * *'  # 9:03am Beijing time
+    # Start early and avoid the top of the hour, then hold the notification
+    # until 09:00 Asia/Shanghai. GitHub scheduled runs can otherwise be delayed.
+    - cron: '37 0 * * *'  # 08:37 Asia/Shanghai
   workflow_dispatch:
     inputs:
       lookback_days:
@@ -75,6 +77,26 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
 
+      - name: Wait until 09:00 Beijing time
+        if: github.event_name == 'schedule'
+        run: |
+          wait_seconds=$(python3 - <<'PY'
+          from datetime import datetime, time
+          from zoneinfo import ZoneInfo
+
+          timezone = ZoneInfo("Asia/Shanghai")
+          now = datetime.now(timezone)
+          target = datetime.combine(now.date(), time(9, 0), timezone)
+          print(max(0, int((target - now).total_seconds())))
+          PY
+          )
+          if [ "$wait_seconds" -gt 0 ]; then
+            echo "Waiting ${wait_seconds}s before the 09:00 Beijing notification"
+            sleep "$wait_seconds"
+          else
+            echo "09:00 Beijing has passed; sending the notification immediately"
+          fi
+
       - name: PushPlus notification
         env:
           PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
@@ -83,7 +105,7 @@ jobs:
           if [ ! -f "$papers_file" ]; then echo "No papers file"; exit 0; fi
 
           total=$(python3 -c "import json; d=json.load(open('$papers_file')); print(len(d.get('papers',[])))")
-          today=$(date +%Y-%m-%d)
+          today=$(TZ=Asia/Shanghai date +%Y-%m-%d)
 
           new_count=$(python3 -c "
           import json
