@@ -1,6 +1,6 @@
 {
-  "generated_at": "Mon, 15 Jun 2026 05:58:38 +0000",
-  "generated_at_iso": "2026-06-15T05:58:38.976818+00:00",
+  "generated_at": "Mon, 15 Jun 2026 06:02:03 +0000",
+  "generated_at_iso": "2026-06-15T06:02:03.298365+00:00",
   "config_source": "file",
   "topics": [
     {
@@ -1006,6 +1006,120 @@
       "retained_from_previous_run": true
     },
     {
+      "id": "2606.14274v1",
+      "source": "arXiv",
+      "title": "Secondary terms for first moments of Selmer groups of twists of elliptic curves over global function fields",
+      "authors": [
+        "Sun Woo Park"
+      ],
+      "summary": "Let $E$ be a non-isotrivial elliptic curve over a global function field $\\mathbb{F}_q(t)$ of characteristic coprime to $2$ and $3$. Under some explicit conditions, we determine the secondary terms for the first moments of prime Selmer groups of cyclic prime twist families of $E$ over $\\mathbb{F}_q(t)$.",
+      "published": "2026-06-12T08:56:53Z",
+      "updated": "2026-06-12T08:56:53Z",
+      "paper_url": "http://arxiv.org/abs/2606.14274v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14274v1",
+      "categories": [
+        "math.NT",
+        "math.PR"
+      ],
+      "seed_topic": "arithmetic_geometry",
+      "matches": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.821,
+          "base_score": 0.576,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.045,
+          "level": "high",
+          "reason": "关键词命中：elliptic curve、Selmer group；arXiv 分类重合：math.NT；时效加分 +0.05",
+          "keyword_hits": [
+            "elliptic curve",
+            "Selmer group"
+          ],
+          "llm_reason": "论文研究整体函数域上的椭圆曲线Selmer群，与我的研究方向中椭圆曲线、Selmer群、整体域、函数域等关键词高度吻合，直接涉及算术几何的核心对象。"
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.051,
+          "base_score": 0.006,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.045,
+          "level": "low",
+          "reason": "时效加分 +0.05",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.049,
+          "base_score": 0.004,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.045,
+          "level": "low",
+          "reason": "时效加分 +0.05",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.045,
+          "base_score": 0.0,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.045,
+          "level": "low",
+          "reason": "时效加分 +0.05",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "arithmetic_geometry",
+        "topic_name": "Arithmetic Geometry",
+        "score": 0.821,
+        "base_score": 0.576,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.045,
+        "level": "high",
+        "reason": "关键词命中：elliptic curve、Selmer group；arXiv 分类重合：math.NT；时效加分 +0.05",
+        "keyword_hits": [
+          "elliptic curve",
+          "Selmer group"
+        ],
+        "llm_reason": "论文研究整体函数域上的椭圆曲线Selmer群，与我的研究方向中椭圆曲线、Selmer群、整体域、函数域等关键词高度吻合，直接涉及算术几何的核心对象。"
+      },
+      "top_labels": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.576,
+          "score": 0.621,
+          "level": "medium",
+          "keyword_hits": [
+            "elliptic curve",
+            "Selmer group"
+          ]
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "chinese_summary": {
+        "problem": "在整体函数域上，确定非平凡椭圆曲线的循环素数扭族中Selmer群第一矩的次项（即主项之外的下一阶项）。",
+        "method": "通过显式条件（如特征与2、3互质、非平凡椭圆曲线等），结合Selmer群的结构分析和扭族的算术性质，计算第一矩的渐近展开，提取次项。",
+        "innovation": "1. 将Selmer群矩的分析从数域推广到整体函数域；2. 在已有主项结果基础上，首次确定次项（secondary terms）；3. 给出了显式条件使得次项可计算。",
+        "evidence": "摘要声明在特定显式条件下确定了次项，但未给出具体表达式或数值，证据仅限于理论推导的陈述。",
+        "limitations": "1. 条件限制较多（特征非2、3，非平凡椭圆曲线，循环素数扭族等）；2. 未提供计算细节或示例；3. 可能依赖于某些未说明的猜想或假设。",
+        "why_relevant": "论文研究整体函数域上的椭圆曲线Selmer群，与我的研究方向中椭圆曲线、Selmer群、整体域、函数域等关键词高度吻合，直接涉及算术几何的核心对象。"
+      },
+      "first_seen_at": "2026-06-15T06:02:03.298365+00:00",
+      "last_seen_at": "2026-06-15T06:02:03.298365+00:00",
+      "retained_from_previous_run": false
+    },
+    {
       "id": "2605.14470v1",
       "source": "arXiv",
       "title": "The Localization Theorem for the Motivic Homotopy Theory of Complex Analytic Stacks and other Geometric Settings",
@@ -1291,7 +1405,7 @@
       },
       "first_seen_at": "2026-06-15T05:58:38.976818+00:00",
       "last_seen_at": "2026-06-15T05:58:38.976818+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2606.05020v1",
@@ -1440,6 +1554,123 @@
       },
       "first_seen_at": "2026-06-15T05:58:38.976818+00:00",
       "last_seen_at": "2026-06-15T05:58:38.976818+00:00",
+      "retained_from_previous_run": true
+    },
+    {
+      "id": "2606.14020v1",
+      "source": "arXiv",
+      "title": "On $U_p$-congruences for meromorphic modular forms with supersingularity",
+      "authors": [
+        "Kathrin Bringmann",
+        "Pavel Guerzhoy",
+        "Ben Kane",
+        "Michael Mertens",
+        "Larry Rolen"
+      ],
+      "summary": "In this paper, we investigate congruences for meromorphic modular forms $F$ which have a pole at a single point $z$ in the fundamental domain of $\\mathrm{SL}_2(\\mathbb Z)$. For a prime $p$ with good supersingular reduction at the elliptic curve corresponding to $z$, we show that there exists a cusp form $f$ such that $F|U_p^m \\equiv f|U_p^m \\pmod{p^{κ_m}}$, where $κ_m=αm -β$ with $α$ only depending on the weight of $F$ and $β$ depending on $F$ and $p$ but is independent of $m$. In particular, if the space of cusp forms is trivial, then $F|U_p^m\\equiv 0 \\pmod{p^{κ_m}}$ vanishes $p$-adically to a high order. In order to prove these results, we use the fact that $p$ has supersingular reduction to realize $F$ as an overconvergent modular form and then utilize the theory of overconvergent forms to show the congruences.",
+      "published": "2026-06-12T01:41:33Z",
+      "updated": "2026-06-12T01:41:33Z",
+      "paper_url": "http://arxiv.org/abs/2606.14020v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14020v1",
+      "categories": [
+        "math.NT"
+      ],
+      "seed_topic": "arithmetic_geometry",
+      "matches": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.787,
+          "base_score": 0.542,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.045,
+          "level": "high",
+          "reason": "关键词命中：elliptic curve、modular forms；arXiv 分类重合：math.NT；时效加分 +0.04",
+          "keyword_hits": [
+            "elliptic curve",
+            "modular forms"
+          ],
+          "llm_reason": "论文直接涉及椭圆曲线的超奇异约化、模形式的p-adic同余等核心概念，与研究方向中的elliptic curve、modular forms、supersingular reduction、p-adic性质高度吻合"
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.051,
+          "base_score": 0.006,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.045,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.051,
+          "base_score": 0.006,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.045,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.05,
+          "base_score": 0.005,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.045,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "arithmetic_geometry",
+        "topic_name": "Arithmetic Geometry",
+        "score": 0.787,
+        "base_score": 0.542,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.045,
+        "level": "high",
+        "reason": "关键词命中：elliptic curve、modular forms；arXiv 分类重合：math.NT；时效加分 +0.04",
+        "keyword_hits": [
+          "elliptic curve",
+          "modular forms"
+        ],
+        "llm_reason": "论文直接涉及椭圆曲线的超奇异约化、模形式的p-adic同余等核心概念，与研究方向中的elliptic curve、modular forms、supersingular reduction、p-adic性质高度吻合"
+      },
+      "top_labels": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.542,
+          "score": 0.587,
+          "level": "medium",
+          "keyword_hits": [
+            "elliptic curve",
+            "modular forms"
+          ]
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "chinese_summary": {
+        "problem": "研究亚纯模形式在超奇异约化点处极点与尖点形式之间的U_p算子同余，揭示同余指数随迭代次数线性增长的规律",
+        "method": "利用素数p在对应椭圆曲线处的超奇异约化，将带极点的亚纯模形式实现为过收敛模形式，再应用过收敛形式理论证明U_p迭代后的模p高次幂同余",
+        "innovation": "1. 将亚纯模形式（允许极点）的U_p同余问题首次纳入过收敛形式框架；2. 得到同余指数κ_m = αm - β的显式线性增长形式，其中α仅依赖于权，β依赖于F和p但与m无关；3. 在尖点形式空间平凡时，给出p-adic高阶消失的精确阶数",
+        "evidence": "摘要中给出了同余的精确数学形式（含κ_m表达式），并声明证明基于过收敛形式理论；但未提供数值算例或系统实验验证",
+        "limitations": "结果依赖p在特定椭圆曲线处具有好的超奇异约化；指数β的具体依赖关系未显式给出，需阅读全文确认条件与构造",
+        "why_relevant": "论文直接涉及椭圆曲线的超奇异约化、模形式的p-adic同余等核心概念，与研究方向中的elliptic curve、modular forms、supersingular reduction、p-adic性质高度吻合"
+      },
+      "first_seen_at": "2026-06-15T06:02:03.298365+00:00",
+      "last_seen_at": "2026-06-15T06:02:03.298365+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -1584,7 +1815,7 @@
       },
       "first_seen_at": "2026-06-11T04:42:44.276818+00:00",
       "last_seen_at": "2026-06-15T05:58:38.976818+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2511.09371v2",
@@ -1872,6 +2103,267 @@
       },
       "first_seen_at": "2026-06-11T05:21:54.714863+00:00",
       "last_seen_at": "2026-06-15T05:58:38.976818+00:00",
+      "retained_from_previous_run": true
+    },
+    {
+      "id": "2606.11154v1",
+      "source": "arXiv",
+      "title": "A correlated refinement of the double double ramification cycle",
+      "authors": [
+        "Thomas Blomme",
+        "Francesca Carocci",
+        "Ajith Urundolil Kumaran"
+      ],
+      "summary": "Given a family of semi-stable curves together with two degree 0 line bundles, the double double ramification cycle measures the locus where both line bundles are trivial on the fibers. When the two line bundles come equipped with natural roots, we provide a refinement of the DDR-class using the Weil pairing of the roots. We prove that the refined classes satisfy a multiple cover formula analogous to the one for correlated invariants of projective bundles on elliptic curves proved in [BC25b]. As a consequence, we prove that log-GW invariants of toric surfaces can be refined taking into account the position of the points mapped to the toric boundary, and that these refined invariants also satisfy a multiple cover formula; the latter is as a variation of the N. Takahashi conjecture for genus zero maximal contact curves for P2 relative a smooth elliptic curve E.",
+      "published": "2026-06-09T17:39:13Z",
+      "updated": "2026-06-09T17:39:13Z",
+      "paper_url": "http://arxiv.org/abs/2606.11154v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.11154v1",
+      "categories": [
+        "math.AG"
+      ],
+      "seed_topic": "motivic_k_theory",
+      "matches": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.747,
+          "base_score": 0.505,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.042,
+          "level": "high",
+          "reason": "关键词命中：projective bundle、line bundle；arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": [
+            "projective bundle",
+            "line bundle"
+          ],
+          "llm_reason": "论文核心涉及代数几何中的线丛、曲线族、双分支循环（交理论）、射影丛、对数GW不变量（与模空间相关），直接匹配研究方向关键词：line bundle, projective bundle, moduli space of curves, intersection theory, toric surfaces, elliptic curves。研究方法是代数几何的标准技巧（Weil配对、多重覆盖公式），与代数几何的scheme、sheaf、divisor等概念紧密相连。"
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.54,
+          "base_score": 0.498,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.042,
+          "level": "medium",
+          "reason": "关键词命中：elliptic curve、ramification；arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": [
+            "elliptic curve",
+            "ramification"
+          ]
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.231,
+          "base_score": 0.189,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.042,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.05,
+          "base_score": 0.008,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.042,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "algebraic_geometry",
+        "topic_name": "Algebraic Geometry",
+        "score": 0.747,
+        "base_score": 0.505,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.042,
+        "level": "high",
+        "reason": "关键词命中：projective bundle、line bundle；arXiv 分类重合：math.AG；时效加分 +0.04",
+        "keyword_hits": [
+          "projective bundle",
+          "line bundle"
+        ],
+        "llm_reason": "论文核心涉及代数几何中的线丛、曲线族、双分支循环（交理论）、射影丛、对数GW不变量（与模空间相关），直接匹配研究方向关键词：line bundle, projective bundle, moduli space of curves, intersection theory, toric surfaces, elliptic curves。研究方法是代数几何的标准技巧（Weil配对、多重覆盖公式），与代数几何的scheme、sheaf、divisor等概念紧密相连。"
+      },
+      "top_labels": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.505,
+          "score": 0.547,
+          "level": "medium",
+          "keyword_hits": [
+            "projective bundle",
+            "line bundle"
+          ]
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.498,
+          "score": 0.54,
+          "level": "medium",
+          "keyword_hits": [
+            "elliptic curve",
+            "ramification"
+          ]
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "base_score": 0.189,
+          "score": 0.231,
+          "level": "low",
+          "keyword_hits": []
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "chinese_summary": {
+        "problem": "研究在半稳定曲线族上给定两个度0线丛时，双倍双分支循环的细化，即测量两个线丛在纤维上平凡的位置，并利用线丛的根之间的Weil配对给出更精细的不变量。",
+        "method": "利用线丛的自然根之间的Weil配对来细化双倍双分支类（DDR-class），并证明细化类满足多重覆盖公式，该公式类比于椭圆曲线上射影丛的相关不变量公式。通过该公式推导出对数GW不变量（考虑映射到toric边界点的位置）的细化版本也满足多重覆盖公式。",
+        "innovation": "1. 首次利用Weil配对对双倍双分支循环进行相关细化，将两个线丛的根信息纳入不变量；2. 建立了细化类的多重覆盖公式，推广了[BC25b]中的结果；3. 将对数GW不变量细化，并证明其满足多重覆盖公式，这是对N. Takahashi猜想的变体。",
+        "evidence": "摘要中明确提到证明了细化类满足多重覆盖公式，并作为推论证明了细化后的对数GW不变量也满足多重覆盖公式；但未提供具体计算或数值验证，理论推导依赖于类比和已知结果。",
+        "limitations": "可能局限在亏格0情形（由Takahashi猜想的变体暗示），尚未一般化到更高亏格；多重覆盖公式的证明依赖于已有结果[BC25b]，可能需要验证细节；实际计算示例未在摘要中展示。",
+        "why_relevant": "论文核心涉及代数几何中的线丛、曲线族、双分支循环（交理论）、射影丛、对数GW不变量（与模空间相关），直接匹配研究方向关键词：line bundle, projective bundle, moduli space of curves, intersection theory, toric surfaces, elliptic curves。研究方法是代数几何的标准技巧（Weil配对、多重覆盖公式），与代数几何的scheme、sheaf、divisor等概念紧密相连。"
+      },
+      "first_seen_at": "2026-06-15T06:02:03.298365+00:00",
+      "last_seen_at": "2026-06-15T06:02:03.298365+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "2606.13224v1",
+      "source": "arXiv",
+      "title": "Bott-Chern and Aeppli homotopy",
+      "authors": [
+        "Jiahao Hu"
+      ],
+      "summary": "This paper introduces Bott-Chern and Aeppli homotopy sets for a fibrant class of bisimplicial sets and establishes their basic properties. In positive bidegrees, Bott-Chern homotopy sets carry natural monoid structures, while Aeppli homotopy sets carry natural group structures. They are related by a loop-space comparison: after a bidegree shift, the Aeppli homotopy groups of X are naturally identified with the Bott-Chern homotopy monoids of the loop space of X. In particular, the Bott-Chern homotopy monoids of loop spaces are groups. To justify our definitions, we show that the Bott-Chern homotopy monoids of a bisimplicial abelian group are naturally isomorphic to the Bott-Chern homology groups of its associated normalized Moore bicomplex. An analogous statement holds for Aeppli homotopy.",
+      "published": "2026-06-11T11:38:51Z",
+      "updated": "2026-06-11T11:38:51Z",
+      "paper_url": "http://arxiv.org/abs/2606.13224v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13224v1",
+      "categories": [
+        "math.AT"
+      ],
+      "seed_topic": "motivic_k_theory",
+      "matches": [
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.73,
+          "base_score": 0.586,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.044,
+          "level": "high",
+          "reason": "关键词命中：homotopy groups、simplicial set、loop space；arXiv 分类重合：math.AT；时效加分 +0.04",
+          "keyword_hits": [
+            "homotopy groups",
+            "simplicial set",
+            "loop space"
+          ],
+          "llm_reason": "直接涉及双单纯集、环路空间、同伦群及其变体（Bott-Chern/Aeppli同伦），这些概念与研究方向中的simplicial set、loop space、homotopy groups等关键词高度匹配，且分类math.AT与同伦论完全一致。"
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.239,
+          "base_score": 0.195,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.044,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AT；时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.058,
+          "base_score": 0.014,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.044,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.049,
+          "base_score": 0.005,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.044,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "homotopy_theory",
+        "topic_name": "Homotopy Theory",
+        "score": 0.73,
+        "base_score": 0.586,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.044,
+        "level": "high",
+        "reason": "关键词命中：homotopy groups、simplicial set、loop space；arXiv 分类重合：math.AT；时效加分 +0.04",
+        "keyword_hits": [
+          "homotopy groups",
+          "simplicial set",
+          "loop space"
+        ],
+        "llm_reason": "直接涉及双单纯集、环路空间、同伦群及其变体（Bott-Chern/Aeppli同伦），这些概念与研究方向中的simplicial set、loop space、homotopy groups等关键词高度匹配，且分类math.AT与同伦论完全一致。"
+      },
+      "top_labels": [
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "base_score": 0.586,
+          "score": 0.63,
+          "level": "medium",
+          "keyword_hits": [
+            "homotopy groups",
+            "simplicial set",
+            "loop space"
+          ]
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "base_score": 0.195,
+          "score": 0.239,
+          "level": "low",
+          "keyword_hits": []
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "chinese_summary": {
+        "problem": "在双单纯集同伦论中引入并研究Bott-Chern和Aeppli同伦集，建立其代数结构及与环路空间的联系。",
+        "method": "针对一类纤维性双单纯集定义Bott-Chern和Aeppli同伦集，证明在正双次数下它们分别具有幺半群和群结构。通过双次数移位，将X的Aeppli同伦群等同于其环路空间的Bott-Chern同伦幺半群，从而说明环路空间的Bott-Chern同伦幺半群是群。此外，对双单纯阿贝尔群，证明其Bott-Chern同伦幺半群自然同构于关联规范化Moore双复形的Bott-Chern同调群。",
+        "innovation": "首次在双单纯集框架下引入Bott-Chern和Aeppli同伦概念，并系统建立其基本性质；揭示两种同伦对象之间的环路空间比较关系，将群结构与幺半群结构通过双次数移位关联；通过Moore双复形同调给出双单纯阿贝尔群情形的具体同构，验证了定义的自然性。",
+        "evidence": "摘要给出了理论证明：Aeppli同伦群与环路空间的Bott-Chern同伦幺半群的自然同构，以及双单纯阿贝尔群的Bott-Chern同伦幺半群与Moore双复形同调群的同构。未提供实验或计算证据。",
+        "limitations": "定义依赖于特定的纤维性类，可能不适用于所有双单纯集；未讨论与经典同伦群的具体比较或应用；缺乏计算实例或与现有同伦论工具的衔接。",
+        "why_relevant": "直接涉及双单纯集、环路空间、同伦群及其变体（Bott-Chern/Aeppli同伦），这些概念与研究方向中的simplicial set、loop space、homotopy groups等关键词高度匹配，且分类math.AT与同伦论完全一致。"
+      },
+      "first_seen_at": "2026-06-15T06:02:03.298365+00:00",
+      "last_seen_at": "2026-06-15T06:02:03.298365+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -2010,6 +2502,119 @@
       },
       "first_seen_at": "2026-06-15T05:58:38.976818+00:00",
       "last_seen_at": "2026-06-15T05:58:38.976818+00:00",
+      "retained_from_previous_run": true
+    },
+    {
+      "id": "2606.11706v1",
+      "source": "arXiv",
+      "title": "Multivariate Period Rings",
+      "authors": [
+        "Rohit Pokhrel"
+      ],
+      "summary": "In this article, we present a new approach to studying multivariate period rings that is more consistent with classical theory and provides a clearer description of their structure. We also prove that the category of $B$-admissible representations forms a Tannakian subcategory of the category of representations of $G_{K,Δ}$ by defining an analogue of $(F,G)$-regular rings, which is central to the classification of representations in multivariate $p$-adic Hodge theory.",
+      "published": "2026-06-10T06:29:27Z",
+      "updated": "2026-06-10T06:29:27Z",
+      "paper_url": "http://arxiv.org/abs/2606.11706v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.11706v1",
+      "categories": [
+        "math.NT"
+      ],
+      "seed_topic": "arithmetic_geometry",
+      "matches": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.719,
+          "base_score": 0.577,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.042,
+          "level": "high",
+          "reason": "关键词命中：p-adic Hodge theory、period rings；arXiv 分类重合：math.NT；时效加分 +0.04",
+          "keyword_hits": [
+            "p-adic Hodge theory",
+            "period rings"
+          ],
+          "llm_reason": "核心对象多元周期环是p-adic Hodge theory的关键组件，研究方向中明确包含p-adic Hodge theory、period rings、Fontaine theory、Tannakian范畴等关键词，且论文属math.NT分类，直接服务于算术几何中的表示分类问题。"
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.055,
+          "base_score": 0.013,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.042,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.053,
+          "base_score": 0.011,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.042,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.05,
+          "base_score": 0.008,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.042,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "arithmetic_geometry",
+        "topic_name": "Arithmetic Geometry",
+        "score": 0.719,
+        "base_score": 0.577,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.042,
+        "level": "high",
+        "reason": "关键词命中：p-adic Hodge theory、period rings；arXiv 分类重合：math.NT；时效加分 +0.04",
+        "keyword_hits": [
+          "p-adic Hodge theory",
+          "period rings"
+        ],
+        "llm_reason": "核心对象多元周期环是p-adic Hodge theory的关键组件，研究方向中明确包含p-adic Hodge theory、period rings、Fontaine theory、Tannakian范畴等关键词，且论文属math.NT分类，直接服务于算术几何中的表示分类问题。"
+      },
+      "top_labels": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.577,
+          "score": 0.619,
+          "level": "medium",
+          "keyword_hits": [
+            "p-adic Hodge theory",
+            "period rings"
+          ]
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "chinese_summary": {
+        "problem": "现有多元周期环理论与经典理论不一致且结构描述不清晰，需要建立更统一、更清晰的框架。",
+        "method": "通过定义类似(F,G)-正则环的对象，构造新的多元周期环结构，并证明B-允许表示范畴构成G_{K,Δ}表示范畴的Tannakian子范畴，从而为多元p-adic Hodge theory中的表示分类提供新工具。",
+        "innovation": "提出与经典理论更一致的多元周期环新处理方法；引入(F,G)-正则环的类比，将Tannakian范畴理论扩展到多元p-adic Hodge theory中。",
+        "evidence": "摘要中仅有理论断言，未提供具体计算、例子或比较性实验证据，需阅读全文验证。",
+        "limitations": "可能需要熟悉多元p-adic Hodge theory和Tannakian范畴的基础知识；未说明新方法是否适用于所有已知情形或能否简化现有证明。",
+        "why_relevant": "核心对象多元周期环是p-adic Hodge theory的关键组件，研究方向中明确包含p-adic Hodge theory、period rings、Fontaine theory、Tannakian范畴等关键词，且论文属math.NT分类，直接服务于算术几何中的表示分类问题。"
+      },
+      "first_seen_at": "2026-06-15T06:02:03.298365+00:00",
+      "last_seen_at": "2026-06-15T06:02:03.298365+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -2145,6 +2750,273 @@
       "retained_from_previous_run": true
     },
     {
+      "id": "2606.13783v1",
+      "source": "arXiv",
+      "title": "Strictly Semistable Quasimaps on the Wall",
+      "authors": [
+        "Sara Stephens"
+      ],
+      "summary": "Moduli spaces of $ε$-stable quasimaps exhibit a wall and chamber structure, interpolating between the moduli of stable quasimaps and Kontsevich's moduli spaces of stable maps. In the case where the target is projective space, we develop an intrinsic framework for the wall crossing phenomenon by constructing an algebraic stack where strictly semistable objects appear at a wall in the space of $ε$-stability conditions. We show this algebraic stack admits a proper good moduli space and analyze the variation of $Θ$-stratification on this stack. This yields a new approach to developing a K-theoretic wall crossing formula for $ε$-stable quasimap invariants via non-abelian localization.",
+      "published": "2026-06-11T18:00:13Z",
+      "updated": "2026-06-11T18:00:13Z",
+      "paper_url": "http://arxiv.org/abs/2606.13783v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13783v1",
+      "categories": [
+        "math.AG"
+      ],
+      "seed_topic": "motivic_k_theory",
+      "matches": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.715,
+          "base_score": 0.571,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.044,
+          "level": "high",
+          "reason": "关键词命中：algebraic stack、moduli space、Proj；arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": [
+            "algebraic stack",
+            "moduli space",
+            "Proj"
+          ],
+          "llm_reason": "研究方向Algebraic Geometry涉及模空间、代数栈、射影空间、壁穿越等核心概念。论文关键词命中algebraic stack、moduli space、Proj，且arXiv分类为math.AG，与用户研究方向高度吻合。"
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.234,
+          "base_score": 0.19,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.044,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.227,
+          "base_score": 0.183,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.044,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.053,
+          "base_score": 0.009,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.044,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "algebraic_geometry",
+        "topic_name": "Algebraic Geometry",
+        "score": 0.715,
+        "base_score": 0.571,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.044,
+        "level": "high",
+        "reason": "关键词命中：algebraic stack、moduli space、Proj；arXiv 分类重合：math.AG；时效加分 +0.04",
+        "keyword_hits": [
+          "algebraic stack",
+          "moduli space",
+          "Proj"
+        ],
+        "llm_reason": "研究方向Algebraic Geometry涉及模空间、代数栈、射影空间、壁穿越等核心概念。论文关键词命中algebraic stack、moduli space、Proj，且arXiv分类为math.AG，与用户研究方向高度吻合。"
+      },
+      "top_labels": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.571,
+          "score": 0.615,
+          "level": "medium",
+          "keyword_hits": [
+            "algebraic stack",
+            "moduli space",
+            "Proj"
+          ]
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "base_score": 0.19,
+          "score": 0.234,
+          "level": "low",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.183,
+          "score": 0.227,
+          "level": "low",
+          "keyword_hits": []
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "chinese_summary": {
+        "problem": "在ε-稳定拟映射模空间的壁穿越中，如何系统处理严格半稳定对象并建立K-理论壁穿越公式。",
+        "method": "针对射影空间目标，构造一个代数栈使其严格半稳定对象出现在ε-稳定性条件的壁处；证明该栈存在适当的良好模空间，并分析该栈上的Θ-分层变化；进一步借助非交换局部化方法导出ε-稳定拟映射不变量的K-理论壁穿越公式。",
+        "innovation": "1) 首次为ε-稳定拟映射的壁穿越现象构建了内在的代数栈框架，将严格半稳定对象纳入模空间体系；2) 通过分析Θ-分层变化并利用非交换局部化，给出了K-理论壁穿越公式的新推导途径，相比于传统方法更具系统性。",
+        "evidence": "摘要仅给出理论构造和结论，未提供具体计算或实验验证，证据不足。",
+        "limitations": "仅针对目标为射影空间的情形；构造和分析细节、公式的具体形式及适用性需阅读全文确认。",
+        "why_relevant": "研究方向Algebraic Geometry涉及模空间、代数栈、射影空间、壁穿越等核心概念。论文关键词命中algebraic stack、moduli space、Proj，且arXiv分类为math.AG，与用户研究方向高度吻合。"
+      },
+      "first_seen_at": "2026-06-15T06:02:03.298365+00:00",
+      "last_seen_at": "2026-06-15T06:02:03.298365+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "2605.27112v2",
+      "source": "arXiv",
+      "title": "Morse flow categories as exit path categories",
+      "authors": [
+        "Colin Fourel"
+      ],
+      "summary": "We prove that the topological flow category $\\mathcal{M}$ arising from a Morse-Smale pair $(f,ξ)$ on a smooth closed manifold $X$ is equivalent, as an $\\infty$-category, to Lurie's $\\infty$-category $\\mathrm{Sing}_A(X)$ of exit paths in $X$ with respect to the stratification by the stable manifolds of $ξ$. The objects of $\\mathcal{M}$ are the critical points of $f$, and for every pair of critical points, the space of morphisms of $\\mathcal{M}$ between these is the space of possibly broken trajectories of $ξ$ connecting them; it can be identified up to homotopy with the space of unbroken ones. The latter maps naturally to the space of exit paths connecting these critical points; we prove this map to be a weak homotopy equivalence. Then, we combine these ingredients with several others to construct a zigzag of equivalences between the homotopy coherent nerve of $\\mathcal{M}$, denoted $\\mathcal{N}(\\mathcal{M})$, and $\\mathrm{Sing}_A(X)$. The $n$-simplices of $\\mathcal{N}(\\mathcal{M})$ are homotopy coherent diagrams of $n$ composable morphisms of $\\mathcal{M}$; we introduce the notion of unbroken diagram, yielding an $\\infty$-subcategory of $\\mathcal{N}(\\mathcal{M})$, which we refer to as the flow coherent nerve of $\\mathcal{M}$. The simplices of the latter give rise to stratified maps out of a family of stratified cubes, into $X$. We organize this family into a functor from the category of finite ordered sequences of critical points, to the category of $A$-stratified topological spaces, and we prove a comparison result with the usual stratified geometric realization functor. We finally use a theorem of Tanaka that associates a functor of $\\infty$-categories to a map a semi-simplicial sets satisfying some conditions. Our theorem has implications regarding constructible sheaves and the description of homotopy types in terms of flow categories.",
+      "published": "2026-05-26T14:52:01Z",
+      "updated": "2026-06-02T09:29:28Z",
+      "paper_url": "http://arxiv.org/abs/2605.27112v2",
+      "pdf_url": "https://arxiv.org/pdf/2605.27112v2",
+      "categories": [
+        "math.AT",
+        "math.CT",
+        "math.SG"
+      ],
+      "seed_topic": "homotopy_theory",
+      "matches": [
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.698,
+          "base_score": 0.515,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.033,
+          "level": "high",
+          "reason": "关键词命中：topological space、simplicial set；arXiv 分类重合：math.AT；时效加分 +0.03",
+          "keyword_hits": [
+            "topological space",
+            "simplicial set"
+          ],
+          "llm_reason": "直接涉及无穷范畴、弱等价、同伦类型，与同伦论中的∞-范畴、弱等价、单纯集等核心概念高度吻合；使用Simplicial set和Kan complex隐含技术。"
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.232,
+          "base_score": 0.199,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.033,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AT；时效加分 +0.03",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.185,
+          "base_score": 0.152,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.033,
+          "level": "low",
+          "reason": "关键词命中：Spec；时效加分 +0.03",
+          "keyword_hits": [
+            "Spec"
+          ]
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.039,
+          "base_score": 0.006,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.033,
+          "level": "low",
+          "reason": "时效加分 +0.03",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "homotopy_theory",
+        "topic_name": "Homotopy Theory",
+        "score": 0.698,
+        "base_score": 0.515,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.033,
+        "level": "high",
+        "reason": "关键词命中：topological space、simplicial set；arXiv 分类重合：math.AT；时效加分 +0.03",
+        "keyword_hits": [
+          "topological space",
+          "simplicial set"
+        ],
+        "llm_reason": "直接涉及无穷范畴、弱等价、同伦类型，与同伦论中的∞-范畴、弱等价、单纯集等核心概念高度吻合；使用Simplicial set和Kan complex隐含技术。"
+      },
+      "top_labels": [
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "base_score": 0.515,
+          "score": 0.548,
+          "level": "medium",
+          "keyword_hits": [
+            "topological space",
+            "simplicial set"
+          ]
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "base_score": 0.199,
+          "score": 0.232,
+          "level": "low",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.152,
+          "score": 0.185,
+          "level": "low",
+          "keyword_hits": [
+            "Spec"
+          ]
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "chinese_summary": {
+        "problem": "建立Morse-Smale流范畴与分层流形的出口路径无穷范畴之间的等价关系，将流轨迹的空间同伦类型用无穷范畴描述。",
+        "method": "通过构造未断裂轨迹空间与出口路径空间之间的弱同伦等价，引入‘未断裂图’概念定义流相干神经，构造一系列范畴等价，并利用Tanaka定理将半单纯集映射提升为无穷范畴函子。",
+        "innovation": "将经典的Morse流范畴严格实现为无穷范畴，并证明其与Lurie出口路径范畴等价；引入‘未断裂图’概念简化单纯结构；为用流范畴描述分类构造层和同伦类型提供了新框架。",
+        "evidence": "摘要中声称构造了弱同伦等价、zigzag等价，并引用Tanaka定理；但未提供具体计算或实证结果。",
+        "limitations": "依赖大量技术细节（半单纯集、几何实现、分层空间），需要阅读全文确认等价构造的严格性；仅针对闭合流形上的Morse-Smale对。",
+        "why_relevant": "直接涉及无穷范畴、弱等价、同伦类型，与同伦论中的∞-范畴、弱等价、单纯集等核心概念高度吻合；使用Simplicial set和Kan complex隐含技术。"
+      },
+      "first_seen_at": "2026-06-15T06:02:03.298365+00:00",
+      "last_seen_at": "2026-06-15T06:02:03.298365+00:00",
+      "retained_from_previous_run": false
+    },
+    {
       "id": "2606.11179v1",
       "source": "arXiv",
       "title": "Equivariant Contact Darboux Quotients and Perversely Categorified Legendrian Correspondences",
@@ -2277,7 +3149,7 @@
       },
       "first_seen_at": "2026-06-15T05:58:38.976818+00:00",
       "last_seen_at": "2026-06-15T05:58:38.976818+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2606.08848v1",
@@ -2672,7 +3544,7 @@
       },
       "first_seen_at": "2026-06-15T05:58:38.976818+00:00",
       "last_seen_at": "2026-06-15T05:58:38.976818+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2606.05051v1",
@@ -2808,6 +3680,143 @@
       },
       "first_seen_at": "2026-06-15T05:58:38.976818+00:00",
       "last_seen_at": "2026-06-15T05:58:38.976818+00:00",
+      "retained_from_previous_run": true
+    },
+    {
+      "id": "2606.10181v1",
+      "source": "arXiv",
+      "title": "The crystalline cohomology of covers with a cyclic $p$-Sylow subgroup",
+      "authors": [
+        "Jędrzej Garnek"
+      ],
+      "summary": "Let $X$ be a smooth projective curve over a field $k$ with an action of a finite group $G$. A well-known result of Chevalley and Weil describes the $k[G]$-module structure of cohomologies of $X$ in the case when the characteristic of $k$ does not divide $\\# G$. In case when $G$ has a cyclic $p$-Sylow subgroup, it is known that the $G$-structures of the module of holomorphic differentials and of de Rham cohomology of $X$ are completely determined by the ramification data of the cover $X \\to X/G$. In this article we extend this result to the crystalline cohomology of $X$. Also, we provide an explicit description of the structure of the crystalline cohomology when $G = \\mathbb Z/p^n$. The main used tool is the theory of Yakovlev diagrams - algebraic objects that classify the $G$-modules over Witt vectors.",
+      "published": "2026-06-08T21:17:26Z",
+      "updated": "2026-06-08T21:17:26Z",
+      "paper_url": "http://arxiv.org/abs/2606.10181v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.10181v1",
+      "categories": [
+        "math.AG",
+        "math.RT"
+      ],
+      "seed_topic": "algebraic_geometry",
+      "matches": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.662,
+          "base_score": 0.622,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.04,
+          "level": "medium",
+          "reason": "关键词命中：crystalline cohomology、de Rham cohomology、ramification；arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": [
+            "crystalline cohomology",
+            "de Rham cohomology",
+            "ramification"
+          ],
+          "llm_reason": "匹配研究方向中的晶体上同调、分歧理论、p-adic Hodge理论；论文涉及覆盖的分歧数据与上同调G-结构的关系，与算术几何中曲线上的Galois作用类似。"
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.376,
+          "base_score": 0.336,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.04,
+          "level": "low",
+          "reason": "关键词命中：Proj；arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": [
+            "Proj"
+          ]
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.234,
+          "base_score": 0.194,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.04,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.046,
+          "base_score": 0.006,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.04,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "arithmetic_geometry",
+        "topic_name": "Arithmetic Geometry",
+        "score": 0.662,
+        "base_score": 0.622,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.04,
+        "level": "medium",
+        "reason": "关键词命中：crystalline cohomology、de Rham cohomology、ramification；arXiv 分类重合：math.AG；时效加分 +0.04",
+        "keyword_hits": [
+          "crystalline cohomology",
+          "de Rham cohomology",
+          "ramification"
+        ],
+        "llm_reason": "匹配研究方向中的晶体上同调、分歧理论、p-adic Hodge理论；论文涉及覆盖的分歧数据与上同调G-结构的关系，与算术几何中曲线上的Galois作用类似。"
+      },
+      "top_labels": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.622,
+          "score": 0.662,
+          "level": "medium",
+          "keyword_hits": [
+            "crystalline cohomology",
+            "de Rham cohomology",
+            "ramification"
+          ]
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.336,
+          "score": 0.376,
+          "level": "low",
+          "keyword_hits": [
+            "Proj"
+          ]
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "base_score": 0.194,
+          "score": 0.234,
+          "level": "low",
+          "keyword_hits": []
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "chinese_summary": {
+        "problem": "在特征p域上，当有限群G具有循环p-Sylow子群时，描述光滑射影曲线X的晶体上同调的G-模结构。",
+        "method": "使用Yakovlev diagrams（分类Witt向量上G-模的代数对象）作为主要工具，将已知的de Rham上同调和全纯微分模的G-结构结果推广到晶体上同调，并对G = ℤ/p^n给出显式描述。",
+        "innovation": "1. 将Chevalley-Weil定理的推广从de Rham上同调扩展到晶体上同调。2. 对循环p-群情况提供了晶体上同调G-模结构的显式公式。",
+        "evidence": "摘要中提到提供了显式描述，但未给出具体数值或实验验证，需要阅读全文确认。",
+        "limitations": "仅适用于G具有循环p-Sylow子群的情况；需要更一般的群作用或高维基的推广未提及。",
+        "why_relevant": "匹配研究方向中的晶体上同调、分歧理论、p-adic Hodge理论；论文涉及覆盖的分歧数据与上同调G-结构的关系，与算术几何中曲线上的Galois作用类似。"
+      },
+      "first_seen_at": "2026-06-15T06:02:03.298365+00:00",
+      "last_seen_at": "2026-06-15T06:02:03.298365+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -3343,6 +4352,146 @@
       "retained_from_previous_run": true
     },
     {
+      "id": "2606.14494v1",
+      "source": "arXiv",
+      "title": "Logarithmic topological Hochschild homology of the truncated Brown--Peterson spectrum at height two",
+      "authors": [
+        "Jiaxi Zha"
+      ],
+      "summary": "We study logarithmic topological Hochschild homology of the truncated Brown--Peterson spectra $\\BP{n}$. We first describe prelog structures on $\\BP{n}$ and analyze the spectral sequences used to compute the $V(n)$-homotopy groups of the associated logarithmic topological Hochschild homology spectra. For general $n$, we establish some structural properties of these spectral sequences that are needed for the computations. We then specialize to the case $n=2$ and carry out the calculation explicitly, determining the $V(2)$-homotopy groups of the corresponding logarithmic topological Hochschild homology spectra.",
+      "published": "2026-06-12T14:29:26Z",
+      "updated": "2026-06-12T14:29:26Z",
+      "paper_url": "http://arxiv.org/abs/2606.14494v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14494v1",
+      "categories": [
+        "math.AT"
+      ],
+      "seed_topic": "motivic_k_theory",
+      "matches": [
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.639,
+          "base_score": 0.593,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "medium",
+          "reason": "关键词命中：spectral sequence、homotopy groups、spectrum；arXiv 分类重合：math.AT；时效加分 +0.05",
+          "keyword_hits": [
+            "spectral sequence",
+            "homotopy groups",
+            "spectrum"
+          ],
+          "llm_reason": "论文涉及同伦群、谱序列、BP谱等概念，与研究方向中的关键词如'homotopy groups'、'spectral sequence'、'spectrum'高度匹配，且属于稳定同伦理论范畴。"
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.536,
+          "base_score": 0.49,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "medium",
+          "reason": "关键词命中：topological Hochschild homology；arXiv 分类重合：math.AT；时效加分 +0.05",
+          "keyword_hits": [
+            "topological Hochschild homology"
+          ]
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.223,
+          "base_score": 0.177,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "low",
+          "reason": "关键词命中：Spec；时效加分 +0.05",
+          "keyword_hits": [
+            "Spec"
+          ]
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.049,
+          "base_score": 0.003,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "low",
+          "reason": "时效加分 +0.05",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "homotopy_theory",
+        "topic_name": "Homotopy Theory",
+        "score": 0.639,
+        "base_score": 0.593,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.046,
+        "level": "medium",
+        "reason": "关键词命中：spectral sequence、homotopy groups、spectrum；arXiv 分类重合：math.AT；时效加分 +0.05",
+        "keyword_hits": [
+          "spectral sequence",
+          "homotopy groups",
+          "spectrum"
+        ],
+        "llm_reason": "论文涉及同伦群、谱序列、BP谱等概念，与研究方向中的关键词如'homotopy groups'、'spectral sequence'、'spectrum'高度匹配，且属于稳定同伦理论范畴。"
+      },
+      "top_labels": [
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "base_score": 0.593,
+          "score": 0.639,
+          "level": "medium",
+          "keyword_hits": [
+            "spectral sequence",
+            "homotopy groups",
+            "spectrum"
+          ]
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "base_score": 0.49,
+          "score": 0.536,
+          "level": "medium",
+          "keyword_hits": [
+            "topological Hochschild homology"
+          ]
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.177,
+          "score": 0.223,
+          "level": "low",
+          "keyword_hits": [
+            "Spec"
+          ]
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "chinese_summary": {
+        "problem": "计算截断Brown–Peterson谱BP<2>的对数拓扑Hochschild同调的V(2)-同伦群。",
+        "method": "首先描述BP<n>上的prelog结构，然后分析用于计算相关对数拓扑Hochschild同调谱的V(n)-同伦群的谱序列。对于一般n，建立这些谱序列的部分结构性质；对于n=2，进行显式计算。",
+        "innovation": "首次研究BP谱的对数拓扑Hochschild同调，并完整计算了高度2的V(2)-同伦群，给出了显式结果；同时为一般n建立了计算所需的结构性质。",
+        "evidence": "摘要明确说明对于n=2进行了显式计算，确定了V(2)-同伦群，但未给出具体数值或表格。证据充分但需全文确认。",
+        "limitations": "仅完全处理了高度n=2的情况，更高n仅建立了部分性质；摘要未提及计算结果的具体形式或应用，需阅读全文验证。",
+        "why_relevant": "论文涉及同伦群、谱序列、BP谱等概念，与研究方向中的关键词如'homotopy groups'、'spectral sequence'、'spectrum'高度匹配，且属于稳定同伦理论范畴。"
+      },
+      "first_seen_at": "2026-06-15T06:02:03.298365+00:00",
+      "last_seen_at": "2026-06-15T06:02:03.298365+00:00",
+      "retained_from_previous_run": false
+    },
+    {
       "id": "2606.08166v1",
       "source": "arXiv",
       "title": "Cyclotomic extensions in stable homotopy theory",
@@ -3486,6 +4635,271 @@
       "first_seen_at": "2026-06-11T05:21:54.714863+00:00",
       "last_seen_at": "2026-06-15T05:50:50.450877+00:00",
       "retained_from_previous_run": true
+    },
+    {
+      "id": "2606.14110v1",
+      "source": "arXiv",
+      "title": "Artin-Schreier Root Stacks and lifts of group actions",
+      "authors": [
+        "Sujoy Chakraborty",
+        "Souradeep Majumder"
+      ],
+      "summary": "Let $G$ be a connected affine algebraic group defined over a field of positive characteristic. We prove that the action of $G$ on a smooth projective variety can be lifted to its associated Artin-Schreier root stacks, whenever $G$ has no non-trivial characters. The existence of a $G$-linearization on a certain tautological invertible sheaf on such Artin-Schreier root stacks is also shown.",
+      "published": "2026-06-12T04:45:42Z",
+      "updated": "2026-06-12T04:45:42Z",
+      "paper_url": "http://arxiv.org/abs/2606.14110v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14110v1",
+      "categories": [
+        "math.AG"
+      ],
+      "seed_topic": "motivic_k_theory",
+      "matches": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.601,
+          "base_score": 0.556,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.045,
+          "level": "medium",
+          "reason": "关键词命中：invertible sheaf、variety、Proj；arXiv 分类重合：math.AG；时效加分 +0.05",
+          "keyword_hits": [
+            "invertible sheaf",
+            "variety",
+            "Proj"
+          ],
+          "llm_reason": "论文涉及代数几何核心对象：代数群作用、可逆层、Artin-Schreier根栈，与用户研究方向中'scheme', 'invertible sheaf', 'algebraic stack'等关键词直接匹配；但主题更集中于正特征群作用升腾，而非用户关注的模空间、导出几何等方向，故仅为中等相关。"
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.235,
+          "base_score": 0.19,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.045,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.05",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.231,
+          "base_score": 0.186,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.045,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.05",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.045,
+          "base_score": 0.0,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.045,
+          "level": "low",
+          "reason": "时效加分 +0.05",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "algebraic_geometry",
+        "topic_name": "Algebraic Geometry",
+        "score": 0.601,
+        "base_score": 0.556,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.045,
+        "level": "medium",
+        "reason": "关键词命中：invertible sheaf、variety、Proj；arXiv 分类重合：math.AG；时效加分 +0.05",
+        "keyword_hits": [
+          "invertible sheaf",
+          "variety",
+          "Proj"
+        ],
+        "llm_reason": "论文涉及代数几何核心对象：代数群作用、可逆层、Artin-Schreier根栈，与用户研究方向中'scheme', 'invertible sheaf', 'algebraic stack'等关键词直接匹配；但主题更集中于正特征群作用升腾，而非用户关注的模空间、导出几何等方向，故仅为中等相关。"
+      },
+      "top_labels": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.556,
+          "score": 0.601,
+          "level": "medium",
+          "keyword_hits": [
+            "invertible sheaf",
+            "variety",
+            "Proj"
+          ]
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.19,
+          "score": 0.235,
+          "level": "low",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "base_score": 0.186,
+          "score": 0.231,
+          "level": "low",
+          "keyword_hits": []
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "chinese_summary": {
+        "problem": "在正特征域上，对于没有非平凡特征的连通仿射代数群G，如何将G在光滑射影簇上的作用提升到该簇的Artin-Schreier根栈上。",
+        "method": "通过分析Artin-Schreier根栈的构造性质，利用G无非平凡特征的条件，证明群作用可自然提升；同时证明某个自带的挠可逆层上存在G-线性化。",
+        "innovation": "首次在正特征下建立了无特征群作用到Artin-Schreier根栈的升腾定理，并给出了自旋可逆层的线性化存在性，补充了正特征代数栈的群作用理论。",
+        "evidence": "摘要中仅提供理论证明的陈述，未给出实验或具体构造验证，证据不足。",
+        "limitations": "要求G为连通仿射代数群且无非平凡特征，场特征为正；结论仅针对Artin-Schreier根栈，未推广到一般根栈；需要阅读全文以验证证明细节及适用范围。",
+        "why_relevant": "论文涉及代数几何核心对象：代数群作用、可逆层、Artin-Schreier根栈，与用户研究方向中'scheme', 'invertible sheaf', 'algebraic stack'等关键词直接匹配；但主题更集中于正特征群作用升腾，而非用户关注的模空间、导出几何等方向，故仅为中等相关。"
+      },
+      "first_seen_at": "2026-06-15T06:02:03.298365+00:00",
+      "last_seen_at": "2026-06-15T06:02:03.298365+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "2606.11443v1",
+      "source": "arXiv",
+      "title": "Regularity is bounded on a quasi-excellent Noetherian scheme",
+      "authors": [
+        "Alessandro De Stefani",
+        "Jack Jeffries",
+        "Nawaj KC",
+        "Luis Núñez-Betancourt"
+      ],
+      "summary": "A point of a scheme has an associated tangent cone, the spectrum of a standard graded algebra encoding the local singularity. Its homological complexity can be measured by its graded Betti table: a matrix that records a part of the structure of its graded, minimal free resolution over a polynomial ring. A natural question is whether the homological complexity of the tangent cones varies arbitrarily across a scheme. In this paper, we show that this is not the case for a quasi-excellent Noetherian scheme; over such schemes, only finitely many graded Betti tables can occur. More generally, we show that a coherent sheaf over a quasi-excellent Noetherian scheme admits finitely many graded Betti tables, and that the constancy loci for the graded Betti table are constructible. As an immediate consequence, regularity is bounded on a quasi-excellent Noetherian scheme.",
+      "published": "2026-06-09T20:52:44Z",
+      "updated": "2026-06-09T20:52:44Z",
+      "paper_url": "http://arxiv.org/abs/2606.11443v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.11443v1",
+      "categories": [
+        "math.AC",
+        "math.AG"
+      ],
+      "seed_topic": "motivic_k_theory",
+      "matches": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.598,
+          "base_score": 0.536,
+          "bridge_bonus": 0.02,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.042,
+          "level": "medium",
+          "reason": "关键词命中：Noetherian scheme、coherent sheaf、Spec；arXiv 分类重合：math.AG；桥接 algebraic_geometry↔homotopy_theory (hits=3/1)；时效加分 +0.04",
+          "keyword_hits": [
+            "Noetherian scheme",
+            "coherent sheaf",
+            "Spec"
+          ],
+          "llm_reason": "论文研究准优秀诺特概形上的同调不变量（分次Betti表），与研究方向中的Noetherian scheme、coherent sheaf、Spec、局部环等核心概念直接相关；且通过切锥连接了代数几何中的奇点理论（如切锥、正则性）。"
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.202,
+          "base_score": 0.14,
+          "bridge_bonus": 0.02,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.042,
+          "level": "low",
+          "reason": "关键词命中：spectrum；桥接 homotopy_theory↔algebraic_geometry (hits=1/3)；时效加分 +0.04",
+          "keyword_hits": [
+            "spectrum"
+          ]
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.17,
+          "base_score": 0.128,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.042,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.167,
+          "base_score": 0.125,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.042,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "algebraic_geometry",
+        "topic_name": "Algebraic Geometry",
+        "score": 0.598,
+        "base_score": 0.536,
+        "bridge_bonus": 0.02,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.042,
+        "level": "medium",
+        "reason": "关键词命中：Noetherian scheme、coherent sheaf、Spec；arXiv 分类重合：math.AG；桥接 algebraic_geometry↔homotopy_theory (hits=3/1)；时效加分 +0.04",
+        "keyword_hits": [
+          "Noetherian scheme",
+          "coherent sheaf",
+          "Spec"
+        ],
+        "llm_reason": "论文研究准优秀诺特概形上的同调不变量（分次Betti表），与研究方向中的Noetherian scheme、coherent sheaf、Spec、局部环等核心概念直接相关；且通过切锥连接了代数几何中的奇点理论（如切锥、正则性）。"
+      },
+      "top_labels": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.536,
+          "score": 0.598,
+          "level": "medium",
+          "keyword_hits": [
+            "Noetherian scheme",
+            "coherent sheaf",
+            "Spec"
+          ]
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "base_score": 0.14,
+          "score": 0.202,
+          "level": "low",
+          "keyword_hits": [
+            "spectrum"
+          ]
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "chinese_summary": {
+        "problem": "研究准优秀诺特概形上切锥的同调复杂性是否任意变化，即是否只存在有限多个可能的Betti表。",
+        "method": "通过分析切锥的标准分次代数及其最小自由分解，证明在准优秀诺特概形上，所有点的切锥或更一般的相干层只产生有限多个分次Betti表，并且这些Betti表的常值轨迹是可构的。",
+        "innovation": "首次证明准优秀诺特概形上的切锥和相干层的分次Betti表只有有限多种，且这些表的常值轨迹具有可构性，从而直接推出正则性在该类概形上有界。",
+        "evidence": "摘要中陈述了理论证明，但未提供具体实验或数值证据，因此证据依赖于数学推理。",
+        "limitations": "结果依赖于准优秀诺特概形的假设，对于更一般的诺特概形是否成立未知；切锥的定义涉及标准分次代数，可能不适用于某些非标准情形。",
+        "why_relevant": "论文研究准优秀诺特概形上的同调不变量（分次Betti表），与研究方向中的Noetherian scheme、coherent sheaf、Spec、局部环等核心概念直接相关；且通过切锥连接了代数几何中的奇点理论（如切锥、正则性）。"
+      },
+      "first_seen_at": "2026-06-15T06:02:03.298365+00:00",
+      "last_seen_at": "2026-06-15T06:02:03.298365+00:00",
+      "retained_from_previous_run": false
     },
     {
       "id": "2606.08599v1",
@@ -3637,6 +5051,139 @@
       "first_seen_at": "2026-06-11T05:21:54.714863+00:00",
       "last_seen_at": "2026-06-15T05:50:50.450877+00:00",
       "retained_from_previous_run": true
+    },
+    {
+      "id": "2606.10057v1",
+      "source": "arXiv",
+      "title": "Ind-Banach approach to Grothendieck duality in Rigid-analytic geometry",
+      "authors": [
+        "Arun Soor"
+      ],
+      "summary": "We prove a duality theorem for quasi-compactly supported cohomology of quasi-coherent sheaves on rigid-analytic spaces, with respect to a smooth and Kiehl partially-proper morphism. This includes an identification of the dualizing object with volume forms. The functional analysis underlying our theory does not use condensed mathematics, but rather Ind-Banach spaces, following Ben-Bassat--Kelly--Kremnizer. Nevertheless, our overall strategy is inspired by that of Clausen--Scholze in the complex-analytic setting.",
+      "published": "2026-06-08T18:33:56Z",
+      "updated": "2026-06-08T18:33:56Z",
+      "paper_url": "http://arxiv.org/abs/2606.10057v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.10057v1",
+      "categories": [
+        "math.AG",
+        "math.NT"
+      ],
+      "seed_topic": "algebraic_geometry",
+      "matches": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.587,
+          "base_score": 0.547,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.04,
+          "level": "medium",
+          "reason": "关键词命中：proper morphism、quasi-compact、Spec；arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": [
+            "proper morphism",
+            "quasi-compact",
+            "Spec"
+          ],
+          "llm_reason": "论文涉及proper morphism、quasi-compact等关键词，并隶属于math.AG分类，与代数几何中关于态射、上同调对偶的研究方向有交集，但主要场景为刚性解析几何而非代数簇或概形，因此相关性中等。"
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.236,
+          "base_score": 0.196,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.04,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.233,
+          "base_score": 0.193,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.04,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG、math.NT；时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.051,
+          "base_score": 0.011,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.04,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "algebraic_geometry",
+        "topic_name": "Algebraic Geometry",
+        "score": 0.587,
+        "base_score": 0.547,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.04,
+        "level": "medium",
+        "reason": "关键词命中：proper morphism、quasi-compact、Spec；arXiv 分类重合：math.AG；时效加分 +0.04",
+        "keyword_hits": [
+          "proper morphism",
+          "quasi-compact",
+          "Spec"
+        ],
+        "llm_reason": "论文涉及proper morphism、quasi-compact等关键词，并隶属于math.AG分类，与代数几何中关于态射、上同调对偶的研究方向有交集，但主要场景为刚性解析几何而非代数簇或概形，因此相关性中等。"
+      },
+      "top_labels": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.547,
+          "score": 0.587,
+          "level": "medium",
+          "keyword_hits": [
+            "proper morphism",
+            "quasi-compact",
+            "Spec"
+          ]
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "base_score": 0.196,
+          "score": 0.236,
+          "level": "low",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.193,
+          "score": 0.233,
+          "level": "low",
+          "keyword_hits": []
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "chinese_summary": {
+        "problem": "在刚性解析几何中，建立拟凝聚层关于光滑且Kiehl部分真态射的拟紧支撑上同调的对偶定理，并将对偶对象等同于体积形式。",
+        "method": "采用Ind-Banach空间作为泛函分析工具（而非凝聚数学），借鉴Clausen-Scholze在复解析几何中的策略，通过Ind-Banach范畴的构造来处理对偶性。",
+        "innovation": "1) 将Clausen-Scholze在复解析情形下的对偶方法推广到刚性解析几何，使用Ind-Banach空间替代凝聚数学；2) 明确识别了对偶对象与体积形式的关系；3) 针对Kiehl部分真态射这一特定映射类建立了对偶定理。",
+        "evidence": "摘要声明证明了该对偶定理，但未提供具体证明细节或实验验证，属于纯理论结果。",
+        "limitations": "方法依赖Ind-Banach空间的泛函分析框架，需要读者具备相关背景；结论仅在刚性解析空间上成立，与代数几何中通常的Grothendieck对偶（scheme上）有差异，可能需要进一步确认推广性。",
+        "why_relevant": "论文涉及proper morphism、quasi-compact等关键词，并隶属于math.AG分类，与代数几何中关于态射、上同调对偶的研究方向有交集，但主要场景为刚性解析几何而非代数簇或概形，因此相关性中等。"
+      },
+      "first_seen_at": "2026-06-15T06:02:03.298365+00:00",
+      "last_seen_at": "2026-06-15T06:02:03.298365+00:00",
+      "retained_from_previous_run": false
     },
     {
       "id": "2606.10521v1",
@@ -3877,6 +5424,138 @@
       "first_seen_at": "2026-06-12T05:51:12.767206+00:00",
       "last_seen_at": "2026-06-15T05:50:50.450877+00:00",
       "retained_from_previous_run": true
+    },
+    {
+      "id": "2606.10553v1",
+      "source": "arXiv",
+      "title": "Kernel theorems for rigidly-compactly generated $\\infty$-categories",
+      "authors": [
+        "Giovanni Rossanigo"
+      ],
+      "summary": "We prove two representability results for rigidly-compactly generated $\\infty$-categories and functors between them. The first one represents contravariant linear functionals out of a category of perfect objects with values in a category of (pseudo)-coherent objects in terms of (pseudo)-coherent objects. The second one represents covariant functionals out of coherent objects with values in a category of coherent objects in terms of perfect objects. The techniques used belong to the realm of \"functional analysis\" of presentable stable categories and ultimately depend on the interaction between three notion of finiteness, namely compactness, dualizability and coherence. These results apply to $\\mathbb{E}_\\infty$-ring spectra, quasi-proper maps of quasi-compact quasi-separated schemes and certain spectral algebraic spaces. We also reformulate Grothendieck duality in terms of internal left adjoints.",
+      "published": "2026-06-09T08:21:46Z",
+      "updated": "2026-06-09T08:21:46Z",
+      "paper_url": "http://arxiv.org/abs/2606.10553v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.10553v1",
+      "categories": [
+        "math.CT",
+        "math.AG"
+      ],
+      "seed_topic": "algebraic_geometry",
+      "matches": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.574,
+          "base_score": 0.513,
+          "bridge_bonus": 0.02,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.041,
+          "level": "medium",
+          "reason": "关键词命中：quasi-separated、quasi-compact、scheme、Spec；arXiv 分类重合：math.AG；桥接 algebraic_geometry↔homotopy_theory (hits=2/1)；时效加分 +0.04",
+          "keyword_hits": [
+            "quasi-separated",
+            "quasi-compact",
+            "scheme",
+            "Spec"
+          ],
+          "llm_reason": "论文涉及拟紧拟分离概形（quasi-compact quasi-separated schemes）和Grothendieck对偶的范畴论重述，与研究方向中的scheme、拟紧、拟分离、对偶等关键词匹配，但核心是∞-范畴论，对代数几何的直接应用需进一步评估。"
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.316,
+          "base_score": 0.275,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.041,
+          "level": "low",
+          "reason": "关键词命中：Perf；arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": [
+            "Perf"
+          ]
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.165,
+          "base_score": 0.124,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.041,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.079,
+          "base_score": 0.018,
+          "bridge_bonus": 0.02,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.041,
+          "level": "low",
+          "reason": "桥接 homotopy_theory↔algebraic_geometry (hits=1/2)；时效加分 +0.04",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "algebraic_geometry",
+        "topic_name": "Algebraic Geometry",
+        "score": 0.574,
+        "base_score": 0.513,
+        "bridge_bonus": 0.02,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.041,
+        "level": "medium",
+        "reason": "关键词命中：quasi-separated、quasi-compact、scheme、Spec；arXiv 分类重合：math.AG；桥接 algebraic_geometry↔homotopy_theory (hits=2/1)；时效加分 +0.04",
+        "keyword_hits": [
+          "quasi-separated",
+          "quasi-compact",
+          "scheme",
+          "Spec"
+        ],
+        "llm_reason": "论文涉及拟紧拟分离概形（quasi-compact quasi-separated schemes）和Grothendieck对偶的范畴论重述，与研究方向中的scheme、拟紧、拟分离、对偶等关键词匹配，但核心是∞-范畴论，对代数几何的直接应用需进一步评估。"
+      },
+      "top_labels": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.513,
+          "score": 0.574,
+          "level": "medium",
+          "keyword_hits": [
+            "quasi-separated",
+            "quasi-compact",
+            "scheme",
+            "Spec"
+          ]
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "base_score": 0.275,
+          "score": 0.316,
+          "level": "low",
+          "keyword_hits": [
+            "Perf"
+          ]
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "chinese_summary": {
+        "problem": "该论文研究刚性紧生成∞-范畴之间的函子表示问题，即如何用（伪）相干对象或完美对象来表征反变或协变线性泛函。",
+        "method": "核心方法是利用可表现稳定范畴的“泛函分析”技术，通过紧性、可对偶性和相干性三种有限性概念的相互作用，推导出两个表示性定理。",
+        "innovation": "提出了两个新的表示定理（核定理），将Grothendieck对偶重新表述为内部左伴随的形式，并将结果应用于E∞环谱、拟紧拟分离概形的拟真映射以及某些谱代数空间。",
+        "evidence": "摘要中未提供实验或系统证据，仅为理论证明。",
+        "limitations": "需要读者具备∞-范畴和稳定范畴的深厚背景；具体应用细节（如对拟紧拟分离概形的适用条件）需阅读全文确认。",
+        "why_relevant": "论文涉及拟紧拟分离概形（quasi-compact quasi-separated schemes）和Grothendieck对偶的范畴论重述，与研究方向中的scheme、拟紧、拟分离、对偶等关键词匹配，但核心是∞-范畴论，对代数几何的直接应用需进一步评估。"
+      },
+      "first_seen_at": "2026-06-15T06:02:03.298365+00:00",
+      "last_seen_at": "2026-06-15T06:02:03.298365+00:00",
+      "retained_from_previous_run": false
     },
     {
       "id": "2606.10830v1",
@@ -4279,6 +5958,265 @@
       "retained_from_previous_run": true
     },
     {
+      "id": "2606.09710v1",
+      "source": "arXiv",
+      "title": "Fixed points in Higgs bundle moduli spaces and the Prym--Narasimhan--Ramanan construction",
+      "authors": [
+        "Guillermo Barajas"
+      ],
+      "summary": "Let $X$ be a compact Riemann surface and $G$ a connected reductive complex Lie group with centre $Z$. Consider the moduli space $M(X,G)$ of polystable $G$-Higgs bundles on $X$. The group of isomorphism classes of $Z$-bundles on $X$, which is isomorphic to $H^1(X,Z)$, acts on $M(X,G)$ via extension of structure group by the multiplication homomorphism $Z\\times G\\to G$. The group $\\text{Aut}(G)$ also acts on $M(X,G)$ by extension of structure group, and so does the group $\\text{Aut}(X)$ of holomorphic automorphisms via pullback. Finally, $\\mathbb{C}^*$ acts by multiplying the Higgs field. Combining these provides an action of the semidirect product of $H^1(X,Z)$ and $(\\text{Aut}(G)\\times\\text{Aut}(X))\\times\\mathbb{C}^*$ on $M(X,G)$, where $\\text{Aut}(G)$ and $\\text{Aut}(X)$ act on $H^1(X,Z)$ by extension of structure group and pullback, respectively. Let $H$ be such semidirect product. Let $Γ$ be a finite subgroup of $H$. The goal of this thesis is to find a Prym--Narasimhan--Ramanan-type construction to describe the fixed points of the action of $Γ$ on $M(X,G)$. More precisely, we show that fixed points correspond to twisted equivariant Higgs pairs over certain étale covers of $X$. Our results generalize García-Prada--Ramanan, where $Γ$ was considered to be cyclic, and Narasimhan--Ramanan, who only consider actions of cyclic subgroups of $H^1(X,\\mathbb{C}^*)$ for $G=\\text{GL}(n,\\mathbb{C})$.",
+      "published": "2026-06-08T16:31:53Z",
+      "updated": "2026-06-08T16:31:53Z",
+      "paper_url": "http://arxiv.org/abs/2606.09710v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.09710v1",
+      "categories": [
+        "math.AG"
+      ],
+      "seed_topic": "algebraic_geometry",
+      "matches": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.553,
+          "base_score": 0.513,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.04,
+          "level": "medium",
+          "reason": "关键词命中：moduli space、Spec；arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": [
+            "moduli space",
+            "Spec"
+          ],
+          "llm_reason": "论文直接研究模空间（moduli space）的等变结构，与用户研究方向中的模空间、叠、等变上同调等概念高度相关，且关键词moduli space匹配，arXiv分类math.AG直接重合。"
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.231,
+          "base_score": 0.191,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.04,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.226,
+          "base_score": 0.186,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.04,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.054,
+          "base_score": 0.014,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.04,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "algebraic_geometry",
+        "topic_name": "Algebraic Geometry",
+        "score": 0.553,
+        "base_score": 0.513,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.04,
+        "level": "medium",
+        "reason": "关键词命中：moduli space、Spec；arXiv 分类重合：math.AG；时效加分 +0.04",
+        "keyword_hits": [
+          "moduli space",
+          "Spec"
+        ],
+        "llm_reason": "论文直接研究模空间（moduli space）的等变结构，与用户研究方向中的模空间、叠、等变上同调等概念高度相关，且关键词moduli space匹配，arXiv分类math.AG直接重合。"
+      },
+      "top_labels": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.513,
+          "score": 0.553,
+          "level": "medium",
+          "keyword_hits": [
+            "moduli space",
+            "Spec"
+          ]
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.191,
+          "score": 0.231,
+          "level": "low",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "base_score": 0.186,
+          "score": 0.226,
+          "level": "low",
+          "keyword_hits": []
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "chinese_summary": {
+        "problem": "研究在Higgs丛模空间上由中心丛、自同构群和C*群等混合作用的固定点，并给出这些固定点与扭曲等变Higgs对之间的对应关系。",
+        "method": "将有限子群Γ视为半直积H的子群，利用上同调群和等变覆盖理论，通过étale覆盖构造扭曲等变Higgs对，进而描述固定点。",
+        "innovation": "1. 将García-Prada与Ramanan的循环群结果推广到任意有限子群Γ；2. 将Narasimhan与Ramanan关于GL(n,C)的循环子群作用推广到一般复约化李群G；3. 建立了统一的Prym-Narasimhan-Ramanan型构造。",
+        "evidence": "摘要仅给出理论结论，未提供实验或系统验证。",
+        "limitations": "需要阅读全文确认：1. 构造的具体步骤和严格证明；2. 对非有限群作用的可推广性；3. 实际计算固定点个数的可行性。",
+        "why_relevant": "论文直接研究模空间（moduli space）的等变结构，与用户研究方向中的模空间、叠、等变上同调等概念高度相关，且关键词moduli space匹配，arXiv分类math.AG直接重合。"
+      },
+      "first_seen_at": "2026-06-15T06:02:03.298365+00:00",
+      "last_seen_at": "2026-06-15T06:02:03.298365+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "2606.13963v1",
+      "source": "arXiv",
+      "title": "Adelic line bundles over a Néron model",
+      "authors": [
+        "Zhelun Chen"
+      ],
+      "summary": "Motivated by variation problems for the Néron--Tate height pairing, we construct an adelic Poincaré bundle on the Néron model of an abelian scheme over a curve. This extends the adelic Poincaré bundle of Yuan--Zhang, which encodes the fiberwise Néron--Tate height pairing.",
+      "published": "2026-06-11T22:57:23Z",
+      "updated": "2026-06-11T22:57:23Z",
+      "paper_url": "http://arxiv.org/abs/2606.13963v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13963v1",
+      "categories": [
+        "math.AG",
+        "math.NT"
+      ],
+      "seed_topic": "motivic_k_theory",
+      "matches": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.55,
+          "base_score": 0.505,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.045,
+          "level": "medium",
+          "reason": "关键词命中：line bundle、scheme；arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": [
+            "line bundle",
+            "scheme"
+          ],
+          "llm_reason": "研究涉及line bundle在scheme上的构造，包括Néron模型（属于代数几何中的概形及阿贝尔概形推广），且关键词“line bundle”和“scheme”直接命中研究方向；但更偏向算术几何，与纯代数几何核心（如模空间、层上同调）关联度中等"
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.241,
+          "base_score": 0.196,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.045,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG、math.NT；时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.229,
+          "base_score": 0.184,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.045,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.049,
+          "base_score": 0.004,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.045,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "algebraic_geometry",
+        "topic_name": "Algebraic Geometry",
+        "score": 0.55,
+        "base_score": 0.505,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.045,
+        "level": "medium",
+        "reason": "关键词命中：line bundle、scheme；arXiv 分类重合：math.AG；时效加分 +0.04",
+        "keyword_hits": [
+          "line bundle",
+          "scheme"
+        ],
+        "llm_reason": "研究涉及line bundle在scheme上的构造，包括Néron模型（属于代数几何中的概形及阿贝尔概形推广），且关键词“line bundle”和“scheme”直接命中研究方向；但更偏向算术几何，与纯代数几何核心（如模空间、层上同调）关联度中等"
+      },
+      "top_labels": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.505,
+          "score": 0.55,
+          "level": "medium",
+          "keyword_hits": [
+            "line bundle",
+            "scheme"
+          ]
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.196,
+          "score": 0.241,
+          "level": "low",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "base_score": 0.184,
+          "score": 0.229,
+          "level": "low",
+          "keyword_hits": []
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "chinese_summary": {
+        "problem": "在曲线上的阿贝尔概形的Néron模型上构造adelic Poincaré线丛，以统一处理Néron-Tate高度配对的变分问题",
+        "method": "在Néron模型的框架下，利用adelic线丛理论，将Yuan-Zhang的adelic Poincaré线丛推广到更一般的Néron模型上，从而得到纤维化上的高度配对结构",
+        "innovation": "将Yuan-Zhang的adelic Poincaré线丛从光滑射影曲线上的阿贝尔簇推广到更一般的Néron模型上，使得能够处理具有坏约化的情况；为Néron-Tate高度配对的变分问题提供了统一的几何框架",
+        "evidence": "摘要仅说明构造了该线丛，未提供具体理论推导或实验验证，证据不足",
+        "limitations": "构造的具体细节和证明需要阅读全文确认；可能依赖于Néron模型的特定性质，适用范围是否广泛有待进一步分析",
+        "why_relevant": "研究涉及line bundle在scheme上的构造，包括Néron模型（属于代数几何中的概形及阿贝尔概形推广），且关键词“line bundle”和“scheme”直接命中研究方向；但更偏向算术几何，与纯代数几何核心（如模空间、层上同调）关联度中等"
+      },
+      "first_seen_at": "2026-06-15T06:02:03.298365+00:00",
+      "last_seen_at": "2026-06-15T06:02:03.298365+00:00",
+      "retained_from_previous_run": false
+    },
+    {
       "id": "2605.30835v1",
       "source": "arXiv",
       "title": "The group of homotopy self-equivalences is a Lax functor",
@@ -4632,6 +6570,393 @@
       "retained_from_previous_run": true
     },
     {
+      "id": "2606.10453v1",
+      "source": "arXiv",
+      "title": "A characterization of sheaves among six functor formalisms on $\\mathrm{LCH}$",
+      "authors": [
+        "Ulrich Bunke",
+        "Marco Volpe"
+      ],
+      "summary": "Let $\\mathcal{C}$ be any stable presentably symmetric monoidal $\\infty$-category. In this paper, we characterize $\\mathrm{Shv}(-,\\mathcal{C})$ on locally compact Hausdorff spaces as the unique six functor formalism satisfying a list of very natural properties. As a consequence, we deduce that every continuous six functor formalism $D$ in the sense of Zhu is equivalent to $\\mathrm{Shv}(-, D(\\mathrm{pt}))$.",
+      "published": "2026-06-09T06:00:52Z",
+      "updated": "2026-06-09T06:00:52Z",
+      "paper_url": "http://arxiv.org/abs/2606.10453v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.10453v1",
+      "categories": [
+        "math.AT",
+        "math.CT",
+        "math.KT"
+      ],
+      "seed_topic": "homotopy_theory",
+      "matches": [
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.528,
+          "base_score": 0.487,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.041,
+          "level": "medium",
+          "reason": "关键词命中：six functor formalism；arXiv 分类重合：math.AT、math.KT；时效加分 +0.04",
+          "keyword_hits": [
+            "six functor formalism"
+          ],
+          "llm_reason": "六函子形式体系是motivic同伦论的核心结构（如motivic six functors in SH(k)），本文在拓扑空间中对其进行了公理化刻画，为理解一般六函子形式体系提供了基准。虽不直接处理motivic场景，但公理框架和方法可能启发motivic类比。"
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.231,
+          "base_score": 0.19,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.041,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AT；时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.057,
+          "base_score": 0.016,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.041,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.041,
+          "base_score": 0.0,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.041,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "motivic_k_theory",
+        "topic_name": "Motivic Homotopy & K-Theory",
+        "score": 0.528,
+        "base_score": 0.487,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.041,
+        "level": "medium",
+        "reason": "关键词命中：six functor formalism；arXiv 分类重合：math.AT、math.KT；时效加分 +0.04",
+        "keyword_hits": [
+          "six functor formalism"
+        ],
+        "llm_reason": "六函子形式体系是motivic同伦论的核心结构（如motivic six functors in SH(k)），本文在拓扑空间中对其进行了公理化刻画，为理解一般六函子形式体系提供了基准。虽不直接处理motivic场景，但公理框架和方法可能启发motivic类比。"
+      },
+      "top_labels": [
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "base_score": 0.487,
+          "score": 0.528,
+          "level": "medium",
+          "keyword_hits": [
+            "six functor formalism"
+          ]
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "base_score": 0.19,
+          "score": 0.231,
+          "level": "low",
+          "keyword_hits": []
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "chinese_summary": {
+        "problem": "在局部紧Hausdorff空间上，如何从六函子形式体系的公理中唯一确定层（sheaves）构造，并证明所有连续六函子形式体系均等价于层形式体系。",
+        "method": "以任意稳定可表现对称幺半无穷范畴C为系数，定义Shv(-,C)为局部紧Hausdorff空间上的六函子形式体系；通过列出若干自然性质（如六函子公理、连续性等），证明满足这些性质的六函子形式体系唯一，从而刻画Shv(-,C)。推论中借助Zhu的工作，将连续六函子形式体系等价于以单点为基的层形式体系。",
+        "innovation": "1. 在拓扑空间（局部紧Hausdorff）上给出了六函子形式体系的一种简洁公理化，并证明Shv(-,C)是唯一满足该组公理的例子；2. 将Zhu定义的连续六函子形式体系统一为层系数形式，揭示了不同构造间的等价性。",
+        "evidence": "摘要未给出具体证明或实验数据，声称通过公理唯一性得到刻画，理论证据需阅读全文验证。",
+        "limitations": "结果仅适用于局部紧Hausdorff空间，且自然性质列表的合理性及完整性需全文确认；不直接涵盖代数几何中的motivic六函子（如凝聚层、导出范畴等）。",
+        "why_relevant": "六函子形式体系是motivic同伦论的核心结构（如motivic six functors in SH(k)），本文在拓扑空间中对其进行了公理化刻画，为理解一般六函子形式体系提供了基准。虽不直接处理motivic场景，但公理框架和方法可能启发motivic类比。"
+      },
+      "first_seen_at": "2026-06-15T06:02:03.298365+00:00",
+      "last_seen_at": "2026-06-15T06:02:03.298365+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "2606.06008v1",
+      "source": "arXiv",
+      "title": "Arithmetic Wu Formulas and the Generalized Hecke Theorem",
+      "authors": [
+        "Shachar Carmeli",
+        "Mark Shusterman",
+        "Sa'ar Zehavi"
+      ],
+      "summary": "We construct canonical Steenrod square operations on the Geisser--Schmidt/Milne modified compactly supported étale cohomology of separated finite-type schemes over rings of $S$-integers in which $2$ is invertible. This lets us extend Feng's notion of the absolute étale Wu class from the finite-field setting to arithmetic bases away from $2$. A key technical input is a modified compactly supported relative Wu formula, extending Benoist's relative Wu formula to the arithmetic compact-support setting. Using this, we prove an absolute Wu formula for regular projective flat schemes over either finite fields of odd characteristic or rings of $S$-integers away from $2$: if $f\\colon X\\to B$ is such a scheme, then the absolute Wu class of $X$ is the product of the relative Wu class $\\operatorname{Sq}^{-1}(w_{\\mathrm{et}}(τ_f))$ and the pullback of the absolute Wu class of the base. In the $S$-integer case, the base contribution is $1+β_B$, where $β_B$ is the Bockstein, equivalently the Kummer class of $-1$. As an application, we obtain an infinite family of universal mod-$2$ congruences among the Chern classes of regular projective flat schemes over such bases, governed by an arithmetic deformation of Hirzebruch's $2$-Todd series; this is the generalized Hecke theorem. In low dimensions these congruences recover Hecke's theorem on the different away from $2$, Serre's Riemann--Hurwitz theorem for spin bundles, Atiyah's theorem on theta characteristics over finite fields, and the smooth $3$-manifold branched-cover analogue of the Shusterman--Sawin theorem, while yielding new higher-dimensional congruences over both finite and arithmetic bases.",
+      "published": "2026-06-04T10:59:45Z",
+      "updated": "2026-06-04T10:59:45Z",
+      "paper_url": "http://arxiv.org/abs/2606.06008v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.06008v1",
+      "categories": [
+        "math.NT",
+        "math.AG",
+        "math.AT"
+      ],
+      "seed_topic": "homotopy_theory",
+      "matches": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.523,
+          "base_score": 0.488,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.035,
+          "level": "medium",
+          "reason": "关键词命中：Chern class、scheme、Proj；arXiv 分类重合：math.AG；时效加分 +0.03",
+          "keyword_hits": [
+            "Chern class",
+            "scheme",
+            "Proj"
+          ],
+          "llm_reason": "涉及概形（分离有限型、正则射影平坦）、Chern类、Proj等核心概念，且与代数几何中的模空间、层上同调有间接联系；但更偏重算术拓扑，需人工复核直接相关性。"
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.422,
+          "base_score": 0.387,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.035,
+          "level": "medium",
+          "reason": "关键词命中：finite field；arXiv 分类重合：math.AG、math.NT；时效加分 +0.03",
+          "keyword_hits": [
+            "finite field"
+          ]
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.168,
+          "base_score": 0.133,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.035,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AT；时效加分 +0.03",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.162,
+          "base_score": 0.127,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.035,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG、math.AT；时效加分 +0.03",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "algebraic_geometry",
+        "topic_name": "Algebraic Geometry",
+        "score": 0.523,
+        "base_score": 0.488,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.035,
+        "level": "medium",
+        "reason": "关键词命中：Chern class、scheme、Proj；arXiv 分类重合：math.AG；时效加分 +0.03",
+        "keyword_hits": [
+          "Chern class",
+          "scheme",
+          "Proj"
+        ],
+        "llm_reason": "涉及概形（分离有限型、正则射影平坦）、Chern类、Proj等核心概念，且与代数几何中的模空间、层上同调有间接联系；但更偏重算术拓扑，需人工复核直接相关性。"
+      },
+      "top_labels": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.488,
+          "score": 0.523,
+          "level": "medium",
+          "keyword_hits": [
+            "Chern class",
+            "scheme",
+            "Proj"
+          ]
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.387,
+          "score": 0.422,
+          "level": "medium",
+          "keyword_hits": [
+            "finite field"
+          ]
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "chinese_summary": {
+        "problem": "在S-整数环（2可逆）上，将Feng的绝对平展Wu类从有限域推广到算术基，并证明绝对Wu公式，由此导出广义Hecke定理。",
+        "method": "在分离有限型概形的改进紧支撑平展上同调上构造典范Steenrod平方运算；利用改进紧支撑相对Wu公式（推广Benoist结果）证明绝对Wu公式：绝对Wu类等于相对Wu类与基的绝对Wu类拉回的乘积。",
+        "innovation": "1. 将绝对平展Wu类从有限域推广到算术基（S-整数环）；2. 建立算术背景下改进紧支撑的相对Wu公式；3. 导出无穷族模2全等（广义Hecke定理），统一了Hecke、Serre、Atiyah等经典结果。",
+        "evidence": "摘要给出了绝对Wu公式的具体形式（基贡献为1+β_B），并列举了低维情形下恢复的经典定理，但未提供数值验证或复杂性分析。",
+        "limitations": "需要阅读全文确认Steenrod运算构造的严格性、Wu公式的证明细节以及全等式的显式举例；目前仅适用于2可逆的基环。",
+        "why_relevant": "涉及概形（分离有限型、正则射影平坦）、Chern类、Proj等核心概念，且与代数几何中的模空间、层上同调有间接联系；但更偏重算术拓扑，需人工复核直接相关性。"
+      },
+      "first_seen_at": "2026-06-15T06:02:03.298365+00:00",
+      "last_seen_at": "2026-06-15T06:02:03.298365+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "2606.08570v1",
+      "source": "arXiv",
+      "title": "Newton--Okounkov bodies of partial flag varieties via cluster algebras",
+      "authors": [
+        "Yunhyung Cho",
+        "Myungho Kim",
+        "Yoosik Kim",
+        "Euiyong Park"
+      ],
+      "summary": "We construct Newton--Okounkov polytopes of Schubert varieties in partial flag varieties of arbitrary type using the cluster structure on a unipotent cell. When the governing cluster algebra is of infinite type, we prove that for any very ample homogeneous line bundle over a simply laced partial flag variety, the resulting family of Newton--Okounkov polytopes contains infinitely many pairwise nonequivalent polytopes up to integral affine transformation. As an application to symplectic geometry, we construct infinitely many distinct monotone Lagrangian tori in a broad class of simply laced partial flag varieties.",
+      "published": "2026-06-07T10:52:30Z",
+      "updated": "2026-06-07T10:52:30Z",
+      "paper_url": "http://arxiv.org/abs/2606.08570v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.08570v1",
+      "categories": [
+        "math.AG",
+        "math.RT",
+        "math.SG"
+      ],
+      "seed_topic": "algebraic_geometry",
+      "matches": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.518,
+          "base_score": 0.479,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.039,
+          "level": "medium",
+          "reason": "关键词命中：line bundle、variety；arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": [
+            "line bundle",
+            "variety"
+          ],
+          "llm_reason": "论文核心涉及代数几何中的牛顿-奥昆科夫理论、旗簇、线丛（line bundle）以及舒伯特变体（Schubert variety），这些概念均属于我的研究方向（algebraic geometry）中的moduli spaces、varieties、vector bundles等关键词。arXiv分类math.AG也直接对应。"
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.23,
+          "base_score": 0.191,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.039,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.227,
+          "base_score": 0.188,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.039,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.054,
+          "base_score": 0.015,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.039,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "algebraic_geometry",
+        "topic_name": "Algebraic Geometry",
+        "score": 0.518,
+        "base_score": 0.479,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.039,
+        "level": "medium",
+        "reason": "关键词命中：line bundle、variety；arXiv 分类重合：math.AG；时效加分 +0.04",
+        "keyword_hits": [
+          "line bundle",
+          "variety"
+        ],
+        "llm_reason": "论文核心涉及代数几何中的牛顿-奥昆科夫理论、旗簇、线丛（line bundle）以及舒伯特变体（Schubert variety），这些概念均属于我的研究方向（algebraic geometry）中的moduli spaces、varieties、vector bundles等关键词。arXiv分类math.AG也直接对应。"
+      },
+      "top_labels": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.479,
+          "score": 0.518,
+          "level": "medium",
+          "keyword_hits": [
+            "line bundle",
+            "variety"
+          ]
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.191,
+          "score": 0.23,
+          "level": "low",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "base_score": 0.188,
+          "score": 0.227,
+          "level": "low",
+          "keyword_hits": []
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "chinese_summary": {
+        "problem": "针对任意类型部分旗簇中舒伯特变体的牛顿-奥昆科夫多面体的构造问题，尤其是在簇代数为无限型时多面体族的等价分类。",
+        "method": "利用单幺胞体上的簇代数结构，为部分旗簇中的舒伯特变体构造牛顿-奥昆科夫多面体。对于单李型部分旗簇上的非常丰沛齐次线丛，证明牛顿-奥昆科夫多面体族在积分仿射变换下包含无限多个两两不等价的多面体。",
+        "innovation": "首次将簇代数方法应用于任意类型部分旗簇中舒伯特变体的牛顿-奥昆科夫多面体构造；在簇代数为无限型时证明了无限多个不等价多面体的存在性；并将结果应用于辛几何，构造了广类单李型部分旗簇中无限多个不同的单调拉格朗日环面。",
+        "evidence": "摘要中提供了理论证明：对于任何非常丰沛齐次线丛，存在无限多个两两不等价的牛顿-奥昆科夫多面体。无实验数据或具体数值验证。",
+        "limitations": "需要阅读全文确认构造的具体细节（如簇代数的具体类型）、舒伯特变体的选取条件以及多面体不等价性的严格证明。",
+        "why_relevant": "论文核心涉及代数几何中的牛顿-奥昆科夫理论、旗簇、线丛（line bundle）以及舒伯特变体（Schubert variety），这些概念均属于我的研究方向（algebraic geometry）中的moduli spaces、varieties、vector bundles等关键词。arXiv分类math.AG也直接对应。"
+      },
+      "first_seen_at": "2026-06-15T06:02:03.298365+00:00",
+      "last_seen_at": "2026-06-15T06:02:03.298365+00:00",
+      "retained_from_previous_run": false
+    },
+    {
       "id": "2606.12351v1",
       "source": "arXiv",
       "title": "Moduli of Supersingular Abelian Varieties in Dimensions $g\\leq 5$",
@@ -4740,6 +7065,263 @@
       "first_seen_at": "2026-06-11T04:42:44.276818+00:00",
       "last_seen_at": "2026-06-11T15:54:22.687734+00:00",
       "retained_from_previous_run": true
+    },
+    {
+      "id": "2606.10638v1",
+      "source": "arXiv",
+      "title": "The minimum genus of Galois covers of curves",
+      "authors": [
+        "Manish Kumar",
+        "Poulami Mandal"
+      ],
+      "summary": "Let $Y\\longrightarrow X$ be a $G$-Galois connected cover of smooth projective curves over an algebraically closed field $k$ of positive characteristic $p$ with the branch locus contained in a finite subset of closed points $S_X$ in $X$, where $G$ is a finite cyclic $p$-group and $l$ is a prime number other than $p$. Let $Γ$ be an extension of an elementary abelian $l$-group $H$ by $G$. We find $G$-stable submodules of $l$-torsion of the Picard group of $Y$ and its generalisation. This is used to describe a method for finding the minimum genus of $Γ$-covers of $X$, étale over $X\\setminus S_X$, dominating $Y$; and also the minimum of the genera of $Γ$-covers of $\\mathbb{P}^1$ étale over $\\mathbb{A}^1$.",
+      "published": "2026-06-09T09:44:43Z",
+      "updated": "2026-06-09T09:44:43Z",
+      "paper_url": "http://arxiv.org/abs/2606.10638v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.10638v1",
+      "categories": [
+        "math.AG"
+      ],
+      "seed_topic": "motivic_k_theory",
+      "matches": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.514,
+          "base_score": 0.473,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.041,
+          "level": "medium",
+          "reason": "关键词命中：Picard group、Proj；arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": [
+            "Picard group",
+            "Proj"
+          ],
+          "llm_reason": "论文研究的是代数曲线（光滑射影曲线）的Galois覆盖，涉及Picard群、除子、分支轨迹等核心代数几何概念，与研究方向中scheme、Picard group、divisor等关键词紧密相关；具体场景（正特征、曲线覆盖）属于代数几何中经典问题，但使用的技术层次（如子模结构）与模空间、层论等直接关联度中等。"
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.244,
+          "base_score": 0.203,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.041,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.231,
+          "base_score": 0.19,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.041,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.05,
+          "base_score": 0.009,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.041,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "algebraic_geometry",
+        "topic_name": "Algebraic Geometry",
+        "score": 0.514,
+        "base_score": 0.473,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.041,
+        "level": "medium",
+        "reason": "关键词命中：Picard group、Proj；arXiv 分类重合：math.AG；时效加分 +0.04",
+        "keyword_hits": [
+          "Picard group",
+          "Proj"
+        ],
+        "llm_reason": "论文研究的是代数曲线（光滑射影曲线）的Galois覆盖，涉及Picard群、除子、分支轨迹等核心代数几何概念，与研究方向中scheme、Picard group、divisor等关键词紧密相关；具体场景（正特征、曲线覆盖）属于代数几何中经典问题，但使用的技术层次（如子模结构）与模空间、层论等直接关联度中等。"
+      },
+      "top_labels": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.473,
+          "score": 0.514,
+          "level": "medium",
+          "keyword_hits": [
+            "Picard group",
+            "Proj"
+          ]
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.203,
+          "score": 0.244,
+          "level": "low",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "base_score": 0.19,
+          "score": 0.231,
+          "level": "low",
+          "keyword_hits": []
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "chinese_summary": {
+        "problem": "在正特征代数闭域上，给定一个光滑射影曲线X的G-Galois覆盖Y（G为有限循环p-群，分支点位于X的有限子集S_X中），以及G与初等交换l-群H的扩张Γ，研究如何构造Γ-覆盖并确定其最小亏格。",
+        "method": "通过分析Y的Picard群的l-扭子模的G-稳定子模结构，利用这些子模的推广来刻画Γ-覆盖；进而提出一种方法计算X上在X\\S_X之外平展的Γ-覆盖的最小亏格，以及P^1上在A^1之外平展的Γ-覆盖的最小亏格。",
+        "innovation": "1. 找到了Y的Picard群的l-扭子模的G-稳定子模，并推广到更一般的情形；2. 基于此子模结构，给出了构造Γ-覆盖并计算最小亏格的有效方法；3. 结果适用于正特征域，填补了该情形下对循环p-群扩张的覆盖亏格研究的空白。",
+        "evidence": "摘要中未提供实验、计算或系统实现证据，仅给出理论推导的描述；需阅读全文验证具体构造与证明。",
+        "limitations": "方法依赖于G为循环p-群且l≠p的条件，且要求覆盖分支点局限于有限子集；实际计算最小亏格的算法细节未在摘要中展开，需全文确认。",
+        "why_relevant": "论文研究的是代数曲线（光滑射影曲线）的Galois覆盖，涉及Picard群、除子、分支轨迹等核心代数几何概念，与研究方向中scheme、Picard group、divisor等关键词紧密相关；具体场景（正特征、曲线覆盖）属于代数几何中经典问题，但使用的技术层次（如子模结构）与模空间、层论等直接关联度中等。"
+      },
+      "first_seen_at": "2026-06-15T06:02:03.298365+00:00",
+      "last_seen_at": "2026-06-15T06:02:03.298365+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "2606.07056v1",
+      "source": "arXiv",
+      "title": "On Quantum Aspects of 1-Form Symmetries II: Bordism, Invertible Phases, and Anomalies",
+      "authors": [
+        "Weizhen Jia",
+        "Yi-Nan Wang",
+        "Yi Zhang"
+      ],
+      "summary": "We study quantum anomalies associated with $U(1)$ 1-form symmetries from the perspective of invertible phases and bordism. We compute the oriented and spin bordism groups of the Eilenberg-Mac Lane space $K(\\mathbb{Z},3)$ up to degree 8 using the Atiyah-Hirzebruch spectral sequence, resolving the relevant extension problems by geometric arguments and identifying both bordism invariants and geometric generators. We then relate these invariants to perturbative and global anomalies, and discuss physical examples and top-down constructions of the corresponding anomaly terms. For 5-dimensional theories, we find a new mixed perturbative anomaly between the $U(1)$ 1-form symmetry and spacetime diffeomorphisms, while for 7-dimensional theories we find a new $\\mathbb{Z}_2$-valued discrete anomaly intrinsic to the $U(1)$ 1-form symmetry. We also discuss their boundary realizations and give new physical interpretations of these anomalies.",
+      "published": "2026-06-05T08:56:32Z",
+      "updated": "2026-06-05T08:56:32Z",
+      "paper_url": "http://arxiv.org/abs/2606.07056v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.07056v1",
+      "categories": [
+        "hep-th",
+        "math-ph",
+        "math.AT"
+      ],
+      "seed_topic": "homotopy_theory",
+      "matches": [
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.511,
+          "base_score": 0.475,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.036,
+          "level": "medium",
+          "reason": "关键词命中：Eilenberg-Mac Lane space、spectral sequence；arXiv 分类重合：math.AT；时效加分 +0.04",
+          "keyword_hits": [
+            "Eilenberg-Mac Lane space",
+            "spectral sequence"
+          ]
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.217,
+          "base_score": 0.181,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.036,
+          "level": "low",
+          "reason": "关键词命中：Spec；时效加分 +0.04",
+          "keyword_hits": [
+            "Spec"
+          ]
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.164,
+          "base_score": 0.128,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.036,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AT；时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.043,
+          "base_score": 0.007,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.036,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "homotopy_theory",
+        "topic_name": "Homotopy Theory",
+        "score": 0.511,
+        "base_score": 0.475,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.036,
+        "level": "medium",
+        "reason": "关键词命中：Eilenberg-Mac Lane space、spectral sequence；arXiv 分类重合：math.AT；时效加分 +0.04",
+        "keyword_hits": [
+          "Eilenberg-Mac Lane space",
+          "spectral sequence"
+        ]
+      },
+      "top_labels": [
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "base_score": 0.475,
+          "score": 0.511,
+          "level": "medium",
+          "keyword_hits": [
+            "Eilenberg-Mac Lane space",
+            "spectral sequence"
+          ]
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.181,
+          "score": 0.217,
+          "level": "low",
+          "keyword_hits": [
+            "Spec"
+          ]
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "We study quantum anomalies associated with $U(1)$ 1-form symmetries from the perspective of invertible phases and bordism.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：Eilenberg-Mac Lane space、spectral sequence；arXiv 分类重合：math.AT；时效加分 +0.04"
+      },
+      "first_seen_at": "2026-06-15T06:02:03.298365+00:00",
+      "last_seen_at": "2026-06-15T06:02:03.298365+00:00",
+      "retained_from_previous_run": false
     },
     {
       "id": "2101.07819v5",
@@ -4872,6 +7454,136 @@
       "first_seen_at": "2026-06-11T07:03:32.811912+00:00",
       "last_seen_at": "2026-06-11T07:03:32.811912+00:00",
       "retained_from_previous_run": true
+    },
+    {
+      "id": "2606.10884v1",
+      "source": "arXiv",
+      "title": "Coble type hypersurfaces and hyperkähler fourfolds",
+      "authors": [
+        "Benedetta Piroddi",
+        "Ángel David Ríos Ortiz",
+        "Andrés Rojas",
+        "Jieao Song"
+      ],
+      "summary": "A classical result, already observed by Coble, asserts that a genus 2 Jacobian can be embedded in $\\mathbf P^8$ as the singular locus of a unique cubic hypersurface; similarly, the Kummer of a genus 3 Jacobian is embedded in $\\mathbf P^7$ as the singular locus of a unique quartic hypersurface. We present a precise analogue of these results in the context of hyperkähler fourfolds: for the general member in the 20-dimensional locally complete families of polarized hyperkähler fourfolds of $\\mathrm{K3}^{[2]}$-type with squares 4 or 6 and divisibility 1, we establish the existence of a unique Coble type hypersurface. As a consequence, we describe several geometric aspects of the corresponding moduli spaces.",
+      "published": "2026-06-09T13:57:35Z",
+      "updated": "2026-06-09T13:57:35Z",
+      "paper_url": "http://arxiv.org/abs/2606.10884v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.10884v1",
+      "categories": [
+        "math.AG"
+      ],
+      "seed_topic": "motivic_k_theory",
+      "matches": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.505,
+          "base_score": 0.464,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.041,
+          "level": "medium",
+          "reason": "关键词命中：moduli space、Spec；arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": [
+            "moduli space",
+            "Spec"
+          ]
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.223,
+          "base_score": 0.182,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.041,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.221,
+          "base_score": 0.18,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.041,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.044,
+          "base_score": 0.003,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.041,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "algebraic_geometry",
+        "topic_name": "Algebraic Geometry",
+        "score": 0.505,
+        "base_score": 0.464,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.041,
+        "level": "medium",
+        "reason": "关键词命中：moduli space、Spec；arXiv 分类重合：math.AG；时效加分 +0.04",
+        "keyword_hits": [
+          "moduli space",
+          "Spec"
+        ]
+      },
+      "top_labels": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.464,
+          "score": 0.505,
+          "level": "medium",
+          "keyword_hits": [
+            "moduli space",
+            "Spec"
+          ]
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "base_score": 0.182,
+          "score": 0.223,
+          "level": "low",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.18,
+          "score": 0.221,
+          "level": "low",
+          "keyword_hits": []
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "A classical result, already observed by Coble, asserts that a genus 2 Jacobian can be embedded in $\\mathbf P^8$ as the singular locus of a unique cubic hypersurface; similarly, the Kummer of a genus 3 Jacobian is embedded in $\\mathbf P^7$ as the singular locus of a unique quartic hypersurface.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：moduli space、Spec；arXiv 分类重合：math.AG；时效加分 +0.04"
+      },
+      "first_seen_at": "2026-06-15T06:02:03.298365+00:00",
+      "last_seen_at": "2026-06-15T06:02:03.298365+00:00",
+      "retained_from_previous_run": false
     },
     {
       "id": "2307.04311v3",
@@ -5140,6 +7852,616 @@
       "retained_from_previous_run": true
     },
     {
+      "id": "2606.11707v1",
+      "source": "arXiv",
+      "title": "The p-adic Cauchy Theorem and Overconvergent Period Sheaves",
+      "authors": [
+        "Finn Wiersig"
+      ],
+      "summary": "The classical p-adic Cauchy theorem asserts that formal solutions of ordinary p-adic differential equations are convergent. In this article we establish a geometric analogue of this result for arbitrary smooth rigid-analytic varieties. More precisely, we show that the horizontal sections functor defined using the overconvergent de Rham period structure sheaf agrees with Scholze's horizontal sections functor defined using OBdR. Equivalently, every formal solution arising from Scholze's construction is already overconvergent. As an application, we identify Scholze's horizontal sections functor with the de Rham functor for D-cap-modules on vector bundles with flat connection.",
+      "published": "2026-06-10T06:30:25Z",
+      "updated": "2026-06-10T06:30:25Z",
+      "paper_url": "http://arxiv.org/abs/2606.11707v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.11707v1",
+      "categories": [
+        "math.NT",
+        "math.AG"
+      ],
+      "seed_topic": "motivic_k_theory",
+      "matches": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.488,
+          "base_score": 0.446,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.042,
+          "level": "medium",
+          "reason": "关键词命中：structure sheaf、vector bundle；arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": [
+            "structure sheaf",
+            "vector bundle"
+          ]
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.235,
+          "base_score": 0.193,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.042,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG、math.NT；时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.169,
+          "base_score": 0.127,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.042,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.048,
+          "base_score": 0.006,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.042,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "algebraic_geometry",
+        "topic_name": "Algebraic Geometry",
+        "score": 0.488,
+        "base_score": 0.446,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.042,
+        "level": "medium",
+        "reason": "关键词命中：structure sheaf、vector bundle；arXiv 分类重合：math.AG；时效加分 +0.04",
+        "keyword_hits": [
+          "structure sheaf",
+          "vector bundle"
+        ]
+      },
+      "top_labels": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.446,
+          "score": 0.488,
+          "level": "medium",
+          "keyword_hits": [
+            "structure sheaf",
+            "vector bundle"
+          ]
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.193,
+          "score": 0.235,
+          "level": "low",
+          "keyword_hits": []
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "The classical p-adic Cauchy theorem asserts that formal solutions of ordinary p-adic differential equations are convergent.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：structure sheaf、vector bundle；arXiv 分类重合：math.AG；时效加分 +0.04"
+      },
+      "first_seen_at": "2026-06-15T06:02:03.298365+00:00",
+      "last_seen_at": "2026-06-15T06:02:03.298365+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "2606.14236v1",
+      "source": "arXiv",
+      "title": "Fano manifolds with complete intersection type VMRT",
+      "authors": [
+        "Cenhao Li"
+      ],
+      "summary": "We study Fano manifolds of Picard number one equipped with a locally flat VMRT structure whose VMRT at a general point is a smooth linearly non-degenerate complete intersection. We prove that such a manifold is biregular to the standard hyperquadric provided that one of two additional assumptions is satisfied. The proof uses equivariant compactifications of the vector group $\\mathbb C^n$, Euler-symmetric projective varieties, fundamental forms, and special birational transformations.",
+      "published": "2026-06-12T08:19:30Z",
+      "updated": "2026-06-12T08:19:30Z",
+      "paper_url": "http://arxiv.org/abs/2606.14236v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14236v1",
+      "categories": [
+        "math.AG"
+      ],
+      "seed_topic": "motivic_k_theory",
+      "matches": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.487,
+          "base_score": 0.442,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.045,
+          "level": "medium",
+          "reason": "关键词命中：Spec、Proj；arXiv 分类重合：math.AG；时效加分 +0.05",
+          "keyword_hits": [
+            "Spec",
+            "Proj"
+          ]
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.242,
+          "base_score": 0.197,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.045,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.05",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.233,
+          "base_score": 0.188,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.045,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.05",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.051,
+          "base_score": 0.006,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.045,
+          "level": "low",
+          "reason": "时效加分 +0.05",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "algebraic_geometry",
+        "topic_name": "Algebraic Geometry",
+        "score": 0.487,
+        "base_score": 0.442,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.045,
+        "level": "medium",
+        "reason": "关键词命中：Spec、Proj；arXiv 分类重合：math.AG；时效加分 +0.05",
+        "keyword_hits": [
+          "Spec",
+          "Proj"
+        ]
+      },
+      "top_labels": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.442,
+          "score": 0.487,
+          "level": "medium",
+          "keyword_hits": [
+            "Spec",
+            "Proj"
+          ]
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.197,
+          "score": 0.242,
+          "level": "low",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "base_score": 0.188,
+          "score": 0.233,
+          "level": "low",
+          "keyword_hits": []
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "We study Fano manifolds of Picard number one equipped with a locally flat VMRT structure whose VMRT at a general point is a smooth linearly non-degenerate complete intersection.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：Spec、Proj；arXiv 分类重合：math.AG；时效加分 +0.05"
+      },
+      "first_seen_at": "2026-06-15T06:02:03.298365+00:00",
+      "last_seen_at": "2026-06-15T06:02:03.298365+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "2606.13165v1",
+      "source": "arXiv",
+      "title": "Iterated Whitehead products in the homotopy groups of polyhedral products",
+      "authors": [
+        "Taras Panov",
+        "Stephen Theriault",
+        "Fedor Vylegzhanin"
+      ],
+      "summary": "We study structure within the homotopy groups of the Davis-Januszkiewicz space DJ(K) associated with a simplicial complex K. The inclusion of each vertex in K induces a map from the two-sphere into DJ(K). These maps generate a quasi-Lie subalgebra QL(K) via the Whitehead product and a Pi-subalgebra S(K) via the Whitehead product and composition. We describe the quasi-Lie subalgebra QL(K), and show that the Pi-subalgebra S(K) coincides with the whole of the homotopy groups of DJ(K) if and only if K is a flag complex. Extensions to more general polyhedral products are also considered.",
+      "published": "2026-06-11T10:33:38Z",
+      "updated": "2026-06-11T10:33:38Z",
+      "paper_url": "http://arxiv.org/abs/2606.13165v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13165v1",
+      "categories": [
+        "math.AT"
+      ],
+      "seed_topic": "motivic_k_theory",
+      "matches": [
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.484,
+          "base_score": 0.44,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.044,
+          "level": "medium",
+          "reason": "关键词命中：homotopy groups；arXiv 分类重合：math.AT；时效加分 +0.04",
+          "keyword_hits": [
+            "homotopy groups"
+          ]
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.238,
+          "base_score": 0.194,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.044,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AT；时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.057,
+          "base_score": 0.013,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.044,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.044,
+          "base_score": 0.0,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.044,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "homotopy_theory",
+        "topic_name": "Homotopy Theory",
+        "score": 0.484,
+        "base_score": 0.44,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.044,
+        "level": "medium",
+        "reason": "关键词命中：homotopy groups；arXiv 分类重合：math.AT；时效加分 +0.04",
+        "keyword_hits": [
+          "homotopy groups"
+        ]
+      },
+      "top_labels": [
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "base_score": 0.44,
+          "score": 0.484,
+          "level": "medium",
+          "keyword_hits": [
+            "homotopy groups"
+          ]
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "base_score": 0.194,
+          "score": 0.238,
+          "level": "low",
+          "keyword_hits": []
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "We study structure within the homotopy groups of the Davis-Januszkiewicz space DJ(K) associated with a simplicial complex K.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：homotopy groups；arXiv 分类重合：math.AT；时效加分 +0.04"
+      },
+      "first_seen_at": "2026-06-15T06:02:03.298365+00:00",
+      "last_seen_at": "2026-06-15T06:02:03.298365+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "2606.10626v1",
+      "source": "arXiv",
+      "title": "Eisenstein-Kronecker classes on Hilbert moduli spaces and a new construction of Katz's $p$-adic measure",
+      "authors": [
+        "Guillermo Gamarra Segovia"
+      ],
+      "summary": "In this work, we extend the construction of the Eisenstein-Kronecker classes of Kings-Sprang to the universal abelian schemes lying over Hilbert moduli spaces parametrizing objects with $(Γ(l), Γ_{00}(p^\\infty))$-level. We then compare the associated ($p$-adic) Hilbert modular forms to the Eisenstein series constructed by Katz. Similarly to the procedure of Kings-Sprang, we produce a $p$-adic measure which interpolates the Eisenstein-Kronecker classes, and use the mentioned comparison results to show that this recovers essentially the $p$-adic Eisenstein measure constructed by Katz.",
+      "published": "2026-06-09T09:28:14Z",
+      "updated": "2026-06-09T09:28:14Z",
+      "paper_url": "http://arxiv.org/abs/2606.10626v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.10626v1",
+      "categories": [
+        "math.NT",
+        "math.AG"
+      ],
+      "seed_topic": "motivic_k_theory",
+      "matches": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.483,
+          "base_score": 0.442,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.041,
+          "level": "medium",
+          "reason": "关键词命中：moduli space、scheme；arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": [
+            "moduli space",
+            "scheme"
+          ]
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.423,
+          "base_score": 0.382,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.041,
+          "level": "medium",
+          "reason": "关键词命中：modular forms；arXiv 分类重合：math.AG、math.NT；时效加分 +0.04",
+          "keyword_hits": [
+            "modular forms"
+          ]
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.166,
+          "base_score": 0.125,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.041,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.041,
+          "base_score": 0.0,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.041,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "algebraic_geometry",
+        "topic_name": "Algebraic Geometry",
+        "score": 0.483,
+        "base_score": 0.442,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.041,
+        "level": "medium",
+        "reason": "关键词命中：moduli space、scheme；arXiv 分类重合：math.AG；时效加分 +0.04",
+        "keyword_hits": [
+          "moduli space",
+          "scheme"
+        ]
+      },
+      "top_labels": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.442,
+          "score": 0.483,
+          "level": "medium",
+          "keyword_hits": [
+            "moduli space",
+            "scheme"
+          ]
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.382,
+          "score": 0.423,
+          "level": "medium",
+          "keyword_hits": [
+            "modular forms"
+          ]
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "In this work, we extend the construction of the Eisenstein-Kronecker classes of Kings-Sprang to the universal abelian schemes lying over Hilbert moduli spaces parametrizing objects with $(Γ(l), Γ_{00}(p^\\infty))$-level.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：moduli space、scheme；arXiv 分类重合：math.AG；时效加分 +0.04"
+      },
+      "first_seen_at": "2026-06-15T06:02:03.298365+00:00",
+      "last_seen_at": "2026-06-15T06:02:03.298365+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "2606.14529v1",
+      "source": "arXiv",
+      "title": "A Weil Sum Approach to Permutation Polynomials over Quadratic Extensions of Finite Fields",
+      "authors": [
+        "Bidushi Sharma",
+        "Dhiren Kumar Basnet"
+      ],
+      "summary": "In this article, we introduce several classes of permutation polynomials over $\\mathbb{F}_{q^2}$. More precisely, we characterize permutation polynomials of the forms $x^q + b x^2 + c x + d$ and $x^{q+1} + b x^q + c x + d$ over $\\mathbb{F}_{q^2}$. To this end, we determine the exact number of zeros of these polynomials using existing results on certain special Weil sums. We also present the compositional inverses of the permutation polynomials obtained in this paper.",
+      "published": "2026-06-12T15:02:04Z",
+      "updated": "2026-06-12T15:02:04Z",
+      "paper_url": "http://arxiv.org/abs/2606.14529v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14529v1",
+      "categories": [
+        "math.NT"
+      ],
+      "seed_topic": "arithmetic_geometry",
+      "matches": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.482,
+          "base_score": 0.436,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "medium",
+          "reason": "关键词命中：finite field；arXiv 分类重合：math.NT；时效加分 +0.05",
+          "keyword_hits": [
+            "finite field"
+          ]
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.187,
+          "base_score": 0.141,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "low",
+          "reason": "关键词命中：Spec；时效加分 +0.05",
+          "keyword_hits": [
+            "Spec"
+          ]
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.049,
+          "base_score": 0.003,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "low",
+          "reason": "时效加分 +0.05",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.046,
+          "base_score": 0.0,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "low",
+          "reason": "时效加分 +0.05",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "arithmetic_geometry",
+        "topic_name": "Arithmetic Geometry",
+        "score": 0.482,
+        "base_score": 0.436,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.046,
+        "level": "medium",
+        "reason": "关键词命中：finite field；arXiv 分类重合：math.NT；时效加分 +0.05",
+        "keyword_hits": [
+          "finite field"
+        ]
+      },
+      "top_labels": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.436,
+          "score": 0.482,
+          "level": "medium",
+          "keyword_hits": [
+            "finite field"
+          ]
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.141,
+          "score": 0.187,
+          "level": "low",
+          "keyword_hits": [
+            "Spec"
+          ]
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "In this article, we introduce several classes of permutation polynomials over $\\mathbb{F}_{q^2}$.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：finite field；arXiv 分类重合：math.NT；时效加分 +0.05"
+      },
+      "first_seen_at": "2026-06-15T06:02:03.298365+00:00",
+      "last_seen_at": "2026-06-15T06:02:03.298365+00:00",
+      "retained_from_previous_run": false
+    },
+    {
       "id": "2606.11054v1",
       "source": "arXiv",
       "title": "On the rank of hypergeometric sheaves on higher dimensional tori",
@@ -5245,6 +8567,263 @@
       "first_seen_at": "2026-06-11T07:03:32.811912+00:00",
       "last_seen_at": "2026-06-11T15:15:36.567953+00:00",
       "retained_from_previous_run": true
+    },
+    {
+      "id": "2606.13466v1",
+      "source": "arXiv",
+      "title": "Families of smooth Fano fourfolds of Picard rank 1 without Bott vanishing",
+      "authors": [
+        "Jiahe Wang"
+      ],
+      "summary": "We show that $χ(X,T_X)<0$ for the currently known families of smooth Fano fourfolds of Picard rank $1$ and index $1$. Combining this with the known Picard rank $1$ index $> 1$ cases, we show that among all currently known smooth Fano fourfolds of Picard rank $1$, the only variety satisfying Bott vanishing is the projective space. By a result of Kawakami--Totaro, the existence of an endomorphism of degree greater than 1 implies Bott vanishing. Therefore, among the currently known smooth Fano fourfolds of Picard rank $1$, any variety admitting an endomorphism of degree greater than 1 must be $\\mathbb P^4$. Together with Burt Totaro, we develop new Schubert2 functions for symmetric and skew-symmetric degeneracy loci, and weighted projective spaces.",
+      "published": "2026-06-11T15:19:16Z",
+      "updated": "2026-06-11T15:19:16Z",
+      "paper_url": "http://arxiv.org/abs/2606.13466v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13466v1",
+      "categories": [
+        "math.AG"
+      ],
+      "seed_topic": "motivic_k_theory",
+      "matches": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.478,
+          "base_score": 0.434,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.044,
+          "level": "medium",
+          "reason": "关键词命中：variety、Proj；arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": [
+            "variety",
+            "Proj"
+          ]
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.23,
+          "base_score": 0.186,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.044,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.229,
+          "base_score": 0.185,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.044,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.047,
+          "base_score": 0.003,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.044,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "algebraic_geometry",
+        "topic_name": "Algebraic Geometry",
+        "score": 0.478,
+        "base_score": 0.434,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.044,
+        "level": "medium",
+        "reason": "关键词命中：variety、Proj；arXiv 分类重合：math.AG；时效加分 +0.04",
+        "keyword_hits": [
+          "variety",
+          "Proj"
+        ]
+      },
+      "top_labels": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.434,
+          "score": 0.478,
+          "level": "medium",
+          "keyword_hits": [
+            "variety",
+            "Proj"
+          ]
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.186,
+          "score": 0.23,
+          "level": "low",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "base_score": 0.185,
+          "score": 0.229,
+          "level": "low",
+          "keyword_hits": []
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "We show that $χ(X,T_X)<0$ for the currently known families of smooth Fano fourfolds of Picard rank $1$ and index $1$.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：variety、Proj；arXiv 分类重合：math.AG；时效加分 +0.04"
+      },
+      "first_seen_at": "2026-06-15T06:02:03.298365+00:00",
+      "last_seen_at": "2026-06-15T06:02:03.298365+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "2606.12645v1",
+      "source": "arXiv",
+      "title": "Algebraic cobordism rings of wonderful varieties and matroids",
+      "authors": [
+        "Raj Gandhi",
+        "Ethan Partida"
+      ],
+      "summary": "We give two combinatorial presentations for the algebraic cobordism ring $Ω^*(M)$ of the toric variety of the Bergman fan of any loopless matroid $M$. As a consequence of our presentations, we obtain an $Ω^*(\\mathrm{pt})$-algebra isomorphism $Ω^*(M) \\simeq CH^*(M) \\otimes_{\\mathbb{Z}} Ω^*(\\mathrm{pt})$, where $CH^*(M)$ is the Chow ring of $M$ and $Ω^*(\\mathrm{pt})$ is the algebraic cobordism ring of the point. This isomorphism generalizes, in part, the exceptional integral isomorphism between the Chow ring and $K$-ring of a matroid, studied in the recent works of Berget--Eur--Spink--Tseng and Larson--Li--Payne--Proudfoot. For a complex hyperplane arrangement $\\mathcal{H}$, we prove that the algebraic cobordism ring of the wonderful variety $W_\\mathcal{H}$ of $\\mathcal{H}$ and the algebraic cobordism ring of the toric variety of the matroid underlying $\\mathcal{H}$ are isomorphic, and that both rings coincide with the complex cobordism ring of $W_\\mathcal{H}$.",
+      "published": "2026-06-10T20:13:49Z",
+      "updated": "2026-06-10T20:13:49Z",
+      "paper_url": "http://arxiv.org/abs/2606.12645v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.12645v1",
+      "categories": [
+        "math.AG",
+        "math.CO"
+      ],
+      "seed_topic": "motivic_k_theory",
+      "matches": [
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.471,
+          "base_score": 0.428,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.043,
+          "level": "medium",
+          "reason": "关键词命中：algebraic cobordism；arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": [
+            "algebraic cobordism"
+          ]
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.374,
+          "base_score": 0.331,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.043,
+          "level": "low",
+          "reason": "关键词命中：variety；arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": [
+            "variety"
+          ]
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.236,
+          "base_score": 0.193,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.043,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.052,
+          "base_score": 0.009,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.043,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "motivic_k_theory",
+        "topic_name": "Motivic Homotopy & K-Theory",
+        "score": 0.471,
+        "base_score": 0.428,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.043,
+        "level": "medium",
+        "reason": "关键词命中：algebraic cobordism；arXiv 分类重合：math.AG；时效加分 +0.04",
+        "keyword_hits": [
+          "algebraic cobordism"
+        ]
+      },
+      "top_labels": [
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "base_score": 0.428,
+          "score": 0.471,
+          "level": "medium",
+          "keyword_hits": [
+            "algebraic cobordism"
+          ]
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.331,
+          "score": 0.374,
+          "level": "low",
+          "keyword_hits": [
+            "variety"
+          ]
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.193,
+          "score": 0.236,
+          "level": "low",
+          "keyword_hits": []
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "We give two combinatorial presentations for the algebraic cobordism ring $Ω^*(M)$ of the toric variety of the Bergman fan of any loopless matroid $M$.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：algebraic cobordism；arXiv 分类重合：math.AG；时效加分 +0.04"
+      },
+      "first_seen_at": "2026-06-15T06:02:03.298365+00:00",
+      "last_seen_at": "2026-06-15T06:02:03.298365+00:00",
+      "retained_from_previous_run": false
     },
     {
       "id": "2512.07707v2",
@@ -5480,6 +9059,127 @@
       "first_seen_at": "2026-06-11T05:21:54.714863+00:00",
       "last_seen_at": "2026-06-11T15:31:08.010630+00:00",
       "retained_from_previous_run": true
+    },
+    {
+      "id": "2606.04297v1",
+      "source": "arXiv",
+      "title": "The Hochschild Homology of Reedy Categories",
+      "authors": [
+        "Alexandra Ballow"
+      ],
+      "summary": "We calculate the Hochschild homology of generalized Reedy categories, such as the simplex category, the category of finite sets, the category of finite-dimensional categories, and the PROP associated to an operad.",
+      "published": "2026-06-02T23:59:25Z",
+      "updated": "2026-06-02T23:59:25Z",
+      "paper_url": "http://arxiv.org/abs/2606.04297v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.04297v1",
+      "categories": [
+        "math.AT",
+        "math.CT"
+      ],
+      "seed_topic": "homotopy_theory",
+      "matches": [
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.462,
+          "base_score": 0.429,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.033,
+          "level": "medium",
+          "reason": "关键词命中：Hochschild homology；arXiv 分类重合：math.AT；时效加分 +0.03",
+          "keyword_hits": [
+            "Hochschild homology"
+          ]
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.369,
+          "base_score": 0.336,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.033,
+          "level": "low",
+          "reason": "关键词命中：operad；arXiv 分类重合：math.AT；时效加分 +0.03",
+          "keyword_hits": [
+            "operad"
+          ]
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.038,
+          "base_score": 0.005,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.033,
+          "level": "low",
+          "reason": "时效加分 +0.03",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.038,
+          "base_score": 0.005,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.033,
+          "level": "low",
+          "reason": "时效加分 +0.03",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "motivic_k_theory",
+        "topic_name": "Motivic Homotopy & K-Theory",
+        "score": 0.462,
+        "base_score": 0.429,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.033,
+        "level": "medium",
+        "reason": "关键词命中：Hochschild homology；arXiv 分类重合：math.AT；时效加分 +0.03",
+        "keyword_hits": [
+          "Hochschild homology"
+        ]
+      },
+      "top_labels": [
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "base_score": 0.429,
+          "score": 0.462,
+          "level": "medium",
+          "keyword_hits": [
+            "Hochschild homology"
+          ]
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "base_score": 0.336,
+          "score": 0.369,
+          "level": "low",
+          "keyword_hits": [
+            "operad"
+          ]
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "We calculate the Hochschild homology of generalized Reedy categories, such as the simplex category, the category of finite sets, the category of finite-dimensional categories, and the PROP associated to an operad.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：Hochschild homology；arXiv 分类重合：math.AT；时效加分 +0.03"
+      },
+      "first_seen_at": "2026-06-15T06:02:03.298365+00:00",
+      "last_seen_at": "2026-06-15T06:02:03.298365+00:00",
+      "retained_from_previous_run": false
     },
     {
       "id": "2606.07142v1",
@@ -6466,6 +10166,139 @@
       "first_seen_at": "2026-06-11T05:41:51.895771+00:00",
       "last_seen_at": "2026-06-11T15:54:22.687734+00:00",
       "retained_from_previous_run": true
+    },
+    {
+      "id": "2606.09418v1",
+      "source": "arXiv",
+      "title": "Seshadri constants and hyperelliptic curves on abelian varieties",
+      "authors": [
+        "Nelson Alvarado"
+      ],
+      "summary": "Given a smooth curve $C$ on a polarized abelian variety $(A,θ),$ we show that that quotient between the Seshadri constant of $(A,θ)$ and the degree of $C$ is bounded above by an intrinsic invariant of $C.$ This invariant is defined in terms of the (non) surjectivity of certain high order Gauß-Wahl maps on the curve. As a consequence, we prove a sharp Castelnuovo-type inequality for hyperelliptic curves on abelian varieties and characterize the cases in which we have equality. This is an extension to higher dimensions of the fact that smooth hyperelliptic curves on abelian surfaces have genus at most five. At the end, we compare this result to the conjectural picture about polarized abelian varieties with small Seshadri constant.",
+      "published": "2026-06-08T12:35:44Z",
+      "updated": "2026-06-08T12:35:44Z",
+      "paper_url": "http://arxiv.org/abs/2606.09418v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.09418v1",
+      "categories": [
+        "math.AG"
+      ],
+      "seed_topic": "algebraic_geometry",
+      "matches": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.379,
+          "base_score": 0.539,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.04,
+          "level": "low",
+          "reason": "关键词命中：abelian variety、elliptic curve；arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": [
+            "abelian variety",
+            "elliptic curve"
+          ],
+          "llm_reason": "论文标题和摘要包含“abelian varieties”和“hyperelliptic curves”，与研究方向中“abelian variety”和“elliptic curve”关键词部分重合；但论文内容完全属于代数几何中的正性理论和曲线分类，未涉及数域、伽罗瓦表示或p进结构，与算术几何核心主题关联较弱。"
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.363,
+          "base_score": 0.323,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.04,
+          "level": "low",
+          "reason": "关键词命中：variety；arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": [
+            "variety"
+          ]
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.227,
+          "base_score": 0.187,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.04,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.043,
+          "base_score": 0.003,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.04,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "arithmetic_geometry",
+        "topic_name": "Arithmetic Geometry",
+        "score": 0.379,
+        "base_score": 0.539,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.04,
+        "level": "low",
+        "reason": "关键词命中：abelian variety、elliptic curve；arXiv 分类重合：math.AG；时效加分 +0.04",
+        "keyword_hits": [
+          "abelian variety",
+          "elliptic curve"
+        ],
+        "llm_reason": "论文标题和摘要包含“abelian varieties”和“hyperelliptic curves”，与研究方向中“abelian variety”和“elliptic curve”关键词部分重合；但论文内容完全属于代数几何中的正性理论和曲线分类，未涉及数域、伽罗瓦表示或p进结构，与算术几何核心主题关联较弱。"
+      },
+      "top_labels": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.539,
+          "score": 0.579,
+          "level": "medium",
+          "keyword_hits": [
+            "abelian variety",
+            "elliptic curve"
+          ]
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.323,
+          "score": 0.363,
+          "level": "low",
+          "keyword_hits": [
+            "variety"
+          ]
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "base_score": 0.187,
+          "score": 0.227,
+          "level": "low",
+          "keyword_hits": []
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "chinese_summary": {
+        "problem": "在极化阿贝尔簇上，给定光滑曲线C，研究Seshadri常数与曲线度数的比值上界，并推广到高维的超椭圆曲线Castelnuovo型不等式。",
+        "method": "利用曲线上的高阶Gauß-Wahl映射的满射性定义内在不变量，通过该不变量对Seshadri常数与曲线度数的比值进行上界估计，并应用此估计推导超椭圆曲线的Castelnuovo型不等式。",
+        "innovation": "1. 将阿贝尔曲面上超椭圆曲线亏格至多为五的经典结果推广到高维阿贝尔簇上的超椭圆曲线；2. 给出一个与Seshadri常数相关的Sharp不等式，并刻画等式成立的情形；3. 与具有小Seshadri常数的极化阿贝尔簇的猜想图景进行比较。",
+        "evidence": "摘要中只给出了理论推导和不等式，未提及具体实验或计算验证；作者声称证明了sharp不等式并刻画了等式情形，但无定量实例或数值证据。",
+        "limitations": "1. 结果仅针对阿贝尔簇上的曲线，未涉及其他类型的簇；2. 需要假设曲线光滑，且可能依赖于极化线的选择；3. 与算术几何中数域、p进霍奇理论等方向无直接联系。",
+        "why_relevant": "论文标题和摘要包含“abelian varieties”和“hyperelliptic curves”，与研究方向中“abelian variety”和“elliptic curve”关键词部分重合；但论文内容完全属于代数几何中的正性理论和曲线分类，未涉及数域、伽罗瓦表示或p进结构，与算术几何核心主题关联较弱。"
+      },
+      "first_seen_at": "2026-06-15T06:02:03.298365+00:00",
+      "last_seen_at": "2026-06-15T06:02:03.298365+00:00",
+      "retained_from_previous_run": false
     },
     {
       "id": "2606.09214v1",
@@ -7630,26 +11463,27 @@
     }
   ],
   "stats": {
-    "candidate_paper_count": 8,
-    "daily_candidate_paper_count": 8,
+    "candidate_paper_count": 128,
+    "daily_candidate_paper_count": 128,
     "raw_daily_candidate_count": 258,
     "daily_outside_cutoff_count": 207,
+    "newly_discovered_backfill_count": 128,
     "daily_backfill_days": 14,
-    "daily_backfill_candidate_count": 159,
-    "daily_backfill_added_count": 8,
+    "daily_backfill_candidate_count": 31,
+    "daily_backfill_added_count": 0,
     "min_daily_papers": 8,
     "filtered_low_relevance_count": 2,
     "filtered_wrong_category_count": 49,
     "arxiv_category_filter": [
-      "math.CT",
-      "math.AT",
       "math.AG",
+      "math.AT",
+      "math.KT",
       "math.NT",
-      "math.KT"
+      "math.CT"
     ],
     "days": 3,
     "collection_mode": "incremental",
-    "collection_cutoff_iso": "2026-06-15T05:50:50.450877+00:00",
+    "collection_cutoff_iso": "2026-06-15T05:58:38.976818+00:00",
     "max_per_topic": 25,
     "max_new_papers": 30,
     "sources": [
@@ -7677,14 +11511,14 @@
     "successful_fetches": 4,
     "failed_fetches": 0,
     "clear_cache": false,
-    "paper_count": 58,
-    "new_paper_count": 8,
-    "retained_paper_count": 50,
+    "paper_count": 88,
+    "new_paper_count": 30,
+    "retained_paper_count": 58,
     "retained_recent_low_count": 12,
     "dropped_low_relevance_count": 0,
     "max_stored_papers": 150,
     "max_data_bytes": 8388608,
-    "data_bytes": 366943,
+    "data_bytes": 546826,
     "storage_trimmed_count": 0,
     "storage_trimmed_by_level": {
       "high": 0,
