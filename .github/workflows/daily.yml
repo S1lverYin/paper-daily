@@ -108,24 +108,34 @@ jobs:
           today=$(TZ=Asia/Shanghai date +%Y-%m-%d)
 
           new_count=$(python3 -c "
-          import json
+          import datetime as dt, json
+          from zoneinfo import ZoneInfo
           d=json.load(open('$papers_file'))
           today='$today'
           count=0
           for p in d.get('papers',[]):
-              pub=p.get('published','') or ''
-              if pub.startswith(today): count+=1
+              value=p.get('first_seen_at','') or ''
+              try:
+                  seen=dt.datetime.fromisoformat(value.replace('Z','+00:00')).astimezone(ZoneInfo('Asia/Shanghai'))
+              except ValueError:
+                  continue
+              if seen.date().isoformat() == today: count+=1
           print(count)
           ")
 
           new_list=$(python3 -c "
-          import json, html
+          import datetime as dt, html, json
+          from zoneinfo import ZoneInfo
           d=json.load(open('$papers_file'))
           today='$today'
           lines=[]
           for p in d.get('papers',[]):
-              pub=p.get('published','') or ''
-              if not pub.startswith(today): continue
+              value=p.get('first_seen_at','') or ''
+              try:
+                  seen=dt.datetime.fromisoformat(value.replace('Z','+00:00')).astimezone(ZoneInfo('Asia/Shanghai'))
+              except ValueError:
+                  continue
+              if seen.date().isoformat() != today: continue
               title=html.escape(p.get('title','?'))
               score=p.get('best_match',{}).get('score',0)
               summary = p.get('chinese_summary',{}) or {}
