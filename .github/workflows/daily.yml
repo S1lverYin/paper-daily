@@ -2,9 +2,9 @@ name: Paper Daily
 
 on:
   schedule:
-    # arXiv announcements are available by the morning in China. Start after
-    # that window and hold the notification until 09:30 Asia/Shanghai.
-    - cron: '20 1 * * *'  # 09:20 Asia/Shanghai
+    # Start collecting at 09:00 Asia/Shanghai, then notify immediately after
+    # collection and deployment finish.
+    - cron: '0 1 * * *'  # 09:00 Asia/Shanghai
   workflow_dispatch:
     inputs:
       lookback_days:
@@ -78,26 +78,6 @@ jobs:
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
-
-      - name: Wait until 09:30 Beijing time
-        if: github.event_name == 'schedule'
-        run: |
-          wait_seconds=$(python3 - <<'PY'
-          from datetime import datetime, time
-          from zoneinfo import ZoneInfo
-
-          timezone = ZoneInfo("Asia/Shanghai")
-          now = datetime.now(timezone)
-          target = datetime.combine(now.date(), time(9, 30), timezone)
-          print(max(0, int((target - now).total_seconds())))
-          PY
-          )
-          if [ "$wait_seconds" -gt 0 ]; then
-            echo "Waiting ${wait_seconds}s before the 09:30 Beijing notification"
-            sleep "$wait_seconds"
-          else
-            echo "09:30 Beijing has passed; sending the notification immediately"
-          fi
 
       - name: PushPlus notification
         env:
