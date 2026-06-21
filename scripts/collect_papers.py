@@ -40,16 +40,36 @@ TRANSIENT_HTTP_CODES = {429, 500, 502, 503, 504}
 DEFAULT_SOURCE_TYPES = ["arxiv", "openalex", "crossref"]
 FEED_NAMESPACES = {"atom": "http://www.w3.org/2005/Atom"}
 LIKES_PATH = Path("web/data/likes.json")
+DISLIKES_PATH = Path("web/data/dislikes.json")
 PREFERENCES_PATH = Path("web/data/preferences.json")
+_ARXIV_QUERY_CACHE: dict[tuple[str, int, str, str], list[dict[str, Any]]] = {}
+
+
+def load_feedback_ids(path: Path, field: str) -> set[str]:
+    """Load paper ids from a small feedback JSON file."""
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except (FileNotFoundError, json.JSONDecodeError, OSError):
+        return set()
+    if isinstance(data, dict):
+        values = data.get(field, {})
+        if isinstance(values, dict):
+            return {str(key) for key, value in values.items() if value is not False}
+        if isinstance(values, list):
+            return {str(value) for value in values}
+    if isinstance(data, list):
+        return {str(value) for value in data}
+    return set()
 
 
 def load_likes(path: Path = LIKES_PATH) -> set[str]:
     """Load liked paper ids from the likes file."""
-    try:
-        likes_data = json.loads(path.read_text(encoding="utf-8"))
-        return set(likes_data.get("likes", {}).keys())
-    except (FileNotFoundError, json.JSONDecodeError, OSError):
-        return set()
+    return load_feedback_ids(path, "likes")
+
+
+def load_dislikes(path: Path = DISLIKES_PATH) -> set[str]:
+    """Load explicitly dismissed paper ids from the dislikes file."""
+    return load_feedback_ids(path, "dislikes")
 
 
 def load_preferences(path: Path = PREFERENCES_PATH) -> dict[str, Any]:
@@ -364,10 +384,7 @@ def load_issue_config(default_config: dict[str, Any]) -> dict[str, Any]:
 
 
 def arxiv_query_for_topic(topic: Topic) -> str:
-    keyword_terms = []
-    for keyword in topic.keywords[:8]:
-        escaped = keyword.replace('"', '\\"')
-        keyword_terms.append(f'all:"{escaped}"')
+    keyword_terms = arxiv_keyword_terms(topic.keywords[:8])
 
     category_terms = [f"cat:{category}" for category in topic.arxiv_categories[:5]]
     query_mode = os.getenv("ARXIV_QUERY_MODE", "keyword").strip().lower()
@@ -396,6 +413,33 @@ def arxiv_query_for_topic(topic: Topic) -> str:
     if category_terms:
         parts.append("(" + " OR ".join(category_terms) + ")")
     return " AND ".join(parts) if parts else f'all:"{topic.name}"'
+
+
+def arxiv_keyword_terms(keywords: list[str]) -> list[str]:
+    terms = []
+    for keyword in keywords:
+        escaped = keyword.replace('"', '\\"')
+        terms.append(f'all:"{escaped}"')
+    return terms
+
+
+def arxiv_keyword_queries_for_topic(topic: Topic) -> list[str]:
+    query_mode = os.getenv("ARXIV_QUERY_MODE", "keyword").strip().lower()
+    if query_mode != "keyword":
+        return [arxiv_query_for_topic(topic)]
+
+    chunk_size = max(1, env_int("ARXIV_KEYWORD_CHUNK_SIZE", 8))
+    chunk_count = max(1, env_int("ARXIV_KEYWORD_QUERY_CHUNKS", 1))
+    selected_keywords = topic.keywords[: chunk_size * chunk_count]
+    if not selected_keywords:
+        return [arxiv_query_for_topic(topic)]
+
+    queries = []
+    for start in range(0, len(selected_keywords), chunk_size):
+        keyword_terms = arxiv_keyword_terms(selected_keywords[start : start + chunk_size])
+        if keyword_terms:
+            queries.append("(" + " OR ".join(keyword_terms) + ")")
+    return queries or [arxiv_query_for_topic(topic)]
 
 
 def arxiv_category_query_for_topic(topic: Topic) -> str:
@@ -532,6 +576,11 @@ def parse_arxiv_entries(xml_data: bytes, seed_topic: str = "") -> list[dict[str,
 
 
 def fetch_arxiv_query(search_query: str, max_results: int, sort_by: str, sort_order: str, label: str) -> list[dict[str, Any]]:
+    cache_key = (search_query, max_results, sort_by, sort_order)
+    if env_flag("ARXIV_QUERY_CACHE", True) and cache_key in _ARXIV_QUERY_CACHE:
+        print(f"Using cached arXiv results for {label}", flush=True)
+        return copy.deepcopy(_ARXIV_QUERY_CACHE[cache_key])
+
     params = {
         "search_query": search_query,
         "start": "0",
@@ -561,20 +610,31 @@ def fetch_arxiv_query(search_query: str, max_results: int, sort_by: str, sort_or
             time.sleep(wait_seconds)
     else:
         raise RuntimeError(f"arXiv request failed: {last_error}")
-    return parse_arxiv_entries(xml_data)
+    papers = parse_arxiv_entries(xml_data)
+    if env_flag("ARXIV_QUERY_CACHE", True):
+        _ARXIV_QUERY_CACHE[cache_key] = copy.deepcopy(papers)
+    return papers
 
 
 def fetch_arxiv(topic: Topic, max_results: int) -> list[dict[str, Any]]:
     sort_by = os.getenv("ARXIV_SORT_BY", "submittedDate").strip() or "submittedDate"
-    papers = fetch_arxiv_query(
-        arxiv_query_for_topic(topic),
-        max_results,
-        sort_by=sort_by,
-        sort_order="descending",
-        label=topic.name,
-    )
+    papers = []
+    keyword_queries = arxiv_keyword_queries_for_topic(topic)
+    in_topic_delay = float(os.getenv("ARXIV_IN_TOPIC_DELAY_SECONDS", "3"))
+    for query_index, search_query in enumerate(keyword_queries):
+        if query_index and in_topic_delay > 0:
+            time.sleep(in_topic_delay)
+        label = topic.name if len(keyword_queries) == 1 else f"{topic.name} keywords {query_index + 1}/{len(keyword_queries)}"
+        papers.extend(
+            fetch_arxiv_query(
+                search_query,
+                max_results,
+                sort_by=sort_by,
+                sort_order="descending",
+                label=label,
+            )
+        )
     if env_flag("ARXIV_EXPAND_CATEGORY_SEARCH", False) and topic.arxiv_categories:
-        in_topic_delay = float(os.getenv("ARXIV_IN_TOPIC_DELAY_SECONDS", "3"))
         if in_topic_delay > 0:
             time.sleep(in_topic_delay)
         category_max_results = max(1, int(os.getenv("ARXIV_CATEGORY_MAX_RESULTS", str(max_results))))
@@ -586,6 +646,8 @@ def fetch_arxiv(topic: Topic, max_results: int) -> list[dict[str, Any]]:
             label=f"{topic.name} categories",
         )
         papers = dedupe_papers([*papers, *category_papers])
+    else:
+        papers = dedupe_papers(papers)
     for paper in papers:
         paper["seed_topic"] = topic.id
     return papers
@@ -1164,6 +1226,15 @@ CROSS_DOMAIN_SIGNALS: list[tuple[str, list[str], str]] = [
 ]
 
 
+_TOPIC_ID_ALIASES = {
+    "motivic_homotopy_theory": "motivic_k_theory",
+    "k_theory": "motivic_k_theory",
+}
+
+
+def canonical_topic_id(topic_id: str) -> str:
+    return _TOPIC_ID_ALIASES.get(topic_id, topic_id)
+
 
 # ── Negative keywords (§11) ──
 NEGATIVE_TERMS: dict[str, float] = {
@@ -1198,24 +1269,31 @@ def apply_negative_penalty(
 
 def compute_bridge_score(paper: dict[str, Any], topic_id: str) -> tuple[float, list[str]]:
     """Reward genuine cross-topic papers while keeping the bonus bounded."""
+    topic_id = canonical_topic_id(topic_id)
     haystack = f"{paper.get('title', '')} {paper.get('summary', '')}".lower()
 
     def _hits(signal_list: list[str]) -> int:
         return sum(1 for term in signal_list if term.lower() in haystack)
 
     own = _hits(_TOPIC_BRIDGE_SIGNALS.get(topic_id, []))
-    if own == 0:
-        return 0.0, []
     pairs = []
     total = 0.0
-    for other_id, other_signals in _TOPIC_BRIDGE_SIGNALS.items():
-        if other_id == topic_id:
-            continue
-        oh = _hits(other_signals)
-        if oh > 0:
-            shared_strength = min(own, oh)
-            total += min(0.035, 0.012 + 0.008 * shared_strength)
-            pairs.append(f"桥接 {topic_id}↔{other_id} (hits={own}/{oh})")
+    if own:
+        for other_id, other_signals in _TOPIC_BRIDGE_SIGNALS.items():
+            if other_id == topic_id:
+                continue
+            oh = _hits(other_signals)
+            if oh > 0:
+                shared_strength = min(own, oh)
+                total += min(0.035, 0.012 + 0.008 * shared_strength)
+                pairs.append(f"桥接 {topic_id}↔{other_id} (hits={own}/{oh})")
+
+    for term, topic_ids, label in CROSS_DOMAIN_SIGNALS:
+        canonical_ids = {canonical_topic_id(value) for value in topic_ids}
+        if topic_id in canonical_ids and term.lower() in haystack:
+            total += 0.012
+            pairs.append(label)
+
     bonus = round(min(0.08, total), 3)
     return bonus, pairs[:3]
 
@@ -1534,9 +1612,94 @@ def call_openai_compatible(prompt: str) -> dict[str, Any]:
     return json.loads(content)
 
 
+def arxiv_base_id(paper: dict[str, Any]) -> str:
+    value = " ".join(str(paper.get(field) or "") for field in ("id", "paper_url", "pdf_url"))
+    match = re.search(r"\b(\d{4}\.\d{4,5})(?:v\d+)?\b", value)
+    return match.group(1) if match else ""
+
+
+def arxiv_html_url(paper: dict[str, Any]) -> str:
+    base_id = arxiv_base_id(paper)
+    return f"https://ar5iv.labs.arxiv.org/html/{base_id}" if base_id else ""
+
+
+def html_document_to_text(raw_html: str) -> str:
+    cleaned = re.sub(r"(?is)<(script|style|noscript|svg|math)[^>]*>.*?</\1>", " ", raw_html)
+    cleaned = re.sub(r"(?is)<(nav|header|footer|aside)[^>]*>.*?</\1>", " ", cleaned)
+    return html_to_text(cleaned)
+
+
+def fetch_arxiv_fulltext_excerpt(paper: dict[str, Any]) -> tuple[str, str]:
+    url = arxiv_html_url(paper)
+    if not url:
+        return "", ""
+    timeout_seconds = env_float("ARXIV_HTML_TIMEOUT_SECONDS", 20.0)
+    max_chars = max(500, env_int("ARXIV_HTML_MAX_CHARS", 6000))
+    min_chars = max(100, env_int("ARXIV_HTML_MIN_CHARS", 600))
+    html_data = request_bytes(
+        url,
+        headers={"User-Agent": "paper-daily-collector/1.0 (+https://github.com/Futuresxy/paper-daily)"},
+        timeout=timeout_seconds,
+    )
+    text = html_document_to_text(html_data.decode("utf-8", errors="ignore"))
+    if len(text) < min_chars:
+        return "", url
+    return text[:max_chars], url
+
+
+def enrich_arxiv_fulltext(papers: list[dict[str, Any]]) -> dict[str, int]:
+    if not env_flag("ENABLE_ARXIV_HTML_ENRICHMENT", False):
+        return {"fulltext_attempted_count": 0, "fulltext_enriched_count": 0, "fulltext_failed_count": 0}
+
+    limit = max(0, env_int("ARXIV_HTML_MAX_PAPERS", 12))
+    delay_seconds = env_float("ARXIV_HTML_DELAY_SECONDS", 1.0)
+    attempted = 0
+    enriched = 0
+    failed = 0
+    for paper in papers:
+        if attempted >= limit:
+            break
+        if str(paper.get("source", "")).lower() != "arxiv":
+            continue
+        if paper.get("fulltext_excerpt"):
+            continue
+        if not arxiv_base_id(paper):
+            continue
+        if attempted and delay_seconds > 0:
+            time.sleep(delay_seconds)
+        attempted += 1
+        try:
+            excerpt, source_url = fetch_arxiv_fulltext_excerpt(paper)
+        except Exception as exc:
+            failed += 1
+            print(f"Warning: arXiv fulltext enrichment failed for {paper.get('id')}: {exc}", file=sys.stderr)
+            continue
+        if excerpt:
+            paper["fulltext_excerpt"] = excerpt
+            paper["fulltext_source_url"] = source_url
+            enriched += 1
+    return {
+        "fulltext_attempted_count": attempted,
+        "fulltext_enriched_count": enriched,
+        "fulltext_failed_count": failed,
+    }
+
+
+def add_count_stats(target: dict[str, int], source: dict[str, int]) -> None:
+    for key, value in source.items():
+        target[key] = target.get(key, 0) + int(value)
+
+
 def build_llm_prompt(topic: Topic, paper: dict[str, Any], base_match: dict[str, Any]) -> str:
+    fulltext_section = ""
+    if paper.get("fulltext_excerpt"):
+        fulltext_section = f"""
+正文摘录（来自 ar5iv，可能不完整，优先用来核验方法和证据）：
+{paper.get("fulltext_excerpt", "")}
+""".strip()
+
     return f"""
-请根据论文标题、摘要、分类和我的研究方向，输出精确中文分析。目标不是逐句翻译，而是综合整篇摘要快速判断这篇论文是否值得阅读。
+请根据论文标题、摘要、分类、可用正文摘录和我的研究方向，输出精确中文分析。目标不是逐句翻译，而是综合已有材料快速判断这篇论文是否值得阅读。
 要求：
 1. 先识别论文真正解决的问题、核心机制、实验或系统证据，再翻译成自然中文。
 2. 不要夸大摘要中没有的信息；如果证据不足，请明确说明。
@@ -1553,6 +1716,7 @@ def build_llm_prompt(topic: Topic, paper: dict[str, Any], base_match: dict[str, 
 作者：{", ".join(paper.get("authors", [])[:8])}
 arXiv 分类：{", ".join(paper.get("categories", []))}
 摘要：{paper.get("summary", "")}
+{fulltext_section}
 
 基础匹配信息：
 分数：{base_match.get("score")}
@@ -1609,6 +1773,56 @@ def summarize_one(args: tuple[Topic, dict[str, Any]]) -> tuple[str, dict[str, st
     paper_id = str(paper.get("id", ""))
     summary, adjusted_match = summarize_with_llm(topic, paper, paper["best_match"])
     return paper_id, summary, adjusted_match
+
+
+def best_topic_for_paper(topics_by_id: dict[str, Topic], paper: dict[str, Any]) -> Topic | None:
+    topic_id = str((paper.get("best_match") or {}).get("topic_id") or "")
+    return topics_by_id.get(topic_id)
+
+
+def build_summary_jobs(topics_by_id: dict[str, Topic], papers: list[dict[str, Any]]) -> list[tuple[Topic, dict[str, Any]]]:
+    jobs = []
+    for paper in papers:
+        if not should_summarize_paper_with_llm(paper):
+            continue
+        best_topic = best_topic_for_paper(topics_by_id, paper)
+        if best_topic:
+            jobs.append((best_topic, paper))
+    return jobs
+
+
+def summarize_papers(jobs: list[tuple[Topic, dict[str, Any]]]) -> dict[str, tuple[dict[str, str], dict[str, Any]]]:
+    summaries_by_id: dict[str, tuple[dict[str, str], dict[str, Any]]] = {}
+    if not jobs:
+        return summaries_by_id
+
+    if llm_enabled():
+        concurrency = max(1, int(os.getenv("LLM_CONCURRENCY", "2")))
+        print(f"Summarizing {len(jobs)} papers with LLM using concurrency={concurrency}", flush=True)
+        with concurrent.futures.ThreadPoolExecutor(max_workers=concurrency) as executor:
+            futures = [executor.submit(summarize_one, job) for job in jobs]
+            for future in concurrent.futures.as_completed(futures):
+                paper_id, summary, adjusted_match = future.result()
+                summaries_by_id[paper_id] = (summary, adjusted_match)
+                print(f"Finished summary: {paper_id}", flush=True)
+    else:
+        for topic, paper in jobs:
+            summary, adjusted_match = summarize_with_llm(topic, paper, paper["best_match"])
+            summaries_by_id[str(paper.get("id", ""))] = (summary, adjusted_match)
+    return summaries_by_id
+
+
+def apply_adjusted_matches(
+    papers: list[dict[str, Any]],
+    summaries_by_id: dict[str, tuple[dict[str, str], dict[str, Any]]],
+) -> None:
+    for paper in papers:
+        paper_id = str(paper.get("id", ""))
+        if paper_id not in summaries_by_id:
+            continue
+        _, adjusted_match = summaries_by_id[paper_id]
+        paper["best_match"] = adjusted_match
+        paper["matches"] = [adjusted_match if m["topic_id"] == adjusted_match["topic_id"] else m for m in paper["matches"]]
 
 
 def dedupe_papers(papers: list[dict[str, Any]]) -> list[dict[str, Any]]:
@@ -1681,11 +1895,13 @@ def merge_with_retained_papers(
     now: dt.datetime,
     recent_history_days: int,
     liked_set: set[str] | None = None,
+    disliked_set: set[str] | None = None,
 ) -> tuple[list[dict[str, Any]], dict[str, int]]:
     existing_papers = existing_payload.get("papers", []) if isinstance(existing_payload, dict) else []
     existing_generated_at = str(existing_payload.get("generated_at_iso") or existing_payload.get("generated_at") or now.isoformat())
     retained_by_key: dict[str, dict[str, Any]] = {}
     dropped_low = 0
+    dropped_disliked = 0
     retained_recent = 0
     for paper in existing_papers:
         if not isinstance(paper, dict):
@@ -1700,6 +1916,10 @@ def merge_with_retained_papers(
             and (now.date() - seen_at.date()).days <= recent_history_days
         )
         liked_badge = bool(liked_set and key in liked_set)
+        disliked_badge = bool(disliked_set and key in disliked_set and not liked_badge)
+        if disliked_badge:
+            dropped_disliked += 1
+            continue
         if liked_badge or best_match_level(paper) in RETAINED_MATCH_LEVELS or is_recent:
             retained_by_key[key] = paper
             if not liked_badge and is_recent and best_match_level(paper) not in RETAINED_MATCH_LEVELS:
@@ -1738,6 +1958,7 @@ def merge_with_retained_papers(
         "retained_paper_count": retained_count,
         "retained_recent_low_count": retained_recent,
         "dropped_low_relevance_count": dropped_low,
+        "dropped_disliked_count": dropped_disliked,
     }
 
 
@@ -1809,12 +2030,15 @@ def collect(
 ) -> dict[str, Any]:
     data_dir = output_path.parent
     likes_path = data_dir / "likes.json"
+    dislikes_path = data_dir / "dislikes.json"
     preferences_path = data_dir / "preferences.json"
     liked_set = load_likes(likes_path)
+    disliked_set = load_dislikes(dislikes_path)
     preferences = load_preferences(preferences_path) if len(liked_set) >= 3 else {}
     default_config = load_json(config_path)
     config = load_issue_config(default_config)
     topics = parse_topics(config)
+    topics_by_id = {topic.id: topic for topic in topics}
     sources = parse_sources(config)
     negative_terms = parse_negative_terms(config)
     arxiv_category_filter = category_whitelist(config)
@@ -1885,6 +2109,7 @@ def collect(
     daily_backfill_candidates = []
     filtered_low_relevance = 0
     filtered_wrong_category = 0
+    filtered_disliked = 0
     raw_daily_candidate_count = 0
     daily_outside_cutoff_count = 0
     newly_discovered_backfill_count = 0
@@ -1897,6 +2122,11 @@ def collect(
         in_backfill_window = not in_primary_window and activity_at >= daily_backfill_cutoff
         if not in_primary_window and not in_backfill_window:
             daily_outside_cutoff_count += 1
+            continue
+
+        key = paper_key(paper)
+        if key and key in disliked_set and key not in liked_set:
+            filtered_disliked += 1
             continue
 
         if arxiv_category_filter:
@@ -1971,6 +2201,29 @@ def collect(
             daily_backfill_added_count += 1
     candidate_paper_count = len(daily_recent_papers)
     daily_candidate_paper_count = len(daily_recent_papers)
+    summaries_by_id: dict[str, tuple[dict[str, str], dict[str, Any]]] = {}
+    fulltext_stats = {"fulltext_attempted_count": 0, "fulltext_enriched_count": 0, "fulltext_failed_count": 0}
+    llm_rerank_pool_size = 0
+    llm_rerank_enabled = env_flag("LLM_RERANK_BEFORE_SELECTION", False) and llm_enabled() and max_summaries > 0
+    if llm_rerank_enabled and daily_recent_papers:
+        llm_rerank_pool_size = min(
+            len(daily_recent_papers),
+            max(0, env_int("LLM_RERANK_POOL", max_summaries)),
+        )
+        if llm_rerank_pool_size:
+            rerank_pool = sorted(
+                daily_recent_papers,
+                key=lambda p: (p["best_match"]["score"], paper_activity_datetime(p)),
+                reverse=True,
+            )[:llm_rerank_pool_size]
+            add_count_stats(fulltext_stats, enrich_arxiv_fulltext(rerank_pool))
+            summaries_by_id.update(summarize_papers(build_summary_jobs(topics_by_id, rerank_pool)))
+            apply_adjusted_matches(daily_recent_papers, summaries_by_id)
+            daily_recent_papers.sort(
+                key=lambda p: (p["best_match"]["score"], paper_activity_datetime(p)),
+                reverse=True,
+            )
+
     if max_new_papers > 0:
         daily_recent_papers = select_diverse_papers(daily_recent_papers, max_new_papers)
     recent_papers = sorted(
@@ -1978,27 +2231,13 @@ def collect(
         key=lambda p: (p["best_match"]["score"], paper_activity_datetime(p)),
         reverse=True,
     )
-    summaries_by_id: dict[str, tuple[dict[str, str], dict[str, Any]]] = {}
-    llm_jobs = []
-    for paper in recent_papers[:max_summaries]:
-        if not should_summarize_paper_with_llm(paper):
-            continue
-        best_topic = next(topic for topic in topics if topic.id == paper["best_match"]["topic_id"])
-        llm_jobs.append((best_topic, paper))
-
-    if llm_enabled() and llm_jobs:
-        concurrency = max(1, int(os.getenv("LLM_CONCURRENCY", "2")))
-        print(f"Summarizing {len(llm_jobs)} papers with LLM using concurrency={concurrency}", flush=True)
-        with concurrent.futures.ThreadPoolExecutor(max_workers=concurrency) as executor:
-            futures = [executor.submit(summarize_one, job) for job in llm_jobs]
-            for future in concurrent.futures.as_completed(futures):
-                paper_id, summary, adjusted_match = future.result()
-                summaries_by_id[paper_id] = (summary, adjusted_match)
-                print(f"Finished summary: {paper_id}", flush=True)
-    else:
-        for topic, paper in llm_jobs:
-            summary, adjusted_match = summarize_with_llm(topic, paper, paper["best_match"])
-            summaries_by_id[str(paper.get("id", ""))] = (summary, adjusted_match)
+    add_count_stats(fulltext_stats, enrich_arxiv_fulltext(recent_papers[:max_summaries]))
+    pending_summary_papers = [
+        paper
+        for paper in recent_papers[:max_summaries]
+        if str(paper.get("id", "")) not in summaries_by_id
+    ]
+    summaries_by_id.update(summarize_papers(build_summary_jobs(topics_by_id, pending_summary_papers)))
 
     for index, paper in enumerate(recent_papers):
         paper_id = str(paper.get("id", ""))
@@ -2011,7 +2250,12 @@ def collect(
             paper["chinese_summary"] = fallback_summary(paper, paper["best_match"])
 
     daily_merged_papers, daily_retention_stats = merge_with_retained_papers(
-        recent_papers, existing_payload, now, recent_history_days, liked_set=liked_set
+        recent_papers,
+        existing_payload,
+        now,
+        recent_history_days,
+        liked_set=liked_set,
+        disliked_set=disliked_set,
     )
     daily_merged_papers.sort(key=lambda p: (p["best_match"]["score"], paper_activity_datetime(p)), reverse=True)
 
@@ -2027,6 +2271,7 @@ def collect(
         "min_daily_papers": min_daily_papers,
         "filtered_low_relevance_count": filtered_low_relevance,
         "filtered_wrong_category_count": filtered_wrong_category,
+        "filtered_disliked_count": filtered_disliked,
         "arxiv_category_filter": list(arxiv_category_filter) if arxiv_category_filter else [],
         "days": days,
         "collection_mode": collection_mode,
@@ -2037,8 +2282,12 @@ def collect(
         "source_stats": source_stats,
         "llm_enabled": llm_enabled(),
         "llm_concurrency": int(os.getenv("LLM_CONCURRENCY", "2")),
+        "llm_rerank_before_selection": llm_rerank_enabled,
+        "llm_rerank_pool_size": llm_rerank_pool_size,
+        **fulltext_stats,
         "preferences_active": bool(preferences),
         "preference_liked_count": int(preferences.get("liked_count") or 0),
+        "disliked_count": len(disliked_set),
         "recent_history_days": recent_history_days,
         "successful_fetches": successful_fetches,
         "failed_fetches": failed_fetches,

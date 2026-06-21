@@ -11,15 +11,19 @@ from scripts.collect_papers import (
     SourceConfig,
     Topic,
     apply_negative_penalty,
+    arxiv_html_url,
+    arxiv_keyword_queries_for_topic,
     arxiv_query_for_topic,
     arxiv_retry_wait_seconds,
     category_score,
     collect,
     collection_cutoff,
     has_meaningful_summary,
+    html_document_to_text,
     is_relevant_enough,
     keyword_score,
     learn_preferences,
+    load_dislikes,
     load_preferences,
     merge_config,
     merge_with_retained_papers,
@@ -88,6 +92,12 @@ class CollectorTest(unittest.TestCase):
             "CUSTOM_FEED_BEARER_TOKEN",
             "ENABLE_SEMANTIC_SCHOLAR",
             "ARXIV_QUERY_MODE",
+            "ARXIV_KEYWORD_QUERY_CHUNKS",
+            "ARXIV_KEYWORD_CHUNK_SIZE",
+            "ENABLE_ARXIV_HTML_ENRICHMENT",
+            "ARXIV_HTML_MAX_PAPERS",
+            "LLM_RERANK_BEFORE_SELECTION",
+            "LLM_RERANK_POOL",
             "MIN_DAILY_PAPERS",
             "DAILY_BACKFILL_DAYS",
             "MIN_KEYWORD_MATCH_SCORE",
@@ -189,6 +199,32 @@ class CollectorTest(unittest.TestCase):
         self.assertEqual(paper["seed_topic"], "motivic")
         self.assertEqual(paper["authors"], ["Ada Example"])
 
+    def test_arxiv_keyword_queries_can_use_multiple_chunks(self) -> None:
+        topic = Topic(
+            "motivic",
+            "Motivic",
+            "",
+            ["one", "two", "three", "four", "five"],
+            ["math.AG"],
+        )
+        os.environ["ARXIV_KEYWORD_CHUNK_SIZE"] = "2"
+        os.environ["ARXIV_KEYWORD_QUERY_CHUNKS"] = "2"
+
+        queries = arxiv_keyword_queries_for_topic(topic)
+
+        self.assertEqual(len(queries), 2)
+        self.assertIn('all:"one"', queries[0])
+        self.assertIn('all:"two"', queries[0])
+        self.assertIn('all:"three"', queries[1])
+        self.assertNotIn('all:"five"', " ".join(queries))
+
+    def test_arxiv_html_helpers_extract_plain_text(self) -> None:
+        paper = make_paper("2606.14494v1", "Title")
+        self.assertEqual(arxiv_html_url(paper), "https://ar5iv.labs.arxiv.org/html/2606.14494")
+
+        text = html_document_to_text("<html><style>.x{}</style><body><h1>Title</h1><p>Useful proof.</p></body></html>")
+        self.assertEqual(text, "Title Useful proof.")
+
     def test_openalex_abstract_reconstruction(self) -> None:
         abstract = openalex_abstract_text(
             {"abstract_inverted_index": {"motivic": [1], "Fast": [0], "spectra": [2]}}
@@ -253,6 +289,13 @@ class CollectorTest(unittest.TestCase):
             path.write_text("{bad", encoding="utf-8")
             self.assertEqual(load_preferences(path), {})
 
+    def test_load_dislikes_supports_backend_feedback_file(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "dislikes.json"
+            path.write_text(json.dumps({"dislikes": {"paper-a": {"dismissed_at": "now"}, "paper-b": False}}), encoding="utf-8")
+
+            self.assertEqual(load_dislikes(path), {"paper-a"})
+
     def test_score_has_smooth_recency_and_bounded_bridge(self) -> None:
         topic = Topic(
             "motivic_k_theory",
@@ -309,6 +352,7 @@ class CollectorTest(unittest.TestCase):
     def test_merge_retains_relevant_recent_and_liked_papers(self) -> None:
         now = dt.datetime(2026, 6, 12, tzinfo=UTC)
         high = make_paper("high", "High", level="high", score=0.8)
+        disliked_high = make_paper("disliked-high", "Disliked High", level="high", score=0.8)
         recent_low = make_paper("recent", "Recent", level="low", score=0.2)
         recent_low["first_seen_at"] = "2026-06-10T00:00:00+00:00"
         liked_old = make_paper(
@@ -329,7 +373,7 @@ class CollectorTest(unittest.TestCase):
         stale["first_seen_at"] = "2025-01-01T00:00:00+00:00"
         existing = {
             "generated_at_iso": "2026-06-11T00:00:00+00:00",
-            "papers": [high, recent_low, liked_old, stale],
+            "papers": [high, disliked_high, recent_low, liked_old, stale],
         }
 
         merged, stats = merge_with_retained_papers(
@@ -338,9 +382,11 @@ class CollectorTest(unittest.TestCase):
             now,
             recent_history_days=30,
             liked_set={"liked"},
+            disliked_set={"disliked-high"},
         )
         self.assertEqual({paper["id"] for paper in merged}, {"high", "recent", "liked"})
         self.assertEqual(stats["dropped_low_relevance_count"], 1)
+        self.assertEqual(stats["dropped_disliked_count"], 1)
 
     def test_storage_trim_never_removes_liked_papers(self) -> None:
         payload = {

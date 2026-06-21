@@ -1,0 +1,54 @@
+name: Schedule Probe
+
+on:
+  schedule:
+    # Probe GitHub Actions queue delay before the real 09:00 collector.
+    - cron: '0 21 * * *'  # 05:00 Asia/Shanghai
+    - cron: '0 22 * * *'  # 06:00 Asia/Shanghai
+    - cron: '0 23 * * *'  # 07:00 Asia/Shanghai
+    - cron: '0 0 * * *'   # 08:00 Asia/Shanghai
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Record schedule probe
+        run: >-
+          python3 scripts/record_schedule_probe.py
+          --output-dir web/data/schedule-probe
+          --schedule "${{ github.event.schedule }}"
+          --event-name "${{ github.event_name }}"
+          --workflow "${{ github.workflow }}"
+          --repository "${{ github.repository }}"
+          --server-url "${{ github.server_url }}"
+          --run-id "${{ github.run_id }}"
+          --run-attempt "${{ github.run_attempt }}"
+          --actor "${{ github.actor }}"
+
+      - name: Commit probe record
+        run: |
+          git config user.name "paper-bot"
+          git config user.email "bot@paper-daily.local"
+          git add web/data/schedule-probe/
+          if git diff --staged --quiet; then
+            echo "No schedule probe record changed"
+            exit 0
+          fi
+          git commit -m "data: schedule probe $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          for attempt in 1 2 3; do
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            if git push; then
+              exit 0
+            fi
+            echo "Push failed, retrying (${attempt}/3)"
+            sleep $((attempt * 10))
+          done
+          exit 1

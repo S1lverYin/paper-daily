@@ -52,6 +52,7 @@ Settings -> Pages -> Build and deployment -> Source
 - 关键词优先写英文短语，具体短语比单个泛词更有效。
 - 每个方向先保留 5 到 15 个高质量关键词。
 - `arxiv_categories_whitelist` 是全局硬过滤；不确定时可以省略。
+- 定时任务会同时抓取主题关键词和主题分类中的近期论文，再使用完整关键词表评分，避免较靠后的关键词对应论文在抓取阶段遗漏。
 - `negative_terms` 是可选的降权词典，只应填写当前研究方向明确不需要的领域词。
 
 ### 3. 配置模型 API
@@ -66,7 +67,7 @@ Settings -> Pages -> Build and deployment -> Source
 | Secret | `OPENAI_API_KEY` | OpenAI API Key |
 | Secret | `LLM_API_KEY` | 其他 OpenAI-compatible 服务 |
 | Variable | `LLM_BASE_URL` | 自定义兼容接口地址 |
-| Variable | `LLM_MODEL` | 自定义模型名 |
+| Variable | `LLM_MODEL` | 自定义模型名；使用 DeepSeek 时默认为 `deepseek-v4-flash` |
 
 三种 Key 只需配置一种。不要把 Key 写进代码、Issue 或仓库文件。
 
@@ -81,6 +82,8 @@ Actions -> Paper Daily -> Run workflow
 首次可以把 `lookback_days` 设为 `7`。之后 workflow 默认每天北京时间 09:03 运行，并从上次成功生成时间开始增量采集。
 
 ## 推荐机制
+
+完整的评分公式、偏好学习、多样性重排序和历史保留规则见 [算法说明](ALGORITHM.md)。
 
 基础分由三部分组成：
 
@@ -110,7 +113,7 @@ base_score =
 
 网页收藏保存在浏览器 `localStorage`，不会要求把 GitHub Token 暴露给静态网页。
 
-后端偏好学习读取 `web/data/likes.json`。当其中至少有 3 篇收藏论文时，采集器会生成 `web/data/preferences.json`；下一次运行会把这些偏好用于评分。`likes.json` 可由可信的私有自动化或手动流程更新，不能通过公开 GitHub Pages 安全写回仓库。
+后端偏好学习读取 `web/data/likes.json`。当其中至少有 3 篇收藏论文时，采集器会生成 `web/data/preferences.json`；下一次运行会把这些偏好用于评分。`likes.json` 和 `dislikes.json` 可由可信的私有自动化或手动流程更新，不能通过公开 GitHub Pages 安全写回仓库。
 
 偏好学习使用“收藏论文中的文档频率”与“全部论文中的背景频率”对比，避免某个词在单篇摘要里重复出现就被误判为偏好。
 
@@ -118,9 +121,17 @@ base_score =
 
 - `web/data/papers.json`：页面使用的论文数据。
 - `web/data/likes.json`：供后端学习使用的收藏 ID。
+- `web/data/dislikes.json`：供后端过滤使用的“不感兴趣”论文 ID。
 - `web/data/preferences.json`：学习到的偏好。
+- `web/data/schedule-probe/`：GitHub Actions 05:00-09:00 排队延迟探针结果。
 - 收藏论文不会被存储裁剪删除；如果收藏数量本身超过上限，数据文件会保留收藏并报告 `storage_limit_exceeded_by_likes`。
 - 当所有来源都失败时，已有论文数据会被保留。
+
+分析 GitHub Actions 排队时间：
+
+```bash
+python3 scripts/analyze_schedule_probe.py
+```
 
 默认值：
 
