@@ -1,6 +1,6 @@
 {
-  "generated_at": "Sat, 04 Jul 2026 04:26:28 +0000",
-  "generated_at_iso": "2026-07-04T04:26:28.063587+00:00",
+  "generated_at": "Sun, 05 Jul 2026 04:47:23 +0000",
+  "generated_at_iso": "2026-07-05T04:47:23.106717+00:00",
   "config_source": "file",
   "topics": [
     {
@@ -571,7 +571,7 @@
       },
       "first_seen_at": "2026-07-04T04:26:28.063587+00:00",
       "last_seen_at": "2026-07-04T04:26:28.063587+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2606.23965v1",
@@ -977,7 +977,7 @@
       },
       "first_seen_at": "2026-07-04T04:26:28.063587+00:00",
       "last_seen_at": "2026-07-04T04:26:28.063587+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2606.27203v1",
@@ -1648,7 +1648,7 @@
       },
       "first_seen_at": "2026-07-04T04:26:28.063587+00:00",
       "last_seen_at": "2026-07-04T04:26:28.063587+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2606.25898v1",
@@ -2054,7 +2054,7 @@
       },
       "first_seen_at": "2026-07-04T04:26:28.063587+00:00",
       "last_seen_at": "2026-07-04T04:26:28.063587+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2606.29542v1",
@@ -3729,7 +3729,7 @@
       },
       "first_seen_at": "2026-07-04T04:26:28.063587+00:00",
       "last_seen_at": "2026-07-04T04:26:28.063587+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2606.26043v1",
@@ -4214,7 +4214,7 @@
       },
       "first_seen_at": "2026-07-04T04:26:28.063587+00:00",
       "last_seen_at": "2026-07-04T04:26:28.063587+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2606.28861v1",
@@ -5500,7 +5500,7 @@
       },
       "first_seen_at": "2026-07-04T04:26:28.063587+00:00",
       "last_seen_at": "2026-07-04T04:26:28.063587+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2606.26802v1",
@@ -7550,7 +7550,7 @@
       },
       "first_seen_at": "2026-07-04T04:26:28.063587+00:00",
       "last_seen_at": "2026-07-04T04:26:28.063587+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2606.25060v1",
@@ -8082,7 +8082,7 @@
       },
       "first_seen_at": "2026-07-04T04:26:28.063587+00:00",
       "last_seen_at": "2026-07-04T04:26:28.063587+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2606.23807v1",
@@ -9091,7 +9091,7 @@
       },
       "first_seen_at": "2026-07-04T04:26:28.063587+00:00",
       "last_seen_at": "2026-07-04T04:26:28.063587+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2606.29688v1",
@@ -9491,7 +9491,7 @@
       },
       "first_seen_at": "2026-07-04T04:26:28.063587+00:00",
       "last_seen_at": "2026-07-04T04:26:28.063587+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2606.27893v1",
@@ -9623,137 +9623,6 @@
       },
       "first_seen_at": "2026-06-29T05:21:16.108922+00:00",
       "last_seen_at": "2026-06-29T05:21:16.108922+00:00",
-      "retained_from_previous_run": true
-    },
-    {
-      "id": "2606.22587v1",
-      "source": "arXiv",
-      "title": "Jacobian algebras and variation of hyperplane sections",
-      "authors": [
-        "Giovanna Ilardi",
-        "Abbas Nasrollah Nejad",
-        "Saeed Tafazolian"
-      ],
-      "summary": "We study the variation in moduli of hyperplane sections of a hypersurface $V(f)\\subseteq \\mathbf P^n$ with at most isolated singularities. Using the Milnor algebra $M(f)$, we give an infinitesimal quotient criterion for the hyperplane-section map $Φ(f):(\\mathbf P^n)^*\\dashrightarrow M(d,n-1)$ to be generically finite onto its image. The passage from the infinitesimal quotient to the coarse moduli space is justified by a local GIT slice argument. Our approach gives a Jacobian-algebraic extension of the Beauville--Patel--Riedl--Tseng theory from smooth hypersurfaces to hypersurfaces with isolated singularities. In the smooth case it recovers the Lefschetz criterion and, using recent weak Lefschetz results, gives generic finiteness for $n\\geq 3$ in the range $d\\geq n+2$. In the singular case a new obstruction appears: a linear Jacobian syzygy, equivalently, for non-cones, a positive-dimensional projective automorphism group. After this obstruction is excluded, maximal infinitesimal variation is governed by the injectivity of the critical Lefschetz map $\\ell:M(f)_{d-1}\\to M(f)_d$. We apply the criterion to plane curves, surfaces in $\\mathbf P^3$, and hypersurfaces admitting singular hyperplane sections, obtaining new criteria involving nodal sections and an application to the Schoen quintic threefold.",
-      "published": "2026-06-21T16:49:57Z",
-      "updated": "2026-06-21T16:49:57Z",
-      "paper_url": "http://arxiv.org/abs/2606.22587v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.22587v1",
-      "categories": [
-        "math.AG"
-      ],
-      "seed_topic": "motivic_k_theory",
-      "matches": [
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "score": 0.522,
-          "base_score": 0.474,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.048,
-          "level": "medium",
-          "reason": "关键词命中：moduli space、Proj；arXiv 分类重合：math.AG；时效加分 +0.05",
-          "keyword_hits": [
-            "moduli space",
-            "Proj"
-          ]
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "score": 0.241,
-          "base_score": 0.193,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.048,
-          "level": "low",
-          "reason": "arXiv 分类重合：math.AG；时效加分 +0.05",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "score": 0.24,
-          "base_score": 0.192,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.048,
-          "level": "low",
-          "reason": "arXiv 分类重合：math.AG；时效加分 +0.05",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "score": 0.057,
-          "base_score": 0.009,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.048,
-          "level": "low",
-          "reason": "时效加分 +0.05",
-          "keyword_hits": []
-        }
-      ],
-      "best_match": {
-        "topic_id": "algebraic_geometry",
-        "topic_name": "Algebraic Geometry",
-        "score": 0.522,
-        "base_score": 0.474,
-        "bridge_bonus": 0.0,
-        "preference_bonus": 0.0,
-        "recency_bonus": 0.048,
-        "level": "medium",
-        "reason": "关键词命中：moduli space、Proj；arXiv 分类重合：math.AG；时效加分 +0.05",
-        "keyword_hits": [
-          "moduli space",
-          "Proj"
-        ]
-      },
-      "top_labels": [
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "base_score": 0.474,
-          "score": 0.522,
-          "level": "medium",
-          "keyword_hits": [
-            "moduli space",
-            "Proj"
-          ]
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "base_score": 0.193,
-          "score": 0.241,
-          "level": "low",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "base_score": 0.192,
-          "score": 0.24,
-          "level": "low",
-          "keyword_hits": []
-        }
-      ],
-      "backfilled_from_recent_arxiv": true,
-      "newly_discovered_from_recent_arxiv": true,
-      "fulltext_excerpt": "[2606.22587] Jacobian algebras and variation of hyperplane sections --> Mathematics > Algebraic Geometry arXiv:2606.22587 (math) [Submitted on 21 Jun 2026] Title: Jacobian algebras and variation of hyperplane sections Authors: Giovanna Ilardi , Abbas Nasrollah Nejad , Saeed Tafazolian View a PDF of the paper titled Jacobian algebras and variation of hyperplane sections, by Giovanna Ilardi and 1 other authors View PDF HTML (experimental) Abstract: We study the variation in moduli of hyperplane sections of a hypersurface $V(f)\\subseteq \\mathbf P^n$ with at most isolated singularities. Using the Milnor algebra $M(f)$, we give an infinitesimal quotient criterion for the hyperplane-section map $\\Phi(f):(\\mathbf P^n)^*\\dashrightarrow M(d,n-1)$ to be generically finite onto its image. The passage from the infinitesimal quotient to the coarse moduli space is justified by a local GIT slice argument. Our approach gives a Jacobian-algebraic extension of the Beauville--Patel--Riedl--Tseng theory from smooth hypersurfaces to hypersurfaces with isolated singularities. In the smooth case it recovers the Lefschetz criterion and, using recent weak Lefschetz results, gives generic finiteness for $n\\geq 3$ in the range $d\\geq n+2$. In the singular case a new obstruction appears: a linear Jacobian syzygy, equivalently, for non-cones, a positive-dimensional projective automorphism group. After this obstruction is excluded, maximal infinitesimal variation is governed by the injectivity of the critical Lefschetz map $\\ell:M(f)_{d-1}\\to M(f)_d$. We apply the criterion to plane curves, surfaces in $\\mathbf P^3$, and hypersurfaces admitting singular hyperplane sections, obtaining new criteria involving nodal sections and an application to the Schoen quintic threefold. Subjects: Algebraic Geometry (math.AG) Cite as: arXiv:2606.22587 [math.AG] (or arXiv:2606.22587v1 [math.AG] for this version) https://doi.org/10.48550/arXiv.2606.22587 Focus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: Giovanna Ilardi Prof. [ view email ] [v1] Sun, 21 Jun 2026 16:49:57 UTC (21 KB) Full-text links: Access Paper: View a PDF of the paper titled Jacobian algebras and variation of hyperplane sections, by Giovanna Ilardi and 1 other authors View PDF HTML (experimental) TeX Source view license Current browse context: math.AG < prev | next > new | recent | 2026-06 Change to browse by: math References & Citations NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
-      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2606.22587",
-      "chinese_summary": {
-        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
-        "method": "We study the variation in moduli of hyperplane sections of a hypersurface $V(f)\\subseteq \\mathbf P^n$ with at most isolated singularities.",
-        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
-        "evidence": "来源摘要可在论文原文中核验。",
-        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
-        "why_relevant": "关键词命中：moduli space、Proj；arXiv 分类重合：math.AG；时效加分 +0.05"
-      },
-      "first_seen_at": "2026-06-23T04:52:56.084538+00:00",
-      "last_seen_at": "2026-06-23T04:52:56.084538+00:00",
       "retained_from_previous_run": true
     },
     {
@@ -10677,7 +10546,7 @@
       },
       "first_seen_at": "2026-07-04T04:26:28.063587+00:00",
       "last_seen_at": "2026-07-04T04:26:28.063587+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2607.00130v1",
@@ -10947,151 +10816,6 @@
       "retained_from_previous_run": true
     },
     {
-      "id": "2606.22323v1",
-      "source": "arXiv",
-      "title": "Bloch's conjecture for equivalences between twisted abelian surfaces and applications",
-      "authors": [
-        "Zaiyuan Chen",
-        "Zhiyuan Li",
-        "Ruxuan Zhang"
-      ],
-      "summary": "The Beauville--Voisin conjecture predicts a canonical descending filtration on the Chow group of zero-cycles of a hyperkähler variety, opposite to the conjectural Bloch--Beilinson filtration. A basic test for such filtrations is a Bloch-type principle: the action on zero-cycles should be governed by the action on the holomorphic symplectic form. While this principle has been verified in several cases of hyperkähler varieties of $\\mathrm{K3}^{[n]}$-type, the $\\mathrm{Kum}_n$-type case remains much less understood. In this paper, we study this problem through twisted abelian surfaces and their associated $\\mathrm{Kum}_n$-type varieties. We first construct a natural action of autoequivalences of twisted abelian surfaces on the Albanese kernel and prove Bloch's conjecture for all (anti-)symplectic autoequivalences. As an application, we prove the corresponding Bloch conjecture for symplectic birational automorphisms of twisted modular $\\mathrm{Kum}_n$-type varieties; in particular, this applies to those admitting a birational Lagrangian fibration. Finally, we introduce and study a Shen--Yin--Zhao type filtration on twisted modular varieties and compare it with Voisin's filtration in the sixfold case. We also establish the anti-symplectic Bloch conjecture for twisted modular $\\mathrm{Kum}_3$-type varieties.",
-      "published": "2026-06-21T03:48:22Z",
-      "updated": "2026-06-21T03:48:22Z",
-      "paper_url": "http://arxiv.org/abs/2606.22323v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.22323v1",
-      "categories": [
-        "math.AG"
-      ],
-      "seed_topic": "motivic_k_theory",
-      "matches": [
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "score": 0.51,
-          "base_score": 0.463,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.047,
-          "level": "medium",
-          "reason": "关键词命中：Chow group、variety；arXiv 分类重合：math.AG；时效加分 +0.05",
-          "keyword_hits": [
-            "Chow group",
-            "variety"
-          ],
-          "llm_reason": "论文涉及代数几何的核心对象：Chow群、零循环、模空间（Kum_n型变体）、自等价等，与研究方向中的Chow群、模空间、变换等内容直接相关；arXiv分类math.AG完全匹配。"
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "score": 0.247,
-          "base_score": 0.188,
-          "bridge_bonus": 0.012,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.047,
-          "level": "low",
-          "reason": "arXiv 分类重合：math.AG；homotopy ↔ K-theory；时效加分 +0.05",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "score": 0.246,
-          "base_score": 0.199,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.047,
-          "level": "low",
-          "reason": "arXiv 分类重合：math.AG；时效加分 +0.05",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "score": 0.198,
-          "base_score": 0.139,
-          "bridge_bonus": 0.012,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.047,
-          "level": "low",
-          "reason": "关键词命中：fibration；homotopy ↔ K-theory；时效加分 +0.05",
-          "keyword_hits": [
-            "fibration"
-          ]
-        }
-      ],
-      "best_match": {
-        "topic_id": "algebraic_geometry",
-        "topic_name": "Algebraic Geometry",
-        "score": 0.51,
-        "base_score": 0.463,
-        "bridge_bonus": 0.0,
-        "preference_bonus": 0.0,
-        "recency_bonus": 0.047,
-        "level": "medium",
-        "reason": "关键词命中：Chow group、variety；arXiv 分类重合：math.AG；时效加分 +0.05",
-        "keyword_hits": [
-          "Chow group",
-          "variety"
-        ],
-        "llm_reason": "论文涉及代数几何的核心对象：Chow群、零循环、模空间（Kum_n型变体）、自等价等，与研究方向中的Chow群、模空间、变换等内容直接相关；arXiv分类math.AG完全匹配。"
-      },
-      "top_labels": [
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "base_score": 0.463,
-          "score": 0.51,
-          "level": "medium",
-          "keyword_hits": [
-            "Chow group",
-            "variety"
-          ]
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "base_score": 0.188,
-          "score": 0.247,
-          "level": "low",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "base_score": 0.199,
-          "score": 0.246,
-          "level": "low",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "base_score": 0.139,
-          "score": 0.198,
-          "level": "low",
-          "keyword_hits": [
-            "fibration"
-          ]
-        }
-      ],
-      "backfilled_from_recent_arxiv": true,
-      "newly_discovered_from_recent_arxiv": true,
-      "fulltext_excerpt": "[2606.22323] Bloch's conjecture for equivalences between twisted abelian surfaces and applications --> Mathematics > Algebraic Geometry arXiv:2606.22323 (math) [Submitted on 21 Jun 2026] Title: Bloch's conjecture for equivalences between twisted abelian surfaces and applications Authors: Zaiyuan Chen , Zhiyuan Li , Ruxuan Zhang View a PDF of the paper titled Bloch's conjecture for equivalences between twisted abelian surfaces and applications, by Zaiyuan Chen and 2 other authors View PDF HTML (experimental) Abstract: The Beauville--Voisin conjecture predicts a canonical descending filtration on the Chow group of zero-cycles of a hyperkähler variety, opposite to the conjectural Bloch--Beilinson filtration. A basic test for such filtrations is a Bloch-type principle: the action on zero-cycles should be governed by the action on the holomorphic symplectic form. While this principle has been verified in several cases of hyperkähler varieties of $\\mathrm{K3}^{[n]}$-type, the $\\mathrm{Kum}_n$-type case remains much less understood. In this paper, we study this problem through twisted abelian surfaces and their associated $\\mathrm{Kum}_n$-type varieties. We first construct a natural action of autoequivalences of twisted abelian surfaces on the Albanese kernel and prove Bloch's conjecture for all (anti-)symplectic autoequivalences. As an application, we prove the corresponding Bloch conjecture for symplectic birational automorphisms of twisted modular $\\mathrm{Kum}_n$-type varieties; in particular, this applies to those admitting a birational Lagrangian fibration. Finally, we introduce and study a Shen--Yin--Zhao type filtration on twisted modular varieties and compare it with Voisin's filtration in the sixfold case. We also establish the anti-symplectic Bloch conjecture for twisted modular $\\mathrm{Kum}_3$-type varieties. Comments: 44 pages, comments are welcome! Subjects: Algebraic Geometry (math.AG) MSC classes: 14C25, 14F08, 14J42, 14K05 Cite as: arXiv:2606.22323 [math.AG] (or arXiv:2606.22323v1 [math.AG] for this version) https://doi.org/10.48550/arXiv.2606.22323 Focus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: Zaiyuan Chen [ view email ] [v1] Sun, 21 Jun 2026 03:48:22 UTC (51 KB) Full-text links: Access Paper: View a PDF of the paper titled Bloch's conjecture for equivalences between twisted abelian surfaces and applications, by Zaiyuan Chen and 2 other authors View PDF HTML (experimental) TeX Source view license Current browse context: math.AG < prev | next > new | recent | 2026-06 Change to browse by: math References & Citations NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
-      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2606.22323",
-      "chinese_summary": {
-        "problem": "验证超凯勒变体（特别是Kum_n型）上零循环Chow群的Beauville–Voisin猜想，通过研究扭曲阿贝尔曲面及其自等价对零循环的作用。",
-        "method": "构造扭曲阿贝尔曲面的自等价在Albanese核上的自然作用，并证明所有(反)辛自等价的Bloch猜想；将结果应用于扭曲模Kum_n型变体的辛双有理自同构，并引入Shen–Yin–Zhao型过滤与Voisin过滤进行比较。",
-        "innovation": "1. 首次将扭曲阿贝尔曲面的自等价与Albanese核的作用联系起来，并系统证明了(反)辛自等价的Bloch猜想；2. 将Bloch猜想推广到扭曲模Kum_n型变体的辛双有理自同构，特别是具有双有理Lagrangian纤维化的情形；3. 对扭曲模Kum_3型变体建立了反辛Bloch猜想。",
-        "evidence": "摘要中明确声明证明了所有(反)辛自等价的Bloch猜想，并将其应用于扭曲模Kum_n型变体的辛双有理自同构；在六维情形下比较了Shen–Yin–Zhao过滤与Voisin过滤。但未提供具体的理论推导或实验数据。",
-        "limitations": "论文仅针对扭曲阿贝尔曲面及其相关的Kum_n型变体，未覆盖更一般的超凯勒变体；部分结论（如与Voisin过滤的比较）仅针对六维情形，一般情形需进一步验证；Bloch猜想的完全证明依赖于全文细节。",
-        "why_relevant": "论文涉及代数几何的核心对象：Chow群、零循环、模空间（Kum_n型变体）、自等价等，与研究方向中的Chow群、模空间、变换等内容直接相关；arXiv分类math.AG完全匹配。"
-      },
-      "first_seen_at": "2026-06-23T04:52:56.084538+00:00",
-      "last_seen_at": "2026-06-23T04:52:56.084538+00:00",
-      "retained_from_previous_run": true
-    },
-    {
       "id": "2606.26791v1",
       "source": "arXiv",
       "title": "Groups of type $\\mathrm{E}_8$ over rings via TKK-algebras and their extremal elements",
@@ -11318,7 +11042,7 @@
       },
       "first_seen_at": "2026-07-04T04:26:28.063587+00:00",
       "last_seen_at": "2026-07-04T04:26:28.063587+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2606.29310v1",
@@ -11582,7 +11306,7 @@
       },
       "first_seen_at": "2026-07-04T04:26:28.063587+00:00",
       "last_seen_at": "2026-07-04T04:26:28.063587+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2606.27116v1",
@@ -11824,7 +11548,7 @@
       },
       "first_seen_at": "2026-07-04T04:26:28.063587+00:00",
       "last_seen_at": "2026-07-04T04:26:28.063587+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2606.25726v1",
@@ -13074,6 +12798,133 @@
       "retained_from_previous_run": true
     },
     {
+      "id": "2607.00282v1",
+      "source": "arXiv",
+      "title": "Critical Zeros and Unconditional Mean Value Theorems for twisted $\\hbox{PGL}(2)$ and $\\hbox{PGL}(3)$ $\\mathrm{L}$-functions",
+      "authors": [
+        "Brian Conrey",
+        "Chung-Hang Kwan",
+        "Yongxiao Lin",
+        "Caroline L. Turnage-Butterbaugh"
+      ],
+      "summary": "Let $Π_{0}$ be a cuspidal automorphic representation of $\\mathrm{PGL}_{3}(\\mathbb{A}_{\\mathbb{Q}})$. In this paper, we use Levinson's method to prove that, as $Q\\to \\infty$, at least $1/9$ of the zeros of the $L$-functions $L(s, Π_{0}\\,\\times\\, χ)$ lie on the critical line, where $χ$ ranges over the family of primitive Dirichlet characters of conductor up to $Q$. This result is unconditional when $Π_{0}$ is self-dual, and otherwise holds under a mild condition. The key technical input is a new asymptotic formula with a power-saving error term for the mean square of the product of $L(s, Π_{0}\\times χ)$ and a Dirichlet polynomial with arbitrary coefficients in both the $T$- and $Q$-aspects for the range $Q^ε\\le T \\le Q^{1/3-ε}$. When $T=Q^ε$, our asymptotic formula allows Dirichlet polynomials of length $θ<1/2-ε$; when $θ=0$, it gives a strong error term of size $O_ε(Q^{7/4+ε})$. Furthermore, our result provides evidence for the CFKRS conjectures for large twists and large vertical shifts. We also obtain corresponding results for $\\mathrm{PGL}_{2}(\\mathbb{A}_{\\mathbb{Q}})$, which are fully unconditional, quantitatively stronger, and also appear to be new. This work develops a refined, flexible, and uniform version of the Asymptotic Large Sieve for $L$-functions that does not require any unproven progress toward the Generalized Ramanujan Conjecture. The arithmetic of $Π_{0}$ plays a crucial and delicate role in our argument. This work also makes extensive use of Mathematica to handle various elaborate Hecke algebra computations. Our mean value theorem is readily applicable to many other problems in analytic number theory.",
+      "published": "2026-07-01T00:13:25Z",
+      "updated": "2026-07-01T00:13:25Z",
+      "paper_url": "http://arxiv.org/abs/2607.00282v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.00282v1",
+      "categories": [
+        "math.NT"
+      ],
+      "seed_topic": "arithmetic_geometry",
+      "matches": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.474,
+          "base_score": 0.331,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.043,
+          "level": "medium",
+          "reason": "关键词命中：L-function；arXiv 分类重合：math.NT；时效加分 +0.04",
+          "keyword_hits": [
+            "L-function"
+          ],
+          "llm_reason": "论文研究 L 函数，该函数在算术几何中与模形式、自守表示及 Langlands 纲领紧密相关，但研究焦点为解析零点分布而非算术几何核心问题（如 Galois 表示、p-adic Hodge 理论、丢番图几何），故为中等相关，需人工复核。"
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.183,
+          "base_score": 0.14,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.043,
+          "level": "low",
+          "reason": "关键词命中：Spec；时效加分 +0.04",
+          "keyword_hits": [
+            "Spec"
+          ]
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.051,
+          "base_score": 0.008,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.043,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.049,
+          "base_score": 0.006,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.043,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "arithmetic_geometry",
+        "topic_name": "Arithmetic Geometry",
+        "score": 0.474,
+        "base_score": 0.331,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.043,
+        "level": "medium",
+        "reason": "关键词命中：L-function；arXiv 分类重合：math.NT；时效加分 +0.04",
+        "keyword_hits": [
+          "L-function"
+        ],
+        "llm_reason": "论文研究 L 函数，该函数在算术几何中与模形式、自守表示及 Langlands 纲领紧密相关，但研究焦点为解析零点分布而非算术几何核心问题（如 Galois 表示、p-adic Hodge 理论、丢番图几何），故为中等相关，需人工复核。"
+      },
+      "top_labels": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.331,
+          "score": 0.374,
+          "level": "low",
+          "keyword_hits": [
+            "L-function"
+          ]
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.14,
+          "score": 0.183,
+          "level": "low",
+          "keyword_hits": [
+            "Spec"
+          ]
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "fulltext_excerpt": "[2607.00282] Critical Zeros and Unconditional Mean Value Theorems for twisted $\\hbox{PGL}(2)$ and $\\hbox{PGL}(3)$ $\\mathrm{L}$-functions Skip to main content arXiv is now an independent nonprofit! Learn more × Search arXiv Press Enter to search · Advanced search --> Mathematics > Number Theory arXiv:2607.00282 (math) [Submitted on 1 Jul 2026] Title: Critical Zeros and Unconditional Mean Value Theorems for twisted $\\hbox{PGL}(2)$ and $\\hbox{PGL}(3)$ $\\mathrm{L}$-functions Authors: Brian Conrey , Chung-Hang Kwan , Yongxiao Lin , Caroline L. Turnage-Butterbaugh View a PDF of the paper titled Critical Zeros and Unconditional Mean Value Theorems for twisted $\\hbox{PGL}(2)$ and $\\hbox{PGL}(3)$ $\\mathrm{L}$-functions, by Brian Conrey and 3 other authors View PDF Abstract: Let $\\Pi_{0}$ be a cuspidal automorphic representation of $\\mathrm{PGL}_{3}(\\mathbb{A}_{\\mathbb{Q}})$. In this paper, we use Levinson's method to prove that, as $Q\\to \\infty$, at least $1/9$ of the zeros of the $L$-functions $L(s, \\Pi_{0}\\,\\times\\, \\chi)$ lie on the critical line, where $\\chi$ ranges over the family of primitive Dirichlet characters of conductor up to $Q$. This result is unconditional when $\\Pi_{0}$ is self-dual, and otherwise holds under a mild condition. The key technical input is a new asymptotic formula with a power-saving error term for the mean square of the product of $L(s, \\Pi_{0}\\times \\chi)$ and a Dirichlet polynomial with arbitrary coefficients in both the $T$- and $Q$-aspects for the range $Q^{\\epsilon}\\le T \\le Q^{1/3-\\epsilon}$. When $T=Q^{\\epsilon}$, our asymptotic formula allows Dirichlet polynomials of length $\\theta <1/2-\\epsilon$; when $\\theta=0$, it gives a strong error term of size $O_{\\epsilon}(Q^{7/4+\\epsilon})$. Furthermore, our result provides evidence for the CFKRS conjectures for large twists and large vertical shifts. We also obtain corresponding results for $\\mathrm{PGL}_{2}(\\mathbb{A}_{\\mathbb{Q}})$, which are fully unconditional, quantitatively stronger, and also appear to be new. This work develops a refined, flexible, and uniform version of the Asymptotic Large Sieve for $L$-functions that does not require any unproven progress toward the Generalized Ramanujan Conjecture. The arithmetic of $\\Pi_{0}$ plays a crucial and delicate role in our argument. This work also makes extensive use of Mathematica to handle various elaborate Hecke algebra computations. Our mean value theorem is readily applicable to many other problems in analytic number theory. Comments: 70 pages + Mathematica code Subjects: Number Theory (math.NT) MSC classes: 11M26, 11F66 Cite as: arXiv:2607.00282 [math.NT] (or arXiv:2607.00282v1 [math.NT] for this version) https://doi.org/10.48550/arXiv.2607.00282 Focus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: Chung-Hang Kwan [ view email ] [v1] Wed, 1 Jul 2026 00:13:25 UTC (108 KB) Full-text links: Access Paper: View a PDF of the paper titled Critical Zeros and Unconditional Mean Value Theorems for twisted $\\hbox{PGL}(2)$ and $\\hbox{PGL}(3)$ $\\mathrm{L}$-functions, by Brian Conrey and 3 other authors View PDF TeX Source view license Current browse context: math.NT < prev | next > new | recent | 2026-07 Change to browse by: math References & Citations NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
+      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2607.00282",
+      "chinese_summary": {
+        "problem": "研究扭曲 PGL(2) 和 PGL(3) L 函数的临界零点比例，并建立无条件的均值定理。",
+        "method": "采用 Levinson 方法，结合新开发的渐近大筛法（Asymptotic Large Sieve）处理 L 函数与 Dirichlet 多项式的均方，得到具有幂节省误差项的渐近公式；利用 Mathematica 进行 Hecke 代数计算。",
+        "innovation": "1. 对 PGL(3) 自守表示的扭曲 L 函数证明了至少 1/9 的零点位于临界线上，在自对偶情形下无条件；2. 建立了统一且灵活的均值定理，不依赖广义 Ramanujan 猜想的未证明进展；3. 得到了 PGL(2) 情形下更强且全新的无条件结果。",
+        "evidence": "摘要中给出了具体的误差项上界（如 O_ε(Q^{7/4+ε})）和范围条件，并提及使用 Mathematica 进行 Hecke 代数计算。",
+        "limitations": "需要阅读全文确认“温和条件”的具体含义，以及 Hecke 代数计算在算术几何领域内的可移植性。",
+        "why_relevant": "论文研究 L 函数，该函数在算术几何中与模形式、自守表示及 Langlands 纲领紧密相关，但研究焦点为解析零点分布而非算术几何核心问题（如 Galois 表示、p-adic Hodge 理论、丢番图几何），故为中等相关，需人工复核。"
+      },
+      "first_seen_at": "2026-07-05T04:47:23.106717+00:00",
+      "last_seen_at": "2026-07-05T04:47:23.106717+00:00",
+      "retained_from_previous_run": false
+    },
+    {
       "id": "2606.30772v1",
       "source": "arXiv",
       "title": "From a Pascal construction to the Burkhardt quartic",
@@ -13315,7 +13166,7 @@
       },
       "first_seen_at": "2026-07-04T04:26:28.063587+00:00",
       "last_seen_at": "2026-07-04T04:26:28.063587+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2606.30057v1",
@@ -13553,6 +13404,117 @@
       "first_seen_at": "2026-07-01T05:13:57.287040+00:00",
       "last_seen_at": "2026-07-01T05:13:57.287040+00:00",
       "retained_from_previous_run": true
+    },
+    {
+      "id": "2607.02239v1",
+      "source": "arXiv",
+      "title": "Cyclic Codes and Cyclically Covering Subspaces over Finite Fields",
+      "authors": [
+        "Yangcheng Li",
+        "Pingzhi Yuan"
+      ],
+      "summary": "Let \\(q\\) be a power of a prime \\(p\\), and let \\(n\\) be a positive integer. A subspace \\(U\\subseteq \\mathbb F_q^n\\) is called cyclically covering if the union of all its cyclic shifts covers \\(\\mathbb F_q^n\\), and \\(h_q(n)\\) denotes the maximum possible codimension of such a subspace. This paper studies cyclically covering subspaces via cyclic codes. We first prove that \\(h_q(n)=0\\) if and only if every nonzero cyclic code in \\(\\mathbb F_q^n\\) contains a full-weight codeword. We also relate \\(h_q(n)\\) to the maximum weights of cyclic codes. In particular, when \\(h_q(n)>0\\), we obtain sharp bounds for the maximum weight of cyclic codes without full-weight codewords and provide explicit examples attaining these bounds. Moreover, we study the number of cyclic codes containing no full-weight codeword. We determine this number completely over \\(\\mathbb F_2\\), and give lower bounds over \\(\\mathbb F_3\\). From this, we prove that if \\(q\\ge 3\\) is an odd prime and \\(m\\ge 4\\) is an integer, then \\(h_q\\left(\\frac{q^m+1}{2}\\right)>0\\).",
+      "published": "2026-07-02T14:35:01Z",
+      "updated": "2026-07-02T14:35:01Z",
+      "paper_url": "http://arxiv.org/abs/2607.02239v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.02239v1",
+      "categories": [
+        "math.NT"
+      ],
+      "seed_topic": "arithmetic_geometry",
+      "matches": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.469,
+          "base_score": 0.423,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "medium",
+          "reason": "关键词命中：finite field；arXiv 分类重合：math.NT；时效加分 +0.05",
+          "keyword_hits": [
+            "finite field"
+          ]
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.048,
+          "base_score": 0.002,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "low",
+          "reason": "时效加分 +0.05",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.048,
+          "base_score": 0.002,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "low",
+          "reason": "时效加分 +0.05",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.046,
+          "base_score": 0.0,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "low",
+          "reason": "时效加分 +0.05",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "arithmetic_geometry",
+        "topic_name": "Arithmetic Geometry",
+        "score": 0.469,
+        "base_score": 0.423,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.046,
+        "level": "medium",
+        "reason": "关键词命中：finite field；arXiv 分类重合：math.NT；时效加分 +0.05",
+        "keyword_hits": [
+          "finite field"
+        ]
+      },
+      "top_labels": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.423,
+          "score": 0.469,
+          "level": "medium",
+          "keyword_hits": [
+            "finite field"
+          ]
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "fulltext_excerpt": "[2607.02239] Cyclic Codes and Cyclically Covering Subspaces over Finite Fields Skip to main content arXiv is now an independent nonprofit! Learn more × Search arXiv Press Enter to search · Advanced search --> Mathematics > Number Theory arXiv:2607.02239 (math) [Submitted on 2 Jul 2026] Title: Cyclic Codes and Cyclically Covering Subspaces over Finite Fields Authors: Yangcheng Li , Pingzhi Yuan View a PDF of the paper titled Cyclic Codes and Cyclically Covering Subspaces over Finite Fields, by Yangcheng Li and Pingzhi Yuan View PDF HTML (experimental) Abstract: Let \\(q\\) be a power of a prime \\(p\\), and let \\(n\\) be a positive integer. A subspace \\(U\\subseteq \\mathbb F_q^n\\) is called cyclically covering if the union of all its cyclic shifts covers \\(\\mathbb F_q^n\\), and \\(h_q(n)\\) denotes the maximum possible codimension of such a subspace. This paper studies cyclically covering subspaces via cyclic codes. We first prove that \\(h_q(n)=0\\) if and only if every nonzero cyclic code in \\(\\mathbb F_q^n\\) contains a full-weight codeword. We also relate \\(h_q(n)\\) to the maximum weights of cyclic codes. In particular, when \\(h_q(n)>0\\), we obtain sharp bounds for the maximum weight of cyclic codes without full-weight codewords and provide explicit examples attaining these bounds. Moreover, we study the number of cyclic codes containing no full-weight codeword. We determine this number completely over \\(\\mathbb F_2\\), and give lower bounds over \\(\\mathbb F_3\\). From this, we prove that if \\(q\\ge 3\\) is an odd prime and \\(m\\ge 4\\) is an integer, then \\(h_q\\left(\\frac{q^m+1}{2}\\right)>0\\). Comments: 35 pages Subjects: Number Theory (math.NT) Cite as: arXiv:2607.02239 [math.NT] (or arXiv:2607.02239v1 [math.NT] for this version) https://doi.org/10.48550/arXiv.2607.02239 Focus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: Yangcheng Li [ view email ] [v1] Thu, 2 Jul 2026 14:35:01 UTC (27 KB) Full-text links: Access Paper: View a PDF of the paper titled Cyclic Codes and Cyclically Covering Subspaces over Finite Fields, by Yangcheng Li and Pingzhi Yuan View PDF HTML (experimental) TeX Source view license Current browse context: math.NT < prev | next > new | recent | 2026-07 Change to browse by: math References & Citations NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
+      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2607.02239",
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Let \\(q\\) be a power of a prime \\(p\\), and let \\(n\\) be a positive integer.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：finite field；arXiv 分类重合：math.NT；时效加分 +0.05"
+      },
+      "first_seen_at": "2026-07-05T04:47:23.106717+00:00",
+      "last_seen_at": "2026-07-05T04:47:23.106717+00:00",
+      "retained_from_previous_run": false
     },
     {
       "id": "2606.26660v1",
@@ -14400,7 +14362,7 @@
       },
       "first_seen_at": "2026-07-04T04:26:28.063587+00:00",
       "last_seen_at": "2026-07-04T04:26:28.063587+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2606.31123v1",
@@ -16857,7 +16819,7 @@
       },
       "first_seen_at": "2026-07-04T04:26:28.063587+00:00",
       "last_seen_at": "2026-07-04T04:26:28.063587+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2606.27749v1",
@@ -17123,7 +17085,7 @@
       },
       "first_seen_at": "2026-07-04T04:26:28.063587+00:00",
       "last_seen_at": "2026-07-04T04:26:28.063587+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2606.31894v1",
@@ -17383,239 +17345,6 @@
       "retained_from_previous_run": true
     },
     {
-      "id": "2606.22368v1",
-      "source": "arXiv",
-      "title": "Smoothability of the one-step loci with Hilbert functions $(1,5,6)$ and $(1,5,7)$",
-      "authors": [
-        "Chenyang Zhao"
-      ],
-      "summary": "Let $S = k[x_1, \\ldots, x_5]$, let $Q \\subset S_2$ be a subspace of codimension $r$, and set $I_Q = (Q) + \\mathfrak{m}^3$. Then $S/I_Q$ has Hilbert function $(1,5,r)$. The cases $r = 6, 7$ are exceptional in embedding dimension five: at a general member the tangent space to the Hilbert scheme is larger than the locus, so neither locus is a generically reduced elementary component. We prove instead that both loci are smoothable. The proof uses the Erman-Velasco method of smoothable regularity-two ideals. In degree two, the inverse system space coming from their smoothable family is, up to $\\mathrm{GL}_d$, spanned by quadrics $q(a) = \\sum_i a_i y_i^2 - (\\sum_i a_i y_i)^2$. For $d = 5$ and $e = 6, 7$ we prove, by a differential rank test over $\\mathbb{F}_{32003}$, that the associated map $\\mathrm{GL}_5 \\times (\\mathbb{A}^5)^e \\dashrightarrow \\mathrm{Gr}(e, \\mathrm{Sym}^2 k^5)$ is dominant. Hence a general one-step algebra with Hilbert function $(1,5,6)$ or $(1,5,7)$ is smoothable. By closedness, the whole translated one-step locus is contained in the smoothable component. It follows that these loci are not irreducible components of the Hilbert schemes $\\mathrm{Hilb}^{12}(\\mathbb{A}^5)$ and $\\mathrm{Hilb}^{13}(\\mathbb{A}^5)$. This settles these two embedding dimension five cases on the smoothable side of the Shafarevich gap problem.",
-      "published": "2026-06-21T07:36:17Z",
-      "updated": "2026-06-21T07:36:17Z",
-      "paper_url": "http://arxiv.org/abs/2606.22368v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.22368v1",
-      "categories": [
-        "math.AG",
-        "math.AC"
-      ],
-      "seed_topic": "motivic_k_theory",
-      "matches": [
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "score": 0.427,
-          "base_score": 0.38,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.047,
-          "level": "medium",
-          "reason": "关键词命中：Hilbert scheme；arXiv 分类重合：math.AG；时效加分 +0.05",
-          "keyword_hits": [
-            "Hilbert scheme"
-          ]
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "score": 0.236,
-          "base_score": 0.189,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.047,
-          "level": "low",
-          "reason": "arXiv 分类重合：math.AG；时效加分 +0.05",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "score": 0.235,
-          "base_score": 0.188,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.047,
-          "level": "low",
-          "reason": "arXiv 分类重合：math.AG；时效加分 +0.05",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "score": 0.054,
-          "base_score": 0.007,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.047,
-          "level": "low",
-          "reason": "时效加分 +0.05",
-          "keyword_hits": []
-        }
-      ],
-      "best_match": {
-        "topic_id": "algebraic_geometry",
-        "topic_name": "Algebraic Geometry",
-        "score": 0.427,
-        "base_score": 0.38,
-        "bridge_bonus": 0.0,
-        "preference_bonus": 0.0,
-        "recency_bonus": 0.047,
-        "level": "medium",
-        "reason": "关键词命中：Hilbert scheme；arXiv 分类重合：math.AG；时效加分 +0.05",
-        "keyword_hits": [
-          "Hilbert scheme"
-        ]
-      },
-      "top_labels": [
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "base_score": 0.38,
-          "score": 0.427,
-          "level": "medium",
-          "keyword_hits": [
-            "Hilbert scheme"
-          ]
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "base_score": 0.189,
-          "score": 0.236,
-          "level": "low",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "base_score": 0.188,
-          "score": 0.235,
-          "level": "low",
-          "keyword_hits": []
-        }
-      ],
-      "backfilled_from_recent_arxiv": true,
-      "newly_discovered_from_recent_arxiv": true,
-      "chinese_summary": {
-        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
-        "method": "Let $S = k[x_1, \\ldots, x_5]$, let $Q \\subset S_2$ be a subspace of codimension $r$, and set $I_Q = (Q) + \\mathfrak{m}^3$.",
-        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
-        "evidence": "来源摘要可在论文原文中核验。",
-        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
-        "why_relevant": "关键词命中：Hilbert scheme；arXiv 分类重合：math.AG；时效加分 +0.05"
-      },
-      "first_seen_at": "2026-06-23T04:52:56.084538+00:00",
-      "last_seen_at": "2026-06-23T04:52:56.084538+00:00",
-      "retained_from_previous_run": true
-    },
-    {
-      "id": "2606.22324v1",
-      "source": "arXiv",
-      "title": "On finiteness properties of the unramified Iwasawa module of a $\\mathbb{Z}_p$-extension with restricted ramification",
-      "authors": [
-        "Takuya Yanagisawa"
-      ],
-      "summary": "In the present article, we consider $\\mathbb{Z}_p$-extensions defined by restrictions on ramifications at $p$-adic primes. We study the finiteness, the existence of non-trivial finite submodules, and the triviality of the unramified Iwasawa modules of these $\\mathbb{Z}_p$-extensions. In addition, we give a new sufficient condition for Greenberg's Generalized Conjecture with some non-trivial concrete examples.",
-      "published": "2026-06-21T03:54:31Z",
-      "updated": "2026-06-21T03:54:31Z",
-      "paper_url": "http://arxiv.org/abs/2606.22324v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.22324v1",
-      "categories": [
-        "math.NT"
-      ],
-      "seed_topic": "arithmetic_geometry",
-      "matches": [
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "score": 0.426,
-          "base_score": 0.379,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.047,
-          "level": "medium",
-          "reason": "关键词命中：ramification；arXiv 分类重合：math.NT；时效加分 +0.05",
-          "keyword_hits": [
-            "ramification"
-          ]
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "score": 0.053,
-          "base_score": 0.006,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.047,
-          "level": "low",
-          "reason": "时效加分 +0.05",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "score": 0.053,
-          "base_score": 0.006,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.047,
-          "level": "low",
-          "reason": "时效加分 +0.05",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "score": 0.05,
-          "base_score": 0.003,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.047,
-          "level": "low",
-          "reason": "时效加分 +0.05",
-          "keyword_hits": []
-        }
-      ],
-      "best_match": {
-        "topic_id": "arithmetic_geometry",
-        "topic_name": "Arithmetic Geometry",
-        "score": 0.426,
-        "base_score": 0.379,
-        "bridge_bonus": 0.0,
-        "preference_bonus": 0.0,
-        "recency_bonus": 0.047,
-        "level": "medium",
-        "reason": "关键词命中：ramification；arXiv 分类重合：math.NT；时效加分 +0.05",
-        "keyword_hits": [
-          "ramification"
-        ]
-      },
-      "top_labels": [
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "base_score": 0.379,
-          "score": 0.426,
-          "level": "medium",
-          "keyword_hits": [
-            "ramification"
-          ]
-        }
-      ],
-      "backfilled_from_recent_arxiv": true,
-      "newly_discovered_from_recent_arxiv": true,
-      "chinese_summary": {
-        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
-        "method": "In the present article, we consider $\\mathbb{Z}_p$-extensions defined by restrictions on ramifications at $p$-adic primes.",
-        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
-        "evidence": "来源摘要可在论文原文中核验。",
-        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
-        "why_relevant": "关键词命中：ramification；arXiv 分类重合：math.NT；时效加分 +0.05"
-      },
-      "first_seen_at": "2026-06-23T04:52:56.084538+00:00",
-      "last_seen_at": "2026-06-23T04:52:56.084538+00:00",
-      "retained_from_previous_run": true
-    },
-    {
       "id": "2607.01703v1",
       "source": "arXiv",
       "title": "On Euclidean systems of ray classes",
@@ -17721,131 +17450,6 @@
       },
       "first_seen_at": "2026-07-04T04:26:28.063587+00:00",
       "last_seen_at": "2026-07-04T04:26:28.063587+00:00",
-      "retained_from_previous_run": false
-    },
-    {
-      "id": "2606.22368v2",
-      "source": "arXiv",
-      "title": "The one-step Shafarevich gap in embedding dimension five",
-      "authors": [
-        "Chenyang Zhao"
-      ],
-      "summary": "Let $k$ be an algebraically closed field of characteristic zero and let $S=k[x_1,\\ldots,x_5]$ with maximal ideal $\\mathfrak m=(x_1,\\ldots,x_5)$. For a codimension-$r$ subspace $Q\\subset S_2$, set $I_Q=(Q)+\\mathfrak m^3$. Then $S/I_Q$ has Hilbert function $(1,5,r)$. We prove that the translated one-step locus defined by these ideals is contained in the smoothable component for every $r\\in{6,7,\\ldots,15}$. We introduce a finite field differential rank certificate proving dominance, for $6\\le r\\le 14$, of the Erman--Velasco map $\\operatorname{GL}*5\\times (\\mathbb A^5)^r\\dashrightarrow \\operatorname{Gr}(r,\\operatorname{Sym}^2 k^5)$, $(g,a^{(1)},\\ldots,a^{(r)})\\mapsto g\\cdot\\langle q(a^{(1)}),\\ldots,q(a^{(r)})\\rangle$, where $q(a)=\\sum*{i=1}^5 a_i y_i^2-\\left(\\sum_{i=1}^5 a_i y_i\\right)^2$. The endpoint $r=15$ is handled separately by a flat degeneration of $21$ general reduced points to the fat point defined by $\\mathfrak m^3$. Combined with the known small cases and with the known elementary components for $r=3$ and $r=5$, this gives the complete one-step classification in embedding dimension five: the one-step loci with Hilbert function $(1,5,r)$ are smoothable for all $r\\neq 3,5$, and the cases $r=3,5$ are precisely the generically reduced elementary component cases. In this sense the one-step Shafarevich gap in embedding dimension five is completely resolved.",
-      "published": "2026-06-21T07:36:17Z",
-      "updated": "2026-06-25T03:31:37Z",
-      "paper_url": "http://arxiv.org/abs/2606.22368v2",
-      "pdf_url": "https://arxiv.org/pdf/2606.22368v2",
-      "categories": [
-        "math.AG",
-        "math.AC"
-      ],
-      "seed_topic": "algebraic_geometry",
-      "matches": [
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "score": 0.425,
-          "base_score": 0.377,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.048,
-          "level": "medium",
-          "reason": "关键词命中：finite field；arXiv 分类重合：math.AG；时效加分 +0.05",
-          "keyword_hits": [
-            "finite field"
-          ]
-        },
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "score": 0.239,
-          "base_score": 0.191,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.048,
-          "level": "low",
-          "reason": "arXiv 分类重合：math.AG；时效加分 +0.05",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "score": 0.23,
-          "base_score": 0.182,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.048,
-          "level": "low",
-          "reason": "arXiv 分类重合：math.AG；时效加分 +0.05",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "score": 0.053,
-          "base_score": 0.005,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.048,
-          "level": "low",
-          "reason": "时效加分 +0.05",
-          "keyword_hits": []
-        }
-      ],
-      "best_match": {
-        "topic_id": "arithmetic_geometry",
-        "topic_name": "Arithmetic Geometry",
-        "score": 0.425,
-        "base_score": 0.377,
-        "bridge_bonus": 0.0,
-        "preference_bonus": 0.0,
-        "recency_bonus": 0.048,
-        "level": "medium",
-        "reason": "关键词命中：finite field；arXiv 分类重合：math.AG；时效加分 +0.05",
-        "keyword_hits": [
-          "finite field"
-        ]
-      },
-      "top_labels": [
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "base_score": 0.377,
-          "score": 0.425,
-          "level": "medium",
-          "keyword_hits": [
-            "finite field"
-          ]
-        },
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "base_score": 0.191,
-          "score": 0.239,
-          "level": "low",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "base_score": 0.182,
-          "score": 0.23,
-          "level": "low",
-          "keyword_hits": []
-        }
-      ],
-      "backfilled_from_recent_arxiv": true,
-      "newly_discovered_from_recent_arxiv": true,
-      "chinese_summary": {
-        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
-        "method": "Let $k$ be an algebraically closed field of characteristic zero and let $S=k[x_1,\\ldots,x_5]$ with maximal ideal $\\mathfrak m=(x_1,\\ldots,x_5)$.",
-        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
-        "evidence": "来源摘要可在论文原文中核验。",
-        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
-        "why_relevant": "关键词命中：finite field；arXiv 分类重合：math.AG；时效加分 +0.05"
-      },
-      "first_seen_at": "2026-06-26T05:01:25.253328+00:00",
-      "last_seen_at": "2026-06-26T05:01:25.253328+00:00",
       "retained_from_previous_run": true
     },
     {
@@ -17956,7 +17560,7 @@
       },
       "first_seen_at": "2026-07-04T04:26:28.063587+00:00",
       "last_seen_at": "2026-07-04T04:26:28.063587+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2606.28985v1",
@@ -18298,6 +17902,134 @@
       "first_seen_at": "2026-06-26T05:01:25.253328+00:00",
       "last_seen_at": "2026-06-26T05:01:25.253328+00:00",
       "retained_from_previous_run": true
+    },
+    {
+      "id": "2606.29274v1",
+      "source": "arXiv",
+      "title": "Degree growth, orbit graphs, and functoriality for birational dynamical systems",
+      "authors": [
+        "Tomoyuki Takenawa"
+      ],
+      "summary": "The purpose of this paper is to give a natural divisor-theoretic formulation of the counting method introduced by Halburd for computing degree growth, in a form applicable to birational dynamical systems on varieties of arbitrary dimension. Instead of counting only preimages of special values, we follow time-indexed divisorial conditions through singularity patterns. These conditions are recorded on normalized finite-window orbit graphs, where the relevant multiplicities are realized as divisorial valuations of pullbacks of time-indexed divisors. This construction explains how the elementary computations appearing in singularity patterns can be interpreted as degree relations on a single normal variety. We then show that further relations arise from the failure of functoriality of pullbacks: when the center of a divisor enters the relevant indeterminacy locus, a degree-drop divisor appears. Under suitable finite-type assumptions, the two kinds of relations lead to closed linear difference systems governing degree sequences. Several examples, including higher-dimensional ones, demonstrate that the two mechanisms are complementary and that their combination determines the degree growth in cases where either mechanism alone is insufficient.",
+      "published": "2026-06-28T08:43:50Z",
+      "updated": "2026-06-28T08:43:50Z",
+      "paper_url": "http://arxiv.org/abs/2606.29274v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.29274v1",
+      "categories": [
+        "math.DS",
+        "math.AG"
+      ],
+      "seed_topic": "algebraic_geometry",
+      "matches": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.407,
+          "base_score": 0.367,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.04,
+          "level": "medium",
+          "reason": "关键词命中：variety、Spec；arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": [
+            "variety",
+            "Spec"
+          ],
+          "llm_reason": "核心方法大量使用代数几何概念（除子、拉回、赋值、正规簇、不定点集），与研究方向scheme、divisor、Weil divisor、Cartier divisor、pullback、valuation高度匹配；arXiv分类math.AG也直接重合。"
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.366,
+          "base_score": 0.314,
+          "bridge_bonus": 0.012,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.04,
+          "level": "low",
+          "reason": "关键词命中：special values；arXiv 分类重合：math.AG；motivic ↔ arithmetic / K-theory；时效加分 +0.04",
+          "keyword_hits": [
+            "special values"
+          ]
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.172,
+          "base_score": 0.12,
+          "bridge_bonus": 0.012,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.04,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；motivic ↔ arithmetic / K-theory；时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.044,
+          "base_score": 0.004,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.04,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "algebraic_geometry",
+        "topic_name": "Algebraic Geometry",
+        "score": 0.407,
+        "base_score": 0.367,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.04,
+        "level": "medium",
+        "reason": "关键词命中：variety、Spec；arXiv 分类重合：math.AG；时效加分 +0.04",
+        "keyword_hits": [
+          "variety",
+          "Spec"
+        ],
+        "llm_reason": "核心方法大量使用代数几何概念（除子、拉回、赋值、正规簇、不定点集），与研究方向scheme、divisor、Weil divisor、Cartier divisor、pullback、valuation高度匹配；arXiv分类math.AG也直接重合。"
+      },
+      "top_labels": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.367,
+          "score": 0.407,
+          "level": "low",
+          "keyword_hits": [
+            "variety",
+            "Spec"
+          ]
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.314,
+          "score": 0.366,
+          "level": "low",
+          "keyword_hits": [
+            "special values"
+          ]
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "fulltext_excerpt": "[2606.29274] Degree growth, orbit graphs, and functoriality for birational dynamical systems --> Mathematics > Dynamical Systems arXiv:2606.29274 (math) [Submitted on 28 Jun 2026] Title: Degree growth, orbit graphs, and functoriality for birational dynamical systems Authors: Tomoyuki Takenawa View a PDF of the paper titled Degree growth, orbit graphs, and functoriality for birational dynamical systems, by Tomoyuki Takenawa View PDF HTML (experimental) Abstract: The purpose of this paper is to give a natural divisor-theoretic formulation of the counting method introduced by Halburd for computing degree growth, in a form applicable to birational dynamical systems on varieties of arbitrary dimension. Instead of counting only preimages of special values, we follow time-indexed divisorial conditions through singularity patterns. These conditions are recorded on normalized finite-window orbit graphs, where the relevant multiplicities are realized as divisorial valuations of pullbacks of time-indexed divisors. This construction explains how the elementary computations appearing in singularity patterns can be interpreted as degree relations on a single normal variety. We then show that further relations arise from the failure of functoriality of pullbacks: when the center of a divisor enters the relevant indeterminacy locus, a degree-drop divisor appears. Under suitable finite-type assumptions, the two kinds of relations lead to closed linear difference systems governing degree sequences. Several examples, including higher-dimensional ones, demonstrate that the two mechanisms are complementary and that their combination determines the degree growth in cases where either mechanism alone is insufficient. Comments: 32 pages, 4 figures Subjects: Dynamical Systems (math.DS) ; Algebraic Geometry (math.AG) Cite as: arXiv:2606.29274 [math.DS] (or arXiv:2606.29274v1 [math.DS] for this version) https://doi.org/10.48550/arXiv.2606.29274 Focus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: Tomoyuki Takenawa [ view email ] [v1] Sun, 28 Jun 2026 08:43:50 UTC (297 KB) Full-text links: Access Paper: View a PDF of the paper titled Degree growth, orbit graphs, and functoriality for birational dynamical systems, by Tomoyuki Takenawa View PDF HTML (experimental) TeX Source view license Current browse context: math.DS < prev | next > new | recent | 2026-06 Change to browse by: math math.AG References & Citations NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
+      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2606.29274",
+      "chinese_summary": {
+        "problem": "给出一种自然的除子理论框架，用于计算任意维数簇上双有理动力系统的度数增长，避免传统方法仅计数特殊值原像的限制。",
+        "method": "通过时间索引的除子条件跟踪奇点模式，记录在正规化的有限窗口轨道图中，将多重性解释为拉回除子的除子赋值；并利用拉回函子性的失效（除子中心进入不定点集时产生度数下降除子）补充关系，形成封闭线性差分系统。",
+        "innovation": "扩展Halburd计数方法到任意维数，引入两种互补机制（除子条件与函子性失效）来统一处理度数增长，在高维例子中证明两者结合能确定单独机制不足的情况。",
+        "evidence": "摘要中提及多个例子（包括高维）演示两种机制的互补性，但未提供具体数值或实验细节，证据不足以独立验证。",
+        "limitations": "理论框架依赖有限型假设，且需要阅读全文确认奇点模式的具体构造、轨道图的规范化过程以及高维例子的实际计算。",
+        "why_relevant": "核心方法大量使用代数几何概念（除子、拉回、赋值、正规簇、不定点集），与研究方向scheme、divisor、Weil divisor、Cartier divisor、pullback、valuation高度匹配；arXiv分类math.AG也直接重合。"
+      },
+      "first_seen_at": "2026-07-05T04:47:23.106717+00:00",
+      "last_seen_at": "2026-07-05T04:47:23.106717+00:00",
+      "retained_from_previous_run": false
     },
     {
       "id": "2606.25094v1",
@@ -18667,6 +18399,134 @@
       "first_seen_at": "2026-06-27T04:43:08.112135+00:00",
       "last_seen_at": "2026-06-27T04:43:08.112135+00:00",
       "retained_from_previous_run": true
+    },
+    {
+      "id": "2606.29044v1",
+      "source": "arXiv",
+      "title": "Dimension filtrations in birational localisation",
+      "authors": [
+        "David Kumallagov"
+      ],
+      "summary": "Let \\(S_b\\) be the class of birational morphisms between smooth varieties over a field \\(F\\), and let \\(L_n=S_b^{-1}d_{\\leq n}\\Sm(F)\\). Kahn and Sujatha asked whether the natural functor \\(L_n\\to S_b^{-1}\\Sm(F)\\) is fully faithful. We prove that it is fully faithful exactly for \\(n=0\\). More strongly, for every \\(n\\geq1\\) and every \\(N\\geq n+1\\), the transition functor \\(L_n\\to L_N\\) has an infinite fibre on an endomorphism set. The proof identifies a sharp dimension threshold: if \\(\\dim X+r\\leq n\\), then \\(X\\times\\mathbb A^r\\to X\\) is invertible in \\(L_n\\) precisely when \\(\\dim X+r\\leq n-1\\). We also give proper and projective analogues.",
+      "published": "2026-06-27T18:43:47Z",
+      "updated": "2026-06-27T18:43:47Z",
+      "paper_url": "http://arxiv.org/abs/2606.29044v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.29044v1",
+      "categories": [
+        "math.AG"
+      ],
+      "seed_topic": "algebraic_geometry",
+      "matches": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.374,
+          "base_score": 0.335,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.039,
+          "level": "medium",
+          "reason": "关键词命中：Proj；arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": [
+            "Proj"
+          ],
+          "llm_reason": "论文研究光滑簇上的双有理态射的局部化范畴，涉及维数滤子与可逆性的关系。这与代数几何中的簇、态射、维数理论等核心概念直接相关，具体匹配关键词包括variety, birational morphism, smooth morphism, proper morphism, projective scheme等。尽管主题偏向双有理几何和范畴局部化，但方法中使用的维数论证和投影类比与我的研究方向中的概形态射、纤维积等概念有潜在联系。"
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.225,
+          "base_score": 0.186,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.039,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.224,
+          "base_score": 0.185,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.039,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.048,
+          "base_score": 0.009,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.039,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "algebraic_geometry",
+        "topic_name": "Algebraic Geometry",
+        "score": 0.374,
+        "base_score": 0.335,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.039,
+        "level": "medium",
+        "reason": "关键词命中：Proj；arXiv 分类重合：math.AG；时效加分 +0.04",
+        "keyword_hits": [
+          "Proj"
+        ],
+        "llm_reason": "论文研究光滑簇上的双有理态射的局部化范畴，涉及维数滤子与可逆性的关系。这与代数几何中的簇、态射、维数理论等核心概念直接相关，具体匹配关键词包括variety, birational morphism, smooth morphism, proper morphism, projective scheme等。尽管主题偏向双有理几何和范畴局部化，但方法中使用的维数论证和投影类比与我的研究方向中的概形态射、纤维积等概念有潜在联系。"
+      },
+      "top_labels": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.335,
+          "score": 0.374,
+          "level": "low",
+          "keyword_hits": [
+            "Proj"
+          ]
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.186,
+          "score": 0.225,
+          "level": "low",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "base_score": 0.185,
+          "score": 0.224,
+          "level": "low",
+          "keyword_hits": []
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "fulltext_excerpt": "[2606.29044] Dimension filtrations in birational localisation Skip to main content arXiv is now an independent nonprofit! Learn more × Search arXiv Press Enter to search · Advanced search --> Mathematics > Algebraic Geometry arXiv:2606.29044 (math) [Submitted on 27 Jun 2026] Title: Dimension filtrations in birational localisation Authors: David Kumallagov View a PDF of the paper titled Dimension filtrations in birational localisation, by David Kumallagov View PDF HTML (experimental) Abstract: Let \\(S_b\\) be the class of birational morphisms between smooth varieties over a field \\(F\\), and let \\(L_n=S_b^{-1}d_{\\leq n}\\Sm(F)\\). Kahn and Sujatha asked whether the natural functor \\(L_n\\to S_b^{-1}\\Sm(F)\\) is fully faithful. We prove that it is fully faithful exactly for \\(n=0\\). More strongly, for every \\(n\\geq1\\) and every \\(N\\geq n+1\\), the transition functor \\(L_n\\to L_N\\) has an infinite fibre on an endomorphism set. The proof identifies a sharp dimension threshold: if \\(\\dim X+r\\leq n\\), then \\(X\\times\\mathbb A^r\\to X\\) is invertible in \\(L_n\\) precisely when \\(\\dim X+r\\leq n-1\\). We also give proper and projective analogues. Comments: 6 pages Subjects: Algebraic Geometry (math.AG) MSC classes: 14E05 18E35 Cite as: arXiv:2606.29044 [math.AG] (or arXiv:2606.29044v1 [math.AG] for this version) https://doi.org/10.48550/arXiv.2606.29044 Focus to learn more arXiv-issued DOI via DataCite Submission history From: David Kumallagov [ view email ] [v1] Sat, 27 Jun 2026 18:43:47 UTC (7 KB) Full-text links: Access Paper: View a PDF of the paper titled Dimension filtrations in birational localisation, by David Kumallagov View PDF HTML (experimental) TeX Source view license Current browse context: math.AG < prev | next > new | recent | 2026-06 Change to browse by: math References & Citations NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
+      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2606.29044",
+      "chinese_summary": {
+        "problem": "该论文旨在解决Kahn和Sujatha提出的关于双有理局部化中维数滤子函子L_n→S_b^{-1}Sm(F)是否全忠实的问题，并精确刻画维数阈值对可逆性的影响。",
+        "method": "论文通过构造局部化范畴L_n = S_b^{-1} d_{\\leq n} \\Sm(F)，并分析过渡函子L_n→L_N的纤维结构。关键步骤是证明对于n=0时全忠实，而对于n≥1则存在无限纤维；同时利用维数阈值条件：若dim X+r ≤ n，则X×A^r→X在L_n中可逆当且仅当dim X+r ≤ n-1。还给出了proper和projective情形的类比。",
+        "innovation": "1. 首次完全解决了Kahn-Sujatha猜想，精确证明了全忠实性仅对n=0成立；2. 发现了尖锐的维数阈值，揭示了局部分类中可逆性与维数的精确关系；3. 将结果推广到proper和projective类比，增强了理论的适用范围。",
+        "evidence": "摘要中明确给出了定理陈述：函子L_n→S_b^{-1}Sm(F)全忠实当且仅当n=0；对于n≥1和N≥n+1，过渡函子L_n→L_N在某个自同态集上具有无限纤维。此外，给出了维数阈值条件的精确刻画。正文摘录虽短但印证了这些结论。",
+        "limitations": "论文篇幅仅6页，可能省略了许多技术细节，例如局部化范畴的具体构造、无限纤维的显式例子等。此外，结论仅限于域上光滑簇的双有理态射类，尚未推广到更一般的基概形或奇异情形。",
+        "why_relevant": "论文研究光滑簇上的双有理态射的局部化范畴，涉及维数滤子与可逆性的关系。这与代数几何中的簇、态射、维数理论等核心概念直接相关，具体匹配关键词包括variety, birational morphism, smooth morphism, proper morphism, projective scheme等。尽管主题偏向双有理几何和范畴局部化，但方法中使用的维数论证和投影类比与我的研究方向中的概形态射、纤维积等概念有潜在联系。"
+      },
+      "first_seen_at": "2026-07-05T04:47:23.106717+00:00",
+      "last_seen_at": "2026-07-05T04:47:23.106717+00:00",
+      "retained_from_previous_run": false
     },
     {
       "id": "2606.22650v1",
@@ -19057,6 +18917,134 @@
       "retained_from_previous_run": true
     },
     {
+      "id": "2607.02066v1",
+      "source": "arXiv",
+      "title": "On generic finiteness of pluricanonical maps of threefolds of general type",
+      "authors": [
+        "Tianyue Zhang"
+      ],
+      "summary": "We prove that $|6K_X|$ defines a generically finite map for all minimal 3-folds $X$ of general type with $P_2(X)\\geq 2$, which is optimal. We also prove that $|nK_X|$ defines a generically finite map for all minimal 3-folds $X$ of general type when $n\\geq 38$. The essential technical ingredients of this paper are a new generic finiteness criterion for surfaces and an effective comparison inequality under a special resolution.",
+      "published": "2026-07-02T12:00:28Z",
+      "updated": "2026-07-02T12:00:28Z",
+      "paper_url": "http://arxiv.org/abs/2607.02066v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.02066v1",
+      "categories": [
+        "math.AG"
+      ],
+      "seed_topic": "motivic_k_theory",
+      "matches": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.364,
+          "base_score": 0.318,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "medium",
+          "reason": "关键词命中：Spec；arXiv 分类重合：math.AG；时效加分 +0.05",
+          "keyword_hits": [
+            "Spec"
+          ],
+          "llm_reason": "论文研究一般型三维簇的pluricanonical映射，属于代数几何中双有理几何与极小模型理论的核心问题，与研究方向关键词'variety'、'divisor'、'canonical divisor'、'birational geometry'等密切相关，同时涉及'general type'和'pluricanonical map'等代数几何标准概念。"
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.237,
+          "base_score": 0.191,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.05",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.229,
+          "base_score": 0.183,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.05",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.05,
+          "base_score": 0.004,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "low",
+          "reason": "时效加分 +0.05",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "algebraic_geometry",
+        "topic_name": "Algebraic Geometry",
+        "score": 0.364,
+        "base_score": 0.318,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.046,
+        "level": "medium",
+        "reason": "关键词命中：Spec；arXiv 分类重合：math.AG；时效加分 +0.05",
+        "keyword_hits": [
+          "Spec"
+        ],
+        "llm_reason": "论文研究一般型三维簇的pluricanonical映射，属于代数几何中双有理几何与极小模型理论的核心问题，与研究方向关键词'variety'、'divisor'、'canonical divisor'、'birational geometry'等密切相关，同时涉及'general type'和'pluricanonical map'等代数几何标准概念。"
+      },
+      "top_labels": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.318,
+          "score": 0.364,
+          "level": "low",
+          "keyword_hits": [
+            "Spec"
+          ]
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.191,
+          "score": 0.237,
+          "level": "low",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "base_score": 0.183,
+          "score": 0.229,
+          "level": "low",
+          "keyword_hits": []
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "fulltext_excerpt": "[2607.02066] On generic finiteness of pluricanonical maps of threefolds of general type Skip to main content arXiv is now an independent nonprofit! Learn more × Search arXiv Press Enter to search · Advanced search --> Mathematics > Algebraic Geometry arXiv:2607.02066 (math) [Submitted on 2 Jul 2026] Title: On generic finiteness of pluricanonical maps of threefolds of general type Authors: Tianyue Zhang View a PDF of the paper titled On generic finiteness of pluricanonical maps of threefolds of general type, by Tianyue Zhang View PDF HTML (experimental) Abstract: We prove that $|6K_X|$ defines a generically finite map for all minimal 3-folds $X$ of general type with $P_2(X)\\geq 2$, which is optimal. We also prove that $|nK_X|$ defines a generically finite map for all minimal 3-folds $X$ of general type when $n\\geq 38$. The essential technical ingredients of this paper are a new generic finiteness criterion for surfaces and an effective comparison inequality under a special resolution. Subjects: Algebraic Geometry (math.AG) MSC classes: 14J30, 14E05, 14D06 Cite as: arXiv:2607.02066 [math.AG] (or arXiv:2607.02066v1 [math.AG] for this version) https://doi.org/10.48550/arXiv.2607.02066 Focus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: Tianyue Zhang [ view email ] [v1] Thu, 2 Jul 2026 12:00:28 UTC (21 KB) Full-text links: Access Paper: View a PDF of the paper titled On generic finiteness of pluricanonical maps of threefolds of general type, by Tianyue Zhang View PDF HTML (experimental) TeX Source view license Current browse context: math.AG < prev | next > new | recent | 2026-07 Change to browse by: math References & Citations NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
+      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2607.02066",
+      "chinese_summary": {
+        "problem": "确定一般型三维极小簇X的pluricanonical映射|nK_X|成为generic finite的最小整数n，并在特殊条件下（P2(X)≥2）给出最优界n=6，一般情形下给出上界n=38。",
+        "method": "利用新的曲面generic finiteness准则与特殊分解下的有效比较不等式，通过归纳和技巧将三维问题归结为曲面情形，从而得到最优和一般性结果。",
+        "innovation": "首次证明|6K_X|在P2(X)≥2时对极小三维一般型簇给出generic finite映射，达到最优；同时将一般情形上界从之前的较大常数降至n≥38，改进了已知的pluricanonical映射有限性结果。",
+        "evidence": "论文摘要明确给出了两个定理的陈述，但未提供实验或计算验证，属于纯理论证明，是否完备需阅读全文确认。",
+        "limitations": "结果仅适用于极小三维簇且一般型，未覆盖非极小或更高维情形；最优性依赖于P2(X)≥2条件；证明中的关键准则和比较不等式需要全文核实其正确性和适用性（如特征0或正特征限制）。",
+        "why_relevant": "论文研究一般型三维簇的pluricanonical映射，属于代数几何中双有理几何与极小模型理论的核心问题，与研究方向关键词'variety'、'divisor'、'canonical divisor'、'birational geometry'等密切相关，同时涉及'general type'和'pluricanonical map'等代数几何标准概念。"
+      },
+      "first_seen_at": "2026-07-05T04:47:23.106717+00:00",
+      "last_seen_at": "2026-07-05T04:47:23.106717+00:00",
+      "retained_from_previous_run": false
+    },
+    {
       "id": "2606.24373v1",
       "source": "arXiv",
       "title": "On the Sharpness of Khovanskii's Bezout-type Bound for Pfaffian Functions",
@@ -19308,13 +19296,13 @@
     }
   ],
   "stats": {
-    "candidate_paper_count": 117,
-    "daily_candidate_paper_count": 117,
+    "candidate_paper_count": 97,
+    "daily_candidate_paper_count": 97,
     "raw_daily_candidate_count": 350,
     "daily_outside_cutoff_count": 278,
-    "newly_discovered_backfill_count": 117,
+    "newly_discovered_backfill_count": 97,
     "daily_backfill_days": 14,
-    "daily_backfill_candidate_count": 64,
+    "daily_backfill_candidate_count": 82,
     "daily_backfill_added_count": 0,
     "min_daily_papers": 8,
     "filtered_low_relevance_count": 0,
@@ -19323,13 +19311,13 @@
     "arxiv_category_filter": [
       "math.AT",
       "math.AG",
-      "math.KT",
       "math.CT",
-      "math.NT"
+      "math.NT",
+      "math.KT"
     ],
     "days": 1,
     "collection_mode": "incremental",
-    "collection_cutoff_iso": "2026-07-03T04:33:38.203192+00:00",
+    "collection_cutoff_iso": "2026-07-04T04:26:28.063587+00:00",
     "max_per_topic": 25,
     "max_new_papers": 30,
     "sources": [
@@ -19371,12 +19359,12 @@
     "dropped_disliked_count": 0,
     "max_stored_papers": 150,
     "max_data_bytes": 8388608,
-    "data_bytes": 1473905,
+    "data_bytes": 1489674,
     "storage_trimmed_count": 30,
     "storage_trimmed_by_level": {
-      "high": 5,
-      "medium": 17,
-      "low": 8,
+      "high": 0,
+      "medium": 6,
+      "low": 24,
       "unknown": 0
     },
     "storage_limit_exceeded_by_likes": false
