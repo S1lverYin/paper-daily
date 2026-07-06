@@ -2,8 +2,15 @@ name: Paper Daily
 
 on:
   schedule:
-    # Start collecting at 09:00 Asia/Shanghai, then notify immediately after
-    # collection and deployment finish.
+    # Candidate collector slots. scripts/check_active_schedule.py lets only
+    # config/active_schedule.json's active cron collect, deploy, and notify.
+    - cron: '0 23 * * *'  # 07:00 Asia/Shanghai
+    - cron: '15 23 * * *' # 07:15 Asia/Shanghai
+    - cron: '30 23 * * *' # 07:30 Asia/Shanghai
+    - cron: '45 23 * * *' # 07:45 Asia/Shanghai
+    - cron: '0 0 * * *'   # 08:00 Asia/Shanghai
+    - cron: '15 0 * * *'  # 08:15 Asia/Shanghai
+    - cron: '30 0 * * *'  # 08:30 Asia/Shanghai
     - cron: '0 1 * * *'  # 09:00 Asia/Shanghai
   workflow_dispatch:
     inputs:
@@ -42,8 +49,16 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Record 09:00 schedule probe
-        if: github.event_name == 'schedule'
+      - name: Check active schedule
+        id: schedule_gate
+        run: >-
+          python3 scripts/check_active_schedule.py
+          --config config/active_schedule.json
+          --event-name "${{ github.event_name }}"
+          --event-schedule "${{ github.event.schedule }}"
+
+      - name: Record active collector schedule probe
+        if: github.event_name == 'schedule' && steps.schedule_gate.outputs.should_run == 'true'
         run: >-
           python3 scripts/record_schedule_probe.py
           --output-dir web/data/schedule-probe
@@ -57,6 +72,7 @@ jobs:
           --actor "${{ github.actor }}"
 
       - name: Collect papers
+        if: steps.schedule_gate.outputs.should_run == 'true'
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
@@ -84,6 +100,7 @@ jobs:
           --incremental-since-last-run
 
       - name: Commit and push
+        if: steps.schedule_gate.outputs.should_run == 'true'
         run: |
           git config user.name "paper-bot"
           git config user.email "bot@paper-daily.local"
@@ -92,14 +109,17 @@ jobs:
           git push
 
       - name: Upload Pages artifact
+        if: steps.schedule_gate.outputs.should_run == 'true'
         uses: actions/upload-pages-artifact@v4
         with:
           path: web
 
       - name: Deploy to GitHub Pages
+        if: steps.schedule_gate.outputs.should_run == 'true'
         uses: actions/deploy-pages@v4
 
       - name: PushPlus notification
+        if: steps.schedule_gate.outputs.should_run == 'true'
         env:
           PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
         run: |

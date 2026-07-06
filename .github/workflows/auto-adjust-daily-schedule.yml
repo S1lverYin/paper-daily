@@ -1,0 +1,65 @@
+name: Auto Adjust Daily Schedule
+
+on:
+  schedule:
+    # Run after the probe window; the script itself waits until 2026-07-14.
+    - cron: '0 4 * * *'  # 12:00 Asia/Shanghai
+  workflow_dispatch:
+    inputs:
+      force:
+        description: '忽略 not-before 日期，立即按现有探测数据调整'
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  adjust:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Adjust active daily schedule
+        env:
+          FORCE_ADJUST: ${{ github.event_name == 'workflow_dispatch' && inputs.force || 'false' }}
+        run: |
+          args=(
+            --probe-dir web/data/schedule-probe
+            --config config/active_schedule.json
+            --candidate-slots "07:00,07:15,07:30,07:45,08:00,08:15,08:30"
+            --min-samples 7
+            --probe-start-china-date 2026-07-07
+            --not-before-china-date 2026-07-14
+          )
+          if [ "$FORCE_ADJUST" = "true" ]; then
+            args+=(--force)
+          fi
+          python3 scripts/auto_adjust_daily_schedule.py "${args[@]}"
+
+      - name: Commit schedule adjustment
+        run: |
+          git config user.name "paper-bot"
+          git config user.email "bot@paper-daily.local"
+          git add config/active_schedule.json
+          if git diff --staged --quiet; then
+            echo "No schedule adjustment changed"
+            exit 0
+          fi
+          git commit -m "chore: auto adjust daily schedule"
+          for attempt in 1 2 3; do
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            if git push; then
+              exit 0
+            fi
+            echo "Push failed, retrying (${attempt}/3)"
+            sleep $((attempt * 10))
+          done
+          exit 1

@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "active_china_slot": "09:00",
+  "active_cron": "0 1 * * *",
+  "mode": "manual-until-auto-adjust",
+  "updated_at": "",
+  "updated_by": "initial",
+  "note": "Daily workflow has multiple candidate schedules; only this active cron actually collects and pushes papers."
+}
