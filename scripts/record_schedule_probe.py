@@ -13,26 +13,30 @@ CHINA_TZ = ZoneInfo("Asia/Shanghai")
 UTC = dt.timezone.utc
 
 
-def parse_exact_cron_hour(schedule: str) -> int | None:
+def parse_exact_cron_time(schedule: str) -> tuple[int, int] | None:
     parts = schedule.split()
     if len(parts) != 5:
         return None
     minute, hour = parts[0], parts[1]
-    if minute != "0" or not re.fullmatch(r"\d{1,2}", hour):
+    if not re.fullmatch(r"\d{1,2}", minute) or not re.fullmatch(r"\d{1,2}", hour):
         return None
-    parsed = int(hour)
-    return parsed if 0 <= parsed <= 23 else None
+    parsed_minute = int(minute)
+    parsed_hour = int(hour)
+    if not (0 <= parsed_minute <= 59 and 0 <= parsed_hour <= 23):
+        return None
+    return parsed_hour, parsed_minute
 
 
 def infer_planned_utc(schedule: str, recorded_at_utc: dt.datetime) -> dt.datetime | None:
-    hour = parse_exact_cron_hour(schedule)
-    if hour is None:
+    cron_time = parse_exact_cron_time(schedule)
+    if cron_time is None:
         return None
+    hour, minute = cron_time
 
     candidates = []
     for day_offset in (-1, 0, 1):
         candidate_date = recorded_at_utc.date() + dt.timedelta(days=day_offset)
-        candidates.append(dt.datetime.combine(candidate_date, dt.time(hour=hour, tzinfo=UTC)))
+        candidates.append(dt.datetime.combine(candidate_date, dt.time(hour=hour, minute=minute, tzinfo=UTC)))
 
     past_candidates = [candidate for candidate in candidates if candidate <= recorded_at_utc + dt.timedelta(minutes=1)]
     if past_candidates:
