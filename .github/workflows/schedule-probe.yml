@@ -2,10 +2,7 @@ name: Schedule Probe
 
 on:
   schedule:
-    # Probe GitHub Actions queue delay before the real 09:00 collector.
-    # Fine-grained slots around 07:00-08:30 help find a stable 09:00-10:00 arrival window.
-    - cron: '0 21 * * *'  # 05:00 Asia/Shanghai
-    - cron: '0 22 * * *'  # 06:00 Asia/Shanghai
+    # Probe GitHub Actions queue delay around the likely 09:00-10:00 arrival window.
     - cron: '0 23 * * *'  # 07:00 Asia/Shanghai
     - cron: '15 23 * * *' # 07:15 Asia/Shanghai
     - cron: '30 23 * * *' # 07:30 Asia/Shanghai
