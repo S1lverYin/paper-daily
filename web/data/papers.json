@@ -1,6 +1,6 @@
 {
-  "generated_at": "Fri, 10 Jul 2026 04:42:14 +0000",
-  "generated_at_iso": "2026-07-10T04:42:14.904736+00:00",
+  "generated_at": "Sat, 11 Jul 2026 03:58:10 +0000",
+  "generated_at_iso": "2026-07-11T03:58:10.764817+00:00",
   "config_source": "file",
   "topics": [
     {
@@ -693,7 +693,7 @@
       },
       "first_seen_at": "2026-07-10T04:42:14.904736+00:00",
       "last_seen_at": "2026-07-10T04:42:14.904736+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2607.01744v1",
@@ -2714,141 +2714,6 @@
       "retained_from_previous_run": true
     },
     {
-      "id": "2606.28989v1",
-      "source": "arXiv",
-      "title": "Point counts of abelian varieties over finite fields determining their zeta function",
-      "authors": [
-        "Shiva Chidambaram",
-        "Timo Keller"
-      ],
-      "summary": "Let $A$ be an abelian variety of dimension $g$ over a finite field $\\mathbf{F}_q$. We show that if $q$ is sufficiently large relative to $g$, the $g$ point counts $\\#A(\\mathbf{F}_{q^i})$ for $1 \\leq i \\leq g$ determine the zeta function of $A$, equivalently the characteristic polynomial of its Frobenius endomorphism, and hence the isogeny class of $A$. This count is best possible for $g=2$ and $g=4$, but not in general: for $g=3$ two point counts already determine the zeta function, whereas a single count never does. The proof combines the functional equation of the $L$-polynomial with Newton's identities and an inductive error analysis that controls the power sums of the inverse Frobenius eigenvalues with enough precision to recover them, as integers, by rounding.",
-      "published": "2026-06-27T15:52:12Z",
-      "updated": "2026-06-27T15:52:12Z",
-      "paper_url": "http://arxiv.org/abs/2606.28989v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.28989v1",
-      "categories": [
-        "math.NT",
-        "math.AG"
-      ],
-      "seed_topic": "motivic_k_theory",
-      "matches": [
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "score": 0.723,
-          "base_score": 0.665,
-          "bridge_bonus": 0.012,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.046,
-          "level": "high",
-          "reason": "关键词命中：abelian variety、zeta function、finite field、Frobenius；arXiv 分类重合：math.AG、math.NT；arithmetic ↔ K-theory / motivic；时效加分 +0.05",
-          "keyword_hits": [
-            "abelian variety",
-            "zeta function",
-            "finite field",
-            "Frobenius"
-          ],
-          "llm_reason": "直接研究有限域上阿贝尔簇的zeta函数与Frobenius特征多项式，是算术几何中数域与函数域类比的核心对象；点计数与同源类的联系与椭圆曲线、模形式、L-函数等研究方向高度匹配。"
-        },
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "score": 0.305,
-          "base_score": 0.259,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.046,
-          "level": "low",
-          "reason": "关键词命中：variety；arXiv 分类重合：math.AG；时效加分 +0.05",
-          "keyword_hits": [
-            "variety"
-          ]
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "score": 0.177,
-          "base_score": 0.119,
-          "bridge_bonus": 0.012,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.046,
-          "level": "low",
-          "reason": "arXiv 分类重合：math.AG；arithmetic ↔ K-theory / motivic；时效加分 +0.05",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "score": 0.049,
-          "base_score": 0.003,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.046,
-          "level": "low",
-          "reason": "时效加分 +0.05",
-          "keyword_hits": []
-        }
-      ],
-      "best_match": {
-        "topic_id": "arithmetic_geometry",
-        "topic_name": "Arithmetic Geometry",
-        "score": 0.723,
-        "base_score": 0.665,
-        "bridge_bonus": 0.012,
-        "preference_bonus": 0.0,
-        "recency_bonus": 0.046,
-        "level": "high",
-        "reason": "关键词命中：abelian variety、zeta function、finite field、Frobenius；arXiv 分类重合：math.AG、math.NT；arithmetic ↔ K-theory / motivic；时效加分 +0.05",
-        "keyword_hits": [
-          "abelian variety",
-          "zeta function",
-          "finite field",
-          "Frobenius"
-        ],
-        "llm_reason": "直接研究有限域上阿贝尔簇的zeta函数与Frobenius特征多项式，是算术几何中数域与函数域类比的核心对象；点计数与同源类的联系与椭圆曲线、模形式、L-函数等研究方向高度匹配。"
-      },
-      "top_labels": [
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "base_score": 0.665,
-          "score": 0.723,
-          "level": "high",
-          "keyword_hits": [
-            "abelian variety",
-            "zeta function",
-            "finite field",
-            "Frobenius"
-          ]
-        },
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "base_score": 0.259,
-          "score": 0.305,
-          "level": "low",
-          "keyword_hits": [
-            "variety"
-          ]
-        }
-      ],
-      "backfilled_from_recent_arxiv": true,
-      "newly_discovered_from_recent_arxiv": true,
-      "fulltext_excerpt": "[2606.28989] Point counts of abelian varieties over finite fields determining their zeta function --> Mathematics > Number Theory arXiv:2606.28989 (math) [Submitted on 27 Jun 2026] Title: Point counts of abelian varieties over finite fields determining their zeta function Authors: Shiva Chidambaram , Timo Keller View a PDF of the paper titled Point counts of abelian varieties over finite fields determining their zeta function, by Shiva Chidambaram and 1 other authors View PDF HTML (experimental) Abstract: Let $A$ be an abelian variety of dimension $g$ over a finite field $\\mathbf{F}_q$. We show that if $q$ is sufficiently large relative to $g$, the $g$ point counts $\\#A(\\mathbf{F}_{q^i})$ for $1 \\leq i \\leq g$ determine the zeta function of $A$, equivalently the characteristic polynomial of its Frobenius endomorphism, and hence the isogeny class of $A$. This count is best possible for $g=2$ and $g=4$, but not in general: for $g=3$ two point counts already determine the zeta function, whereas a single count never does. The proof combines the functional equation of the $L$-polynomial with Newton's identities and an inductive error analysis that controls the power sums of the inverse Frobenius eigenvalues with enough precision to recover them, as integers, by rounding. Comments: 15 pages; comments welcome; Sage, Python, LEAN code on this https URL Subjects: Number Theory (math.NT) ; Algebraic Geometry (math.AG) MSC classes: 11M38 (Primary) 11G10 (Secondary) Cite as: arXiv:2606.28989 [math.NT] (or arXiv:2606.28989v1 [math.NT] for this version) https://doi.org/10.48550/arXiv.2606.28989 Focus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: Timo Keller [ view email ] [v1] Sat, 27 Jun 2026 15:52:12 UTC (20 KB) Full-text links: Access Paper: View a PDF of the paper titled Point counts of abelian varieties over finite fields determining their zeta function, by Shiva Chidambaram and 1 other authors View PDF HTML (experimental) TeX Source view license Current browse context: math.NT < prev | next > new | recent | 2026-06 Change to browse by: math math.AG References & Citations NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
-      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2606.28989",
-      "chinese_summary": {
-        "problem": "确定有限域上阿贝尔簇需要多少个点计数才能唯一确定它的zeta函数（即Frobenius特征多项式），从而确定同源类。",
-        "method": "结合L-多项式的函数方程与牛顿恒等式，通过归纳误差分析精确控制Frobenius特征值的幂和，并利用取整操作恢复整数特征值。",
-        "innovation": "1. 证明当q相对于维数g足够大时，前g个点计数足以确定zeta函数，并给出g=2,4时最优性；2. 发现g=3时仅需两个点计数，而单个点计数永远不够，完善了已有结果。",
-        "evidence": "摘要明确给出了定理陈述（g个点计数确定zeta函数）及特例：g=2,4最优，g=3仅需两个。但未提供数值实验或具体阈值。",
-        "limitations": "需要阅读全文确认‘q sufficiently large’的具体条件，以及误差分析的严谨性；对于小q或特定维数的情况可能不适用。",
-        "why_relevant": "直接研究有限域上阿贝尔簇的zeta函数与Frobenius特征多项式，是算术几何中数域与函数域类比的核心对象；点计数与同源类的联系与椭圆曲线、模形式、L-函数等研究方向高度匹配。"
-      },
-      "first_seen_at": "2026-06-30T04:55:55.077686+00:00",
-      "last_seen_at": "2026-06-30T04:55:55.077686+00:00",
-      "retained_from_previous_run": true
-    },
-    {
       "id": "2607.07137v1",
       "source": "arXiv",
       "title": "Descendability and descent in topological weaves",
@@ -3500,7 +3365,7 @@
       },
       "first_seen_at": "2026-07-10T04:42:14.904736+00:00",
       "last_seen_at": "2026-07-10T04:42:14.904736+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2607.06189v1",
@@ -5181,141 +5046,6 @@
       "retained_from_previous_run": true
     },
     {
-      "id": "2606.29016v1",
-      "source": "arXiv",
-      "title": "Hyperelliptic Stable Curves",
-      "authors": [
-        "Max Schwegele"
-      ],
-      "summary": "We provide an intrinsic characterization of hyperelliptic stable curves of genus $g \\geq 2$, independent of admissible covers or auxiliary moduli data. A stable curve is hyperelliptic if it admits an involution yielding a rational tree quotient, subject to a characteristic-dependent condition. By analyzing the action of this involution on the nodes and decomposing the curve based on its connectivity, we obtain an explicit structural description of hyperellipticity and prove that the hyperelliptic involution is unique. Furthermore, we explain the connection to the very ampleness of the dualizing sheaf. This framework applies in arbitrary characteristic, explicitly capturing the divergent geometric and combinatorial behavior in characteristic 2. We verify that this formulation precisely captures the geometric points of the moduli stack of hyperelliptic stable curves $\\overline{\\mathcal{H}}_g$, defined as the scheme-theoretic closure of the smooth hyperelliptic locus $\\mathcal{H}_g$ within the moduli stack of stable curves $\\overline{\\mathcal{M}}_g$. Extending this definition to flat families yields an explicit modular description of $\\overline{\\mathcal{H}}_g$ over $\\operatorname{Spec} \\mathbb{Z}[1/2]$.",
-      "published": "2026-06-27T17:27:40Z",
-      "updated": "2026-06-27T17:27:40Z",
-      "paper_url": "http://arxiv.org/abs/2606.29016v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.29016v1",
-      "categories": [
-        "math.AG"
-      ],
-      "seed_topic": "motivic_k_theory",
-      "matches": [
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "score": 0.647,
-          "base_score": 0.589,
-          "bridge_bonus": 0.012,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.046,
-          "level": "medium",
-          "reason": "关键词命中：moduli stack、scheme、sheaf、Spec；arXiv 分类重合：math.AG；AG ↔ homotopy / arithmetic；时效加分 +0.05",
-          "keyword_hits": [
-            "moduli stack",
-            "scheme",
-            "sheaf",
-            "Spec"
-          ]
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "score": 0.247,
-          "base_score": 0.189,
-          "bridge_bonus": 0.012,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.046,
-          "level": "low",
-          "reason": "arXiv 分类重合：math.AG；AG ↔ homotopy / arithmetic；时效加分 +0.05",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "score": 0.228,
-          "base_score": 0.182,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.046,
-          "level": "low",
-          "reason": "arXiv 分类重合：math.AG；时效加分 +0.05",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "score": 0.063,
-          "base_score": 0.005,
-          "bridge_bonus": 0.012,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.046,
-          "level": "low",
-          "reason": "AG ↔ homotopy / arithmetic；时效加分 +0.05",
-          "keyword_hits": []
-        }
-      ],
-      "best_match": {
-        "topic_id": "algebraic_geometry",
-        "topic_name": "Algebraic Geometry",
-        "score": 0.647,
-        "base_score": 0.589,
-        "bridge_bonus": 0.012,
-        "preference_bonus": 0.0,
-        "recency_bonus": 0.046,
-        "level": "medium",
-        "reason": "关键词命中：moduli stack、scheme、sheaf、Spec；arXiv 分类重合：math.AG；AG ↔ homotopy / arithmetic；时效加分 +0.05",
-        "keyword_hits": [
-          "moduli stack",
-          "scheme",
-          "sheaf",
-          "Spec"
-        ]
-      },
-      "top_labels": [
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "base_score": 0.589,
-          "score": 0.647,
-          "level": "medium",
-          "keyword_hits": [
-            "moduli stack",
-            "scheme",
-            "sheaf",
-            "Spec"
-          ]
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "base_score": 0.189,
-          "score": 0.247,
-          "level": "low",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "base_score": 0.182,
-          "score": 0.228,
-          "level": "low",
-          "keyword_hits": []
-        }
-      ],
-      "backfilled_from_recent_arxiv": true,
-      "newly_discovered_from_recent_arxiv": true,
-      "fulltext_excerpt": "[2606.29016] Hyperelliptic Stable Curves --> Mathematics > Algebraic Geometry arXiv:2606.29016 (math) [Submitted on 27 Jun 2026] Title: Hyperelliptic Stable Curves Authors: Max Schwegele View a PDF of the paper titled Hyperelliptic Stable Curves, by Max Schwegele View PDF Abstract: We provide an intrinsic characterization of hyperelliptic stable curves of genus $g \\geq 2$, independent of admissible covers or auxiliary moduli data. A stable curve is hyperelliptic if it admits an involution yielding a rational tree quotient, subject to a characteristic-dependent condition. By analyzing the action of this involution on the nodes and decomposing the curve based on its connectivity, we obtain an explicit structural description of hyperellipticity and prove that the hyperelliptic involution is unique. Furthermore, we explain the connection to the very ampleness of the dualizing sheaf. This framework applies in arbitrary characteristic, explicitly capturing the divergent geometric and combinatorial behavior in characteristic 2. We verify that this formulation precisely captures the geometric points of the moduli stack of hyperelliptic stable curves $\\overline{\\mathcal{H}}_g$, defined as the scheme-theoretic closure of the smooth hyperelliptic locus $\\mathcal{H}_g$ within the moduli stack of stable curves $\\overline{\\mathcal{M}}_g$. Extending this definition to flat families yields an explicit modular description of $\\overline{\\mathcal{H}}_g$ over $\\operatorname{Spec} \\mathbb{Z}[1/2]$. Comments: 16 pages Subjects: Algebraic Geometry (math.AG) MSC classes: 14H10, 14H45, 14D20 Cite as: arXiv:2606.29016 [math.AG] (or arXiv:2606.29016v1 [math.AG] for this version) https://doi.org/10.48550/arXiv.2606.29016 Focus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: Max Schwegele [ view email ] [v1] Sat, 27 Jun 2026 17:27:40 UTC (29 KB) Full-text links: Access Paper: View a PDF of the paper titled Hyperelliptic Stable Curves, by Max Schwegele View PDF TeX Source view license Current browse context: math.AG < prev | next > new | recent | 2026-06 Change to browse by: math References & Citations NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
-      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2606.29016",
-      "chinese_summary": {
-        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
-        "method": "We provide an intrinsic characterization of hyperelliptic stable curves of genus $g \\geq 2$, independent of admissible covers or auxiliary moduli data.",
-        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
-        "evidence": "来源摘要可在论文原文中核验。",
-        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
-        "why_relevant": "关键词命中：moduli stack、scheme、sheaf、Spec；arXiv 分类重合：math.AG；AG ↔ homotopy / arithmetic；时效加分 +0.05"
-      },
-      "first_seen_at": "2026-06-30T04:55:55.077686+00:00",
-      "last_seen_at": "2026-06-30T04:55:55.077686+00:00",
-      "retained_from_previous_run": true
-    },
-    {
       "id": "2606.31646v1",
       "source": "arXiv",
       "title": "Diophantine rank stability and non-vanishing of $L$-functions",
@@ -6729,7 +6459,7 @@
       },
       "first_seen_at": "2026-07-10T04:42:14.904736+00:00",
       "last_seen_at": "2026-07-10T04:42:14.904736+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2606.29478v1",
@@ -7506,7 +7236,7 @@
       },
       "first_seen_at": "2026-07-10T04:42:14.904736+00:00",
       "last_seen_at": "2026-07-10T04:42:14.904736+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2607.05835v2",
@@ -7638,7 +7368,7 @@
       },
       "first_seen_at": "2026-07-10T04:42:14.904736+00:00",
       "last_seen_at": "2026-07-10T04:42:14.904736+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2607.05305v1",
@@ -8559,7 +8289,7 @@
       },
       "first_seen_at": "2026-07-10T04:42:14.904736+00:00",
       "last_seen_at": "2026-07-10T04:42:14.904736+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2607.05444v1",
@@ -9334,6 +9064,124 @@
       "first_seen_at": "2026-07-02T04:51:25.255139+00:00",
       "last_seen_at": "2026-07-02T04:51:25.255139+00:00",
       "retained_from_previous_run": true
+    },
+    {
+      "id": "2607.08051v1",
+      "source": "arXiv",
+      "title": "Elliptic curves, Fourier ratio, and sampling complexity",
+      "authors": [
+        "W. Burstein",
+        "A. Iosevich",
+        "A. Sant"
+      ],
+      "summary": "We study the normalized Frobenius trace associated with the Legendre family of elliptic curves over $\\mathbb F_p$ from the point of view of Fourier complexity. If \\[ f(t)=\\frac{a_p(E_t)}{\\sqrt p}, \\qquad E_t:\\ y^2=x(x-1)(x-t), \\] with $f(0)=f(1)=0$, then \\[ \\frac{\\|\\widehat f\\|_1}{\\|\\widehat f\\|_2}\\asymp \\sqrt p. \\] More precisely, the Fourier transform of $f$ has squared $\\ell^2$ norm of order $p$ while its individual coefficients remain uniformly bounded. It follows that no Fourier model supported on fewer than a sufficiently small constant multiple of $p$ frequencies can approximate $f$ in $\\ell^2$ with error smaller than a fixed proportion of $\\|f\\|_2$. We also show that the Fourier magnitude profile of $f$ supports a family of at least $\\exp(cp)$ real-valued functions with identical Fourier magnitudes and identical Fourier ratio, any two of which are separated by at least $c\\sqrt p$ in $\\ell^2$. Consequently, every deterministic reconstruction procedure that recovers all members of this family from bounded-precision point evaluations must use at least $c_Bp$ samples, where $c_B>0$ depends only on the number of bits used to encode each observation. The arithmetic input is unconditional and relies only on the Weil bound for mixed character sums, the evaluation of the quadratic Gauss sum, and elementary character identities.",
+      "published": "2026-07-09T02:02:51Z",
+      "updated": "2026-07-09T02:02:51Z",
+      "paper_url": "http://arxiv.org/abs/2607.08051v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.08051v1",
+      "categories": [
+        "math.NT",
+        "math.CA"
+      ],
+      "seed_topic": "arithmetic_geometry",
+      "matches": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.552,
+          "base_score": 0.505,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.047,
+          "level": "medium",
+          "reason": "关键词命中：elliptic curve、Frobenius；arXiv 分类重合：math.NT；时效加分 +0.05",
+          "keyword_hits": [
+            "elliptic curve",
+            "Frobenius"
+          ],
+          "llm_reason": "论文研究有限域上椭圆曲线的Frobenius迹，这是算术几何中基本对象，与关键词'elliptic curve'、'Frobenius'、'finite field'直接匹配；但视角是调和分析与采样理论，与算术几何主流方向（如Galois表示、L-函数等）关联度一般，需人工判断是否与自身工作互补。"
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.052,
+          "base_score": 0.005,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.047,
+          "level": "low",
+          "reason": "时效加分 +0.05",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.051,
+          "base_score": 0.004,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.047,
+          "level": "low",
+          "reason": "时效加分 +0.05",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.051,
+          "base_score": 0.004,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.047,
+          "level": "low",
+          "reason": "时效加分 +0.05",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "arithmetic_geometry",
+        "topic_name": "Arithmetic Geometry",
+        "score": 0.552,
+        "base_score": 0.505,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.047,
+        "level": "medium",
+        "reason": "关键词命中：elliptic curve、Frobenius；arXiv 分类重合：math.NT；时效加分 +0.05",
+        "keyword_hits": [
+          "elliptic curve",
+          "Frobenius"
+        ],
+        "llm_reason": "论文研究有限域上椭圆曲线的Frobenius迹，这是算术几何中基本对象，与关键词'elliptic curve'、'Frobenius'、'finite field'直接匹配；但视角是调和分析与采样理论，与算术几何主流方向（如Galois表示、L-函数等）关联度一般，需人工判断是否与自身工作互补。"
+      },
+      "top_labels": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.505,
+          "score": 0.552,
+          "level": "medium",
+          "keyword_hits": [
+            "elliptic curve",
+            "Frobenius"
+          ]
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "fulltext_excerpt": "[2607.08051] Elliptic curves, Fourier ratio, and sampling complexity Skip to main content arXiv is now an independent nonprofit! Learn more × Search arXiv Press Enter to search · Advanced search --> Mathematics > Number Theory arXiv:2607.08051 (math) [Submitted on 9 Jul 2026] Title: Elliptic curves, Fourier ratio, and sampling complexity Authors: W. Burstein , A. Iosevich , A. Sant View a PDF of the paper titled Elliptic curves, Fourier ratio, and sampling complexity, by W. Burstein and 2 other authors View PDF HTML (experimental) Abstract: We study the normalized Frobenius trace associated with the Legendre family of elliptic curves over $\\mathbb F_p$ from the point of view of Fourier complexity. If \\[ f(t)=\\frac{a_p(E_t)}{\\sqrt p}, \\qquad E_t:\\ y^2=x(x-1)(x-t), \\] with $f(0)=f(1)=0$, then \\[ \\frac{\\|\\widehat f\\|_1}{\\|\\widehat f\\|_2}\\asymp \\sqrt p. \\] More precisely, the Fourier transform of $f$ has squared $\\ell^2$ norm of order $p$ while its individual coefficients remain uniformly bounded. It follows that no Fourier model supported on fewer than a sufficiently small constant multiple of $p$ frequencies can approximate $f$ in $\\ell^2$ with error smaller than a fixed proportion of $\\|f\\|_2$. We also show that the Fourier magnitude profile of $f$ supports a family of at least $\\exp(cp)$ real-valued functions with identical Fourier magnitudes and identical Fourier ratio, any two of which are separated by at least $c\\sqrt p$ in $\\ell^2$. Consequently, every deterministic reconstruction procedure that recovers all members of this family from bounded-precision point evaluations must use at least $c_Bp$ samples, where $c_B>0$ depends only on the number of bits used to encode each observation. The arithmetic input is unconditional and relies only on the Weil bound for mixed character sums, the evaluation of the quadratic Gauss sum, and elementary character identities. Subjects: Number Theory (math.NT) ; Classical Analysis and ODEs (math.CA) Cite as: arXiv:2607.08051 [math.NT] (or arXiv:2607.08051v1 [math.NT] for this version) https://doi.org/10.48550/arXiv.2607.08051 Focus to learn more arXiv-issued DOI via DataCite Submission history From: Akshay Manoj Sant [ view email ] [v1] Thu, 9 Jul 2026 02:02:51 UTC (11 KB) Full-text links: Access Paper: View a PDF of the paper titled Elliptic curves, Fourier ratio, and sampling complexity, by W. Burstein and 2 other authors View PDF HTML (experimental) TeX Source view license Current browse context: math.NT < prev | next > new | recent | 2026-07 Change to browse by: math math.CA References & Citations NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
+      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2607.08051",
+      "chinese_summary": {
+        "problem": "研究有限域上Legendre族椭圆曲线归一化Frobenius迹的傅里叶复杂性，证明其傅里叶变换的ℓ1/ℓ2范数比约为√p，并由此导出采样复杂度下界。",
+        "method": "利用Weil界对于混合特征和的估计、二次高斯和求值以及初等特征恒等式，分析函数f(t)=a_p(E_t)/√p的傅里叶变换，刻画其傅里叶系数的ℓ2范数和ℓ∞界，进而证明傅里叶支撑至少需要常数倍p个频率才能有效逼近，并构造一族函数证明采样复杂度下界。",
+        "innovation": "将椭圆曲线Frobenius迹的经典结果与傅里叶分析中的复杂性概念结合，首次给出该函数傅里叶支撑大小的下界（常数倍p），并证明存在指数多个具有相同傅里叶幅度和傅里叶比的函数族，从而得出确定性重建需要至少cp个样本。",
+        "evidence": "摘要明确给出‖f̂‖₁/‖f̂‖₂ ≍ √p，傅里叶变换的ℓ2范数平方为O(p)而系数一致有界，并推导出傅里叶支撑下界和采样复杂度下界，证据充分。",
+        "limitations": "论文重点在傅里叶分析而非算术几何核心问题（如Galois表示、p进Hodge理论等），未涉及椭圆曲线更深层的算术性质；结果依赖于有限域特征p，未推广到一般数域。",
+        "why_relevant": "论文研究有限域上椭圆曲线的Frobenius迹，这是算术几何中基本对象，与关键词'elliptic curve'、'Frobenius'、'finite field'直接匹配；但视角是调和分析与采样理论，与算术几何主流方向（如Galois表示、L-函数等）关联度一般，需人工判断是否与自身工作互补。"
+      },
+      "first_seen_at": "2026-07-11T03:58:10.764817+00:00",
+      "last_seen_at": "2026-07-11T03:58:10.764817+00:00",
+      "retained_from_previous_run": false
     },
     {
       "id": "2607.03083v1",
@@ -12736,7 +12584,7 @@
       },
       "first_seen_at": "2026-07-10T04:42:14.904736+00:00",
       "last_seen_at": "2026-07-10T04:42:14.904736+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2606.30386v1",
@@ -14704,7 +14552,7 @@
       },
       "first_seen_at": "2026-07-10T04:42:14.904736+00:00",
       "last_seen_at": "2026-07-10T04:42:14.904736+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2607.07431v1",
@@ -18057,7 +17905,7 @@
       },
       "first_seen_at": "2026-07-10T04:42:14.904736+00:00",
       "last_seen_at": "2026-07-10T04:42:14.904736+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2607.06676v1",
@@ -18791,6 +18639,135 @@
       "retained_from_previous_run": true
     },
     {
+      "id": "2607.06376v1",
+      "source": "arXiv",
+      "title": "Microlocal Bernstein--Sato polynomials on singular ambient varieties",
+      "authors": [
+        "Bradley Dirks",
+        "Michael Perlman"
+      ],
+      "summary": "We introduce the microlocal Bernstein--Sato polynomial of a function on a possibly singular ambient variety, extending the theory of Saito. We show that, contrary to the smooth ambient setting, these polynomials are not generally equal to the reduced $b$-functions obtained by removing the trivial root. We define the minimal exponent and use it to study the singularities of the divisor and the Hodge filtration on local cohomology. Our main results include a generalization of Saito's theorem relating the minimal exponent to rational singularities, a characterization of purity of local cohomology, a Thom--Sebastiani formula for the minimal exponent, and a linear combination formula for Bernstein--Sato polynomials of ideals. When the ambient variety is a complete intersection with rational singularities, we provide effective algorithms for these Bernstein--Sato polynomials and implement them in Macaulay2.",
+      "published": "2026-07-07T15:14:38Z",
+      "updated": "2026-07-07T15:14:38Z",
+      "paper_url": "http://arxiv.org/abs/2607.06376v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.06376v1",
+      "categories": [
+        "math.AG"
+      ],
+      "seed_topic": "motivic_k_theory",
+      "matches": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.376,
+          "base_score": 0.332,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.044,
+          "level": "medium",
+          "reason": "关键词命中：variety；arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": [
+            "variety"
+          ],
+          "llm_reason": "论文研究奇异簇上的奇点理论，涉及除子、Hodge滤过、局部上同调等概念，与研究方向中的除子、层、局部环、分式理想等关键词相关；arXiv分类math.AG完全匹配；但内容侧重于奇点分析而非模空间或导出代数几何，需人工复核更精细的相关性。"
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.248,
+          "base_score": 0.204,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.044,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.237,
+          "base_score": 0.193,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.044,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.054,
+          "base_score": 0.01,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.044,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "algebraic_geometry",
+        "topic_name": "Algebraic Geometry",
+        "score": 0.376,
+        "base_score": 0.332,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.044,
+        "level": "medium",
+        "reason": "关键词命中：variety；arXiv 分类重合：math.AG；时效加分 +0.04",
+        "keyword_hits": [
+          "variety"
+        ],
+        "llm_reason": "论文研究奇异簇上的奇点理论，涉及除子、Hodge滤过、局部上同调等概念，与研究方向中的除子、层、局部环、分式理想等关键词相关；arXiv分类math.AG完全匹配；但内容侧重于奇点分析而非模空间或导出代数几何，需人工复核更精细的相关性。"
+      },
+      "top_labels": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.332,
+          "score": 0.376,
+          "level": "low",
+          "keyword_hits": [
+            "variety"
+          ]
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.204,
+          "score": 0.248,
+          "level": "low",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "base_score": 0.193,
+          "score": 0.237,
+          "level": "low",
+          "keyword_hits": []
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "fulltext_excerpt": "[2607.06376] Microlocal Bernstein--Sato polynomials on singular ambient varieties Skip to main content arXiv is now an independent nonprofit! Learn more × Search arXiv Press Enter to search · Advanced search --> Mathematics > Algebraic Geometry arXiv:2607.06376 (math) [Submitted on 7 Jul 2026] Title: Microlocal Bernstein--Sato polynomials on singular ambient varieties Authors: Bradley Dirks , Michael Perlman View a PDF of the paper titled Microlocal Bernstein--Sato polynomials on singular ambient varieties, by Bradley Dirks and Michael Perlman View PDF HTML (experimental) Abstract: We introduce the microlocal Bernstein--Sato polynomial of a function on a possibly singular ambient variety, extending the theory of Saito. We show that, contrary to the smooth ambient setting, these polynomials are not generally equal to the reduced $b$-functions obtained by removing the trivial root. We define the minimal exponent and use it to study the singularities of the divisor and the Hodge filtration on local cohomology. Our main results include a generalization of Saito's theorem relating the minimal exponent to rational singularities, a characterization of purity of local cohomology, a Thom--Sebastiani formula for the minimal exponent, and a linear combination formula for Bernstein--Sato polynomials of ideals. When the ambient variety is a complete intersection with rational singularities, we provide effective algorithms for these Bernstein--Sato polynomials and implement them in Macaulay2. Comments: 39 pages. Comments welcome Subjects: Algebraic Geometry (math.AG) MSC classes: 14F10, 14B05, 14B15, 14C30 Cite as: arXiv:2607.06376 [math.AG] (or arXiv:2607.06376v1 [math.AG] for this version) https://doi.org/10.48550/arXiv.2607.06376 Focus to learn more arXiv-issued DOI via DataCite Submission history From: Michael Perlman [ view email ] [v1] Tue, 7 Jul 2026 15:14:38 UTC (42 KB) Full-text links: Access Paper: View a PDF of the paper titled Microlocal Bernstein--Sato polynomials on singular ambient varieties, by Bradley Dirks and Michael Perlman View PDF HTML (experimental) TeX Source view license Current browse context: math.AG < prev | next > new | recent | 2026-07 Change to browse by: math References & Citations NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
+      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2607.06376",
+      "chinese_summary": {
+        "problem": "定义和研究奇异簇上的微局域Bernstein–Sato多项式，推广Saito的理论，并利用最小指数研究除子的奇点以及局部上同调的Hodge滤过。",
+        "method": "通过将微局域Bernstein–Sato多项式推广到可能的奇异簇上，定义并研究最小指数；利用该指数刻画有理奇点、局部上同调纯性，并建立Thom–Sebastiani公式和理想Bernstein–Sato多项式的线性组合公式；对于具有有理奇点的完全交簇，给出有效算法并在Macaulay2中实现。",
+        "innovation": "1. 首次在奇异簇上定义微局域Bernstein–Sato多项式，并证明其与通常去除平凡根后的约化b-函数不等。2. 推广Saito定理，建立最小指数与有理奇点的关系，并刻画局部上同调纯性。3. 给出Thom–Sebastiani公式和理想的线性组合公式，为奇异簇上的奇点理论提供新工具。",
+        "evidence": "摘要中声称推广了Saito定理、建立了局部上同调纯性的刻画、给出了Thom–Sebastiani公式和线性组合公式，并在完全交的有理奇点簇上提供了有效算法的Macaulay2实现，但未提供具体实验数据或数值结果，需阅读全文验证。",
+        "limitations": "算法仅适用于具有有理奇点的完全交簇，更一般情形需要进一步研究；微局域Bernstein–Sato多项式与经典b-函数的不等关系可能依赖具体奇点类型，需阅读全文确认适用范围。",
+        "why_relevant": "论文研究奇异簇上的奇点理论，涉及除子、Hodge滤过、局部上同调等概念，与研究方向中的除子、层、局部环、分式理想等关键词相关；arXiv分类math.AG完全匹配；但内容侧重于奇点分析而非模空间或导出代数几何，需人工复核更精细的相关性。"
+      },
+      "first_seen_at": "2026-07-11T03:58:10.764817+00:00",
+      "last_seen_at": "2026-07-11T03:58:10.764817+00:00",
+      "retained_from_previous_run": false
+    },
+    {
       "id": "2606.29044v1",
       "source": "arXiv",
       "title": "Dimension filtrations in birational localisation",
@@ -19406,28 +19383,28 @@
     }
   ],
   "stats": {
-    "candidate_paper_count": 125,
-    "daily_candidate_paper_count": 125,
+    "candidate_paper_count": 116,
+    "daily_candidate_paper_count": 116,
     "raw_daily_candidate_count": 347,
-    "daily_outside_cutoff_count": 253,
-    "newly_discovered_backfill_count": 103,
+    "daily_outside_cutoff_count": 275,
+    "newly_discovered_backfill_count": 116,
     "daily_backfill_days": 14,
-    "daily_backfill_candidate_count": 62,
+    "daily_backfill_candidate_count": 69,
     "daily_backfill_added_count": 0,
     "min_daily_papers": 8,
     "filtered_low_relevance_count": 0,
     "filtered_wrong_category_count": 72,
     "filtered_disliked_count": 0,
     "arxiv_category_filter": [
-      "math.AG",
       "math.NT",
-      "math.AT",
+      "math.AG",
       "math.KT",
+      "math.AT",
       "math.CT"
     ],
     "days": 1,
     "collection_mode": "incremental",
-    "collection_cutoff_iso": "2026-07-09T04:50:15.479323+00:00",
+    "collection_cutoff_iso": "2026-07-10T04:42:14.904736+00:00",
     "max_per_topic": 25,
     "max_new_papers": 30,
     "sources": [
@@ -19469,12 +19446,12 @@
     "dropped_disliked_count": 0,
     "max_stored_papers": 150,
     "max_data_bytes": 8388608,
-    "data_bytes": 1503514,
+    "data_bytes": 1505749,
     "storage_trimmed_count": 30,
     "storage_trimmed_by_level": {
-      "high": 1,
-      "medium": 10,
-      "low": 19,
+      "high": 2,
+      "medium": 4,
+      "low": 24,
       "unknown": 0
     },
     "storage_limit_exceeded_by_likes": false

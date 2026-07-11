@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "event_name": "schedule",
+  "workflow": "Paper Daily",
+  "repository": "S1lverYin/paper-daily",
+  "schedule": "0 1 * * *",
+  "slot_china": "09:00",
+  "planned_utc": "2026-07-11T01:00:00+00:00",
+  "planned_china": "2026-07-11T09:00:00+08:00",
+  "recorded_at_utc": "2026-07-11T03:58:10.576060+00:00",
+  "recorded_at_china": "2026-07-11T11:58:10.576060+08:00",
+  "queue_delay_minutes": 178.18,
+  "run_id": "29138842882",
+  "run_attempt": "1",
+  "run_url": "https://github.com/S1lverYin/paper-daily/actions/runs/29138842882",
+  "actor": "S1lverYin",
+  "note": "recorded_at includes runner startup and checkout time, so it is a conservative delay estimate"
+}
