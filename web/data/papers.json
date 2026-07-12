@@ -1,6 +1,6 @@
 {
-  "generated_at": "Sat, 11 Jul 2026 03:58:10 +0000",
-  "generated_at_iso": "2026-07-11T03:58:10.764817+00:00",
+  "generated_at": "Sun, 12 Jul 2026 04:19:25 +0000",
+  "generated_at_iso": "2026-07-12T04:19:25.259950+00:00",
   "config_source": "file",
   "topics": [
     {
@@ -9181,7 +9181,7 @@
       },
       "first_seen_at": "2026-07-11T03:58:10.764817+00:00",
       "last_seen_at": "2026-07-11T03:58:10.764817+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2607.03083v1",
@@ -15317,6 +15317,118 @@
       "retained_from_previous_run": true
     },
     {
+      "id": "2607.08342v1",
+      "source": "arXiv",
+      "title": "Explicit upper and lower bounds on certain functions related to $ζ(s)$ for $s>1$",
+      "authors": [
+        "Stephan Ramon Garcia",
+        "Loïc Grenié",
+        "Giuseppe Molteni"
+      ],
+      "summary": "We provide explicit upper and lower bounds for certain commonly occurring expressions that involve the Riemann zeta function $ζ(s)$ and its derivatives on $s>1$. For example, this improves upon existing bounds for $(s-1)ζ(s)$ and its derivatives, and for $(ζ'/ζ)(s)$.",
+      "published": "2026-07-09T10:31:48Z",
+      "updated": "2026-07-09T10:31:48Z",
+      "paper_url": "http://arxiv.org/abs/2607.08342v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.08342v1",
+      "categories": [
+        "math.NT"
+      ],
+      "seed_topic": "arithmetic_geometry",
+      "matches": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.438,
+          "base_score": 0.38,
+          "bridge_bonus": 0.012,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "medium",
+          "reason": "关键词命中：zeta function；arXiv 分类重合：math.NT；arithmetic ↔ K-theory / motivic；时效加分 +0.05",
+          "keyword_hits": [
+            "zeta function"
+          ]
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.058,
+          "base_score": 0.0,
+          "bridge_bonus": 0.012,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "low",
+          "reason": "arithmetic ↔ K-theory / motivic；时效加分 +0.05",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.046,
+          "base_score": 0.0,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "low",
+          "reason": "时效加分 +0.05",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.046,
+          "base_score": 0.0,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "low",
+          "reason": "时效加分 +0.05",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "arithmetic_geometry",
+        "topic_name": "Arithmetic Geometry",
+        "score": 0.438,
+        "base_score": 0.38,
+        "bridge_bonus": 0.012,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.046,
+        "level": "medium",
+        "reason": "关键词命中：zeta function；arXiv 分类重合：math.NT；arithmetic ↔ K-theory / motivic；时效加分 +0.05",
+        "keyword_hits": [
+          "zeta function"
+        ]
+      },
+      "top_labels": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.38,
+          "score": 0.438,
+          "level": "medium",
+          "keyword_hits": [
+            "zeta function"
+          ]
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "fulltext_excerpt": "[2607.08342] Explicit upper and lower bounds on certain functions related to $ζ(s)$ for $s>1$ Skip to main content arXiv is now an independent nonprofit! Learn more × Search arXiv Press Enter to search · Advanced search --> Mathematics > Number Theory arXiv:2607.08342 (math) [Submitted on 9 Jul 2026] Title: Explicit upper and lower bounds on certain functions related to $ζ(s)$ for $s>1$ Authors: Stephan Ramon Garcia , Loïc Grenié , Giuseppe Molteni View a PDF of the paper titled Explicit upper and lower bounds on certain functions related to $\\zeta(s)$ for $s>1$, by Stephan Ramon Garcia and 2 other authors View PDF HTML (experimental) Abstract: We provide explicit upper and lower bounds for certain commonly occurring expressions that involve the Riemann zeta function $\\zeta(s)$ and its derivatives on $s>1$. For example, this improves upon existing bounds for $(s-1)\\zeta(s)$ and its derivatives, and for $(\\zeta'/\\zeta)(s)$. Comments: 16 pages Subjects: Number Theory (math.NT) MSC classes: 11M06 Cite as: arXiv:2607.08342 [math.NT] (or arXiv:2607.08342v1 [math.NT] for this version) https://doi.org/10.48550/arXiv.2607.08342 Focus to learn more arXiv-issued DOI via DataCite Submission history From: Stephan Garcia R [ view email ] [v1] Thu, 9 Jul 2026 10:31:48 UTC (14 KB) Full-text links: Access Paper: View a PDF of the paper titled Explicit upper and lower bounds on certain functions related to $\\zeta(s)$ for $s>1$, by Stephan Ramon Garcia and 2 other authors View PDF HTML (experimental) TeX Source view license Current browse context: math.NT < prev | next > new | recent | 2026-07 Change to browse by: math References & Citations NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
+      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2607.08342",
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "We provide explicit upper and lower bounds for certain commonly occurring expressions that involve the Riemann zeta function $ζ(s)$ and its derivatives on $s>1$.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：zeta function；arXiv 分类重合：math.NT；arithmetic ↔ K-theory / motivic；时效加分 +0.05"
+      },
+      "first_seen_at": "2026-07-12T04:19:25.259950+00:00",
+      "last_seen_at": "2026-07-12T04:19:25.259950+00:00",
+      "retained_from_previous_run": false
+    },
+    {
       "id": "2607.06944v1",
       "source": "arXiv",
       "title": "$p$-adic Hahn series with sparse support",
@@ -18765,134 +18877,6 @@
       },
       "first_seen_at": "2026-07-11T03:58:10.764817+00:00",
       "last_seen_at": "2026-07-11T03:58:10.764817+00:00",
-      "retained_from_previous_run": false
-    },
-    {
-      "id": "2606.29044v1",
-      "source": "arXiv",
-      "title": "Dimension filtrations in birational localisation",
-      "authors": [
-        "David Kumallagov"
-      ],
-      "summary": "Let \\(S_b\\) be the class of birational morphisms between smooth varieties over a field \\(F\\), and let \\(L_n=S_b^{-1}d_{\\leq n}\\Sm(F)\\). Kahn and Sujatha asked whether the natural functor \\(L_n\\to S_b^{-1}\\Sm(F)\\) is fully faithful. We prove that it is fully faithful exactly for \\(n=0\\). More strongly, for every \\(n\\geq1\\) and every \\(N\\geq n+1\\), the transition functor \\(L_n\\to L_N\\) has an infinite fibre on an endomorphism set. The proof identifies a sharp dimension threshold: if \\(\\dim X+r\\leq n\\), then \\(X\\times\\mathbb A^r\\to X\\) is invertible in \\(L_n\\) precisely when \\(\\dim X+r\\leq n-1\\). We also give proper and projective analogues.",
-      "published": "2026-06-27T18:43:47Z",
-      "updated": "2026-06-27T18:43:47Z",
-      "paper_url": "http://arxiv.org/abs/2606.29044v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.29044v1",
-      "categories": [
-        "math.AG"
-      ],
-      "seed_topic": "algebraic_geometry",
-      "matches": [
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "score": 0.374,
-          "base_score": 0.335,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.039,
-          "level": "medium",
-          "reason": "关键词命中：Proj；arXiv 分类重合：math.AG；时效加分 +0.04",
-          "keyword_hits": [
-            "Proj"
-          ],
-          "llm_reason": "论文研究光滑簇上的双有理态射的局部化范畴，涉及维数滤子与可逆性的关系。这与代数几何中的簇、态射、维数理论等核心概念直接相关，具体匹配关键词包括variety, birational morphism, smooth morphism, proper morphism, projective scheme等。尽管主题偏向双有理几何和范畴局部化，但方法中使用的维数论证和投影类比与我的研究方向中的概形态射、纤维积等概念有潜在联系。"
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "score": 0.225,
-          "base_score": 0.186,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.039,
-          "level": "low",
-          "reason": "arXiv 分类重合：math.AG；时效加分 +0.04",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "score": 0.224,
-          "base_score": 0.185,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.039,
-          "level": "low",
-          "reason": "arXiv 分类重合：math.AG；时效加分 +0.04",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "score": 0.048,
-          "base_score": 0.009,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.039,
-          "level": "low",
-          "reason": "时效加分 +0.04",
-          "keyword_hits": []
-        }
-      ],
-      "best_match": {
-        "topic_id": "algebraic_geometry",
-        "topic_name": "Algebraic Geometry",
-        "score": 0.374,
-        "base_score": 0.335,
-        "bridge_bonus": 0.0,
-        "preference_bonus": 0.0,
-        "recency_bonus": 0.039,
-        "level": "medium",
-        "reason": "关键词命中：Proj；arXiv 分类重合：math.AG；时效加分 +0.04",
-        "keyword_hits": [
-          "Proj"
-        ],
-        "llm_reason": "论文研究光滑簇上的双有理态射的局部化范畴，涉及维数滤子与可逆性的关系。这与代数几何中的簇、态射、维数理论等核心概念直接相关，具体匹配关键词包括variety, birational morphism, smooth morphism, proper morphism, projective scheme等。尽管主题偏向双有理几何和范畴局部化，但方法中使用的维数论证和投影类比与我的研究方向中的概形态射、纤维积等概念有潜在联系。"
-      },
-      "top_labels": [
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "base_score": 0.335,
-          "score": 0.374,
-          "level": "low",
-          "keyword_hits": [
-            "Proj"
-          ]
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "base_score": 0.186,
-          "score": 0.225,
-          "level": "low",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "base_score": 0.185,
-          "score": 0.224,
-          "level": "low",
-          "keyword_hits": []
-        }
-      ],
-      "backfilled_from_recent_arxiv": true,
-      "newly_discovered_from_recent_arxiv": true,
-      "fulltext_excerpt": "[2606.29044] Dimension filtrations in birational localisation Skip to main content arXiv is now an independent nonprofit! Learn more × Search arXiv Press Enter to search · Advanced search --> Mathematics > Algebraic Geometry arXiv:2606.29044 (math) [Submitted on 27 Jun 2026] Title: Dimension filtrations in birational localisation Authors: David Kumallagov View a PDF of the paper titled Dimension filtrations in birational localisation, by David Kumallagov View PDF HTML (experimental) Abstract: Let \\(S_b\\) be the class of birational morphisms between smooth varieties over a field \\(F\\), and let \\(L_n=S_b^{-1}d_{\\leq n}\\Sm(F)\\). Kahn and Sujatha asked whether the natural functor \\(L_n\\to S_b^{-1}\\Sm(F)\\) is fully faithful. We prove that it is fully faithful exactly for \\(n=0\\). More strongly, for every \\(n\\geq1\\) and every \\(N\\geq n+1\\), the transition functor \\(L_n\\to L_N\\) has an infinite fibre on an endomorphism set. The proof identifies a sharp dimension threshold: if \\(\\dim X+r\\leq n\\), then \\(X\\times\\mathbb A^r\\to X\\) is invertible in \\(L_n\\) precisely when \\(\\dim X+r\\leq n-1\\). We also give proper and projective analogues. Comments: 6 pages Subjects: Algebraic Geometry (math.AG) MSC classes: 14E05 18E35 Cite as: arXiv:2606.29044 [math.AG] (or arXiv:2606.29044v1 [math.AG] for this version) https://doi.org/10.48550/arXiv.2606.29044 Focus to learn more arXiv-issued DOI via DataCite Submission history From: David Kumallagov [ view email ] [v1] Sat, 27 Jun 2026 18:43:47 UTC (7 KB) Full-text links: Access Paper: View a PDF of the paper titled Dimension filtrations in birational localisation, by David Kumallagov View PDF HTML (experimental) TeX Source view license Current browse context: math.AG < prev | next > new | recent | 2026-06 Change to browse by: math References & Citations NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
-      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2606.29044",
-      "chinese_summary": {
-        "problem": "该论文旨在解决Kahn和Sujatha提出的关于双有理局部化中维数滤子函子L_n→S_b^{-1}Sm(F)是否全忠实的问题，并精确刻画维数阈值对可逆性的影响。",
-        "method": "论文通过构造局部化范畴L_n = S_b^{-1} d_{\\leq n} \\Sm(F)，并分析过渡函子L_n→L_N的纤维结构。关键步骤是证明对于n=0时全忠实，而对于n≥1则存在无限纤维；同时利用维数阈值条件：若dim X+r ≤ n，则X×A^r→X在L_n中可逆当且仅当dim X+r ≤ n-1。还给出了proper和projective情形的类比。",
-        "innovation": "1. 首次完全解决了Kahn-Sujatha猜想，精确证明了全忠实性仅对n=0成立；2. 发现了尖锐的维数阈值，揭示了局部分类中可逆性与维数的精确关系；3. 将结果推广到proper和projective类比，增强了理论的适用范围。",
-        "evidence": "摘要中明确给出了定理陈述：函子L_n→S_b^{-1}Sm(F)全忠实当且仅当n=0；对于n≥1和N≥n+1，过渡函子L_n→L_N在某个自同态集上具有无限纤维。此外，给出了维数阈值条件的精确刻画。正文摘录虽短但印证了这些结论。",
-        "limitations": "论文篇幅仅6页，可能省略了许多技术细节，例如局部化范畴的具体构造、无限纤维的显式例子等。此外，结论仅限于域上光滑簇的双有理态射类，尚未推广到更一般的基概形或奇异情形。",
-        "why_relevant": "论文研究光滑簇上的双有理态射的局部化范畴，涉及维数滤子与可逆性的关系。这与代数几何中的簇、态射、维数理论等核心概念直接相关，具体匹配关键词包括variety, birational morphism, smooth morphism, proper morphism, projective scheme等。尽管主题偏向双有理几何和范畴局部化，但方法中使用的维数论证和投影类比与我的研究方向中的概形态射、纤维积等概念有潜在联系。"
-      },
-      "first_seen_at": "2026-07-05T04:47:23.106717+00:00",
-      "last_seen_at": "2026-07-05T04:47:23.106717+00:00",
       "retained_from_previous_run": true
     },
     {
@@ -19383,28 +19367,28 @@
     }
   ],
   "stats": {
-    "candidate_paper_count": 116,
-    "daily_candidate_paper_count": 116,
+    "candidate_paper_count": 112,
+    "daily_candidate_paper_count": 112,
     "raw_daily_candidate_count": 347,
     "daily_outside_cutoff_count": 275,
-    "newly_discovered_backfill_count": 116,
+    "newly_discovered_backfill_count": 112,
     "daily_backfill_days": 14,
-    "daily_backfill_candidate_count": 69,
+    "daily_backfill_candidate_count": 71,
     "daily_backfill_added_count": 0,
     "min_daily_papers": 8,
     "filtered_low_relevance_count": 0,
     "filtered_wrong_category_count": 72,
     "filtered_disliked_count": 0,
     "arxiv_category_filter": [
-      "math.NT",
-      "math.AG",
-      "math.KT",
       "math.AT",
-      "math.CT"
+      "math.CT",
+      "math.NT",
+      "math.KT",
+      "math.AG"
     ],
     "days": 1,
     "collection_mode": "incremental",
-    "collection_cutoff_iso": "2026-07-10T04:42:14.904736+00:00",
+    "collection_cutoff_iso": "2026-07-11T03:58:10.764817+00:00",
     "max_per_topic": 25,
     "max_new_papers": 30,
     "sources": [
@@ -19446,12 +19430,12 @@
     "dropped_disliked_count": 0,
     "max_stored_papers": 150,
     "max_data_bytes": 8388608,
-    "data_bytes": 1505749,
+    "data_bytes": 1502590,
     "storage_trimmed_count": 30,
     "storage_trimmed_by_level": {
-      "high": 2,
-      "medium": 4,
-      "low": 24,
+      "high": 0,
+      "medium": 3,
+      "low": 27,
       "unknown": 0
     },
     "storage_limit_exceeded_by_likes": false
