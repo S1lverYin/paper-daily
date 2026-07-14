@@ -1,9 +1,33 @@
 {
   "version": 1,
-  "active_china_slot": "09:00",
-  "active_cron": "0 1 * * *",
-  "mode": "manual-until-auto-adjust",
-  "updated_at": "",
-  "updated_by": "initial",
+  "active_china_slot": "07:30",
+  "active_cron": "30 23 * * *",
+  "mode": "auto-adjusted",
+  "updated_at": "2026-07-14T06:12:19.653688+00:00",
+  "updated_by": "auto_adjust_daily_schedule",
+  "previous_active_china_slot": "09:00",
+  "previous_active_cron": "0 1 * * *",
+  "decision": {
+    "not_before_china_date": "2026-07-14",
+    "probe_start_china_date": "2026-07-07",
+    "min_samples": 7,
+    "candidate_slots": [
+      "07:00",
+      "07:15",
+      "07:30",
+      "07:45",
+      "08:00",
+      "08:15",
+      "08:30"
+    ],
+    "selected": {
+      "slot": "07:30",
+      "samples": 8,
+      "median_queue_delay": 95.88,
+      "median_recorded_time": "09:06",
+      "median_offset_to_09": 5.88,
+      "in_09_10_rate": 0.75
+    }
+  },
   "note": "Daily workflow has multiple candidate schedules; only this active cron actually collects and pushes papers."
 }
