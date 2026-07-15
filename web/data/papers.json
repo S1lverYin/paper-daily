@@ -1,6 +1,6 @@
 {
-  "generated_at": "Tue, 14 Jul 2026 03:50:12 +0000",
-  "generated_at_iso": "2026-07-14T03:50:12.491890+00:00",
+  "generated_at": "Wed, 15 Jul 2026 00:12:25 +0000",
+  "generated_at_iso": "2026-07-15T00:12:25.008767+00:00",
   "config_source": "file",
   "topics": [
     {
@@ -583,7 +583,7 @@
       },
       "first_seen_at": "2026-07-14T03:50:12.491890+00:00",
       "last_seen_at": "2026-07-14T03:50:12.491890+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2607.02678v1",
@@ -1233,156 +1233,6 @@
       },
       "first_seen_at": "2026-07-04T04:26:28.063587+00:00",
       "last_seen_at": "2026-07-04T04:26:28.063587+00:00",
-      "retained_from_previous_run": true
-    },
-    {
-      "id": "2606.30637v1",
-      "source": "arXiv",
-      "title": "Lagrangian correspondences of nonabelian Hodge type and shifted twistor structures",
-      "authors": [
-        "Jacob Kryczka",
-        "Yuuji Tanaka",
-        "Shing-Tung Yau"
-      ],
-      "summary": "Classical nonabelian Hodge theory identifies Dolbeault and de Rham moduli spaces by providing a real-analytic isomorphism. In this paper, motivated by the Kapustin--Witten theory, we study this correspondence in the more general framework of perfect complexes on proper varieties, paying special attention to the surface case. We establish a Lagrangian correspondence which relates the shifted symplectic geometries by Pantev--Toën--Vaquié--Vezzosi (PTVV) between the derived stacks of flat and Higgs perfect complexes.Furthermore, we investigate the existence of the derived twistor structure of hyperkähler type on the moduli stack of perfect complexes endowed with $λ$-connections by Deligne--Hitchin--Simpson. We establish a version of the AKSZ/PTVV transgression, Lagrangian intersection, and (hyperkähler) symplectic reduction theorems in this context. Moreover, we prove that the derived Riemann--Hilbert correspondence of Porta and Holstein--Porta, which states an equivalence of derived analytic stacks of perfect complexes on $X_{\\mathrm{Betti}}$ and $X_{\\mathrm{DR}}$, is compatible with the natural shifted--symplectic structures. We then study the relation between the shifted (pre-)twistor structures and the shifted symplectic forms on the fibers, and prove that the analytic Deligne--Hitchin--Simpson moduli stack on a smooth projective variety $X$ has a canonical $2(1-\\dim X)$ shifted pretwistor structure over $\\mathbb{P}^1_{\\mathbb{C}}$, a result which has been anticipated for some time. In particular, the moduli stack of solutions to the Kapustin--Witten equations modulo gauge equivalence on a smooth proper complex algebraic surface exibits a $(-2)$-shifted (pre)twistor structure as a family over $\\mathbb{P}^1_{\\mathbb{C}}$.",
-      "published": "2026-06-29T17:58:26Z",
-      "updated": "2026-06-29T17:58:26Z",
-      "paper_url": "http://arxiv.org/abs/2606.30637v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.30637v1",
-      "categories": [
-        "math.AG",
-        "hep-th",
-        "math-ph",
-        "math.DG"
-      ],
-      "seed_topic": "motivic_k_theory",
-      "matches": [
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "score": 0.797,
-          "base_score": 0.692,
-          "bridge_bonus": 0.056,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.049,
-          "level": "high",
-          "reason": "关键词命中：derived stack、moduli space、moduli stack、variety、Spec、Proj；arXiv 分类重合：math.AG；桥接 algebraic_geometry↔homotopy_theory (hits=3/1)；AG ↔ homotopy；AG ↔ homotopy / arithmetic；时效加分 +0.05",
-          "keyword_hits": [
-            "derived stack",
-            "moduli space",
-            "moduli stack",
-            "variety",
-            "Spec",
-            "Proj"
-          ],
-          "llm_reason": "直接涉及派生栈、模空间、模栈、移位辛结构、挠理论等代数几何核心概念，与研究方向中的moduli stacks, derived stacks, algebraic stacks, sheaves, intersection theory等关键词高度吻合；同时使用了概形、射影簇等基础语言。"
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "score": 0.452,
-          "base_score": 0.379,
-          "bridge_bonus": 0.024,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.049,
-          "level": "medium",
-          "reason": "关键词命中：perfect complexes；arXiv 分类重合：math.AG；K-theory ↔ AG；homotopy ↔ K-theory；时效加分 +0.05",
-          "keyword_hits": [
-            "perfect complexes"
-          ]
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "score": 0.256,
-          "base_score": 0.195,
-          "bridge_bonus": 0.012,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.049,
-          "level": "low",
-          "reason": "arXiv 分类重合：math.AG；AG ↔ homotopy / arithmetic；时效加分 +0.05",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "score": 0.113,
-          "base_score": 0.008,
-          "bridge_bonus": 0.056,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.049,
-          "level": "low",
-          "reason": "桥接 homotopy_theory↔algebraic_geometry (hits=1/3)；AG ↔ homotopy；AG ↔ homotopy / arithmetic；时效加分 +0.05",
-          "keyword_hits": []
-        }
-      ],
-      "best_match": {
-        "topic_id": "algebraic_geometry",
-        "topic_name": "Algebraic Geometry",
-        "score": 0.797,
-        "base_score": 0.692,
-        "bridge_bonus": 0.056,
-        "preference_bonus": 0.0,
-        "recency_bonus": 0.049,
-        "level": "high",
-        "reason": "关键词命中：derived stack、moduli space、moduli stack、variety、Spec、Proj；arXiv 分类重合：math.AG；桥接 algebraic_geometry↔homotopy_theory (hits=3/1)；AG ↔ homotopy；AG ↔ homotopy / arithmetic；时效加分 +0.05",
-        "keyword_hits": [
-          "derived stack",
-          "moduli space",
-          "moduli stack",
-          "variety",
-          "Spec",
-          "Proj"
-        ],
-        "llm_reason": "直接涉及派生栈、模空间、模栈、移位辛结构、挠理论等代数几何核心概念，与研究方向中的moduli stacks, derived stacks, algebraic stacks, sheaves, intersection theory等关键词高度吻合；同时使用了概形、射影簇等基础语言。"
-      },
-      "top_labels": [
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "base_score": 0.692,
-          "score": 0.797,
-          "level": "high",
-          "keyword_hits": [
-            "derived stack",
-            "moduli space",
-            "moduli stack",
-            "variety",
-            "Spec",
-            "Proj"
-          ]
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "base_score": 0.379,
-          "score": 0.452,
-          "level": "medium",
-          "keyword_hits": [
-            "perfect complexes"
-          ]
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "base_score": 0.195,
-          "score": 0.256,
-          "level": "low",
-          "keyword_hits": []
-        }
-      ],
-      "fulltext_excerpt": "[2606.30637] Lagrangian correspondences of nonabelian Hodge type and shifted twistor structures --> Mathematics > Algebraic Geometry arXiv:2606.30637 (math) [Submitted on 29 Jun 2026] Title: Lagrangian correspondences of nonabelian Hodge type and shifted twistor structures Authors: Jacob Kryczka , Yuuji Tanaka , Shing-Tung Yau View a PDF of the paper titled Lagrangian correspondences of nonabelian Hodge type and shifted twistor structures, by Jacob Kryczka and Yuuji Tanaka and Shing-Tung Yau View PDF Abstract: Classical nonabelian Hodge theory identifies Dolbeault and de Rham moduli spaces by providing a real-analytic isomorphism. In this paper, motivated by the Kapustin--Witten theory, we study this correspondence in the more general framework of perfect complexes on proper varieties, paying special attention to the surface case. We establish a Lagrangian correspondence which relates the shifted symplectic geometries by Pantev--Toën--Vaquié--Vezzosi (PTVV) between the derived stacks of flat and Higgs perfect this http URL , we investigate the existence of the derived twistor structure of hyperkähler type on the moduli stack of perfect complexes endowed with $\\lambda$-connections by Deligne--Hitchin--Simpson. We establish a version of the AKSZ/PTVV transgression, Lagrangian intersection, and (hyperkähler) symplectic reduction theorems in this context. Moreover, we prove that the derived Riemann--Hilbert correspondence of Porta and Holstein--Porta, which states an equivalence of derived analytic stacks of perfect complexes on $X_{\\mathrm{Betti}}$ and $X_{\\mathrm{DR}}$, is compatible with the natural shifted--symplectic structures. We then study the relation between the shifted (pre-)twistor structures and the shifted symplectic forms on the fibers, and prove that the analytic Deligne--Hitchin--Simpson moduli stack on a smooth projective variety $X$ has a canonical $2(1-\\dim X)$ shifted pretwistor structure over $\\mathbb{P}^1_{\\mathbb{C}}$, a result which has been anticipated for some time. In particular, the moduli stack of solutions to the Kapustin--Witten equations modulo gauge equivalence on a smooth proper complex algebraic surface exibits a $(-2)$-shifted (pre)twistor structure as a family over $\\mathbb{P}^1_{\\mathbb{C}}$. Comments: 72 pages. Comments are very welcome Subjects: Algebraic Geometry (math.AG) ; High Energy Physics - Theory (hep-th); Mathematical Physics (math-ph); Differential Geometry (math.DG) Cite as: arXiv:2606.30637 [math.AG] (or arXiv:2606.30637v1 [math.AG] for this version) https://doi.org/10.48550/arXiv.2606.30637 Focus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: Jacob Kryczka [ view email ] [v1] Mon, 29 Jun 2026 17:58:26 UTC (194 KB) Full-text links: Access Paper: View a PDF of the paper titled Lagrangian correspondences of nonabelian Hodge type and shifted twistor structures, by Jacob Kryczka and Yuuji Tanaka and Shing-Tung Yau View PDF TeX Source view license Current browse context: math.AG < prev | next > new | recent | 2026-06 Change to browse by: hep-th math math-ph math.DG math.MP References & Citations INSPIRE HEP NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
-      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2606.30637",
-      "chinese_summary": {
-        "problem": "该论文旨在将经典非阿贝尔Hodge理论中的Dolbeault与de Rham模空间之间的实解析同构推广到更一般的框架——proper簇上的完美复形，特别关注曲面情形，并建立派生堆上的Lagrangian对应关系。",
-        "method": "利用Pantev–Toën–Vaquié–Vezzosi (PTVV)的移位辛几何理论，在平坦完美复形和Higgs完美复形的派生堆之间建立Lagrangian对应；同时发展AKSZ/PTVV超度、Lagrangian交和（超Kähler）辛约化定理，并证明Porta–Holstein–Porta的派生Riemann–Hilbert对应与自然移位辛结构的相容性。",
-        "innovation": "1. 建立了非阿贝尔Hodge型Lagrangian对应，将移位辛几何联系起来；2. 在带λ-连接的完美复形模堆上构造了Deligne–Hitchin–Simpson型的派生扭量结构（超Kähler型）；3. 证明了光滑射影簇上的解析Deligne–Hitchin–Simpson模堆具有规范2(1−dim X)-移位预扭量结构，并在代数曲面上具体表现为Kapustin–Witten方程解模空间的(-2)-移位（预）扭量结构。",
-        "evidence": "摘要中声称建立了AKSZ/PTVV超度等定理，并证明了派生Riemann–Hilbert对应与移位辛结构的相容性以及预扭量结构的存在性，但未提供具体计算或实验证据；全文为理论推导。",
-        "limitations": "需要读者熟悉派生代数几何、移位辛几何及非阿贝尔Hodge理论；论文长达72页，细节可能较为抽象；部分结果可能需要阅读全文才能完全验证。",
-        "why_relevant": "直接涉及派生栈、模空间、模栈、移位辛结构、挠理论等代数几何核心概念，与研究方向中的moduli stacks, derived stacks, algebraic stacks, sheaves, intersection theory等关键词高度吻合；同时使用了概形、射影簇等基础语言。"
-      },
-      "first_seen_at": "2026-06-30T04:55:55.077686+00:00",
-      "last_seen_at": "2026-06-30T04:55:55.077686+00:00",
       "retained_from_previous_run": true
     },
     {
@@ -2183,7 +2033,7 @@
       },
       "first_seen_at": "2026-07-14T03:50:12.491890+00:00",
       "last_seen_at": "2026-07-14T03:50:12.491890+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2606.31341v1",
@@ -2447,7 +2297,7 @@
       },
       "first_seen_at": "2026-07-14T03:50:12.491890+00:00",
       "last_seen_at": "2026-07-14T03:50:12.491890+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2607.09021v1",
@@ -3888,7 +3738,7 @@
       },
       "first_seen_at": "2026-07-14T03:50:12.491890+00:00",
       "last_seen_at": "2026-07-14T03:50:12.491890+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2607.01355v1",
@@ -4558,7 +4408,7 @@
       },
       "first_seen_at": "2026-07-14T03:50:12.491890+00:00",
       "last_seen_at": "2026-07-14T03:50:12.491890+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2607.07558v1",
@@ -5215,7 +5065,7 @@
       },
       "first_seen_at": "2026-07-14T03:50:12.491890+00:00",
       "last_seen_at": "2026-07-14T03:50:12.491890+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2607.01112v1",
@@ -5460,7 +5310,7 @@
       },
       "first_seen_at": "2026-07-14T03:50:12.491890+00:00",
       "last_seen_at": "2026-07-14T03:50:12.491890+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2606.31441v1",
@@ -6865,7 +6715,7 @@
       },
       "first_seen_at": "2026-07-14T03:50:12.491890+00:00",
       "last_seen_at": "2026-07-14T03:50:12.491890+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2607.08564v1",
@@ -7130,7 +6980,7 @@
       },
       "first_seen_at": "2026-07-14T03:50:12.491890+00:00",
       "last_seen_at": "2026-07-14T03:50:12.491890+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2607.10585v1",
@@ -7264,7 +7114,7 @@
       },
       "first_seen_at": "2026-07-14T03:50:12.491890+00:00",
       "last_seen_at": "2026-07-14T03:50:12.491890+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2606.31547v1",
@@ -8152,7 +8002,7 @@
       },
       "first_seen_at": "2026-07-14T03:50:12.491890+00:00",
       "last_seen_at": "2026-07-14T03:50:12.491890+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2607.05305v1",
@@ -9064,7 +8914,7 @@
       },
       "first_seen_at": "2026-07-14T03:50:12.491890+00:00",
       "last_seen_at": "2026-07-14T03:50:12.491890+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2607.08052v1",
@@ -10347,7 +10197,7 @@
       },
       "first_seen_at": "2026-07-14T03:50:12.491890+00:00",
       "last_seen_at": "2026-07-14T03:50:12.491890+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2607.04476v1",
@@ -11009,7 +10859,7 @@
       },
       "first_seen_at": "2026-07-14T03:50:12.491890+00:00",
       "last_seen_at": "2026-07-14T03:50:12.491890+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2607.07531v1",
@@ -11669,119 +11519,6 @@
       "retained_from_previous_run": true
     },
     {
-      "id": "2606.30567v1",
-      "source": "arXiv",
-      "title": "Products of prime ideals in ray class groups",
-      "authors": [
-        "Likun Xie"
-      ],
-      "summary": "We prove that every class in the narrow ray class group modulo an integral ideal $\\mathfrak q$ of a fixed number field is represented by a product of three prime ideals of norm at most $ ( N\\mathfrak q)^{\\max(1,3α,4α_0)+κ} $ for any $κ>0$, where $α$ is the exponent in short character sum bounds for general non-principal ray class characters and $α_0$ comes from a bounded-order subconvexity input for Hecke $L$-functions. Wu's subconvexity bound gives the admissible choice $α=α_0=103/256$, hence the explicit bound $(N\\mathfrak q)^{103/64+κ}$. This improves the previous $O_K((N\\mathfrak q)^3)$-scale bound of Deshouillers, Gun, Ramaré, and Sivaraman. We also prove that a positive proportion of ray classes are represented by products of two prime ideals. The proof extends the multiplicative dense-model and transference framework of Matomäki--Teräväinen to narrow ray class groups.",
-      "published": "2026-06-29T17:09:28Z",
-      "updated": "2026-06-29T17:09:28Z",
-      "paper_url": "http://arxiv.org/abs/2606.30567v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.30567v1",
-      "categories": [
-        "math.NT"
-      ],
-      "seed_topic": "arithmetic_geometry",
-      "matches": [
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "score": 0.517,
-          "base_score": 0.468,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.049,
-          "level": "medium",
-          "reason": "关键词命中：number field、L-function；arXiv 分类重合：math.NT；时效加分 +0.05",
-          "keyword_hits": [
-            "number field",
-            "L-function"
-          ],
-          "llm_reason": "论文涉及数域（number field）和L-函数（L-function），与算术几何方向中对数域、L-函数的研究相关；射线类群是类域论的核心对象，与Galois表示、阿贝尔扩张等有联系。但问题更偏向代数数论的分布和表示理论，而非直接涉及p-adic Hodge理论、上同调或志村簇等典型算术几何主题。"
-        },
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "score": 0.059,
-          "base_score": 0.01,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.049,
-          "level": "low",
-          "reason": "时效加分 +0.05",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "score": 0.058,
-          "base_score": 0.009,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.049,
-          "level": "low",
-          "reason": "时效加分 +0.05",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "score": 0.055,
-          "base_score": 0.006,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.049,
-          "level": "low",
-          "reason": "时效加分 +0.05",
-          "keyword_hits": []
-        }
-      ],
-      "best_match": {
-        "topic_id": "arithmetic_geometry",
-        "topic_name": "Arithmetic Geometry",
-        "score": 0.517,
-        "base_score": 0.468,
-        "bridge_bonus": 0.0,
-        "preference_bonus": 0.0,
-        "recency_bonus": 0.049,
-        "level": "medium",
-        "reason": "关键词命中：number field、L-function；arXiv 分类重合：math.NT；时效加分 +0.05",
-        "keyword_hits": [
-          "number field",
-          "L-function"
-        ],
-        "llm_reason": "论文涉及数域（number field）和L-函数（L-function），与算术几何方向中对数域、L-函数的研究相关；射线类群是类域论的核心对象，与Galois表示、阿贝尔扩张等有联系。但问题更偏向代数数论的分布和表示理论，而非直接涉及p-adic Hodge理论、上同调或志村簇等典型算术几何主题。"
-      },
-      "top_labels": [
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "base_score": 0.468,
-          "score": 0.517,
-          "level": "medium",
-          "keyword_hits": [
-            "number field",
-            "L-function"
-          ]
-        }
-      ],
-      "fulltext_excerpt": "[2606.30567] Products of prime ideals in ray class groups --> Mathematics > Number Theory arXiv:2606.30567 (math) [Submitted on 29 Jun 2026] Title: Products of prime ideals in ray class groups Authors: Likun Xie View a PDF of the paper titled Products of prime ideals in ray class groups, by Likun Xie View PDF HTML (experimental) Abstract: We prove that every class in the narrow ray class group modulo an integral ideal $\\mathfrak q$ of a fixed number field is represented by a product of three prime ideals of norm at most $ ( N\\mathfrak q)^{\\max(1,3\\alpha,4\\alpha_0)+\\kappa} $ for any $\\kappa>0$, where $\\alpha$ is the exponent in short character sum bounds for general non-principal ray class characters and $\\alpha_0$ comes from a bounded-order subconvexity input for Hecke $L$-functions. Wu's subconvexity bound gives the admissible choice $\\alpha=\\alpha_0=103/256$, hence the explicit bound $(N\\mathfrak q)^{103/64+\\kappa}$. This improves the previous $O_K((N\\mathfrak q)^3)$-scale bound of Deshouillers, Gun, Ramaré, and Sivaraman. We also prove that a positive proportion of ray classes are represented by products of two prime ideals. The proof extends the multiplicative dense-model and transference framework of Matomäki--Teräväinen to narrow ray class groups. Subjects: Number Theory (math.NT) Report number: MPIM-Bonn-2026 Cite as: arXiv:2606.30567 [math.NT] (or arXiv:2606.30567v1 [math.NT] for this version) https://doi.org/10.48550/arXiv.2606.30567 Focus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: Likun Xie [ view email ] [v1] Mon, 29 Jun 2026 17:09:28 UTC (58 KB) Full-text links: Access Paper: View a PDF of the paper titled Products of prime ideals in ray class groups, by Likun Xie View PDF HTML (experimental) TeX Source view license Current browse context: math.NT < prev | next > new | recent | 2026-06 Change to browse by: math References & Citations NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
-      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2606.30567",
-      "chinese_summary": {
-        "problem": "在固定数域的窄射线类群中，每个类能否由范数尽可能小的有限个素理想的乘积表示，并改进已知的素理想个数和范数上界。",
-        "method": "利用短特征和估计（非主射线类特征）和Hecke L-函数的子凸性界（吴氏子凸性界给出指数α=α₀=103/256），结合Matomäki–Teräväinen的乘法稠密模型与转移框架，将其推广到窄射线类群场景。",
-        "innovation": "1. 将Matomäki–Teräväinen的乘法稠密模型和转移框架从整数环的乘法群扩展到窄射线类群，从而处理非平凡射线类特征。2. 利用短特征和估计与子凸性界，将素理想乘积的范数上界从之前的O((N q)³)尺度改进到(N q)^{103/64+κ}，且素理想个数从四个优化到三个。3. 证明了正比例的射线类可由两个素理想乘积表示。",
-        "evidence": "理论上严格证明：对任意κ>0，每个窄射线类可由三个范数≤(N q)^{max(1,3α,4α₀)+κ}的素理想乘积表示；特别地，利用吴氏子凸性界得到显式界(N q)^{103/64+κ}。此外，正比例类可由两个素理想乘积表示。摘要未提供实验或数值验证。",
-        "limitations": "1. 结论依赖特征和估计与子凸性界的假设，其中α和α₀的具体值可能随数域变化，通用性需验证。2. 仅处理窄射线类群，未涵盖更一般的类群或模结构。3. 未讨论计算实例或实际数值界，实际应用需额外计算。",
-        "why_relevant": "论文涉及数域（number field）和L-函数（L-function），与算术几何方向中对数域、L-函数的研究相关；射线类群是类域论的核心对象，与Galois表示、阿贝尔扩张等有联系。但问题更偏向代数数论的分布和表示理论，而非直接涉及p-adic Hodge理论、上同调或志村簇等典型算术几何主题。"
-      },
-      "first_seen_at": "2026-06-30T04:55:55.077686+00:00",
-      "last_seen_at": "2026-06-30T04:55:55.077686+00:00",
-      "retained_from_previous_run": true
-    },
-    {
       "id": "2607.02060v1",
       "source": "arXiv",
       "title": "Equivariant twisted $R$-algebras via Thom spectra",
@@ -12432,7 +12169,7 @@
       },
       "first_seen_at": "2026-07-14T03:50:12.491890+00:00",
       "last_seen_at": "2026-07-14T03:50:12.491890+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2607.01482v2",
@@ -14165,6 +13902,119 @@
       "first_seen_at": "2026-07-07T04:40:40.901715+00:00",
       "last_seen_at": "2026-07-07T04:40:40.901715+00:00",
       "retained_from_previous_run": true
+    },
+    {
+      "id": "2607.10051v1",
+      "source": "arXiv",
+      "title": "Simultaneous popular polynomial differences over finite fields",
+      "authors": [
+        "David Conlon",
+        "Dingding Dong",
+        "Guo-Dong Hong"
+      ],
+      "summary": "Green's popular difference theorem says that for every \\(\\varepsilon>0\\), all sufficiently large primes \\(p\\), and every set \\(A\\subseteq\\mathbb F_p\\) of density \\(α\\), there exists a nonzero \\(d\\in\\mathbb F_p\\) such that \\[ \\mathbb E_{x\\in\\mathbb F_p} 1_A(x)1_A(x+d)1_A(x+2d) \\geq α^3-\\varepsilon. \\] We show that a stronger simultaneous popular difference phenomenon holds for polynomial configurations. Namely, if $\\mathcal P=\\{P_1,\\dots,P_k\\} \\subset \\mathbb Z[t]$ is a fixed collection of linearly independent polynomials with zero constant terms, we show that for every \\(\\varepsilon>0\\), all sufficiently large primes \\(p\\), and every set \\(A\\subseteq\\mathbb F_p\\) of density \\(α\\), there exists a nonzero \\(d\\in\\mathbb F_p\\) such that \\[ \\mathbb E_{x\\in\\mathbb F_p} 1_A(x) \\prod_{i=1}^k 1_A\\bigl(x+P_i(d)\\bigr)^{ω_i} \\geq α^{1+\\sum_iω_i}-\\varepsilon \\] simultaneously for every \\(ω=(ω_1,\\dots,ω_k)\\in\\{0,1\\}^k\\). We also show that such simultaneous popular difference phenomena have sharp limitations by proving that for every sufficiently large prime \\(p\\), there is a constant \\(c>0\\) such that, for all sufficiently large \\(n\\), one can find a set \\(A\\subseteq\\mathbb F_p^n\\) of density \\(1/2+o_n(1)\\) satisfying \\[ \\max_{d\\neq 0} \\min\\left\\{ \\mathbb E_{x\\in\\mathbb F_p^n} 1_A(x)1_A(x+d)1_A(x+2d), \\mathbb E_{x\\in\\mathbb F_p^n} 1_A(x)1_A(x+2d)1_A(x+4d) \\right\\} \\leq \\frac18-c. \\] That is, the strengthening of Green's result, in this case over $\\mathbb F_p^n$ for $p$ fixed and $n$ tending to infinity, requiring that both \\(d\\) and \\(2d\\) are simultaneously popular differences for three-term arithmetic progressions is false.",
+      "published": "2026-07-11T00:21:07Z",
+      "updated": "2026-07-11T00:21:07Z",
+      "paper_url": "http://arxiv.org/abs/2607.10051v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.10051v1",
+      "categories": [
+        "math.NT",
+        "math.CO"
+      ],
+      "seed_topic": "arithmetic_geometry",
+      "matches": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.469,
+          "base_score": 0.425,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.044,
+          "level": "medium",
+          "reason": "关键词命中：finite field；arXiv 分类重合：math.NT；时效加分 +0.04",
+          "keyword_hits": [
+            "finite field"
+          ]
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.054,
+          "base_score": 0.01,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.044,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.049,
+          "base_score": 0.005,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.044,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.048,
+          "base_score": 0.004,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.044,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "arithmetic_geometry",
+        "topic_name": "Arithmetic Geometry",
+        "score": 0.469,
+        "base_score": 0.425,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.044,
+        "level": "medium",
+        "reason": "关键词命中：finite field；arXiv 分类重合：math.NT；时效加分 +0.04",
+        "keyword_hits": [
+          "finite field"
+        ]
+      },
+      "top_labels": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.425,
+          "score": 0.469,
+          "level": "medium",
+          "keyword_hits": [
+            "finite field"
+          ]
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "fulltext_excerpt": "[2607.10051] Simultaneous popular polynomial differences over finite fields Skip to main content arXiv is now an independent nonprofit! Learn more × Search arXiv Press Enter to search · Advanced search --> Mathematics > Number Theory arXiv:2607.10051 (math) [Submitted on 11 Jul 2026] Title: Simultaneous popular polynomial differences over finite fields Authors: David Conlon , Dingding Dong , Guo-Dong Hong View a PDF of the paper titled Simultaneous popular polynomial differences over finite fields, by David Conlon and 2 other authors View PDF HTML (experimental) Abstract: Green's popular difference theorem says that for every \\(\\varepsilon>0\\), all sufficiently large primes \\(p\\), and every set \\(A\\subseteq\\mathbb F_p\\) of density \\(\\alpha\\), there exists a nonzero \\(d\\in\\mathbb F_p\\) such that \\[ \\mathbb E_{x\\in\\mathbb F_p} 1_A(x)1_A(x+d)1_A(x+2d) \\geq \\alpha^3-\\varepsilon. \\] We show that a stronger simultaneous popular difference phenomenon holds for polynomial configurations. Namely, if $\\mathcal P=\\{P_1,\\dots,P_k\\} \\subset \\mathbb Z[t]$ is a fixed collection of linearly independent polynomials with zero constant terms, we show that for every \\(\\varepsilon>0\\), all sufficiently large primes \\(p\\), and every set \\(A\\subseteq\\mathbb F_p\\) of density \\(\\alpha\\), there exists a nonzero \\(d\\in\\mathbb F_p\\) such that \\[ \\mathbb E_{x\\in\\mathbb F_p} 1_A(x) \\prod_{i=1}^k 1_A\\bigl(x+P_i(d)\\bigr)^{\\omega_i} \\geq \\alpha^{1+\\sum_i\\omega_i}-\\varepsilon \\] simultaneously for every \\(\\omega=(\\omega_1,\\dots,\\omega_k)\\in\\{0,1\\}^k\\). We also show that such simultaneous popular difference phenomena have sharp limitations by proving that for every sufficiently large prime \\(p\\), there is a constant \\(c>0\\) such that, for all sufficiently large \\(n\\), one can find a set \\(A\\subseteq\\mathbb F_p^n\\) of density \\(1/2+o_n(1)\\) satisfying \\[ \\max_{d\\neq 0} \\min\\left\\{ \\mathbb E_{x\\in\\mathbb F_p^n} 1_A(x)1_A(x+d)1_A(x+2d), \\mathbb E_{x\\in\\mathbb F_p^n} 1_A(x)1_A(x+2d)1_A(x+4d) \\right\\} \\leq \\frac18-c. \\] That is, the strengthening of Green's result, in this case over $\\mathbb F_p^n$ for $p$ fixed and $n$ tending to infinity, requiring that both \\(d\\) and \\(2d\\) are simultaneously popular differences for three-term arithmetic progressions is false. Comments: 21 pages Subjects: Number Theory (math.NT) ; Combinatorics (math.CO) Cite as: arXiv:2607.10051 [math.NT] (or arXiv:2607.10051v1 [math.NT] for this version) https://doi.org/10.48550/arXiv.2607.10051 Focus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: Guo-Dong Hong [ view email ] [v1] Sat, 11 Jul 2026 00:21:07 UTC (22 KB) Full-text links: Access Paper: View a PDF of the paper titled Simultaneous popular polynomial differences over finite fields, by David Conlon and 2 other authors View PDF HTML (experimental) TeX Source view license Current browse context: math.NT < prev | next > new | recent | 2026-07 Change to browse by: math math.CO References & Citations NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
+      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2607.10051",
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Green's popular difference theorem says that for every \\(\\varepsilon>0\\), all sufficiently large primes \\(p\\), and every set \\(A\\subseteq\\mathbb F_p\\) of density \\(α\\), there exists a nonzero \\(d\\in\\mathbb F_p\\) such that \\[ \\mathbb E_{x\\in\\mathbb F_p} 1_A(x)1_A(x+d)1_A(x+2d) \\geq α^3-\\varepsilon.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：finite field；arXiv 分类重合：math.NT；时效加分 +0.04"
+      },
+      "first_seen_at": "2026-07-15T00:12:25.008767+00:00",
+      "last_seen_at": "2026-07-15T00:12:25.008767+00:00",
+      "retained_from_previous_run": false
     },
     {
       "id": "2607.02239v1",
@@ -15992,7 +15842,7 @@
       },
       "first_seen_at": "2026-07-14T03:50:12.491890+00:00",
       "last_seen_at": "2026-07-14T03:50:12.491890+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2607.06944v1",
@@ -17105,7 +16955,7 @@
       },
       "first_seen_at": "2026-07-14T03:50:12.491890+00:00",
       "last_seen_at": "2026-07-14T03:50:12.491890+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2607.06477v1",
@@ -18598,6 +18448,128 @@
       "retained_from_previous_run": true
     },
     {
+      "id": "2607.11068v1",
+      "source": "arXiv",
+      "title": "Exact Frequencies of Consecutive Quadratic Residue and Nonresidue Patterns Modulo a Prime",
+      "authors": [
+        "Brahim Mittou"
+      ],
+      "summary": "This paper determines the exact frequency of all consecutive sign patterns of lengths two and three formed by the quadratic character modulo an odd prime $p$. Using basic properties of character sums over finite fields, we derive exact counting formulas for pairs $(n, n+1)$ and triples $(n-1, n, n+1)$ exhibiting specific sequence patterns in \\(\\{\\pm 1\\}\\). The frequencies of pairs are classified entirely by \\(p \\pmod 4\\), whereas triples exhibit a more complex dependency on \\(p \\pmod 8\\) and the Jacobsthal sum $T_p=\\sum_{x\\in\\mathbb F_p}χ(x^3-x)$.",
+      "published": "2026-07-13T04:14:30Z",
+      "updated": "2026-07-13T04:14:30Z",
+      "paper_url": "http://arxiv.org/abs/2607.11068v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11068v1",
+      "categories": [
+        "math.NT"
+      ],
+      "seed_topic": "arithmetic_geometry",
+      "matches": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.42,
+          "base_score": 0.373,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.047,
+          "level": "medium",
+          "reason": "关键词命中：finite field；arXiv 分类重合：math.NT；时效加分 +0.05",
+          "keyword_hits": [
+            "finite field"
+          ]
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.185,
+          "base_score": 0.138,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.047,
+          "level": "low",
+          "reason": "关键词命中：Spec；时效加分 +0.05",
+          "keyword_hits": [
+            "Spec"
+          ]
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.053,
+          "base_score": 0.006,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.047,
+          "level": "low",
+          "reason": "时效加分 +0.05",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.052,
+          "base_score": 0.005,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.047,
+          "level": "low",
+          "reason": "时效加分 +0.05",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "arithmetic_geometry",
+        "topic_name": "Arithmetic Geometry",
+        "score": 0.42,
+        "base_score": 0.373,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.047,
+        "level": "medium",
+        "reason": "关键词命中：finite field；arXiv 分类重合：math.NT；时效加分 +0.05",
+        "keyword_hits": [
+          "finite field"
+        ]
+      },
+      "top_labels": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.373,
+          "score": 0.42,
+          "level": "medium",
+          "keyword_hits": [
+            "finite field"
+          ]
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.138,
+          "score": 0.185,
+          "level": "low",
+          "keyword_hits": [
+            "Spec"
+          ]
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "fulltext_excerpt": "[2607.11068] Exact Frequencies of Consecutive Quadratic Residue and Nonresidue Patterns Modulo a Prime Skip to main content arXiv is now an independent nonprofit! Learn more × Search arXiv Press Enter to search · Advanced search --> Mathematics > Number Theory arXiv:2607.11068 (math) [Submitted on 13 Jul 2026] Title: Exact Frequencies of Consecutive Quadratic Residue and Nonresidue Patterns Modulo a Prime Authors: Brahim Mittou View a PDF of the paper titled Exact Frequencies of Consecutive Quadratic Residue and Nonresidue Patterns Modulo a Prime, by Brahim Mittou View PDF HTML (experimental) Abstract: This paper determines the exact frequency of all consecutive sign patterns of lengths two and three formed by the quadratic character modulo an odd prime $p$. Using basic properties of character sums over finite fields, we derive exact counting formulas for pairs $(n, n+1)$ and triples $(n-1, n, n+1)$ exhibiting specific sequence patterns in \\(\\{\\pm 1\\}\\). The frequencies of pairs are classified entirely by \\(p \\pmod 4\\), whereas triples exhibit a more complex dependency on \\(p \\pmod 8\\) and the Jacobsthal sum $T_p=\\sum_{x\\in\\mathbb F_p}\\chi(x^3-x)$. Subjects: Number Theory (math.NT) Cite as: arXiv:2607.11068 [math.NT] (or arXiv:2607.11068v1 [math.NT] for this version) https://doi.org/10.48550/arXiv.2607.11068 Focus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: Brahim Mittou [ view email ] [v1] Mon, 13 Jul 2026 04:14:30 UTC (5 KB) Full-text links: Access Paper: View a PDF of the paper titled Exact Frequencies of Consecutive Quadratic Residue and Nonresidue Patterns Modulo a Prime, by Brahim Mittou View PDF HTML (experimental) TeX Source view license Current browse context: math.NT < prev | next > new | recent | 2026-07 Change to browse by: math References & Citations NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
+      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2607.11068",
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "This paper determines the exact frequency of all consecutive sign patterns of lengths two and three formed by the quadratic character modulo an odd prime $p$.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：finite field；arXiv 分类重合：math.NT；时效加分 +0.05"
+      },
+      "first_seen_at": "2026-07-15T00:12:25.008767+00:00",
+      "last_seen_at": "2026-07-15T00:12:25.008767+00:00",
+      "retained_from_previous_run": false
+    },
+    {
       "id": "2607.04376v1",
       "source": "arXiv",
       "title": "A slope-unstable bundle on a surface with 1-homogeneous projectivization",
@@ -19475,13 +19447,13 @@
     }
   ],
   "stats": {
-    "candidate_paper_count": 144,
-    "daily_candidate_paper_count": 144,
+    "candidate_paper_count": 125,
+    "daily_candidate_paper_count": 125,
     "raw_daily_candidate_count": 343,
-    "daily_outside_cutoff_count": 244,
-    "newly_discovered_backfill_count": 112,
+    "daily_outside_cutoff_count": 276,
+    "newly_discovered_backfill_count": 125,
     "daily_backfill_days": 14,
-    "daily_backfill_candidate_count": 48,
+    "daily_backfill_candidate_count": 64,
     "daily_backfill_added_count": 0,
     "min_daily_papers": 8,
     "filtered_low_relevance_count": 1,
@@ -19489,14 +19461,14 @@
     "filtered_disliked_count": 0,
     "arxiv_category_filter": [
       "math.AG",
-      "math.KT",
-      "math.CT",
       "math.NT",
-      "math.AT"
+      "math.AT",
+      "math.CT",
+      "math.KT"
     ],
     "days": 1,
     "collection_mode": "incremental",
-    "collection_cutoff_iso": "2026-07-13T04:22:54.634924+00:00",
+    "collection_cutoff_iso": "2026-07-14T03:50:12.491890+00:00",
     "max_per_topic": 25,
     "max_new_papers": 30,
     "sources": [
@@ -19538,12 +19510,12 @@
     "dropped_disliked_count": 0,
     "max_stored_papers": 150,
     "max_data_bytes": 8388608,
-    "data_bytes": 1541590,
+    "data_bytes": 1536248,
     "storage_trimmed_count": 30,
     "storage_trimmed_by_level": {
-      "high": 4,
-      "medium": 15,
-      "low": 11,
+      "high": 1,
+      "medium": 3,
+      "low": 26,
       "unknown": 0
     },
     "storage_limit_exceeded_by_likes": false
