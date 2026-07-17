@@ -1,6 +1,6 @@
 {
-  "generated_at": "Thu, 16 Jul 2026 00:54:30 +0000",
-  "generated_at_iso": "2026-07-16T00:54:30.800435+00:00",
+  "generated_at": "Fri, 17 Jul 2026 01:12:58 +0000",
+  "generated_at_iso": "2026-07-17T01:12:58.901369+00:00",
   "config_source": "file",
   "topics": [
     {
@@ -5069,7 +5069,7 @@
       },
       "first_seen_at": "2026-07-16T00:54:30.800435+00:00",
       "last_seen_at": "2026-07-16T00:54:30.800435+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2607.12679v1",
@@ -5188,7 +5188,7 @@
       },
       "first_seen_at": "2026-07-16T00:54:30.800435+00:00",
       "last_seen_at": "2026-07-16T00:54:30.800435+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2607.06022v1",
@@ -5979,7 +5979,7 @@
       },
       "first_seen_at": "2026-07-16T00:54:30.800435+00:00",
       "last_seen_at": "2026-07-16T00:54:30.800435+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2607.05360v1",
@@ -6239,7 +6239,7 @@
       },
       "first_seen_at": "2026-07-16T00:54:30.800435+00:00",
       "last_seen_at": "2026-07-16T00:54:30.800435+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2607.12059v1",
@@ -6370,7 +6370,7 @@
       },
       "first_seen_at": "2026-07-16T00:54:30.800435+00:00",
       "last_seen_at": "2026-07-16T00:54:30.800435+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2607.10728v1",
@@ -7028,7 +7028,7 @@
       },
       "first_seen_at": "2026-07-16T00:54:30.800435+00:00",
       "last_seen_at": "2026-07-16T00:54:30.800435+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2607.06795v1",
@@ -9487,7 +9487,7 @@
       },
       "first_seen_at": "2026-07-16T00:54:30.800435+00:00",
       "last_seen_at": "2026-07-16T00:54:30.800435+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2607.12910v1",
@@ -9620,7 +9620,7 @@
       },
       "first_seen_at": "2026-07-16T00:54:30.800435+00:00",
       "last_seen_at": "2026-07-16T00:54:30.800435+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2607.01126v1",
@@ -10113,7 +10113,7 @@
       },
       "first_seen_at": "2026-07-16T00:54:30.800435+00:00",
       "last_seen_at": "2026-07-16T00:54:30.800435+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2607.03083v1",
@@ -11040,7 +11040,7 @@
       },
       "first_seen_at": "2026-07-16T00:54:30.800435+00:00",
       "last_seen_at": "2026-07-16T00:54:30.800435+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2607.07531v1",
@@ -11829,7 +11829,7 @@
       },
       "first_seen_at": "2026-07-16T00:54:30.800435+00:00",
       "last_seen_at": "2026-07-16T00:54:30.800435+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2607.02060v1",
@@ -12214,7 +12214,7 @@
       },
       "first_seen_at": "2026-07-16T00:54:30.800435+00:00",
       "last_seen_at": "2026-07-16T00:54:30.800435+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2607.09258v1",
@@ -13728,7 +13728,7 @@
       },
       "first_seen_at": "2026-07-16T00:54:30.800435+00:00",
       "last_seen_at": "2026-07-16T00:54:30.800435+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2607.07825v1",
@@ -15063,7 +15063,7 @@
       },
       "first_seen_at": "2026-07-16T00:54:30.800435+00:00",
       "last_seen_at": "2026-07-16T00:54:30.800435+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2607.07528v1",
@@ -17018,7 +17018,7 @@
       },
       "first_seen_at": "2026-07-16T00:54:30.800435+00:00",
       "last_seen_at": "2026-07-16T00:54:30.800435+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2607.12327v1",
@@ -17140,7 +17140,7 @@
       },
       "first_seen_at": "2026-07-16T00:54:30.800435+00:00",
       "last_seen_at": "2026-07-16T00:54:30.800435+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2607.01969v1",
@@ -17774,7 +17774,7 @@
       },
       "first_seen_at": "2026-07-16T00:54:30.800435+00:00",
       "last_seen_at": "2026-07-16T00:54:30.800435+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2607.01703v1",
@@ -19485,28 +19485,28 @@
     }
   ],
   "stats": {
-    "candidate_paper_count": 137,
-    "daily_candidate_paper_count": 137,
-    "raw_daily_candidate_count": 345,
-    "daily_outside_cutoff_count": 279,
-    "newly_discovered_backfill_count": 137,
+    "candidate_paper_count": 0,
+    "daily_candidate_paper_count": 0,
+    "raw_daily_candidate_count": 0,
+    "daily_outside_cutoff_count": 0,
+    "newly_discovered_backfill_count": 0,
     "daily_backfill_days": 14,
-    "daily_backfill_candidate_count": 57,
+    "daily_backfill_candidate_count": 0,
     "daily_backfill_added_count": 0,
     "min_daily_papers": 8,
-    "filtered_low_relevance_count": 1,
-    "filtered_wrong_category_count": 65,
+    "filtered_low_relevance_count": 0,
+    "filtered_wrong_category_count": 0,
     "filtered_disliked_count": 0,
     "arxiv_category_filter": [
-      "math.AT",
-      "math.CT",
       "math.NT",
       "math.KT",
-      "math.AG"
+      "math.AG",
+      "math.CT",
+      "math.AT"
     ],
     "days": 1,
     "collection_mode": "incremental",
-    "collection_cutoff_iso": "2026-07-15T00:12:25.008767+00:00",
+    "collection_cutoff_iso": "2026-07-16T00:54:30.800435+00:00",
     "max_per_topic": 25,
     "max_new_papers": 30,
     "sources": [
@@ -19522,38 +19522,39 @@
     "source_stats": {
       "arXiv": {
         "type": "arxiv",
-        "successful_fetches": 4,
-        "failed_fetches": 0
+        "successful_fetches": 0,
+        "failed_fetches": 4,
+        "last_error": "HTTP Error 429: Unknown Error"
       }
     },
     "llm_enabled": true,
     "llm_concurrency": 2,
     "llm_rerank_before_selection": true,
-    "llm_rerank_pool_size": 20,
-    "fulltext_attempted_count": 20,
-    "fulltext_enriched_count": 20,
+    "llm_rerank_pool_size": 0,
+    "fulltext_attempted_count": 0,
+    "fulltext_enriched_count": 0,
     "fulltext_failed_count": 0,
     "preferences_active": false,
     "preference_liked_count": 0,
     "disliked_count": 0,
     "recent_history_days": 90,
-    "successful_fetches": 4,
-    "failed_fetches": 0,
+    "successful_fetches": 0,
+    "failed_fetches": 4,
     "clear_cache": false,
     "paper_count": 150,
-    "new_paper_count": 30,
+    "new_paper_count": 0,
     "retained_paper_count": 150,
     "retained_recent_low_count": 0,
     "dropped_low_relevance_count": 0,
     "dropped_disliked_count": 0,
     "max_stored_papers": 150,
     "max_data_bytes": 8388608,
-    "data_bytes": 1518086,
-    "storage_trimmed_count": 30,
+    "data_bytes": 1518105,
+    "storage_trimmed_count": 0,
     "storage_trimmed_by_level": {
-      "high": 5,
-      "medium": 14,
-      "low": 11,
+      "high": 0,
+      "medium": 0,
+      "low": 0,
       "unknown": 0
     },
     "storage_limit_exceeded_by_likes": false
