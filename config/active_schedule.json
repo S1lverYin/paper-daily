@@ -1,9 +1,9 @@
 {
   "version": 1,
-  "active_china_slot": "08:00",
-  "active_cron": "0 0 * * *",
-  "mode": "manual-until-auto-adjust",
-  "updated_at": "2026-07-10T21:41:16Z",
+  "active_china_slot": "09:00",
+  "active_cron": "0 1 * * *",
+  "mode": "manual-override",
+  "updated_at": "2026-07-21T18:16:30Z",
   "updated_by": "manual-override",
-  "note": "Daily workflow has multiple candidate schedules; only this active cron actually collects and pushes papers."
+  "note": "Formal collection is locked to 09:00 China time; the five pre-08:00 schedules remain probes only."
 }

@@ -1,6 +1,11 @@
 import unittest
 
-from scripts.auto_adjust_daily_schedule import DEFAULT_CANDIDATE_SLOTS, china_slot_to_utc_cron, filtered_records
+from scripts.auto_adjust_daily_schedule import (
+    DEFAULT_CANDIDATE_SLOTS,
+    china_slot_to_utc_cron,
+    filtered_records,
+    should_auto_adjust,
+)
 from scripts.check_active_schedule import should_run
 
 
@@ -12,6 +17,10 @@ class ActiveScheduleTest(unittest.TestCase):
 
     def test_default_candidate_slots_end_at_08(self):
         self.assertEqual(DEFAULT_CANDIDATE_SLOTS, ["07:00", "07:15", "07:30", "07:45", "08:00"])
+
+    def test_manual_override_blocks_auto_adjustment(self):
+        self.assertFalse(should_auto_adjust({"mode": "manual-override"}, False))
+        self.assertTrue(should_auto_adjust({"mode": "manual-override"}, True))
 
     def test_should_run_manual_events(self):
         run, reason = should_run("workflow_dispatch", "", "0 1 * * *")

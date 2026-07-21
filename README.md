@@ -79,7 +79,7 @@ Settings -> Pages -> Build and deployment -> Source
 Actions -> Paper Daily -> Run workflow
 ```
 
-首次可以把 `lookback_days` 设为 `7`。之后 workflow 默认每天北京时间 09:03 运行，并从上次成功生成时间开始增量采集。
+首次可以把 `lookback_days` 设为 `7`。之后 workflow 默认每天北京时间 09:00 运行，并从上次成功生成时间开始增量采集。
 
 ## 推荐机制
 

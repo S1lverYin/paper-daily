@@ -80,6 +80,10 @@ def write_json(path: Path, data: dict) -> None:
     path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
+def should_auto_adjust(current: dict, force: bool) -> bool:
+    return force or current.get("mode") != "manual-override"
+
+
 def build_schedule_payload(
     current: dict,
     selected: dict,
@@ -126,6 +130,11 @@ def main() -> None:
     not_before_date = parse_china_date(args.not_before_china_date)
     probe_start_date = parse_china_date(args.probe_start_china_date)
     today_china = dt.datetime.now(CHINA_TZ).date()
+    current = load_json(args.config)
+
+    if not should_auto_adjust(current, args.force):
+        print("Manual schedule override is active; skipping automatic adjustment.")
+        return
 
     if not args.force and not_before_date and today_china < not_before_date:
         print(f"Not adjusting before {not_before_date}; today is {today_china}.")
@@ -144,7 +153,6 @@ def main() -> None:
         )
         return
 
-    current = load_json(args.config)
     selected_cron = china_slot_to_utc_cron(str(recommendation["slot"]))
     if current.get("active_cron") == selected_cron and current.get("active_china_slot") == recommendation["slot"]:
         print(f"No adjustment needed: active schedule is already {recommendation['slot']} ({selected_cron}).")

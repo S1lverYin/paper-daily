@@ -9,6 +9,8 @@ on:
     - cron: '30 23 * * *' # 07:30 Asia/Shanghai
     - cron: '45 23 * * *' # 07:45 Asia/Shanghai
     - cron: '0 0 * * *'   # 08:00 Asia/Shanghai
+    # Formal paper collection and notification time.
+    - cron: '0 1 * * *'   # 09:00 Asia/Shanghai
   workflow_dispatch:
     inputs:
       lookback_days:
