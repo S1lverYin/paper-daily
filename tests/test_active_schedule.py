@@ -1,6 +1,6 @@
 import unittest
 
-from scripts.auto_adjust_daily_schedule import china_slot_to_utc_cron, filtered_records
+from scripts.auto_adjust_daily_schedule import DEFAULT_CANDIDATE_SLOTS, china_slot_to_utc_cron, filtered_records
 from scripts.check_active_schedule import should_run
 
 
@@ -9,6 +9,9 @@ class ActiveScheduleTest(unittest.TestCase):
         self.assertEqual(china_slot_to_utc_cron("07:30"), "30 23 * * *")
         self.assertEqual(china_slot_to_utc_cron("08:15"), "15 0 * * *")
         self.assertEqual(china_slot_to_utc_cron("09:00"), "0 1 * * *")
+
+    def test_default_candidate_slots_end_at_08(self):
+        self.assertEqual(DEFAULT_CANDIDATE_SLOTS, ["07:00", "07:15", "07:30", "07:45", "08:00"])
 
     def test_should_run_manual_events(self):
         run, reason = should_run("workflow_dispatch", "", "0 1 * * *")

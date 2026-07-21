@@ -34,7 +34,7 @@ jobs:
           args=(
             --probe-dir web/data/schedule-probe
             --config config/active_schedule.json
-            --candidate-slots "07:00,07:15,07:30,07:45,08:00,08:15,08:30"
+            --candidate-slots "07:00,07:15,07:30,07:45,08:00"
             --min-samples 7
             --probe-start-china-date 2026-07-07
             --not-before-china-date 2026-07-14

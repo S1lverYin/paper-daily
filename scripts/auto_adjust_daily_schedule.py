@@ -16,7 +16,7 @@ except ModuleNotFoundError:  # pragma: no cover - used when executed as a script
 
 CHINA_TZ = ZoneInfo("Asia/Shanghai")
 UTC = dt.timezone.utc
-DEFAULT_CANDIDATE_SLOTS = ["07:00", "07:15", "07:30", "07:45", "08:00", "08:15", "08:30"]
+DEFAULT_CANDIDATE_SLOTS = ["07:00", "07:15", "07:30", "07:45", "08:00"]
 
 
 def parse_china_date(value: str) -> dt.date | None:

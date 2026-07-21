@@ -2,14 +2,12 @@ name: Schedule Probe
 
 on:
   schedule:
-    # Probe GitHub Actions queue delay around the likely 09:00-10:00 arrival window.
+    # Probe the 07:00-08:00 China-time window for a 09:00-10:00 arrival.
     - cron: '0 23 * * *'  # 07:00 Asia/Shanghai
     - cron: '15 23 * * *' # 07:15 Asia/Shanghai
     - cron: '30 23 * * *' # 07:30 Asia/Shanghai
     - cron: '45 23 * * *' # 07:45 Asia/Shanghai
     - cron: '0 0 * * *'   # 08:00 Asia/Shanghai
-    - cron: '15 0 * * *'  # 08:15 Asia/Shanghai
-    - cron: '30 0 * * *'  # 08:30 Asia/Shanghai
   workflow_dispatch:
 
 permissions:

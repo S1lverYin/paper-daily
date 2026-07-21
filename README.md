@@ -123,7 +123,7 @@ base_score =
 - `web/data/likes.json`：供后端学习使用的收藏 ID。
 - `web/data/dislikes.json`：供后端过滤使用的“不感兴趣”论文 ID。
 - `web/data/preferences.json`：学习到的偏好。
-- `web/data/schedule-probe/`：GitHub Actions 05:00-09:00 排队延迟探针结果。
+- `web/data/schedule-probe/`：GitHub Actions 07:00-08:00（北京时间）排队延迟探针结果。
 - 收藏论文不会被存储裁剪删除；如果收藏数量本身超过上限，数据文件会保留收藏并报告 `storage_limit_exceeded_by_likes`。
 - 当所有来源都失败时，已有论文数据会被保留。
 

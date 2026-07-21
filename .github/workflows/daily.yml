@@ -9,9 +9,6 @@ on:
     - cron: '30 23 * * *' # 07:30 Asia/Shanghai
     - cron: '45 23 * * *' # 07:45 Asia/Shanghai
     - cron: '0 0 * * *'   # 08:00 Asia/Shanghai
-    - cron: '15 0 * * *'  # 08:15 Asia/Shanghai
-    - cron: '30 0 * * *'  # 08:30 Asia/Shanghai
-    - cron: '0 1 * * *'  # 09:00 Asia/Shanghai
   workflow_dispatch:
     inputs:
       lookback_days:
@@ -106,7 +103,26 @@ jobs:
           git config user.email "bot@paper-daily.local"
           git add web/data/
           git diff --staged --quiet || git commit -m "data: daily update $(date +%Y-%m-%d)"
-          git push
+          # Schedule Probe and Auto Adjust can commit to main at the same time.
+          # Rebase the generated data commit before retrying a non-fast-forward push.
+          for attempt in 1 2 3 4 5; do
+            if git push origin "HEAD:${GITHUB_REF_NAME}"; then
+              exit 0
+            fi
+            echo "Push failed; refreshing origin and retrying (${attempt}/5)"
+            if ! git fetch origin "${GITHUB_REF_NAME}"; then
+              echo "Could not fetch origin; retrying"
+              sleep $((attempt * 5))
+              continue
+            fi
+            if ! git rebase "origin/${GITHUB_REF_NAME}"; then
+              git rebase --abort || true
+              echo "Rebase conflict: another workflow changed the same data files"
+              exit 1
+            fi
+            sleep $((attempt * 5))
+          done
+          exit 1
 
       - name: Upload Pages artifact
         if: steps.schedule_gate.outputs.should_run == 'true'
