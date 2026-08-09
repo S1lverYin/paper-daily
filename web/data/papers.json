@@ -1,6 +1,6 @@
 {
-  "generated_at": "Sat, 08 Aug 2026 02:53:05 +0000",
-  "generated_at_iso": "2026-08-08T02:53:05.823372+00:00",
+  "generated_at": "Sun, 09 Aug 2026 03:00:59 +0000",
+  "generated_at_iso": "2026-08-09T03:00:59.377526+00:00",
   "config_source": "file",
   "topics": [
     {
@@ -595,7 +595,7 @@
       },
       "first_seen_at": "2026-08-08T02:53:05.823372+00:00",
       "last_seen_at": "2026-08-08T02:53:05.823372+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2608.01417v1",
@@ -3760,6 +3760,134 @@
       "retained_from_previous_run": true
     },
     {
+      "id": "2608.05941v1",
+      "source": "arXiv",
+      "title": "Real Structures in the Moduli of Projective Models of K3-Surfaces",
+      "authors": [
+        "Çisem Güneş Aktaş"
+      ],
+      "summary": "This paper investigates when a complex family of K3-surfaces with prescribed simple singularities contains real algebraic surfaces. We develop an explicit and uniform algorithm for detecting real representatives in any equisingular stratum, valid for all polarizations. As a primary application, we resolve the problem for spatial quartics, showing that all real equisingular strata contain real surfaces except for three exceptional types, thereby completing the study of real representability in this case. Our method also revisits the analogous phenomenon in the realm of plane sextics, recovering the unique known real stratum of simple sextics without real representatives.",
+      "published": "2026-08-06T12:09:47Z",
+      "updated": "2026-08-06T12:09:47Z",
+      "paper_url": "http://arxiv.org/abs/2608.05941v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.05941v1",
+      "categories": [
+        "math.AG"
+      ],
+      "seed_topic": "motivic_k_theory",
+      "matches": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.71,
+          "base_score": 0.364,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "high",
+          "reason": "关键词命中：Proj；arXiv 分类重合：math.AG；时效加分 +0.05",
+          "keyword_hits": [
+            "Proj"
+          ],
+          "llm_reason": "论文直接研究K3曲面投影模型的模空间中的实结构，涉及模空间、等奇点层、极化、奇点配置等概念，与我的研究方向中的'moduli space'、'algebraic variety'、'divisor'、'sheaf'等关键词高度匹配，且属于math.AG范畴，研究场景和核心工具均在我的关注范围内。"
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.231,
+          "base_score": 0.185,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.05",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.228,
+          "base_score": 0.182,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.05",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.051,
+          "base_score": 0.005,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "low",
+          "reason": "时效加分 +0.05",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "algebraic_geometry",
+        "topic_name": "Algebraic Geometry",
+        "score": 0.71,
+        "base_score": 0.364,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.046,
+        "level": "high",
+        "reason": "关键词命中：Proj；arXiv 分类重合：math.AG；时效加分 +0.05",
+        "keyword_hits": [
+          "Proj"
+        ],
+        "llm_reason": "论文直接研究K3曲面投影模型的模空间中的实结构，涉及模空间、等奇点层、极化、奇点配置等概念，与我的研究方向中的'moduli space'、'algebraic variety'、'divisor'、'sheaf'等关键词高度匹配，且属于math.AG范畴，研究场景和核心工具均在我的关注范围内。"
+      },
+      "top_labels": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.364,
+          "score": 0.41,
+          "level": "low",
+          "keyword_hits": [
+            "Proj"
+          ]
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.185,
+          "score": 0.231,
+          "level": "low",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "base_score": 0.182,
+          "score": 0.228,
+          "level": "low",
+          "keyword_hits": []
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "fulltext_excerpt": "[2608.05941] Real Structures in the Moduli of Projective Models of K3-Surfaces Skip to main content Search arXiv Press Enter to search · Advanced search --> Mathematics > Algebraic Geometry arXiv:2608.05941 (math) [Submitted on 6 Aug 2026] Title: Real Structures in the Moduli of Projective Models of K3-Surfaces Authors: Çisem Güneş Aktaş View a PDF of the paper titled Real Structures in the Moduli of Projective Models of K3-Surfaces, by \\c{C}isem G\\\"une\\c{s} Akta\\c{s} View PDF HTML (experimental) Abstract: This paper investigates when a complex family of K3-surfaces with prescribed simple singularities contains real algebraic surfaces. We develop an explicit and uniform algorithm for detecting real representatives in any equisingular stratum, valid for all polarizations. As a primary application, we resolve the problem for spatial quartics, showing that all real equisingular strata contain real surfaces except for three exceptional types, thereby completing the study of real representability in this case. Our method also revisits the analogous phenomenon in the realm of plane sextics, recovering the unique known real stratum of simple sextics without real representatives. Subjects: Algebraic Geometry (math.AG) MSC classes: 14J28 (Primary) 14J10, 14J17 (Secondary) Cite as: arXiv:2608.05941 [math.AG] (or arXiv:2608.05941v1 [math.AG] for this version) https://doi.org/10.48550/arXiv.2608.05941 Focus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: Çisem Güneş Aktaş [ view email ] [v1] Thu, 6 Aug 2026 12:09:47 UTC (52 KB) Full-text links: Access Paper: View a PDF of the paper titled Real Structures in the Moduli of Projective Models of K3-Surfaces, by \\c{C}isem G\\\"une\\c{s} Akta\\c{s} View PDF HTML (experimental) TeX Source view license Current browse context: math.AG < prev | next > new | recent | 2026-08 Change to browse by: math References & Citations NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
+      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2608.05941",
+      "chinese_summary": {
+        "problem": "论文要解决的问题是：对于具有指定简单奇点的K3曲面复族（等奇点层），如何判定其中是否包含实代数曲面，并给出一个统一、显式的判别算法，适用于所有极化。",
+        "method": "核心方法是发展一个检测等奇点层中实代表的显式统一算法，通过分析K3曲面投影模型的模空间中的实结构（反合）与奇点配置，并结合空间四次曲面和平面六次曲线的具体分类来验证算法的普适性。",
+        "innovation": "创新点包括：(1) 提出一个适用于任意极化的等奇点层的统一算法，而不是依赖个别例子；(2) 完整解决了空间四次曲面的实表示问题：除三种例外类型外，所有实等奇点层都含实曲面；(3) 对平面六次曲线情形，恢复了已知的唯一无实代表的简单六次曲线层，进一步验证了方法的广泛适用性。",
+        "evidence": "摘要中给出了明确的理论结果：空间四次曲面除三种例外类型外，所有实等奇点层都含实曲面；平面六次曲线中恢复了已知的唯一无实代表的简单六次曲线层。这些是纯数学证明，无实验数据。",
+        "limitations": "算法高度依赖K3曲面及简单奇点的分类理论，具体实现细节需阅读全文；对于更高维或更一般的模空间，其适用性未在摘要中说明；三种例外类型的具体构型未在摘要中列出。",
+        "why_relevant": "论文直接研究K3曲面投影模型的模空间中的实结构，涉及模空间、等奇点层、极化、奇点配置等概念，与我的研究方向中的'moduli space'、'algebraic variety'、'divisor'、'sheaf'等关键词高度匹配，且属于math.AG范畴，研究场景和核心工具均在我的关注范围内。"
+      },
+      "first_seen_at": "2026-08-09T03:00:59.377526+00:00",
+      "last_seen_at": "2026-08-09T03:00:59.377526+00:00",
+      "retained_from_previous_run": false
+    },
+    {
       "id": "2607.26230v1",
       "source": "arXiv",
       "title": "Formally certifying number field invariants",
@@ -4916,7 +5044,7 @@
       },
       "first_seen_at": "2026-08-08T02:53:05.823372+00:00",
       "last_seen_at": "2026-08-08T02:53:05.823372+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2608.02510v1",
@@ -8465,121 +8593,6 @@
       "retained_from_previous_run": true
     },
     {
-      "id": "2607.23129v1",
-      "source": "arXiv",
-      "title": "Finite length for unramified $\\mathrm{GL}_2$: beyond multiplicity one, non-semisimple case",
-      "authors": [
-        "Lucrezia Bertoletti"
-      ],
-      "summary": "Let $p$ be a prime number and $K$ a finite unramified extension of $\\mathbb{Q}_p$. We study the smooth mod $p$ representations of $\\mathrm{GL}_2(K)$ appearing in a tower of mod $p$ Hecke eigenspaces of the cohomology of Shimura curves, under mild genericity assumptions but notably no multiplicity one assumption at tame level, and prove that they are of finite length, thereby extending some recent results of Breuil, Herzig, Hu, Morra and Schraen to higher multiplicity. In a previous companion article we investigated the case where the local Galois representation attached to the Hecke eigensystem is semisimple; this article treats the non-semisimple case.",
-      "published": "2026-07-25T10:11:23Z",
-      "updated": "2026-07-25T10:11:23Z",
-      "paper_url": "http://arxiv.org/abs/2607.23129v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.23129v1",
-      "categories": [
-        "math.NT"
-      ],
-      "seed_topic": "arithmetic_geometry",
-      "matches": [
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "score": 0.574,
-          "base_score": 0.516,
-          "bridge_bonus": 0.012,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.046,
-          "level": "medium",
-          "reason": "关键词命中：Galois representation、unramified extension；arXiv 分类重合：math.NT；arithmetic ↔ motivic；时效加分 +0.05",
-          "keyword_hits": [
-            "Galois representation",
-            "unramified extension"
-          ],
-          "llm_reason": "论文核心涉及Galois表示（非半单情形）、未分歧扩张（Q_p的有限未分歧扩张K）、以及Shimura曲线（属于算术几何研究对象），直接匹配关键词 Galois representation、unramified extension、Shimura variety；同时属于Langlands程序的一部分，与算术几何中的模形式、p-adic Hodge理论等方向相关。"
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "score": 0.065,
-          "base_score": 0.007,
-          "bridge_bonus": 0.012,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.046,
-          "level": "low",
-          "reason": "arithmetic ↔ motivic；时效加分 +0.05",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "score": 0.059,
-          "base_score": 0.013,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.046,
-          "level": "low",
-          "reason": "时效加分 +0.05",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "score": 0.054,
-          "base_score": 0.008,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.046,
-          "level": "low",
-          "reason": "时效加分 +0.05",
-          "keyword_hits": []
-        }
-      ],
-      "best_match": {
-        "topic_id": "arithmetic_geometry",
-        "topic_name": "Arithmetic Geometry",
-        "score": 0.574,
-        "base_score": 0.516,
-        "bridge_bonus": 0.012,
-        "preference_bonus": 0.0,
-        "recency_bonus": 0.046,
-        "level": "medium",
-        "reason": "关键词命中：Galois representation、unramified extension；arXiv 分类重合：math.NT；arithmetic ↔ motivic；时效加分 +0.05",
-        "keyword_hits": [
-          "Galois representation",
-          "unramified extension"
-        ],
-        "llm_reason": "论文核心涉及Galois表示（非半单情形）、未分歧扩张（Q_p的有限未分歧扩张K）、以及Shimura曲线（属于算术几何研究对象），直接匹配关键词 Galois representation、unramified extension、Shimura variety；同时属于Langlands程序的一部分，与算术几何中的模形式、p-adic Hodge理论等方向相关。"
-      },
-      "top_labels": [
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "base_score": 0.516,
-          "score": 0.574,
-          "level": "medium",
-          "keyword_hits": [
-            "Galois representation",
-            "unramified extension"
-          ]
-        }
-      ],
-      "backfilled_from_recent_arxiv": true,
-      "newly_discovered_from_recent_arxiv": true,
-      "fulltext_excerpt": "[2607.23129] Finite length for unramified $\\mathrm{GL}_2$: beyond multiplicity one, non-semisimple case Skip to main content Search arXiv Press Enter to search · Advanced search --> Mathematics > Number Theory arXiv:2607.23129 (math) [Submitted on 25 Jul 2026] Title: Finite length for unramified $\\mathrm{GL}_2$: beyond multiplicity one, non-semisimple case Authors: Lucrezia Bertoletti View a PDF of the paper titled Finite length for unramified $\\mathrm{GL}_2$: beyond multiplicity one, non-semisimple case, by Lucrezia Bertoletti View PDF Abstract: Let $p$ be a prime number and $K$ a finite unramified extension of $\\mathbb{Q}_p$. We study the smooth mod $p$ representations of $\\mathrm{GL}_2(K)$ appearing in a tower of mod $p$ Hecke eigenspaces of the cohomology of Shimura curves, under mild genericity assumptions but notably no multiplicity one assumption at tame level, and prove that they are of finite length, thereby extending some recent results of Breuil, Herzig, Hu, Morra and Schraen to higher multiplicity. In a previous companion article we investigated the case where the local Galois representation attached to the Hecke eigensystem is semisimple; this article treats the non-semisimple case. Subjects: Number Theory (math.NT) Cite as: arXiv:2607.23129 [math.NT] (or arXiv:2607.23129v1 [math.NT] for this version) https://doi.org/10.48550/arXiv.2607.23129 Focus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: Lucrezia Bertoletti [ view email ] [v1] Sat, 25 Jul 2026 10:11:23 UTC (82 KB) Full-text links: Access Paper: View a PDF of the paper titled Finite length for unramified $\\mathrm{GL}_2$: beyond multiplicity one, non-semisimple case, by Lucrezia Bertoletti View PDF TeX Source view license Current browse context: math.NT < prev | next > new | recent | 2026-07 Change to browse by: math References & Citations NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
-      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2607.23129",
-      "chinese_summary": {
-        "problem": "在非半单局部Galois表示对应的Hecke特征系统下，研究GL2(K)（K为Q_p的有限未分歧扩张）的模p光滑表示在Shimura曲线同调模p Hecke特征空间塔中的长度有限性，并去除多重性为一的假设。",
-        "method": "利用模p Hecke代数作用于Shimura曲线同调，结合表示论和局部Langlands对应技术，对非半单情形下的光滑模p表示进行整体分析，通过推广Breuil、Herzig、Hu、Morra和Schraen的方法来处理更高重数。",
-        "innovation": "本文首次在非半单Galois表示且不假设多重性为一的条件下，证明了GL2(K)的模p光滑表示长度为有限；作为前一篇处理半单情形文章的延续，填补了非半单情形下的空白。",
-        "evidence": "摘要中明确给出了有限长度的理论证明，但未提供具体实验或数值验证。",
-        "limitations": "假设了轻度一般性条件，且需要阅读全文确认具体证明细节及非半单情形下表示结构的精确描述。",
-        "why_relevant": "论文核心涉及Galois表示（非半单情形）、未分歧扩张（Q_p的有限未分歧扩张K）、以及Shimura曲线（属于算术几何研究对象），直接匹配关键词 Galois representation、unramified extension、Shimura variety；同时属于Langlands程序的一部分，与算术几何中的模形式、p-adic Hodge理论等方向相关。"
-      },
-      "first_seen_at": "2026-07-28T04:07:04.886983+00:00",
-      "last_seen_at": "2026-07-28T04:07:04.886983+00:00",
-      "retained_from_previous_run": true
-    },
-    {
       "id": "2608.00807v1",
       "source": "arXiv",
       "title": "Cycles for Rankin-Selberg $L$-functions, I: automorphic periods",
@@ -9349,123 +9362,6 @@
       },
       "first_seen_at": "2026-08-04T04:12:09.590819+00:00",
       "last_seen_at": "2026-08-04T04:12:09.590819+00:00",
-      "retained_from_previous_run": true
-    },
-    {
-      "id": "2607.23094v1",
-      "source": "arXiv",
-      "title": "Siu's curvature positivity and $L^2$ extension theorems for $(p,q)$-forms",
-      "authors": [
-        "Gang Huang"
-      ],
-      "summary": "In this paper, we introduce Siu's curvature operator \\(A^E_{p,q}\\) for vector-bundle-valued differential forms on Kähler manifolds. When $p=n$, this operator reduces to the classical Akizuki--Nakano curvature operator. We first characterize the semipositivity of \\(A^E_{p,q}\\) in terms of an optimal \\(L^2\\)-estimate condition for the \\(\\bar\\partial\\)-operator, and then prove an Ohsawa--Takegoshi-type extension theorem for \\(E\\)-valued \\((p,q)\\)-forms under the curvature condition \\(A^E_{p,q+1}\\geq0\\), using a new twisted basic estimate adapted to this setting. As an application, we prove the local freeness of the higher direct image sheaf \\(R^q s_*(Ω^p_{X/ B_m}\\otimes E)\\) under the curvature conditions $A^E_{p,q+1}\\geq0$ and $A^E_{p,q}\\geq0$, where $s: X \\to B_m:=\\{t\\in\\mathbb C^m:\\ |t|<1\\}$ is a proper holomorphic submersion from a Kähler manifold $X$, and $E$ is a Hermitian holomorphic vector bundle.",
-      "published": "2026-07-25T08:11:36Z",
-      "updated": "2026-07-25T08:11:36Z",
-      "paper_url": "http://arxiv.org/abs/2607.23094v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.23094v1",
-      "categories": [
-        "math.CV",
-        "math.AG",
-        "math.DG"
-      ],
-      "seed_topic": "motivic_k_theory",
-      "matches": [
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "score": 0.554,
-          "base_score": 0.409,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.045,
-          "level": "high",
-          "reason": "关键词命中：vector bundle、sheaf；arXiv 分类重合：math.AG；时效加分 +0.05",
-          "keyword_hits": [
-            "vector bundle",
-            "sheaf"
-          ],
-          "llm_reason": "论文研究高次直像层R^q s_*(Ω^p⊗E)的局部自由性，这是代数几何中模空间和上同调理论的核心问题，直接涉及向量丛、层、上同调等关键词，且分类包含math.AG。"
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "score": 0.172,
-          "base_score": 0.127,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.045,
-          "level": "low",
-          "reason": "arXiv 分类重合：math.AG；时效加分 +0.05",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "score": 0.169,
-          "base_score": 0.124,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.045,
-          "level": "low",
-          "reason": "arXiv 分类重合：math.AG；时效加分 +0.05",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "score": 0.051,
-          "base_score": 0.006,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.045,
-          "level": "low",
-          "reason": "时效加分 +0.05",
-          "keyword_hits": []
-        }
-      ],
-      "best_match": {
-        "topic_id": "algebraic_geometry",
-        "topic_name": "Algebraic Geometry",
-        "score": 0.554,
-        "base_score": 0.409,
-        "bridge_bonus": 0.0,
-        "preference_bonus": 0.0,
-        "recency_bonus": 0.045,
-        "level": "high",
-        "reason": "关键词命中：vector bundle、sheaf；arXiv 分类重合：math.AG；时效加分 +0.05",
-        "keyword_hits": [
-          "vector bundle",
-          "sheaf"
-        ],
-        "llm_reason": "论文研究高次直像层R^q s_*(Ω^p⊗E)的局部自由性，这是代数几何中模空间和上同调理论的核心问题，直接涉及向量丛、层、上同调等关键词，且分类包含math.AG。"
-      },
-      "top_labels": [
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "base_score": 0.409,
-          "score": 0.454,
-          "level": "medium",
-          "keyword_hits": [
-            "vector bundle",
-            "sheaf"
-          ]
-        }
-      ],
-      "backfilled_from_recent_arxiv": true,
-      "newly_discovered_from_recent_arxiv": true,
-      "fulltext_excerpt": "[2607.23094] Siu's curvature positivity and $L^2$ extension theorems for $(p,q)$-forms Skip to main content Search arXiv Press Enter to search · Advanced search --> Mathematics > Complex Variables arXiv:2607.23094 (math) [Submitted on 25 Jul 2026] Title: Siu's curvature positivity and $L^2$ extension theorems for $(p,q)$-forms Authors: Gang Huang View a PDF of the paper titled Siu's curvature positivity and $L^2$ extension theorems for $(p,q)$-forms, by Gang Huang View PDF HTML (experimental) Abstract: In this paper, we introduce Siu's curvature operator \\(A^E_{p,q}\\) for vector-bundle-valued differential forms on Kähler manifolds. When $p=n$, this operator reduces to the classical Akizuki--Nakano curvature operator. We first characterize the semipositivity of \\(A^E_{p,q}\\) in terms of an optimal \\(L^2\\)-estimate condition for the \\(\\bar\\partial\\)-operator, and then prove an Ohsawa--Takegoshi-type extension theorem for \\(E\\)-valued \\((p,q)\\)-forms under the curvature condition \\(A^E_{p,q+1}\\geq0\\), using a new twisted basic estimate adapted to this setting. As an application, we prove the local freeness of the higher direct image sheaf \\(R^q s_*(\\Omega^p_{X/ B_m}\\otimes E)\\) under the curvature conditions $A^E_{p,q+1}\\geq0$ and $A^E_{p,q}\\geq0$, where $s: X \\to B_m:=\\{t\\in\\mathbb C^m:\\ |t|<1\\}$ is a proper holomorphic submersion from a Kähler manifold $X$, and $E$ is a Hermitian holomorphic vector bundle. Subjects: Complex Variables (math.CV) ; Algebraic Geometry (math.AG); Differential Geometry (math.DG) Cite as: arXiv:2607.23094 [math.CV] (or arXiv:2607.23094v1 [math.CV] for this version) https://doi.org/10.48550/arXiv.2607.23094 Focus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: Huang Gang [ view email ] [v1] Sat, 25 Jul 2026 08:11:36 UTC (24 KB) Full-text links: Access Paper: View a PDF of the paper titled Siu's curvature positivity and $L^2$ extension theorems for $(p,q)$-forms, by Gang Huang View PDF HTML (experimental) TeX Source view license Current browse context: math.CV < prev | next > new | recent | 2026-07 Change to browse by: math math.AG math.DG References & Citations NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
-      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2607.23094",
-      "chinese_summary": {
-        "problem": "在Kähler流形上，对于向量丛值微分形式，如何在高维情形下建立L^2扩张定理并应用于高次直像层的局部自由性。",
-        "method": "引入Siu曲率算子A^E_{p,q}，刻画其半正定性等价于最优L^2估计条件；利用新的扭曲基本估计，在曲率条件A^E_{p,q+1}≥0下证明Ohsawa–Takegoshi型扩张定理；进而证明高次直像层R^q s_*(Ω^p_{X/B_m}⊗E)在A^E_{p,q+1}≥0和A^E_{p,q}≥0下的局部自由性。",
-        "innovation": "1. 引入一般(p,q)形式的Siu曲率算子，推广了经典的Akizuki–Nakano曲率算子；2. 建立了该算子半正定性与最优L^2估计的等价关系；3. 首次在(p,q)形式层面得到曲率条件下的扩张定理，并用于证明高次直像层的局部自由性。",
-        "evidence": "摘要中给出了完整的理论推导和应用，包括定理陈述和证明思路，但未提供计算实验或数值模拟，属于纯理论证明。",
-        "limitations": "结果依赖于Kähler流形和全纯向量丛上的Hermitian度量，未讨论非Kähler情形；局部自由性结论需要两个曲率条件同时成立，可能在实际应用中难以同时满足。",
-        "why_relevant": "论文研究高次直像层R^q s_*(Ω^p⊗E)的局部自由性，这是代数几何中模空间和上同调理论的核心问题，直接涉及向量丛、层、上同调等关键词，且分类包含math.AG。"
-      },
-      "first_seen_at": "2026-07-28T04:07:04.886983+00:00",
-      "last_seen_at": "2026-07-28T04:07:04.886983+00:00",
       "retained_from_previous_run": true
     },
     {
@@ -11303,6 +11199,130 @@
       "first_seen_at": "2026-08-05T04:06:41.768147+00:00",
       "last_seen_at": "2026-08-05T04:06:41.768147+00:00",
       "retained_from_previous_run": true
+    },
+    {
+      "id": "2608.04982v1",
+      "source": "arXiv",
+      "title": "Weyl Subconvexity for $\\mathrm{GL}_2$ with Simple Supercuspidal Ramification",
+      "authors": [
+        "Liyang Yang"
+      ],
+      "summary": "We establish Weyl-type subconvexity bounds in the level aspect for cuspidal automorphic representations of $\\mathrm{GL}_2/F$ with simple supercuspidal ramification at a prime ideal $\\mathfrak{q}$. More precisely, for the family $\\mathcal{F}_t^ζ(\\mathfrak{q}^3;ω)$ consisting of representations of conductor $\\mathfrak{q}^3$, central character $ω$, and prescribed simple supercuspidal local component, we prove the fourth moment estimate \\begin{align*} \\sum_{\\substack{π\\in \\mathcal{F}_{t}^ζ(\\mathfrak{q}^3;ω) \\\\ C_v(π) \\leq \\mathbf{C}_v,\\ v \\mid \\infty}} |L(1/2,π)|^4 \\ll_{F,\\varepsilon} \\mathbf C_\\infty^{1+\\varepsilon} N_F(\\mathfrak{q})^{2+\\varepsilon}. \\end{align*} As a consequence, we deduce the Weyl-type bound \\begin{align*} L(1/2,π) \\ll_{F,\\varepsilon} C_{\\infty}(π)^{1/4+\\varepsilon} C_{\\mathrm{fin}}(π)^{1/6+\\varepsilon}. \\end{align*} In particular, this bound applies to a genuinely non-self-dual family of odd conductor exponent, beyond the reach of the cubic moment method.",
+      "published": "2026-08-05T15:54:20Z",
+      "updated": "2026-08-05T15:54:20Z",
+      "paper_url": "http://arxiv.org/abs/2608.04982v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.04982v1",
+      "categories": [
+        "math.NT"
+      ],
+      "seed_topic": "arithmetic_geometry",
+      "matches": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.509,
+          "base_score": 0.364,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.045,
+          "level": "medium",
+          "reason": "关键词命中：ramification；arXiv 分类重合：math.NT；时效加分 +0.04",
+          "keyword_hits": [
+            "ramification"
+          ],
+          "llm_reason": "论文处理数域上GL_2自守形式的L-函数次凸性，直接关联我的研究方向中的L-函数、自守形式、Langlands纲领和模形式关键词；次凸性界是L-函数解析性质的核心问题，对算术几何中的特殊值猜想（如Bloch-Kato）具有重要意义。但论文侧重解析数论，与我的算术几何代数方法交集有限，建议人工审读确定技术是否可借鉴。"
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.182,
+          "base_score": 0.137,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.045,
+          "level": "low",
+          "reason": "关键词命中：Spec；时效加分 +0.04",
+          "keyword_hits": [
+            "Spec"
+          ]
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.048,
+          "base_score": 0.003,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.045,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.045,
+          "base_score": 0.0,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.045,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "arithmetic_geometry",
+        "topic_name": "Arithmetic Geometry",
+        "score": 0.509,
+        "base_score": 0.364,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.045,
+        "level": "medium",
+        "reason": "关键词命中：ramification；arXiv 分类重合：math.NT；时效加分 +0.04",
+        "keyword_hits": [
+          "ramification"
+        ],
+        "llm_reason": "论文处理数域上GL_2自守形式的L-函数次凸性，直接关联我的研究方向中的L-函数、自守形式、Langlands纲领和模形式关键词；次凸性界是L-函数解析性质的核心问题，对算术几何中的特殊值猜想（如Bloch-Kato）具有重要意义。但论文侧重解析数论，与我的算术几何代数方法交集有限，建议人工审读确定技术是否可借鉴。"
+      },
+      "top_labels": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.364,
+          "score": 0.409,
+          "level": "low",
+          "keyword_hits": [
+            "ramification"
+          ]
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.137,
+          "score": 0.182,
+          "level": "low",
+          "keyword_hits": [
+            "Spec"
+          ]
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "fulltext_excerpt": "[2608.04982] Weyl Subconvexity for $\\mathrm{GL}_2$ with Simple Supercuspidal Ramification Skip to main content Search arXiv Press Enter to search · Advanced search --> Mathematics > Number Theory arXiv:2608.04982 (math) [Submitted on 5 Aug 2026] Title: Weyl Subconvexity for $\\mathrm{GL}_2$ with Simple Supercuspidal Ramification Authors: Liyang Yang View a PDF of the paper titled Weyl Subconvexity for $\\mathrm{GL}_2$ with Simple Supercuspidal Ramification, by Liyang Yang View PDF HTML (experimental) Abstract: We establish Weyl-type subconvexity bounds in the level aspect for cuspidal automorphic representations of $\\mathrm{GL}_2/F$ with simple supercuspidal ramification at a prime ideal $\\mathfrak{q}$. More precisely, for the family $\\mathcal{F}_t^\\zeta(\\mathfrak{q}^3;\\omega)$ consisting of representations of conductor $\\mathfrak{q}^3$, central character $\\omega$, and prescribed simple supercuspidal local component, we prove the fourth moment estimate \\begin{align*} \\sum_{\\substack{\\pi \\in \\mathcal{F}_{t}^{\\zeta}(\\mathfrak{q}^3;\\omega) \\\\ C_v(\\pi) \\leq \\mathbf{C}_v,\\ v \\mid \\infty}} |L(1/2,\\pi)|^4 \\ll_{F,\\varepsilon} \\mathbf C_\\infty^{1+\\varepsilon} N_F(\\mathfrak{q})^{2+\\varepsilon}. \\end{align*} As a consequence, we deduce the Weyl-type bound \\begin{align*} L(1/2,\\pi) \\ll_{F,\\varepsilon} C_{\\infty}(\\pi)^{1/4+\\varepsilon} C_{\\mathrm{fin}}(\\pi)^{1/6+\\varepsilon}. \\end{align*} In particular, this bound applies to a genuinely non-self-dual family of odd conductor exponent, beyond the reach of the cubic moment method. Comments: 54 pages Subjects: Number Theory (math.NT) Cite as: arXiv:2608.04982 [math.NT] (or arXiv:2608.04982v1 [math.NT] for this version) https://doi.org/10.48550/arXiv.2608.04982 Focus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: Liyang Yang [ view email ] [v1] Wed, 5 Aug 2026 15:54:20 UTC (46 KB) Full-text links: Access Paper: View a PDF of the paper titled Weyl Subconvexity for $\\mathrm{GL}_2$ with Simple Supercuspidal Ramification, by Liyang Yang View PDF HTML (experimental) TeX Source view license Current browse context: math.NT < prev | next > new | recent | 2026-08 Change to browse by: math References & Citations NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
+      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2608.04982",
+      "chinese_summary": {
+        "problem": "在数域F上，对GL_2尖点自守表示在水平方向（导子增长）建立Weyl型次凸性界，特别是处理在素理想q处具有简单超尖点分歧的表示族，以得到更优的L(1/2,π)上界。",
+        "method": "通过研究由导子q^3、中心特征ω和固定简单超尖点局部分量组成的表示族，证明该族在无穷分量有界条件下的四阶矩估计，并利用第四矩放大技术推导单个L-函数满足的Weyl型界。技术上可能结合了尖点形式的谱分解、局部表示理论（超尖点）和解析数论中的估计方法。",
+        "innovation": "1) 首次对简单超尖点分歧且导子指数为奇数（q^3）的非自对偶GL_2表示族建立Weyl型界，超越了三阶矩方法只能处理自对偶族的限制；2) 给出了第四矩的精确上界，水平平均q指数为2+ε，从而获得最优的1/6水平指数。",
+        "evidence": "摘要中明确给出第四矩估计公式和Weyl型界公式，但属于理论证明，未提供数值实验；具体技术细节未在摘要中展开，需阅读正文核实。",
+        "limitations": "摘要未透露证明细节，无法评估方法是否依赖广义黎曼猜想或深度筛法；结果仅针对特定简单超尖点局部类型，一般超尖点或其他导子指数需要进一步推广；常数依赖F和ε的隐含常数未显式给出。",
+        "why_relevant": "论文处理数域上GL_2自守形式的L-函数次凸性，直接关联我的研究方向中的L-函数、自守形式、Langlands纲领和模形式关键词；次凸性界是L-函数解析性质的核心问题，对算术几何中的特殊值猜想（如Bloch-Kato）具有重要意义。但论文侧重解析数论，与我的算术几何代数方法交集有限，建议人工审读确定技术是否可借鉴。"
+      },
+      "first_seen_at": "2026-08-09T03:00:59.377526+00:00",
+      "last_seen_at": "2026-08-09T03:00:59.377526+00:00",
+      "retained_from_previous_run": false
     },
     {
       "id": "2608.02390v1",
@@ -13969,6 +13989,126 @@
       },
       "first_seen_at": "2026-08-08T02:53:05.823372+00:00",
       "last_seen_at": "2026-08-08T02:53:05.823372+00:00",
+      "retained_from_previous_run": true
+    },
+    {
+      "id": "2607.29631v2",
+      "source": "arXiv",
+      "title": "A relative Euclidean thickening",
+      "authors": [
+        "John R. Klein"
+      ],
+      "summary": "For a finite CW pair $(K,L)$, we show how to construct a Poincaré triad $(P;\\partial_0 P,\\partial_1 P)$ and a weak homotopy equivalence $(K,L) \\to (P,\\partial_0 P)$. Furthermore, the Poincaré triad has a trivial Spivak normal fibration. The proof is homotopy-theoretic.",
+      "published": "2026-07-31T17:09:24Z",
+      "updated": "2026-08-03T13:59:33Z",
+      "paper_url": "http://arxiv.org/abs/2607.29631v2",
+      "pdf_url": "https://arxiv.org/pdf/2607.29631v2",
+      "categories": [
+        "math.AT"
+      ],
+      "seed_topic": "homotopy_theory",
+      "matches": [
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.475,
+          "base_score": 0.333,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.042,
+          "level": "medium",
+          "reason": "关键词命中：fibration；arXiv 分类重合：math.AT；时效加分 +0.04",
+          "keyword_hits": [
+            "fibration"
+          ],
+          "llm_reason": "论文核心涉及弱同伦等价、纤维化和CW复形，与我的研究方向中的homotopy theory、weak equivalence、fibration等关键词直接匹配；Poincaré三元组和Spivak法向纤维化是几何拓扑与同伦论的重要桥梁，可能对stable homotopy theory中的相关构造有启示；但未明确涉及∞-范畴或谱，所以相关性中等"
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.226,
+          "base_score": 0.184,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.042,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AT；时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.051,
+          "base_score": 0.009,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.042,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.046,
+          "base_score": 0.004,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.042,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "homotopy_theory",
+        "topic_name": "Homotopy Theory",
+        "score": 0.475,
+        "base_score": 0.333,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.042,
+        "level": "medium",
+        "reason": "关键词命中：fibration；arXiv 分类重合：math.AT；时效加分 +0.04",
+        "keyword_hits": [
+          "fibration"
+        ],
+        "llm_reason": "论文核心涉及弱同伦等价、纤维化和CW复形，与我的研究方向中的homotopy theory、weak equivalence、fibration等关键词直接匹配；Poincaré三元组和Spivak法向纤维化是几何拓扑与同伦论的重要桥梁，可能对stable homotopy theory中的相关构造有启示；但未明确涉及∞-范畴或谱，所以相关性中等"
+      },
+      "top_labels": [
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "base_score": 0.333,
+          "score": 0.375,
+          "level": "low",
+          "keyword_hits": [
+            "fibration"
+          ]
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "base_score": 0.184,
+          "score": 0.226,
+          "level": "low",
+          "keyword_hits": []
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "fulltext_excerpt": "[2607.29631] A relative Euclidean thickening \\CDat A relative Euclidean thickening John R. Klein Address: Wayne State University, Detroit, MI 48202 Email address: klein@math.wayne.edu (Date: August 5, 2026) Abstract. For a finite CW pair , we show how to construct a Poincaré triad and a weak homotopy equivalence . Furthermore, the Poincaré triad has a trivial Spivak normal fibration. The proof is homotopy-theoretic. 1991 Mathematics Subject Classification Primary: 57P10 1. Introduction The notion of a manifold thickening of a finite complex was invented by Mazur [ 12 ] and was further developed by Wall [ 14 ] . The idea is that one can replace the cells of a finite complex inductively by handles provided that the geometric dimension of the handles is sufficiently large. The result is a compact smooth manifold with boundary having the homotopy type of . Then heuristically, is a “regular neighborhood” of . If the dimension is sufficiently large, then the set of concordance classes of manifold thickenings of is in bijection with , the abelian group of isomorphism classes of stable vector bundles over [ 14 , prop. 5.1] . In a recent manuscript [ 8 ] , it was necessary to deal with the analogous notion of Poincaré thickening. Roughly speaking, the latter consists of a Poincaré pair together with a choice of homotopy equivalence . The collection of Poincaré thickenings of a given dimension is equipped with an equivalence relation, concordance, and the resulting set of equivalence classes is denoted by There is also a stabilization map which is induced by taking cartesian product with the unit interval. If we let denote the colimit with respect to stabilization, there is a free and transitive action where is the abelian group of fiber homotopy types of stable spherical fibrations over (compare [ 12 , p. 79] in the smooth case). The action is defined by twisted suspension with respect to a spherical fibration. Furthermore, is equipped with a preferred basepoint which is represented by any Poincaré thickening having trivial Spivak normal fibration. We call any such thickening a Euclidean Poincaré thickening . It is unique up to stable concordance. As the action is free and transitive, the orbit of the basepoint defines a bijection In particular, to every stable thickening of there is a corresponding homotopy class ; call this the classifying map of the thickening. If one is willing to appeal to manifolds, then Spivak’s paper [ 13 ] provides a construction of a Euclidean thickening. In [ 5 ] we gave an alternative homotopy-theoretic construction. The goal of this paper is to relativize the result. 1.1. Relative Poincaré thickenings Let be a Poincaré triad of dimension . We set Then and are Poincaré pairs of dimension , and is such that is a Poincaré pair of dimension . Definition 1.1 ( [ 1 , p. 764] ) . The homotopy spine dimension of (relative to ) is if (i). the pair is homotopically -dimensional (i.e., up to homotopy, is a retract of a CW pair of relative dimension ), and (ii). the pair is -connected. Definition 1.2 . Let be a cofibrant pair, where is connected. A Poincaré thickening of of dimension is a pair consisting of a Poincaré triad of dimension having homotopy spine dimension , and a weak homotopy equivalence In addition, we require that the pair is a Poincaré thickening of dimension . Remark 1.3 . The definition codifies the notion of “regular neighborhood” of up to homotopy which meets the boundary in a “regular neighborhood” of . Notation 1.4 . To avoid clutter, we set whenever the triad structure on is understood. A pair of Poincaré thickenings and of are concordant if there is a weak homotopy equivalence of triads such that is homotopic to . Definition 1.5 . We say that is Euclidean if the Spivak fibration of is trivializable. The main result is then the following: Theorem A . There exists a Euclidean Poincaré thickening of . Remark 1.6 . A statement like Theorem A is needed in [ 9 ] . The latter paper is a component of the author’s approach to non-simply connected Poincaré surgery. A relatively easy proof of the result using manifold transversality exists (see for [ 6 , §3] for a related result). The current paper provides an alternative homotopy-theoretic approach with the intention of keeping the results of Poincaré surgery manifold-free. Remark 1.7 . Theorem A has an application to the stable classification of relative thickenings. Fix a thickening , where and consider the set of stable concordance classes of thickenings of which restrict to . Denote this set by Theorem A implies that is non-empty if and only if is non-empty, where the latter denotes the set of homotopy classes of maps which restrict to the classifying map of the Poincaré thickening . Moreover, in [ 9 ] we established the existence of a free and transitive action Consequently, if is non-empty, then there is a bijection 1.2. Conventions We work in the convenient model category of compactly generated weak Hausdorff spaces [ 3 , thm. 2.4.25] . Poincaré duality spaces and pairs are assumed to be finitely dominated. Outline . In Section 2 we recall the notion of Poincaré thickening and we prove that any map from a finite complex to a Poincaré space admits an embedded thickening after taking the cartesian product with a disk of sufficiently high dimension. Section 3 contains the proof of Theorem A . 2. Embedded Poincaré thickenings Let be a finite CW complex of dimension . Definition 2.1 . A Poincaré thickening of of dimension consists of in which (i). is a Poincaré pair which is -connected, and (ii). is a homotopy equivalence. In general, we assume that so that is -connected. When the boundary is understood, we will use the notation for the Poincaré thickening. If is a Poincaré thickening of dimension , then is a Poincaré thickening of dimension , where A concordance of -dimensional Poincaré thickenings from to is a weak homotopy equivalence such that is homotopic to . A Poincaré thickening of is Euclidean if has tr",
+      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2607.29631",
+      "chinese_summary": {
+        "problem": "对任意有限CW对(K,L)，构造一个Poincaré三元组(P;∂0P,∂1P)并赋予弱同伦等价(K,L)→(P,∂0P)，且要求该三元组具有平凡的Spivak法向纤维化",
+        "method": "采用纯同伦论方法（homotopy-theoretic）构造该Poincaré三元组；摘要未给出具体构造细节，但表明利用CW复形和同伦等价性质实现弱同伦等价，并控制Spivak法向纤维化的平凡性",
+        "innovation": "在相对情形（CW对）下构造欧几里得加厚，并额外要求Spivak法向纤维化平凡，这可能是对已知绝对加厚和Poincaré对偶理论的推广；具体创新点需结合论文正文确认",
+        "evidence": "摘要仅提供理论构造和证明路径的陈述，无实验数据；其可核验证据为同伦论中的形式化构造和定理，具体细节需查阅全文",
+        "limitations": "摘要信息有限，无法确认构造的可实施性及是否适用于更一般空间；可能仅适用于有限CW对；未讨论与谱或无穷范畴的联系",
+        "why_relevant": "论文核心涉及弱同伦等价、纤维化和CW复形，与我的研究方向中的homotopy theory、weak equivalence、fibration等关键词直接匹配；Poincaré三元组和Spivak法向纤维化是几何拓扑与同伦论的重要桥梁，可能对stable homotopy theory中的相关构造有启示；但未明确涉及∞-范畴或谱，所以相关性中等"
+      },
+      "first_seen_at": "2026-08-09T03:00:59.377526+00:00",
+      "last_seen_at": "2026-08-09T03:00:59.377526+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -14863,7 +15003,7 @@
       },
       "first_seen_at": "2026-08-08T02:53:05.823372+00:00",
       "last_seen_at": "2026-08-08T02:53:05.823372+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2608.00435v1",
@@ -14973,6 +15113,136 @@
       "first_seen_at": "2026-08-04T04:12:09.590819+00:00",
       "last_seen_at": "2026-08-04T04:12:09.590819+00:00",
       "retained_from_previous_run": true
+    },
+    {
+      "id": "2607.29097v2",
+      "source": "arXiv",
+      "title": "Cellular $\\mathbb{A}^1$-homology of wonderful models of subspace arrangements",
+      "authors": [
+        "Haoyang Liu",
+        "Keyao Peng"
+      ],
+      "summary": "We compute the cellular $\\mathbb{A}^1$-homology of De Concini--Procesi wonderful models of subspace arrangements. For a building set $\\mathcal{G}$ over a field $k$, we identify the cellular $\\mathbb{A}^1$-chain complex of $\\mathbb{P}(\\mathcal{G})$ with an $η$-twisted nested-set complex carrying Milnor--Witt coefficients and derived orientation data. The key geometric input is a motivic blow-up calculation: for a blow-up along a smooth center of codimension $c$, the relevant connecting class is $(c-1)_εη$, hence it is zero for $c$ odd and $η$ for $c$ even. This replaces the parity condition in the computation of Rains by a Milnor--Witt attaching class. As a consequence, the part of cellular $\\mathbb{A}^1$-homology surviving after multiplication by $η$, and also the homology after inverting $η$, are expressed by the interval cohomology of the $2$-divisible subposet of the lattice generated by $\\mathcal{G}$. For the braid arrangement, the condition becomes the odd-block condition on partitions, yielding explicit decompositions for the cellular $\\mathbb{A}^1$-homology of $\\overline{\\mathcal M}_{0,N}$ and examples in low rank.",
+      "published": "2026-07-31T07:21:50Z",
+      "updated": "2026-08-06T08:38:09Z",
+      "paper_url": "http://arxiv.org/abs/2607.29097v2",
+      "pdf_url": "https://arxiv.org/pdf/2607.29097v2",
+      "categories": [
+        "math.AG",
+        "math.AT"
+      ],
+      "seed_topic": "homotopy_theory",
+      "matches": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.47,
+          "base_score": 0.324,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "medium",
+          "reason": "关键词命中：blow-up；arXiv 分类重合：math.AG；时效加分 +0.05",
+          "keyword_hits": [
+            "blow-up"
+          ],
+          "llm_reason": "论文直接涉及 blow-up 和 motivic 相交理论，匹配关键词 'blow-up'、'intersection theory'；braid arrangement 的 wonderful model 与模空间 \\overline{\\mathcal M}_{0,N} 相关，匹配 'moduli space'。但核心是 A^1-同伦论下的同调计算，与经典代数几何的 scheme/sheaf 理论有一定距离，因此需人工复核。"
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.238,
+          "base_score": 0.192,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG、math.AT；时效加分 +0.05",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.233,
+          "base_score": 0.187,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.05",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.173,
+          "base_score": 0.127,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AT；时效加分 +0.05",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "algebraic_geometry",
+        "topic_name": "Algebraic Geometry",
+        "score": 0.47,
+        "base_score": 0.324,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.046,
+        "level": "medium",
+        "reason": "关键词命中：blow-up；arXiv 分类重合：math.AG；时效加分 +0.05",
+        "keyword_hits": [
+          "blow-up"
+        ],
+        "llm_reason": "论文直接涉及 blow-up 和 motivic 相交理论，匹配关键词 'blow-up'、'intersection theory'；braid arrangement 的 wonderful model 与模空间 \\overline{\\mathcal M}_{0,N} 相关，匹配 'moduli space'。但核心是 A^1-同伦论下的同调计算，与经典代数几何的 scheme/sheaf 理论有一定距离，因此需人工复核。"
+      },
+      "top_labels": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.324,
+          "score": 0.37,
+          "level": "low",
+          "keyword_hits": [
+            "blow-up"
+          ]
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "base_score": 0.192,
+          "score": 0.238,
+          "level": "low",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.187,
+          "score": 0.233,
+          "level": "low",
+          "keyword_hits": []
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "fulltext_excerpt": "[2607.29097] Cellular A 1 -homology of wonderful models of subspace arrangements Cellular -homology of wonderful models of subspace arrangements Haoyang Liu Address: University of California, Santa Barbara Email address: haoyangliu@ucsb.edu and Keyao Peng Address: Université Bourgogne Europe, Dijon, France Email address: keyao.peng@ube.fr Address: Email address: Abstract. We compute the cellular -homology of De Concini–Procesi wonderful models of subspace arrangements. For a building set over a field , we identify the cellular -chain complex of with an -twisted nested-set complex carrying Milnor–Witt coefficients and derived orientation data. The key geometric input is a motivic blow-up calculation: for a blow-up along a smooth center of codimension , the relevant connecting class is , hence it is zero for odd and for even. This replaces the parity condition in the computation of Rains by a Milnor–Witt attaching class. As a consequence, the part of cellular -homology surviving after multiplication by , and also the homology after inverting , are expressed by the interval cohomology of the -divisible subposet of the lattice generated by . For the braid arrangement, the condition becomes the odd-block condition on partitions, yielding explicit decompositions for the cellular -homology of and examples in low rank. 1. Introduction Wonderful compactifications of subspace arrangement complements were introduced by De Concini and Procesi as smooth projective models whose boundary strata are controlled by nested sets in a building set [ 1 ] . They include several familiar spaces: for example, the braid arrangement yields the moduli space . The topology of these models is remarkably combinatorial. In the real case, Rains computed the homology of the real locus by using the nested-set stratification and showed that the answer is governed by a parity condition on the dimensions of the nodes of the forest [ 16 ] . The purpose of this paper is to lift this picture to cellular -homology in the sense of Morel and Sawant [ 12 ] . More precisely, for a building set in over a field , we compute the cellular -chain complex of the De Concini–Procesi model in terms of a purely combinatorial nested-set complex with Milnor–Witt coefficients. The resulting answer is a motivic refinement of Rains’ real calculation: the classical parity phenomenon is replaced by the Milnor–Witt attaching class coming from a blow-up, and the surviving part after multiplication by is controlled by the -divisible part of the lattice of sums of elements of . The strategy is parallel to the toric calculation of [ 9 ] . There a smooth fan is encoded by its simplicial complex and characteristic map , and the cellular differential is recovered from a moment-angle quotient together with the orientation changes determined by . Here the nested-set complex and its derived orientation coefficients play the corresponding roles. The permutohedral toric variety is the type- overlap of the two frameworks; Section 2 explains both this comparison and the distinction from the braid-arrangement model used for . Our first ingredient is a functorial reformulation of wonderful models. We regard a building set as a diagram of quotient vector spaces and realize as the space of sections of the projective geometric context. This point of view makes the projection maps, operadic boundary maps, and the idempotent decomposition indexed by transparent. It also gives the bookkeeping needed to compare blow-ups on the geometric side with exact sequences of nested-set complexes on the combinatorial side. The second ingredient is the motivic blow-up calculation. If is the blow-up of a smooth scheme along a smooth center of codimension , then the connecting map on the normal slice is multiplication by Thus the attaching map is zero for odd and is for even. This is the Milnor–Witt analogue of the parity appearing in Rains’ calculation, and it is the reason the final complex is an -twist of a derived orientation complex. The main result identifies the cellular chain complex with that nested-set model. Let denote the derived orientation coefficient complex and let be the -twisted, strictly positive nested-set complex introduced below. Then there are quasi-isomorphisms Equivalently, the -graded summand is computed by the nested sets with root . After discarding -torsion, this gives the explicit formula and after inverting , Here is the subposet generated by direct sums of even-dimensional members of the building set. These formulas show that the non- -torsion part of cellular -homology is determined by the same interval cohomology that appears in Rains’ forest complex, with the expected Milnor–Witt coefficient sheaves. The -twist is applied only to the strictly positive reduced complex. The independent augmentation summand gives . As an application, we specialize to the braid arrangement and hence to the moduli spaces . In this case the -divisible condition becomes the elementary condition that every block of the corresponding partition is odd. The cellular -homology therefore splits into odd-partition summands together with explicit two-term -cones. We work out the resulting decompositions for and , illustrating how the motivic complex remembers both the integral real homology detected after multiplying by and the remaining -primary information. Over the real numbers we also extract the resulting Chow–Witt groups and the full untwisted Chow–Witt ring from the integral cohomology ring of the real locus. The paper is organized as follows. We first compare the nested-set construction with the toric -model, then review building sets, wonderful models, and the geometric-context formalism, including the idempotent decomposition of the cellular theory. We next introduce the derived nested-set complexes and prove their behavior under a single blow-up. The following section recalls the relevant -homotopy blow-up triangle and computes its Milnor–Witt connecting class. Finally, we",
+      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2607.29097",
+      "chinese_summary": {
+        "problem": "计算子空间排列的 De Concini-Procesi wonderful models 的 cellular A^1-同调，并给出其结构性描述。",
+        "method": "将 cellular A^1-chain complex 识别为带 Milnor-Witt 系数和导出定向数据的 η-扭曲嵌套集复形；关键几何输入是 motivic blow-up 计算，对余维数 c 的光滑中心，connecting class 为 (c-1)_εη，从而奇偶性由 η 控制。",
+        "innovation": "1) 用 Milnor-Witt attaching class 统一并替换 Rains 计算中的奇偶条件，得到更精细的 η-加细表述；2) 对 braid arrangement，给出满足奇块条件的分拆显式分解，并用于计算 \\overline{\\mathcal M}_{0,N} 的 cellular A^1-同调。",
+        "evidence": "摘要中提供了理论计算结果：识别了 cellular A^1-chain complex，给出了 motivic blow-up 的 connecting class 公式，以及 η 局部化和 η 乘法后的同调用 2-可分偏序集的区间上同调表达，并列出低秩例子。但未提供具体数值或实验验证。",
+        "limitations": "摘要未给出详细证明；结果依赖 motivic homotopy 理论框架，可能要求读者熟悉 A^1-同伦论和 Milnor-Witt 理论；适用范围可能限于特定的 building set 和排列，奇偶性被 η 取代的深层影响需阅读全文确认。",
+        "why_relevant": "论文直接涉及 blow-up 和 motivic 相交理论，匹配关键词 'blow-up'、'intersection theory'；braid arrangement 的 wonderful model 与模空间 \\overline{\\mathcal M}_{0,N} 相关，匹配 'moduli space'。但核心是 A^1-同伦论下的同调计算，与经典代数几何的 scheme/sheaf 理论有一定距离，因此需人工复核。"
+      },
+      "first_seen_at": "2026-08-09T03:00:59.377526+00:00",
+      "last_seen_at": "2026-08-09T03:00:59.377526+00:00",
+      "retained_from_previous_run": false
     },
     {
       "id": "2608.03684v1",
@@ -15098,7 +15368,7 @@
       },
       "first_seen_at": "2026-08-08T02:53:05.823372+00:00",
       "last_seen_at": "2026-08-08T02:53:05.823372+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2607.29097v1",
@@ -18726,125 +18996,6 @@
       "retained_from_previous_run": true
     },
     {
-      "id": "2607.24847v1",
-      "source": "arXiv",
-      "title": "Extremal Chowla sets and their linear analogues: A human-AI mathematical investigation using Co-Scientist",
-      "authors": [
-        "Mohsen Aliabadi",
-        "Keith Driscoll",
-        "Elliot Krop",
-        "Petar Sirkovic",
-        "Everett Sullivan",
-        "Elahe Vedadi"
-      ],
-      "summary": "We introduce an extremal invariant associated with Chowla-type order conditions in finite groups. A nonempty subset $S$ of a finite group $G$ is called a Chowla set if every element of $S$ has order greater than $|S|$, and we write $\\Ccal(G)$ for the maximum cardinality of such a set. We first show that $\\Ccal(G)$ is determined by the distribution of element orders in $G$. For cyclic groups, we derive an exact divisor formula and characterize the integers $n$ for which $\\Ccal(\\mathbb Z/n\\mathbb Z)=\\varphi(n)$. We prove that $\\liminf_{n\\to\\infty}\\Ccal(\\mathbb Z/n\\mathbb Z)/\\varphi(n)=1$, whereas $\\limsup_{n\\to\\infty}\\Ccal(\\mathbb Z/n\\mathbb Z)/\\varphi(n)=\\infty$, and we determine the corresponding lower and upper limits under normalization by $n$. For finite abelian groups, we obtain an explicit formula in terms of the invariant-factor decomposition, together with a closed formula for finite abelian $p$-groups. We then develop a linear analogue for finite field extensions. A nonzero $K$-subspace $A$ of an extension $L/K$ is called a Chowla subspace if $[K(a):K]>\\dim_K A$ for every nonzero $a\\in A$. Since this condition depends on $\\dim_K A$, it does not generally require every nonzero element of $A$ to generate $L$ over $K$. Nevertheless, when $L/K$ is finite and separable, we prove the exact formula $\\Ccal(L/K)=[L:K]-d_{\\max}(L/K)$, where $d_{\\max}(L/K)$ is the largest degree over $K$ of a proper intermediate field. For finite fields, we give a direct proof in every degree using a normal-basis construction. This work was developed through an expert-guided human--AI collaboration. A reasoning-focused configuration of Co-Scientist was used to explore examples and potential proof strategies. The authors formulated the problem, independently verified and completed all arguments, and wrote the final proofs.",
-      "published": "2026-07-25T01:46:56Z",
-      "updated": "2026-07-25T01:46:56Z",
-      "paper_url": "http://arxiv.org/abs/2607.24847v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.24847v1",
-      "categories": [
-        "math.NT",
-        "cs.AI",
-        "math.GR"
-      ],
-      "seed_topic": "arithmetic_geometry",
-      "matches": [
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "score": 0.425,
-          "base_score": 0.381,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.044,
-          "level": "medium",
-          "reason": "关键词命中：finite field；arXiv 分类重合：math.NT；时效加分 +0.04",
-          "keyword_hits": [
-            "finite field"
-          ],
-          "llm_reason": "论文涉及有限域（关键词finite field）上的扩张和子空间性质，属于算术几何中有限域及其扩展的研究范畴；但核心问题属于组合群论和域论，与算术几何的深层主题（如伽罗瓦表示、p进上同调等）关联较弱。"
-        },
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "score": 0.055,
-          "base_score": 0.011,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.044,
-          "level": "low",
-          "reason": "时效加分 +0.04",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "score": 0.052,
-          "base_score": 0.008,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.044,
-          "level": "low",
-          "reason": "时效加分 +0.04",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "score": 0.05,
-          "base_score": 0.006,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.044,
-          "level": "low",
-          "reason": "时效加分 +0.04",
-          "keyword_hits": []
-        }
-      ],
-      "best_match": {
-        "topic_id": "arithmetic_geometry",
-        "topic_name": "Arithmetic Geometry",
-        "score": 0.425,
-        "base_score": 0.381,
-        "bridge_bonus": 0.0,
-        "preference_bonus": 0.0,
-        "recency_bonus": 0.044,
-        "level": "medium",
-        "reason": "关键词命中：finite field；arXiv 分类重合：math.NT；时效加分 +0.04",
-        "keyword_hits": [
-          "finite field"
-        ],
-        "llm_reason": "论文涉及有限域（关键词finite field）上的扩张和子空间性质，属于算术几何中有限域及其扩展的研究范畴；但核心问题属于组合群论和域论，与算术几何的深层主题（如伽罗瓦表示、p进上同调等）关联较弱。"
-      },
-      "top_labels": [
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "base_score": 0.381,
-          "score": 0.425,
-          "level": "medium",
-          "keyword_hits": [
-            "finite field"
-          ]
-        }
-      ],
-      "backfilled_from_recent_arxiv": true,
-      "newly_discovered_from_recent_arxiv": true,
-      "fulltext_excerpt": "[2607.24847] Extremal Chowla sets and their linear analogues: A human-AI mathematical investigation using Co-Scientist Skip to main content Search arXiv Press Enter to search · Advanced search --> Mathematics > Number Theory arXiv:2607.24847 (math) [Submitted on 25 Jul 2026] Title: Extremal Chowla sets and their linear analogues: A human-AI mathematical investigation using Co-Scientist Authors: Mohsen Aliabadi , Keith Driscoll , Elliot Krop , Petar Sirkovic , Everett Sullivan , Elahe Vedadi View a PDF of the paper titled Extremal Chowla sets and their linear analogues: A human-AI mathematical investigation using Co-Scientist, by Mohsen Aliabadi and 4 other authors View PDF Abstract: We introduce an extremal invariant associated with Chowla-type order conditions in finite groups. A nonempty subset $S$ of a finite group $G$ is called a Chowla set if every element of $S$ has order greater than $|S|$, and we write $\\Ccal(G)$ for the maximum cardinality of such a set. We first show that $\\Ccal(G)$ is determined by the distribution of element orders in $G$. For cyclic groups, we derive an exact divisor formula and characterize the integers $n$ for which $\\Ccal(\\mathbb Z/n\\mathbb Z)=\\varphi(n)$. We prove that $\\liminf_{n\\to\\infty}\\Ccal(\\mathbb Z/n\\mathbb Z)/\\varphi(n)=1$, whereas $\\limsup_{n\\to\\infty}\\Ccal(\\mathbb Z/n\\mathbb Z)/\\varphi(n)=\\infty$, and we determine the corresponding lower and upper limits under normalization by $n$. For finite abelian groups, we obtain an explicit formula in terms of the invariant-factor decomposition, together with a closed formula for finite abelian $p$-groups. We then develop a linear analogue for finite field extensions. A nonzero $K$-subspace $A$ of an extension $L/K$ is called a Chowla subspace if $[K(a):K]>\\dim_K A$ for every nonzero $a\\in A$. Since this condition depends on $\\dim_K A$, it does not generally require every nonzero element of $A$ to generate $L$ over $K$. Nevertheless, when $L/K$ is finite and separable, we prove the exact formula $\\Ccal(L/K)=[L:K]-d_{\\max}(L/K)$, where $d_{\\max}(L/K)$ is the largest degree over $K$ of a proper intermediate field. For finite fields, we give a direct proof in every degree using a normal-basis construction. This work was developed through an expert-guided human--AI collaboration. A reasoning-focused configuration of Co-Scientist was used to explore examples and potential proof strategies. The authors formulated the problem, independently verified and completed all arguments, and wrote the final proofs. Comments: Comments welcome! Subjects: Number Theory (math.NT) ; Artificial Intelligence (cs.AI); Group Theory (math.GR) Cite as: arXiv:2607.24847 [math.NT] (or arXiv:2607.24847v1 [math.NT] for this version) https://doi.org/10.48550/arXiv.2607.24847 Focus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: Elahe Vedadi [ view email ] [v1] Sat, 25 Jul 2026 01:46:56 UTC (58 KB) Full-text links: Access Paper: View a PDF of the paper titled Extremal Chowla sets and their linear analogues: A human-AI mathematical investigation using Co-Scientist, by Mohsen Aliabadi and 4 other authors View PDF TeX Source view license Current browse context: math.NT < prev | next > new | recent | 2026-07 Change to browse by: cs cs.AI math math.GR References & Citations NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
-      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2607.24847",
-      "chinese_summary": {
-        "problem": "定义并计算有限群中满足元素阶大于子集大小的极值Chowla集的最大基数，以及有限域扩张中满足子空间元素的最小多项式次数大于子空间维数的Chowla子空间的最大维数。",
-        "method": "对于有限群，利用元素阶的分布导出极值Chowla集基数的计算公式，并对循环群给出精确因子公式，利用数论函数分析渐近行为。对于有限域扩张，通过证明公式C(L/K)=[L:K]-d_max(L/K)（其中d_max为最大真中间域次数）并利用正规基构造给出有限域情形的直接证明。",
-        "innovation": "1. 引入极值Chowla集这一新不变量，并建立其与元素阶分布之间的确切关系；2. 对循环群给出Chowla集基数的精确除数公式，并完整刻画何时达到φ(n)；3. 首次处理有限域扩张的线性类比，得到封闭公式并给出有限域的显式构造。",
-        "evidence": "理论证明：对有限群初步建立C(G)由元素阶分布决定；对循环群推导了精确除数公式并证明了上下极限结果；对有限阿贝尔群给出了不变因子分解下的公式；对有限可分扩张证明了C(L/K)=[L:K]-d_max(L/K)；对有限域通过正规基构造直接证明。无实验数据，纯理论推导。",
-        "limitations": "结果局限于有限群和有限可分域扩张，未涉及无限域或特征p的代数闭包；线性类比仅针对有限域扩张，未推广到一般向量空间；对非阿贝尔群仅给出初步分布描述，缺少显式公式。",
-        "why_relevant": "论文涉及有限域（关键词finite field）上的扩张和子空间性质，属于算术几何中有限域及其扩展的研究范畴；但核心问题属于组合群论和域论，与算术几何的深层主题（如伽罗瓦表示、p进上同调等）关联较弱。"
-      },
-      "first_seen_at": "2026-07-29T04:10:34.180656+00:00",
-      "last_seen_at": "2026-07-29T04:10:34.180656+00:00",
-      "retained_from_previous_run": true
-    },
-    {
       "id": "2608.01474v1",
       "source": "arXiv",
       "title": "A uniform decomposition theorem for invariant differential operators on imprimitive complex reflection groups G(r,p,n)",
@@ -19089,128 +19240,6 @@
       "retained_from_previous_run": true
     },
     {
-      "id": "2607.23076v1",
-      "source": "arXiv",
-      "title": "On the Frobenius Number of Quotients of Numerical Semigroups",
-      "authors": [
-        "Feihu Liu"
-      ],
-      "summary": "Given a numerical semigroup $S$ and a positive integer $p$, the quotient $\\frac{S}{p}=\\{n\\in \\mathbb{N} \\mid pn\\in S\\}$ also forms a numerical semigroup. When $S=\\langle a,b\\rangle$ with $\\gcd(a,b)=1$, a well-known open problem is to find a closed-form formula for the Frobenius number $g\\!\\left(\\frac{\\langle a,b\\rangle}{p}\\right)$, which remains open even in the special case $b=a+1$. Inspired by Curtis's theorem on the non-existence of polynomial formulas for the Frobenius number $g(\\langle s_1,s_2,s_3\\rangle)$, we provide a negative answer to this open problem in a certain sense. Concretely, we obtain the following three main results. (i): The Frobenius number $g\\!\\left(\\frac{\\langle a,b\\rangle}{p}\\right)$ cannot be represented, uniformly in $a,b,p$, by any finite collection of polynomial (or rational) formulas. (ii): For each fixed $p$, the function $a\\mapsto g\\!\\left(\\frac{\\langle a,a+1\\rangle}{p}\\right)$ is a quadratic quasi-polynomial with period dividing $p$. (iii): There is no nonzero polynomial $F\\in \\mathbb{C}[X_1,X_2,X_3]$ satisfying $F\\left(a,p,g\\!\\left(\\frac{\\langle a,a+1\\rangle}{p}\\right)\\right)=0$ for all primes $a,p$ with $2<p<a$; the same conclusion already holds if only $p$ is required to be prime and $a$ ranges over all integers greater than $p$. While (iii) is stronger than (i), the proofs of the two results reveal different insights. Dirichlet's theorem on primes in arithmetic progressions plays a crucial role in our arguments.",
-      "published": "2026-07-25T06:51:20Z",
-      "updated": "2026-07-25T06:51:20Z",
-      "paper_url": "http://arxiv.org/abs/2607.23076v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.23076v1",
-      "categories": [
-        "math.NT",
-        "math.CO",
-        "math.GR"
-      ],
-      "seed_topic": "arithmetic_geometry",
-      "matches": [
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "score": 0.421,
-          "base_score": 0.376,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.045,
-          "level": "medium",
-          "reason": "关键词命中：Frobenius；arXiv 分类重合：math.NT；时效加分 +0.05",
-          "keyword_hits": [
-            "Frobenius"
-          ]
-        },
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "score": 0.188,
-          "base_score": 0.143,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.045,
-          "level": "low",
-          "reason": "关键词命中：Spec；时效加分 +0.05",
-          "keyword_hits": [
-            "Spec"
-          ]
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "score": 0.049,
-          "base_score": 0.004,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.045,
-          "level": "low",
-          "reason": "时效加分 +0.05",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "score": 0.049,
-          "base_score": 0.004,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.045,
-          "level": "low",
-          "reason": "时效加分 +0.05",
-          "keyword_hits": []
-        }
-      ],
-      "best_match": {
-        "topic_id": "arithmetic_geometry",
-        "topic_name": "Arithmetic Geometry",
-        "score": 0.421,
-        "base_score": 0.376,
-        "bridge_bonus": 0.0,
-        "preference_bonus": 0.0,
-        "recency_bonus": 0.045,
-        "level": "medium",
-        "reason": "关键词命中：Frobenius；arXiv 分类重合：math.NT；时效加分 +0.05",
-        "keyword_hits": [
-          "Frobenius"
-        ]
-      },
-      "top_labels": [
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "base_score": 0.376,
-          "score": 0.421,
-          "level": "medium",
-          "keyword_hits": [
-            "Frobenius"
-          ]
-        },
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "base_score": 0.143,
-          "score": 0.188,
-          "level": "low",
-          "keyword_hits": [
-            "Spec"
-          ]
-        }
-      ],
-      "backfilled_from_recent_arxiv": true,
-      "newly_discovered_from_recent_arxiv": true,
-      "chinese_summary": {
-        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
-        "method": "Given a numerical semigroup $S$ and a positive integer $p$, the quotient $\\frac{S}{p}=\\{n\\in \\mathbb{N} \\mid pn\\in S\\}$ also forms a numerical semigroup.",
-        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
-        "evidence": "来源摘要可在论文原文中核验。",
-        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
-        "why_relevant": "关键词命中：Frobenius；arXiv 分类重合：math.NT；时效加分 +0.05"
-      },
-      "first_seen_at": "2026-07-28T04:07:04.886983+00:00",
-      "last_seen_at": "2026-07-28T04:07:04.886983+00:00",
-      "retained_from_previous_run": true
-    },
-    {
       "id": "2608.02592v1",
       "source": "arXiv",
       "title": "Colimits in Oriented Category Theory",
@@ -19342,7 +19371,7 @@
       },
       "first_seen_at": "2026-08-08T02:53:05.823372+00:00",
       "last_seen_at": "2026-08-08T02:53:05.823372+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2607.25520v1",
@@ -19474,28 +19503,28 @@
     }
   ],
   "stats": {
-    "candidate_paper_count": 128,
-    "daily_candidate_paper_count": 128,
+    "candidate_paper_count": 119,
+    "daily_candidate_paper_count": 119,
     "raw_daily_candidate_count": 334,
-    "daily_outside_cutoff_count": 265,
-    "newly_discovered_backfill_count": 128,
+    "daily_outside_cutoff_count": 266,
+    "newly_discovered_backfill_count": 119,
     "daily_backfill_days": 14,
-    "daily_backfill_candidate_count": 77,
+    "daily_backfill_candidate_count": 83,
     "daily_backfill_added_count": 0,
     "min_daily_papers": 8,
     "filtered_low_relevance_count": 0,
-    "filtered_wrong_category_count": 69,
+    "filtered_wrong_category_count": 68,
     "filtered_disliked_count": 0,
     "arxiv_category_filter": [
-      "math.AG",
-      "math.KT",
-      "math.NT",
       "math.CT",
-      "math.AT"
+      "math.AT",
+      "math.NT",
+      "math.AG",
+      "math.KT"
     ],
     "days": 1,
     "collection_mode": "incremental",
-    "collection_cutoff_iso": "2026-08-07T03:48:47.362266+00:00",
+    "collection_cutoff_iso": "2026-08-08T02:53:05.823372+00:00",
     "max_per_topic": 25,
     "max_new_papers": 30,
     "sources": [
@@ -19537,12 +19566,12 @@
     "dropped_disliked_count": 0,
     "max_stored_papers": 150,
     "max_data_bytes": 8388608,
-    "data_bytes": 1601478,
+    "data_bytes": 1609972,
     "storage_trimmed_count": 30,
     "storage_trimmed_by_level": {
-      "high": 3,
-      "medium": 4,
-      "low": 23,
+      "high": 2,
+      "medium": 3,
+      "low": 25,
       "unknown": 0
     },
     "storage_limit_exceeded_by_likes": false
