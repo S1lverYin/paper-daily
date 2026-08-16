@@ -1,6 +1,6 @@
 {
-  "generated_at": "Sat, 15 Aug 2026 02:12:21 +0000",
-  "generated_at_iso": "2026-08-15T02:12:21.128735+00:00",
+  "generated_at": "Sun, 16 Aug 2026 02:20:06 +0000",
+  "generated_at_iso": "2026-08-16T02:20:06.261737+00:00",
   "config_source": "file",
   "topics": [
     {
@@ -3199,7 +3199,7 @@
       },
       "first_seen_at": "2026-08-15T02:12:21.128735+00:00",
       "last_seen_at": "2026-08-15T02:12:21.128735+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2608.11304v1",
@@ -8027,7 +8027,7 @@
       },
       "first_seen_at": "2026-08-15T02:12:21.128735+00:00",
       "last_seen_at": "2026-08-15T02:12:21.128735+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2608.04793v2",
@@ -9235,119 +9235,6 @@
       },
       "first_seen_at": "2026-08-14T03:22:53.179230+00:00",
       "last_seen_at": "2026-08-14T03:22:53.179230+00:00",
-      "retained_from_previous_run": true
-    },
-    {
-      "id": "2608.02265v1",
-      "source": "arXiv",
-      "title": "Samart's conjecture n_4(81)=40M_7: the exact CM evaluation and the two obstructions. A status report",
-      "authors": [
-        "Huimin Zheng"
-      ],
-      "summary": "This note archives the status of Samart's Table-6 conjecture $n_4(81)=40M_7$, $M_7:=L'(g_7,0)$, where $g_7(τ)=η(τ)^3η(7τ)^3$ is the newform of $S_3(Γ_0(7),χ_{-7})$ and $n_4(s):=4m(x^4+y^4+z^4+1+s^{1/4}xyz)$. The conjecture is the cleanest of Samart's open interior-point entries (discriminant $-7$, class number $1$, a single $L$-value), and it was dropped as a theorem target in the companion paper, where the two $n_2$-family conjectures were proved. We record what is proved and precisely where those methods fail. First, a complete proof of the $L$-value side (P1): at the CM point $τ_2=(7+\\sqrt{-7})/4$ the Eisenstein--Kronecker expression underlying Samart's formula evaluates exactly to $\\mathrm{EK}_4(τ_2)=40M_7$, via lattice sums over the ring of integers of $\\mathbb{Q}(\\sqrt{-7})$ and the principal ideal $(\\bar\\varpi)$, with an exact cancellation of the parasitic $ζ_K(2)$-terms. Second, two quantitative obstructions to the remaining half $n_4(81)=\\mathrm{EK}_4(τ_2)$: the critical image of the $n_4$-family is a two-dimensional astroid disc containing the parameter $c=3$ in its interior (in contrast to the one-dimensional slit $[0,64]$ of the $n_2$-family), so no continuation path can approach the CM point; and Samart's $U$-series converges on all of the upper half-plane but leaves the geometric sheet of the holomorphic Mahler measure everywhere below $\\mathrm{Im}\\,τ=1/\\sqrt{2}$, so the premise of the differential-comparison continuation fails. A 20-digit direct torus integration then decides the conjecture numerically: $n_4(81)-40M_7=+0.0586706795972872...$, five orders of magnitude above the integration error floor, so the identity as literally stated is refuted; a closed form for the true value $n_4(81)$ remains open and appears to require regulator/monodromy machinery.",
-      "published": "2026-08-03T14:08:17Z",
-      "updated": "2026-08-03T14:08:17Z",
-      "paper_url": "http://arxiv.org/abs/2608.02265v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.02265v1",
-      "categories": [
-        "math.NT"
-      ],
-      "seed_topic": "arithmetic_geometry",
-      "matches": [
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "score": 0.563,
-          "base_score": 0.502,
-          "bridge_bonus": 0.012,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.049,
-          "level": "medium",
-          "reason": "关键词命中：ring of integers、regulator；arXiv 分类重合：math.NT；arithmetic ↔ K-theory；时效加分 +0.05",
-          "keyword_hits": [
-            "ring of integers",
-            "regulator"
-          ],
-          "llm_reason": "论文涉及算术几何中的多个相关主题：代数整数环（Q(√-7) 的整数环）、模形式 L 值的特殊值（g_7 是 S_3(Γ_0(7),χ_{-7}) 的新形式，M_7=L'(g_7,0)）、CM 点求值以及 regulator/K-理论思想（文末提出真实值需 regulator/monodromy）。这些与我的研究方向中 'ring of integers'、'L-functions'、'regulator' 等关键词高度吻合，但论文核心是具体计算反例，而非 Galois 表示、p-adic Hodge 或斋藤同调等更核心的算术几何议题，因此相关性为中等。"
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "score": 0.069,
-          "base_score": 0.008,
-          "bridge_bonus": 0.012,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.049,
-          "level": "low",
-          "reason": "arithmetic ↔ K-theory；时效加分 +0.05",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "score": 0.056,
-          "base_score": 0.007,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.049,
-          "level": "low",
-          "reason": "时效加分 +0.05",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "score": 0.053,
-          "base_score": 0.004,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.049,
-          "level": "low",
-          "reason": "时效加分 +0.05",
-          "keyword_hits": []
-        }
-      ],
-      "best_match": {
-        "topic_id": "arithmetic_geometry",
-        "topic_name": "Arithmetic Geometry",
-        "score": 0.563,
-        "base_score": 0.502,
-        "bridge_bonus": 0.012,
-        "preference_bonus": 0.0,
-        "recency_bonus": 0.049,
-        "level": "medium",
-        "reason": "关键词命中：ring of integers、regulator；arXiv 分类重合：math.NT；arithmetic ↔ K-theory；时效加分 +0.05",
-        "keyword_hits": [
-          "ring of integers",
-          "regulator"
-        ],
-        "llm_reason": "论文涉及算术几何中的多个相关主题：代数整数环（Q(√-7) 的整数环）、模形式 L 值的特殊值（g_7 是 S_3(Γ_0(7),χ_{-7}) 的新形式，M_7=L'(g_7,0)）、CM 点求值以及 regulator/K-理论思想（文末提出真实值需 regulator/monodromy）。这些与我的研究方向中 'ring of integers'、'L-functions'、'regulator' 等关键词高度吻合，但论文核心是具体计算反例，而非 Galois 表示、p-adic Hodge 或斋藤同调等更核心的算术几何议题，因此相关性为中等。"
-      },
-      "top_labels": [
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "base_score": 0.502,
-          "score": 0.563,
-          "level": "medium",
-          "keyword_hits": [
-            "ring of integers",
-            "regulator"
-          ]
-        }
-      ],
-      "fulltext_excerpt": "[2608.02265] Samart's conjecture n_4(81)=40M_7: the exact CM evaluation and the two obstructions. A status report Skip to main content System maintenance August 4th and 5th Learn more × Search arXiv Press Enter to search · Advanced search --> Mathematics > Number Theory arXiv:2608.02265 (math) [Submitted on 3 Aug 2026] Title: Samart's conjecture n_4(81)=40M_7: the exact CM evaluation and the two obstructions. A status report Authors: Huimin Zheng View a PDF of the paper titled Samart's conjecture n_4(81)=40M_7: the exact CM evaluation and the two obstructions. A status report, by Huimin Zheng View PDF HTML (experimental) Abstract: This note archives the status of Samart's Table-6 conjecture $n_4(81)=40M_7$, $M_7:=L'(g_7,0)$, where $g_7(\\tau)=\\eta(\\tau)^3\\eta(7\\tau)^3$ is the newform of $S_3(\\Gamma_0(7),\\chi_{-7})$ and $n_4(s):=4m(x^4+y^4+z^4+1+s^{1/4}xyz)$. The conjecture is the cleanest of Samart's open interior-point entries (discriminant $-7$, class number $1$, a single $L$-value), and it was dropped as a theorem target in the companion paper, where the two $n_2$-family conjectures were proved. We record what is proved and precisely where those methods fail. First, a complete proof of the $L$-value side (P1): at the CM point $\\tau_2=(7+\\sqrt{-7})/4$ the Eisenstein--Kronecker expression underlying Samart's formula evaluates exactly to $\\mathrm{EK}_4(\\tau_2)=40M_7$, via lattice sums over the ring of integers of $\\mathbb{Q}(\\sqrt{-7})$ and the principal ideal $(\\bar\\varpi)$, with an exact cancellation of the parasitic $\\zeta_K(2)$-terms. Second, two quantitative obstructions to the remaining half $n_4(81)=\\mathrm{EK}_4(\\tau_2)$: the critical image of the $n_4$-family is a two-dimensional astroid disc containing the parameter $c=3$ in its interior (in contrast to the one-dimensional slit $[0,64]$ of the $n_2$-family), so no continuation path can approach the CM point; and Samart's $U$-series converges on all of the upper half-plane but leaves the geometric sheet of the holomorphic Mahler measure everywhere below $\\mathrm{Im}\\,\\tau=1/\\sqrt{2}$, so the premise of the differential-comparison continuation fails. A 20-digit direct torus integration then decides the conjecture numerically: $n_4(81)-40M_7=+0.0586706795972872...$, five orders of magnitude above the integration error floor, so the identity as literally stated is refuted; a closed form for the true value $n_4(81)$ remains open and appears to require regulator/monodromy machinery. Comments: 12 pages. Status report; companion paper proves the two n2-family conjectures (submitted simultaneously). Code: this https URL Subjects: Number Theory (math.NT) MSC classes: 11R06, 11F03, 11M41 Cite as: arXiv:2608.02265 [math.NT] (or arXiv:2608.02265v1 [math.NT] for this version) https://doi.org/10.48550/arXiv.2608.02265 Focus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: HuiMin Zheng [ view email ] [v1] Mon, 3 Aug 2026 14:08:17 UTC (16 KB) Full-text links: Access Paper: View a PDF of the paper titled Samart's conjecture n_4(81)=40M_7: the exact CM evaluation and the two obstructions. A status report, by Huimin Zheng View PDF HTML (experimental) TeX Source view license Current browse context: math.NT < prev | next > new | recent | 2026-08 Change to browse by: math References & Citations NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
-      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2608.02265",
-      "chinese_summary": {
-        "problem": "论文要解决 Samart 关于 n_4(81)=40M_7 这一具体 CM（复乘）求值猜想的真伪问题。该猜想涉及模形式 L 值 M_7 := L'(g_7,0) 与某 Mahler measure 型函数 n_4(s) 在 s=3 处的恒等式，其中 n_4(s) 是四项四次型对应的 period 函数。",
-        "method": "核心方法分为两部分：(1) 在 CM 点 τ_2=(7+√-7)/4 处，利用 Eisenstein–Kronecker 级数和 Q(√-7) 整数环上主理想 (ϖ̄) 的格点求和，精确计算出 EK_4(τ_2)=40M_7，并消除寄生 ζ_K(2) 项；(2) 对 n_4(81)=EK_4(τ_2) 的剩余部分，构造两个定量障碍：n_4 族的临界像为包含内点 c=3 的二维星形圆盘（而非 n_2 族的一维 slit），以及 Samart 的 U-级数在上半平面收敛但在 Im τ < 1/√2 处离开全纯 Mahler measure 的几何叶，从而阻断解析延拓路径。最后用 20 位精度的直接环面数值积分判定该恒等式不成立。",
-        "innovation": "具体创新点：(1) 首次对 Samart Table-6 中最干净的开放内点猜测给出精确的 L 值侧证明，即 EK_4 在 CM 点的封闭求值；(2) 明确提出两个量化的障碍，解释了为何此前的解析延拓/比较方法不能延伸到 n_4 族；(3) 通过高精度数值积分直接否定该猜想，并给出真实值的误差界，指出其闭式需依赖 regulator/monodromy 机制。",
-        "evidence": "摘要提供了可核验的理论和数值证据：P1 侧有完整的 Eisenstein–Kronecker 求值证明；数值结果 n_4(81)-40M_7 = +0.0586706795972872...，比积分误差下限高五个数量级，故原文恒等式被拒斥；同时记录了 n_2 族两个相关猜想已被证明作为对照。",
-        "limitations": "需要阅读全文确认以下细节：(a) 精确求值中格点求和与 ζ_K(2) 相消的严格推导；(b) 两个障碍的几何/解析构造的严格性，尤其是 U-级数偏离几何叶的边界；(c) 20 位数值积分所依赖的算法和误差估计是否完全可靠；(d) 真实值是否确有 regulator 型闭式尚未给出。",
-        "why_relevant": "论文涉及算术几何中的多个相关主题：代数整数环（Q(√-7) 的整数环）、模形式 L 值的特殊值（g_7 是 S_3(Γ_0(7),χ_{-7}) 的新形式，M_7=L'(g_7,0)）、CM 点求值以及 regulator/K-理论思想（文末提出真实值需 regulator/monodromy）。这些与我的研究方向中 'ring of integers'、'L-functions'、'regulator' 等关键词高度吻合，但论文核心是具体计算反例，而非 Galois 表示、p-adic Hodge 或斋藤同调等更核心的算术几何议题，因此相关性为中等。"
-      },
-      "first_seen_at": "2026-08-04T04:12:09.590819+00:00",
-      "last_seen_at": "2026-08-04T04:12:09.590819+00:00",
       "retained_from_previous_run": true
     },
     {
@@ -10743,7 +10630,7 @@
       },
       "first_seen_at": "2026-08-15T02:12:21.128735+00:00",
       "last_seen_at": "2026-08-15T02:12:21.128735+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2608.09163v1",
@@ -11648,150 +11535,6 @@
       "retained_from_previous_run": true
     },
     {
-      "id": "2608.02390v1",
-      "source": "arXiv",
-      "title": "A family completion theorem for tempered cohomology",
-      "authors": [
-        "Leonard Tokic"
-      ],
-      "summary": "Let ${\\mathbb{G}}$ be an oriented $\\mathbb{P}$-divisible group over a noetherian $\\mathbb{E}_\\infty$-ring $R$, let $G$ be a finite group, and let $\\mathcal{F}$ be a family of subgroups of $G$. We show that completion of $R({\\mathbb{G}})_G$-modules at $\\mathcal{F}$ agrees with algebraic completion at the ideal $I_{\\mathbb{G}}(\\mathcal{F})=\\bigcap_{H\\in\\mathcal{F}}\\mathrm{ker} (π_0R({\\mathbb{G}})^{ G}\\to π_0R({\\mathbb{G}})^{ H}).$ For ${\\mathbb{G}}=μ_{\\mathbb{P}^\\infty}$ over $\\mathrm{KU}$ this recovers the family completion theorem of Adams, Haeberly, Jackowski, and May, and for the trivial family the classical Atiyah-Segal completion theorem. The main input is a theory of support for points of the tempered character stack ${\\mathbb{G}}\\{\\mathbb{B} G\\}$, in the spirit of Segal's analysis of the prime spectrum of the complex representation ring: we show that the support of a point is a single conjugacy class of abelian subgroups of $G$, and that the points supported inside $\\mathcal{F}$ are exactly the preimage of $V(I_{\\mathbb{G}}(\\mathcal{F}))$ under the affinization map. We also prove a version over locally noetherian geometric base stacks, in which the ideal is replaced by an open substack of ${\\mathbb{G}}({\\mathbb{B}} G)$, the analogue over such a base of $\\mathrm{Spec}\\,R({\\mathbb{G}})^{ G}$, and which applies for instance to genuine equivariant topological modular forms.",
-      "published": "2026-08-03T15:31:27Z",
-      "updated": "2026-08-03T15:31:27Z",
-      "paper_url": "http://arxiv.org/abs/2608.02390v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.02390v1",
-      "categories": [
-        "math.AT"
-      ],
-      "seed_topic": "motivic_k_theory",
-      "matches": [
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "score": 0.508,
-          "base_score": 0.338,
-          "bridge_bonus": 0.024,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.046,
-          "level": "medium",
-          "reason": "关键词命中：spectrum；arXiv 分类重合：math.AT；homotopy ↔ K-theory；homotopy ↔ K-theory；时效加分 +0.05",
-          "keyword_hits": [
-            "spectrum"
-          ],
-          "llm_reason": "该论文属于数学的代数拓扑（math.AT）领域，涉及同伦论中的谱、E_infinity环、等变同伦论以及完备化定理，与我的研究方向中关于spectrum、equivariant homotopy theory、E_infinity algebra等关键词直接相关。论文将经典Atiyah-Segal完备化定理推广到更一般的tempered cohomology，这种结构在同伦论中有深刻意义，但具体内容更偏向于模空间上的几何分析，与我通常关注的稳定同伦范畴或谱序列等具体计算工具不一定直接重叠，因此需要人工进一步判断。"
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "score": 0.273,
-          "base_score": 0.203,
-          "bridge_bonus": 0.024,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.046,
-          "level": "low",
-          "reason": "arXiv 分类重合：math.AT；homotopy ↔ K-theory；homotopy ↔ K-theory；时效加分 +0.05",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "score": 0.269,
-          "base_score": 0.211,
-          "bridge_bonus": 0.012,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.046,
-          "level": "low",
-          "reason": "关键词命中：modular forms；arithmetic ↔ AG；时效加分 +0.05",
-          "keyword_hits": [
-            "modular forms"
-          ]
-        },
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "score": 0.221,
-          "base_score": 0.163,
-          "bridge_bonus": 0.012,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.046,
-          "level": "low",
-          "reason": "关键词命中：Spec；arithmetic ↔ AG；时效加分 +0.05",
-          "keyword_hits": [
-            "Spec"
-          ]
-        }
-      ],
-      "best_match": {
-        "topic_id": "homotopy_theory",
-        "topic_name": "Homotopy Theory",
-        "score": 0.508,
-        "base_score": 0.338,
-        "bridge_bonus": 0.024,
-        "preference_bonus": 0.0,
-        "recency_bonus": 0.046,
-        "level": "medium",
-        "reason": "关键词命中：spectrum；arXiv 分类重合：math.AT；homotopy ↔ K-theory；homotopy ↔ K-theory；时效加分 +0.05",
-        "keyword_hits": [
-          "spectrum"
-        ],
-        "llm_reason": "该论文属于数学的代数拓扑（math.AT）领域，涉及同伦论中的谱、E_infinity环、等变同伦论以及完备化定理，与我的研究方向中关于spectrum、equivariant homotopy theory、E_infinity algebra等关键词直接相关。论文将经典Atiyah-Segal完备化定理推广到更一般的tempered cohomology，这种结构在同伦论中有深刻意义，但具体内容更偏向于模空间上的几何分析，与我通常关注的稳定同伦范畴或谱序列等具体计算工具不一定直接重叠，因此需要人工进一步判断。"
-      },
-      "top_labels": [
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "base_score": 0.338,
-          "score": 0.408,
-          "level": "low",
-          "keyword_hits": [
-            "spectrum"
-          ]
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "base_score": 0.203,
-          "score": 0.273,
-          "level": "low",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "base_score": 0.211,
-          "score": 0.269,
-          "level": "low",
-          "keyword_hits": [
-            "modular forms"
-          ]
-        },
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "base_score": 0.163,
-          "score": 0.221,
-          "level": "low",
-          "keyword_hits": [
-            "Spec"
-          ]
-        }
-      ],
-      "backfilled_from_recent_arxiv": true,
-      "newly_discovered_from_recent_arxiv": true,
-      "fulltext_excerpt": "[2608.02390] A family completion theorem for tempered cohomology Skip to main content System maintenance August 4th and 5th Learn more × Search arXiv Press Enter to search · Advanced search --> Mathematics > Algebraic Topology arXiv:2608.02390 (math) [Submitted on 3 Aug 2026] Title: A family completion theorem for tempered cohomology Authors: Leonard Tokic View a PDF of the paper titled A family completion theorem for tempered cohomology, by Leonard Tokic View PDF Abstract: Let ${\\mathbb{G}}$ be an oriented $\\mathbb{P}$-divisible group over a noetherian $\\mathbb{E}_\\infty$-ring $R$, let $G$ be a finite group, and let $\\mathcal{F}$ be a family of subgroups of $G$. We show that completion of $R({\\mathbb{G}})_G$-modules at $\\mathcal{F}$ agrees with algebraic completion at the ideal $I_{\\mathbb{G}}(\\mathcal{F})=\\bigcap_{H\\in\\mathcal{F}}\\mathrm{ker} (\\pi_0R({\\mathbb{G}})^{ G}\\to \\pi_0R({\\mathbb{G}})^{ H}).$ For ${\\mathbb{G}}=\\mu_{\\mathbb{P}^\\infty}$ over $\\mathrm{KU}$ this recovers the family completion theorem of Adams, Haeberly, Jackowski, and May, and for the trivial family the classical Atiyah-Segal completion theorem. The main input is a theory of support for points of the tempered character stack ${\\mathbb{G}}\\{\\mathbb{B} G\\}$, in the spirit of Segal's analysis of the prime spectrum of the complex representation ring: we show that the support of a point is a single conjugacy class of abelian subgroups of $G$, and that the points supported inside $\\mathcal{F}$ are exactly the preimage of $V(I_{\\mathbb{G}}(\\mathcal{F}))$ under the affinization map. We also prove a version over locally noetherian geometric base stacks, in which the ideal is replaced by an open substack of ${\\mathbb{G}}({\\mathbb{B}} G)$, the analogue over such a base of $\\mathrm{Spec}\\,R({\\mathbb{G}})^{ G}$, and which applies for instance to genuine equivariant topological modular forms. Comments: 44 pages, comments welcome! Subjects: Algebraic Topology (math.AT) Cite as: arXiv:2608.02390 [math.AT] (or arXiv:2608.02390v1 [math.AT] for this version) https://doi.org/10.48550/arXiv.2608.02390 Focus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: Leonard Tokic [ view email ] [v1] Mon, 3 Aug 2026 15:31:27 UTC (66 KB) Full-text links: Access Paper: View a PDF of the paper titled A family completion theorem for tempered cohomology, by Leonard Tokic View PDF TeX Source view license Current browse context: math.AT < prev | next > new | recent | 2026-08 Change to browse by: math References & Citations NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
-      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2608.02390",
-      "chinese_summary": {
-        "problem": "论文要证明一个适用于tempered cohomology的family completion定理，即关于有限群G的某个子群族F的完备化与代数完备化一致，从而推广Adams-Haeberly-Jackowski-May的family completion定理以及经典的Atiyah-Segal完备化定理。",
-        "method": "核心方法是通过对tempered character stack G(BG)建立支撑理论，模仿Segal对复表示环素谱的分析，证明每个点的支撑是G的某个阿贝尔子群的共轭类，且支撑落在F内的点恰好是affinization映射下理想I_G(F)的零迹。论文还推广到局部诺特几何基栈的版本，将理想替换为开子栈，并应用于genuine equivariant topological modular forms。",
-        "innovation": "1. 将经典的family completion定理推广到一般的oriented P-divisible group上的tempered cohomology，统一了多个已知完备化定理；2. 发展了对tempered character stack的支撑理论，为完备化定理提供了几何解释；3. 给出了一个适用于genuine equivariant topological modular forms的广义版本，扩大了应用范围。",
-        "evidence": "摘要中明确说明当G=μ_{P^∞} over KU时，该定理恢复了AHJM的family completion定理，而平凡族情形则给出了Atiyah-Segal完备化定理；另外声称可应用于genuine equivariant topological modular forms。但这些主要是理论证明，没有具体计算或实验数据，需阅读全文核验证明细节。",
-        "limitations": "需要阅读全文确认支撑理论及其与affinization map关系的严格证明；论文可能假设读者熟悉tempered cohomology、P-divisible groups以及E_infinity环等背景；对于不熟悉相关栈理论的读者，理解和应用存在一定门槛。",
-        "why_relevant": "该论文属于数学的代数拓扑（math.AT）领域，涉及同伦论中的谱、E_infinity环、等变同伦论以及完备化定理，与我的研究方向中关于spectrum、equivariant homotopy theory、E_infinity algebra等关键词直接相关。论文将经典Atiyah-Segal完备化定理推广到更一般的tempered cohomology，这种结构在同伦论中有深刻意义，但具体内容更偏向于模空间上的几何分析，与我通常关注的稳定同伦范畴或谱序列等具体计算工具不一定直接重叠，因此需要人工进一步判断。"
-      },
-      "first_seen_at": "2026-08-06T04:10:14.975804+00:00",
-      "last_seen_at": "2026-08-06T04:10:14.975804+00:00",
-      "retained_from_previous_run": true
-    },
-    {
       "id": "2608.11109v1",
       "source": "arXiv",
       "title": "Type C Richardson Boundaries and Newton-Okounkov Degenerations of Odd-Dimensional Projective Space",
@@ -12044,7 +11787,7 @@
       },
       "first_seen_at": "2026-08-15T02:12:21.128735+00:00",
       "last_seen_at": "2026-08-15T02:12:21.128735+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2608.06273v1",
@@ -12304,7 +12047,7 @@
       },
       "first_seen_at": "2026-08-15T02:12:21.128735+00:00",
       "last_seen_at": "2026-08-15T02:12:21.128735+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2608.09009v1",
@@ -13650,7 +13393,7 @@
       },
       "first_seen_at": "2026-08-15T02:12:21.128735+00:00",
       "last_seen_at": "2026-08-15T02:12:21.128735+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2608.07843v2",
@@ -14666,7 +14409,7 @@
       },
       "first_seen_at": "2026-08-15T02:12:21.128735+00:00",
       "last_seen_at": "2026-08-15T02:12:21.128735+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2608.08509v1",
@@ -15024,6 +14767,138 @@
       "first_seen_at": "2026-08-10T03:10:13.435615+00:00",
       "last_seen_at": "2026-08-10T03:10:13.435615+00:00",
       "retained_from_previous_run": true
+    },
+    {
+      "id": "2608.10918v1",
+      "source": "arXiv",
+      "title": "Log Calabi-Yau compactifications of $SL(2,\\mathbb{C})$ character varieties",
+      "authors": [
+        "Hülya Argüz",
+        "Pierrick Bousseau"
+      ],
+      "summary": "We prove that the $SL(2,\\mathbb{C})$ character varieties of compact oriented surfaces and the generic relative $SL(2,\\mathbb{C})$ character varieties of punctured surfaces admit divisorial log terminal (dlt) log Calabi-Yau compactifications. To do this, we establish a general result giving sufficient conditions for a compactification of an affine variety arising from a filtration of its algebra of regular functions to be log Calabi-Yau. We then apply this result to show that the compactifications constructed by Kutteri-Tehrani-Frohman in the compact case and by Tehrani-Frohman in the punctured case are log canonical and log Calabi-Yau.",
+      "published": "2026-08-11T13:40:10Z",
+      "updated": "2026-08-11T13:40:10Z",
+      "paper_url": "http://arxiv.org/abs/2608.10918v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.10918v1",
+      "categories": [
+        "math.AG",
+        "hep-th",
+        "math.GT",
+        "math.SG"
+      ],
+      "seed_topic": "motivic_k_theory",
+      "matches": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.47,
+          "base_score": 0.327,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.043,
+          "level": "medium",
+          "reason": "关键词命中：variety；arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": [
+            "variety"
+          ],
+          "llm_reason": "我的研究方向是代数几何，涉及 scheme、divisor、intersection theory、moduli 等；本文使用的 log Calabi-Yau 紧化、dlt 奇点、log canonical divisor 等正是现代双有理几何与奇点理论的核心工具，也与我关注的模空间紧化问题有交叉。然而，论文对象是特征簇（character variety）而非标准 scheme 或模空间，且技术细节偏重解析与辛几何背景，因此相关性中等而非直接匹配。"
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.24,
+          "base_score": 0.185,
+          "bridge_bonus": 0.012,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.043,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；homotopy ↔ K-theory；时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.238,
+          "base_score": 0.195,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.043,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.058,
+          "base_score": 0.003,
+          "bridge_bonus": 0.012,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.043,
+          "level": "low",
+          "reason": "homotopy ↔ K-theory；时效加分 +0.04",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "algebraic_geometry",
+        "topic_name": "Algebraic Geometry",
+        "score": 0.47,
+        "base_score": 0.327,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.043,
+        "level": "medium",
+        "reason": "关键词命中：variety；arXiv 分类重合：math.AG；时效加分 +0.04",
+        "keyword_hits": [
+          "variety"
+        ],
+        "llm_reason": "我的研究方向是代数几何，涉及 scheme、divisor、intersection theory、moduli 等；本文使用的 log Calabi-Yau 紧化、dlt 奇点、log canonical divisor 等正是现代双有理几何与奇点理论的核心工具，也与我关注的模空间紧化问题有交叉。然而，论文对象是特征簇（character variety）而非标准 scheme 或模空间，且技术细节偏重解析与辛几何背景，因此相关性中等而非直接匹配。"
+      },
+      "top_labels": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.327,
+          "score": 0.37,
+          "level": "low",
+          "keyword_hits": [
+            "variety"
+          ]
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "base_score": 0.185,
+          "score": 0.24,
+          "level": "low",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.195,
+          "score": 0.238,
+          "level": "low",
+          "keyword_hits": []
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "fulltext_excerpt": "[2608.10918] Log Calabi-Yau compactifications of $SL(2,\\mathbb{C})$ character varieties Skip to main content Search arXiv Press Enter to search · Advanced search --> Mathematics > Algebraic Geometry arXiv:2608.10918 (math) [Submitted on 11 Aug 2026] Title: Log Calabi-Yau compactifications of $SL(2,\\mathbb{C})$ character varieties Authors: Hülya Argüz , Pierrick Bousseau View a PDF of the paper titled Log Calabi-Yau compactifications of $SL(2,\\mathbb{C})$ character varieties, by H\\\"ulya Arg\\\"uz and Pierrick Bousseau View PDF HTML (experimental) Abstract: We prove that the $SL(2,\\mathbb{C})$ character varieties of compact oriented surfaces and the generic relative $SL(2,\\mathbb{C})$ character varieties of punctured surfaces admit divisorial log terminal (dlt) log Calabi-Yau compactifications. To do this, we establish a general result giving sufficient conditions for a compactification of an affine variety arising from a filtration of its algebra of regular functions to be log Calabi-Yau. We then apply this result to show that the compactifications constructed by Kutteri-Tehrani-Frohman in the compact case and by Tehrani-Frohman in the punctured case are log canonical and log Calabi-Yau. Comments: 37 pages, 3 figures. Comments welcome! Subjects: Algebraic Geometry (math.AG) ; High Energy Physics - Theory (hep-th); Geometric Topology (math.GT); Symplectic Geometry (math.SG) Cite as: arXiv:2608.10918 [math.AG] (or arXiv:2608.10918v1 [math.AG] for this version) https://doi.org/10.48550/arXiv.2608.10918 Focus to learn more arXiv-issued DOI via DataCite Submission history From: Pierrick Bousseau [ view email ] [v1] Tue, 11 Aug 2026 13:40:10 UTC (60 KB) Full-text links: Access Paper: View a PDF of the paper titled Log Calabi-Yau compactifications of $SL(2,\\mathbb{C})$ character varieties, by H\\\"ulya Arg\\\"uz and Pierrick Bousseau View PDF HTML (experimental) TeX Source view license Current browse context: math.AG < prev | next > new | recent | 2026-08 Change to browse by: hep-th math math.GT math.SG References & Citations INSPIRE HEP NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
+      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2608.10918",
+      "chinese_summary": {
+        "problem": "本文要解决的问题是：证明紧致有向曲面的 SL(2,C) 特征簇，以及一般相对带孔 SL(2,C) 特征簇，能够构造出具有除子奇点（dlt）的 log Calabi-Yau 紧化。该问题属于特征簇的代数几何紧化与奇点性质研究。",
+        "method": "核心方法分为两步：首先建立一条一般性定理，给出一个仿射簇若其正则函数代数具有合适的滤过，则该仿射簇的某个紧化成为 log Calabi-Yau 的充分条件；然后将此定理应用于 Kutteri-Tehrani-Frohman（紧致情形）和 Tehrani-Frohman（带孔情形）所构造的具体紧化，验证这些紧化满足该一般条件，从而证明它们是 log canonical 且 log Calabi-Yau 的。",
+        "innovation": "1. 提出了一个抽象框架，将 log Calabi-Yau 紧化的存在性归结为正则函数代数上的滤过性质，方法具有一般性。2. 首次证明了 Kutteri-Tehrani-Frohman 和 Tehrani-Frohman 的紧化具有 dlt log Calabi-Yau 结构，这是对已有构造的奇点性质的重要完善。",
+        "evidence": "摘要中明确称“我们证明”了这些紧化是 dlt log Calabi-Yau 的，因此理论证明是摘要中可核验的证据；但未给出证明细节或计算样例，需阅读全文验证。",
+        "limitations": "摘要未涉及紧化的具体几何描述、dlt 奇点的局部结构，以及这些紧化是否唯一；一般定理的适用范围和证明中的技术条件也未展开，需要阅读原文确认。",
+        "why_relevant": "我的研究方向是代数几何，涉及 scheme、divisor、intersection theory、moduli 等；本文使用的 log Calabi-Yau 紧化、dlt 奇点、log canonical divisor 等正是现代双有理几何与奇点理论的核心工具，也与我关注的模空间紧化问题有交叉。然而，论文对象是特征簇（character variety）而非标准 scheme 或模空间，且技术细节偏重解析与辛几何背景，因此相关性中等而非直接匹配。"
+      },
+      "first_seen_at": "2026-08-16T02:20:06.261737+00:00",
+      "last_seen_at": "2026-08-16T02:20:06.261737+00:00",
+      "retained_from_previous_run": false
     },
     {
       "id": "2608.03684v1",
@@ -19466,16 +19341,129 @@
       "first_seen_at": "2026-08-08T02:53:05.823372+00:00",
       "last_seen_at": "2026-08-08T02:53:05.823372+00:00",
       "retained_from_previous_run": true
+    },
+    {
+      "id": "2608.13165v1",
+      "source": "arXiv",
+      "title": "Left properness of Moore flows",
+      "authors": [
+        "Philippe Gaucher"
+      ],
+      "summary": "We introduce the notion of a reparametrization category with cuts. For every such reparametrization category $\\mathcal P$, we prove the tensor lemma, namely that the tensor product of two objectwise weak homotopy equivalences of $\\mathcal P$-spaces is a weak equivalence, and then the left properness of the q-model structure of $\\mathcal P$-flows. Finally, we prove that the interval reparametrization categories $\\mathcal G$, $\\mathcal M$, as well as the final category $\\mathbf 1$, have cuts. The last example recovers the left properness of the q-model structure of ordinary flows.",
+      "published": "2026-08-13T12:28:58Z",
+      "updated": "2026-08-13T12:28:58Z",
+      "paper_url": "http://arxiv.org/abs/2608.13165v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.13165v1",
+      "categories": [
+        "math.CT",
+        "math.AT"
+      ],
+      "seed_topic": "motivic_k_theory",
+      "matches": [
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.374,
+          "base_score": 0.328,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "medium",
+          "reason": "关键词命中：weak equivalence；arXiv 分类重合：math.AT；时效加分 +0.05",
+          "keyword_hits": [
+            "weak equivalence"
+          ],
+          "llm_reason": "论文核心涉及模型范畴的左真性、弱等价、q-模型结构等概念，与我的研究方向中的 model category、weak equivalence、Quillen 模型结构等关键词直接相关；虽然对象是 Moore flows 而非经典拓扑空间或谱，但左真性研究是同伦论中模型范畴理论的重要问题，且 arXiv 分类包含 math.AT，与本方向有交集。"
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.172,
+          "base_score": 0.126,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AT；时效加分 +0.05",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.056,
+          "base_score": 0.01,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "low",
+          "reason": "时效加分 +0.05",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.046,
+          "base_score": 0.0,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "low",
+          "reason": "时效加分 +0.05",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "homotopy_theory",
+        "topic_name": "Homotopy Theory",
+        "score": 0.374,
+        "base_score": 0.328,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.046,
+        "level": "medium",
+        "reason": "关键词命中：weak equivalence；arXiv 分类重合：math.AT；时效加分 +0.05",
+        "keyword_hits": [
+          "weak equivalence"
+        ],
+        "llm_reason": "论文核心涉及模型范畴的左真性、弱等价、q-模型结构等概念，与我的研究方向中的 model category、weak equivalence、Quillen 模型结构等关键词直接相关；虽然对象是 Moore flows 而非经典拓扑空间或谱，但左真性研究是同伦论中模型范畴理论的重要问题，且 arXiv 分类包含 math.AT，与本方向有交集。"
+      },
+      "top_labels": [
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "base_score": 0.328,
+          "score": 0.374,
+          "level": "low",
+          "keyword_hits": [
+            "weak equivalence"
+          ]
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "fulltext_excerpt": "[2608.13165] Left properness of Moore flows Skip to main content Search arXiv Press Enter to search · Advanced search --> Mathematics > Category Theory arXiv:2608.13165 (math) [Submitted on 13 Aug 2026] Title: Left properness of Moore flows Authors: Philippe Gaucher View a PDF of the paper titled Left properness of Moore flows, by Philippe Gaucher View PDF HTML (experimental) Abstract: We introduce the notion of a reparametrization category with cuts. For every such reparametrization category $\\mathcal P$, we prove the tensor lemma, namely that the tensor product of two objectwise weak homotopy equivalences of $\\mathcal P$-spaces is a weak equivalence, and then the left properness of the q-model structure of $\\mathcal P$-flows. Finally, we prove that the interval reparametrization categories $\\mathcal G$, $\\mathcal M$, as well as the final category $\\mathbf 1$, have cuts. The last example recovers the left properness of the q-model structure of ordinary flows. Comments: 23 pages Subjects: Category Theory (math.CT) ; Algebraic Topology (math.AT) Cite as: arXiv:2608.13165 [math.CT] (or arXiv:2608.13165v1 [math.CT] for this version) https://doi.org/10.48550/arXiv.2608.13165 Focus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: Philippe Gaucher [ view email ] [v1] Thu, 13 Aug 2026 12:28:58 UTC (24 KB) Full-text links: Access Paper: View a PDF of the paper titled Left properness of Moore flows, by Philippe Gaucher View PDF HTML (experimental) TeX Source view license Current browse context: math.CT < prev | next > new | recent | 2026-08 Change to browse by: math math.AT References & Citations NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
+      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2608.13165",
+      "chinese_summary": {
+        "problem": "该论文旨在证明某种广义流形（Moore flows）的 q-模型结构具有左真性（left properness），并为此引入“带切割的重参数化范畴”这一工具。",
+        "method": "引入“带切割的重参数化范畴”（reparametrization category with cuts），在其中证明张量引理：两个对象弱同伦等价的张量积仍是弱等价，从而推出 q-模型结构的左真性。最后验证区间重参数化范畴 G、M 以及终结范畴 1 都满足切割条件，并由此恢复普通流形的左真性。",
+        "innovation": "提出“带切割的重参数化范畴”这一新概念，统一处理多种流形的左真性；通过张量引理为左真性提供了一种系统化的证明路径，并将普通流形的已知结果纳入同一框架。",
+        "evidence": "摘要给出了定理级别的证据：对任意带切割的重参数化范畴 P，证明张量引理和 P-流的 q-模型结构左真性；并具体验证 G、M、1 具有切割。但正文摘录未包含完整证明细节，实验或系统验证不适用。",
+        "limitations": "仅从摘要和部分摘录无法验证证明的细节和技术的具体限制；论文是理论性的，未提供计算或应用案例，需阅读全文确认切割条件的普适性与证明的严谨性。",
+        "why_relevant": "论文核心涉及模型范畴的左真性、弱等价、q-模型结构等概念，与我的研究方向中的 model category、weak equivalence、Quillen 模型结构等关键词直接相关；虽然对象是 Moore flows 而非经典拓扑空间或谱，但左真性研究是同伦论中模型范畴理论的重要问题，且 arXiv 分类包含 math.AT，与本方向有交集。"
+      },
+      "first_seen_at": "2026-08-16T02:20:06.261737+00:00",
+      "last_seen_at": "2026-08-16T02:20:06.261737+00:00",
+      "retained_from_previous_run": false
     }
   ],
   "stats": {
-    "candidate_paper_count": 121,
-    "daily_candidate_paper_count": 121,
+    "candidate_paper_count": 115,
+    "daily_candidate_paper_count": 115,
     "raw_daily_candidate_count": 345,
     "daily_outside_cutoff_count": 273,
-    "newly_discovered_backfill_count": 121,
+    "newly_discovered_backfill_count": 115,
     "daily_backfill_days": 14,
-    "daily_backfill_candidate_count": 81,
+    "daily_backfill_candidate_count": 86,
     "daily_backfill_added_count": 0,
     "min_daily_papers": 8,
     "filtered_low_relevance_count": 0,
@@ -19484,13 +19472,13 @@
     "arxiv_category_filter": [
       "math.CT",
       "math.AG",
-      "math.KT",
+      "math.NT",
       "math.AT",
-      "math.NT"
+      "math.KT"
     ],
     "days": 1,
     "collection_mode": "incremental",
-    "collection_cutoff_iso": "2026-08-14T03:22:53.179230+00:00",
+    "collection_cutoff_iso": "2026-08-15T02:12:21.128735+00:00",
     "max_per_topic": 25,
     "max_new_papers": 30,
     "sources": [
@@ -19532,12 +19520,12 @@
     "dropped_disliked_count": 0,
     "max_stored_papers": 150,
     "max_data_bytes": 8388608,
-    "data_bytes": 1548138,
+    "data_bytes": 1541585,
     "storage_trimmed_count": 30,
     "storage_trimmed_by_level": {
-      "high": 5,
-      "medium": 6,
-      "low": 19,
+      "high": 4,
+      "medium": 4,
+      "low": 22,
       "unknown": 0
     },
     "storage_limit_exceeded_by_likes": false
