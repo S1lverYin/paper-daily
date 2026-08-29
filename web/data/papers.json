@@ -1,6 +1,6 @@
 {
-  "generated_at": "Fri, 28 Aug 2026 12:29:42 +0000",
-  "generated_at_iso": "2026-08-28T12:29:42.077745+00:00",
+  "generated_at": "Sat, 29 Aug 2026 07:39:26 +0000",
+  "generated_at_iso": "2026-08-29T07:39:26.767902+00:00",
   "config_source": "file",
   "topics": [
     {
@@ -608,7 +608,7 @@
       },
       "first_seen_at": "2026-08-28T12:29:42.077745+00:00",
       "last_seen_at": "2026-08-28T12:29:42.077745+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2608.24996v1",
@@ -1252,7 +1252,7 @@
       },
       "first_seen_at": "2026-08-28T12:29:42.077745+00:00",
       "last_seen_at": "2026-08-28T12:29:42.077745+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2608.25389v1",
@@ -1826,7 +1826,7 @@
       },
       "first_seen_at": "2026-08-28T12:29:42.077745+00:00",
       "last_seen_at": "2026-08-28T12:29:42.077745+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2608.26922v1",
@@ -1957,7 +1957,7 @@
       },
       "first_seen_at": "2026-08-28T12:29:42.077745+00:00",
       "last_seen_at": "2026-08-28T12:29:42.077745+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2608.21994v1",
@@ -3931,7 +3931,7 @@
       },
       "first_seen_at": "2026-08-28T12:29:42.077745+00:00",
       "last_seen_at": "2026-08-28T12:29:42.077745+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2608.25554v1",
@@ -4201,7 +4201,7 @@
       },
       "first_seen_at": "2026-08-28T12:29:42.077745+00:00",
       "last_seen_at": "2026-08-28T12:29:42.077745+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2608.25447v1",
@@ -4582,7 +4582,7 @@
       },
       "first_seen_at": "2026-08-28T12:29:42.077745+00:00",
       "last_seen_at": "2026-08-28T12:29:42.077745+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2608.27019v1",
@@ -4717,7 +4717,7 @@
       },
       "first_seen_at": "2026-08-28T12:29:42.077745+00:00",
       "last_seen_at": "2026-08-28T12:29:42.077745+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2608.24052v1",
@@ -6510,7 +6510,7 @@
       },
       "first_seen_at": "2026-08-28T12:29:42.077745+00:00",
       "last_seen_at": "2026-08-28T12:29:42.077745+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2608.21625v1",
@@ -6778,7 +6778,7 @@
       },
       "first_seen_at": "2026-08-28T12:29:42.077745+00:00",
       "last_seen_at": "2026-08-28T12:29:42.077745+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2608.20877v1",
@@ -7048,7 +7048,7 @@
       },
       "first_seen_at": "2026-08-28T12:29:42.077745+00:00",
       "last_seen_at": "2026-08-28T12:29:42.077745+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2608.24736v1",
@@ -8680,7 +8680,7 @@
       },
       "first_seen_at": "2026-08-28T12:29:42.077745+00:00",
       "last_seen_at": "2026-08-28T12:29:42.077745+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2608.18599v1",
@@ -9205,7 +9205,7 @@
       },
       "first_seen_at": "2026-08-28T12:29:42.077745+00:00",
       "last_seen_at": "2026-08-28T12:29:42.077745+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2608.26695v1",
@@ -9340,7 +9340,7 @@
       },
       "first_seen_at": "2026-08-28T12:29:42.077745+00:00",
       "last_seen_at": "2026-08-28T12:29:42.077745+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2608.25237v1",
@@ -10140,7 +10140,7 @@
       },
       "first_seen_at": "2026-08-28T12:29:42.077745+00:00",
       "last_seen_at": "2026-08-28T12:29:42.077745+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2608.23321v1",
@@ -10782,7 +10782,7 @@
       },
       "first_seen_at": "2026-08-28T12:29:42.077745+00:00",
       "last_seen_at": "2026-08-28T12:29:42.077745+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2608.23559v1",
@@ -12830,7 +12830,7 @@
       },
       "first_seen_at": "2026-08-28T12:29:42.077745+00:00",
       "last_seen_at": "2026-08-28T12:29:42.077745+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2608.23052v1",
@@ -13421,7 +13421,7 @@
       },
       "first_seen_at": "2026-08-28T12:29:42.077745+00:00",
       "last_seen_at": "2026-08-28T12:29:42.077745+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2608.16999v1",
@@ -13690,6 +13690,138 @@
       },
       "first_seen_at": "2026-08-28T12:29:42.077745+00:00",
       "last_seen_at": "2026-08-28T12:29:42.077745+00:00",
+      "retained_from_previous_run": true
+    },
+    {
+      "id": "2608.25682v1",
+      "source": "arXiv",
+      "title": "The product rule in Goodwillie calculus",
+      "authors": [
+        "Max Blans",
+        "Thomas Blom"
+      ],
+      "summary": "In this paper, we prove a product rule for Goodwillie derivatives: given a differentiable $\\infty$-category $\\mathcal{C}$ whose stabilization is equivalent to the $\\infty$-category $\\mathrm{Sp}$ of spectra, we show that the derivatives functor $\\partial_* \\colon \\mathrm{Fun}^ω(\\mathcal{C}, \\mathrm{Sp}) \\to \\mathrm{RMod}_{\\partial_*\\mathrm{id}_\\mathcal{C}}(\\mathrm{SSeq}(\\mathrm{Sp}))$ is strong symmetric monoidal, where the source is equipped with the pointwise tensor product and the target with Day convolution. Since the Koszul dual of $\\partial_*\\mathrm{id}_\\mathcal{C}$ can be recovered as a coendomorphism operad from Day convolution, this product rule is useful for calculating the operad $\\partial_*\\mathrm{id}_\\mathcal{C}$ in examples. We derive the product rule as a consequence of the more general statement that taking derivatives preserves cartesian products on the $(\\infty, 2)$-categorical level. In fact, the main theme of this paper is that the extraction of Goodwillie derivatives preserves a lot of structure when regarded as a functor of $(\\infty, 2)$-categories: apart from products, it also preserves cotensors and certain pullbacks. We illustrate how our results can be used to calculate Goodwillie derivatives by determining the operad structure on the derivatives of the identity functor in pointed spaces, algebras over an operad and sheaves on a site.",
+      "published": "2026-08-26T11:58:33Z",
+      "updated": "2026-08-26T11:58:33Z",
+      "paper_url": "http://arxiv.org/abs/2608.25682v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.25682v1",
+      "categories": [
+        "math.AT",
+        "math.CT"
+      ],
+      "seed_topic": "motivic_k_theory",
+      "matches": [
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.484,
+          "base_score": 0.326,
+          "bridge_bonus": 0.012,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "medium",
+          "reason": "关键词命中：operad；arXiv 分类重合：math.AT；homotopy ↔ K-theory；时效加分 +0.05",
+          "keyword_hits": [
+            "operad"
+          ],
+          "llm_reason": "论文涉及Goodwillie calculus，这是同伦论中研究函子导数的高阶结构，与我的研究方向中的无穷范畴、谱、稳定同伦理论、operad等关键词高度匹配。具体匹配点包括：∞-范畴、谱、operad、同伦保持结构等。该论文提供的方法可直接用于计算同伦论中相关函子的导数结构，对研究谱和无穷范畴的交互有参考价值。"
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.248,
+          "base_score": 0.19,
+          "bridge_bonus": 0.012,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AT；homotopy ↔ K-theory；时效加分 +0.05",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.192,
+          "base_score": 0.146,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "low",
+          "reason": "关键词命中：Spec；时效加分 +0.05",
+          "keyword_hits": [
+            "Spec"
+          ]
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.046,
+          "base_score": 0.0,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "low",
+          "reason": "时效加分 +0.05",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "homotopy_theory",
+        "topic_name": "Homotopy Theory",
+        "score": 0.484,
+        "base_score": 0.326,
+        "bridge_bonus": 0.012,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.046,
+        "level": "medium",
+        "reason": "关键词命中：operad；arXiv 分类重合：math.AT；homotopy ↔ K-theory；时效加分 +0.05",
+        "keyword_hits": [
+          "operad"
+        ],
+        "llm_reason": "论文涉及Goodwillie calculus，这是同伦论中研究函子导数的高阶结构，与我的研究方向中的无穷范畴、谱、稳定同伦理论、operad等关键词高度匹配。具体匹配点包括：∞-范畴、谱、operad、同伦保持结构等。该论文提供的方法可直接用于计算同伦论中相关函子的导数结构，对研究谱和无穷范畴的交互有参考价值。"
+      },
+      "top_labels": [
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "base_score": 0.326,
+          "score": 0.384,
+          "level": "low",
+          "keyword_hits": [
+            "operad"
+          ]
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "base_score": 0.19,
+          "score": 0.248,
+          "level": "low",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.146,
+          "score": 0.192,
+          "level": "low",
+          "keyword_hits": [
+            "Spec"
+          ]
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "chinese_summary": {
+        "problem": "论文要解决的问题是：证明Goodwillie导数函子在适当条件下保持张量积结构，即建立Goodwillie导数的乘积法则，并利用该法则计算相关operad的结构。",
+        "method": "核心方法是将Goodwillie导数的提取视为(∞,2)-范畴间的函子，证明该函子保持笛卡尔积、余张量和某些拉回结构。由此推导出导数函子∂_*是从带点态张量积的函子范畴到带Day卷积的右模范畴的强对称幺半函子，并利用Koszul对偶从Day卷积恢复coendomorphism operad以计算实例。",
+        "innovation": "1. 首次证明了Goodwillie导数的乘积法则，即导数函子在合适的对称幺半结构下是强对称幺半的；2. 将导数提升到(∞,2)-范畴层次，证明了其保持多种极限结构（积、余张量、拉回），这是对已有导数理论的结构性增强；3. 给出了实际计算导数operad的具体方法，并应用于点空间、operad代数、层等例子。",
+        "evidence": "摘要中给出了理论证明的陈述（导数函子保持结构、强对称幺半性），但没有提供计算实例或实验数据。具体展开和验证需要阅读全文。",
+        "limitations": "需要阅读全文确认技术细节（如(∞,2)-范畴的处理、Day卷积的适用条件、例子中的具体计算过程）。摘要未涉及计算的复杂度或适用范围的边界。",
+        "why_relevant": "论文涉及Goodwillie calculus，这是同伦论中研究函子导数的高阶结构，与我的研究方向中的无穷范畴、谱、稳定同伦理论、operad等关键词高度匹配。具体匹配点包括：∞-范畴、谱、operad、同伦保持结构等。该论文提供的方法可直接用于计算同伦论中相关函子的导数结构，对研究谱和无穷范畴的交互有参考价值。"
+      },
+      "first_seen_at": "2026-08-29T07:39:26.767902+00:00",
+      "last_seen_at": "2026-08-29T07:39:26.767902+00:00",
       "retained_from_previous_run": false
     },
     {
@@ -14668,7 +14800,7 @@
       },
       "first_seen_at": "2026-08-28T12:29:42.077745+00:00",
       "last_seen_at": "2026-08-28T12:29:42.077745+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2608.17785v1",
@@ -14780,134 +14912,6 @@
       },
       "first_seen_at": "2026-08-19T02:17:28.100471+00:00",
       "last_seen_at": "2026-08-19T02:17:28.100471+00:00",
-      "retained_from_previous_run": true
-    },
-    {
-      "id": "2608.16218v1",
-      "source": "arXiv",
-      "title": "Singularities of rational maps: foundations and surfaces",
-      "authors": [
-        "Caucher Birkar"
-      ],
-      "summary": "We develop a theory of singularities of rational maps, focusing on maps $$ f\\colon X\\dashrightarrow \\mathbb P^n, $$ and using their polarised graphs and normalised polarised graphs even when the source $X$ is very singular. To measure singularities of the map at a point $x\\in X$, i.e. how far it is from being regular, we introduce invariants including the normalised graph fibre degree $δ_x(f)$, a generalised lc threshold $λ_x(f)$, and invariants measuring the singularities of the normalised graph itself. Numerous examples show that the resulting invariants measure genuinely different aspects of map singularities. We investigate the surface case in detail. We relate the normalised graph fibre degree to multiplicity, prove a sharp threshold--degree inequality for klt surface germs, and develop a detailed theory of linear type maps on smooth and singular surfaces. In particular, we connect the existence of linear type maps to existence of smooth curves through the given point, and with local class groups and complement theory. We conclude with questions and future directions concerning higher dimensions, complements and boundedness, moduli, Cremona groups, commutative algebra, curve-counting theories, and positive characteristic.",
-      "published": "2026-08-17T07:50:40Z",
-      "updated": "2026-08-17T07:50:40Z",
-      "paper_url": "http://arxiv.org/abs/2608.16218v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.16218v1",
-      "categories": [
-        "math.AG"
-      ],
-      "seed_topic": "algebraic_geometry",
-      "matches": [
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "score": 0.472,
-          "base_score": 0.329,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.043,
-          "level": "medium",
-          "reason": "关键词命中：Spec；arXiv 分类重合：math.AG；时效加分 +0.04",
-          "keyword_hits": [
-            "Spec"
-          ],
-          "llm_reason": "该论文代数几何中奇点理论相关，涉及有理映射、klt奇点、曲面等核心概念，与我的研究方向中的scheme、variety、morphism、奇点以及模空间等关键词有间接关联，但并非直接命中我的具体细分方向（如模空间、导出代数几何），因此需要人工复核以判断是否值得精读。"
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "score": 0.236,
-          "base_score": 0.193,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.043,
-          "level": "low",
-          "reason": "arXiv 分类重合：math.AG；时效加分 +0.04",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "score": 0.235,
-          "base_score": 0.192,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.043,
-          "level": "low",
-          "reason": "arXiv 分类重合：math.AG；时效加分 +0.04",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "score": 0.054,
-          "base_score": 0.011,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.043,
-          "level": "low",
-          "reason": "时效加分 +0.04",
-          "keyword_hits": []
-        }
-      ],
-      "best_match": {
-        "topic_id": "algebraic_geometry",
-        "topic_name": "Algebraic Geometry",
-        "score": 0.472,
-        "base_score": 0.329,
-        "bridge_bonus": 0.0,
-        "preference_bonus": 0.0,
-        "recency_bonus": 0.043,
-        "level": "medium",
-        "reason": "关键词命中：Spec；arXiv 分类重合：math.AG；时效加分 +0.04",
-        "keyword_hits": [
-          "Spec"
-        ],
-        "llm_reason": "该论文代数几何中奇点理论相关，涉及有理映射、klt奇点、曲面等核心概念，与我的研究方向中的scheme、variety、morphism、奇点以及模空间等关键词有间接关联，但并非直接命中我的具体细分方向（如模空间、导出代数几何），因此需要人工复核以判断是否值得精读。"
-      },
-      "top_labels": [
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "base_score": 0.329,
-          "score": 0.372,
-          "level": "low",
-          "keyword_hits": [
-            "Spec"
-          ]
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "base_score": 0.193,
-          "score": 0.236,
-          "level": "low",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "base_score": 0.192,
-          "score": 0.235,
-          "level": "low",
-          "keyword_hits": []
-        }
-      ],
-      "backfilled_from_recent_arxiv": true,
-      "newly_discovered_from_recent_arxiv": true,
-      "fulltext_excerpt": "[2608.16218] Singularities of rational maps: foundations and surfaces Skip to main content Search arXiv Press Enter to search · Advanced search --> Mathematics > Algebraic Geometry arXiv:2608.16218 (math) [Submitted on 17 Aug 2026] Title: Singularities of rational maps: foundations and surfaces Authors: Caucher Birkar View a PDF of the paper titled Singularities of rational maps: foundations and surfaces, by Caucher Birkar View PDF HTML (experimental) Abstract: We develop a theory of singularities of rational maps, focusing on maps $$ f\\colon X\\dashrightarrow \\mathbb P^n, $$ and using their polarised graphs and normalised polarised graphs even when the source $X$ is very singular. To measure singularities of the map at a point $x\\in X$, i.e. how far it is from being regular, we introduce invariants including the normalised graph fibre degree $\\delta_x(f)$, a generalised lc threshold $\\lambda_x(f)$, and invariants measuring the singularities of the normalised graph itself. Numerous examples show that the resulting invariants measure genuinely different aspects of map singularities. We investigate the surface case in detail. We relate the normalised graph fibre degree to multiplicity, prove a sharp threshold--degree inequality for klt surface germs, and develop a detailed theory of linear type maps on smooth and singular surfaces. In particular, we connect the existence of linear type maps to existence of smooth curves through the given point, and with local class groups and complement theory. We conclude with questions and future directions concerning higher dimensions, complements and boundedness, moduli, Cremona groups, commutative algebra, curve-counting theories, and positive characteristic. Comments: 63 pages Subjects: Algebraic Geometry (math.AG) Cite as: arXiv:2608.16218 [math.AG] (or arXiv:2608.16218v1 [math.AG] for this version) https://doi.org/10.48550/arXiv.2608.16218 Focus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: Caucher Birkar [ view email ] [v1] Mon, 17 Aug 2026 07:50:40 UTC (44 KB) Full-text links: Access Paper: View a PDF of the paper titled Singularities of rational maps: foundations and surfaces, by Caucher Birkar View PDF HTML (experimental) TeX Source view license Current browse context: math.AG < prev | next > new | recent | 2026-08 Change to browse by: math References & Citations NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
-      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2608.16218",
-      "chinese_summary": {
-        "problem": "该论文致力于发展有理映射奇点理论，特别是针对从可能高度奇异的源簇到射影空间的有理映射，在给定点处量化其偏离正则映射的程度。",
-        "method": "核心方法包括引入和利用极化图与正规化极化图，即使源空间非常奇异也能定义正规化图纤维次数δ_x(f)、广义lc阈值λ_x(f)等不变量，并系统研究这些不变量在曲面情形下的性质，发展线性型映射理论。",
-        "innovation": "创新点包括：首次在高度奇异的源空间上建立有理映射奇点的系统理论；引入全新的不变量（如正规化图纤维次数、广义lc阈值）来度量映射奇点的不同方面；在曲面情形证明尖锐的阈值-次数不等式，并将线性型映射的存在性与光滑曲线存在性、局部类群和补理论联系起来。",
-        "evidence": "摘要提到大量例子表明这些不变量度量映射奇点的不同方面；同时证明了klt曲面芽的阈值-次数不等式，并发展了光滑和奇异曲面上的线性型映射理论，这些属于理论证据，但未提供实验或计算实例。",
-        "limitations": "摘要中未包含完整证明，且主要具体结果集中在曲面情形；高维情况仅作为展望，不变量计算和具体应用可能需要阅读全文确认。",
-        "why_relevant": "该论文代数几何中奇点理论相关，涉及有理映射、klt奇点、曲面等核心概念，与我的研究方向中的scheme、variety、morphism、奇点以及模空间等关键词有间接关联，但并非直接命中我的具体细分方向（如模空间、导出代数几何），因此需要人工复核以判断是否值得精读。"
-      },
-      "first_seen_at": "2026-08-22T02:14:19.369266+00:00",
-      "last_seen_at": "2026-08-22T02:14:19.369266+00:00",
       "retained_from_previous_run": true
     },
     {
@@ -16200,7 +16204,7 @@
       },
       "first_seen_at": "2026-08-28T12:29:42.077745+00:00",
       "last_seen_at": "2026-08-28T12:29:42.077745+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2608.26514v1",
@@ -16308,7 +16312,7 @@
       },
       "first_seen_at": "2026-08-28T12:29:42.077745+00:00",
       "last_seen_at": "2026-08-28T12:29:42.077745+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2608.17072v1",
@@ -16552,7 +16556,7 @@
       },
       "first_seen_at": "2026-08-28T12:29:42.077745+00:00",
       "last_seen_at": "2026-08-28T12:29:42.077745+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2608.20066v1",
@@ -17299,7 +17303,7 @@
       },
       "first_seen_at": "2026-08-28T12:29:42.077745+00:00",
       "last_seen_at": "2026-08-28T12:29:42.077745+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2608.26087v1",
@@ -19480,28 +19484,28 @@
     }
   ],
   "stats": {
-    "candidate_paper_count": 138,
-    "daily_candidate_paper_count": 138,
+    "candidate_paper_count": 114,
+    "daily_candidate_paper_count": 114,
     "raw_daily_candidate_count": 337,
-    "daily_outside_cutoff_count": 241,
-    "newly_discovered_backfill_count": 105,
+    "daily_outside_cutoff_count": 275,
+    "newly_discovered_backfill_count": 114,
     "daily_backfill_days": 14,
-    "daily_backfill_candidate_count": 57,
+    "daily_backfill_candidate_count": 74,
     "daily_backfill_added_count": 0,
     "min_daily_papers": 8,
     "filtered_low_relevance_count": 0,
-    "filtered_wrong_category_count": 63,
+    "filtered_wrong_category_count": 62,
     "filtered_disliked_count": 0,
     "arxiv_category_filter": [
-      "math.KT",
       "math.AT",
-      "math.CT",
+      "math.AG",
+      "math.KT",
       "math.NT",
-      "math.AG"
+      "math.CT"
     ],
     "days": 1,
     "collection_mode": "incremental",
-    "collection_cutoff_iso": "2026-08-27T10:54:01.142878+00:00",
+    "collection_cutoff_iso": "2026-08-28T12:29:42.077745+00:00",
     "max_per_topic": 25,
     "max_new_papers": 30,
     "sources": [
@@ -19543,12 +19547,12 @@
     "dropped_disliked_count": 0,
     "max_stored_papers": 150,
     "max_data_bytes": 8388608,
-    "data_bytes": 1486925,
+    "data_bytes": 1483085,
     "storage_trimmed_count": 30,
     "storage_trimmed_by_level": {
-      "high": 8,
-      "medium": 20,
-      "low": 2,
+      "high": 2,
+      "medium": 9,
+      "low": 19,
       "unknown": 0
     },
     "storage_limit_exceeded_by_likes": false
