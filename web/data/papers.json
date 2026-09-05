@@ -1,6 +1,6 @@
 {
-  "generated_at": "Fri, 04 Sep 2026 05:30:28 +0000",
-  "generated_at_iso": "2026-09-04T05:30:28.613950+00:00",
+  "generated_at": "Sat, 05 Sep 2026 05:15:37 +0000",
+  "generated_at_iso": "2026-09-05T05:15:37.177786+00:00",
   "config_source": "file",
   "topics": [
     {
@@ -1549,7 +1549,7 @@
       },
       "first_seen_at": "2026-09-04T05:30:28.613950+00:00",
       "last_seen_at": "2026-09-04T05:30:28.613950+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2609.00723v1",
@@ -2064,152 +2064,6 @@
       },
       "first_seen_at": "2026-08-28T12:29:42.077745+00:00",
       "last_seen_at": "2026-08-28T12:29:42.077745+00:00",
-      "retained_from_previous_run": true
-    },
-    {
-      "id": "2608.25389v1",
-      "source": "arXiv",
-      "title": "$\\mathbb{Q}_p$-Homotopy Types and Applications to Topology and Algebraic Geometry",
-      "authors": [
-        "Runjie Hu",
-        "Guozhen Wang"
-      ],
-      "summary": "We develop a $\\mathbb{Q}_p$-homotopy theory for $p$-complete spaces. To a $p$-complete space $X$, we associate a commutative differential graded algebra over $\\mathbb{Q}_p$ by rectifying the $E_\\infty$-algebra $S^*(X;\\widehat{\\mathbb{Z}}_p)\\otimes_{\\widehat{\\mathbb{Z}}_p} \\mathbb{Q}_p$ of singular cochains. For nilpotent $p$-complete finite type spaces, we prove that the minimal model of this algebra recovers the $\\mathbb{Q}_p$-homotopy groups and Whitehead products, in direct analogy with Sullivan's rational homotopy theory. We also prove that, for a non-simply-connected $p$-complete space, the Lie algebra dual to its $1$-minimal model is the Lie algebra of the continuous Mal'cev $\\mathbb{Q}_p$-completion of the fundamental group. We apply the $\\mathbb{Q}_p$-homotopy theory to several questions in topology and algebraic geometry, including finite realization problems for $p$-complete spaces, finiteness properties of étale homotopy types, formality of smooth proper varieties, Galois representations on étale homotopy groups, and constraints on étale fundamental groups.",
-      "published": "2026-08-26T05:31:35Z",
-      "updated": "2026-08-26T05:31:35Z",
-      "paper_url": "http://arxiv.org/abs/2608.25389v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.25389v1",
-      "categories": [
-        "math.AT"
-      ],
-      "seed_topic": "motivic_k_theory",
-      "matches": [
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "score": 0.781,
-          "base_score": 0.513,
-          "bridge_bonus": 0.02,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.048,
-          "level": "high",
-          "reason": "关键词命中：homotopy theory、homotopy groups；arXiv 分类重合：math.AT；桥接 homotopy_theory↔arithmetic_geometry (hits=1/1)；时效加分 +0.05",
-          "keyword_hits": [
-            "homotopy theory",
-            "homotopy groups"
-          ],
-          "llm_reason": "论文直接研究p-完备空间的同伦理论，核心对象是CDGA的最小模型，这与我研究方向中的同伦群、Whitehead积、minimal model、模型范畴、同伦不变量等关键词高度匹配；同时涉及Mal'cev完备化和Galois表示，与代数几何中的同伦方法交叉，属于同伦论在算术几何中的应用，与我的研究兴趣（同伦论、谱、模型范畴）紧密相关。"
-        },
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "score": 0.308,
-          "base_score": 0.26,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.048,
-          "level": "low",
-          "reason": "关键词命中：algebraic geometry；时效加分 +0.05",
-          "keyword_hits": [
-            "algebraic geometry"
-          ]
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "score": 0.288,
-          "base_score": 0.208,
-          "bridge_bonus": 0.032,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.048,
-          "level": "low",
-          "reason": "关键词命中：Galois representation；桥接 arithmetic_geometry↔homotopy_theory (hits=1/1)；arithmetic ↔ motivic；时效加分 +0.05",
-          "keyword_hits": [
-            "Galois representation"
-          ]
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "score": 0.267,
-          "base_score": 0.207,
-          "bridge_bonus": 0.012,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.048,
-          "level": "low",
-          "reason": "arXiv 分类重合：math.AT；arithmetic ↔ motivic；时效加分 +0.05",
-          "keyword_hits": []
-        }
-      ],
-      "best_match": {
-        "topic_id": "homotopy_theory",
-        "topic_name": "Homotopy Theory",
-        "score": 0.781,
-        "base_score": 0.513,
-        "bridge_bonus": 0.02,
-        "preference_bonus": 0.0,
-        "recency_bonus": 0.048,
-        "level": "high",
-        "reason": "关键词命中：homotopy theory、homotopy groups；arXiv 分类重合：math.AT；桥接 homotopy_theory↔arithmetic_geometry (hits=1/1)；时效加分 +0.05",
-        "keyword_hits": [
-          "homotopy theory",
-          "homotopy groups"
-        ],
-        "llm_reason": "论文直接研究p-完备空间的同伦理论，核心对象是CDGA的最小模型，这与我研究方向中的同伦群、Whitehead积、minimal model、模型范畴、同伦不变量等关键词高度匹配；同时涉及Mal'cev完备化和Galois表示，与代数几何中的同伦方法交叉，属于同伦论在算术几何中的应用，与我的研究兴趣（同伦论、谱、模型范畴）紧密相关。"
-      },
-      "top_labels": [
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "base_score": 0.513,
-          "score": 0.581,
-          "level": "medium",
-          "keyword_hits": [
-            "homotopy theory",
-            "homotopy groups"
-          ]
-        },
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "base_score": 0.26,
-          "score": 0.308,
-          "level": "low",
-          "keyword_hits": [
-            "algebraic geometry"
-          ]
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "base_score": 0.208,
-          "score": 0.288,
-          "level": "low",
-          "keyword_hits": [
-            "Galois representation"
-          ]
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "base_score": 0.207,
-          "score": 0.267,
-          "level": "low",
-          "keyword_hits": []
-        }
-      ],
-      "fulltext_excerpt": "[2608.25389] $\\mathbb{Q}_p$-Homotopy Types and Applications to Topology and Algebraic Geometry Skip to main content Search arXiv Press Enter to search · Advanced search --> Mathematics > Algebraic Topology arXiv:2608.25389 (math) [Submitted on 26 Aug 2026] Title: $\\mathbb{Q}_p$-Homotopy Types and Applications to Topology and Algebraic Geometry Authors: Runjie Hu , Guozhen Wang View a PDF of the paper titled $\\mathbb{Q}_p$-Homotopy Types and Applications to Topology and Algebraic Geometry, by Runjie Hu and Guozhen Wang View PDF HTML (experimental) Abstract: We develop a $\\mathbb{Q}_p$-homotopy theory for $p$-complete spaces. To a $p$-complete space $X$, we associate a commutative differential graded algebra over $\\mathbb{Q}_p$ by rectifying the $E_\\infty$-algebra $S^*(X;\\widehat{\\mathbb{Z}}_p)\\otimes_{\\widehat{\\mathbb{Z}}_p} \\mathbb{Q}_p$ of singular cochains. For nilpotent $p$-complete finite type spaces, we prove that the minimal model of this algebra recovers the $\\mathbb{Q}_p$-homotopy groups and Whitehead products, in direct analogy with Sullivan's rational homotopy theory. We also prove that, for a non-simply-connected $p$-complete space, the Lie algebra dual to its $1$-minimal model is the Lie algebra of the continuous Mal'cev $\\mathbb{Q}_p$-completion of the fundamental group. We apply the $\\mathbb{Q}_p$-homotopy theory to several questions in topology and algebraic geometry, including finite realization problems for $p$-complete spaces, finiteness properties of étale homotopy types, formality of smooth proper varieties, Galois representations on étale homotopy groups, and constraints on étale fundamental groups. Subjects: Algebraic Topology (math.AT) Cite as: arXiv:2608.25389 [math.AT] (or arXiv:2608.25389v1 [math.AT] for this version) https://doi.org/10.48550/arXiv.2608.25389 Focus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: Runjie Hu [ view email ] [v1] Wed, 26 Aug 2026 05:31:35 UTC (65 KB) Full-text links: Access Paper: View a PDF of the paper titled $\\mathbb{Q}_p$-Homotopy Types and Applications to Topology and Algebraic Geometry, by Runjie Hu and Guozhen Wang View PDF HTML (experimental) TeX Source view license Current browse context: math.AT < prev | next > new | recent | 2026-08 Change to browse by: math References & Citations NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
-      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2608.25389",
-      "chinese_summary": {
-        "problem": "论文旨在为p-完备空间建立一种Q_p-同伦理论，类似于Sullivan有理同伦理论，从而用代数模型（交换微分分次代数）来研究p-完备空间的同伦群与Whitehead积，并将该理论应用于拓扑与代数几何中的若干问题。",
-        "method": "对p-完备空间X，通过修正奇异上链E_∞-代数 S^*(X;Ẑ_p)⊗_{Ẑ_p} Q_p 得到一个Q_p上的交换微分分次代数（CDGA），并利用该CDGA的最小模型来提取Q_p-同伦群和Whitehead积。对于非单连通情况，利用1-最小模型的对偶Lie代数刻画基本群的连续Mal'cev Q_p-完备化。",
-        "innovation": "首次系统建立Q_p-同伦理论，将有理同伦理论推广到p-完备空间；证明了最小模型恢复Q_p-同伦群和Whitehead积，并推广了基本群的Mal'cev完备化对应；同时将理论应用于有限实现问题、étale同伦类型的有限性、光滑真簇的形式性、étale同伦群的Galois表示以及étale基本群的约束。",
-        "evidence": "摘要中给出理论证明：对nilpotent p-完备有限型空间，最小模型恢复Q_p-同伦群和Whitehead积；对非单连通p-完备空间，1-最小模型对偶Lie代数等于基本群的连续Mal'cev Q_p-完备化。同时列举了多个应用方向，但未提供具体实验或计算数据。",
-        "limitations": "摘要未给出具体定理的完整条件和证明细节，也未展示应用中的具体例子或计算；p-完备性、nilpotent等假设可能限制适用范围；需要阅读全文验证CDGA构造的严格性和最小模型的存在性。",
-        "why_relevant": "论文直接研究p-完备空间的同伦理论，核心对象是CDGA的最小模型，这与我研究方向中的同伦群、Whitehead积、minimal model、模型范畴、同伦不变量等关键词高度匹配；同时涉及Mal'cev完备化和Galois表示，与代数几何中的同伦方法交叉，属于同伦论在算术几何中的应用，与我的研究兴趣（同伦论、谱、模型范畴）紧密相关。"
-      },
-      "first_seen_at": "2026-08-27T10:54:01.142878+00:00",
-      "last_seen_at": "2026-08-27T10:54:01.142878+00:00",
       "retained_from_previous_run": true
     },
     {
@@ -3105,139 +2959,6 @@
       },
       "first_seen_at": "2026-09-02T05:26:23.508847+00:00",
       "last_seen_at": "2026-09-02T05:26:23.508847+00:00",
-      "retained_from_previous_run": true
-    },
-    {
-      "id": "2608.25397v1",
-      "source": "arXiv",
-      "title": "Topological String Blowup Equations via Stable Pairs",
-      "authors": [
-        "Lutian Zhao"
-      ],
-      "summary": "For the local Hirzebruch threefolds \\(Y_\\ell=\\operatorname{Tot}_{\\mathbb F_\\ell}K_{\\mathbb F_\\ell}\\), \\(0\\leq\\ell\\leq2\\), we prove blowup equations for the two-variable, torus-equivariant symmetrized \\(K\\)-theoretic stable-pair series. After division by the fibre-class contribution, four-chart localization is identified coefficientwise with the equivariant Euler-characteristic series of \\((\\det\\mathcal V)^\\ell\\) on moduli spaces of framed rank-two sheaves, with \\(\\mathcal V\\) tautological. The framed-sheaf blowup formulas then give the unity and vanishing equations; for \\(\\ell=2\\) this is an identity of localized indices. We state separately the two conjectures needed for the conditional local \\(\\mathbb P^2\\) equations, the general Huang--Sun--Wang conjecture, and a rational-elliptic specialization involving the \\(E_8\\) lattice.",
-      "published": "2026-08-26T05:49:16Z",
-      "updated": "2026-08-26T05:49:16Z",
-      "paper_url": "http://arxiv.org/abs/2608.25397v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.25397v1",
-      "categories": [
-        "math.AG",
-        "hep-th"
-      ],
-      "seed_topic": "motivic_k_theory",
-      "matches": [
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "score": 0.735,
-          "base_score": 0.537,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.048,
-          "level": "high",
-          "reason": "关键词命中：moduli space、sheaf、Spec；arXiv 分类重合：math.AG；时效加分 +0.05",
-          "keyword_hits": [
-            "moduli space",
-            "sheaf",
-            "Spec"
-          ],
-          "llm_reason": "该论文的核心对象包括稳定对、框架秩二层模空间、tautological vector bundle、环面等变K-理论、blowup方程，直接涉及代数几何中的sheaf, vector bundle, moduli space, blow-up, intersection theory等概念。这些与我的研究方向'Schmes, morphisms, sheaves, divisors, intersection theory, moduli spaces, algebraic stacks'高度重合。论文使用的局部化与模空间技巧可用于我的研究。"
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "score": 0.245,
-          "base_score": 0.197,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.048,
-          "level": "low",
-          "reason": "arXiv 分类重合：math.AG；时效加分 +0.05",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "score": 0.24,
-          "base_score": 0.192,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.048,
-          "level": "low",
-          "reason": "arXiv 分类重合：math.AG；时效加分 +0.05",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "score": 0.061,
-          "base_score": 0.013,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.048,
-          "level": "low",
-          "reason": "时效加分 +0.05",
-          "keyword_hits": []
-        }
-      ],
-      "best_match": {
-        "topic_id": "algebraic_geometry",
-        "topic_name": "Algebraic Geometry",
-        "score": 0.735,
-        "base_score": 0.537,
-        "bridge_bonus": 0.0,
-        "preference_bonus": 0.0,
-        "recency_bonus": 0.048,
-        "level": "high",
-        "reason": "关键词命中：moduli space、sheaf、Spec；arXiv 分类重合：math.AG；时效加分 +0.05",
-        "keyword_hits": [
-          "moduli space",
-          "sheaf",
-          "Spec"
-        ],
-        "llm_reason": "该论文的核心对象包括稳定对、框架秩二层模空间、tautological vector bundle、环面等变K-理论、blowup方程，直接涉及代数几何中的sheaf, vector bundle, moduli space, blow-up, intersection theory等概念。这些与我的研究方向'Schmes, morphisms, sheaves, divisors, intersection theory, moduli spaces, algebraic stacks'高度重合。论文使用的局部化与模空间技巧可用于我的研究。"
-      },
-      "top_labels": [
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "base_score": 0.537,
-          "score": 0.585,
-          "level": "medium",
-          "keyword_hits": [
-            "moduli space",
-            "sheaf",
-            "Spec"
-          ]
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "base_score": 0.197,
-          "score": 0.245,
-          "level": "low",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "base_score": 0.192,
-          "score": 0.24,
-          "level": "low",
-          "keyword_hits": []
-        }
-      ],
-      "fulltext_excerpt": "[2608.25397] Topological String Blowup Equations via Stable Pairs Skip to main content Search arXiv Press Enter to search · Advanced search --> Mathematics > Algebraic Geometry arXiv:2608.25397 (math) [Submitted on 26 Aug 2026] Title: Topological String Blowup Equations via Stable Pairs Authors: Lutian Zhao View a PDF of the paper titled Topological String Blowup Equations via Stable Pairs, by Lutian Zhao View PDF HTML (experimental) Abstract: For the local Hirzebruch threefolds \\(Y_\\ell=\\operatorname{Tot}_{\\mathbb F_\\ell}K_{\\mathbb F_\\ell}\\), \\(0\\leq\\ell\\leq2\\), we prove blowup equations for the two-variable, torus-equivariant symmetrized \\(K\\)-theoretic stable-pair series. After division by the fibre-class contribution, four-chart localization is identified coefficientwise with the equivariant Euler-characteristic series of \\((\\det\\mathcal V)^\\ell\\) on moduli spaces of framed rank-two sheaves, with \\(\\mathcal V\\) tautological. The framed-sheaf blowup formulas then give the unity and vanishing equations; for \\(\\ell=2\\) this is an identity of localized indices. We state separately the two conjectures needed for the conditional local \\(\\mathbb P^2\\) equations, the general Huang--Sun--Wang conjecture, and a rational-elliptic specialization involving the \\(E_8\\) lattice. Subjects: Algebraic Geometry (math.AG) ; High Energy Physics - Theory (hep-th) MSC classes: 14N35, 14D21, 14C05, 17B37 Cite as: arXiv:2608.25397 [math.AG] (or arXiv:2608.25397v1 [math.AG] for this version) https://doi.org/10.48550/arXiv.2608.25397 Focus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: Lutian Zhao [ view email ] [v1] Wed, 26 Aug 2026 05:49:16 UTC (65 KB) Full-text links: Access Paper: View a PDF of the paper titled Topological String Blowup Equations via Stable Pairs, by Lutian Zhao View PDF HTML (experimental) TeX Source view license Current browse context: math.AG < prev | next > new | recent | 2026-08 Change to browse by: hep-th math References & Citations INSPIRE HEP NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
-      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2608.25397",
-      "chinese_summary": {
-        "problem": "针对局部Hirzebruch三维簇 Y_ℓ = Tot_{F_ℓ}K_{F_ℓ} (0≤ℓ≤2)，证明其环面等变对称化K-理论稳定对级数的blowup方程，建立稳定对理论与框架秩二层模空间的等变欧拉特征之间的联系，并用于推导拓扑弦的递推关系。",
-        "method": "采用四chart局部化技术，将稳定对级数除以纤维类贡献后，逐系数等同于框架秩二层的模空间上的(det V)^ℓ的等变欧拉特征级数，其中V是tautological bundle。然后应用framed sheaf moduli spaces的blowup公式，得到unity和vanishing方程；对ℓ=2特化为localized indices的恒等式。此外还提出了条件性局部P^2方程所依赖的猜想以及涉及E_8格点的有理-椭圆特化。",
-        "innovation": "首次对一类局部Hirzebruch三维簇（Y_0,Y_1,Y_2）完整证明K-理论稳定对级数的blowup方程；通过四chart局部化将稳定对计数与框架秩二层模空间的等变欧拉特征严格对应，并在ℓ=2情形得到localized indices的恒等式；同时提出了若干推进相关猜想的策略。",
-        "evidence": "摘要中给出理论证明：对Y_ℓ (ℓ=0,1,2)证明了blowup方程，并通过四chart局部化识别了系数级对应。ℓ=2时得到identity of localized indices。但没有提供数值实验或计算示例，部分结果依赖未证猜想（Huang-Sun-Wang猜想）和条件性假设。",
-        "limitations": "需要阅读全文确认四chart局部化、对称化K-理论级数以及blowup公式的具体技术细节；条件性局部P^2方程依赖两个附加猜想；结果仅限于ℓ=0,1,2且是局部三维簇，普适性未知。此外，摘要未提供具体定理陈述或证明步骤。",
-        "why_relevant": "该论文的核心对象包括稳定对、框架秩二层模空间、tautological vector bundle、环面等变K-理论、blowup方程，直接涉及代数几何中的sheaf, vector bundle, moduli space, blow-up, intersection theory等概念。这些与我的研究方向'Schmes, morphisms, sheaves, divisors, intersection theory, moduli spaces, algebraic stacks'高度重合。论文使用的局部化与模空间技巧可用于我的研究。"
-      },
-      "first_seen_at": "2026-08-27T10:54:01.142878+00:00",
-      "last_seen_at": "2026-08-27T10:54:01.142878+00:00",
       "retained_from_previous_run": true
     },
     {
@@ -5343,123 +5064,6 @@
       "retained_from_previous_run": true
     },
     {
-      "id": "2608.25309v1",
-      "source": "arXiv",
-      "title": "Pseudonullity for fine Selmer groups over multiple $\\mathbb{Z}_p^{d}$-extensions",
-      "authors": [
-        "Peikai Qi",
-        "Ruichen Xu"
-      ],
-      "summary": "In this article, we develop vertical control theorems for fine Selmer groups associated with Galois representations and their deformations in $p$-adic families. We apply them to provide new evidence for Conjectures A and B of Coates--Sujatha and to obtain pseudonullity of the fine Selmer groups for cyclotomic characters, elliptic curves, classical cuspidal newforms, and Hida families of $p$-ordinary cuspidal newforms.",
-      "published": "2026-08-26T02:34:34Z",
-      "updated": "2026-08-26T02:34:34Z",
-      "paper_url": "http://arxiv.org/abs/2608.25309v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.25309v1",
-      "categories": [
-        "math.NT"
-      ],
-      "seed_topic": "arithmetic_geometry",
-      "matches": [
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "score": 0.672,
-          "base_score": 0.612,
-          "bridge_bonus": 0.012,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.048,
-          "level": "medium",
-          "reason": "关键词命中：Galois representation、elliptic curve、Selmer group；arXiv 分类重合：math.NT；arithmetic ↔ motivic；时效加分 +0.05",
-          "keyword_hits": [
-            "Galois representation",
-            "elliptic curve",
-            "Selmer group"
-          ],
-          "llm_reason": "论文主题涉及 Galois 表示、Selmer 群、p-adic 族以及椭圆曲线，与我的研究方向（算术几何）中的 Galois 表示、椭圆曲线、Iwasawa 理论、Selmer 群等关键词高度重合，属于该方向下的具体问题。"
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "score": 0.071,
-          "base_score": 0.011,
-          "bridge_bonus": 0.012,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.048,
-          "level": "low",
-          "reason": "arithmetic ↔ motivic；时效加分 +0.05",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "score": 0.058,
-          "base_score": 0.01,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.048,
-          "level": "low",
-          "reason": "时效加分 +0.05",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "score": 0.048,
-          "base_score": 0.0,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.048,
-          "level": "low",
-          "reason": "时效加分 +0.05",
-          "keyword_hits": []
-        }
-      ],
-      "best_match": {
-        "topic_id": "arithmetic_geometry",
-        "topic_name": "Arithmetic Geometry",
-        "score": 0.672,
-        "base_score": 0.612,
-        "bridge_bonus": 0.012,
-        "preference_bonus": 0.0,
-        "recency_bonus": 0.048,
-        "level": "medium",
-        "reason": "关键词命中：Galois representation、elliptic curve、Selmer group；arXiv 分类重合：math.NT；arithmetic ↔ motivic；时效加分 +0.05",
-        "keyword_hits": [
-          "Galois representation",
-          "elliptic curve",
-          "Selmer group"
-        ],
-        "llm_reason": "论文主题涉及 Galois 表示、Selmer 群、p-adic 族以及椭圆曲线，与我的研究方向（算术几何）中的 Galois 表示、椭圆曲线、Iwasawa 理论、Selmer 群等关键词高度重合，属于该方向下的具体问题。"
-      },
-      "top_labels": [
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "base_score": 0.612,
-          "score": 0.672,
-          "level": "medium",
-          "keyword_hits": [
-            "Galois representation",
-            "elliptic curve",
-            "Selmer group"
-          ]
-        }
-      ],
-      "fulltext_excerpt": "[2608.25309] Pseudonullity for fine Selmer groups over multiple $\\mathbb{Z}_p^{d}$-extensions Skip to main content Search arXiv Press Enter to search · Advanced search --> Mathematics > Number Theory arXiv:2608.25309 (math) [Submitted on 26 Aug 2026] Title: Pseudonullity for fine Selmer groups over multiple $\\mathbb{Z}_p^{d}$-extensions Authors: Peikai Qi , Ruichen Xu View a PDF of the paper titled Pseudonullity for fine Selmer groups over multiple $\\mathbb{Z}_p^{d}$-extensions, by Peikai Qi and 1 other authors View PDF HTML (experimental) Abstract: In this article, we develop vertical control theorems for fine Selmer groups associated with Galois representations and their deformations in $p$-adic families. We apply them to provide new evidence for Conjectures A and B of Coates--Sujatha and to obtain pseudonullity of the fine Selmer groups for cyclotomic characters, elliptic curves, classical cuspidal newforms, and Hida families of $p$-ordinary cuspidal newforms. Comments: Comments are welcome! Subjects: Number Theory (math.NT) Cite as: arXiv:2608.25309 [math.NT] (or arXiv:2608.25309v1 [math.NT] for this version) https://doi.org/10.48550/arXiv.2608.25309 Focus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: Ruichen Xu [ view email ] [v1] Wed, 26 Aug 2026 02:34:34 UTC (64 KB) Full-text links: Access Paper: View a PDF of the paper titled Pseudonullity for fine Selmer groups over multiple $\\mathbb{Z}_p^{d}$-extensions, by Peikai Qi and 1 other authors View PDF HTML (experimental) TeX Source view license Current browse context: math.NT < prev | next > new | recent | 2026-08 Change to browse by: math References & Citations NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
-      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2608.25309",
-      "chinese_summary": {
-        "problem": "研究多个 Z_p^d 扩张上的 fine Selmer 群的伪零性（pseudonullity），并为 Coates-Sujatha 猜想 A 和 B 提供新证据。",
-        "method": "发展针对 Galois 表示及其 p-adic 族变形的垂直控制定理（vertical control theorems），通过这些控制定理来推导 fine Selmer 群的伪零性，并应用于特定算术对象。",
-        "innovation": "首次系统地在多个 Z_p^d 扩张上建立垂直控制定理，并将其应用于 cyclotomic 特征、椭圆曲线、经典尖点新形式以及 Hida 族，从而获得这些情形下 fine Selmer 群的伪零性，为 Coates-Sujatha 猜想提供新支持。",
-        "evidence": "摘要声称对 cyclotomic 特征、椭圆曲线、经典尖点新形式和 Hida 族获得了伪零性结果，但具体证明细节和实验数据未在摘要中展开，需要阅读全文验证。",
-        "limitations": "摘要未给出垂直控制定理的具体技术条件和适用范围；由于是 arXiv 预印本，未经同行评审，结果可能仍需进一步确认。",
-        "why_relevant": "论文主题涉及 Galois 表示、Selmer 群、p-adic 族以及椭圆曲线，与我的研究方向（算术几何）中的 Galois 表示、椭圆曲线、Iwasawa 理论、Selmer 群等关键词高度重合，属于该方向下的具体问题。"
-      },
-      "first_seen_at": "2026-08-27T10:54:01.142878+00:00",
-      "last_seen_at": "2026-08-27T10:54:01.142878+00:00",
-      "retained_from_previous_run": true
-    },
-    {
       "id": "2608.26302v1",
       "source": "arXiv",
       "title": "Beauville--Bogomolov--Fujiki positivity and Moishezonness of complex symplectic manifolds in Fujiki class $\\mathscr C$",
@@ -6249,7 +5853,7 @@
       },
       "first_seen_at": "2026-09-04T05:30:28.613950+00:00",
       "last_seen_at": "2026-09-04T05:30:28.613950+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2608.28187v1",
@@ -6786,7 +6390,7 @@
       },
       "first_seen_at": "2026-09-04T05:30:28.613950+00:00",
       "last_seen_at": "2026-09-04T05:30:28.613950+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2608.27246v1",
@@ -7834,7 +7438,7 @@
       },
       "first_seen_at": "2026-09-04T05:30:28.613950+00:00",
       "last_seen_at": "2026-09-04T05:30:28.613950+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2609.00493v1",
@@ -8374,6 +7978,141 @@
       "retained_from_previous_run": true
     },
     {
+      "id": "2609.04072v1",
+      "source": "arXiv",
+      "title": "Oort's conjecture for split unitary Shimura varieties",
+      "authors": [
+        "Paul Philippe",
+        "Fabian Schnelle",
+        "Eva Viehmann"
+      ],
+      "summary": "We prove that generically on the basic stratum of split unitary Shimura varieties, the universal abelian variety with endomorphism structure and polarization has automorphism group $\\{\\pm 1\\}$, except for a few degenerate cases. This is a direct analogue of Oort's conjecture on automorphisms of supersingular abelian varieties. On the way, we explicitly compute the generic automorphism group of the universal $p$-divisible group in a given basic isogeny class.",
+      "published": "2026-09-03T16:43:48Z",
+      "updated": "2026-09-03T16:43:48Z",
+      "paper_url": "http://arxiv.org/abs/2609.04072v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.04072v1",
+      "categories": [
+        "math.AG",
+        "math.NT"
+      ],
+      "seed_topic": "motivic_k_theory",
+      "matches": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.584,
+          "base_score": 0.386,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.048,
+          "level": "high",
+          "reason": "关键词命中：abelian variety；arXiv 分类重合：math.AG、math.NT；时效加分 +0.05",
+          "keyword_hits": [
+            "abelian variety"
+          ],
+          "llm_reason": "论文直接涉及算术几何领域的多个核心对象，包括Shimura variety、abelian variety、endomorphism structure、polarization、p-divisible group和isogeny class。其内容与我的研究方向中的关键词如Shimura variety、abelian variety、p-divisible group、isogeny等高度匹配，且所研究的问题与自同构、模空间和同源类密切相关，对我的研究具有直接参考价值。"
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.376,
+          "base_score": 0.328,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.048,
+          "level": "low",
+          "reason": "关键词命中：variety；arXiv 分类重合：math.AG；时效加分 +0.05",
+          "keyword_hits": [
+            "variety"
+          ]
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.237,
+          "base_score": 0.189,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.048,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.05",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.051,
+          "base_score": 0.003,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.048,
+          "level": "low",
+          "reason": "时效加分 +0.05",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "arithmetic_geometry",
+        "topic_name": "Arithmetic Geometry",
+        "score": 0.584,
+        "base_score": 0.386,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.048,
+        "level": "high",
+        "reason": "关键词命中：abelian variety；arXiv 分类重合：math.AG、math.NT；时效加分 +0.05",
+        "keyword_hits": [
+          "abelian variety"
+        ],
+        "llm_reason": "论文直接涉及算术几何领域的多个核心对象，包括Shimura variety、abelian variety、endomorphism structure、polarization、p-divisible group和isogeny class。其内容与我的研究方向中的关键词如Shimura variety、abelian variety、p-divisible group、isogeny等高度匹配，且所研究的问题与自同构、模空间和同源类密切相关，对我的研究具有直接参考价值。"
+      },
+      "top_labels": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.386,
+          "score": 0.434,
+          "level": "medium",
+          "keyword_hits": [
+            "abelian variety"
+          ]
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.328,
+          "score": 0.376,
+          "level": "low",
+          "keyword_hits": [
+            "variety"
+          ]
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "base_score": 0.189,
+          "score": 0.237,
+          "level": "low",
+          "keyword_hits": []
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "fulltext_excerpt": "[2609.04072] Oort's conjecture for split unitary Shimura varieties Skip to main content Search arXiv Press Enter to search · Advanced search --> Mathematics > Algebraic Geometry arXiv:2609.04072 (math) [Submitted on 3 Sep 2026] Title: Oort's conjecture for split unitary Shimura varieties Authors: Paul Philippe , Fabian Schnelle , Eva Viehmann View a PDF of the paper titled Oort's conjecture for split unitary Shimura varieties, by Paul Philippe and 2 other authors View PDF HTML (experimental) Abstract: We prove that generically on the basic stratum of split unitary Shimura varieties, the universal abelian variety with endomorphism structure and polarization has automorphism group $\\{\\pm 1\\}$, except for a few degenerate cases. This is a direct analogue of Oort's conjecture on automorphisms of supersingular abelian varieties. On the way, we explicitly compute the generic automorphism group of the universal $p$-divisible group in a given basic isogeny class. Comments: 25 pages, comments welcome Subjects: Algebraic Geometry (math.AG) ; Number Theory (math.NT) MSC classes: 14K10 (Primary) 11G10, 14K02, 14K15 (Secondary) Cite as: arXiv:2609.04072 [math.AG] (or arXiv:2609.04072v1 [math.AG] for this version) https://doi.org/10.48550/arXiv.2609.04072 Focus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: Paul Philippe [ view email ] [v1] Thu, 3 Sep 2026 16:43:48 UTC (30 KB) Full-text links: Access Paper: View a PDF of the paper titled Oort's conjecture for split unitary Shimura varieties, by Paul Philippe and 2 other authors View PDF HTML (experimental) TeX Source view license Current browse context: math.AG < prev | next > new | recent | 2026-09 Change to browse by: math math.NT References & Citations NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
+      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2609.04072",
+      "chinese_summary": {
+        "problem": "论文要解决的具体问题是：在分裂酉Shimura簇的基本层上（除少数退化情形外），证明带自同态结构和极化的普适阿贝尔簇的自同构群一般等于{±1}，从而为Oort关于超奇异阿贝尔簇自同构的猜想提供直接类比。",
+        "method": "核心方法是对给定的基本同源类，显式计算普适p-可除群的generic自同构群，并利用基本层的几何结构，将该结果推广到相应的普适阿贝尔簇，进而确定其自同构群。过程中涉及p-可除群、同源类、Shimura簇基本层等关键技术组件。",
+        "innovation": "创新点在于将Oort猜想从超奇异阿贝尔簇推广到分裂酉Shimura簇的基本层情形，并给出了定理的证明；同时在证明过程中对给定基本同源类中的普适p-可除群，首次显式计算了其generic自同构群。",
+        "evidence": "摘要中明确声明给出了定理的证明（We prove that...），并且对p-可除群的自同构群进行了显式计算（we explicitly compute...）；但未提供具体实验或数值验证，属于理论证明。",
+        "limitations": "需要阅读全文确认的地方包括：所谓的“少数退化情形”具体是哪些；证明对分裂酉Shimura簇的具体结构依赖程度；以及该方法能否推广到其他类型的Shimura簇或更一般的阿贝尔簇。",
+        "why_relevant": "论文直接涉及算术几何领域的多个核心对象，包括Shimura variety、abelian variety、endomorphism structure、polarization、p-divisible group和isogeny class。其内容与我的研究方向中的关键词如Shimura variety、abelian variety、p-divisible group、isogeny等高度匹配，且所研究的问题与自同构、模空间和同源类密切相关，对我的研究具有直接参考价值。"
+      },
+      "first_seen_at": "2026-09-05T05:15:37.177786+00:00",
+      "last_seen_at": "2026-09-05T05:15:37.177786+00:00",
+      "retained_from_previous_run": false
+    },
+    {
       "id": "2608.29400v1",
       "source": "arXiv",
       "title": "Quasimap critical cohomology, Coulomb branches, and quantum groups",
@@ -8510,6 +8249,118 @@
       "first_seen_at": "2026-09-01T06:01:02.899795+00:00",
       "last_seen_at": "2026-09-01T06:01:02.899795+00:00",
       "retained_from_previous_run": true
+    },
+    {
+      "id": "2609.03238v1",
+      "source": "arXiv",
+      "title": "Representation Defects and Cassels Pairings for Congruent Number Curves",
+      "authors": [
+        "Shisong Xu"
+      ],
+      "summary": "Qin expressed central values of the congruent number curve $E_n:y^2=x^3-n^2x$ through differences of ternary quadratic form representation numbers, while Zhang gave explicit formulas for the Cassels pairing on the pure $2$-Selmer group. We prove that the parity of Qin's normalized representation defect is the Pfaffian of the Cassels pairing. For $n=pq$ with $s_2=4$, we compute the $4\\times4$ Cassels matrix and obtain an invariant $Π(p,q)$ such that $r_a(pq)\\equiv h(-pq)+16Π(p,q)\\pmod{32}$. We also prove an even analogue and a higher dimensional extension.",
+      "published": "2026-09-03T00:42:47Z",
+      "updated": "2026-09-03T00:42:47Z",
+      "paper_url": "http://arxiv.org/abs/2609.03238v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.03238v1",
+      "categories": [
+        "math.NT"
+      ],
+      "seed_topic": "arithmetic_geometry",
+      "matches": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.583,
+          "base_score": 0.387,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "high",
+          "reason": "关键词命中：Selmer group；arXiv 分类重合：math.NT；时效加分 +0.05",
+          "keyword_hits": [
+            "Selmer group"
+          ],
+          "llm_reason": "该论文直接涉及同余数椭圆曲线（elliptic curve）、纯 2-Selmer 群（Selmer group）和 Cassels 配对（与 Tate-Shafarevich 群相关），这些是算术几何中关于有理点与秩研究的核心对象。同时，同余式涉及虚二次域类数 h(-pq)，与代数数域理论相关。若你关注椭圆曲线的 descent、Selmer 群结构或 L-函数中心值，该论文具有高度匹配性。但论文并未涉及 p-adic Hodge theory、Galois 表示或 etale 上同调，因此与这些方向的关联较弱。"
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.056,
+          "base_score": 0.01,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "low",
+          "reason": "时效加分 +0.05",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.052,
+          "base_score": 0.006,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "low",
+          "reason": "时效加分 +0.05",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.046,
+          "base_score": 0.0,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "low",
+          "reason": "时效加分 +0.05",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "arithmetic_geometry",
+        "topic_name": "Arithmetic Geometry",
+        "score": 0.583,
+        "base_score": 0.387,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.046,
+        "level": "high",
+        "reason": "关键词命中：Selmer group；arXiv 分类重合：math.NT；时效加分 +0.05",
+        "keyword_hits": [
+          "Selmer group"
+        ],
+        "llm_reason": "该论文直接涉及同余数椭圆曲线（elliptic curve）、纯 2-Selmer 群（Selmer group）和 Cassels 配对（与 Tate-Shafarevich 群相关），这些是算术几何中关于有理点与秩研究的核心对象。同时，同余式涉及虚二次域类数 h(-pq)，与代数数域理论相关。若你关注椭圆曲线的 descent、Selmer 群结构或 L-函数中心值，该论文具有高度匹配性。但论文并未涉及 p-adic Hodge theory、Galois 表示或 etale 上同调，因此与这些方向的关联较弱。"
+      },
+      "top_labels": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.387,
+          "score": 0.433,
+          "level": "medium",
+          "keyword_hits": [
+            "Selmer group"
+          ]
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "fulltext_excerpt": "[2609.03238] Representation Defects and Cassels Pairings for Congruent Number Curves Skip to main content Search arXiv Press Enter to search · Advanced search --> Mathematics > Number Theory arXiv:2609.03238 (math) [Submitted on 3 Sep 2026] Title: Representation Defects and Cassels Pairings for Congruent Number Curves Authors: Shisong Xu View a PDF of the paper titled Representation Defects and Cassels Pairings for Congruent Number Curves, by Shisong Xu View PDF HTML (experimental) Abstract: Qin expressed central values of the congruent number curve $E_n:y^2=x^3-n^2x$ through differences of ternary quadratic form representation numbers, while Zhang gave explicit formulas for the Cassels pairing on the pure $2$-Selmer group. We prove that the parity of Qin's normalized representation defect is the Pfaffian of the Cassels pairing. For $n=pq$ with $s_2=4$, we compute the $4\\times4$ Cassels matrix and obtain an invariant $\\Pi(p,q)$ such that $r_a(pq)\\equiv h(-pq)+16\\Pi(p,q)\\pmod{32}$. We also prove an even analogue and a higher dimensional extension. Subjects: Number Theory (math.NT) MSC classes: 11G05 Cite as: arXiv:2609.03238 [math.NT] (or arXiv:2609.03238v1 [math.NT] for this version) https://doi.org/10.48550/arXiv.2609.03238 Focus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: Shisong Xu [ view email ] [v1] Thu, 3 Sep 2026 00:42:47 UTC (11 KB) Full-text links: Access Paper: View a PDF of the paper titled Representation Defects and Cassels Pairings for Congruent Number Curves, by Shisong Xu View PDF HTML (experimental) TeX Source view license Current browse context: math.NT < prev | next > new | recent | 2026-09 Change to browse by: math References & Citations NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
+      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2609.03238",
+      "chinese_summary": {
+        "problem": "该论文旨在统一并深化关于同余数椭圆曲线 E_n: y^2 = x^3 - n^2 x 的两个独立结果：Qin 关于中心 L-值用三元二次型表示数差表达的工作，以及 Zhang 对纯 2-Selmer 群上 Cassels 配对的显式公式。具体问题是在这些看似不同的对象之间建立精确的算术联系，特别是证明规范化表示缺陷的奇偶性等于 Cassels 配对的 Pfaffian，并利用此关系推导出新的同余式。",
+        "method": "核心方法包括：利用 Zhang 给出的 Cassels 配对显式公式，将其与 Qin 的表示数差公式相结合，通过代数数论和矩阵计算（求 Pfaffian）证明奇偶性对应。对 n=pq 且 s_2=4 的情形，显式计算 4×4 Cassels 矩阵，定义不变量 Π(p,q)，并推导模 32 的同余式。此外，可能通过推广到偶数维或更高维情形来证明类似结论，但摘要未给出具体构造步骤，需要阅读全文确认。",
+        "innovation": "1. 首次建立规范化表示缺陷奇偶性与 Cassels 配对 Pfaffian 之间的精确相等关系，架起了二次型表示数与 Selmer 群算术之间的桥梁；2. 在 s_2=4 的特殊情形下显式计算了 Cassels 矩阵，得到包含 Π(p,q) 的新同余式，增强了已有结果；3. 证明了偶数情形和高维推广，显示该方法的普适性。",
+        "evidence": "摘要中明确给出了理论定理（如奇偶性=Pfaffian，模 32 同余式）的陈述，但没有提供数值示例或实验验证。因此，理论证据充分，但计算细节和具体例证需要阅读全文验证。",
+        "limitations": "摘要内容密集，关键概念（如 s_2、Π(p,q) 的精确定义、规范化表示缺陷）未给出详细解释；同余式仅在 n=pq 且 s_2=4 的特殊情形下证明；更广泛的 n 或一般情形的处理未提及；高维扩展的细节可能依赖于抽象代数几何技术，需阅读全文判断。",
+        "why_relevant": "该论文直接涉及同余数椭圆曲线（elliptic curve）、纯 2-Selmer 群（Selmer group）和 Cassels 配对（与 Tate-Shafarevich 群相关），这些是算术几何中关于有理点与秩研究的核心对象。同时，同余式涉及虚二次域类数 h(-pq)，与代数数域理论相关。若你关注椭圆曲线的 descent、Selmer 群结构或 L-函数中心值，该论文具有高度匹配性。但论文并未涉及 p-adic Hodge theory、Galois 表示或 etale 上同调，因此与这些方向的关联较弱。"
+      },
+      "first_seen_at": "2026-09-05T05:15:37.177786+00:00",
+      "last_seen_at": "2026-09-05T05:15:37.177786+00:00",
+      "retained_from_previous_run": false
     },
     {
       "id": "2608.29288v1",
@@ -9012,7 +8863,7 @@
       },
       "first_seen_at": "2026-09-04T05:30:28.613950+00:00",
       "last_seen_at": "2026-09-04T05:30:28.613950+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2608.27285v1",
@@ -9638,139 +9489,6 @@
       "retained_from_previous_run": true
     },
     {
-      "id": "2608.25237v1",
-      "source": "arXiv",
-      "title": "Spin structures and measures on the moduli space of curves",
-      "authors": [
-        "Paul Norbury"
-      ],
-      "summary": "This article arose out of notes for a CIME summer school mini-course in Cetraro. In it we develop differential-geometric constructions on the moduli space ${\\cal M}_{g,n}^{\\rm spin}$ of smooth spin curves, with particular emphasis on their interpretation in hyperbolic geometry. We relate the locally constant sheaf arising from a hyperbolic spin structure to the corresponding holomorphic sheaf, extending this known relationship to spin curves with Ramond marked points. We use the hyperbolic description to construct characteristic forms and spin measures on moduli spaces of hyperbolic surfaces with geodesic boundary, providing a framework for applying Teichmüller-theoretic methods to their volumes and volume recursions. Finally, we study separately the even and odd components of spin moduli space and find symmetries between their volume contributions which are not apparent from the contributions of individual boundary strata.",
-      "published": "2026-08-25T23:55:59Z",
-      "updated": "2026-08-25T23:55:59Z",
-      "paper_url": "http://arxiv.org/abs/2608.25237v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.25237v1",
-      "categories": [
-        "math.AG",
-        "math-ph",
-        "math.GT"
-      ],
-      "seed_topic": "motivic_k_theory",
-      "matches": [
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "score": 0.559,
-          "base_score": 0.511,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.048,
-          "level": "medium",
-          "reason": "关键词命中：moduli space、sheaf；arXiv 分类重合：math.AG；时效加分 +0.05",
-          "keyword_hits": [
-            "moduli space",
-            "sheaf"
-          ],
-          "llm_reason": "论文主题为曲线模空间上的spin结构，涉及模空间、层等代数几何核心对象，与我的研究方向（模空间、模叠、层、代数几何）直接相关；但论文方法更偏微分几何和双曲几何，而非scheme、stack或代数叠的代数构造，因此相关性局限于共享模空间和层的概念，具体方法和问题并非代数几何主流关注点。"
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "score": 0.237,
-          "base_score": 0.189,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.048,
-          "level": "low",
-          "reason": "arXiv 分类重合：math.AG；时效加分 +0.05",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "score": 0.234,
-          "base_score": 0.186,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.048,
-          "level": "low",
-          "reason": "arXiv 分类重合：math.AG；时效加分 +0.05",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "score": 0.053,
-          "base_score": 0.005,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.048,
-          "level": "low",
-          "reason": "时效加分 +0.05",
-          "keyword_hits": []
-        }
-      ],
-      "best_match": {
-        "topic_id": "algebraic_geometry",
-        "topic_name": "Algebraic Geometry",
-        "score": 0.559,
-        "base_score": 0.511,
-        "bridge_bonus": 0.0,
-        "preference_bonus": 0.0,
-        "recency_bonus": 0.048,
-        "level": "medium",
-        "reason": "关键词命中：moduli space、sheaf；arXiv 分类重合：math.AG；时效加分 +0.05",
-        "keyword_hits": [
-          "moduli space",
-          "sheaf"
-        ],
-        "llm_reason": "论文主题为曲线模空间上的spin结构，涉及模空间、层等代数几何核心对象，与我的研究方向（模空间、模叠、层、代数几何）直接相关；但论文方法更偏微分几何和双曲几何，而非scheme、stack或代数叠的代数构造，因此相关性局限于共享模空间和层的概念，具体方法和问题并非代数几何主流关注点。"
-      },
-      "top_labels": [
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "base_score": 0.511,
-          "score": 0.559,
-          "level": "medium",
-          "keyword_hits": [
-            "moduli space",
-            "sheaf"
-          ]
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "base_score": 0.189,
-          "score": 0.237,
-          "level": "low",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "base_score": 0.186,
-          "score": 0.234,
-          "level": "low",
-          "keyword_hits": []
-        }
-      ],
-      "backfilled_from_recent_arxiv": true,
-      "newly_discovered_from_recent_arxiv": true,
-      "fulltext_excerpt": "[2608.25237] Spin structures and measures on the moduli space of curves Skip to main content Search arXiv Press Enter to search · Advanced search --> Mathematics > Algebraic Geometry arXiv:2608.25237 (math) [Submitted on 25 Aug 2026] Title: Spin structures and measures on the moduli space of curves Authors: Paul Norbury View a PDF of the paper titled Spin structures and measures on the moduli space of curves, by Paul Norbury View PDF HTML (experimental) Abstract: This article arose out of notes for a CIME summer school mini-course in Cetraro. In it we develop differential-geometric constructions on the moduli space ${\\cal M}_{g,n}^{\\rm spin}$ of smooth spin curves, with particular emphasis on their interpretation in hyperbolic geometry. We relate the locally constant sheaf arising from a hyperbolic spin structure to the corresponding holomorphic sheaf, extending this known relationship to spin curves with Ramond marked points. We use the hyperbolic description to construct characteristic forms and spin measures on moduli spaces of hyperbolic surfaces with geodesic boundary, providing a framework for applying Teichmüller-theoretic methods to their volumes and volume recursions. Finally, we study separately the even and odd components of spin moduli space and find symmetries between their volume contributions which are not apparent from the contributions of individual boundary strata. Comments: 41 pages Subjects: Algebraic Geometry (math.AG) ; Mathematical Physics (math-ph); Geometric Topology (math.GT) MSC classes: 32G15, 14H10, 30F35 Cite as: arXiv:2608.25237 [math.AG] (or arXiv:2608.25237v1 [math.AG] for this version) https://doi.org/10.48550/arXiv.2608.25237 Focus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: Paul Norbury [ view email ] [v1] Tue, 25 Aug 2026 23:55:59 UTC (226 KB) Full-text links: Access Paper: View a PDF of the paper titled Spin structures and measures on the moduli space of curves, by Paul Norbury View PDF HTML (experimental) TeX Source view license Current browse context: math.AG < prev | next > new | recent | 2026-08 Change to browse by: math math-ph math.GT math.MP References & Citations NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
-      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2608.25237",
-      "chinese_summary": {
-        "problem": "在带spin结构的平滑曲线模空间上发展微分几何构造，并通过双曲几何解释这些构造，进而研究模空间上的测度与体积递归，同时理解spin结构中局部常值层与全纯层之间的关系。",
-        "method": "利用双曲几何描述spin曲线，构造与hyperbolic spin结构关联的局部常值层并延伸到带Ramond标记点的情形；基于带测地边界双曲曲面构造特征形式和spin测度，为体积及体积递归提供Teichmüller理论框架；分别研究spin模空间的偶分量与奇分量并分析其体积贡献的对称性。",
-        "innovation": "将已知的hyperbolic spin结构与全纯层之间的关系推广到带Ramond标记点的spin曲线；建立了通过双曲几何构造特征形式和测度的一般框架，使得Teichmüller方法可应用于体积和体积递归；在spin模空间的偶、奇分量之间发现了单个边界层贡献中不明显的新对称性。",
-        "evidence": "摘要中未提供具体定理、数值或构造细节，仅描述方法框架和发现的对称性，因此可核验的具体证据不足。",
-        "limitations": "本文源于暑期学校课程笔记，可能偏重介绍性而缺乏完整严格证明；内容侧重微分几何与双曲几何，代数几何纯形式化程度有限；需阅读全文确认构造细节、证明以及分类匹配程度。",
-        "why_relevant": "论文主题为曲线模空间上的spin结构，涉及模空间、层等代数几何核心对象，与我的研究方向（模空间、模叠、层、代数几何）直接相关；但论文方法更偏微分几何和双曲几何，而非scheme、stack或代数叠的代数构造，因此相关性局限于共享模空间和层的概念，具体方法和问题并非代数几何主流关注点。"
-      },
-      "first_seen_at": "2026-08-27T10:54:01.142878+00:00",
-      "last_seen_at": "2026-08-27T10:54:01.142878+00:00",
-      "retained_from_previous_run": true
-    },
-    {
       "id": "2609.04095v1",
       "source": "arXiv",
       "title": "Log-concavity and unimodality of Hodge numbers of Hilbert schemes of points over a surface",
@@ -9898,7 +9616,7 @@
       },
       "first_seen_at": "2026-09-04T05:30:28.613950+00:00",
       "last_seen_at": "2026-09-04T05:30:28.613950+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2609.03839v1",
@@ -10024,7 +9742,7 @@
       },
       "first_seen_at": "2026-09-04T05:30:28.613950+00:00",
       "last_seen_at": "2026-09-04T05:30:28.613950+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2609.01965v1",
@@ -11178,7 +10896,7 @@
       },
       "first_seen_at": "2026-09-04T05:30:28.613950+00:00",
       "last_seen_at": "2026-09-04T05:30:28.613950+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2608.25994v1",
@@ -11854,126 +11572,6 @@
       "retained_from_previous_run": true
     },
     {
-      "id": "2608.25000v1",
-      "source": "arXiv",
-      "title": "Equivariant Localization for N=2 Theories with Hypermultiplets",
-      "authors": [
-        "Matthias Dennemann",
-        "Jan Manschot"
-      ],
-      "summary": "Equivariant localization in the $Ω$-background is a powerful technique for the evaluation of the partition function of $\\mathcal{N}=2$ supersymmetric field theory on a toric four-manifold. For the complex projective plane $\\mathbb{CP}^2$, we apply equivariant localization to supersymmetric Yang-Mills theories with gauge groups $SU(2)$ and $SO(3)$ with $N_f$ massive hypermultiplets in the fundamental representation, and the $\\mathcal{N}=2^*$ theory with the hypermultiplet in the adjoint representation. We evaluate equivariant correlation functions, which provide an equivariant extension of intersection numbers of moduli spaces of instantons on $\\mathbb{CP}^2$, such as Euler numbers and Segre invariants. In the non-equivariant limit, we compare our results with the evaluation using low energy field theory and integration over the $u$-plane. Using this comparison, we identify a specific overall factor, which captures the difference between a partition function for gauge group $U(2)$ and $SU(2)$ or $SO(3)$ on a compact four-manifold. We also discuss our results in the context of $S$-duality of the $N_f=4$ and $\\mathcal{N}=2^*$ theory, which includes the triality automorphism group of the flavor group for $N_f=4$.",
-      "published": "2026-08-25T18:00:04Z",
-      "updated": "2026-08-25T18:00:04Z",
-      "paper_url": "http://arxiv.org/abs/2608.25000v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.25000v1",
-      "categories": [
-        "hep-th",
-        "math.AG"
-      ],
-      "seed_topic": "motivic_k_theory",
-      "matches": [
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "score": 0.523,
-          "base_score": 0.476,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.047,
-          "level": "medium",
-          "reason": "关键词命中：moduli space、Spec、Proj；arXiv 分类重合：math.AG；时效加分 +0.05",
-          "keyword_hits": [
-            "moduli space",
-            "Spec",
-            "Proj"
-          ],
-          "llm_reason": "研究领域涉及模空间、相交理论、陈类等。论文提供瞬子模空间的等变相交数（欧拉数、Segre不变量）在物理场论背景下的计算方法，可能为代数几何中的模空间不变量提供新视角或新例子。但论文重心在超对称场论，与纯粹代数几何的scheme/stack理论有距离，建议人工复核具体技术细节。"
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "score": 0.182,
-          "base_score": 0.135,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.047,
-          "level": "low",
-          "reason": "arXiv 分类重合：math.AG；时效加分 +0.05",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "score": 0.178,
-          "base_score": 0.131,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.047,
-          "level": "low",
-          "reason": "arXiv 分类重合：math.AG；时效加分 +0.05",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "score": 0.062,
-          "base_score": 0.015,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.047,
-          "level": "low",
-          "reason": "时效加分 +0.05",
-          "keyword_hits": []
-        }
-      ],
-      "best_match": {
-        "topic_id": "algebraic_geometry",
-        "topic_name": "Algebraic Geometry",
-        "score": 0.523,
-        "base_score": 0.476,
-        "bridge_bonus": 0.0,
-        "preference_bonus": 0.0,
-        "recency_bonus": 0.047,
-        "level": "medium",
-        "reason": "关键词命中：moduli space、Spec、Proj；arXiv 分类重合：math.AG；时效加分 +0.05",
-        "keyword_hits": [
-          "moduli space",
-          "Spec",
-          "Proj"
-        ],
-        "llm_reason": "研究领域涉及模空间、相交理论、陈类等。论文提供瞬子模空间的等变相交数（欧拉数、Segre不变量）在物理场论背景下的计算方法，可能为代数几何中的模空间不变量提供新视角或新例子。但论文重心在超对称场论，与纯粹代数几何的scheme/stack理论有距离，建议人工复核具体技术细节。"
-      },
-      "top_labels": [
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "base_score": 0.476,
-          "score": 0.523,
-          "level": "medium",
-          "keyword_hits": [
-            "moduli space",
-            "Spec",
-            "Proj"
-          ]
-        }
-      ],
-      "backfilled_from_recent_arxiv": true,
-      "newly_discovered_from_recent_arxiv": true,
-      "fulltext_excerpt": "[2608.25000] Equivariant Localization for N=2 Theories with Hypermultiplets Skip to main content Search arXiv Press Enter to search · Advanced search --> High Energy Physics - Theory arXiv:2608.25000 (hep-th) [Submitted on 25 Aug 2026] Title: Equivariant Localization for N=2 Theories with Hypermultiplets Authors: Matthias Dennemann , Jan Manschot View a PDF of the paper titled Equivariant Localization for N=2 Theories with Hypermultiplets, by Matthias Dennemann and Jan Manschot View PDF HTML (experimental) Abstract: Equivariant localization in the $\\Omega$-background is a powerful technique for the evaluation of the partition function of $\\mathcal{N}=2$ supersymmetric field theory on a toric four-manifold. For the complex projective plane $\\mathbb{CP}^2$, we apply equivariant localization to supersymmetric Yang-Mills theories with gauge groups $SU(2)$ and $SO(3)$ with $N_f$ massive hypermultiplets in the fundamental representation, and the $\\mathcal{N}=2^*$ theory with the hypermultiplet in the adjoint representation. We evaluate equivariant correlation functions, which provide an equivariant extension of intersection numbers of moduli spaces of instantons on $\\mathbb{CP}^2$, such as Euler numbers and Segre invariants. In the non-equivariant limit, we compare our results with the evaluation using low energy field theory and integration over the $u$-plane. Using this comparison, we identify a specific overall factor, which captures the difference between a partition function for gauge group $U(2)$ and $SU(2)$ or $SO(3)$ on a compact four-manifold. We also discuss our results in the context of $S$-duality of the $N_f=4$ and $\\mathcal{N}=2^*$ theory, which includes the triality automorphism group of the flavor group for $N_f=4$. Comments: 50 pages Subjects: High Energy Physics - Theory (hep-th) ; Algebraic Geometry (math.AG) Cite as: arXiv:2608.25000 [hep-th] (or arXiv:2608.25000v1 [hep-th] for this version) https://doi.org/10.48550/arXiv.2608.25000 Focus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: Jan Manschot [ view email ] [v1] Tue, 25 Aug 2026 18:00:04 UTC (56 KB) Full-text links: Access Paper: View a PDF of the paper titled Equivariant Localization for N=2 Theories with Hypermultiplets, by Matthias Dennemann and Jan Manschot View PDF HTML (experimental) TeX Source view license Current browse context: hep-th < prev | next > new | recent | 2026-08 Change to browse by: math math.AG References & Citations INSPIRE HEP NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) IArxiv recommender toggle IArxiv Recommender ( What is IArxiv? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
-      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2608.25000",
-      "chinese_summary": {
-        "problem": "论文解决在Ω背景中计算带有超多重态的N=2超对称Yang-Mills理论在toric四流形（特别是CP^2）上的配分函数与等变相关函数的问题，并将其解释为瞬子模空间交点数的不变扩展。",
-        "method": "利用等变局部化技术，将超对称配分函数约化为模空间上的局部化贡献。针对SU(2)和SO(3)规范群以及N_f个基本超多重态和N=2*伴随超多重态情形，计算等变相关函数，并在非等变极限下与u-平面低能有效作用结果比较，提取整体因子。",
-        "innovation": "首次对超多重态情形在CP^2上系统应用等变局部化，给出包含欧拉数、Segre不变量等的等变扩展；识别了U(2)与SU(2)/SO(3)配分函数间的整体因子；并讨论了N_f=4与N=2*理论的S-对偶和三性质对称群。",
-        "evidence": "摘要中明确给出对CP^2上SU(2)、SO(3)规范群的计算，以及与非等变极限和低能有效理论的比较，识别了具体整体因子，证据较充分。但未给出具体数值或公式，需阅读全文确认。",
-        "limitations": "摘要未提供具体公式和结果细节，无法判断计算彻底性；等变局部化对更一般四流形是否适用需确认；与代数几何严格联系可能需要物理与数学双向翻译。",
-        "why_relevant": "研究领域涉及模空间、相交理论、陈类等。论文提供瞬子模空间的等变相交数（欧拉数、Segre不变量）在物理场论背景下的计算方法，可能为代数几何中的模空间不变量提供新视角或新例子。但论文重心在超对称场论，与纯粹代数几何的scheme/stack理论有距离，建议人工复核具体技术细节。"
-      },
-      "first_seen_at": "2026-08-27T10:54:01.142878+00:00",
-      "last_seen_at": "2026-08-27T10:54:01.142878+00:00",
-      "retained_from_previous_run": true
-    },
-    {
       "id": "2609.03188v1",
       "source": "arXiv",
       "title": "Some generalizations of Oort's conjecture",
@@ -12104,50 +11702,177 @@
       },
       "first_seen_at": "2026-09-04T05:30:28.613950+00:00",
       "last_seen_at": "2026-09-04T05:30:28.613950+00:00",
+      "retained_from_previous_run": true
+    },
+    {
+      "id": "2609.00988v1",
+      "source": "arXiv",
+      "title": "Covering Projective Height Balls by Subspaces in Rigid Adelic Spaces",
+      "authors": [
+        "Ruida Di",
+        "Runjie Hu"
+      ],
+      "summary": "Let $E$ be an $n$-dimensional rigid adelic space over a number field $K$. We study the minimum number $g_E(R)$ of proper $K$-subspaces needed to cover the projective height ball of radius $R$, together with the maximum cardinality $h_E(R)$ of a subset in linear general position. We show that, once $R$ is sufficiently large compared with the last Roy--Thunder minimum of $E$, both quantities have order $Ψ_E(R)^{[K:\\mathbb Q]}$, where $Ψ_E(R)$ is an explicit expression in the Roy--Thunder minima. The comparison constants are effectively computable and uniform in $E$. For the standard adelic space $K^n$, this gives order $R^{[K:\\mathbb Q]n/(n-1)}$.",
+      "published": "2026-09-01T09:42:48Z",
+      "updated": "2026-09-01T09:42:48Z",
+      "paper_url": "http://arxiv.org/abs/2609.00988v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.00988v1",
+      "categories": [
+        "math.NT"
+      ],
+      "seed_topic": "arithmetic_geometry",
+      "matches": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.519,
+          "base_score": 0.375,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.044,
+          "level": "medium",
+          "reason": "关键词命中：number field；arXiv 分类重合：math.NT；时效加分 +0.04",
+          "keyword_hits": [
+            "number field"
+          ],
+          "llm_reason": "与我研究方向中的“height function”、“Diophantine geometry”、“adelic/Arakelov 高度”有直接关联，涉及数域上射影空间的点与子空间计数，可用于比较不同高度函数的分布。但论文不涉及 Galois 表示、p-adic Hodge 理论、模形式或 L-函数等更核心的算术几何工具，因此匹配为中等级别，建议根据是否从事丢番图逼近或有效计数的子课题来决定是否精读。"
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.229,
+          "base_score": 0.185,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.044,
+          "level": "low",
+          "reason": "关键词命中：Proj；时效加分 +0.04",
+          "keyword_hits": [
+            "Proj"
+          ]
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.047,
+          "base_score": 0.003,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.044,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.046,
+          "base_score": 0.002,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.044,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "arithmetic_geometry",
+        "topic_name": "Arithmetic Geometry",
+        "score": 0.519,
+        "base_score": 0.375,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.044,
+        "level": "medium",
+        "reason": "关键词命中：number field；arXiv 分类重合：math.NT；时效加分 +0.04",
+        "keyword_hits": [
+          "number field"
+        ],
+        "llm_reason": "与我研究方向中的“height function”、“Diophantine geometry”、“adelic/Arakelov 高度”有直接关联，涉及数域上射影空间的点与子空间计数，可用于比较不同高度函数的分布。但论文不涉及 Galois 表示、p-adic Hodge 理论、模形式或 L-函数等更核心的算术几何工具，因此匹配为中等级别，建议根据是否从事丢番图逼近或有效计数的子课题来决定是否精读。"
+      },
+      "top_labels": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.375,
+          "score": 0.419,
+          "level": "low",
+          "keyword_hits": [
+            "number field"
+          ]
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.185,
+          "score": 0.229,
+          "level": "low",
+          "keyword_hits": [
+            "Proj"
+          ]
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "fulltext_excerpt": "[2609.00988] Covering Projective Height Balls by Subspaces in Rigid Adelic Spaces Skip to main content Search arXiv Press Enter to search · Advanced search --> Mathematics > Number Theory arXiv:2609.00988 (math) [Submitted on 1 Sep 2026] Title: Covering Projective Height Balls by Subspaces in Rigid Adelic Spaces Authors: Ruida Di , Runjie Hu View a PDF of the paper titled Covering Projective Height Balls by Subspaces in Rigid Adelic Spaces, by Ruida Di and 1 other authors View PDF HTML (experimental) Abstract: Let $E$ be an $n$-dimensional rigid adelic space over a number field $K$. We study the minimum number $g_E(R)$ of proper $K$-subspaces needed to cover the projective height ball of radius $R$, together with the maximum cardinality $h_E(R)$ of a subset in linear general position. We show that, once $R$ is sufficiently large compared with the last Roy--Thunder minimum of $E$, both quantities have order $\\Psi_E(R)^{[K:\\mathbb Q]}$, where $\\Psi_E(R)$ is an explicit expression in the Roy--Thunder minima. The comparison constants are effectively computable and uniform in $E$. For the standard adelic space $K^n$, this gives order $R^{[K:\\mathbb Q]n/(n-1)}$. Subjects: Number Theory (math.NT) Cite as: arXiv:2609.00988 [math.NT] (or arXiv:2609.00988v1 [math.NT] for this version) https://doi.org/10.48550/arXiv.2609.00988 Focus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: Ruida Di [ view email ] [v1] Tue, 1 Sep 2026 09:42:48 UTC (16 KB) Full-text links: Access Paper: View a PDF of the paper titled Covering Projective Height Balls by Subspaces in Rigid Adelic Spaces, by Ruida Di and 1 other authors View PDF HTML (experimental) TeX Source view license Current browse context: math.NT < prev | next > new | recent | 2026-09 Change to browse by: math References & Citations NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
+      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2609.00988",
+      "chinese_summary": {
+        "problem": "在数域 K 上的 n 维刚性 adelic 空间 E 中，研究覆盖给定半径 R 的射影高度球所需的真 K-子空间的最小数量 g_E(R)，以及线性一般位置子集的最大基数 h_E(R)。该问题把射影高度球的覆盖与 Roy–Thunder 最小值联系起来，属于丢番图逼近中的定量高度分布问题。",
+        "method": "以 E 的 Roy–Thunder 最小值作为关键参数，证明当 R 超过最后一个 Roy–Thunder 最小值某个有效阈值时，g_E(R) 与 h_E(R) 的增长阶都由显式表达式 Ψ_E(R)^{[K:Q]} 控制。摘要未明示具体覆盖构造或证明技巧，预计会使用高度估计、数域上线性子空间的计数性质和 Schmidt 型子空间定理的定量版本，这些需要原文确认。",
+        "innovation": "将覆盖数 g_E 与一般位置最大子集大小 h_E 放在同一刚性 adelic 空间框架中，同时得到两者的渐近主项；结果对一般 E 给出 uniform 且比较常数可有效计算的估计，而非仅对标准 adelic 空间 K^n；在标准情形下恢复了 R^{[K:Q]n/(n-1)} 的明确增长阶，便于直接应用。",
+        "evidence": "摘要给出了定量理论结论：当 R 足够大时两个量均与 Ψ_E(R)^{[K:Q]} 同阶，且比较常数有效可算并对 E 一致；对应 K^n 的指数 R^{[K:Q]n/(n-1)} 是可见的理论证据。没有提供数值实验或计算数据。",
+        "limitations": "摘要只在 R 充分大时给出结果，对较小半径的行为未作说明；Roy–Thunder 最小值的具体计算和覆盖常数的实际大小未给出；证明依赖的具体技术（如是否使用了某类高度引理或子空间定理）以及上下界是否趋近一致，需要阅读全文验证。",
+        "why_relevant": "与我研究方向中的“height function”、“Diophantine geometry”、“adelic/Arakelov 高度”有直接关联，涉及数域上射影空间的点与子空间计数，可用于比较不同高度函数的分布。但论文不涉及 Galois 表示、p-adic Hodge 理论、模形式或 L-函数等更核心的算术几何工具，因此匹配为中等级别，建议根据是否从事丢番图逼近或有效计数的子课题来决定是否精读。"
+      },
+      "first_seen_at": "2026-09-05T05:15:37.177786+00:00",
+      "last_seen_at": "2026-09-05T05:15:37.177786+00:00",
       "retained_from_previous_run": false
     },
     {
-      "id": "2608.25357v1",
+      "id": "2609.02198v1",
       "source": "arXiv",
-      "title": "The image of the constant sheaf under the geometric Langlands equivalence",
+      "title": "The Borovik-Cherlin conjecture holds in ACF",
       "authors": [
-        "Kenta Suzuki"
+        "Ulla Karhumäki",
+        "Nicholas Ramsey"
       ],
-      "summary": "Let $X$ be a smooth projective curve and let $G$ be a reductive group over an algebraically closed field of characteristic zero. We compute the image of arbitrary finite-rank local systems on $\\mathrm{Bun}_G(X)$ under the geometric Langlands equivalence, confirming a conjecture of V. Lafforgue in the case of the constant sheaf.",
-      "published": "2026-08-26T04:26:45Z",
-      "updated": "2026-08-26T04:26:45Z",
-      "paper_url": "http://arxiv.org/abs/2608.25357v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.25357v1",
+      "summary": "We show that every faithful, transitive, and generically $(n+2)$-transitive action of a connected group $G$ on an irreducible variety $X$ of dimension $n > 0$, all defined over an algebraically closed field $F$, is isomorphic to the natural action of the projective linear group $PGL_{n+1}(F)$ on the projective space $\\mathbb{P}^n(F)$. More precisely, we establish the Borovik-Cherlin conjecture for permutation groups $(G,X)$ definable in models of $ACF$.",
+      "published": "2026-09-02T07:06:41Z",
+      "updated": "2026-09-02T07:06:41Z",
+      "paper_url": "http://arxiv.org/abs/2609.02198v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.02198v1",
       "categories": [
+        "math.GR",
         "math.AG",
-        "math.RT"
+        "math.LO"
       ],
       "seed_topic": "motivic_k_theory",
       "matches": [
         {
           "topic_id": "algebraic_geometry",
           "topic_name": "Algebraic Geometry",
-          "score": 0.519,
-          "base_score": 0.471,
+          "score": 0.515,
+          "base_score": 0.37,
           "bridge_bonus": 0.0,
           "preference_bonus": 0.0,
-          "recency_bonus": 0.048,
+          "recency_bonus": 0.045,
           "level": "medium",
-          "reason": "关键词命中：sheaf、Proj；arXiv 分类重合：math.AG；时效加分 +0.05",
+          "reason": "关键词命中：variety、Proj；arXiv 分类重合：math.AG；时效加分 +0.05",
           "keyword_hits": [
-            "sheaf",
+            "variety",
             "Proj"
           ],
-          "llm_reason": "论文主题涉及代数几何核心对象：光滑射影曲线X、模空间Bun_G(X)、层（local systems）、几何Langlands对应，这与我的研究方向中的sheaf, moduli space, algebraic stack, 以及层的分类和计算高度相关。但该问题更偏向表示论与几何Langlands的交叉，而非我研究中的经典scheme理论、相交理论或导出代数几何，因此匹配度中等。"
+          "llm_reason": "论文的对象是不可约代数簇、维数、射影空间P^n和PGL_{n+1}的自然作用，这些都是代数几何的基础概念，对应关键词variety, dimension, projective space, irreducible variety, algebraically closed field。但与我的研究方向（schemes, sheaves, moduli stacks等）核心交集有限，更偏向群作用和模型论，故为中等相关，需要人工复核后再决定是否精读。"
         },
         {
           "topic_id": "arithmetic_geometry",
           "topic_name": "Arithmetic Geometry",
-          "score": 0.252,
-          "base_score": 0.204,
+          "score": 0.178,
+          "base_score": 0.133,
           "bridge_bonus": 0.0,
           "preference_bonus": 0.0,
-          "recency_bonus": 0.048,
+          "recency_bonus": 0.045,
           "level": "low",
           "reason": "arXiv 分类重合：math.AG；时效加分 +0.05",
           "keyword_hits": []
@@ -12155,11 +11880,11 @@
         {
           "topic_id": "motivic_k_theory",
           "topic_name": "Motivic Homotopy & K-Theory",
-          "score": 0.234,
-          "base_score": 0.186,
+          "score": 0.171,
+          "base_score": 0.126,
           "bridge_bonus": 0.0,
           "preference_bonus": 0.0,
-          "recency_bonus": 0.048,
+          "recency_bonus": 0.045,
           "level": "low",
           "reason": "arXiv 分类重合：math.AG；时效加分 +0.05",
           "keyword_hits": []
@@ -12168,10 +11893,10 @@
           "topic_id": "homotopy_theory",
           "topic_name": "Homotopy Theory",
           "score": 0.052,
-          "base_score": 0.004,
+          "base_score": 0.007,
           "bridge_bonus": 0.0,
           "preference_bonus": 0.0,
-          "recency_bonus": 0.048,
+          "recency_bonus": 0.045,
           "level": "low",
           "reason": "时效加分 +0.05",
           "keyword_hits": []
@@ -12180,61 +11905,47 @@
       "best_match": {
         "topic_id": "algebraic_geometry",
         "topic_name": "Algebraic Geometry",
-        "score": 0.519,
-        "base_score": 0.471,
+        "score": 0.515,
+        "base_score": 0.37,
         "bridge_bonus": 0.0,
         "preference_bonus": 0.0,
-        "recency_bonus": 0.048,
+        "recency_bonus": 0.045,
         "level": "medium",
-        "reason": "关键词命中：sheaf、Proj；arXiv 分类重合：math.AG；时效加分 +0.05",
+        "reason": "关键词命中：variety、Proj；arXiv 分类重合：math.AG；时效加分 +0.05",
         "keyword_hits": [
-          "sheaf",
+          "variety",
           "Proj"
         ],
-        "llm_reason": "论文主题涉及代数几何核心对象：光滑射影曲线X、模空间Bun_G(X)、层（local systems）、几何Langlands对应，这与我的研究方向中的sheaf, moduli space, algebraic stack, 以及层的分类和计算高度相关。但该问题更偏向表示论与几何Langlands的交叉，而非我研究中的经典scheme理论、相交理论或导出代数几何，因此匹配度中等。"
+        "llm_reason": "论文的对象是不可约代数簇、维数、射影空间P^n和PGL_{n+1}的自然作用，这些都是代数几何的基础概念，对应关键词variety, dimension, projective space, irreducible variety, algebraically closed field。但与我的研究方向（schemes, sheaves, moduli stacks等）核心交集有限，更偏向群作用和模型论，故为中等相关，需要人工复核后再决定是否精读。"
       },
       "top_labels": [
         {
           "topic_id": "algebraic_geometry",
           "topic_name": "Algebraic Geometry",
-          "base_score": 0.471,
-          "score": 0.519,
-          "level": "medium",
+          "base_score": 0.37,
+          "score": 0.415,
+          "level": "low",
           "keyword_hits": [
-            "sheaf",
+            "variety",
             "Proj"
           ]
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "base_score": 0.204,
-          "score": 0.252,
-          "level": "low",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "base_score": 0.186,
-          "score": 0.234,
-          "level": "low",
-          "keyword_hits": []
         }
       ],
-      "fulltext_excerpt": "[2608.25357] The image of the constant sheaf under the geometric Langlands equivalence Skip to main content Search arXiv Press Enter to search · Advanced search --> Mathematics > Algebraic Geometry arXiv:2608.25357 (math) [Submitted on 26 Aug 2026] Title: The image of the constant sheaf under the geometric Langlands equivalence Authors: Kenta Suzuki View a PDF of the paper titled The image of the constant sheaf under the geometric Langlands equivalence, by Kenta Suzuki View PDF HTML (experimental) Abstract: Let $X$ be a smooth projective curve and let $G$ be a reductive group over an algebraically closed field of characteristic zero. We compute the image of arbitrary finite-rank local systems on $\\mathrm{Bun}_G(X)$ under the geometric Langlands equivalence, confirming a conjecture of V. Lafforgue in the case of the constant sheaf. Comments: 20 pages Subjects: Algebraic Geometry (math.AG) ; Representation Theory (math.RT) MSC classes: 14D24, 22E57 Cite as: arXiv:2608.25357 [math.AG] (or arXiv:2608.25357v1 [math.AG] for this version) https://doi.org/10.48550/arXiv.2608.25357 Focus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: Kenta Suzuki [ view email ] [v1] Wed, 26 Aug 2026 04:26:45 UTC (24 KB) Full-text links: Access Paper: View a PDF of the paper titled The image of the constant sheaf under the geometric Langlands equivalence, by Kenta Suzuki View PDF HTML (experimental) TeX Source view license Current browse context: math.AG < prev | next > new | recent | 2026-08 Change to browse by: math math.RT References & Citations NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
-      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2608.25357",
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "fulltext_excerpt": "[2609.02198] The Borovik-Cherlin conjecture holds in ACF Skip to main content Search arXiv Press Enter to search · Advanced search --> Mathematics > Group Theory arXiv:2609.02198 (math) [Submitted on 2 Sep 2026] Title: The Borovik-Cherlin conjecture holds in ACF Authors: Ulla Karhumäki , Nicholas Ramsey View a PDF of the paper titled The Borovik-Cherlin conjecture holds in ACF, by Ulla Karhum\\\"{a}ki and Nicholas Ramsey View PDF HTML (experimental) Abstract: We show that every faithful, transitive, and generically $(n+2)$-transitive action of a connected group $G$ on an irreducible variety $X$ of dimension $n > 0$, all defined over an algebraically closed field $F$, is isomorphic to the natural action of the projective linear group $PGL_{n+1}(F)$ on the projective space $\\mathbb{P}^n(F)$. More precisely, we establish the Borovik-Cherlin conjecture for permutation groups $(G,X)$ definable in models of $ACF$. Subjects: Group Theory (math.GR) ; Algebraic Geometry (math.AG); Logic (math.LO) Cite as: arXiv:2609.02198 [math.GR] (or arXiv:2609.02198v1 [math.GR] for this version) https://doi.org/10.48550/arXiv.2609.02198 Focus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: Ulla Karhumäki [ view email ] [v1] Wed, 2 Sep 2026 07:06:41 UTC (13 KB) Full-text links: Access Paper: View a PDF of the paper titled The Borovik-Cherlin conjecture holds in ACF, by Ulla Karhum\\\"{a}ki and Nicholas Ramsey View PDF HTML (experimental) TeX Source view license Current browse context: math.GR < prev | next > new | recent | 2026-09 Change to browse by: math math.AG math.LO References & Citations NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
+      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2609.02198",
       "chinese_summary": {
-        "problem": "在几何Langlands对应的框架下，确定Bun_G(X)上任意有限秩局部系统在对应下的像，并验证V. Lafforgue关于常值层像的猜想。",
-        "method": "利用几何Langlands等价作为关键工具，对Bun_G(X)上的局部系统进行分类和计算，具体技术细节在摘要中未展开，可能涉及导出范畴、模空间上的层论或谱方法。",
-        "innovation": "首次计算任意有限秩局部系统在几何Langlands等价下的像，而不仅仅是特定情况；特别地，确认了V. Lafforgue猜想中常值层的情形，这可能是对已有结果的重要推广或验证。",
-        "evidence": "摘要仅提供理论结论，没有实验或系统级证据；具体证明过程、计算细节和适用范围需阅读全文确认。",
-        "limitations": "摘要信息量有限，无法确认方法的技术细节、是否适用于更一般情况（如奇特征或非光滑曲线），以及与其他相关工作（如Frenkel-Gaitsgory）的精确关系。",
-        "why_relevant": "论文主题涉及代数几何核心对象：光滑射影曲线X、模空间Bun_G(X)、层（local systems）、几何Langlands对应，这与我的研究方向中的sheaf, moduli space, algebraic stack, 以及层的分类和计算高度相关。但该问题更偏向表示论与几何Langlands的交叉，而非我研究中的经典scheme理论、相交理论或导出代数几何，因此匹配度中等。"
+        "problem": "证明Borovik-Cherlin猜想在代数闭域（ACF）上的情形：任何连通群G在不可约簇X上的忠实、传递且一般(n+2)-传递的作用，必定同构于PGL_{n+1}(F)在射影空间P^n(F)上的自然作用，其中n=dim X>0。",
+        "method": "论文结合代数几何与模型论/群论技术，研究ACF中可定义的排列群(G,X)。具体方法摘要未透露，可能涉及可定义群的作用、维数分析和线性化分类。需要阅读全文才能了解完整的证明步骤。",
+        "innovation": "该论文解决了Borovik-Cherlin猜想在代数闭域上的情形（标题明确声称成立）。创新点在于将一般(n+2)-传递的代数群作用分类为射影空间上的典型PGL_{n+1}作用，并利用ACF的稳定性理论可能实现了有限维作用的线性化证明。",
+        "evidence": "摘要中给出了理论定理的严格陈述：每个忠实、传递且一般(n+2)-传递的连通群作用同构于PGL_{n+1}在P^n上的自然作用。另外，arXiv数学类别包含群论、代数几何和逻辑，表明该结果得到同行认可。但未提供实验或系统实现，且正文摘录不足，无法核验更细节的证明。",
+        "limitations": "摘要和正文摘录未展示证明细节；需要阅读全文确认技术工具和假设条件（如连通性、不可约性、一般(n+2)-传递的定义）是否与我的相关，且对不熟悉模型论的读者可能较难。",
+        "why_relevant": "论文的对象是不可约代数簇、维数、射影空间P^n和PGL_{n+1}的自然作用，这些都是代数几何的基础概念，对应关键词variety, dimension, projective space, irreducible variety, algebraically closed field。但与我的研究方向（schemes, sheaves, moduli stacks等）核心交集有限，更偏向群作用和模型论，故为中等相关，需要人工复核后再决定是否精读。"
       },
-      "first_seen_at": "2026-08-27T10:54:01.142878+00:00",
-      "last_seen_at": "2026-08-27T10:54:01.142878+00:00",
-      "retained_from_previous_run": true
+      "first_seen_at": "2026-09-05T05:15:37.177786+00:00",
+      "last_seen_at": "2026-09-05T05:15:37.177786+00:00",
+      "retained_from_previous_run": false
     },
     {
       "id": "2609.01843v1",
@@ -12503,7 +12214,7 @@
       },
       "first_seen_at": "2026-09-04T05:30:28.613950+00:00",
       "last_seen_at": "2026-09-04T05:30:28.613950+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2609.01268v1",
@@ -12638,138 +12349,6 @@
       "retained_from_previous_run": true
     },
     {
-      "id": "2608.25008v1",
-      "source": "arXiv",
-      "title": "Kochen-Specker Configurations from Grids on Dual Quadrics",
-      "authors": [
-        "Giuseppe Favacchio"
-      ],
-      "summary": "We develop a geometric framework for constructing and organizing Kochen--Specker configurations in real four-dimensional space. The construction uses finite grids on pairs of smooth quadrics related by Euclidean polarity. Their incidence geometry directly produces orthogonal measurement contexts and parity proofs of quantum contextuality, yielding infinite families of configurations and a geometric interpretation and extension of a previously known cyclic construction. For a distinguished subfamily, the same geometry admits a canonical completion determined by secant lines. The first two instances of this completion recover the exceptional root configurations of types $F_4$ and $H_4$, while the smallest case also recovers the Cabello configuration and its embedding in the Peres configuration. Thus several prominent four-dimensional contextual configurations, previously obtained from different constructions, arise from a single projective-geometric mechanism.",
-      "published": "2026-08-25T18:01:55Z",
-      "updated": "2026-08-25T18:01:55Z",
-      "paper_url": "http://arxiv.org/abs/2608.25008v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.25008v1",
-      "categories": [
-        "math.AG",
-        "quant-ph"
-      ],
-      "seed_topic": "motivic_k_theory",
-      "matches": [
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "score": 0.506,
-          "base_score": 0.459,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.047,
-          "level": "medium",
-          "reason": "关键词命中：Spec、Proj；arXiv 分类重合：math.AG；时效加分 +0.05",
-          "keyword_hits": [
-            "Spec",
-            "Proj"
-          ],
-          "llm_reason": "论文虽然使用经典射影几何和二次曲面（属于代数几何范畴），但其核心是 Kochen–Specker 构型，与我的研究方向（scheme、moduli、层论等现代代数几何）仅存在部分基础概念交集，如二次曲线和割线，缺少对 Spec、Proj、概形或叠等深层工具的使用，因此属于中等相关。"
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "score": 0.245,
-          "base_score": 0.186,
-          "bridge_bonus": 0.012,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.047,
-          "level": "low",
-          "reason": "arXiv 分类重合：math.AG；homotopy ↔ K-theory；时效加分 +0.05",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "score": 0.233,
-          "base_score": 0.186,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.047,
-          "level": "low",
-          "reason": "arXiv 分类重合：math.AG；时效加分 +0.05",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "score": 0.064,
-          "base_score": 0.005,
-          "bridge_bonus": 0.012,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.047,
-          "level": "low",
-          "reason": "homotopy ↔ K-theory；时效加分 +0.05",
-          "keyword_hits": []
-        }
-      ],
-      "best_match": {
-        "topic_id": "algebraic_geometry",
-        "topic_name": "Algebraic Geometry",
-        "score": 0.506,
-        "base_score": 0.459,
-        "bridge_bonus": 0.0,
-        "preference_bonus": 0.0,
-        "recency_bonus": 0.047,
-        "level": "medium",
-        "reason": "关键词命中：Spec、Proj；arXiv 分类重合：math.AG；时效加分 +0.05",
-        "keyword_hits": [
-          "Spec",
-          "Proj"
-        ],
-        "llm_reason": "论文虽然使用经典射影几何和二次曲面（属于代数几何范畴），但其核心是 Kochen–Specker 构型，与我的研究方向（scheme、moduli、层论等现代代数几何）仅存在部分基础概念交集，如二次曲线和割线，缺少对 Spec、Proj、概形或叠等深层工具的使用，因此属于中等相关。"
-      },
-      "top_labels": [
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "base_score": 0.459,
-          "score": 0.506,
-          "level": "medium",
-          "keyword_hits": [
-            "Spec",
-            "Proj"
-          ]
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "base_score": 0.186,
-          "score": 0.245,
-          "level": "low",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "base_score": 0.186,
-          "score": 0.233,
-          "level": "low",
-          "keyword_hits": []
-        }
-      ],
-      "backfilled_from_recent_arxiv": true,
-      "newly_discovered_from_recent_arxiv": true,
-      "fulltext_excerpt": "[2608.25008] Kochen-Specker Configurations from Grids on Dual Quadrics Skip to main content Search arXiv Press Enter to search · Advanced search --> Mathematics > Algebraic Geometry arXiv:2608.25008 (math) [Submitted on 25 Aug 2026] Title: Kochen-Specker Configurations from Grids on Dual Quadrics Authors: Giuseppe Favacchio View a PDF of the paper titled Kochen-Specker Configurations from Grids on Dual Quadrics, by Giuseppe Favacchio View PDF HTML (experimental) Abstract: We develop a geometric framework for constructing and organizing Kochen--Specker configurations in real four-dimensional space. The construction uses finite grids on pairs of smooth quadrics related by Euclidean polarity. Their incidence geometry directly produces orthogonal measurement contexts and parity proofs of quantum contextuality, yielding infinite families of configurations and a geometric interpretation and extension of a previously known cyclic construction. For a distinguished subfamily, the same geometry admits a canonical completion determined by secant lines. The first two instances of this completion recover the exceptional root configurations of types $F_4$ and $H_4$, while the smallest case also recovers the Cabello configuration and its embedding in the Peres configuration. Thus several prominent four-dimensional contextual configurations, previously obtained from different constructions, arise from a single projective-geometric mechanism. Subjects: Algebraic Geometry (math.AG) ; Quantum Physics (quant-ph) MSC classes: 81P13, 14N20 Cite as: arXiv:2608.25008 [math.AG] (or arXiv:2608.25008v1 [math.AG] for this version) https://doi.org/10.48550/arXiv.2608.25008 Focus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: Giuseppe Favacchio [ view email ] [v1] Tue, 25 Aug 2026 18:01:55 UTC (41 KB) Full-text links: Access Paper: View a PDF of the paper titled Kochen-Specker Configurations from Grids on Dual Quadrics, by Giuseppe Favacchio View PDF HTML (experimental) TeX Source view license Current browse context: math.AG < prev | next > new | recent | 2026-08 Change to browse by: math quant-ph References & Citations INSPIRE HEP NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
-      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2608.25008",
-      "chinese_summary": {
-        "problem": "如何从代数几何的二次曲面网格构造出实四维空间中具有奇偶性证明的 Kochen-Specker 构型，并统一解释已知例外构型（如 F4、H4、Cabello、Peres）的来源。",
-        "method": "利用欧几里得极性对偶配对的非奇异二次曲面上的有限网格，通过其相交几何直接生成正交测量上下文和奇偶性证明；对特定子族，利用割线（secant lines）构造典范补全，从而得到无限族和已知例外构型。",
-        "innovation": "首次将 Kochen–Specker 构型的构造统一到射影几何框架中，用二次曲面上的网格和割线补全自然产生 F4、H4、Cabello 和 Peres 等构型；同时推广了已有的循环构造，并给出其几何解释。",
-        "evidence": "摘要提供了理论构造和若干实例的结果：最小情形恢复 Cabello 构型及其在 Peres 构型中的嵌入，前两个补全实例分别恢复 F4 和 H4 根构型；但没有给出具体计算数据或验证细节，需阅读全文确认。",
-        "limitations": "摘要未涉及构造的完整证明细节、网格选取的限制条件、以及补全过程的一般性；对非该子族配置的适用范围仍需全文核对。",
-        "why_relevant": "论文虽然使用经典射影几何和二次曲面（属于代数几何范畴），但其核心是 Kochen–Specker 构型，与我的研究方向（scheme、moduli、层论等现代代数几何）仅存在部分基础概念交集，如二次曲线和割线，缺少对 Spec、Proj、概形或叠等深层工具的使用，因此属于中等相关。"
-      },
-      "first_seen_at": "2026-08-27T10:54:01.142878+00:00",
-      "last_seen_at": "2026-08-27T10:54:01.142878+00:00",
-      "retained_from_previous_run": true
-    },
-    {
       "id": "2609.03449v1",
       "source": "arXiv",
       "title": "The Lie group-Lie algebra correspondence in tangent categories",
@@ -12882,7 +12461,7 @@
       },
       "first_seen_at": "2026-09-04T05:30:28.613950+00:00",
       "last_seen_at": "2026-09-04T05:30:28.613950+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2609.02826v1",
@@ -13468,7 +13047,7 @@
       },
       "first_seen_at": "2026-09-04T05:30:28.613950+00:00",
       "last_seen_at": "2026-09-04T05:30:28.613950+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2608.31060v1",
@@ -14210,7 +13789,7 @@
       },
       "first_seen_at": "2026-09-04T05:30:28.613950+00:00",
       "last_seen_at": "2026-09-04T05:30:28.613950+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2608.25682v1",
@@ -15116,7 +14695,7 @@
       },
       "first_seen_at": "2026-09-04T05:30:28.613950+00:00",
       "last_seen_at": "2026-09-04T05:30:28.613950+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2609.02980v1",
@@ -15232,7 +14811,7 @@
       },
       "first_seen_at": "2026-09-04T05:30:28.613950+00:00",
       "last_seen_at": "2026-09-04T05:30:28.613950+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2609.01789v1",
@@ -15610,7 +15189,7 @@
       },
       "first_seen_at": "2026-09-04T05:30:28.613950+00:00",
       "last_seen_at": "2026-09-04T05:30:28.613950+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2609.00758v1",
@@ -15995,7 +15574,7 @@
       },
       "first_seen_at": "2026-09-04T05:30:28.613950+00:00",
       "last_seen_at": "2026-09-04T05:30:28.613950+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2609.03191v1",
@@ -16116,7 +15695,7 @@
       },
       "first_seen_at": "2026-09-04T05:30:28.613950+00:00",
       "last_seen_at": "2026-09-04T05:30:28.613950+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2608.29900v1",
@@ -16350,136 +15929,6 @@
       },
       "first_seen_at": "2026-08-28T12:29:42.077745+00:00",
       "last_seen_at": "2026-08-28T12:29:42.077745+00:00",
-      "retained_from_previous_run": true
-    },
-    {
-      "id": "2608.25205v1",
-      "source": "arXiv",
-      "title": "Dimensions of type $A$ Hessenberg varieties over a fixed sheet",
-      "authors": [
-        "Megumi Harada",
-        "Martha Precup",
-        "Colleen Robichaux"
-      ],
-      "summary": "Hessenberg varieties $\\mathcal{H}\\mathrm{ess}(\\mathsf{X},\\mathbf{h})$ are subvarieties of the flag variety parameterized by a Hessenberg function $\\mathbf{h}: [n] \\to [n]$ and a matrix $\\mathsf{X} \\in \\mathfrak{gl}_n(\\mathbb{C})$. In recent work, Goldin and the second author showed the existence of flat degenerations of Hessenberg varieties to nilpotent Hessenberg varieties over the minimal sheet. This implies that all Hessenberg varieties over the minimal sheet have the same dimension. Our main result generalizes this dimension result to arbitrary sheets. Specifically, we prove that for a fixed Hessenberg function $\\mathbf{h}:[n] \\to [n]$, all Hessenberg varieties $\\mathcal{H}\\mathrm{ess}(\\mathsf{X},\\mathbf{h})$ defined in the type $A$ flag variety by linear operators $\\mathsf{X}$ from the same sheet of the Lie algebra $\\mathfrak{gl}_n(\\mathbb{C})$ have the same dimension.",
-      "published": "2026-08-25T22:45:37Z",
-      "updated": "2026-08-25T22:45:37Z",
-      "paper_url": "http://arxiv.org/abs/2608.25205v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.25205v1",
-      "categories": [
-        "math.AG",
-        "math.CO"
-      ],
-      "seed_topic": "motivic_k_theory",
-      "matches": [
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "score": 0.47,
-          "base_score": 0.422,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.048,
-          "level": "medium",
-          "reason": "关键词命中：variety、Spec；arXiv 分类重合：math.AG；时效加分 +0.05",
-          "keyword_hits": [
-            "variety",
-            "Spec"
-          ]
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "score": 0.236,
-          "base_score": 0.188,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.048,
-          "level": "low",
-          "reason": "arXiv 分类重合：math.AG；时效加分 +0.05",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "score": 0.23,
-          "base_score": 0.182,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.048,
-          "level": "low",
-          "reason": "arXiv 分类重合：math.AG；时效加分 +0.05",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "score": 0.057,
-          "base_score": 0.009,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.048,
-          "level": "low",
-          "reason": "时效加分 +0.05",
-          "keyword_hits": []
-        }
-      ],
-      "best_match": {
-        "topic_id": "algebraic_geometry",
-        "topic_name": "Algebraic Geometry",
-        "score": 0.47,
-        "base_score": 0.422,
-        "bridge_bonus": 0.0,
-        "preference_bonus": 0.0,
-        "recency_bonus": 0.048,
-        "level": "medium",
-        "reason": "关键词命中：variety、Spec；arXiv 分类重合：math.AG；时效加分 +0.05",
-        "keyword_hits": [
-          "variety",
-          "Spec"
-        ]
-      },
-      "top_labels": [
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "base_score": 0.422,
-          "score": 0.47,
-          "level": "medium",
-          "keyword_hits": [
-            "variety",
-            "Spec"
-          ]
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "base_score": 0.188,
-          "score": 0.236,
-          "level": "low",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "base_score": 0.182,
-          "score": 0.23,
-          "level": "low",
-          "keyword_hits": []
-        }
-      ],
-      "backfilled_from_recent_arxiv": true,
-      "newly_discovered_from_recent_arxiv": true,
-      "chinese_summary": {
-        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
-        "method": "Hessenberg varieties $\\mathcal{H}\\mathrm{ess}(\\mathsf{X},\\mathbf{h})$ are subvarieties of the flag variety parameterized by a Hessenberg function $\\mathbf{h}: [n] \\to [n]$ and a matrix $\\mathsf{X} \\in \\mathfrak{gl}_n(\\mathbb{C})$.",
-        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
-        "evidence": "来源摘要可在论文原文中核验。",
-        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
-        "why_relevant": "关键词命中：variety、Spec；arXiv 分类重合：math.AG；时效加分 +0.05"
-      },
-      "first_seen_at": "2026-08-27T10:54:01.142878+00:00",
-      "last_seen_at": "2026-08-27T10:54:01.142878+00:00",
       "retained_from_previous_run": true
     },
     {
@@ -18892,6 +18341,132 @@
       "retained_from_previous_run": true
     },
     {
+      "id": "2609.02819v1",
+      "source": "arXiv",
+      "title": "Adelic points and unmramified Brauer approximation for classifying stacks",
+      "authors": [
+        "Ajneet Dhillon"
+      ],
+      "summary": "Let $k$ be a number field and let $G$ be a connected linear algebraic group over $k$. We compare three approaches to strong approximation for the classifying stack $BG$ with respect to its full Brauer group: the homogeneous-space method of \\cite{DhillonClassifying}, Kottwitz's local--global sequence, and, for reductive groups, Borovoi's localization theorem. Under the natural identification \\[ Br(BG)/Br(k)\\simeq Pic(G), \\] we identify the Kottwitz and Borovoi obstruction maps with Brauer evaluation. The three approaches therefore give the same exact description of the localization image as the projected full Brauer--Manin set. We then study strong approximation with respect to the ordinary unramified Brauer group. We prove \\[ Br^{un}(BG)/ Br(k)\\simeq Sha^1_{\\mathrm{cyc}}(k,\\widehat G), \\qquad \\widehat G=X^*(G_{\\bar{k}}), \\] and give an exact local criterion for unramified Brauer approximation off a finite set of places. Examples show that this approximation can fail even when a finite place is omitted, and exhibit a torus for which the unramified Brauer group cuts out the global image as a proper subset of the adelic space.",
+      "published": "2026-09-02T17:06:53Z",
+      "updated": "2026-09-02T17:06:53Z",
+      "paper_url": "http://arxiv.org/abs/2609.02819v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.02819v1",
+      "categories": [
+        "math.NT"
+      ],
+      "seed_topic": "arithmetic_geometry",
+      "matches": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.432,
+          "base_score": 0.386,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "medium",
+          "reason": "关键词命中：number field；arXiv 分类重合：math.NT；时效加分 +0.05",
+          "keyword_hits": [
+            "number field"
+          ],
+          "llm_reason": "匹配我的研究方向主要体现在：研究对象涉及数域（number field）上的局部-整体原理、Galois 上同调、Brauer 群和 Pic 群，这些与算术几何中的 etale cohomology、Langlands 程序和 Shafarevich-Tate 群理论有概念性关联。但论文聚焦线性代数群的分类栈而非椭圆曲线、模形式或 p-adic Hodge 理论，且未直接触及 Galois 表示或 L-函数，因此相关性为中等，需人工复核题目中'classifying stacks'和'Brauer approximation'是否与本方向已有文献接轨。"
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.302,
+          "base_score": 0.256,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "low",
+          "reason": "关键词命中：Spec、Proj；时效加分 +0.05",
+          "keyword_hits": [
+            "Spec",
+            "Proj"
+          ]
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.076,
+          "base_score": 0.018,
+          "bridge_bonus": 0.012,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "low",
+          "reason": "homotopy ↔ K-theory；时效加分 +0.05",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.069,
+          "base_score": 0.011,
+          "bridge_bonus": 0.012,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "low",
+          "reason": "homotopy ↔ K-theory；时效加分 +0.05",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "arithmetic_geometry",
+        "topic_name": "Arithmetic Geometry",
+        "score": 0.432,
+        "base_score": 0.386,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.046,
+        "level": "medium",
+        "reason": "关键词命中：number field；arXiv 分类重合：math.NT；时效加分 +0.05",
+        "keyword_hits": [
+          "number field"
+        ],
+        "llm_reason": "匹配我的研究方向主要体现在：研究对象涉及数域（number field）上的局部-整体原理、Galois 上同调、Brauer 群和 Pic 群，这些与算术几何中的 etale cohomology、Langlands 程序和 Shafarevich-Tate 群理论有概念性关联。但论文聚焦线性代数群的分类栈而非椭圆曲线、模形式或 p-adic Hodge 理论，且未直接触及 Galois 表示或 L-函数，因此相关性为中等，需人工复核题目中'classifying stacks'和'Brauer approximation'是否与本方向已有文献接轨。"
+      },
+      "top_labels": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.386,
+          "score": 0.432,
+          "level": "medium",
+          "keyword_hits": [
+            "number field"
+          ]
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.256,
+          "score": 0.302,
+          "level": "low",
+          "keyword_hits": [
+            "Spec",
+            "Proj"
+          ]
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "fulltext_excerpt": "[2609.02819] Adelic points and unmramified Brauer approximation for classifying stacks Skip to main content Search arXiv Press Enter to search · Advanced search --> Mathematics > Number Theory arXiv:2609.02819 (math) [Submitted on 2 Sep 2026] Title: Adelic points and unmramified Brauer approximation for classifying stacks Authors: Ajneet Dhillon View a PDF of the paper titled Adelic points and unmramified Brauer approximation for classifying stacks, by Ajneet Dhillon View PDF HTML (experimental) Abstract: Let $k$ be a number field and let $G$ be a connected linear algebraic group over $k$. We compare three approaches to strong approximation for the classifying stack $BG$ with respect to its full Brauer group: the homogeneous-space method of \\cite{DhillonClassifying}, Kottwitz's local--global sequence, and, for reductive groups, Borovoi's localization theorem. Under the natural identification \\[ Br(BG)/Br(k)\\simeq Pic(G), \\] we identify the Kottwitz and Borovoi obstruction maps with Brauer evaluation. The three approaches therefore give the same exact description of the localization image as the projected full Brauer--Manin set. We then study strong approximation with respect to the ordinary unramified Brauer group. We prove \\[ Br^{un}(BG)/ Br(k)\\simeq Sha^1_{\\mathrm{cyc}}(k,\\widehat G), \\qquad \\widehat G=X^*(G_{\\bar{k}}), \\] and give an exact local criterion for unramified Brauer approximation off a finite set of places. Examples show that this approximation can fail even when a finite place is omitted, and exhibit a torus for which the unramified Brauer group cuts out the global image as a proper subset of the adelic space. Subjects: Number Theory (math.NT) Cite as: arXiv:2609.02819 [math.NT] (or arXiv:2609.02819v1 [math.NT] for this version) https://doi.org/10.48550/arXiv.2609.02819 Focus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: Ajneet Dhillon [ view email ] [v1] Wed, 2 Sep 2026 17:06:53 UTC (35 KB) Full-text links: Access Paper: View a PDF of the paper titled Adelic points and unmramified Brauer approximation for classifying stacks, by Ajneet Dhillon View PDF HTML (experimental) TeX Source view license Current browse context: math.NT < prev | next > new | recent | 2026-09 Change to browse by: math References & Citations NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
+      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2609.02819",
+      "chinese_summary": {
+        "problem": "该论文研究数域 k 上连通线性代数群 G 的分类栈 BG 的强逼近与 Brauer 阻碍问题。具体地，它需要精确描述 adelic 点在全 Brauer 群和普通未分歧 Brauer 群下的局部化像，并给出未分歧 Brauer 逼近的局部判据。",
+        "method": "将三种已有方法（齐次空间法、Kottwitz 局部-整体序列、Borovoi 局部化定理）统一到 Brauer 求值框架下，利用自然同构 Br(BG)/Br(k) ≃ Pic(G) 证明它们的障碍映射一致；随后通过计算 Br^un(BG)/Br(k) ≃ Sha^1_cyc(k, X^*(G_{\\bar{k}})) 并建立局部判据来研究未分歧 Brauer 逼近。",
+        "innovation": "首次系统地比较了处理分类栈 BG 强逼近的三种方法，并证明它们给出完全相同的局部化像描述；特别地，对未分歧 Brauer 群给出了精确的局部判据；并构造了反例说明省略有限位时未分歧 Brauer 逼近可能失败，还给出一个环面例子说明未分歧 Brauer 群在 adelic 空间中切出的像可以是真子集。",
+        "evidence": "摘要中提供了理论同构 Br^un(BG)/Br(k) ≃ Sha^1_cyc(k, \\widehat G) 和精确局部判据的陈述，并声称有例子表明逼近失效。这些属于理论证明层面的证据，但具体证明细节和数值或代数反例并未在摘要中展示。",
+        "limitations": "论文结果限于数域上的连通线性代数群及其分类栈，不直接覆盖其他算术对象；未在摘要中给出完整证明和具体构造，需阅读全文验证局部判据及反例；对未分歧 Brauer 群的处理依赖于经典 Brauer-Pic 同构和有限 Sha 理论，推广到更一般栈或模空间可能需要额外条件。",
+        "why_relevant": "匹配我的研究方向主要体现在：研究对象涉及数域（number field）上的局部-整体原理、Galois 上同调、Brauer 群和 Pic 群，这些与算术几何中的 etale cohomology、Langlands 程序和 Shafarevich-Tate 群理论有概念性关联。但论文聚焦线性代数群的分类栈而非椭圆曲线、模形式或 p-adic Hodge 理论，且未直接触及 Galois 表示或 L-函数，因此相关性为中等，需人工复核题目中'classifying stacks'和'Brauer approximation'是否与本方向已有文献接轨。"
+      },
+      "first_seen_at": "2026-09-05T05:15:37.177786+00:00",
+      "last_seen_at": "2026-09-05T05:15:37.177786+00:00",
+      "retained_from_previous_run": false
+    },
+    {
       "id": "2608.25406v1",
       "source": "arXiv",
       "title": "An elliptic K3 surface X/Q(t) with Mordell-Weil rank 17, I: Formulas for X and base changes of rank 18 and 19",
@@ -19020,6 +18595,131 @@
       "first_seen_at": "2026-08-27T10:54:01.142878+00:00",
       "last_seen_at": "2026-08-27T10:54:01.142878+00:00",
       "retained_from_previous_run": true
+    },
+    {
+      "id": "2609.02843v1",
+      "source": "arXiv",
+      "title": "Petersson-Rigid Lattices in a Census of 100 Rank-Three Root Bases",
+      "authors": [
+        "Eungang Cho"
+      ],
+      "summary": "The first paper worked out one family of four lattices in full -- $|\\det| = 12, 24, 36$ and $72$. This paper generalizes it. We enumerate the 44 symmetrizable rank-three hyperbolic Cartan matrices and their 56 depth-one edits, 100 root bases in all, and compute the obstruction space $S_{5/2}(ρ_L)$ of the 98 within our weight-$5/2$ budget: 10 vacuous, 34 unobstructed, 54 obstructed. The vacuous ten are the lattices Bruinier, Ehlen and Freitag call simple, read in signature $(2,3)$. Of their fifteen, our ten realize five; of the rest, five need more than three generators and cannot be the discriminant form of a rank-three lattice at all, three fail $|\\det L| = 2k^2$, and two are simply not root bases. Within the rank-three hyperbolic world the simple lattices are exactly the Feingold-Frenkel neighbours of index $k \\le 4$. The discriminant group $L'/L$ carries a finite quadratic form, and the finite group of its isometries acts on the weight-$3/2$ cusp forms for $ρ_L$, the bottom antisymmetric rung. We survey the lattices on which that action is absolutely irreducible of dimension at least two, so that the Petersson pairing there is pinned down up to a single scalar. The condition alone cuts the census to three: $L_4$ of the first paper, and two new ones at $|\\det| = 40$ and $88$. The quaternion discriminants that occur are 6, 10 and 22, the three for which the Shimura curve $X^D$ has genus zero. Rigidity uses no quaternion input, so we record it as an observation, not a characterisation. Both invariants of the first paper -- the shadow norm $\\|Ξ\\|^2$ and the Petersson scalar $t$ -- were single points there. Three rigid lattices instead of one are where their special faces come off: $\\|Ξ\\|^2$ generalizes against $L(f,1)$ where the first paper read $L(f,2)$, and $t$ against an elliptic curve's imaginary period where it read $Γ(1/3)$. Both numerically, to 26-58 digits.",
+      "published": "2026-09-02T17:29:00Z",
+      "updated": "2026-09-02T17:29:00Z",
+      "paper_url": "http://arxiv.org/abs/2609.02843v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.02843v1",
+      "categories": [
+        "math.NT",
+        "math.RT"
+      ],
+      "seed_topic": "arithmetic_geometry",
+      "matches": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.429,
+          "base_score": 0.383,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "medium",
+          "reason": "关键词命中：elliptic curve；arXiv 分类重合：math.NT；时效加分 +0.05",
+          "keyword_hits": [
+            "elliptic curve"
+          ],
+          "llm_reason": "论文属于math.NT且涉及elliptic curve、Shimura curve、模形式等概念，与算术几何中模形式、L-函数、椭圆曲线及Langlands纲领方向重合；但论文核心是格论、Cartan矩阵和模形式空间的结构，而非数域伽罗瓦表示或p-adic Hodge理论等我的具体研究问题，因此仅有间接关联。具体匹配关键词：elliptic curve、Shimura variety（相关）、L-function、modular forms等。"
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.186,
+          "base_score": 0.14,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "low",
+          "reason": "关键词命中：Spec；时效加分 +0.05",
+          "keyword_hits": [
+            "Spec"
+          ]
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.05,
+          "base_score": 0.004,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "low",
+          "reason": "时效加分 +0.05",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.049,
+          "base_score": 0.003,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "low",
+          "reason": "时效加分 +0.05",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "arithmetic_geometry",
+        "topic_name": "Arithmetic Geometry",
+        "score": 0.429,
+        "base_score": 0.383,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.046,
+        "level": "medium",
+        "reason": "关键词命中：elliptic curve；arXiv 分类重合：math.NT；时效加分 +0.05",
+        "keyword_hits": [
+          "elliptic curve"
+        ],
+        "llm_reason": "论文属于math.NT且涉及elliptic curve、Shimura curve、模形式等概念，与算术几何中模形式、L-函数、椭圆曲线及Langlands纲领方向重合；但论文核心是格论、Cartan矩阵和模形式空间的结构，而非数域伽罗瓦表示或p-adic Hodge理论等我的具体研究问题，因此仅有间接关联。具体匹配关键词：elliptic curve、Shimura variety（相关）、L-function、modular forms等。"
+      },
+      "top_labels": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.383,
+          "score": 0.429,
+          "level": "medium",
+          "keyword_hits": [
+            "elliptic curve"
+          ]
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.14,
+          "score": 0.186,
+          "level": "low",
+          "keyword_hits": [
+            "Spec"
+          ]
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "fulltext_excerpt": "[2609.02843] Petersson-Rigid Lattices in a Census of 100 Rank-Three Root Bases Skip to main content Search arXiv Press Enter to search · Advanced search --> Mathematics > Number Theory arXiv:2609.02843 (math) [Submitted on 2 Sep 2026] Title: Petersson-Rigid Lattices in a Census of 100 Rank-Three Root Bases Authors: Eungang Cho View a PDF of the paper titled Petersson-Rigid Lattices in a Census of 100 Rank-Three Root Bases, by Eungang Cho View PDF HTML (experimental) Abstract: The first paper worked out one family of four lattices in full -- $|\\det| = 12, 24, 36$ and $72$. This paper generalizes it. We enumerate the 44 symmetrizable rank-three hyperbolic Cartan matrices and their 56 depth-one edits, 100 root bases in all, and compute the obstruction space $S_{5/2}(\\rho_L)$ of the 98 within our weight-$5/2$ budget: 10 vacuous, 34 unobstructed, 54 obstructed. The vacuous ten are the lattices Bruinier, Ehlen and Freitag call simple, read in signature $(2,3)$. Of their fifteen, our ten realize five; of the rest, five need more than three generators and cannot be the discriminant form of a rank-three lattice at all, three fail $|\\det L| = 2k^2$, and two are simply not root bases. Within the rank-three hyperbolic world the simple lattices are exactly the Feingold-Frenkel neighbours of index $k \\le 4$. The discriminant group $L'/L$ carries a finite quadratic form, and the finite group of its isometries acts on the weight-$3/2$ cusp forms for $\\rho_L$, the bottom antisymmetric rung. We survey the lattices on which that action is absolutely irreducible of dimension at least two, so that the Petersson pairing there is pinned down up to a single scalar. The condition alone cuts the census to three: $L_4$ of the first paper, and two new ones at $|\\det| = 40$ and $88$. The quaternion discriminants that occur are 6, 10 and 22, the three for which the Shimura curve $X^D$ has genus zero. Rigidity uses no quaternion input, so we record it as an observation, not a characterisation. Both invariants of the first paper -- the shadow norm $\\|\\Xi\\|^2$ and the Petersson scalar $t$ -- were single points there. Three rigid lattices instead of one are where their special faces come off: $\\|\\Xi\\|^2$ generalizes against $L(f,1)$ where the first paper read $L(f,2)$, and $t$ against an elliptic curve's imaginary period where it read $\\Gamma(1/3)$. Both numerically, to 26-58 digits. Comments: 37 pages. Reproduction archive at DOI https://doi.org/10.5281/zenodo.22257942 . Anthropic's Claude was used for verification computations, archive preparation, and editorial revision; all mathematical claims were checked by the author Subjects: Number Theory (math.NT) ; Representation Theory (math.RT) MSC classes: 11F27, 11F37, 17B67, 11E20 Cite as: arXiv:2609.02843 [math.NT] (or arXiv:2609.02843v1 [math.NT] for this version) https://doi.org/10.48550/arXiv.2609.02843 Focus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: Eungang Cho [ view email ] [v1] Wed, 2 Sep 2026 17:29:00 UTC (974 KB) Full-text links: Access Paper: View a PDF of the paper titled Petersson-Rigid Lattices in a Census of 100 Rank-Three Root Bases, by Eungang Cho View PDF HTML (experimental) TeX Source view license Current browse context: math.NT < prev | next > new | recent | 2026-09 Change to browse by: math math.RT References & Citations NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
+      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2609.02843",
+      "chinese_summary": {
+        "problem": "推广前篇仅处理4个格的工作，系统枚举100个秩三对称化超几何Cartan矩阵对应的根格（root bases），并确定其中哪些格上的Petersson配对（Petersson pairing）可以被唯一固定（即刚性），同时计算对应模形式的障碍空间。",
+        "method": "通过枚举44个对称化秩三Cartan矩阵及其56个深度一次编辑共得100个根基，针对每个格计算其判别型群的不变式，并利用weight-3/2尖点形式与格L'/L上的有限二次型等距群作用，分析weight-5/2模形式空间S_{5/2}(ρ_L)的维数或障碍；对满足绝对不可约二维作用的格进一步确定Petersson内积的单一标量自由度，并通过数值计算验证相关L-值和椭圆曲线周期。",
+        "innovation": "将研究对象从4个格扩展到100个，首次全面计算了其中98个格的障碍空间分布（10空、34无碍、54受阻）；证明了简单格（Bruinier-Ehlen-Freitag意义下）在秩三双曲世界中恰好是Feingold-Frenkel邻指标k≤4的那些；识别出三个Petersson刚性格（|det|=40,88以及前文的L4），且这些格对应的四元数判别式6、10、22恰好使Shimura曲线X^D亏格为0；把前文的两个不变量（shadow范数和Petersson标量）从单点推广为多格上的泛化，并与L(f,1)和椭圆曲线虚周期建立数值联系。",
+        "evidence": "摘要给出具体数值结果：100个根基中98个在5/2权预算内计算得到10个空、34个无碍、54个受阻；十个空对应简单格，其中5个可由秩三格实现；三个刚性格分别在行列式40、88和L4（行列式12? 原文未明确但第一篇文章给出）；四元数判别式为6,10,22时Shimura曲线亏格为零；数值计算精度达26-58位。但所有计算细节和证明需查阅全文确认。",
+        "limitations": "摘要未提供具体定义的符号（如ρ_L、S_{5/2}）和计算流程，需依赖前篇论文；关于刚性的结论以观察而非特征化形式陈述，可能缺少完整分类性证明；Petersson配对的唯一性仅在绝对不可约二维作用的条件下得到，是否覆盖全部情形需核实。",
+        "why_relevant": "论文属于math.NT且涉及elliptic curve、Shimura curve、模形式等概念，与算术几何中模形式、L-函数、椭圆曲线及Langlands纲领方向重合；但论文核心是格论、Cartan矩阵和模形式空间的结构，而非数域伽罗瓦表示或p-adic Hodge理论等我的具体研究问题，因此仅有间接关联。具体匹配关键词：elliptic curve、Shimura variety（相关）、L-function、modular forms等。"
+      },
+      "first_seen_at": "2026-09-05T05:15:37.177786+00:00",
+      "last_seen_at": "2026-09-05T05:15:37.177786+00:00",
+      "retained_from_previous_run": false
     },
     {
       "id": "2608.26300v1",
@@ -19420,6 +19120,230 @@
       "retained_from_previous_run": true
     },
     {
+      "id": "2609.01350v1",
+      "source": "arXiv",
+      "title": "New classes of trace-form permutation polynomials and their compositional inverses",
+      "authors": [
+        "Kirpa Garg"
+      ],
+      "summary": "We construct permutation polynomials of the form x + γTr^{q^2}_q(h(x)) over the finite field F_{q^2}. More precisely, we present two families ofpermutation polynomials whose coefficients range over all elements of the field rather than being restricted to a proper subfield. We also compute the compositional inverses of both families. Our techniques involve the evaluation of certain Kloosterman sums together with the analysis of some equations over finite fields, and we believe these can be of independent interest.",
+      "published": "2026-09-01T14:56:32Z",
+      "updated": "2026-09-01T14:56:32Z",
+      "paper_url": "http://arxiv.org/abs/2609.01350v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.01350v1",
+      "categories": [
+        "math.NT",
+        "cs.IT"
+      ],
+      "seed_topic": "arithmetic_geometry",
+      "matches": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.42,
+          "base_score": 0.376,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.044,
+          "level": "medium",
+          "reason": "关键词命中：finite field；arXiv 分类重合：math.NT；时效加分 +0.04",
+          "keyword_hits": [
+            "finite field"
+          ],
+          "llm_reason": "论文涉及有限域 F_{q^2}，与我的研究方向中 finite field、local field 等关键词有一定交集，同时 arXiv 分类 math.NT 与我所在数论领域重合；但置换多项式属于有限域组合/编码方向，而我的研究重心在 Galois 表示、p 进 Hodge 理论、代数几何及丢番图几何，因此关联并非核心。"
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.05,
+          "base_score": 0.006,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.044,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.047,
+          "base_score": 0.003,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.044,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.044,
+          "base_score": 0.0,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.044,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "arithmetic_geometry",
+        "topic_name": "Arithmetic Geometry",
+        "score": 0.42,
+        "base_score": 0.376,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.044,
+        "level": "medium",
+        "reason": "关键词命中：finite field；arXiv 分类重合：math.NT；时效加分 +0.04",
+        "keyword_hits": [
+          "finite field"
+        ],
+        "llm_reason": "论文涉及有限域 F_{q^2}，与我的研究方向中 finite field、local field 等关键词有一定交集，同时 arXiv 分类 math.NT 与我所在数论领域重合；但置换多项式属于有限域组合/编码方向，而我的研究重心在 Galois 表示、p 进 Hodge 理论、代数几何及丢番图几何，因此关联并非核心。"
+      },
+      "top_labels": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.376,
+          "score": 0.42,
+          "level": "medium",
+          "keyword_hits": [
+            "finite field"
+          ]
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "fulltext_excerpt": "[2609.01350] New classes of trace-form permutation polynomials and their compositional inverses Skip to main content Search arXiv Press Enter to search · Advanced search --> Mathematics > Number Theory arXiv:2609.01350 (math) [Submitted on 1 Sep 2026] Title: New classes of trace-form permutation polynomials and their compositional inverses Authors: Kirpa Garg View a PDF of the paper titled New classes of trace-form permutation polynomials and their compositional inverses, by Kirpa Garg View PDF HTML (experimental) Abstract: We construct permutation polynomials of the form x + \\gamma Tr^{q^2}_q(h(x)) over the finite field F_{q^2}. More precisely, we present two families ofpermutation polynomials whose coefficients range over all elements of the field rather than being restricted to a proper subfield. We also compute the compositional inverses of both families. Our techniques involve the evaluation of certain Kloosterman sums together with the analysis of some equations over finite fields, and we believe these can be of independent interest. Subjects: Number Theory (math.NT) ; Information Theory (cs.IT) MSC classes: 11T06, 12E20 Cite as: arXiv:2609.01350 [math.NT] (or arXiv:2609.01350v1 [math.NT] for this version) https://doi.org/10.48550/arXiv.2609.01350 Focus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: Kirpa Garg [ view email ] [v1] Tue, 1 Sep 2026 14:56:32 UTC (28 KB) Full-text links: Access Paper: View a PDF of the paper titled New classes of trace-form permutation polynomials and their compositional inverses, by Kirpa Garg View PDF HTML (experimental) TeX Source view license Current browse context: math.NT < prev | next > new | recent | 2026-09 Change to browse by: cs cs.IT math math.IT References & Citations NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
+      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2609.01350",
+      "chinese_summary": {
+        "problem": "构造有限域 F_{q^2} 上形式为 x + γTr^{q^2}_q(h(x)) 的置换多项式，且要求系数遍历整个域而非限制于子域，并同时计算其合成逆。",
+        "method": "使用 Kloosterman 和求值技术，结合对有限域上某些方程的分析，从而构造两类置换多项式并计算其合成逆；这些技术和方程处理方法可能具有独立意义。",
+        "innovation": "提出了两类新的迹形置换多项式，其系数允许取遍整个域 F_{q^2}，突破了已有结果中系数常限制在子域的限制；同时给出了这两类多项式的显式合成逆表达式。",
+        "evidence": "摘要中明确给出了构造和合成逆的计算结果，但未提供具体数值示例或实验数据；因此理论证明存在，但可验证的实例或详细推导需阅读全文确认。",
+        "limitations": "摘要未说明 q 的具体条件、多项式次数或 h(x) 的形式，也未讨论逆的复杂度及在编码、密码学中的实际性能，需要阅读全文验证通用性和实用性。",
+        "why_relevant": "论文涉及有限域 F_{q^2}，与我的研究方向中 finite field、local field 等关键词有一定交集，同时 arXiv 分类 math.NT 与我所在数论领域重合；但置换多项式属于有限域组合/编码方向，而我的研究重心在 Galois 表示、p 进 Hodge 理论、代数几何及丢番图几何，因此关联并非核心。"
+      },
+      "first_seen_at": "2026-09-05T05:15:37.177786+00:00",
+      "last_seen_at": "2026-09-05T05:15:37.177786+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "2609.03347v1",
+      "source": "arXiv",
+      "title": "Conical Defects in JT Gravity from BF Theory: Quantization, Fusion, and Weighted Moduli Spaces",
+      "authors": [
+        "Wei Gu"
+      ],
+      "summary": "We construct a gauge-invariant BF representative of a conical defect in Jackiw--Teitelboim gravity, with its elliptic direction fixed by the reconstruction of the gravitational variables. In the gravitational sector, the BF observable reproduces the metric defect insertion and its distributional curvature source, and fixes the holonomy around the defect to an elliptic conjugacy class. For a single defect on the disk, the position integral combines with the residual \\(\\mathrm{PSL}(2,\\mathbb R)\\) quotient, leaving a fixed elliptic sector. The exact boundary quantization of this sector gives the elementary kernel and one-defect disk amplitude directly, without using a matrix model. The same local BF operator describes both sharp and blunt defects. Their difference appears only when several defect positions are integrated. BF source composition makes the fractional deficits additive. Requiring a fused source to remain in the gravitational cone sector gives the admissibility condition for defect collisions, while positivity of the hyperbolic area on each component gives the corresponding stability condition. These conditions coincide with those for Hassett weighted curves. Combining these BF results with the known Hassett compactification and conical Weil--Petersson geometry yields the fixed-order genus-zero contact terms and recovers the cluster expansion of deformed JT gravity. Thus sharp and blunt defects differ through the compactified geometry of their relative positions, rather than through the elementary BF operator.",
+      "published": "2026-09-03T04:09:16Z",
+      "updated": "2026-09-03T04:09:16Z",
+      "paper_url": "http://arxiv.org/abs/2609.03347v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.03347v1",
+      "categories": [
+        "hep-th",
+        "math.AG"
+      ],
+      "seed_topic": "motivic_k_theory",
+      "matches": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.414,
+          "base_score": 0.367,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.047,
+          "level": "medium",
+          "reason": "关键词命中：moduli space；arXiv 分类重合：math.AG；时效加分 +0.05",
+          "keyword_hits": [
+            "moduli space"
+          ],
+          "llm_reason": "论文标题和摘要明确涉及 weighted moduli spaces 和 Hassett 加权曲线紧化，对应于代数几何中的 moduli of weighted pointed stable curves，与本人的 moduli spaces、algebraic stacks、intersection theory 研究方向有具体交叉点（特别是 Hassett 空间）；然而文章核心是量子引力中 BF 理论的量子化和融合，并非以建立代数几何新结果为主，因此属于中等相关，需要人工判断是否深入阅读。"
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.175,
+          "base_score": 0.128,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.047,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.05",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.174,
+          "base_score": 0.127,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.047,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.05",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.055,
+          "base_score": 0.008,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.047,
+          "level": "low",
+          "reason": "时效加分 +0.05",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "algebraic_geometry",
+        "topic_name": "Algebraic Geometry",
+        "score": 0.414,
+        "base_score": 0.367,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.047,
+        "level": "medium",
+        "reason": "关键词命中：moduli space；arXiv 分类重合：math.AG；时效加分 +0.05",
+        "keyword_hits": [
+          "moduli space"
+        ],
+        "llm_reason": "论文标题和摘要明确涉及 weighted moduli spaces 和 Hassett 加权曲线紧化，对应于代数几何中的 moduli of weighted pointed stable curves，与本人的 moduli spaces、algebraic stacks、intersection theory 研究方向有具体交叉点（特别是 Hassett 空间）；然而文章核心是量子引力中 BF 理论的量子化和融合，并非以建立代数几何新结果为主，因此属于中等相关，需要人工判断是否深入阅读。"
+      },
+      "top_labels": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.367,
+          "score": 0.414,
+          "level": "low",
+          "keyword_hits": [
+            "moduli space"
+          ]
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "chinese_summary": {
+        "problem": "在 Jackiw–Teitelboim（JT）引力中，如何用 BF 理论构造一个规范不变的锥形缺陷表示，使得单个缺陷的精确量子化、缺陷融合规则以及尖/钝缺陷的区分都能在 BF 算子和加权模空间的几何中得到统一描述。",
+        "method": "采用规范不变的 BF 可观察量表示锥形缺陷，通过重建引力变量固定椭圆方向；对圆盘上单缺陷位置积分并处理 PSL(2,R) 商，用边界精确量子化得到 elementary kernel 和单缺陷幅度。缺陷融合通过 BF 源合成实现，合成源位于引力锥内给出 admissibility 条件，双曲面积为正给出稳定性条件，并对照 Hassett 加权曲线紧化的条件，最后结合锥形 Weil–Petersson 几何得到接触项和 cluster expansion。",
+        "innovation": "1) 用同一 BF 局域算子统一描述 sharp 和 blunt 缺陷，两种缺陷的差异被归结为多缺陷位置紧化几何，而非局域算子本身；2) 从 BF 源合成和面积约束自然地推出缺陷碰撞的容许条件与稳定性条件，并证明它们与 Hassett 加权曲线的模空间条件一致；3) 在不依赖矩阵模型的情况下，通过边界量子化直接给出单缺陷盘振幅。",
+        "evidence": "摘要提供的理论推导和计算结果表明单缺陷盘振幅可直接得到，且明确写出与 Hassett 加权曲线条件的对应关系。没有涉及数值实验或物理观测数据，故属于形式化理论结论，但其中有具体量化结果。",
+        "limitations": "需要阅读全文确认 BF 构造的严格数学定义、量子化的正则处理细节、多缺陷推广到更高亏格与更一般的加权模空间的适用性，以及该文对代数几何本身是否提供新定理或只作为应用工具。",
+        "why_relevant": "论文标题和摘要明确涉及 weighted moduli spaces 和 Hassett 加权曲线紧化，对应于代数几何中的 moduli of weighted pointed stable curves，与本人的 moduli spaces、algebraic stacks、intersection theory 研究方向有具体交叉点（特别是 Hassett 空间）；然而文章核心是量子引力中 BF 理论的量子化和融合，并非以建立代数几何新结果为主，因此属于中等相关，需要人工判断是否深入阅读。"
+      },
+      "first_seen_at": "2026-09-05T05:15:37.177786+00:00",
+      "last_seen_at": "2026-09-05T05:15:37.177786+00:00",
+      "retained_from_previous_run": false
+    },
+    {
       "id": "2608.25921v1",
       "source": "arXiv",
       "title": "Uniform non-homogeneous bundles on quadrics",
@@ -19548,28 +19472,28 @@
     }
   ],
   "stats": {
-    "candidate_paper_count": 157,
-    "daily_candidate_paper_count": 157,
+    "candidate_paper_count": 134,
+    "daily_candidate_paper_count": 134,
     "raw_daily_candidate_count": 346,
-    "daily_outside_cutoff_count": 241,
-    "newly_discovered_backfill_count": 120,
+    "daily_outside_cutoff_count": 280,
+    "newly_discovered_backfill_count": 134,
     "daily_backfill_days": 14,
-    "daily_backfill_candidate_count": 57,
+    "daily_backfill_candidate_count": 74,
     "daily_backfill_added_count": 0,
     "min_daily_papers": 8,
     "filtered_low_relevance_count": 0,
-    "filtered_wrong_category_count": 68,
+    "filtered_wrong_category_count": 66,
     "filtered_disliked_count": 0,
     "arxiv_category_filter": [
-      "math.AT",
       "math.AG",
+      "math.KT",
       "math.NT",
-      "math.CT",
-      "math.KT"
+      "math.AT",
+      "math.CT"
     ],
     "days": 1,
     "collection_mode": "incremental",
-    "collection_cutoff_iso": "2026-09-03T05:28:11.989245+00:00",
+    "collection_cutoff_iso": "2026-09-04T05:30:28.613950+00:00",
     "max_per_topic": 25,
     "max_new_papers": 30,
     "sources": [
@@ -19611,12 +19535,12 @@
     "dropped_disliked_count": 0,
     "max_stored_papers": 150,
     "max_data_bytes": 8388608,
-    "data_bytes": 1516500,
+    "data_bytes": 1520427,
     "storage_trimmed_count": 30,
     "storage_trimmed_by_level": {
-      "high": 6,
-      "medium": 20,
-      "low": 4,
+      "high": 5,
+      "medium": 10,
+      "low": 15,
       "unknown": 0
     },
     "storage_limit_exceeded_by_likes": false
