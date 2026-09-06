@@ -1,6 +1,6 @@
 {
-  "generated_at": "Sat, 05 Sep 2026 05:15:37 +0000",
-  "generated_at_iso": "2026-09-05T05:15:37.177786+00:00",
+  "generated_at": "Sun, 06 Sep 2026 05:29:37 +0000",
+  "generated_at_iso": "2026-09-06T05:29:37.243709+00:00",
   "config_source": "file",
   "topics": [
     {
@@ -8110,7 +8110,7 @@
       },
       "first_seen_at": "2026-09-05T05:15:37.177786+00:00",
       "last_seen_at": "2026-09-05T05:15:37.177786+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2608.29400v1",
@@ -8360,7 +8360,7 @@
       },
       "first_seen_at": "2026-09-05T05:15:37.177786+00:00",
       "last_seen_at": "2026-09-05T05:15:37.177786+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2608.29288v1",
@@ -11827,7 +11827,7 @@
       },
       "first_seen_at": "2026-09-05T05:15:37.177786+00:00",
       "last_seen_at": "2026-09-05T05:15:37.177786+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2609.02198v1",
@@ -11945,7 +11945,7 @@
       },
       "first_seen_at": "2026-09-05T05:15:37.177786+00:00",
       "last_seen_at": "2026-09-05T05:15:37.177786+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2609.01843v1",
@@ -18464,137 +18464,135 @@
       },
       "first_seen_at": "2026-09-05T05:15:37.177786+00:00",
       "last_seen_at": "2026-09-05T05:15:37.177786+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
-      "id": "2608.25406v1",
+      "id": "2609.02123v1",
       "source": "arXiv",
-      "title": "An elliptic K3 surface X/Q(t) with Mordell-Weil rank 17, I: Formulas for X and base changes of rank 18 and 19",
+      "title": "Groups of Transverse Stratifications and the Hierarchy of Configuration Spaces",
       "authors": [
-        "Noam D. Elkies"
+        "Vassily Olegovich Manturov"
       ],
-      "summary": "In [Elkies 2006, Elkies 2007] we announced a K3 surface X/Q with Néron--Severi group NS(X) = NS_Q(X) of rank 19 and an elliptic fibration of Mordell--Weil rank 17. This is the largest possible Mordell--Weil rank over Q(t) for an elliptic K3 surface. One of the fibers of this surface is the elliptic curve of rank at least 28 that was the elliptic curve of highest rank known during the years 2006--2024. We further announced that there are quadratic base changes of this fibration to elliptic surfaces of Mordell--Weil rank 18 over Q(t), and that there are pairs of such quadratic base changes whose compositum is an elliptic surface of Mordell--Weil rank 19 over an elliptic curve E_0/Q with #(E_0(Q)) = \\infty, whence there are infinitely many elliptic curves of rank at least 19 over Q. We exhibit one such pair. A subsequent paper will show (using a technique also announced in [Elkies 2007] how we computed X and its fibration.",
-      "published": "2026-08-26T06:08:54Z",
-      "updated": "2026-08-26T06:08:54Z",
-      "paper_url": "http://arxiv.org/abs/2608.25406v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.25406v1",
+      "summary": "We introduce a broad family of groups $G(Γ)$ associated with transverse stratifications of moduli spaces. For a wide class of stratifications satisfying a natural local condition (transverse niceness), we construct a homomorphism from the fundamental group of the moduli space to the corresponding group $G(Γ)$. This general theorem, which is proved in the companion paper \\cite{Manturov2026}, provides a far-reaching generalization of the $G_n^k$-theory. The main goal of the present paper is to discuss numerous examples and situations where the transverse niceness property actually occurs. We describe various moduli spaces and stratifications that are transversely nice. In particular, we study the hierarchy of configuration spaces of points in the plane defined by algebraic curves and establish the transversality property for conic configurations. The general hierarchy problem is formulated in the final section.",
+      "published": "2026-09-02T05:26:10Z",
+      "updated": "2026-09-02T05:26:10Z",
+      "paper_url": "http://arxiv.org/abs/2609.02123v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.02123v1",
       "categories": [
-        "math.NT"
+        "math.AG"
       ],
-      "seed_topic": "algebraic_geometry",
+      "seed_topic": "motivic_k_theory",
       "matches": [
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "score": 0.432,
-          "base_score": 0.384,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.048,
-          "level": "medium",
-          "reason": "关键词命中：elliptic curve；arXiv 分类重合：math.NT；时效加分 +0.05",
-          "keyword_hits": [
-            "elliptic curve"
-          ]
-        },
         {
           "topic_id": "algebraic_geometry",
           "topic_name": "Algebraic Geometry",
-          "score": 0.293,
-          "base_score": 0.245,
+          "score": 0.43,
+          "base_score": 0.386,
           "bridge_bonus": 0.0,
           "preference_bonus": 0.0,
-          "recency_bonus": 0.048,
-          "level": "low",
-          "reason": "关键词命中：base change；时效加分 +0.05",
+          "recency_bonus": 0.044,
+          "level": "medium",
+          "reason": "关键词命中：moduli space；arXiv 分类重合：math.AG；时效加分 +0.04",
           "keyword_hits": [
-            "base change"
-          ]
+            "moduli space"
+          ],
+          "llm_reason": "论文标题包含 moduli spaces，arXiv 分类为 math.AG，命中关键词“moduli space”，且层级配置空间与平面代数曲线有联系，因此与我研究的模空间、配置空间等方向有一定交集。然而，论文核心焦点是基本群到相关群 G(Γ) 的同态和横截分层，而非 scheme、sheaf、相交理论、导出代数几何等经典代数几何工具，相关性偏向几何拓扑与配置空间的交叉，属于中等匹配。"
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.241,
+          "base_score": 0.197,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.044,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.238,
+          "base_score": 0.194,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.044,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": []
         },
         {
           "topic_id": "homotopy_theory",
           "topic_name": "Homotopy Theory",
-          "score": 0.186,
-          "base_score": 0.138,
+          "score": 0.059,
+          "base_score": 0.015,
           "bridge_bonus": 0.0,
           "preference_bonus": 0.0,
-          "recency_bonus": 0.048,
+          "recency_bonus": 0.044,
           "level": "low",
-          "reason": "关键词命中：fibration；时效加分 +0.05",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "algebraic_geometry",
+        "topic_name": "Algebraic Geometry",
+        "score": 0.43,
+        "base_score": 0.386,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.044,
+        "level": "medium",
+        "reason": "关键词命中：moduli space；arXiv 分类重合：math.AG；时效加分 +0.04",
+        "keyword_hits": [
+          "moduli space"
+        ],
+        "llm_reason": "论文标题包含 moduli spaces，arXiv 分类为 math.AG，命中关键词“moduli space”，且层级配置空间与平面代数曲线有联系，因此与我研究的模空间、配置空间等方向有一定交集。然而，论文核心焦点是基本群到相关群 G(Γ) 的同态和横截分层，而非 scheme、sheaf、相交理论、导出代数几何等经典代数几何工具，相关性偏向几何拓扑与配置空间的交叉，属于中等匹配。"
+      },
+      "top_labels": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.386,
+          "score": 0.43,
+          "level": "medium",
           "keyword_hits": [
-            "fibration"
+            "moduli space"
           ]
         },
         {
           "topic_id": "motivic_k_theory",
           "topic_name": "Motivic Homotopy & K-Theory",
-          "score": 0.053,
-          "base_score": 0.005,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.048,
+          "base_score": 0.197,
+          "score": 0.241,
           "level": "low",
-          "reason": "时效加分 +0.05",
           "keyword_hits": []
-        }
-      ],
-      "best_match": {
-        "topic_id": "arithmetic_geometry",
-        "topic_name": "Arithmetic Geometry",
-        "score": 0.432,
-        "base_score": 0.384,
-        "bridge_bonus": 0.0,
-        "preference_bonus": 0.0,
-        "recency_bonus": 0.048,
-        "level": "medium",
-        "reason": "关键词命中：elliptic curve；arXiv 分类重合：math.NT；时效加分 +0.05",
-        "keyword_hits": [
-          "elliptic curve"
-        ]
-      },
-      "top_labels": [
+        },
         {
           "topic_id": "arithmetic_geometry",
           "topic_name": "Arithmetic Geometry",
-          "base_score": 0.384,
-          "score": 0.432,
-          "level": "medium",
-          "keyword_hits": [
-            "elliptic curve"
-          ]
-        },
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "base_score": 0.245,
-          "score": 0.293,
+          "base_score": 0.194,
+          "score": 0.238,
           "level": "low",
-          "keyword_hits": [
-            "base change"
-          ]
-        },
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "base_score": 0.138,
-          "score": 0.186,
-          "level": "low",
-          "keyword_hits": [
-            "fibration"
-          ]
+          "keyword_hits": []
         }
       ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "fulltext_excerpt": "[2609.02123] Groups of Transverse Stratifications and the Hierarchy of Configuration Spaces Skip to main content Search arXiv Press Enter to search · Advanced search --> Mathematics > Algebraic Geometry arXiv:2609.02123 (math) [Submitted on 2 Sep 2026] Title: Groups of Transverse Stratifications and the Hierarchy of Configuration Spaces Authors: Vassily Olegovich Manturov View a PDF of the paper titled Groups of Transverse Stratifications and the Hierarchy of Configuration Spaces, by Vassily Olegovich Manturov View PDF HTML (experimental) Abstract: We introduce a broad family of groups $G(\\Gamma)$ associated with transverse stratifications of moduli spaces. For a wide class of stratifications satisfying a natural local condition (transverse niceness), we construct a homomorphism from the fundamental group of the moduli space to the corresponding group $G(\\Gamma)$. This general theorem, which is proved in the companion paper \\cite{Manturov2026}, provides a far-reaching generalization of the $G_n^k$-theory. The main goal of the present paper is to discuss numerous examples and situations where the transverse niceness property actually occurs. We describe various moduli spaces and stratifications that are transversely nice. In particular, we study the hierarchy of configuration spaces of points in the plane defined by algebraic curves and establish the transversality property for conic configurations. The general hierarchy problem is formulated in the final section. Comments: 9 pages Subjects: Algebraic Geometry (math.AG) MSC classes: Primary 20F36, Secondary 57M60, 14H10, 32S60, 20F65 Cite as: arXiv:2609.02123 [math.AG] (or arXiv:2609.02123v1 [math.AG] for this version) https://doi.org/10.48550/arXiv.2609.02123 Focus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: Vassily Manturov Olegovich [ view email ] [v1] Wed, 2 Sep 2026 05:26:10 UTC (8 KB) Full-text links: Access Paper: View a PDF of the paper titled Groups of Transverse Stratifications and the Hierarchy of Configuration Spaces, by Vassily Olegovich Manturov View PDF HTML (experimental) TeX Source view license Current browse context: math.AG < prev | next > new | recent | 2026-09 Change to browse by: math References & Citations NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
+      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2609.02123",
       "chinese_summary": {
-        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
-        "method": "In [Elkies 2006, Elkies 2007] we announced a K3 surface X/Q with Néron--Severi group NS(X) = NS_Q(X) of rank 19 and an elliptic fibration of Mordell--Weil rank 17.",
-        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
-        "evidence": "来源摘要可在论文原文中核验。",
-        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
-        "why_relevant": "关键词命中：elliptic curve；arXiv 分类重合：math.NT；时效加分 +0.05"
+        "problem": "论文旨在引入一族与模空间横截分层相关联的群 G(Γ)，并研究何时能从模空间的基本群构造到 G(Γ) 的同态；特别地，探讨由代数曲线定义的平面配置空间点的层级结构及其横截性质。",
+        "method": "核心方法是：对满足“横截好”(transverse niceness) 自然局部分层的模空间，构造从模空间基本群到对应群 G(Γ) 的同态。论文主要通过大量例子和具体情境来验证横截好性质确实成立，其中重点研究了平面配置空间点的层级，并证明了圆锥配置（conic configurations）的横截性。",
+        "innovation": "创新点主要体现在：1) 将已有的 G_n^k 理论推广到更宽泛的模空间横截分层框架中，统一构造基本群同态；2) 建立代数曲线定义的配置空间点层级与圆锥配置的横截性质，从而为一般层级问题提供具体案例；3) 提出并形式化“一般层级问题”作为后续研究方向。这些内容需要结合 companion paper 中的证明才能完整评估其技术深度。",
+        "evidence": "摘要中未提供任何可核验的实验或系统证据；仅声称一般性定理在伴生论文中证明，本文主要提供例子和情境说明。因此，关于同态构造的严格证明、横截好性质的具体判定标准以及圆锥配置的完整推演，均需查阅原文和引用文献后才可验证。",
+        "limitations": "局限性包括：摘要未给出“横截好”的严格定义，也未展示同态构造的关键步骤；圆锥配置横截性的论证细节和适用范围不明；一般层级问题的可解性缺乏预览；此外，论文可能依赖较深的群论与拓扑知识，且与代数几何主流的层/模空间/叠工具交集有限，需人工复核全文以确认其技术价值。",
+        "why_relevant": "论文标题包含 moduli spaces，arXiv 分类为 math.AG，命中关键词“moduli space”，且层级配置空间与平面代数曲线有联系，因此与我研究的模空间、配置空间等方向有一定交集。然而，论文核心焦点是基本群到相关群 G(Γ) 的同态和横截分层，而非 scheme、sheaf、相交理论、导出代数几何等经典代数几何工具，相关性偏向几何拓扑与配置空间的交叉，属于中等匹配。"
       },
-      "first_seen_at": "2026-08-27T10:54:01.142878+00:00",
-      "last_seen_at": "2026-08-27T10:54:01.142878+00:00",
-      "retained_from_previous_run": true
+      "first_seen_at": "2026-09-06T05:29:37.243709+00:00",
+      "last_seen_at": "2026-09-06T05:29:37.243709+00:00",
+      "retained_from_previous_run": false
     },
     {
       "id": "2609.02843v1",
@@ -18719,7 +18717,7 @@
       },
       "first_seen_at": "2026-09-05T05:15:37.177786+00:00",
       "last_seen_at": "2026-09-05T05:15:37.177786+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2608.26300v1",
@@ -19230,7 +19228,7 @@
       },
       "first_seen_at": "2026-09-05T05:15:37.177786+00:00",
       "last_seen_at": "2026-09-05T05:15:37.177786+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2609.03347v1",
@@ -19341,7 +19339,7 @@
       },
       "first_seen_at": "2026-09-05T05:15:37.177786+00:00",
       "last_seen_at": "2026-09-05T05:15:37.177786+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2608.25921v1",
@@ -19472,28 +19470,28 @@
     }
   ],
   "stats": {
-    "candidate_paper_count": 134,
-    "daily_candidate_paper_count": 134,
+    "candidate_paper_count": 126,
+    "daily_candidate_paper_count": 126,
     "raw_daily_candidate_count": 346,
     "daily_outside_cutoff_count": 280,
-    "newly_discovered_backfill_count": 134,
+    "newly_discovered_backfill_count": 126,
     "daily_backfill_days": 14,
-    "daily_backfill_candidate_count": 74,
+    "daily_backfill_candidate_count": 80,
     "daily_backfill_added_count": 0,
     "min_daily_papers": 8,
     "filtered_low_relevance_count": 0,
     "filtered_wrong_category_count": 66,
     "filtered_disliked_count": 0,
     "arxiv_category_filter": [
-      "math.AG",
       "math.KT",
-      "math.NT",
+      "math.AG",
       "math.AT",
+      "math.NT",
       "math.CT"
     ],
     "days": 1,
     "collection_mode": "incremental",
-    "collection_cutoff_iso": "2026-09-04T05:30:28.613950+00:00",
+    "collection_cutoff_iso": "2026-09-05T05:15:37.177786+00:00",
     "max_per_topic": 25,
     "max_new_papers": 30,
     "sources": [
@@ -19535,12 +19533,12 @@
     "dropped_disliked_count": 0,
     "max_stored_papers": 150,
     "max_data_bytes": 8388608,
-    "data_bytes": 1520427,
+    "data_bytes": 1527240,
     "storage_trimmed_count": 30,
     "storage_trimmed_by_level": {
       "high": 5,
-      "medium": 10,
-      "low": 15,
+      "medium": 6,
+      "low": 19,
       "unknown": 0
     },
     "storage_limit_exceeded_by_likes": false
