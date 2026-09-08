@@ -1,6 +1,6 @@
 {
-  "generated_at": "Mon, 07 Sep 2026 05:41:13 +0000",
-  "generated_at_iso": "2026-09-07T05:41:13.459497+00:00",
+  "generated_at": "Tue, 08 Sep 2026 05:35:55 +0000",
+  "generated_at_iso": "2026-09-08T05:35:55.622095+00:00",
   "config_source": "file",
   "topics": [
     {
@@ -1126,7 +1126,7 @@
       },
       "first_seen_at": "2026-09-07T05:41:13.459497+00:00",
       "last_seen_at": "2026-09-07T05:41:13.459497+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2609.00567v1",
@@ -2739,7 +2739,7 @@
       },
       "first_seen_at": "2026-09-07T05:41:13.459497+00:00",
       "last_seen_at": "2026-09-07T05:41:13.459497+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2608.29470v1",
@@ -3375,7 +3375,7 @@
       },
       "first_seen_at": "2026-09-07T05:41:13.459497+00:00",
       "last_seen_at": "2026-09-07T05:41:13.459497+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2608.28438v1",
@@ -3646,7 +3646,7 @@
       },
       "first_seen_at": "2026-09-07T05:41:13.459497+00:00",
       "last_seen_at": "2026-09-07T05:41:13.459497+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2608.29587v1",
@@ -5189,7 +5189,7 @@
       },
       "first_seen_at": "2026-09-07T05:41:13.459497+00:00",
       "last_seen_at": "2026-09-07T05:41:13.459497+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2608.28465v1",
@@ -5476,7 +5476,7 @@
       },
       "first_seen_at": "2026-09-07T05:41:13.459497+00:00",
       "last_seen_at": "2026-09-07T05:41:13.459497+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2609.03171v1",
@@ -6406,7 +6406,7 @@
       },
       "first_seen_at": "2026-09-07T05:41:13.459497+00:00",
       "last_seen_at": "2026-09-07T05:41:13.459497+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2609.00299v1",
@@ -8607,7 +8607,7 @@
       },
       "first_seen_at": "2026-09-07T05:41:13.459497+00:00",
       "last_seen_at": "2026-09-07T05:41:13.459497+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2609.04155v1",
@@ -10131,143 +10131,6 @@
       "retained_from_previous_run": true
     },
     {
-      "id": "2608.26393v1",
-      "source": "arXiv",
-      "title": "Isocrystals on unibranch varieties and open immersions",
-      "authors": [
-        "Adrian Langer",
-        "Lei Zhang"
-      ],
-      "summary": "We prove that for a connected, geometrically unibranch variety $X$ over a perfect field of positive characteristic and a dense open subset $U \\subset X$, the canonical homomorphism between the Tannaka duals of the categories of overconvergent isocrystals is a quotient map. We also show that the analogous statement for convergent isocrystals, and for all isocrystals, fails. The counterexample is based on Crew's construction of a unit-root $F$-isocrystal that is convergent but not overconvergent.",
-      "published": "2026-08-26T20:40:10Z",
-      "updated": "2026-08-26T20:40:10Z",
-      "paper_url": "http://arxiv.org/abs/2608.26393v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.26393v1",
-      "categories": [
-        "math.AG",
-        "math.NT"
-      ],
-      "seed_topic": "motivic_k_theory",
-      "matches": [
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "score": 0.546,
-          "base_score": 0.499,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.047,
-          "level": "medium",
-          "reason": "关键词命中：open immersion、variety；arXiv 分类重合：math.AG；时效加分 +0.05",
-          "keyword_hits": [
-            "open immersion",
-            "variety"
-          ],
-          "llm_reason": "研究涉及open immersion、variety等代数几何核心对象，且X为scheme（正特征代数簇），与用户关键词\"open immersion\"、\"variety\"、\"morphism of schemes\"等匹配；但研究对象isocrystals属算术几何，与用户主线（schemes, sheaves, moduli等）存在交叉而非完全重合，故相关性中等。"
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "score": 0.367,
-          "base_score": 0.32,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.047,
-          "level": "low",
-          "reason": "关键词命中：Perf；arXiv 分类重合：math.AG；时效加分 +0.05",
-          "keyword_hits": [
-            "Perf"
-          ]
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "score": 0.237,
-          "base_score": 0.19,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.047,
-          "level": "low",
-          "reason": "arXiv 分类重合：math.AG、math.NT；时效加分 +0.05",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "score": 0.05,
-          "base_score": 0.003,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.047,
-          "level": "low",
-          "reason": "时效加分 +0.05",
-          "keyword_hits": []
-        }
-      ],
-      "best_match": {
-        "topic_id": "algebraic_geometry",
-        "topic_name": "Algebraic Geometry",
-        "score": 0.546,
-        "base_score": 0.499,
-        "bridge_bonus": 0.0,
-        "preference_bonus": 0.0,
-        "recency_bonus": 0.047,
-        "level": "medium",
-        "reason": "关键词命中：open immersion、variety；arXiv 分类重合：math.AG；时效加分 +0.05",
-        "keyword_hits": [
-          "open immersion",
-          "variety"
-        ],
-        "llm_reason": "研究涉及open immersion、variety等代数几何核心对象，且X为scheme（正特征代数簇），与用户关键词\"open immersion\"、\"variety\"、\"morphism of schemes\"等匹配；但研究对象isocrystals属算术几何，与用户主线（schemes, sheaves, moduli等）存在交叉而非完全重合，故相关性中等。"
-      },
-      "top_labels": [
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "base_score": 0.499,
-          "score": 0.546,
-          "level": "medium",
-          "keyword_hits": [
-            "open immersion",
-            "variety"
-          ]
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "base_score": 0.32,
-          "score": 0.367,
-          "level": "low",
-          "keyword_hits": [
-            "Perf"
-          ]
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "base_score": 0.19,
-          "score": 0.237,
-          "level": "low",
-          "keyword_hits": []
-        }
-      ],
-      "backfilled_from_recent_arxiv": true,
-      "newly_discovered_from_recent_arxiv": true,
-      "fulltext_excerpt": "[2608.26393] Isocrystals on unibranch varieties and open immersions Skip to main content Search arXiv Press Enter to search · Advanced search --> Mathematics > Algebraic Geometry arXiv:2608.26393 (math) [Submitted on 26 Aug 2026] Title: Isocrystals on unibranch varieties and open immersions Authors: Adrian Langer , Lei Zhang View a PDF of the paper titled Isocrystals on unibranch varieties and open immersions, by Adrian Langer and 1 other authors View PDF HTML (experimental) Abstract: We prove that for a connected, geometrically unibranch variety $X$ over a perfect field of positive characteristic and a dense open subset $U \\subset X$, the canonical homomorphism between the Tannaka duals of the categories of overconvergent isocrystals is a quotient map. We also show that the analogous statement for convergent isocrystals, and for all isocrystals, fails. The counterexample is based on Crew's construction of a unit-root $F$-isocrystal that is convergent but not overconvergent. Subjects: Algebraic Geometry (math.AG) ; Number Theory (math.NT) Cite as: arXiv:2608.26393 [math.AG] (or arXiv:2608.26393v1 [math.AG] for this version) https://doi.org/10.48550/arXiv.2608.26393 Focus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: Lei Zhang [ view email ] [v1] Wed, 26 Aug 2026 20:40:10 UTC (46 KB) Full-text links: Access Paper: View a PDF of the paper titled Isocrystals on unibranch varieties and open immersions, by Adrian Langer and 1 other authors View PDF HTML (experimental) TeX Source view license Current browse context: math.AG < prev | next > new | recent | 2026-08 Change to browse by: math math.NT References & Citations NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
-      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2608.26393",
-      "chinese_summary": {
-        "problem": "研究正特征完美域上连通几何单支簇的稠密开子集与整体簇之间各类isocrystal范畴的Tannaka对偶关系，特别是判定该同态何时为商映射。",
-        "method": "利用Tannaka对偶理论比较overconvergent isocrystals、convergent isocrystals及全体isocrystals的范畴；通过构造基于Crew的unit-root F-isocrystal反例，证明后两种情形下的对应断言不成立。",
-        "innovation": "首次系统阐明几何单支簇上稠密开子集诱导的isocrystal Tannaka对偶商性质，并揭示overconvergent与convergent情形在行为上的本质差异。",
-        "evidence": "摘要明确给出定理：对连通几何单支簇X和稠密开子集U，overconvergent isocrystals的Tannaka对偶同态是商映射；同时给出反例说明convergent及全体isocrystals的情形该断言失败。",
-        "limitations": "摘要未提供证明细节；反例仅针对unit-root F-isocrystal，其他类型是否影响结论需阅读全文确认。",
-        "why_relevant": "研究涉及open immersion、variety等代数几何核心对象，且X为scheme（正特征代数簇），与用户关键词\"open immersion\"、\"variety\"、\"morphism of schemes\"等匹配；但研究对象isocrystals属算术几何，与用户主线（schemes, sheaves, moduli等）存在交叉而非完全重合，故相关性中等。"
-      },
-      "first_seen_at": "2026-08-28T12:29:42.077745+00:00",
-      "last_seen_at": "2026-08-28T12:29:42.077745+00:00",
-      "retained_from_previous_run": true
-    },
-    {
       "id": "2608.30637v2",
       "source": "arXiv",
       "title": "Unit Indices of Shanks Orders",
@@ -10881,7 +10744,7 @@
       },
       "first_seen_at": "2026-09-07T05:41:13.459497+00:00",
       "last_seen_at": "2026-09-07T05:41:13.459497+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2609.02561v1",
@@ -12191,7 +12054,7 @@
       },
       "first_seen_at": "2026-09-07T05:41:13.459497+00:00",
       "last_seen_at": "2026-09-07T05:41:13.459497+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2609.03449v1",
@@ -12418,7 +12281,7 @@
       },
       "first_seen_at": "2026-09-07T05:41:13.459497+00:00",
       "last_seen_at": "2026-09-07T05:41:13.459497+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2609.02826v1",
@@ -13605,7 +13468,7 @@
       },
       "first_seen_at": "2026-09-07T05:41:13.459497+00:00",
       "last_seen_at": "2026-09-07T05:41:13.459497+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2609.03152v1",
@@ -14387,7 +14250,7 @@
       },
       "first_seen_at": "2026-09-07T05:41:13.459497+00:00",
       "last_seen_at": "2026-09-07T05:41:13.459497+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2609.03361v1",
@@ -15750,7 +15613,7 @@
       },
       "first_seen_at": "2026-09-07T05:41:13.459497+00:00",
       "last_seen_at": "2026-09-07T05:41:13.459497+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2608.28204v1",
@@ -16227,114 +16090,6 @@
       "retained_from_previous_run": true
     },
     {
-      "id": "2608.26514v1",
-      "source": "arXiv",
-      "title": "Period Relations for Theta Products and Elliptic Integral Moments",
-      "authors": [
-        "Dianbin Bao"
-      ],
-      "summary": "We develop a period-polynomial approach to relations among critical L-values of modular forms arising from theta products and elliptic integral moments. In particular, period relations provide a conceptual explanation for several known rational relations among moments of complete elliptic integrals that had previously been discovered through analytic or experimental methods.",
-      "published": "2026-08-27T01:30:57Z",
-      "updated": "2026-08-27T01:30:57Z",
-      "paper_url": "http://arxiv.org/abs/2608.26514v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.26514v1",
-      "categories": [
-        "math.NT"
-      ],
-      "seed_topic": "arithmetic_geometry",
-      "matches": [
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "score": 0.45,
-          "base_score": 0.39,
-          "bridge_bonus": 0.012,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.048,
-          "level": "medium",
-          "reason": "关键词命中：modular forms；arXiv 分类重合：math.NT；arithmetic ↔ AG；时效加分 +0.05",
-          "keyword_hits": [
-            "modular forms"
-          ]
-        },
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "score": 0.063,
-          "base_score": 0.003,
-          "bridge_bonus": 0.012,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.048,
-          "level": "low",
-          "reason": "arithmetic ↔ AG；时效加分 +0.05",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "score": 0.051,
-          "base_score": 0.003,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.048,
-          "level": "low",
-          "reason": "时效加分 +0.05",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "score": 0.048,
-          "base_score": 0.0,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.048,
-          "level": "low",
-          "reason": "时效加分 +0.05",
-          "keyword_hits": []
-        }
-      ],
-      "best_match": {
-        "topic_id": "arithmetic_geometry",
-        "topic_name": "Arithmetic Geometry",
-        "score": 0.45,
-        "base_score": 0.39,
-        "bridge_bonus": 0.012,
-        "preference_bonus": 0.0,
-        "recency_bonus": 0.048,
-        "level": "medium",
-        "reason": "关键词命中：modular forms；arXiv 分类重合：math.NT；arithmetic ↔ AG；时效加分 +0.05",
-        "keyword_hits": [
-          "modular forms"
-        ]
-      },
-      "top_labels": [
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "base_score": 0.39,
-          "score": 0.45,
-          "level": "medium",
-          "keyword_hits": [
-            "modular forms"
-          ]
-        }
-      ],
-      "backfilled_from_recent_arxiv": true,
-      "newly_discovered_from_recent_arxiv": true,
-      "chinese_summary": {
-        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
-        "method": "We develop a period-polynomial approach to relations among critical L-values of modular forms arising from theta products and elliptic integral moments.",
-        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
-        "evidence": "来源摘要可在论文原文中核验。",
-        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
-        "why_relevant": "关键词命中：modular forms；arXiv 分类重合：math.NT；arithmetic ↔ AG；时效加分 +0.05"
-      },
-      "first_seen_at": "2026-08-28T12:29:42.077745+00:00",
-      "last_seen_at": "2026-08-28T12:29:42.077745+00:00",
-      "retained_from_previous_run": true
-    },
-    {
       "id": "2608.26791v1",
       "source": "arXiv",
       "title": "Specialisations of the Burungale-Castella-Skinner main conjecture to $\\mathbb Z_p$-lines",
@@ -16567,7 +16322,7 @@
       },
       "first_seen_at": "2026-09-07T05:41:13.459497+00:00",
       "last_seen_at": "2026-09-07T05:41:13.459497+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2609.01298v1",
@@ -17403,7 +17158,7 @@
       },
       "first_seen_at": "2026-09-07T05:41:13.459497+00:00",
       "last_seen_at": "2026-09-07T05:41:13.459497+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2608.27130v1",
@@ -17624,7 +17379,7 @@
       },
       "first_seen_at": "2026-09-07T05:41:13.459497+00:00",
       "last_seen_at": "2026-09-07T05:41:13.459497+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2609.03926v2",
@@ -17745,7 +17500,7 @@
       },
       "first_seen_at": "2026-09-07T05:41:13.459497+00:00",
       "last_seen_at": "2026-09-07T05:41:13.459497+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2609.01473v1",
@@ -18121,7 +17876,7 @@
       },
       "first_seen_at": "2026-09-07T05:41:13.459497+00:00",
       "last_seen_at": "2026-09-07T05:41:13.459497+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2609.02819v1",
@@ -18608,7 +18363,7 @@
       },
       "first_seen_at": "2026-09-07T05:41:13.459497+00:00",
       "last_seen_at": "2026-09-07T05:41:13.459497+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2609.05203v1",
@@ -18735,7 +18490,7 @@
       },
       "first_seen_at": "2026-09-07T05:41:13.459497+00:00",
       "last_seen_at": "2026-09-07T05:41:13.459497+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2608.27921v1",
@@ -18977,7 +18732,7 @@
       },
       "first_seen_at": "2026-09-07T05:41:13.459497+00:00",
       "last_seen_at": "2026-09-07T05:41:13.459497+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2608.27895v1",
@@ -19111,6 +18866,123 @@
       "first_seen_at": "2026-08-31T06:39:54.500219+00:00",
       "last_seen_at": "2026-08-31T06:39:54.500219+00:00",
       "retained_from_previous_run": true
+    },
+    {
+      "id": "2609.04335v1",
+      "source": "arXiv",
+      "title": "Positivity of Smooth Currents on Singular Spaces",
+      "authors": [
+        "Duc-Thai Do",
+        "Duc-Viet Vu"
+      ],
+      "summary": "We study two notions of positivity for smooth currents on singular spaces. We show that they are not equivalent by establishing a necessary condition on the fourth Whitney cones. We also construct an explicit compact normal projective variety $X$ and a real smooth $(1,1)$-form $T$ on $X$ such that $T$ has local smooth ddc-potentials and is a Kähler current, but $T$ is not a positive form (hence not Hermitian).",
+      "published": "2026-09-03T18:04:31Z",
+      "updated": "2026-09-03T18:04:31Z",
+      "paper_url": "http://arxiv.org/abs/2609.04335v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.04335v1",
+      "categories": [
+        "math.CV",
+        "math.AG"
+      ],
+      "seed_topic": "motivic_k_theory",
+      "matches": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.42,
+          "base_score": 0.377,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.043,
+          "level": "medium",
+          "reason": "关键词命中：variety、Proj；arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": [
+            "variety",
+            "Proj"
+          ],
+          "llm_reason": "论文涉及紧致正规射影簇上的光滑(1,1)-流与正性，这与代数几何中的projective variety、Proj构造以及线丛/除子的正性（如ample等）概念相关；但方法偏向复几何中的current理论，而非scheme、sheaf或模空间工具，因此相关性为中等，需要人工复核是否对具体代数几何问题（如奇异簇上的Kähler维数或正性层次）有迁移价值。"
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.167,
+          "base_score": 0.124,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.043,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.166,
+          "base_score": 0.123,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.043,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.043,
+          "base_score": 0.0,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.043,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "algebraic_geometry",
+        "topic_name": "Algebraic Geometry",
+        "score": 0.42,
+        "base_score": 0.377,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.043,
+        "level": "medium",
+        "reason": "关键词命中：variety、Proj；arXiv 分类重合：math.AG；时效加分 +0.04",
+        "keyword_hits": [
+          "variety",
+          "Proj"
+        ],
+        "llm_reason": "论文涉及紧致正规射影簇上的光滑(1,1)-流与正性，这与代数几何中的projective variety、Proj构造以及线丛/除子的正性（如ample等）概念相关；但方法偏向复几何中的current理论，而非scheme、sheaf或模空间工具，因此相关性为中等，需要人工复核是否对具体代数几何问题（如奇异簇上的Kähler维数或正性层次）有迁移价值。"
+      },
+      "top_labels": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.377,
+          "score": 0.42,
+          "level": "medium",
+          "keyword_hits": [
+            "variety",
+            "Proj"
+          ]
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "fulltext_excerpt": "[2609.04335] Positivity of Smooth Currents on Singular Spaces Skip to main content Search arXiv Press Enter to search · Advanced search --> Mathematics > Complex Variables arXiv:2609.04335 (math) [Submitted on 3 Sep 2026] Title: Positivity of Smooth Currents on Singular Spaces Authors: Duc-Thai Do , Duc-Viet Vu View a PDF of the paper titled Positivity of Smooth Currents on Singular Spaces, by Duc-Thai Do and Duc-Viet Vu View PDF HTML (experimental) Abstract: We study two notions of positivity for smooth currents on singular spaces. We show that they are not equivalent by establishing a necessary condition on the fourth Whitney cones. We also construct an explicit compact normal projective variety $X$ and a real smooth $(1,1)$-form $T$ on $X$ such that $T$ has local smooth ddc-potentials and is a Kähler current, but $T$ is not a positive form (hence not Hermitian). Subjects: Complex Variables (math.CV) ; Algebraic Geometry (math.AG) Cite as: arXiv:2609.04335 [math.CV] (or arXiv:2609.04335v1 [math.CV] for this version) https://doi.org/10.48550/arXiv.2609.04335 Focus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: Duc Viet Vu [ view email ] [v1] Thu, 3 Sep 2026 18:04:31 UTC (19 KB) Full-text links: Access Paper: View a PDF of the paper titled Positivity of Smooth Currents on Singular Spaces, by Duc-Thai Do and Duc-Viet Vu View PDF HTML (experimental) TeX Source view license Current browse context: math.CV < prev | next > new | recent | 2026-09 Change to browse by: math math.AG References & Citations NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
+      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2609.04335",
+      "chinese_summary": {
+        "problem": "在奇异空间（如紧致正规射影簇）上，两类光滑(1,1)-流（smooth currents）的正性概念是否等价的问题。摘要指出它们不等价，需要建立区分条件或构造反例。",
+        "method": "通过引入第四Whitney锥上的必要条件来区分两类正性概念；然后构造一个具体的紧致正规射影簇X及其上的实光滑(1,1)-形式T，验证T虽具有局部光滑ddc势且是Kähler current，却不是通常意义下的正形式（因而非Hermitian），以此作为反例。",
+        "innovation": "明确证明在奇异空间上两类正性概念不等价；构造出显式反例，表明满足局部ddc势和Kähler current较弱的条件并不能推出更强的正形式性质，从而澄清了奇异空间上正性定义之间的逻辑关系。",
+        "evidence": "摘要中明确描述了构造的反例及结论，但未给出构造细节。需要阅读全文核验Whitney锥条件及反例的具体代数几何结构。",
+        "limitations": "摘要信息有限，未提供Whitney锥的定义、反例的具体构造过程以及证明细节；奇异簇的类型、奇点解析方法等对代数几何技术路线的适用性需要结合正文确认。",
+        "why_relevant": "论文涉及紧致正规射影簇上的光滑(1,1)-流与正性，这与代数几何中的projective variety、Proj构造以及线丛/除子的正性（如ample等）概念相关；但方法偏向复几何中的current理论，而非scheme、sheaf或模空间工具，因此相关性为中等，需要人工复核是否对具体代数几何问题（如奇异簇上的Kähler维数或正性层次）有迁移价值。"
+      },
+      "first_seen_at": "2026-09-08T05:35:55.622095+00:00",
+      "last_seen_at": "2026-09-08T05:35:55.622095+00:00",
+      "retained_from_previous_run": false
     },
     {
       "id": "2609.01350v1",
@@ -19335,31 +19207,156 @@
       "first_seen_at": "2026-09-05T05:15:37.177786+00:00",
       "last_seen_at": "2026-09-05T05:15:37.177786+00:00",
       "retained_from_previous_run": true
+    },
+    {
+      "id": "2608.30743v1",
+      "source": "arXiv",
+      "title": "Perspectives on the Bott spectral sequence for Lie groupoids",
+      "authors": [
+        "Annika Kraasch-Tarnowsky"
+      ],
+      "summary": "The cohomology of a differentiable stack can be modelled by the Bott-Shulman-Stasheff bicomplex. However, computing its cohomology is still difficult in many examples. Improving on this requires additional methods such as using spectral sequences and finding models for the cohomology of each column of the bicomplex. This paper provides a first attempt of relating and unifying two approaches of this form. Firstly, Arias Abad has generalised the Bott spectral sequence to Lie groupoids by introducing representations up to homotopy. The second approach is the recent work on a model for the cohomology of differentiable stacks associated to proper and regular Lie groupoids by this author.",
+      "published": "2026-08-31T13:11:20Z",
+      "updated": "2026-08-31T13:11:20Z",
+      "paper_url": "http://arxiv.org/abs/2608.30743v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.30743v1",
+      "categories": [
+        "math.DG",
+        "math.AT"
+      ],
+      "seed_topic": "homotopy_theory",
+      "matches": [
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.409,
+          "base_score": 0.37,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.039,
+          "level": "medium",
+          "reason": "关键词命中：spectral sequence；arXiv 分类重合：math.AT；时效加分 +0.04",
+          "keyword_hits": [
+            "spectral sequence"
+          ],
+          "llm_reason": "论文使用谱序列（spectral sequence）这一工具，arXiv 分类含 math.AT，且 Bott 谱序列在代数拓扑和同伦论中有密切关联；但研究核心是李群胚和可微层的几何，而非典型同伦论中的稳定同伦、model category 或 infinity category，所以相关性属于中等偏弱，需要人工复核是否涉及同伦论中的具体技术。"
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.226,
+          "base_score": 0.187,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.039,
+          "level": "low",
+          "reason": "关键词命中：Spec；时效加分 +0.04",
+          "keyword_hits": [
+            "Spec"
+          ]
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.168,
+          "base_score": 0.129,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.039,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AT；时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.05,
+          "base_score": 0.011,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.039,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "homotopy_theory",
+        "topic_name": "Homotopy Theory",
+        "score": 0.409,
+        "base_score": 0.37,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.039,
+        "level": "medium",
+        "reason": "关键词命中：spectral sequence；arXiv 分类重合：math.AT；时效加分 +0.04",
+        "keyword_hits": [
+          "spectral sequence"
+        ],
+        "llm_reason": "论文使用谱序列（spectral sequence）这一工具，arXiv 分类含 math.AT，且 Bott 谱序列在代数拓扑和同伦论中有密切关联；但研究核心是李群胚和可微层的几何，而非典型同伦论中的稳定同伦、model category 或 infinity category，所以相关性属于中等偏弱，需要人工复核是否涉及同伦论中的具体技术。"
+      },
+      "top_labels": [
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "base_score": 0.37,
+          "score": 0.409,
+          "level": "low",
+          "keyword_hits": [
+            "spectral sequence"
+          ]
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.187,
+          "score": 0.226,
+          "level": "low",
+          "keyword_hits": [
+            "Spec"
+          ]
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "fulltext_excerpt": "[2608.30743] Perspectives on the Bott spectral sequence for Lie groupoids Skip to main content Search arXiv Press Enter to search · Advanced search --> Mathematics > Differential Geometry arXiv:2608.30743 (math) [Submitted on 31 Aug 2026] Title: Perspectives on the Bott spectral sequence for Lie groupoids Authors: Annika Kraasch-Tarnowsky View a PDF of the paper titled Perspectives on the Bott spectral sequence for Lie groupoids, by Annika Kraasch-Tarnowsky View PDF HTML (experimental) Abstract: The cohomology of a differentiable stack can be modelled by the Bott-Shulman-Stasheff bicomplex. However, computing its cohomology is still difficult in many examples. Improving on this requires additional methods such as using spectral sequences and finding models for the cohomology of each column of the bicomplex. This paper provides a first attempt of relating and unifying two approaches of this form. Firstly, Arias Abad has generalised the Bott spectral sequence to Lie groupoids by introducing representations up to homotopy. The second approach is the recent work on a model for the cohomology of differentiable stacks associated to proper and regular Lie groupoids by this author. Comments: To be submitted to the \"Special Issue on Interactions of Poisson Geometry, Lie Theory and Symmetry in honor of Rui Loja Fernandes for his 60th birthday\" of \"Symmetry, Integrability and Geometry: Methods and Applications (SIGMA)\" Subjects: Differential Geometry (math.DG) ; Algebraic Topology (math.AT) Cite as: arXiv:2608.30743 [math.DG] (or arXiv:2608.30743v1 [math.DG] for this version) https://doi.org/10.48550/arXiv.2608.30743 Focus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: Annika Kraasch-Tarnowsky [ view email ] [v1] Mon, 31 Aug 2026 13:11:20 UTC (23 KB) Full-text links: Access Paper: View a PDF of the paper titled Perspectives on the Bott spectral sequence for Lie groupoids, by Annika Kraasch-Tarnowsky View PDF HTML (experimental) TeX Source view license Current browse context: math.DG < prev | next > new | recent | 2026-08 Change to browse by: math math.AT References & Citations NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
+      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2608.30743",
+      "chinese_summary": {
+        "problem": "该论文要解决的是可微层（differentiable stack）的上同调计算困难问题，具体针对 Bott-Shulman-Stasheff 双复形在众多实例中计算复杂、需要额外方法（如谱序列和寻找每列上同调的模型）的现状。",
+        "method": "论文试图统一两种已有的谱序列方法：一是 Arias Abad 通过引入表示到同伦（representations up to homotopy）将 Bott 谱序列推广到 Lie groupoids 的途径；二是作者本人最近关于真且正则 Lie groupoids 的可微层上同调模型的工作。作者对这两种方法进行关联和初步整合，以改进上同调计算。",
+        "innovation": "论文的创新点在于首次系统性地把 Bott 谱序列（通过表示到同伦推广）与针对真且正则李群胚的可微层上同调模型这两种不同研究路线联系起来，尝试建立一个统一框架，从而为这类上同调计算提供更通用、更高效的工具。",
+        "evidence": "摘要仅表明论文提供了一种“first attempt”（首次尝试）来关联和统一两种方法，没有给出具体计算实例、定理列表或实验数据，因此关于实际有效性的证据不足。",
+        "limitations": "摘要本身没有给出具体定理、计算案例或效率对比，因此其统一方法的适用范围、收敛性、计算优势等仍需阅读全文确认；同时论文可能侧重于李群胚（Lie groupoids）和可微层，对纯拓扑或同伦论视角的读者可能需要额外类比。",
+        "why_relevant": "论文使用谱序列（spectral sequence）这一工具，arXiv 分类含 math.AT，且 Bott 谱序列在代数拓扑和同伦论中有密切关联；但研究核心是李群胚和可微层的几何，而非典型同伦论中的稳定同伦、model category 或 infinity category，所以相关性属于中等偏弱，需要人工复核是否涉及同伦论中的具体技术。"
+      },
+      "first_seen_at": "2026-09-08T05:35:55.622095+00:00",
+      "last_seen_at": "2026-09-08T05:35:55.622095+00:00",
+      "retained_from_previous_run": false
     }
   ],
   "stats": {
-    "candidate_paper_count": 147,
-    "daily_candidate_paper_count": 147,
+    "candidate_paper_count": 121,
+    "daily_candidate_paper_count": 121,
     "raw_daily_candidate_count": 337,
     "daily_outside_cutoff_count": 274,
-    "newly_discovered_backfill_count": 147,
+    "newly_discovered_backfill_count": 121,
     "daily_backfill_days": 14,
-    "daily_backfill_candidate_count": 63,
+    "daily_backfill_candidate_count": 79,
     "daily_backfill_added_count": 0,
     "min_daily_papers": 8,
     "filtered_low_relevance_count": 0,
     "filtered_wrong_category_count": 63,
     "filtered_disliked_count": 0,
     "arxiv_category_filter": [
-      "math.NT",
-      "math.AG",
       "math.KT",
       "math.AT",
-      "math.CT"
+      "math.CT",
+      "math.AG",
+      "math.NT"
     ],
     "days": 1,
     "collection_mode": "incremental",
-    "collection_cutoff_iso": "2026-09-06T05:29:37.243709+00:00",
+    "collection_cutoff_iso": "2026-09-07T05:41:13.459497+00:00",
     "max_per_topic": 25,
     "max_new_papers": 30,
     "sources": [
@@ -19401,12 +19398,12 @@
     "dropped_disliked_count": 0,
     "max_stored_papers": 150,
     "max_data_bytes": 8388608,
-    "data_bytes": 1525474,
+    "data_bytes": 1531890,
     "storage_trimmed_count": 30,
     "storage_trimmed_by_level": {
-      "high": 9,
-      "medium": 19,
-      "low": 2,
+      "high": 4,
+      "medium": 5,
+      "low": 21,
       "unknown": 0
     },
     "storage_limit_exceeded_by_likes": false
