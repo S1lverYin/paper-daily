@@ -1,6 +1,6 @@
 {
-  "generated_at": "Fri, 11 Sep 2026 05:37:04 +0000",
-  "generated_at_iso": "2026-09-11T05:37:04.133861+00:00",
+  "generated_at": "Sat, 12 Sep 2026 05:24:22 +0000",
+  "generated_at_iso": "2026-09-12T05:24:22.293079+00:00",
   "config_source": "file",
   "topics": [
     {
@@ -926,7 +926,7 @@
       },
       "first_seen_at": "2026-09-11T05:37:04.133861+00:00",
       "last_seen_at": "2026-09-11T05:37:04.133861+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2609.05252v1",
@@ -1339,168 +1339,6 @@
       "retained_from_previous_run": true
     },
     {
-      "id": "2609.00567v1",
-      "source": "arXiv",
-      "title": "Hodge--Tate splitting and Akizuki--Nakano vanishing in positive characteristic",
-      "authors": [
-        "Ryo Ishizuka",
-        "Shou Yoshikawa"
-      ],
-      "summary": "We introduce the notion of Hodge--Tate splitting for schemes in positive characteristic. For a smooth variety $X$ over a perfect field $k$ of characteristic $p > 0$, we say that $X$ is Hodge--Tate split if the natural morphism $\\mathcal{O}_X \\to F_*Ω^\\bullet_{X/k}$ induced by the absolute Frobenius admits a splitting in $\\mathcal{D}_{\\mathrm{qcoh}}(X)$. We prove that this condition is equivalent to the existence of a decomposition $F_*Ω^\\bullet_{X/k} \\simeq \\bigoplus_{i=0}^{\\dim X}Ω^i_{X/k}[-i]$ of its de Rham complex. Consequently, for smooth projective varieties, Hodge--Tate splitting implies Akizuki--Nakano vanishing and the $E_1$-degeneration of the Hodge-to-de Rham spectral sequence. Furthermore, we establish criteria and permanence properties for Hodge--Tate splitting and use them to construct many new examples of varieties whose de Rham complexes decompose. These include blow-ups of quasi-$F$-split varieties along strata of simple normal crossings divisors, complete intersections in toric varieties, and linearly reductive quotients of Hodge--Tate split varieties. Among these examples, we obtain smooth projective varieties whose Hodge-to-de Rham spectral sequences degenerate at $E_1$, whereas their Hochschild--Kostant--Rosenberg spectral sequences do not degenerate. As an application in mixed characteristic, we prove an Akizuki--Nakano-type vanishing theorem for smooth projective globally $+$-regular varieties over the Witt ring of a perfect field.",
-      "published": "2026-09-01T02:02:20Z",
-      "updated": "2026-09-01T02:02:20Z",
-      "paper_url": "http://arxiv.org/abs/2609.00567v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.00567v1",
-      "categories": [
-        "math.AG",
-        "math.NT"
-      ],
-      "seed_topic": "motivic_k_theory",
-      "matches": [
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "score": 0.808,
-          "base_score": 0.62,
-          "bridge_bonus": 0.04,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.048,
-          "level": "high",
-          "reason": "关键词命中：variety、blow-up、scheme、Spec、Proj；arXiv 分类重合：math.AG；桥接 algebraic_geometry↔arithmetic_geometry (hits=2/1)；桥接 algebraic_geometry↔homotopy_theory (hits=2/1)；时效加分 +0.05",
-          "keyword_hits": [
-            "variety",
-            "blow-up",
-            "scheme",
-            "Spec",
-            "Proj"
-          ],
-          "llm_reason": "该论文研究正特征光滑簇上的 Hodge–Tate 分裂、de Rham 复形分解、Akizuki–Nakano 消没和 Hodge 谱序列退化，直接对应我的核心关键词：scheme, smooth variety, sheaf, cohomology, Frobenius, spectral sequence, vanishing, blow-up, toric variety, quotient。所使用工具还包括 snc 除子、准-F-split、混合特征环上的消没推广，与我的代数几何研究方向一致。它提供了正特征消没和退化问题的最新进展，可能对我用导出范畴和谱序列研究正特征簇有直接参考价值，故判为高相关。"
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "score": 0.429,
-          "base_score": 0.341,
-          "bridge_bonus": 0.04,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.048,
-          "level": "medium",
-          "reason": "关键词命中：Frobenius；arXiv 分类重合：math.AG、math.NT；桥接 arithmetic_geometry↔algebraic_geometry (hits=1/2)；桥接 arithmetic_geometry↔homotopy_theory (hits=1/1)；时效加分 +0.05",
-          "keyword_hits": [
-            "Frobenius"
-          ]
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "score": 0.396,
-          "base_score": 0.336,
-          "bridge_bonus": 0.012,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.048,
-          "level": "low",
-          "reason": "关键词命中：Perf；arXiv 分类重合：math.AG；homotopy ↔ K-theory；时效加分 +0.05",
-          "keyword_hits": [
-            "Perf"
-          ]
-        },
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "score": 0.3,
-          "base_score": 0.2,
-          "bridge_bonus": 0.052,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.048,
-          "level": "low",
-          "reason": "关键词命中：spectral sequence；桥接 homotopy_theory↔algebraic_geometry (hits=1/2)；桥接 homotopy_theory↔arithmetic_geometry (hits=1/1)；homotopy ↔ K-theory；时效加分 +0.05",
-          "keyword_hits": [
-            "spectral sequence"
-          ]
-        }
-      ],
-      "best_match": {
-        "topic_id": "algebraic_geometry",
-        "topic_name": "Algebraic Geometry",
-        "score": 0.808,
-        "base_score": 0.62,
-        "bridge_bonus": 0.04,
-        "preference_bonus": 0.0,
-        "recency_bonus": 0.048,
-        "level": "high",
-        "reason": "关键词命中：variety、blow-up、scheme、Spec、Proj；arXiv 分类重合：math.AG；桥接 algebraic_geometry↔arithmetic_geometry (hits=2/1)；桥接 algebraic_geometry↔homotopy_theory (hits=2/1)；时效加分 +0.05",
-        "keyword_hits": [
-          "variety",
-          "blow-up",
-          "scheme",
-          "Spec",
-          "Proj"
-        ],
-        "llm_reason": "该论文研究正特征光滑簇上的 Hodge–Tate 分裂、de Rham 复形分解、Akizuki–Nakano 消没和 Hodge 谱序列退化，直接对应我的核心关键词：scheme, smooth variety, sheaf, cohomology, Frobenius, spectral sequence, vanishing, blow-up, toric variety, quotient。所使用工具还包括 snc 除子、准-F-split、混合特征环上的消没推广，与我的代数几何研究方向一致。它提供了正特征消没和退化问题的最新进展，可能对我用导出范畴和谱序列研究正特征簇有直接参考价值，故判为高相关。"
-      },
-      "top_labels": [
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "base_score": 0.62,
-          "score": 0.708,
-          "level": "medium",
-          "keyword_hits": [
-            "variety",
-            "blow-up",
-            "scheme",
-            "Spec",
-            "Proj"
-          ]
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "base_score": 0.341,
-          "score": 0.429,
-          "level": "medium",
-          "keyword_hits": [
-            "Frobenius"
-          ]
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "base_score": 0.336,
-          "score": 0.396,
-          "level": "low",
-          "keyword_hits": [
-            "Perf"
-          ]
-        },
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "base_score": 0.2,
-          "score": 0.3,
-          "level": "low",
-          "keyword_hits": [
-            "spectral sequence"
-          ]
-        }
-      ],
-      "backfilled_from_recent_arxiv": true,
-      "newly_discovered_from_recent_arxiv": true,
-      "fulltext_excerpt": "[2609.00567] Hodge--Tate splitting and Akizuki--Nakano vanishing in positive characteristic Skip to main content Search arXiv Press Enter to search · Advanced search --> Mathematics > Algebraic Geometry arXiv:2609.00567 (math) [Submitted on 1 Sep 2026] Title: Hodge--Tate splitting and Akizuki--Nakano vanishing in positive characteristic Authors: Ryo Ishizuka , Shou Yoshikawa View a PDF of the paper titled Hodge--Tate splitting and Akizuki--Nakano vanishing in positive characteristic, by Ryo Ishizuka and Shou Yoshikawa View PDF HTML (experimental) Abstract: We introduce the notion of Hodge--Tate splitting for schemes in positive characteristic. For a smooth variety $X$ over a perfect field $k$ of characteristic $p > 0$, we say that $X$ is Hodge--Tate split if the natural morphism $\\mathcal{O}_X \\to F_*\\Omega^\\bullet_{X/k}$ induced by the absolute Frobenius admits a splitting in $\\mathcal{D}_{\\mathrm{qcoh}}(X)$. We prove that this condition is equivalent to the existence of a decomposition $F_*\\Omega^\\bullet_{X/k} \\simeq \\bigoplus_{i=0}^{\\dim X}\\Omega^i_{X/k}[-i]$ of its de Rham complex. Consequently, for smooth projective varieties, Hodge--Tate splitting implies Akizuki--Nakano vanishing and the $E_1$-degeneration of the Hodge-to-de Rham spectral sequence. Furthermore, we establish criteria and permanence properties for Hodge--Tate splitting and use them to construct many new examples of varieties whose de Rham complexes decompose. These include blow-ups of quasi-$F$-split varieties along strata of simple normal crossings divisors, complete intersections in toric varieties, and linearly reductive quotients of Hodge--Tate split varieties. Among these examples, we obtain smooth projective varieties whose Hodge-to-de Rham spectral sequences degenerate at $E_1$, whereas their Hochschild--Kostant--Rosenberg spectral sequences do not degenerate. As an application in mixed characteristic, we prove an Akizuki--Nakano-type vanishing theorem for smooth projective globally $+$-regular varieties over the Witt ring of a perfect field. Comments: 76 pages; Comments are welcome Subjects: Algebraic Geometry (math.AG) ; Number Theory (math.NT) Cite as: arXiv:2609.00567 [math.AG] (or arXiv:2609.00567v1 [math.AG] for this version) https://doi.org/10.48550/arXiv.2609.00567 Focus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: Ryo Ishizuka [ view email ] [v1] Tue, 1 Sep 2026 02:02:20 UTC (70 KB) Full-text links: Access Paper: View a PDF of the paper titled Hodge--Tate splitting and Akizuki--Nakano vanishing in positive characteristic, by Ryo Ishizuka and Shou Yoshikawa View PDF HTML (experimental) TeX Source view license Current browse context: math.AG < prev | next > new | recent | 2026-09 Change to browse by: math math.NT References & Citations NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
-      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2609.00567",
-      "chinese_summary": {
-        "problem": "正特征光滑簇上，Frobenius 作用下 de Rham 复形能否逐层完全分解？该分解（即 Hodge–Tate splitting）如何导出 Akizuki–Nakano 型消没与谱序列退化，并提供构造新例子的判据。",
-        "method": "在导出范畴中定义 Hodge–Tate splitting，并证明其等价于 F_*Ω^•_{X/k} ≅ ⊕Ω^i[-i]；随后利用准F-分裂、snc 除子分层、toric 几何与线性约化商等工具建立该性质的判据与持久性，构造满足退化条件的射影簇；最后将正特征的结果转移到混合特征中的 Witt 环上。",
-        "innovation": "（1）提出并研究 Hodge–Tate splitting 新概念，给出其与经典 F-split、F-带等的关系；（2）证明了它等价于 de Rham 复数的完全分解，从而将消没定理和谱序列退化归结为纯代数条件；（3）建立多种几何构造下的继承与持久性规则，特别是得到 Hodge 谱序列 E1 退化但 HKR 谱序列不退化的光滑射影簇，说明两类退化并非等价。",
-        "evidence": "摘要中明确给出定理：对正特征完美域上光滑射影簇，HTS ⇒ AN 消没和 Hodge-to-de Rham 谱序列 E1 退化；并有构造性命题：沿 snc 除子层爆破的准-F-分裂簇、toric 簇中的完全交集、线性约化商均为 HTS。这些作为理论结果陈述，未提供完整证明，但可核验其逻辑陈述，仍属理论数学证据。",
-        "limitations": "需要阅读原文验证 HTS 定义的细节和证明的完整推导；该条件仅限于正特征（及其混合特征相应情形）；所得例子维数或构造空间可能受几何条件限制；没有讨论拟projective或非完备情形，也不涉及导出代数几何、模空间等方向。",
-        "why_relevant": "该论文研究正特征光滑簇上的 Hodge–Tate 分裂、de Rham 复形分解、Akizuki–Nakano 消没和 Hodge 谱序列退化，直接对应我的核心关键词：scheme, smooth variety, sheaf, cohomology, Frobenius, spectral sequence, vanishing, blow-up, toric variety, quotient。所使用工具还包括 snc 除子、准-F-split、混合特征环上的消没推广，与我的代数几何研究方向一致。它提供了正特征消没和退化问题的最新进展，可能对我用导出范畴和谱序列研究正特征簇有直接参考价值，故判为高相关。"
-      },
-      "first_seen_at": "2026-09-02T05:26:23.508847+00:00",
-      "last_seen_at": "2026-09-02T05:26:23.508847+00:00",
-      "retained_from_previous_run": true
-    },
-    {
       "id": "2609.04023v1",
       "source": "arXiv",
       "title": "Characterizing Contractions and Weighted Blowdowns",
@@ -1635,6 +1473,118 @@
       "first_seen_at": "2026-09-04T05:30:28.613950+00:00",
       "last_seen_at": "2026-09-04T05:30:28.613950+00:00",
       "retained_from_previous_run": true
+    },
+    {
+      "id": "2609.08201v1",
+      "source": "arXiv",
+      "title": "A Lang-Trotter Problem for Non-Geometric Quadratic Inductions",
+      "authors": [
+        "Haoyang Yuan"
+      ],
+      "summary": "Let $K/\\mathbb Q$ be an imaginary quadratic extension and $p$ an odd prime. Write $ρ=\\operatorname{Ind}_{G_K}^{G_{\\mathbb Q}}χ$, where $E/\\mathbb Q_p$ is a finite extension and $χ:G_K\\to\\mathcal O_E^\\times$ is a continuous character. For a fixed $r\\in\\mathbb Z\\setminus\\{0\\}$, let $π_{ρ,r}(X)$ denote the number of rational primes $\\ell\\le X$ such that $ρ$ is unramified at $\\ell$ and $\\operatorname{tr}ρ(\\operatorname{Frob}_\\ell)=r$. Let $a,b$ be the two weights of $χ$ at $p$. We prove that if $(a,b)\\notin\\mathbb Q^2$, then $π_{ρ,r}(X)\\ll_{ρ,r,\\varepsilon}X^\\varepsilon$ for every $\\varepsilon>0$, while if $(a,b)\\in\\mathbb Q^2\\setminus\\mathbb Z^2$, then only finitely many such primes occur. These bounds are substantially sparser than the classical CM Lang--Trotter scale. The main input in the non-rational case is a rigidity theorem for algebraic curves in the \\(p\\)-adic analytic trace locus, combined with rigid-analytic Pila--Wilkie counting; the rational non-integral case is treated by a local ramification argument.",
+      "published": "2026-09-08T03:39:03Z",
+      "updated": "2026-09-08T03:39:03Z",
+      "paper_url": "http://arxiv.org/abs/2609.08201v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.08201v1",
+      "categories": [
+        "math.NT"
+      ],
+      "seed_topic": "arithmetic_geometry",
+      "matches": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.802,
+          "base_score": 0.338,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.044,
+          "level": "high",
+          "reason": "关键词命中：ramification；arXiv 分类重合：math.NT；时效加分 +0.04",
+          "keyword_hits": [
+            "ramification"
+          ],
+          "llm_reason": "论文核心对象是 Galois 表示、Frobenius 迹与 Lang-Trotter 型算术统计，直接命中 arithmetic geometry 中 Galois representation、Frobenius、ramification、unramified、p-adic field、local field、p-adic Hodge theory、Hodge-Tate 权重、Fontaine 理论等关键词。其非有理情形依赖 p 进解析方法与迹轨迹刚性，属于算术几何与 p 进表示论交叉方向；虽未直接处理 abelian varieties 或 etale cohomology，但对理解 Galois 诱导表示的局部—整体算术统计很有参考价值。"
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.056,
+          "base_score": 0.012,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.044,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.054,
+          "base_score": 0.01,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.044,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.049,
+          "base_score": 0.005,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.044,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "arithmetic_geometry",
+        "topic_name": "Arithmetic Geometry",
+        "score": 0.802,
+        "base_score": 0.338,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.044,
+        "level": "high",
+        "reason": "关键词命中：ramification；arXiv 分类重合：math.NT；时效加分 +0.04",
+        "keyword_hits": [
+          "ramification"
+        ],
+        "llm_reason": "论文核心对象是 Galois 表示、Frobenius 迹与 Lang-Trotter 型算术统计，直接命中 arithmetic geometry 中 Galois representation、Frobenius、ramification、unramified、p-adic field、local field、p-adic Hodge theory、Hodge-Tate 权重、Fontaine 理论等关键词。其非有理情形依赖 p 进解析方法与迹轨迹刚性，属于算术几何与 p 进表示论交叉方向；虽未直接处理 abelian varieties 或 etale cohomology，但对理解 Galois 诱导表示的局部—整体算术统计很有参考价值。"
+      },
+      "top_labels": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.338,
+          "score": 0.382,
+          "level": "low",
+          "keyword_hits": [
+            "ramification"
+          ]
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "fulltext_excerpt": "[2609.08201] A Lang-Trotter Problem for Non-Geometric Quadratic Inductions Skip to main content Search arXiv Press Enter to search · Advanced search --> Mathematics > Number Theory arXiv:2609.08201 (math) [Submitted on 8 Sep 2026] Title: A Lang-Trotter Problem for Non-Geometric Quadratic Inductions Authors: Haoyang Yuan View a PDF of the paper titled A Lang-Trotter Problem for Non-Geometric Quadratic Inductions, by Haoyang Yuan View PDF HTML (experimental) Abstract: Let $K/\\mathbb Q$ be an imaginary quadratic extension and $p$ an odd prime. Write $\\rho=\\operatorname{Ind}_{G_K}^{G_{\\mathbb Q}}\\chi$, where $E/\\mathbb Q_p$ is a finite extension and $\\chi:G_K\\to\\mathcal O_E^\\times$ is a continuous character. For a fixed $r\\in\\mathbb Z\\setminus\\{0\\}$, let $\\pi_{\\rho,r}(X)$ denote the number of rational primes $\\ell\\le X$ such that $\\rho$ is unramified at $\\ell$ and $\\operatorname{tr}\\rho(\\operatorname{Frob}_\\ell)=r$. Let $a,b$ be the two weights of $\\chi$ at $p$. We prove that if $(a,b)\\notin\\mathbb Q^2$, then $\\pi_{\\rho,r}(X)\\ll_{\\rho,r,\\varepsilon}X^\\varepsilon$ for every $\\varepsilon>0$, while if $(a,b)\\in\\mathbb Q^2\\setminus\\mathbb Z^2$, then only finitely many such primes occur. These bounds are substantially sparser than the classical CM Lang--Trotter scale. The main input in the non-rational case is a rigidity theorem for algebraic curves in the \\(p\\)-adic analytic trace locus, combined with rigid-analytic Pila--Wilkie counting; the rational non-integral case is treated by a local ramification argument. Subjects: Number Theory (math.NT) MSC classes: 11F80 Cite as: arXiv:2609.08201 [math.NT] (or arXiv:2609.08201v1 [math.NT] for this version) https://doi.org/10.48550/arXiv.2609.08201 Focus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: Haoyang Yuan [ view email ] [v1] Tue, 8 Sep 2026 03:39:03 UTC (19 KB) Full-text links: Access Paper: View a PDF of the paper titled A Lang-Trotter Problem for Non-Geometric Quadratic Inductions, by Haoyang Yuan View PDF HTML (experimental) TeX Source view license Current browse context: math.NT < prev | next > new | recent | 2026-09 Change to browse by: math References & Citations NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
+      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2609.08201",
+      "chinese_summary": {
+        "problem": "论文研究虚二次域 K 上连续特征 χ 经诱导得到的二维 Galois 表示 ρ=Ind_{G_K}^{G_Q}χ 的 Lang-Trotter 型问题：计数使 ρ 在有理素数 ℓ 处非分歧且 trρ(Frob_ℓ)=固定非零整数 r 的素数 ℓ，并按 χ 在 p 处的两个权重 (a,b) 是否为有理/整数给出不同稀疏性结论。",
+        "method": "核心方法分两类情形。非有理权重情形利用 p 进解析迹轨迹中代数曲线的刚性定理，结合 rigid-analytic Pila-Wilkie 计数，控制满足 trρ(Frob_ℓ)=r 的素数个数；有理非整数权重情形则通过局部分歧/ramification 论证证明这样的素数至多有限。整体框架涉及 Galois 诱导表示、Frobenius 迹、p 进 Hodge-Tate 权与局部特征比较。",
+        "innovation": "1) 对非几何二次诱导 Galois 表示建立 Lang-Trotter 型稀疏性，而非经典 CM 情形。2) 在权重 (a,b)∉Q² 时得到 π_{ρ,r}(X)≪_{ρ,r,ε}X^ε 的强上界；在 (a,b)∈Q²\\Z² 时证明仅有限多个素数。3) 方法上把 p 进解析迹轨迹的刚性定理与 rigid-analytic Pila-Wilkie 计数结合，用于 Galois 表示 Frobenius 迹的算术统计问题。",
+        "evidence": "证据为摘要中陈述的理论定理：若 (a,b)∉Q²，则 π_{ρ,r}(X)≪_{ρ,r,ε}X^ε；若 (a,b)∈Q²\\Z²，则仅有限多个这样的素数。主要输入是 p 进解析迹轨迹中代数曲线的刚性定理、rigid-analytic Pila-Wilkie 计数以及局部分歧论证。摘要未给出实验或系统数据，证明细节需阅读全文确认。",
+        "limitations": "摘要未说明 (a,b)∈Z² 的完整情形，也未展开与经典 CM Lang-Trotter 尺度的精确对比。刚性定理的适用条件、Pila-Wilkie 计数在迹轨迹上的具体验证、以及非几何二次诱导假设对更一般 Galois 表示的推广程度，都需要看全文。对 abelian varieties、modular forms 或 etale cohomology 的直接应用也需人工复核。",
+        "why_relevant": "论文核心对象是 Galois 表示、Frobenius 迹与 Lang-Trotter 型算术统计，直接命中 arithmetic geometry 中 Galois representation、Frobenius、ramification、unramified、p-adic field、local field、p-adic Hodge theory、Hodge-Tate 权重、Fontaine 理论等关键词。其非有理情形依赖 p 进解析方法与迹轨迹刚性，属于算术几何与 p 进表示论交叉方向；虽未直接处理 abelian varieties 或 etale cohomology，但对理解 Galois 诱导表示的局部—整体算术统计很有参考价值。"
+      },
+      "first_seen_at": "2026-09-12T05:24:22.293079+00:00",
+      "last_seen_at": "2026-09-12T05:24:22.293079+00:00",
+      "retained_from_previous_run": false
     },
     {
       "id": "2609.00723v1",
@@ -2060,7 +2010,7 @@
       },
       "first_seen_at": "2026-09-11T05:37:04.133861+00:00",
       "last_seen_at": "2026-09-11T05:37:04.133861+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2609.10764v1",
@@ -2202,7 +2152,7 @@
       },
       "first_seen_at": "2026-09-11T05:37:04.133861+00:00",
       "last_seen_at": "2026-09-11T05:37:04.133861+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2609.10340v1",
@@ -3116,7 +3066,7 @@
       },
       "first_seen_at": "2026-09-11T05:37:04.133861+00:00",
       "last_seen_at": "2026-09-11T05:37:04.133861+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2609.04660v1",
@@ -3799,7 +3749,7 @@
       },
       "first_seen_at": "2026-09-11T05:37:04.133861+00:00",
       "last_seen_at": "2026-09-11T05:37:04.133861+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2609.06824v1",
@@ -4335,7 +4285,7 @@
       },
       "first_seen_at": "2026-09-11T05:37:04.133861+00:00",
       "last_seen_at": "2026-09-11T05:37:04.133861+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2609.09351v1",
@@ -6167,7 +6117,7 @@
       },
       "first_seen_at": "2026-09-11T05:37:04.133861+00:00",
       "last_seen_at": "2026-09-11T05:37:04.133861+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2609.05154v1",
@@ -8143,7 +8093,7 @@
       },
       "first_seen_at": "2026-09-11T05:37:04.133861+00:00",
       "last_seen_at": "2026-09-11T05:37:04.133861+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2609.04155v1",
@@ -11142,7 +11092,7 @@
       },
       "first_seen_at": "2026-09-11T05:37:04.133861+00:00",
       "last_seen_at": "2026-09-11T05:37:04.133861+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2609.06829v2",
@@ -13306,7 +13256,7 @@
       },
       "first_seen_at": "2026-09-11T05:37:04.133861+00:00",
       "last_seen_at": "2026-09-11T05:37:04.133861+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2609.03954v1",
@@ -13536,7 +13486,7 @@
       },
       "first_seen_at": "2026-09-11T05:37:04.133861+00:00",
       "last_seen_at": "2026-09-11T05:37:04.133861+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2609.05123v1",
@@ -13802,120 +13752,6 @@
       },
       "first_seen_at": "2026-09-04T05:30:28.613950+00:00",
       "last_seen_at": "2026-09-04T05:30:28.613950+00:00",
-      "retained_from_previous_run": true
-    },
-    {
-      "id": "2609.00537v1",
-      "source": "arXiv",
-      "title": "Explicit Exponential Sum Estimates and Approximate Functional Equations for the Zeta Function",
-      "authors": [
-        "Natasha Dhiman",
-        "Habiba Kadiri",
-        "Emily Quesada-Herrera"
-      ],
-      "summary": "We show an explicit version of the Van der Corput truncated Poisson summation formula (B-process). By using refined explicit exponential sum estimates, this improves the error term of previous explicit results by Patel and Yang (2024) and Arias de Reyna (2024). As an application, we obtain fine explicit estimates for the error terms in approximate functional equations for the Riemann zeta function, improving on previous explicit results of Simonič (2020) in certain ranges.",
-      "published": "2026-09-01T01:21:11Z",
-      "updated": "2026-09-01T01:21:11Z",
-      "paper_url": "http://arxiv.org/abs/2609.00537v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.00537v1",
-      "categories": [
-        "math.NT"
-      ],
-      "seed_topic": "arithmetic_geometry",
-      "matches": [
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "score": 0.482,
-          "base_score": 0.422,
-          "bridge_bonus": 0.012,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.048,
-          "level": "medium",
-          "reason": "关键词命中：zeta function；arXiv 分类重合：math.NT；arithmetic ↔ K-theory / motivic；时效加分 +0.05",
-          "keyword_hits": [
-            "zeta function"
-          ],
-          "llm_reason": "研究方向关注zeta函数、L函数及其特殊值，本文针对黎曼zeta函数的近似函数方程提供显式误差估计，属于解析数论基础技术，可为后续研究某些算术几何对象（如代数簇上的zeta函数）提供显式工具；但论文聚焦于经典Riemann zeta，未涉及Galois表示或p-adic Hodge理论，相关性为间接。"
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "score": 0.06,
-          "base_score": 0.0,
-          "bridge_bonus": 0.012,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.048,
-          "level": "low",
-          "reason": "arithmetic ↔ K-theory / motivic；时效加分 +0.05",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "score": 0.048,
-          "base_score": 0.0,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.048,
-          "level": "low",
-          "reason": "时效加分 +0.05",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "score": 0.048,
-          "base_score": 0.0,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.048,
-          "level": "low",
-          "reason": "时效加分 +0.05",
-          "keyword_hits": []
-        }
-      ],
-      "best_match": {
-        "topic_id": "arithmetic_geometry",
-        "topic_name": "Arithmetic Geometry",
-        "score": 0.482,
-        "base_score": 0.422,
-        "bridge_bonus": 0.012,
-        "preference_bonus": 0.0,
-        "recency_bonus": 0.048,
-        "level": "medium",
-        "reason": "关键词命中：zeta function；arXiv 分类重合：math.NT；arithmetic ↔ K-theory / motivic；时效加分 +0.05",
-        "keyword_hits": [
-          "zeta function"
-        ],
-        "llm_reason": "研究方向关注zeta函数、L函数及其特殊值，本文针对黎曼zeta函数的近似函数方程提供显式误差估计，属于解析数论基础技术，可为后续研究某些算术几何对象（如代数簇上的zeta函数）提供显式工具；但论文聚焦于经典Riemann zeta，未涉及Galois表示或p-adic Hodge理论，相关性为间接。"
-      },
-      "top_labels": [
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "base_score": 0.422,
-          "score": 0.482,
-          "level": "medium",
-          "keyword_hits": [
-            "zeta function"
-          ]
-        }
-      ],
-      "backfilled_from_recent_arxiv": true,
-      "newly_discovered_from_recent_arxiv": true,
-      "fulltext_excerpt": "[2609.00537] Explicit Exponential Sum Estimates and Approximate Functional Equations for the Zeta Function Skip to main content Search arXiv Press Enter to search · Advanced search --> Mathematics > Number Theory arXiv:2609.00537 (math) [Submitted on 1 Sep 2026] Title: Explicit Exponential Sum Estimates and Approximate Functional Equations for the Zeta Function Authors: Natasha Dhiman , Habiba Kadiri , Emily Quesada-Herrera View a PDF of the paper titled Explicit Exponential Sum Estimates and Approximate Functional Equations for the Zeta Function, by Natasha Dhiman and 2 other authors View PDF HTML (experimental) Abstract: We show an explicit version of the Van der Corput truncated Poisson summation formula (B-process). By using refined explicit exponential sum estimates, this improves the error term of previous explicit results by Patel and Yang (2024) and Arias de Reyna (2024). As an application, we obtain fine explicit estimates for the error terms in approximate functional equations for the Riemann zeta function, improving on previous explicit results of Simonič (2020) in certain ranges. Comments: 37 pages, 2 figures Subjects: Number Theory (math.NT) MSC classes: 11L07, 11M06 (Primary) 11Y35 (Secondary) Cite as: arXiv:2609.00537 [math.NT] (or arXiv:2609.00537v1 [math.NT] for this version) https://doi.org/10.48550/arXiv.2609.00537 Focus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: Emily Quesada-Herrera [ view email ] [v1] Tue, 1 Sep 2026 01:21:11 UTC (54 KB) Full-text links: Access Paper: View a PDF of the paper titled Explicit Exponential Sum Estimates and Approximate Functional Equations for the Zeta Function, by Natasha Dhiman and 2 other authors View PDF HTML (experimental) TeX Source view license Ancillary-file links: Ancillary files ( details ) : AFE1.sage AFE2.py Current browse context: math.NT < prev | next > new | recent | 2026-09 Change to browse by: math References & Citations NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
-      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2609.00537",
-      "chinese_summary": {
-        "problem": "本论文旨在改进黎曼zeta函数近似函数方程中误差项的显式上界估计，从而获得更精确的截断公式。",
-        "method": "核心方法是对Van der Corput截断Poisson求和公式（B过程）建立显式版本，并利用精细化的显式指数和估计来控制求和余项。",
-        "innovation": "与近期Patel-Yang (2024)和Arias de Reyna (2024)的显式结果相比，文中通过改进指数和估计显著压低误差常数；在若干范围内，所给出的近似函数方程误差项优于Simonič (2020)的既有显式界。",
-        "evidence": "摘要中明确声称改进了已有显式误差项，但未提供数值表格或具体常数，因此证据主要来自方法描述，需阅读全文验证实际界。",
-        "limitations": "需要阅读全文确认显式界的具体数值、适用t范围，以及是否涉及zeta函数零点之外的算术对象；摘要未说明与算术几何或动机理论的直接联系。",
-        "why_relevant": "研究方向关注zeta函数、L函数及其特殊值，本文针对黎曼zeta函数的近似函数方程提供显式误差估计，属于解析数论基础技术，可为后续研究某些算术几何对象（如代数簇上的zeta函数）提供显式工具；但论文聚焦于经典Riemann zeta，未涉及Galois表示或p-adic Hodge理论，相关性为间接。"
-      },
-      "first_seen_at": "2026-09-02T05:26:23.508847+00:00",
-      "last_seen_at": "2026-09-02T05:26:23.508847+00:00",
       "retained_from_previous_run": true
     },
     {
@@ -15782,7 +15618,7 @@
       },
       "first_seen_at": "2026-09-11T05:37:04.133861+00:00",
       "last_seen_at": "2026-09-11T05:37:04.133861+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2609.01747v1",
@@ -16482,7 +16318,7 @@
       },
       "first_seen_at": "2026-09-11T05:37:04.133861+00:00",
       "last_seen_at": "2026-09-11T05:37:04.133861+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2609.01128v1",
@@ -16843,7 +16679,7 @@
       },
       "first_seen_at": "2026-09-11T05:37:04.133861+00:00",
       "last_seen_at": "2026-09-11T05:37:04.133861+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2609.02112v1",
@@ -17199,7 +17035,7 @@
       },
       "first_seen_at": "2026-09-11T05:37:04.133861+00:00",
       "last_seen_at": "2026-09-11T05:37:04.133861+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2609.05311v1",
@@ -17819,7 +17655,7 @@
       },
       "first_seen_at": "2026-09-11T05:37:04.133861+00:00",
       "last_seen_at": "2026-09-11T05:37:04.133861+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2609.04360v1",
@@ -18195,7 +18031,7 @@
       },
       "first_seen_at": "2026-09-11T05:37:04.133861+00:00",
       "last_seen_at": "2026-09-11T05:37:04.133861+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2609.09310v1",
@@ -18319,7 +18155,7 @@
       },
       "first_seen_at": "2026-09-11T05:37:04.133861+00:00",
       "last_seen_at": "2026-09-11T05:37:04.133861+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2609.02123v1",
@@ -18694,7 +18530,7 @@
       },
       "first_seen_at": "2026-09-11T05:37:04.133861+00:00",
       "last_seen_at": "2026-09-11T05:37:04.133861+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2609.05305v1",
@@ -18923,7 +18759,7 @@
       },
       "first_seen_at": "2026-09-11T05:37:04.133861+00:00",
       "last_seen_at": "2026-09-11T05:37:04.133861+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2609.05203v1",
@@ -19395,6 +19231,139 @@
       "retained_from_previous_run": true
     },
     {
+      "id": "2609.10735v1",
+      "source": "arXiv",
+      "title": "Long range divided differences, clusters, and Graham-positivity",
+      "authors": [
+        "Hunter Spink",
+        "Vasu Tewari"
+      ],
+      "summary": "We study torus-orbit closures in the type $A$ complete flag variety naturally associated to cones in the positive cluster fan, together with their left $S_n$-translates. The torus-equivariant degree maps can be computed via composites of long-range divided difference operations encoded by noncrossing alternating forests, and we give combinatorial algorithms to expand the torus-equivariant homology classes into Graham-positive combinations of Schubert cycles. As applications we obtain combinatorial Graham-positive Schubert cycle expansions for all torus-invariant curves (generalizing the AJS-Billey formula for torus-fixed points), generic torus-orbit closures, and Richardson varieties for Bruhat intervals $[w,wc']$ where $c'\\le s_{n-1}s_{n-2}\\cdots s_1$. Projecting to Grassmannians we also obtain Graham-positive Grassmannian Schubert cycle decompositions of torus-orbit closures associated to lattice path matroids on permuted ground sets.",
+      "published": "2026-09-09T18:31:41Z",
+      "updated": "2026-09-09T18:31:41Z",
+      "paper_url": "http://arxiv.org/abs/2609.10735v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.10735v1",
+      "categories": [
+        "math.AG",
+        "math.CO"
+      ],
+      "seed_topic": "motivic_k_theory",
+      "matches": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.417,
+          "base_score": 0.421,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "medium",
+          "reason": "关键词命中：variety、Proj；arXiv 分类重合：math.AG；时效加分 +0.05",
+          "keyword_hits": [
+            "variety",
+            "Proj"
+          ],
+          "llm_reason": "论文工作在 A 型完全旗簇这一射影簇上，使用 Schubert 循环、环面等变同调与 Graham 正基，属于旗簇上的 Schubert 演算/等变相交理论，与相交理论、Chow 环/等变同调、射影簇等关键词有交集；但核心工具是 cluster、非交叉交替森林和格路拟阵等组合对象，并未涉及 scheme、层、除子、模空间、代数栈或派生代数几何，按给定关键词仅命中 variety、Proj 及 arXiv math.AG 分类，属边缘相关，需人工复核。"
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.233,
+          "base_score": 0.187,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.05",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.232,
+          "base_score": 0.186,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.05",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.056,
+          "base_score": 0.01,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "low",
+          "reason": "时效加分 +0.05",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "algebraic_geometry",
+        "topic_name": "Algebraic Geometry",
+        "score": 0.417,
+        "base_score": 0.421,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.046,
+        "level": "medium",
+        "reason": "关键词命中：variety、Proj；arXiv 分类重合：math.AG；时效加分 +0.05",
+        "keyword_hits": [
+          "variety",
+          "Proj"
+        ],
+        "llm_reason": "论文工作在 A 型完全旗簇这一射影簇上，使用 Schubert 循环、环面等变同调与 Graham 正基，属于旗簇上的 Schubert 演算/等变相交理论，与相交理论、Chow 环/等变同调、射影簇等关键词有交集；但核心工具是 cluster、非交叉交替森林和格路拟阵等组合对象，并未涉及 scheme、层、除子、模空间、代数栈或派生代数几何，按给定关键词仅命中 variety、Proj 及 arXiv math.AG 分类，属边缘相关，需人工复核。"
+      },
+      "top_labels": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.421,
+          "score": 0.467,
+          "level": "medium",
+          "keyword_hits": [
+            "variety",
+            "Proj"
+          ]
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.187,
+          "score": 0.233,
+          "level": "low",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "base_score": 0.186,
+          "score": 0.232,
+          "level": "low",
+          "keyword_hits": []
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "fulltext_excerpt": "[2609.10735] Long range divided differences, clusters, and Graham-positivity Skip to main content Search arXiv Press Enter to search · Advanced search --> Mathematics > Algebraic Geometry arXiv:2609.10735 (math) [Submitted on 9 Sep 2026] Title: Long range divided differences, clusters, and Graham-positivity Authors: Hunter Spink , Vasu Tewari View a PDF of the paper titled Long range divided differences, clusters, and Graham-positivity, by Hunter Spink and 1 other authors View PDF HTML (experimental) Abstract: We study torus-orbit closures in the type $A$ complete flag variety naturally associated to cones in the positive cluster fan, together with their left $S_n$-translates. The torus-equivariant degree maps can be computed via composites of long-range divided difference operations encoded by noncrossing alternating forests, and we give combinatorial algorithms to expand the torus-equivariant homology classes into Graham-positive combinations of Schubert cycles. As applications we obtain combinatorial Graham-positive Schubert cycle expansions for all torus-invariant curves (generalizing the AJS-Billey formula for torus-fixed points), generic torus-orbit closures, and Richardson varieties for Bruhat intervals $[w,wc']$ where $c'\\le s_{n-1}s_{n-2}\\cdots s_1$. Projecting to Grassmannians we also obtain Graham-positive Grassmannian Schubert cycle decompositions of torus-orbit closures associated to lattice path matroids on permuted ground sets. Comments: 25 pages Subjects: Algebraic Geometry (math.AG) ; Combinatorics (math.CO) Cite as: arXiv:2609.10735 [math.AG] (or arXiv:2609.10735v1 [math.AG] for this version) https://doi.org/10.48550/arXiv.2609.10735 Focus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: Vasu Tewari [ view email ] [v1] Wed, 9 Sep 2026 18:31:41 UTC (382 KB) Full-text links: Access Paper: View a PDF of the paper titled Long range divided differences, clusters, and Graham-positivity, by Hunter Spink and 1 other authors View PDF HTML (experimental) TeX Source view license Current browse context: math.AG < prev | next > new | recent | 2026-09 Change to browse by: math math.CO References & Citations NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
+      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2609.10735",
+      "chinese_summary": {
+        "problem": "刻画与正 cluster fan 中锥体自然关联的 A 型完全旗簇内环面轨道闭包（及其左 S_n 平移）的环面等变同调类，并求其在 Schubert 循环基（Graham 正组合）中的精确展开。",
+        "method": "用由非交叉交替森林编码的长程差商算子复合来计算环面等变度映射；再给出组合算法把环面等变同调类展开为 Graham 正的 Schubert 循环组合。通过投影到 Grassmannian，将同类技术用于置换基上格路拟阵对应的环面轨道闭包。",
+        "innovation": "一是将长程差商运算与正 cluster fan 的锥体结构联系起来，并用非交叉交替森林作组合编码；二是对环面不变曲线、generic 环面轨道闭包以及 Bruhat 区间 [w, wc']（c' ≤ s_{n-1}s_{n-2}…s_1）的 Richardson 簇给出统一的 Graham 正 Schubert 展开，推广了 AJS–Billey 关于环面不动点的公式；三是在 Grassmannian 投影下得到置换基格路拟阵对应的 Graham 正 Schubert 分解。",
+        "evidence": "摘要声明了上述定理与应用范围，但提供的正文摘录仅含标题、摘要、arXiv 分类和元数据，没有可核验的证明细节、算法步骤或示例，因此证据目前仅限摘要的定理陈述。",
+        "limitations": "算法的复杂度与可执行性、当 c' 超出 s_{n-1}…s_1 这一限制时 Bruhat 区间 [w, wc'] 的覆盖范围、Graham 正性证明是否纯组合、与退化/几何证明（如 AJS、Billey 以外方法）的几何解释关系，均需阅读全文确认；正文摘录不足以判断技术细节的完整性与严密性。",
+        "why_relevant": "论文工作在 A 型完全旗簇这一射影簇上，使用 Schubert 循环、环面等变同调与 Graham 正基，属于旗簇上的 Schubert 演算/等变相交理论，与相交理论、Chow 环/等变同调、射影簇等关键词有交集；但核心工具是 cluster、非交叉交替森林和格路拟阵等组合对象，并未涉及 scheme、层、除子、模空间、代数栈或派生代数几何，按给定关键词仅命中 variety、Proj 及 arXiv math.AG 分类，属边缘相关，需人工复核。"
+      },
+      "first_seen_at": "2026-09-12T05:24:22.293079+00:00",
+      "last_seen_at": "2026-09-12T05:24:22.293079+00:00",
+      "retained_from_previous_run": false
+    },
+    {
       "id": "2609.03347v1",
       "source": "arXiv",
       "title": "Conical Defects in JT Gravity from BF Theory: Quantization, Fusion, and Weighted Moduli Spaces",
@@ -19507,28 +19476,28 @@
     }
   ],
   "stats": {
-    "candidate_paper_count": 151,
-    "daily_candidate_paper_count": 151,
+    "candidate_paper_count": 128,
+    "daily_candidate_paper_count": 128,
     "raw_daily_candidate_count": 337,
-    "daily_outside_cutoff_count": 238,
-    "newly_discovered_backfill_count": 121,
+    "daily_outside_cutoff_count": 268,
+    "newly_discovered_backfill_count": 128,
     "daily_backfill_days": 14,
-    "daily_backfill_candidate_count": 54,
+    "daily_backfill_candidate_count": 72,
     "daily_backfill_added_count": 0,
     "min_daily_papers": 8,
     "filtered_low_relevance_count": 0,
     "filtered_wrong_category_count": 69,
     "filtered_disliked_count": 0,
     "arxiv_category_filter": [
-      "math.KT",
       "math.AT",
+      "math.NT",
       "math.CT",
       "math.AG",
-      "math.NT"
+      "math.KT"
     ],
     "days": 1,
     "collection_mode": "incremental",
-    "collection_cutoff_iso": "2026-09-10T05:36:05.649231+00:00",
+    "collection_cutoff_iso": "2026-09-11T05:37:04.133861+00:00",
     "max_per_topic": 25,
     "max_new_papers": 30,
     "sources": [
@@ -19570,12 +19539,12 @@
     "dropped_disliked_count": 0,
     "max_stored_papers": 150,
     "max_data_bytes": 8388608,
-    "data_bytes": 1518426,
+    "data_bytes": 1517765,
     "storage_trimmed_count": 30,
     "storage_trimmed_by_level": {
-      "high": 8,
-      "medium": 19,
-      "low": 3,
+      "high": 3,
+      "medium": 5,
+      "low": 22,
       "unknown": 0
     },
     "storage_limit_exceeded_by_likes": false
