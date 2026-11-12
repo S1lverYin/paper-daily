@@ -1,6 +1,6 @@
 {
-  "generated_at": "Wed, 11 Nov 2026 07:29:14 +0000",
-  "generated_at_iso": "2026-11-11T07:29:14.832232+00:00",
+  "generated_at": "Thu, 12 Nov 2026 07:57:14 +0000",
+  "generated_at_iso": "2026-11-12T07:57:14.189458+00:00",
   "config_source": "file",
   "topics": [
     {
@@ -480,7 +480,7 @@
       },
       "first_seen_at": "2026-11-11T07:29:14.832232+00:00",
       "last_seen_at": "2026-11-11T07:29:14.832232+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.02320v1",
@@ -2342,7 +2342,7 @@
       },
       "first_seen_at": "2026-11-11T07:29:14.832232+00:00",
       "last_seen_at": "2026-11-11T07:29:14.832232+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.08356v1",
@@ -3239,141 +3239,6 @@
       "retained_from_previous_run": true
     },
     {
-      "id": "2611.01008v1",
-      "source": "arXiv",
-      "title": "On motivic multiplicativity of cyclic covers",
-      "authors": [
-        "Ze Xu"
-      ],
-      "summary": "Let $Y$ be a smooth projective complex variety of dimension $n$ with trivial Chow groups, and let $f: X\\rightarrow Y$ be a cyclic cover of degree $d$ branched over a smooth ample divisor $D\\in |dL|$. We show that a naturally constructed Chow--Künneth decomposition of $X$ is $m$-fold $mn$-multiplicative for each integer $m\\geq2$ and that its stable motivic multiplicativity defect satisfies $\\mathfrak{sd}(X)\\leq 2dn$. If, in addition, each positive-codimension cycle class on $Y$ is supported on $D$, then a double cover admits motivic $0$-multiplicativity. As a further application, we show that any smooth Gushel--Mukai sixfold admits motivic 0-multiplicativity. Moreover, we establish the sharp modified-diagonal property for all smooth double EPW sextics, confirming a conjecture of O'Grady for these varieties.",
-      "published": "2026-10-31T14:46:08Z",
-      "updated": "2026-10-31T14:46:08Z",
-      "paper_url": "http://arxiv.org/abs/2611.01008v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.01008v1",
-      "categories": [
-        "math.AG"
-      ],
-      "seed_topic": "motivic_k_theory",
-      "matches": [
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "score": 0.657,
-          "base_score": 0.611,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.046,
-          "level": "medium",
-          "reason": "关键词命中：cycle class、Chow group、variety、Proj；arXiv 分类重合：math.AG；时效加分 +0.05",
-          "keyword_hits": [
-            "cycle class",
-            "Chow group",
-            "variety",
-            "Proj"
-          ]
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "score": 0.243,
-          "base_score": 0.197,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.046,
-          "level": "low",
-          "reason": "arXiv 分类重合：math.AG；时效加分 +0.05",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "score": 0.236,
-          "base_score": 0.19,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.046,
-          "level": "low",
-          "reason": "arXiv 分类重合：math.AG；时效加分 +0.05",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "score": 0.056,
-          "base_score": 0.01,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.046,
-          "level": "low",
-          "reason": "时效加分 +0.05",
-          "keyword_hits": []
-        }
-      ],
-      "best_match": {
-        "topic_id": "algebraic_geometry",
-        "topic_name": "Algebraic Geometry",
-        "score": 0.657,
-        "base_score": 0.611,
-        "bridge_bonus": 0.0,
-        "preference_bonus": 0.0,
-        "recency_bonus": 0.046,
-        "level": "medium",
-        "reason": "关键词命中：cycle class、Chow group、variety、Proj；arXiv 分类重合：math.AG；时效加分 +0.05",
-        "keyword_hits": [
-          "cycle class",
-          "Chow group",
-          "variety",
-          "Proj"
-        ]
-      },
-      "top_labels": [
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "base_score": 0.611,
-          "score": 0.657,
-          "level": "medium",
-          "keyword_hits": [
-            "cycle class",
-            "Chow group",
-            "variety",
-            "Proj"
-          ]
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "base_score": 0.197,
-          "score": 0.243,
-          "level": "low",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "base_score": 0.19,
-          "score": 0.236,
-          "level": "low",
-          "keyword_hits": []
-        }
-      ],
-      "backfilled_from_recent_arxiv": true,
-      "newly_discovered_from_recent_arxiv": true,
-      "fulltext_excerpt": "[2611.01008] On motivic multiplicativity of cyclic covers Skip to main content Search arXiv Press Enter to search · Advanced search --> Mathematics > Algebraic Geometry arXiv:2611.01008 (math) [Submitted on 31 Oct 2026] Title: On motivic multiplicativity of cyclic covers Authors: Ze Xu View a PDF of the paper titled On motivic multiplicativity of cyclic covers, by Ze Xu View PDF HTML (experimental) Abstract: Let $Y$ be a smooth projective complex variety of dimension $n$ with trivial Chow groups, and let $f: X\\rightarrow Y$ be a cyclic cover of degree $d$ branched over a smooth ample divisor $D\\in |dL|$. We show that a naturally constructed Chow--Künneth decomposition of $X$ is $m$-fold $mn$-multiplicative for each integer $m\\geq2$ and that its stable motivic multiplicativity defect satisfies $\\mathfrak{sd}(X)\\leq 2dn$. If, in addition, each positive-codimension cycle class on $Y$ is supported on $D$, then a double cover admits motivic $0$-multiplicativity. As a further application, we show that any smooth Gushel--Mukai sixfold admits motivic 0-multiplicativity. Moreover, we establish the sharp modified-diagonal property for all smooth double EPW sextics, confirming a conjecture of O'Grady for these varieties. Comments: 21 pages Subjects: Algebraic Geometry (math.AG) MSC classes: 14C15, 14C25 Cite as: arXiv:2611.01008 [math.AG] (or arXiv:2611.01008v1 [math.AG] for this version) https://doi.org/10.48550/arXiv.2611.01008 Focus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: Ze Xu [ view email ] [v1] Sat, 31 Oct 2026 14:46:08 UTC (21 KB) Full-text links: Access Paper: View a PDF of the paper titled On motivic multiplicativity of cyclic covers, by Ze Xu View PDF HTML (experimental) TeX Source view license Current browse context: math.AG < prev | next > new | recent | 2026-11 Change to browse by: math References & Citations SciX Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
-      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2611.01008",
-      "chinese_summary": {
-        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
-        "method": "Let $Y$ be a smooth projective complex variety of dimension $n$ with trivial Chow groups, and let $f: X\\rightarrow Y$ be a cyclic cover of degree $d$ branched over a smooth ample divisor $D\\in |dL|$.",
-        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
-        "evidence": "来源摘要可在论文原文中核验。",
-        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
-        "why_relevant": "关键词命中：cycle class、Chow group、variety、Proj；arXiv 分类重合：math.AG；时效加分 +0.05"
-      },
-      "first_seen_at": "2026-11-03T07:33:35.557860+00:00",
-      "last_seen_at": "2026-11-03T07:33:35.557860+00:00",
-      "retained_from_previous_run": true
-    },
-    {
       "id": "2611.08679v1",
       "source": "arXiv",
       "title": "Special line bundles on tetragonal curves",
@@ -3641,7 +3506,7 @@
       },
       "first_seen_at": "2026-11-11T07:29:14.832232+00:00",
       "last_seen_at": "2026-11-11T07:29:14.832232+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.04314v1",
@@ -4021,7 +3886,7 @@
       },
       "first_seen_at": "2026-11-11T07:29:14.832232+00:00",
       "last_seen_at": "2026-11-11T07:29:14.832232+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.14502v1",
@@ -4136,7 +4001,7 @@
       },
       "first_seen_at": "2026-11-11T07:29:14.832232+00:00",
       "last_seen_at": "2026-11-11T07:29:14.832232+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.14198v1",
@@ -4252,7 +4117,7 @@
       },
       "first_seen_at": "2026-11-11T07:29:14.832232+00:00",
       "last_seen_at": "2026-11-11T07:29:14.832232+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.13468v1",
@@ -4390,7 +4255,7 @@
       },
       "first_seen_at": "2026-11-11T07:29:14.832232+00:00",
       "last_seen_at": "2026-11-11T07:29:14.832232+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.01508v1",
@@ -6158,7 +6023,7 @@
       },
       "first_seen_at": "2026-11-11T07:29:14.832232+00:00",
       "last_seen_at": "2026-11-11T07:29:14.832232+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.06253v1",
@@ -6789,270 +6654,6 @@
       "retained_from_previous_run": true
     },
     {
-      "id": "2611.00864v1",
-      "source": "arXiv",
-      "title": "From MHV Gravity Amplitudes and Hodges map to Pentad Varieties",
-      "authors": [
-        "Joris Koefler",
-        "Emanuele Ventura",
-        "Hongmiao Yu"
-      ],
-      "summary": "We study some geometric aspects behind the Hodges matrix appearing in the context of scattering amplitudes for the $\\mathcal N=8$ supergravity. Through a vector bundle construction, we show that the Hodges matrix gives rise to a canonical rational map from the two-step flag variety to symmetric matrices, called the $\\textit{Hodges map}$. This construction allows to define the amplitude geometrically: its vanishing locus is a divisor - the $\\textit{MHV gravity divisor}$. Inspired by the Hodges map, we introduce the notion of Hadamard ratio of two varieties. In the case relevant to gravity, this is the ratio of two Grassmannians, which we call the $\\textit{pentad variety}$, connecting it to the pentad constraint from algebraic statistics. Moreover, we show that the pentad variety is closely related to the combinatorial algebraic geometry of Martin's affine slope variety, and the phirotopes of Below, Krummeck, and Richter-Gebert.",
-      "published": "2026-10-31T12:06:55Z",
-      "updated": "2026-10-31T12:06:55Z",
-      "paper_url": "http://arxiv.org/abs/2611.00864v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.00864v1",
-      "categories": [
-        "math.AG",
-        "math.CO"
-      ],
-      "seed_topic": "motivic_k_theory",
-      "matches": [
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "score": 0.586,
-          "base_score": 0.61,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.046,
-          "level": "medium",
-          "reason": "关键词命中：algebraic geometry、vector bundle、variety、Spec；arXiv 分类重合：math.AG；时效加分 +0.05；跨领域降权 (×0.89)",
-          "keyword_hits": [
-            "algebraic geometry",
-            "vector bundle",
-            "variety",
-            "Spec"
-          ]
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "score": 0.177,
-          "base_score": 0.189,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.046,
-          "level": "low",
-          "reason": "arXiv 分类重合：math.AG；时效加分 +0.05；跨领域降权 (×0.76)",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "score": 0.175,
-          "base_score": 0.186,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.046,
-          "level": "low",
-          "reason": "arXiv 分类重合：math.AG；时效加分 +0.05；跨领域降权 (×0.76)",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "score": 0.035,
-          "base_score": 0.0,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.046,
-          "level": "low",
-          "reason": "时效加分 +0.05；跨领域降权 (×0.76)",
-          "keyword_hits": []
-        }
-      ],
-      "best_match": {
-        "topic_id": "algebraic_geometry",
-        "topic_name": "Algebraic Geometry",
-        "score": 0.586,
-        "base_score": 0.61,
-        "bridge_bonus": 0.0,
-        "preference_bonus": 0.0,
-        "recency_bonus": 0.046,
-        "level": "medium",
-        "reason": "关键词命中：algebraic geometry、vector bundle、variety、Spec；arXiv 分类重合：math.AG；时效加分 +0.05；跨领域降权 (×0.89)",
-        "keyword_hits": [
-          "algebraic geometry",
-          "vector bundle",
-          "variety",
-          "Spec"
-        ]
-      },
-      "top_labels": [
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "base_score": 0.61,
-          "score": 0.586,
-          "level": "medium",
-          "keyword_hits": [
-            "algebraic geometry",
-            "vector bundle",
-            "variety",
-            "Spec"
-          ]
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "base_score": 0.189,
-          "score": 0.177,
-          "level": "low",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "base_score": 0.186,
-          "score": 0.175,
-          "level": "low",
-          "keyword_hits": []
-        }
-      ],
-      "backfilled_from_recent_arxiv": true,
-      "newly_discovered_from_recent_arxiv": true,
-      "fulltext_excerpt": "[2611.00864] From MHV Gravity Amplitudes and Hodges map to Pentad Varieties Skip to main content Search arXiv Press Enter to search · Advanced search --> Mathematics > Algebraic Geometry arXiv:2611.00864 (math) [Submitted on 31 Oct 2026] Title: From MHV Gravity Amplitudes and Hodges map to Pentad Varieties Authors: Joris Koefler , Emanuele Ventura , Hongmiao Yu View a PDF of the paper titled From MHV Gravity Amplitudes and Hodges map to Pentad Varieties, by Joris Koefler and 2 other authors View PDF HTML (experimental) Abstract: We study some geometric aspects behind the Hodges matrix appearing in the context of scattering amplitudes for the $\\mathcal N=8$ supergravity. Through a vector bundle construction, we show that the Hodges matrix gives rise to a canonical rational map from the two-step flag variety to symmetric matrices, called the $\\textit{Hodges map}$. This construction allows to define the amplitude geometrically: its vanishing locus is a divisor - the $\\textit{MHV gravity divisor}$. Inspired by the Hodges map, we introduce the notion of Hadamard ratio of two varieties. In the case relevant to gravity, this is the ratio of two Grassmannians, which we call the $\\textit{pentad variety}$, connecting it to the pentad constraint from algebraic statistics. Moreover, we show that the pentad variety is closely related to the combinatorial algebraic geometry of Martin's affine slope variety, and the phirotopes of Below, Krummeck, and Richter-Gebert. Comments: Comments welcome Subjects: Algebraic Geometry (math.AG) ; Combinatorics (math.CO) Cite as: arXiv:2611.00864 [math.AG] (or arXiv:2611.00864v1 [math.AG] for this version) https://doi.org/10.48550/arXiv.2611.00864 Focus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: Joris Koefler [ view email ] [v1] Sat, 31 Oct 2026 12:06:55 UTC (48 KB) Full-text links: Access Paper: View a PDF of the paper titled From MHV Gravity Amplitudes and Hodges map to Pentad Varieties, by Joris Koefler and 2 other authors View PDF HTML (experimental) TeX Source view license Current browse context: math.AG < prev | next > new | recent | 2026-11 Change to browse by: math math.CO References & Citations SciX Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
-      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2611.00864",
-      "chinese_summary": {
-        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
-        "method": "We study some geometric aspects behind the Hodges matrix appearing in the context of scattering amplitudes for the $\\mathcal N=8$ supergravity.",
-        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
-        "evidence": "来源摘要可在论文原文中核验。",
-        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
-        "why_relevant": "关键词命中：algebraic geometry、vector bundle、variety、Spec；arXiv 分类重合：math.AG；时效加分 +0.05；跨领域降权 (×0.89)"
-      },
-      "first_seen_at": "2026-11-03T07:33:35.557860+00:00",
-      "last_seen_at": "2026-11-03T07:33:35.557860+00:00",
-      "retained_from_previous_run": true
-    },
-    {
-      "id": "2611.00924v1",
-      "source": "arXiv",
-      "title": "An exhaustion-aware product moment and zero-free half-planes for Hecke L-functions",
-      "authors": [
-        "Xinrui Chang",
-        "HaoMing Wang"
-      ],
-      "summary": "We refine the ordinary product moment in the cubic-theta comparison by allowing a returned prime product to be exhausted. The return stops either when the positive-prime length inequality holds or when the established prime-free ordinary estimate applies. Keeping the extracted central coefficients gives a local normalization inequality on a larger domain. On the critical ordinary-length interval this yields a net first-mean gain of $1/20000$. We prove the complementary-class, short-sum and algebraic comparison inequalities directly, and obtain the endpoint $B_*-1/160000=0.87446205769353\\ldots$, where $B_*$ is Liu's algebraic boundary. The zero-free conclusion is conditional on the cited general-field theta, detector, prior-bound and Mellin input theorems in their stated uniform forms. The proof includes the actual return weights, both approximate-functional-equation arms, the principal-residue normalization and descent to arbitrary number fields.",
-      "published": "2026-10-31T13:23:44Z",
-      "updated": "2026-10-31T13:23:44Z",
-      "paper_url": "http://arxiv.org/abs/2611.00924v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.00924v1",
-      "categories": [
-        "math.NT"
-      ],
-      "seed_topic": "arithmetic_geometry",
-      "matches": [
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "score": 0.585,
-          "base_score": 0.495,
-          "bridge_bonus": 0.044,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.046,
-          "level": "medium",
-          "reason": "关键词命中：number field、L-function；arXiv 分类重合：math.NT；桥接 arithmetic_geometry↔algebraic_geometry (hits=2/1)；arithmetic ↔ K-theory / motivic；cross-domain: descent；时效加分 +0.05",
-          "keyword_hits": [
-            "number field",
-            "L-function"
-          ]
-        },
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "score": 0.225,
-          "base_score": 0.147,
-          "bridge_bonus": 0.032,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.046,
-          "level": "low",
-          "reason": "关键词命中：descent；桥接 algebraic_geometry↔arithmetic_geometry (hits=1/2)；cross-domain: descent；时效加分 +0.05",
-          "keyword_hits": [
-            "descent"
-          ]
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "score": 0.074,
-          "base_score": 0.004,
-          "bridge_bonus": 0.024,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.046,
-          "level": "low",
-          "reason": "arithmetic ↔ K-theory / motivic；cross-domain: descent；时效加分 +0.05",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "score": 0.064,
-          "base_score": 0.006,
-          "bridge_bonus": 0.012,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.046,
-          "level": "low",
-          "reason": "cross-domain: descent；时效加分 +0.05",
-          "keyword_hits": []
-        }
-      ],
-      "best_match": {
-        "topic_id": "arithmetic_geometry",
-        "topic_name": "Arithmetic Geometry",
-        "score": 0.585,
-        "base_score": 0.495,
-        "bridge_bonus": 0.044,
-        "preference_bonus": 0.0,
-        "recency_bonus": 0.046,
-        "level": "medium",
-        "reason": "关键词命中：number field、L-function；arXiv 分类重合：math.NT；桥接 arithmetic_geometry↔algebraic_geometry (hits=2/1)；arithmetic ↔ K-theory / motivic；cross-domain: descent；时效加分 +0.05",
-        "keyword_hits": [
-          "number field",
-          "L-function"
-        ]
-      },
-      "top_labels": [
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "base_score": 0.495,
-          "score": 0.585,
-          "level": "medium",
-          "keyword_hits": [
-            "number field",
-            "L-function"
-          ]
-        },
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "base_score": 0.147,
-          "score": 0.225,
-          "level": "low",
-          "keyword_hits": [
-            "descent"
-          ]
-        }
-      ],
-      "backfilled_from_recent_arxiv": true,
-      "newly_discovered_from_recent_arxiv": true,
-      "fulltext_excerpt": "[2611.00924] An exhaustion-aware product moment and zero-free half-planes for Hecke L-functions Skip to main content Search arXiv Press Enter to search · Advanced search --> Mathematics > Number Theory arXiv:2611.00924 (math) [Submitted on 31 Oct 2026] Title: An exhaustion-aware product moment and zero-free half-planes for Hecke L-functions Authors: Xinrui Chang (Fudan University), HaoMing Wang (Fudan University) View a PDF of the paper titled An exhaustion-aware product moment and zero-free half-planes for Hecke L-functions, by Xinrui Chang (Fudan University) and 1 other authors View PDF HTML (experimental) Abstract: We refine the ordinary product moment in the cubic-theta comparison by allowing a returned prime product to be exhausted. The return stops either when the positive-prime length inequality holds or when the established prime-free ordinary estimate applies. Keeping the extracted central coefficients gives a local normalization inequality on a larger domain. On the critical ordinary-length interval this yields a net first-mean gain of $1/20000$. We prove the complementary-class, short-sum and algebraic comparison inequalities directly, and obtain the endpoint $B_*-1/160000=0.87446205769353\\ldots$, where $B_*$ is Liu's algebraic boundary. The zero-free conclusion is conditional on the cited general-field theta, detector, prior-bound and Mellin input theorems in their stated uniform forms. The proof includes the actual return weights, both approximate-functional-equation arms, the principal-residue normalization and descent to arbitrary number fields. Comments: 16 pages Subjects: Number Theory (math.NT) MSC classes: 11M41, 11F27, 11R42 Cite as: arXiv:2611.00924 [math.NT] (or arXiv:2611.00924v1 [math.NT] for this version) https://doi.org/10.48550/arXiv.2611.00924 Focus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: Xinrui Chang [ view email ] [v1] Sat, 31 Oct 2026 13:23:44 UTC (18 KB) Full-text links: Access Paper: View a PDF of the paper titled An exhaustion-aware product moment and zero-free half-planes for Hecke L-functions, by Xinrui Chang (Fudan University) and 1 other authors View PDF HTML (experimental) TeX Source view license Current browse context: math.NT < prev | next > new | recent | 2026-11 Change to browse by: math References & Citations SciX Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
-      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2611.00924",
-      "chinese_summary": {
-        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
-        "method": "We refine the ordinary product moment in the cubic-theta comparison by allowing a returned prime product to be exhausted.",
-        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
-        "evidence": "来源摘要可在论文原文中核验。",
-        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
-        "why_relevant": "关键词命中：number field、L-function；arXiv 分类重合：math.NT；桥接 arithmetic_geometry↔algebraic_geometry (hits=2/1)；arithmetic ↔ K-theory / motivic；cross-domain: descent；时效加分 +0.05"
-      },
-      "first_seen_at": "2026-11-03T07:33:35.557860+00:00",
-      "last_seen_at": "2026-11-03T07:33:35.557860+00:00",
-      "retained_from_previous_run": true
-    },
-    {
       "id": "2611.02933v1",
       "source": "arXiv",
       "title": "Modular L-functions and Chebyshev systems",
@@ -7661,7 +7262,7 @@
       },
       "first_seen_at": "2026-11-11T07:29:14.832232+00:00",
       "last_seen_at": "2026-11-11T07:29:14.832232+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.14125v1",
@@ -7786,7 +7387,7 @@
       },
       "first_seen_at": "2026-11-11T07:29:14.832232+00:00",
       "last_seen_at": "2026-11-11T07:29:14.832232+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.12201v1",
@@ -8198,7 +7799,7 @@
       },
       "first_seen_at": "2026-11-11T07:29:14.832232+00:00",
       "last_seen_at": "2026-11-11T07:29:14.832232+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.10924v1",
@@ -9273,7 +8874,7 @@
       },
       "first_seen_at": "2026-11-11T07:29:14.832232+00:00",
       "last_seen_at": "2026-11-11T07:29:14.832232+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.08190v1",
@@ -10153,7 +9754,7 @@
       },
       "first_seen_at": "2026-11-11T07:29:14.832232+00:00",
       "last_seen_at": "2026-11-11T07:29:14.832232+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.11829v1",
@@ -10531,146 +10132,6 @@
       "retained_from_previous_run": true
     },
     {
-      "id": "2611.00813v2",
-      "source": "arXiv",
-      "title": "Stable compatibility for model categories",
-      "authors": [
-        "Kunal Arora",
-        "Vivek Mohan Mallick"
-      ],
-      "summary": "By introducing the notion of stable compatibility, we provide a framework in the model category theory which addresses the existence of a stable model structure on the category of modules over a monad. Exact version of such monads have been studied in the setting of triangulated categories, separately as separable monads a la Balmer in tensor triangular geometry and non-separable monads a la Dell'Ambrogio and Sanders in stable homotopy theory. By introducing stable compatibility, we explore their properties together and produce a non-separable monad in Algebraic geometry and more.",
-      "published": "2026-10-31T10:52:11Z",
-      "updated": "2026-11-10T10:50:17Z",
-      "paper_url": "http://arxiv.org/abs/2611.00813v2",
-      "pdf_url": "https://arxiv.org/pdf/2611.00813v2",
-      "categories": [
-        "math.AG",
-        "math.AT",
-        "math.CT"
-      ],
-      "seed_topic": "homotopy_theory",
-      "matches": [
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "score": 0.526,
-          "base_score": 0.477,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.049,
-          "level": "medium",
-          "reason": "关键词命中：stable homotopy theory、model category；arXiv 分类重合：math.AT；时效加分 +0.05",
-          "keyword_hits": [
-            "stable homotopy theory",
-            "model category"
-          ]
-        },
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "score": 0.428,
-          "base_score": 0.379,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.049,
-          "level": "medium",
-          "reason": "关键词命中：algebraic geometry；arXiv 分类重合：math.AG；时效加分 +0.05",
-          "keyword_hits": [
-            "algebraic geometry"
-          ]
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "score": 0.246,
-          "base_score": 0.197,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.049,
-          "level": "low",
-          "reason": "arXiv 分类重合：math.AG、math.AT；时效加分 +0.05",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "score": 0.235,
-          "base_score": 0.186,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.049,
-          "level": "low",
-          "reason": "arXiv 分类重合：math.AG；时效加分 +0.05",
-          "keyword_hits": []
-        }
-      ],
-      "best_match": {
-        "topic_id": "homotopy_theory",
-        "topic_name": "Homotopy Theory",
-        "score": 0.526,
-        "base_score": 0.477,
-        "bridge_bonus": 0.0,
-        "preference_bonus": 0.0,
-        "recency_bonus": 0.049,
-        "level": "medium",
-        "reason": "关键词命中：stable homotopy theory、model category；arXiv 分类重合：math.AT；时效加分 +0.05",
-        "keyword_hits": [
-          "stable homotopy theory",
-          "model category"
-        ]
-      },
-      "top_labels": [
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "base_score": 0.477,
-          "score": 0.526,
-          "level": "medium",
-          "keyword_hits": [
-            "stable homotopy theory",
-            "model category"
-          ]
-        },
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "base_score": 0.379,
-          "score": 0.428,
-          "level": "medium",
-          "keyword_hits": [
-            "algebraic geometry"
-          ]
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "base_score": 0.197,
-          "score": 0.246,
-          "level": "low",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "base_score": 0.186,
-          "score": 0.235,
-          "level": "low",
-          "keyword_hits": []
-        }
-      ],
-      "chinese_summary": {
-        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
-        "method": "By introducing the notion of stable compatibility, we provide a framework in the model category theory which addresses the existence of a stable model structure on the category of modules over a monad.",
-        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
-        "evidence": "来源摘要可在论文原文中核验。",
-        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
-        "why_relevant": "关键词命中：stable homotopy theory、model category；arXiv 分类重合：math.AT；时效加分 +0.05"
-      },
-      "first_seen_at": "2026-11-11T07:29:14.832232+00:00",
-      "last_seen_at": "2026-11-11T07:29:14.832232+00:00",
-      "retained_from_previous_run": false
-    },
-    {
       "id": "2611.13349v1",
       "source": "arXiv",
       "title": "On Poincaré-Type Inequalities for Flags of Distributions",
@@ -10798,7 +10259,7 @@
       },
       "first_seen_at": "2026-11-11T07:29:14.832232+00:00",
       "last_seen_at": "2026-11-11T07:29:14.832232+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.05350v1",
@@ -11054,148 +10515,6 @@
       },
       "first_seen_at": "2026-11-06T07:39:22.955028+00:00",
       "last_seen_at": "2026-11-06T07:39:22.955028+00:00",
-      "retained_from_previous_run": true
-    },
-    {
-      "id": "2611.00813v1",
-      "source": "arXiv",
-      "title": "Stable compatibility for model categories",
-      "authors": [
-        "Kunal Arora",
-        "Vivek Mohan Mallick"
-      ],
-      "summary": "By introducing the notion of stable compatibility, we provide a framework in the model category theory which addresses the existence of a stable model structure on the category of modules over a monad. Exact version of such monads have been studied in the setting of triangulated categories, separately as separable monads a la Balmer in tensor triangular geometry and non-separable monads a la Dell'Ambrogio and Sanders in stable homotopy theory. By introducing stable compatibility, we explore their properties together and produce a non-separable monad in Algebraic geometry and more.",
-      "published": "2026-10-31T10:52:11Z",
-      "updated": "2026-10-31T10:52:11Z",
-      "paper_url": "http://arxiv.org/abs/2611.00813v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.00813v1",
-      "categories": [
-        "math.AG",
-        "math.AT",
-        "math.CT"
-      ],
-      "seed_topic": "motivic_k_theory",
-      "matches": [
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "score": 0.522,
-          "base_score": 0.477,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.045,
-          "level": "medium",
-          "reason": "关键词命中：stable homotopy theory、model category；arXiv 分类重合：math.AT；时效加分 +0.05",
-          "keyword_hits": [
-            "stable homotopy theory",
-            "model category"
-          ]
-        },
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "score": 0.424,
-          "base_score": 0.379,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.045,
-          "level": "medium",
-          "reason": "关键词命中：algebraic geometry；arXiv 分类重合：math.AG；时效加分 +0.05",
-          "keyword_hits": [
-            "algebraic geometry"
-          ]
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "score": 0.242,
-          "base_score": 0.197,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.045,
-          "level": "low",
-          "reason": "arXiv 分类重合：math.AG、math.AT；时效加分 +0.05",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "score": 0.231,
-          "base_score": 0.186,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.045,
-          "level": "low",
-          "reason": "arXiv 分类重合：math.AG；时效加分 +0.05",
-          "keyword_hits": []
-        }
-      ],
-      "best_match": {
-        "topic_id": "homotopy_theory",
-        "topic_name": "Homotopy Theory",
-        "score": 0.522,
-        "base_score": 0.477,
-        "bridge_bonus": 0.0,
-        "preference_bonus": 0.0,
-        "recency_bonus": 0.045,
-        "level": "medium",
-        "reason": "关键词命中：stable homotopy theory、model category；arXiv 分类重合：math.AT；时效加分 +0.05",
-        "keyword_hits": [
-          "stable homotopy theory",
-          "model category"
-        ]
-      },
-      "top_labels": [
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "base_score": 0.477,
-          "score": 0.522,
-          "level": "medium",
-          "keyword_hits": [
-            "stable homotopy theory",
-            "model category"
-          ]
-        },
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "base_score": 0.379,
-          "score": 0.424,
-          "level": "medium",
-          "keyword_hits": [
-            "algebraic geometry"
-          ]
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "base_score": 0.197,
-          "score": 0.242,
-          "level": "low",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "base_score": 0.186,
-          "score": 0.231,
-          "level": "low",
-          "keyword_hits": []
-        }
-      ],
-      "backfilled_from_recent_arxiv": true,
-      "newly_discovered_from_recent_arxiv": true,
-      "chinese_summary": {
-        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
-        "method": "By introducing the notion of stable compatibility, we provide a framework in the model category theory which addresses the existence of a stable model structure on the category of modules over a monad.",
-        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
-        "evidence": "来源摘要可在论文原文中核验。",
-        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
-        "why_relevant": "关键词命中：stable homotopy theory、model category；arXiv 分类重合：math.AT；时效加分 +0.05"
-      },
-      "first_seen_at": "2026-11-03T07:33:35.557860+00:00",
-      "last_seen_at": "2026-11-03T07:33:35.557860+00:00",
       "retained_from_previous_run": true
     },
     {
@@ -11583,123 +10902,6 @@
       },
       "first_seen_at": "2026-11-11T07:29:14.832232+00:00",
       "last_seen_at": "2026-11-11T07:29:14.832232+00:00",
-      "retained_from_previous_run": false
-    },
-    {
-      "id": "2611.00457v1",
-      "source": "arXiv",
-      "title": "Bilateral Christoffel-Geronimus-Uvarov formulas for mixed-type orthogonality on algebraic supports",
-      "authors": [
-        "Manuel Mañas"
-      ],
-      "summary": "Christoffel-type determinant formulas construct both normalized polynomial families and their reproducing kernel for mixed-type orthogonality in several variables after independent rational matrix transformations on the two arguments. The pairing may have a rectangular matrix of functionals, with separate degree bounds on each component, and may be supported on an algebraic variety. The reduced matrices are calculated from the original biorthogonal polynomials, rational moments, polynomial division and the masses left free by division; their nonvanishing determinants characterize existence and uniqueness. For measure pairings the rational data are expressed by Cauchy and multivariate Fantappie transforms. Exact dimension counts incorporate the four matrix factors and the relations of the support. For normal degree-ordered original families and fixed factors, when the component degrees on each side differ by a bounded amount and the normalization dimension grows at most like one degree layer, the resulting orders are bounded on curves and grow at most linearly on surfaces. For pairings allowing scalar factors to move between arguments, called balanced pairings, an exact obstruction determines whether a bilateral mass decomposes into unilateral masses when the denominators act injectively. Residue duality provides coordinates for division and mass quotients on integral curves, including singular points, and on the finite surface quotients specified here. Explicit singular-curve families retain nondegenerate residue pairings as denominator zeros coalesce. Positive congruences admit a further reduction by orthogonal projection, while balanced pairings give simultaneous intertwining identities for all coordinate multiplication matrices.",
-      "published": "2026-10-30T23:19:28Z",
-      "updated": "2026-10-30T23:19:28Z",
-      "paper_url": "http://arxiv.org/abs/2611.00457v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.00457v1",
-      "categories": [
-        "math.CA",
-        "math-ph",
-        "math.AG",
-        "math.SP"
-      ],
-      "seed_topic": "motivic_k_theory",
-      "matches": [
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "score": 0.517,
-          "base_score": 0.472,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.045,
-          "level": "medium",
-          "reason": "关键词命中：algebraic variety、Spec、Proj；arXiv 分类重合：math.AG；时效加分 +0.04",
-          "keyword_hits": [
-            "algebraic variety",
-            "Spec",
-            "Proj"
-          ]
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "score": 0.173,
-          "base_score": 0.128,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.045,
-          "level": "low",
-          "reason": "arXiv 分类重合：math.AG；时效加分 +0.04",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "score": 0.166,
-          "base_score": 0.121,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.045,
-          "level": "low",
-          "reason": "arXiv 分类重合：math.AG；时效加分 +0.04",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "score": 0.05,
-          "base_score": 0.005,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.045,
-          "level": "low",
-          "reason": "时效加分 +0.04",
-          "keyword_hits": []
-        }
-      ],
-      "best_match": {
-        "topic_id": "algebraic_geometry",
-        "topic_name": "Algebraic Geometry",
-        "score": 0.517,
-        "base_score": 0.472,
-        "bridge_bonus": 0.0,
-        "preference_bonus": 0.0,
-        "recency_bonus": 0.045,
-        "level": "medium",
-        "reason": "关键词命中：algebraic variety、Spec、Proj；arXiv 分类重合：math.AG；时效加分 +0.04",
-        "keyword_hits": [
-          "algebraic variety",
-          "Spec",
-          "Proj"
-        ]
-      },
-      "top_labels": [
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "base_score": 0.472,
-          "score": 0.517,
-          "level": "medium",
-          "keyword_hits": [
-            "algebraic variety",
-            "Spec",
-            "Proj"
-          ]
-        }
-      ],
-      "backfilled_from_recent_arxiv": true,
-      "newly_discovered_from_recent_arxiv": true,
-      "chinese_summary": {
-        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
-        "method": "Christoffel-type determinant formulas construct both normalized polynomial families and their reproducing kernel for mixed-type orthogonality in several variables after independent rational matrix transformations on the two arguments.",
-        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
-        "evidence": "来源摘要可在论文原文中核验。",
-        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
-        "why_relevant": "关键词命中：algebraic variety、Spec、Proj；arXiv 分类重合：math.AG；时效加分 +0.04"
-      },
-      "first_seen_at": "2026-11-03T07:33:35.557860+00:00",
-      "last_seen_at": "2026-11-03T07:33:35.557860+00:00",
       "retained_from_previous_run": true
     },
     {
@@ -13762,7 +12964,7 @@
       },
       "first_seen_at": "2026-11-11T07:29:14.832232+00:00",
       "last_seen_at": "2026-11-11T07:29:14.832232+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.02614v1",
@@ -13891,149 +13093,6 @@
       },
       "first_seen_at": "2026-11-03T07:33:35.557860+00:00",
       "last_seen_at": "2026-11-03T07:33:35.557860+00:00",
-      "retained_from_previous_run": true
-    },
-    {
-      "id": "2611.00311v1",
-      "source": "arXiv",
-      "title": "On potential density of rational points on hyperkahler varieties",
-      "authors": [
-        "Ting Gong"
-      ],
-      "summary": "In this paper, we prove that the rational points on hyperkähler varieties in each of the four known deformation families admitting a rational Lagrangian fibration are potentially dense. Furthermore, we give several applications and construct examples of hyperkähler varieties beyond these families satisfying the potential density property. Our approach is first to prove that rational points on hyperkähler varieties admitting two rational Lagrangian fibrations with distinct associated isotropic rays are potentially dense. We then construct a projective Shafarevich--Tate twist admitting two such fibrations, together with a dominant rational map from the twist to the original variety.",
-      "published": "2026-10-30T19:33:07Z",
-      "updated": "2026-10-30T19:33:07Z",
-      "paper_url": "http://arxiv.org/abs/2611.00311v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.00311v1",
-      "categories": [
-        "math.AG",
-        "math.NT"
-      ],
-      "seed_topic": "homotopy_theory",
-      "matches": [
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "score": 0.488,
-          "base_score": 0.433,
-          "bridge_bonus": 0.012,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.043,
-          "level": "medium",
-          "reason": "关键词命中：rational points；arXiv 分类重合：math.AG、math.NT；AG ↔ arithmetic；时效加分 +0.04",
-          "keyword_hits": [
-            "rational points"
-          ]
-        },
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "score": 0.477,
-          "base_score": 0.422,
-          "bridge_bonus": 0.012,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.043,
-          "level": "medium",
-          "reason": "关键词命中：variety、Proj；arXiv 分类重合：math.AG；AG ↔ arithmetic；时效加分 +0.04",
-          "keyword_hits": [
-            "variety",
-            "Proj"
-          ]
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "score": 0.228,
-          "base_score": 0.185,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.043,
-          "level": "low",
-          "reason": "arXiv 分类重合：math.AG；时效加分 +0.04",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "score": 0.184,
-          "base_score": 0.141,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.043,
-          "level": "low",
-          "reason": "关键词命中：fibration；时效加分 +0.04",
-          "keyword_hits": [
-            "fibration"
-          ]
-        }
-      ],
-      "best_match": {
-        "topic_id": "arithmetic_geometry",
-        "topic_name": "Arithmetic Geometry",
-        "score": 0.488,
-        "base_score": 0.433,
-        "bridge_bonus": 0.012,
-        "preference_bonus": 0.0,
-        "recency_bonus": 0.043,
-        "level": "medium",
-        "reason": "关键词命中：rational points；arXiv 分类重合：math.AG、math.NT；AG ↔ arithmetic；时效加分 +0.04",
-        "keyword_hits": [
-          "rational points"
-        ]
-      },
-      "top_labels": [
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "base_score": 0.433,
-          "score": 0.488,
-          "level": "medium",
-          "keyword_hits": [
-            "rational points"
-          ]
-        },
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "base_score": 0.422,
-          "score": 0.477,
-          "level": "medium",
-          "keyword_hits": [
-            "variety",
-            "Proj"
-          ]
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "base_score": 0.185,
-          "score": 0.228,
-          "level": "low",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "base_score": 0.141,
-          "score": 0.184,
-          "level": "low",
-          "keyword_hits": [
-            "fibration"
-          ]
-        }
-      ],
-      "backfilled_from_recent_arxiv": true,
-      "newly_discovered_from_recent_arxiv": true,
-      "chinese_summary": {
-        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
-        "method": "In this paper, we prove that the rational points on hyperkähler varieties in each of the four known deformation families admitting a rational Lagrangian fibration are potentially dense.",
-        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
-        "evidence": "来源摘要可在论文原文中核验。",
-        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
-        "why_relevant": "关键词命中：rational points；arXiv 分类重合：math.AG、math.NT；AG ↔ arithmetic；时效加分 +0.04"
-      },
-      "first_seen_at": "2026-11-04T07:14:26.130264+00:00",
-      "last_seen_at": "2026-11-04T07:14:26.130264+00:00",
       "retained_from_previous_run": true
     },
     {
@@ -14614,7 +13673,7 @@
       },
       "first_seen_at": "2026-11-11T07:29:14.832232+00:00",
       "last_seen_at": "2026-11-11T07:29:14.832232+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.04723v1",
@@ -14978,7 +14037,7 @@
       },
       "first_seen_at": "2026-11-11T07:29:14.832232+00:00",
       "last_seen_at": "2026-11-11T07:29:14.832232+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.14294v1",
@@ -15103,7 +14162,7 @@
       },
       "first_seen_at": "2026-11-11T07:29:14.832232+00:00",
       "last_seen_at": "2026-11-11T07:29:14.832232+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.14162v1",
@@ -15222,7 +14281,7 @@
       },
       "first_seen_at": "2026-11-11T07:29:14.832232+00:00",
       "last_seen_at": "2026-11-11T07:29:14.832232+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.13422v1",
@@ -15349,7 +14408,7 @@
       },
       "first_seen_at": "2026-11-11T07:29:14.832232+00:00",
       "last_seen_at": "2026-11-11T07:29:14.832232+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "2611.06862v1",
@@ -15478,114 +14537,6 @@
       "retained_from_previous_run": true
     },
     {
-      "id": "2610.42137v1",
-      "source": "arXiv",
-      "title": "On the Iwasawa invariants of admissible quadratic twists of elliptic curves at ordinary Eisenstein primes",
-      "authors": [
-        "Mulun Yin"
-      ],
-      "summary": "We study the Iwasawa $μ$- and $λ$-invariants of quadratic twists of rational elliptic curves at Eisenstein primes $p\\geq 3$. We verify Greenberg's $μ=0$ conjecture for all such twists, which gives an Euler system free proof of Mazur's cotorsion conjecture, and study the $λ$-invariants when the twist is admissible in the sense of [GV00]. As a consequence, we prove the cyclotomic Iwasawa Main Conjecture and obtain the $p$-part BSD formulae in rank $0$ for admissible twists under mild conditions, covering many elliptic curves of potentially ordinary reduction.",
-      "published": "2026-10-30T17:58:36Z",
-      "updated": "2026-10-30T17:58:36Z",
-      "paper_url": "http://arxiv.org/abs/2610.42137v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.42137v1",
-      "categories": [
-        "math.NT"
-      ],
-      "seed_topic": "arithmetic_geometry",
-      "matches": [
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "score": 0.474,
-          "base_score": 0.428,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.046,
-          "level": "medium",
-          "reason": "关键词命中：elliptic curve；arXiv 分类重合：math.NT；时效加分 +0.05",
-          "keyword_hits": [
-            "elliptic curve"
-          ]
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "score": 0.057,
-          "base_score": 0.011,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.046,
-          "level": "low",
-          "reason": "时效加分 +0.05",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "score": 0.049,
-          "base_score": 0.003,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.046,
-          "level": "low",
-          "reason": "时效加分 +0.05",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "score": 0.049,
-          "base_score": 0.003,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.046,
-          "level": "low",
-          "reason": "时效加分 +0.05",
-          "keyword_hits": []
-        }
-      ],
-      "best_match": {
-        "topic_id": "arithmetic_geometry",
-        "topic_name": "Arithmetic Geometry",
-        "score": 0.474,
-        "base_score": 0.428,
-        "bridge_bonus": 0.0,
-        "preference_bonus": 0.0,
-        "recency_bonus": 0.046,
-        "level": "medium",
-        "reason": "关键词命中：elliptic curve；arXiv 分类重合：math.NT；时效加分 +0.05",
-        "keyword_hits": [
-          "elliptic curve"
-        ]
-      },
-      "top_labels": [
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "base_score": 0.428,
-          "score": 0.474,
-          "level": "medium",
-          "keyword_hits": [
-            "elliptic curve"
-          ]
-        }
-      ],
-      "backfilled_from_recent_arxiv": true,
-      "newly_discovered_from_recent_arxiv": true,
-      "chinese_summary": {
-        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
-        "method": "We study the Iwasawa $μ$- and $λ$-invariants of quadratic twists of rational elliptic curves at Eisenstein primes $p\\geq 3$.",
-        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
-        "evidence": "来源摘要可在论文原文中核验。",
-        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
-        "why_relevant": "关键词命中：elliptic curve；arXiv 分类重合：math.NT；时效加分 +0.05"
-      },
-      "first_seen_at": "2026-11-02T07:13:11.930452+00:00",
-      "last_seen_at": "2026-11-02T07:13:11.930452+00:00",
-      "retained_from_previous_run": true
-    },
-    {
       "id": "2611.10415v1",
       "source": "arXiv",
       "title": "Birational Geometry of K-Moduli Spaces of Genus Four Curves",
@@ -15711,133 +14662,6 @@
       },
       "first_seen_at": "2026-11-10T07:59:34.099736+00:00",
       "last_seen_at": "2026-11-10T07:59:34.099736+00:00",
-      "retained_from_previous_run": true
-    },
-    {
-      "id": "2611.01138v1",
-      "source": "arXiv",
-      "title": "Seshadri functions on surfaces",
-      "authors": [
-        "Cyril J. Jacob"
-      ],
-      "summary": "We study the Seshadri function on the ample cone of a smooth complex projective surface at a fixed point. At a submaximal class, we show that the function is differentiable if and only if there is a unique Seshadri curve. At a maximal class $L$, differentiability is equivalent to every curve $C$ computing the Seshadri constant satisfying $\\frac{[C]}{{\\rm mult}_x C}=\\frac{[L]}{\\sqrt{L^{2}}}$. We also prove that the non-differentiability locus is nowhere dense. For the blow-up of $\\mathbb P^{2}$ at $r\\ge 9$ very general points, assuming the $(-1)$-curves conjecture for the blow-up at $r+1$ very general points, we construct a non-empty open subset of the ample cone on which the Seshadri function at a very general point equals $\\sqrt{L^{2}}$. Consequently, this function is not piecewise linear. Under the assumption of the Strong SHGH conjecture, we obtain a common non-empty open subset on which maximality holds at every point when $r\\ge36$.",
-      "published": "2026-10-31T17:29:19Z",
-      "updated": "2026-10-31T17:29:19Z",
-      "paper_url": "http://arxiv.org/abs/2611.01138v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.01138v1",
-      "categories": [
-        "math.AG"
-      ],
-      "seed_topic": "algebraic_geometry",
-      "matches": [
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "score": 0.473,
-          "base_score": 0.429,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.044,
-          "level": "medium",
-          "reason": "关键词命中：blow-up、Proj；arXiv 分类重合：math.AG；时效加分 +0.04",
-          "keyword_hits": [
-            "blow-up",
-            "Proj"
-          ]
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "score": 0.239,
-          "base_score": 0.195,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.044,
-          "level": "low",
-          "reason": "arXiv 分类重合：math.AG；时效加分 +0.04",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "score": 0.228,
-          "base_score": 0.184,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.044,
-          "level": "low",
-          "reason": "arXiv 分类重合：math.AG；时效加分 +0.04",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "homotopy_theory",
-          "topic_name": "Homotopy Theory",
-          "score": 0.055,
-          "base_score": 0.011,
-          "bridge_bonus": 0.0,
-          "preference_bonus": 0.0,
-          "recency_bonus": 0.044,
-          "level": "low",
-          "reason": "时效加分 +0.04",
-          "keyword_hits": []
-        }
-      ],
-      "best_match": {
-        "topic_id": "algebraic_geometry",
-        "topic_name": "Algebraic Geometry",
-        "score": 0.473,
-        "base_score": 0.429,
-        "bridge_bonus": 0.0,
-        "preference_bonus": 0.0,
-        "recency_bonus": 0.044,
-        "level": "medium",
-        "reason": "关键词命中：blow-up、Proj；arXiv 分类重合：math.AG；时效加分 +0.04",
-        "keyword_hits": [
-          "blow-up",
-          "Proj"
-        ]
-      },
-      "top_labels": [
-        {
-          "topic_id": "algebraic_geometry",
-          "topic_name": "Algebraic Geometry",
-          "base_score": 0.429,
-          "score": 0.473,
-          "level": "medium",
-          "keyword_hits": [
-            "blow-up",
-            "Proj"
-          ]
-        },
-        {
-          "topic_id": "arithmetic_geometry",
-          "topic_name": "Arithmetic Geometry",
-          "base_score": 0.195,
-          "score": 0.239,
-          "level": "low",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "motivic_k_theory",
-          "topic_name": "Motivic Homotopy & K-Theory",
-          "base_score": 0.184,
-          "score": 0.228,
-          "level": "low",
-          "keyword_hits": []
-        }
-      ],
-      "backfilled_from_recent_arxiv": true,
-      "newly_discovered_from_recent_arxiv": true,
-      "chinese_summary": {
-        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
-        "method": "We study the Seshadri function on the ample cone of a smooth complex projective surface at a fixed point.",
-        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
-        "evidence": "来源摘要可在论文原文中核验。",
-        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
-        "why_relevant": "关键词命中：blow-up、Proj；arXiv 分类重合：math.AG；时效加分 +0.04"
-      },
-      "first_seen_at": "2026-11-04T07:14:26.130264+00:00",
-      "last_seen_at": "2026-11-04T07:14:26.130264+00:00",
       "retained_from_previous_run": true
     },
     {
@@ -16341,6 +15165,123 @@
       "first_seen_at": "2026-11-05T07:42:29.048055+00:00",
       "last_seen_at": "2026-11-05T07:42:29.048055+00:00",
       "retained_from_previous_run": true
+    },
+    {
+      "id": "2611.13385v1",
+      "source": "arXiv",
+      "title": "Cluster-theoretic Newton--Okounkov polytopes of flag varieties of types $A_4$ and $B_2$",
+      "authors": [
+        "Shin Hong",
+        "Jeongsoo Kim",
+        "Eunjeong Lee"
+      ],
+      "summary": "Newton--Okounkov bodies have been used for studying toric degenerations of flag varieties. We classify the Newton--Okounkov polytopes associated with cluster valuations and the anticanonical line bundle on full flag varieties of types $A_4$ and $B_2$. In type $A_4$, the $672$ seeds of cluster type $D_6$ yield $162$ affine unimodular equivalence classes, which coincide with the combinatorial equivalence classes. We determine the subgroup of exchange-graph automorphisms preserving every polytope class. It is a Klein four group of index six in the automorphism group of the exchange graph of cluster type $D_6$. In type $B_2$, we give defining inequalities for all six seeds. At the anticanonical weight, the two combinatorial equivalence classes split into three affine unimodular equivalence classes. Their respective class-preserving automorphism groups have orders four and two.",
+      "published": "2026-11-10T00:02:26Z",
+      "updated": "2026-11-10T00:02:26Z",
+      "paper_url": "http://arxiv.org/abs/2611.13385v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.13385v1",
+      "categories": [
+        "math.CO",
+        "math.AG",
+        "math.RT"
+      ],
+      "seed_topic": "motivic_k_theory",
+      "matches": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.452,
+          "base_score": 0.406,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "medium",
+          "reason": "关键词命中：line bundle、Spec；arXiv 分类重合：math.AG；时效加分 +0.05",
+          "keyword_hits": [
+            "line bundle",
+            "Spec"
+          ]
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.184,
+          "base_score": 0.126,
+          "bridge_bonus": 0.012,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；homotopy ↔ K-theory；时效加分 +0.05",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.168,
+          "base_score": 0.122,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.05",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.069,
+          "base_score": 0.011,
+          "bridge_bonus": 0.012,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "low",
+          "reason": "homotopy ↔ K-theory；时效加分 +0.05",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "algebraic_geometry",
+        "topic_name": "Algebraic Geometry",
+        "score": 0.452,
+        "base_score": 0.406,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.046,
+        "level": "medium",
+        "reason": "关键词命中：line bundle、Spec；arXiv 分类重合：math.AG；时效加分 +0.05",
+        "keyword_hits": [
+          "line bundle",
+          "Spec"
+        ]
+      },
+      "top_labels": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.406,
+          "score": 0.452,
+          "level": "medium",
+          "keyword_hits": [
+            "line bundle",
+            "Spec"
+          ]
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "fulltext_excerpt": "[2611.13385] Cluster-theoretic Newton--Okounkov polytopes of flag varieties of types $A_4$ and $B_2$ Skip to main content Search arXiv Press Enter to search · Advanced search --> Mathematics > Combinatorics arXiv:2611.13385 (math) [Submitted on 10 Nov 2026] Title: Cluster-theoretic Newton--Okounkov polytopes of flag varieties of types $A_4$ and $B_2$ Authors: Shin Hong , Jeongsoo Kim , Eunjeong Lee View a PDF of the paper titled Cluster-theoretic Newton--Okounkov polytopes of flag varieties of types $A_4$ and $B_2$, by Shin Hong and 2 other authors View PDF HTML (experimental) Abstract: Newton--Okounkov bodies have been used for studying toric degenerations of flag varieties. We classify the Newton--Okounkov polytopes associated with cluster valuations and the anticanonical line bundle on full flag varieties of types $A_4$ and $B_2$. In type $A_4$, the $672$ seeds of cluster type $D_6$ yield $162$ affine unimodular equivalence classes, which coincide with the combinatorial equivalence classes. We determine the subgroup of exchange-graph automorphisms preserving every polytope class. It is a Klein four group of index six in the automorphism group of the exchange graph of cluster type $D_6$. In type $B_2$, we give defining inequalities for all six seeds. At the anticanonical weight, the two combinatorial equivalence classes split into three affine unimodular equivalence classes. Their respective class-preserving automorphism groups have orders four and two. Subjects: Combinatorics (math.CO) ; Algebraic Geometry (math.AG); Representation Theory (math.RT) MSC classes: Primary: 14M15, Secondary: 05E10, 14M25, 13F60 Cite as: arXiv:2611.13385 [math.CO] (or arXiv:2611.13385v1 [math.CO] for this version) https://doi.org/10.48550/arXiv.2611.13385 Focus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: Eunjeong Lee [ view email ] [v1] Tue, 10 Nov 2026 00:02:26 UTC (29 KB) Full-text links: Access Paper: View a PDF of the paper titled Cluster-theoretic Newton--Okounkov polytopes of flag varieties of types $A_4$ and $B_2$, by Shin Hong and 2 other authors View PDF HTML (experimental) TeX Source view license Current browse context: math.CO < prev | next > new | recent | 2026-11 Change to browse by: math math.AG math.RT References & Citations SciX Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
+      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2611.13385",
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Newton--Okounkov bodies have been used for studying toric degenerations of flag varieties.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：line bundle、Spec；arXiv 分类重合：math.AG；时效加分 +0.05"
+      },
+      "first_seen_at": "2026-11-12T07:57:14.189458+00:00",
+      "last_seen_at": "2026-11-12T07:57:14.189458+00:00",
+      "retained_from_previous_run": false
     },
     {
       "id": "2611.04856v1",
@@ -16973,6 +15914,117 @@
       "retained_from_previous_run": true
     },
     {
+      "id": "2611.11631v1",
+      "source": "arXiv",
+      "title": "Simple algebraic groups with good reduction, the genus problem, and unramified cohomology",
+      "authors": [
+        "Igor A. Rapinchuk"
+      ],
+      "summary": "We obtain a number of new results on the arithmetic of linear algebraic groups over higher-dimensional fields. In particular, we resolve some key open questions over 2-dimensional global fields, such as the finiteness of the genus of spinor groups of quadratic forms of dimension $\\geq 10$. We also extend various finiteness results to new classes of fields, including function fields of $p$-adic surfaces. Our arguments rely in a crucial way on new finiteness results for unramified cohomology.",
+      "published": "2026-11-08T21:31:41Z",
+      "updated": "2026-11-08T21:31:41Z",
+      "paper_url": "http://arxiv.org/abs/2611.11631v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.11631v1",
+      "categories": [
+        "math.NT",
+        "math.AG"
+      ],
+      "seed_topic": "algebraic_geometry",
+      "matches": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.441,
+          "base_score": 0.396,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.045,
+          "level": "medium",
+          "reason": "关键词命中：global field；arXiv 分类重合：math.AG、math.NT；时效加分 +0.04",
+          "keyword_hits": [
+            "global field"
+          ]
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.178,
+          "base_score": 0.133,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.045,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.174,
+          "base_score": 0.129,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.045,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.051,
+          "base_score": 0.006,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.045,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "arithmetic_geometry",
+        "topic_name": "Arithmetic Geometry",
+        "score": 0.441,
+        "base_score": 0.396,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.045,
+        "level": "medium",
+        "reason": "关键词命中：global field；arXiv 分类重合：math.AG、math.NT；时效加分 +0.04",
+        "keyword_hits": [
+          "global field"
+        ]
+      },
+      "top_labels": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.396,
+          "score": 0.441,
+          "level": "medium",
+          "keyword_hits": [
+            "global field"
+          ]
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "fulltext_excerpt": "[2611.11631] Simple algebraic groups with good reduction, the genus problem, and unramified cohomology Skip to main content Search arXiv Press Enter to search · Advanced search --> Mathematics > Number Theory arXiv:2611.11631 (math) [Submitted on 8 Nov 2026] Title: Simple algebraic groups with good reduction, the genus problem, and unramified cohomology Authors: Igor A. Rapinchuk View a PDF of the paper titled Simple algebraic groups with good reduction, the genus problem, and unramified cohomology, by Igor A. Rapinchuk View PDF HTML (experimental) Abstract: We obtain a number of new results on the arithmetic of linear algebraic groups over higher-dimensional fields. In particular, we resolve some key open questions over 2-dimensional global fields, such as the finiteness of the genus of spinor groups of quadratic forms of dimension $\\geq 10$. We also extend various finiteness results to new classes of fields, including function fields of $p$-adic surfaces. Our arguments rely in a crucial way on new finiteness results for unramified cohomology. Subjects: Number Theory (math.NT) ; Algebraic Geometry (math.AG) Cite as: arXiv:2611.11631 [math.NT] (or arXiv:2611.11631v1 [math.NT] for this version) https://doi.org/10.48550/arXiv.2611.11631 Focus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: Igor Rapinchuk [ view email ] [v1] Sun, 8 Nov 2026 21:31:41 UTC (47 KB) Full-text links: Access Paper: View a PDF of the paper titled Simple algebraic groups with good reduction, the genus problem, and unramified cohomology, by Igor A. Rapinchuk View PDF HTML (experimental) TeX Source view license Current browse context: math.NT < prev | next > new | recent | 2026-11 Change to browse by: math math.AG References & Citations SciX Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
+      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2611.11631",
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "We obtain a number of new results on the arithmetic of linear algebraic groups over higher-dimensional fields.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：global field；arXiv 分类重合：math.AG、math.NT；时效加分 +0.04"
+      },
+      "first_seen_at": "2026-11-12T07:57:14.189458+00:00",
+      "last_seen_at": "2026-11-12T07:57:14.189458+00:00",
+      "retained_from_previous_run": false
+    },
+    {
       "id": "2611.05687v1",
       "source": "arXiv",
       "title": "Diophantine definability from addition and divisibility over rings of $S$-integers",
@@ -17080,6 +16132,137 @@
       "first_seen_at": "2026-11-05T07:42:29.048055+00:00",
       "last_seen_at": "2026-11-05T07:42:29.048055+00:00",
       "retained_from_previous_run": true
+    },
+    {
+      "id": "2611.12810v1",
+      "source": "arXiv",
+      "title": "Global Green-Schwarz response on quaternionic sphere bundles",
+      "authors": [
+        "Yuqi Li",
+        "Hao-Yu Sun"
+      ],
+      "summary": "Local anomaly polynomials describe local variations, but a normalized Green-Schwarz phase also depends on global background data. We explain this dependence for ten-dimensional three-sphere bundles of quaternionic lines over closed spin seven-manifolds. The backgrounds retain two specified $\\mathrm{Spin}(16)$ gauge bundles and an integral differential trivialization on the base, including its boundary identifications. The trivialized class is the sum of half the first Pontryagin class of the tangent bundle and the second Chern class of the quaternionic line's underlying complex bundle. For these backgrounds, the calculation combines a generally nonzero local Green-Schwarz integral with a real eta invariant evaluated by a twelve-dimensional Atiyah-Patodi-Singer filling. Together, these terms determine an integral relative characteristic number; the additive response is one third of that number, modulo integers. When the base's third and fourth rational cohomology groups vanish, the response equals eight times the Crowley-Goette invariant, without assuming that the base is simply connected. A calibration using the actual quaternionic line bundle gives additive value one third on $\\mathrm{Sp}(2)$, recovering the known third-root phase. Distinct integral String data on one fixed ten-manifold give all three phase values, showing which global background information the response can detect. The physical identifications retain their prescribed fermion data, while the separate application to integral topological modular forms and vertex operator superalgebras requires compatible integral lifts. The response calculation constructs neither a microscopic realization nor an equivalence of complete theories.",
+      "published": "2026-11-09T18:16:30Z",
+      "updated": "2026-11-09T18:16:30Z",
+      "paper_url": "http://arxiv.org/abs/2611.12810v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.12810v1",
+      "categories": [
+        "hep-th",
+        "math.AT",
+        "math.DG"
+      ],
+      "seed_topic": "motivic_k_theory",
+      "matches": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.44,
+          "base_score": 0.382,
+          "bridge_bonus": 0.012,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "medium",
+          "reason": "关键词命中：line bundle、Chern class、Spec；arithmetic ↔ AG；时效加分 +0.05",
+          "keyword_hits": [
+            "line bundle",
+            "Chern class",
+            "Spec"
+          ]
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.262,
+          "base_score": 0.204,
+          "bridge_bonus": 0.012,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "low",
+          "reason": "关键词命中：modular forms；arithmetic ↔ AG；时效加分 +0.05",
+          "keyword_hits": [
+            "modular forms"
+          ]
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.177,
+          "base_score": 0.131,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AT；时效加分 +0.05",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.175,
+          "base_score": 0.129,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AT；时效加分 +0.05",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "algebraic_geometry",
+        "topic_name": "Algebraic Geometry",
+        "score": 0.44,
+        "base_score": 0.382,
+        "bridge_bonus": 0.012,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.046,
+        "level": "medium",
+        "reason": "关键词命中：line bundle、Chern class、Spec；arithmetic ↔ AG；时效加分 +0.05",
+        "keyword_hits": [
+          "line bundle",
+          "Chern class",
+          "Spec"
+        ]
+      },
+      "top_labels": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.382,
+          "score": 0.44,
+          "level": "medium",
+          "keyword_hits": [
+            "line bundle",
+            "Chern class",
+            "Spec"
+          ]
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.204,
+          "score": 0.262,
+          "level": "low",
+          "keyword_hits": [
+            "modular forms"
+          ]
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "fulltext_excerpt": "[2611.12810] Global Green-Schwarz response on quaternionic sphere bundles Skip to main content Search arXiv Press Enter to search · Advanced search --> High Energy Physics - Theory arXiv:2611.12810 (hep-th) [Submitted on 9 Nov 2026] Title: Global Green-Schwarz response on quaternionic sphere bundles Authors: Yuqi Li , Hao-Yu Sun View a PDF of the paper titled Global Green-Schwarz response on quaternionic sphere bundles, by Yuqi Li and 1 other authors View PDF HTML (experimental) Abstract: Local anomaly polynomials describe local variations, but a normalized Green-Schwarz phase also depends on global background data. We explain this dependence for ten-dimensional three-sphere bundles of quaternionic lines over closed spin seven-manifolds. The backgrounds retain two specified $\\mathrm{Spin}(16)$ gauge bundles and an integral differential trivialization on the base, including its boundary identifications. The trivialized class is the sum of half the first Pontryagin class of the tangent bundle and the second Chern class of the quaternionic line's underlying complex bundle. For these backgrounds, the calculation combines a generally nonzero local Green-Schwarz integral with a real eta invariant evaluated by a twelve-dimensional Atiyah-Patodi-Singer filling. Together, these terms determine an integral relative characteristic number; the additive response is one third of that number, modulo integers. When the base's third and fourth rational cohomology groups vanish, the response equals eight times the Crowley-Goette invariant, without assuming that the base is simply connected. A calibration using the actual quaternionic line bundle gives additive value one third on $\\mathrm{Sp}(2)$, recovering the known third-root phase. Distinct integral String data on one fixed ten-manifold give all three phase values, showing which global background information the response can detect. The physical identifications retain their prescribed fermion data, while the separate application to integral topological modular forms and vertex operator superalgebras requires compatible integral lifts. The response calculation constructs neither a microscopic realization nor an equivalence of complete theories. Comments: 86 pages Subjects: High Energy Physics - Theory (hep-th) ; Algebraic Topology (math.AT); Differential Geometry (math.DG) Cite as: arXiv:2611.12810 [hep-th] (or arXiv:2611.12810v1 [hep-th] for this version) https://doi.org/10.48550/arXiv.2611.12810 Focus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: Yuqi Li [ view email ] [v1] Mon, 9 Nov 2026 18:16:30 UTC (104 KB) Full-text links: Access Paper: View a PDF of the paper titled Global Green-Schwarz response on quaternionic sphere bundles, by Yuqi Li and 1 other authors View PDF HTML (experimental) TeX Source view license Current browse context: hep-th < prev | next > new | recent | 2026-11 Change to browse by: math math.AT math.DG References & Citations INSPIRE HEP SciX Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) IArxiv recommender toggle IArxiv Recommender ( What is IArxiv? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
+      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2611.12810",
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Local anomaly polynomials describe local variations, but a normalized Green-Schwarz phase also depends on global background data.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：line bundle、Chern class、Spec；arithmetic ↔ AG；时效加分 +0.05"
+      },
+      "first_seen_at": "2026-11-12T07:57:14.189458+00:00",
+      "last_seen_at": "2026-11-12T07:57:14.189458+00:00",
+      "retained_from_previous_run": false
     },
     {
       "id": "2611.01994v1",
@@ -17217,6 +16400,116 @@
       "retained_from_previous_run": true
     },
     {
+      "id": "2611.14014v1",
+      "source": "arXiv",
+      "title": "When do all iterates of $x^2 + a$ have maximal Galois group?",
+      "authors": [
+        "Michael Stoll"
+      ],
+      "summary": "We provide an (in our opinion) simpler proof of the main results of [Stoll1992,Li2020,Li2021] on the question for which integers $a$ the Galois groups of all iterates of $x^2 + a$ are maximal (equivalently, the associated arboreal Galois representation is surjective). At the same time, we extend the results to rational parameters $a$. The main result states that for a subset of rational numbers of relative density $1/2$ in the complement of a certain open interval, the maximality of the Galois group of the second iterate is sufficient for the arboreal Galois representation to be surjective. We also discuss experimental evidence suggesting that a similar statement involving the fourth iterate may hold in general. The results were obtained in collaboration with Claude (Anthropic's AI model); they are also formalized in Lean (except for the experimental evidence).",
+      "published": "2026-11-10T12:51:40Z",
+      "updated": "2026-11-10T12:51:40Z",
+      "paper_url": "http://arxiv.org/abs/2611.14014v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.14014v1",
+      "categories": [
+        "math.NT"
+      ],
+      "seed_topic": "arithmetic_geometry",
+      "matches": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.438,
+          "base_score": 0.379,
+          "bridge_bonus": 0.012,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.047,
+          "level": "medium",
+          "reason": "关键词命中：Galois representation；arXiv 分类重合：math.NT；arithmetic ↔ motivic；时效加分 +0.05",
+          "keyword_hits": [
+            "Galois representation"
+          ]
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.066,
+          "base_score": 0.007,
+          "bridge_bonus": 0.012,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.047,
+          "level": "low",
+          "reason": "arithmetic ↔ motivic；时效加分 +0.05",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.055,
+          "base_score": 0.008,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.047,
+          "level": "low",
+          "reason": "时效加分 +0.05",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.052,
+          "base_score": 0.005,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.047,
+          "level": "low",
+          "reason": "时效加分 +0.05",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "arithmetic_geometry",
+        "topic_name": "Arithmetic Geometry",
+        "score": 0.438,
+        "base_score": 0.379,
+        "bridge_bonus": 0.012,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.047,
+        "level": "medium",
+        "reason": "关键词命中：Galois representation；arXiv 分类重合：math.NT；arithmetic ↔ motivic；时效加分 +0.05",
+        "keyword_hits": [
+          "Galois representation"
+        ]
+      },
+      "top_labels": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.379,
+          "score": 0.438,
+          "level": "medium",
+          "keyword_hits": [
+            "Galois representation"
+          ]
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "fulltext_excerpt": "[2611.14014] When do all iterates of $x^2 + a$ have maximal Galois group? Skip to main content Search arXiv Press Enter to search · Advanced search --> Mathematics > Number Theory arXiv:2611.14014 (math) [Submitted on 10 Nov 2026] Title: When do all iterates of $x^2 + a$ have maximal Galois group? Authors: Michael Stoll View a PDF of the paper titled When do all iterates of $x^2 + a$ have maximal Galois group?, by Michael Stoll View PDF HTML (experimental) Abstract: We provide an (in our opinion) simpler proof of the main results of [Stoll1992,Li2020,Li2021] on the question for which integers $a$ the Galois groups of all iterates of $x^2 + a$ are maximal (equivalently, the associated arboreal Galois representation is surjective). At the same time, we extend the results to rational parameters $a$. The main result states that for a subset of rational numbers of relative density $1/2$ in the complement of a certain open interval, the maximality of the Galois group of the second iterate is sufficient for the arboreal Galois representation to be surjective. We also discuss experimental evidence suggesting that a similar statement involving the fourth iterate may hold in general. The results were obtained in collaboration with Claude (Anthropic's AI model); they are also formalized in Lean (except for the experimental evidence). Comments: 19 pages, one figure Subjects: Number Theory (math.NT) MSC classes: 11R32, 11R09, 37P05, 37P15 Cite as: arXiv:2611.14014 [math.NT] (or arXiv:2611.14014v1 [math.NT] for this version) https://doi.org/10.48550/arXiv.2611.14014 Focus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: Michael Stoll [ view email ] [v1] Tue, 10 Nov 2026 12:51:40 UTC (216 KB) Full-text links: Access Paper: View a PDF of the paper titled When do all iterates of $x^2 + a$ have maximal Galois group?, by Michael Stoll View PDF HTML (experimental) TeX Source view license Current browse context: math.NT < prev | next > new | recent | 2026-11 Change to browse by: math References & Citations SciX Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
+      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2611.14014",
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "We provide an (in our opinion) simpler proof of the main results of [Stoll1992,Li2020,Li2021] on the question for which integers $a$ the Galois groups of all iterates of $x^2 + a$ are maximal (equivalently, the associated arboreal Galois representation is surjective).",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：Galois representation；arXiv 分类重合：math.NT；arithmetic ↔ motivic；时效加分 +0.05"
+      },
+      "first_seen_at": "2026-11-12T07:57:14.189458+00:00",
+      "last_seen_at": "2026-11-12T07:57:14.189458+00:00",
+      "retained_from_previous_run": false
+    },
+    {
       "id": "2611.05552v1",
       "source": "arXiv",
       "title": "On the existence of nonadmissible irreducible smooth representations of $p$-adic $\\mathrm{GL}_n$",
@@ -17325,6 +16618,118 @@
       "first_seen_at": "2026-11-05T07:42:29.048055+00:00",
       "last_seen_at": "2026-11-05T07:42:29.048055+00:00",
       "retained_from_previous_run": true
+    },
+    {
+      "id": "2611.10667v1",
+      "source": "arXiv",
+      "title": "Trivial solutions in Generalized Fermat equations",
+      "authors": [
+        "Pedro-José Cazorla García",
+        "Ariel Pacetti",
+        "Lucas Villagra-Torcomian"
+      ],
+      "summary": "The modular method is a powerful tool to study generalized Fermat equations. Trivial solutions often become an obstruction to the method. While using hypergeometric motives to construct Galois representations, some of these solutions give rise to newforms with complex multiplication. In the present article, assuming a standard conjecture in Darmon's program, we prove that asymptotically any newform with complex multiplication cannot be related to a non-trivial primitive solution. This allows to discard all such newforms, including those associated to trivial solutions.",
+      "published": "2026-11-07T11:34:05Z",
+      "updated": "2026-11-07T11:34:05Z",
+      "paper_url": "http://arxiv.org/abs/2611.10667v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.10667v1",
+      "categories": [
+        "math.NT"
+      ],
+      "seed_topic": "arithmetic_geometry",
+      "matches": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.436,
+          "base_score": 0.381,
+          "bridge_bonus": 0.012,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.043,
+          "level": "medium",
+          "reason": "关键词命中：Galois representation；arXiv 分类重合：math.NT；arithmetic ↔ motivic；时效加分 +0.04",
+          "keyword_hits": [
+            "Galois representation"
+          ]
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.063,
+          "base_score": 0.008,
+          "bridge_bonus": 0.012,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.043,
+          "level": "low",
+          "reason": "arithmetic ↔ motivic；时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.052,
+          "base_score": 0.009,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.043,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.043,
+          "base_score": 0.0,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.043,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "arithmetic_geometry",
+        "topic_name": "Arithmetic Geometry",
+        "score": 0.436,
+        "base_score": 0.381,
+        "bridge_bonus": 0.012,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.043,
+        "level": "medium",
+        "reason": "关键词命中：Galois representation；arXiv 分类重合：math.NT；arithmetic ↔ motivic；时效加分 +0.04",
+        "keyword_hits": [
+          "Galois representation"
+        ]
+      },
+      "top_labels": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.381,
+          "score": 0.436,
+          "level": "medium",
+          "keyword_hits": [
+            "Galois representation"
+          ]
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "fulltext_excerpt": "[2611.10667] Trivial solutions in Generalized Fermat equations Skip to main content Search arXiv Press Enter to search · Advanced search --> Mathematics > Number Theory arXiv:2611.10667 (math) [Submitted on 7 Nov 2026] Title: Trivial solutions in Generalized Fermat equations Authors: Pedro-José Cazorla García , Ariel Pacetti , Lucas Villagra-Torcomian View a PDF of the paper titled Trivial solutions in Generalized Fermat equations, by Pedro-Jos\\'e Cazorla Garc\\'ia and 1 other authors View PDF HTML (experimental) Abstract: The modular method is a powerful tool to study generalized Fermat equations. Trivial solutions often become an obstruction to the method. While using hypergeometric motives to construct Galois representations, some of these solutions give rise to newforms with complex multiplication. In the present article, assuming a standard conjecture in Darmon's program, we prove that asymptotically any newform with complex multiplication cannot be related to a non-trivial primitive solution. This allows to discard all such newforms, including those associated to trivial solutions. Comments: 12 pages, 5 figures and 2 tables Subjects: Number Theory (math.NT) MSC classes: 11D41, 11F80, 14H25, 14M25 Cite as: arXiv:2611.10667 [math.NT] (or arXiv:2611.10667v1 [math.NT] for this version) https://doi.org/10.48550/arXiv.2611.10667 Focus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: Pedro-José Cazorla García [ view email ] [v1] Sat, 7 Nov 2026 11:34:05 UTC (27 KB) Full-text links: Access Paper: View a PDF of the paper titled Trivial solutions in Generalized Fermat equations, by Pedro-Jos\\'e Cazorla Garc\\'ia and 1 other authors View PDF HTML (experimental) TeX Source view license Current browse context: math.NT < prev | next > new | recent | 2026-11 Change to browse by: math References & Citations SciX Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
+      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2611.10667",
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "The modular method is a powerful tool to study generalized Fermat equations.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：Galois representation；arXiv 分类重合：math.NT；arithmetic ↔ motivic；时效加分 +0.04"
+      },
+      "first_seen_at": "2026-11-12T07:57:14.189458+00:00",
+      "last_seen_at": "2026-11-12T07:57:14.189458+00:00",
+      "retained_from_previous_run": false
     },
     {
       "id": "2611.05972v1",
@@ -18302,6 +17707,117 @@
       "retained_from_previous_run": true
     },
     {
+      "id": "2611.13155v1",
+      "source": "arXiv",
+      "title": "The $\\mathbb Q$-gonality of $X_1(42)$ is $12$",
+      "authors": [
+        "Sourajyoti Maiti"
+      ],
+      "summary": "We prove that the $\\mathbb F_5$-gonality and the $\\mathbb Q$-gonality of the modular curve $X_1(42)$ are both $12$, improving the previous lower bound of $10$. Since $J_1(42)(\\mathbb Q)$ is finite, it follows that $12$ is the least degree in which $X_1(42)$ has infinitely many points. The lower bound comes from an exhaustive search over Riemann--Roch spaces, following Derickx and van Hoeij, using a new reduction by the orbits of a cyclic group of automorphisms of order $12$ on places of degree at most $5$ ($743\\,231$ Riemann--Roch spaces). An earlier search with the reductions from van Hoeij's code (about $3$ million Riemann--Roch spaces, about $6$ times more CPU time) gives the same result and serves as supporting evidence. We prove the reductions and record the data needed to reproduce the computations.",
+      "published": "2026-11-09T19:40:36Z",
+      "updated": "2026-11-09T19:40:36Z",
+      "paper_url": "http://arxiv.org/abs/2611.13155v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.13155v1",
+      "categories": [
+        "math.NT",
+        "math.AG"
+      ],
+      "seed_topic": "motivic_k_theory",
+      "matches": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.426,
+          "base_score": 0.38,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "medium",
+          "reason": "关键词命中：modular curve；arXiv 分类重合：math.AG、math.NT；时效加分 +0.05",
+          "keyword_hits": [
+            "modular curve"
+          ]
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.172,
+          "base_score": 0.126,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.05",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.171,
+          "base_score": 0.125,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.05",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.049,
+          "base_score": 0.003,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "low",
+          "reason": "时效加分 +0.05",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "arithmetic_geometry",
+        "topic_name": "Arithmetic Geometry",
+        "score": 0.426,
+        "base_score": 0.38,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.046,
+        "level": "medium",
+        "reason": "关键词命中：modular curve；arXiv 分类重合：math.AG、math.NT；时效加分 +0.05",
+        "keyword_hits": [
+          "modular curve"
+        ]
+      },
+      "top_labels": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.38,
+          "score": 0.426,
+          "level": "medium",
+          "keyword_hits": [
+            "modular curve"
+          ]
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "fulltext_excerpt": "[2611.13155] The $\\mathbb Q$-gonality of $X_1(42)$ is $12$ Skip to main content Search arXiv Press Enter to search · Advanced search --> Mathematics > Number Theory arXiv:2611.13155 (math) [Submitted on 9 Nov 2026] Title: The $\\mathbb Q$-gonality of $X_1(42)$ is $12$ Authors: Sourajyoti Maiti View a PDF of the paper titled The $\\mathbb Q$-gonality of $X_1(42)$ is $12$, by Sourajyoti Maiti View PDF HTML (experimental) Abstract: We prove that the $\\mathbb F_5$-gonality and the $\\mathbb Q$-gonality of the modular curve $X_1(42)$ are both $12$, improving the previous lower bound of $10$. Since $J_1(42)(\\mathbb Q)$ is finite, it follows that $12$ is the least degree in which $X_1(42)$ has infinitely many points. The lower bound comes from an exhaustive search over Riemann--Roch spaces, following Derickx and van Hoeij, using a new reduction by the orbits of a cyclic group of automorphisms of order $12$ on places of degree at most $5$ ($743\\,231$ Riemann--Roch spaces). An earlier search with the reductions from van Hoeij's code (about $3$ million Riemann--Roch spaces, about $6$ times more CPU time) gives the same result and serves as supporting evidence. We prove the reductions and record the data needed to reproduce the computations. Comments: 18 pages Subjects: Number Theory (math.NT) ; Algebraic Geometry (math.AG) MSC classes: 11G18 (Primary) 14H51, 11G05, 14Q05 (Secondary) Cite as: arXiv:2611.13155 [math.NT] (or arXiv:2611.13155v1 [math.NT] for this version) https://doi.org/10.48550/arXiv.2611.13155 Focus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: Sourajyoti Maiti [ view email ] [v1] Mon, 9 Nov 2026 19:40:36 UTC (24 KB) Full-text links: Access Paper: View a PDF of the paper titled The $\\mathbb Q$-gonality of $X_1(42)$ is $12$, by Sourajyoti Maiti View PDF HTML (experimental) TeX Source view license Current browse context: math.NT < prev | next > new | recent | 2026-11 Change to browse by: math math.AG References & Citations SciX Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
+      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2611.13155",
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "We prove that the $\\mathbb F_5$-gonality and the $\\mathbb Q$-gonality of the modular curve $X_1(42)$ are both $12$, improving the previous lower bound of $10$.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：modular curve；arXiv 分类重合：math.AG、math.NT；时效加分 +0.05"
+      },
+      "first_seen_at": "2026-11-12T07:57:14.189458+00:00",
+      "last_seen_at": "2026-11-12T07:57:14.189458+00:00",
+      "retained_from_previous_run": false
+    },
+    {
       "id": "2611.09629v1",
       "source": "arXiv",
       "title": "Permutation polynomials from quadratic and linear forms",
@@ -18661,6 +18177,139 @@
       "first_seen_at": "2026-11-05T07:42:29.048055+00:00",
       "last_seen_at": "2026-11-05T07:42:29.048055+00:00",
       "retained_from_previous_run": true
+    },
+    {
+      "id": "2611.12450v1",
+      "source": "arXiv",
+      "title": "$λ_g$-Integrals on triple, one-part admissible covers",
+      "authors": [
+        "Renzo Cavalieri",
+        "David Klompenhouwer",
+        "Paolo Rossi"
+      ],
+      "summary": "We effectively compute all intersection numbers of the form $λ_gψ^d$ on moduli spaces of genus $g$ admissible covers with one point of full ramification and two additional branch points with arbitrary profile. We encode these invariants in appropriate generating functions, which we relate to the Hamiltonians of the KdV hierarchy.",
+      "published": "2026-11-09T14:05:32Z",
+      "updated": "2026-11-09T14:05:32Z",
+      "paper_url": "http://arxiv.org/abs/2611.12450v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.12450v1",
+      "categories": [
+        "math.AG",
+        "math-ph"
+      ],
+      "seed_topic": "motivic_k_theory",
+      "matches": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.423,
+          "base_score": 0.377,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "medium",
+          "reason": "关键词命中：moduli space；arXiv 分类重合：math.AG；时效加分 +0.05",
+          "keyword_hits": [
+            "moduli space"
+          ]
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.371,
+          "base_score": 0.325,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "low",
+          "reason": "关键词命中：ramification；arXiv 分类重合：math.AG；时效加分 +0.05",
+          "keyword_hits": [
+            "ramification"
+          ]
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.229,
+          "base_score": 0.183,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.05",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.05,
+          "base_score": 0.004,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.046,
+          "level": "low",
+          "reason": "时效加分 +0.05",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "algebraic_geometry",
+        "topic_name": "Algebraic Geometry",
+        "score": 0.423,
+        "base_score": 0.377,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.046,
+        "level": "medium",
+        "reason": "关键词命中：moduli space；arXiv 分类重合：math.AG；时效加分 +0.05",
+        "keyword_hits": [
+          "moduli space"
+        ]
+      },
+      "top_labels": [
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.377,
+          "score": 0.423,
+          "level": "medium",
+          "keyword_hits": [
+            "moduli space"
+          ]
+        },
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.325,
+          "score": 0.371,
+          "level": "low",
+          "keyword_hits": [
+            "ramification"
+          ]
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "base_score": 0.183,
+          "score": 0.229,
+          "level": "low",
+          "keyword_hits": []
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "fulltext_excerpt": "[2611.12450] $λ_g$-Integrals on triple, one-part admissible covers Skip to main content Search arXiv Press Enter to search · Advanced search --> Mathematics > Algebraic Geometry arXiv:2611.12450 (math) [Submitted on 9 Nov 2026] Title: $λ_g$-Integrals on triple, one-part admissible covers Authors: Renzo Cavalieri , David Klompenhouwer , Paolo Rossi View a PDF of the paper titled $\\lambda_g$-Integrals on triple, one-part admissible covers, by Renzo Cavalieri and 2 other authors View PDF HTML (experimental) Abstract: We effectively compute all intersection numbers of the form $\\lambda_g\\psi^d$ on moduli spaces of genus $g$ admissible covers with one point of full ramification and two additional branch points with arbitrary profile. We encode these invariants in appropriate generating functions, which we relate to the Hamiltonians of the KdV hierarchy. Comments: 48 pages + appendices, 10 figures Subjects: Algebraic Geometry (math.AG) ; Mathematical Physics (math-ph) Cite as: arXiv:2611.12450 [math.AG] (or arXiv:2611.12450v1 [math.AG] for this version) https://doi.org/10.48550/arXiv.2611.12450 Focus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: David Klompenhouwer [ view email ] [v1] Mon, 9 Nov 2026 14:05:32 UTC (88 KB) Full-text links: Access Paper: View a PDF of the paper titled $\\lambda_g$-Integrals on triple, one-part admissible covers, by Renzo Cavalieri and 2 other authors View PDF HTML (experimental) TeX Source view license Current browse context: math.AG < prev | next > new | recent | 2026-11 Change to browse by: math math-ph math.MP References & Citations SciX Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
+      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2611.12450",
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "We effectively compute all intersection numbers of the form $λ_gψ^d$ on moduli spaces of genus $g$ admissible covers with one point of full ramification and two additional branch points with arbitrary profile.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：moduli space；arXiv 分类重合：math.AG；时效加分 +0.05"
+      },
+      "first_seen_at": "2026-11-12T07:57:14.189458+00:00",
+      "last_seen_at": "2026-11-12T07:57:14.189458+00:00",
+      "retained_from_previous_run": false
     },
     {
       "id": "2611.09148v1",
@@ -19144,6 +18793,260 @@
       "retained_from_previous_run": true
     },
     {
+      "id": "2611.14337v1",
+      "source": "arXiv",
+      "title": "Ramification of torsion packets on curves with good-reduction Jacobians",
+      "authors": [
+        "Arata Minamide"
+      ],
+      "summary": "Let $p\\ge5$ be a prime number, $k$ an algebraically closed field of characteristic $p$. Write $R=W(k)$ for the ring of Witt vectors over $k$, and $K$ for the field of fractions of $R$. Let $X$ be a smooth, proper, geometrically connected curve over $K$ of genus greater than one. Write $J$ for the Jacobian variety of $X$. Fix an algebraic closure $\\overline{K}$ of $K$. In the present paper, we prove that if $J$ has good reduction over $R$, then every point $x\\in X(\\overline{K})$ such that $[σx-x]$ is torsion for each $σ\\in \\operatorname{Gal}(\\overline{K}/K)$ is $K$-rational.",
+      "published": "2026-11-10T17:01:58Z",
+      "updated": "2026-11-10T17:01:58Z",
+      "paper_url": "http://arxiv.org/abs/2611.14337v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.14337v1",
+      "categories": [
+        "math.AG",
+        "math.NT"
+      ],
+      "seed_topic": "motivic_k_theory",
+      "matches": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.421,
+          "base_score": 0.374,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.047,
+          "level": "medium",
+          "reason": "关键词命中：ramification；arXiv 分类重合：math.AG、math.NT；时效加分 +0.05",
+          "keyword_hits": [
+            "ramification"
+          ]
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.379,
+          "base_score": 0.332,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.047,
+          "level": "low",
+          "reason": "关键词命中：variety；arXiv 分类重合：math.AG；时效加分 +0.05",
+          "keyword_hits": [
+            "variety"
+          ]
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.235,
+          "base_score": 0.188,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.047,
+          "level": "low",
+          "reason": "arXiv 分类重合：math.AG；时效加分 +0.05",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.047,
+          "base_score": 0.0,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.047,
+          "level": "low",
+          "reason": "时效加分 +0.05",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "arithmetic_geometry",
+        "topic_name": "Arithmetic Geometry",
+        "score": 0.421,
+        "base_score": 0.374,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.047,
+        "level": "medium",
+        "reason": "关键词命中：ramification；arXiv 分类重合：math.AG、math.NT；时效加分 +0.05",
+        "keyword_hits": [
+          "ramification"
+        ]
+      },
+      "top_labels": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.374,
+          "score": 0.421,
+          "level": "medium",
+          "keyword_hits": [
+            "ramification"
+          ]
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.332,
+          "score": 0.379,
+          "level": "low",
+          "keyword_hits": [
+            "variety"
+          ]
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "base_score": 0.188,
+          "score": 0.235,
+          "level": "low",
+          "keyword_hits": []
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "fulltext_excerpt": "[2611.14337] Ramification of torsion packets on curves with good-reduction Jacobians Skip to main content Search arXiv Press Enter to search · Advanced search --> Mathematics > Algebraic Geometry arXiv:2611.14337 (math) [Submitted on 10 Nov 2026] Title: Ramification of torsion packets on curves with good-reduction Jacobians Authors: Arata Minamide View a PDF of the paper titled Ramification of torsion packets on curves with good-reduction Jacobians, by Arata Minamide View PDF HTML (experimental) Abstract: Let $p\\ge5$ be a prime number, $k$ an algebraically closed field of characteristic $p$. Write $R=W(k)$ for the ring of Witt vectors over $k$, and $K$ for the field of fractions of $R$. Let $X$ be a smooth, proper, geometrically connected curve over $K$ of genus greater than one. Write $J$ for the Jacobian variety of $X$. Fix an algebraic closure $\\overline{K}$ of $K$. In the present paper, we prove that if $J$ has good reduction over $R$, then every point $x\\in X(\\overline{K})$ such that $[\\sigma x-x]$ is torsion for each $\\sigma\\in \\operatorname{Gal}(\\overline{K}/K)$ is $K$-rational. Subjects: Algebraic Geometry (math.AG) ; Number Theory (math.NT) Cite as: arXiv:2611.14337 [math.AG] (or arXiv:2611.14337v1 [math.AG] for this version) https://doi.org/10.48550/arXiv.2611.14337 Focus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: Arata Minamide [ view email ] [v1] Tue, 10 Nov 2026 17:01:58 UTC (18 KB) Full-text links: Access Paper: View a PDF of the paper titled Ramification of torsion packets on curves with good-reduction Jacobians, by Arata Minamide View PDF HTML (experimental) TeX Source view license Current browse context: math.AG < prev | next > new | recent | 2026-11 Change to browse by: math math.NT References & Citations SciX Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
+      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2611.14337",
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Let $p\\ge5$ be a prime number, $k$ an algebraically closed field of characteristic $p$.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：ramification；arXiv 分类重合：math.AG、math.NT；时效加分 +0.05"
+      },
+      "first_seen_at": "2026-11-12T07:57:14.189458+00:00",
+      "last_seen_at": "2026-11-12T07:57:14.189458+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "2611.11190v1",
+      "source": "arXiv",
+      "title": "On Rankin Invariants of Ideal Lattices",
+      "authors": [
+        "Yuan Xiang Chew",
+        "Frédérique Oggier"
+      ],
+      "summary": "The Rankin constant $γ_{n,k}$ measures the largest discriminant of a densest rank $k$ sublattice of a lattice in $\\R^n$ over all such lattices of rank $n$ and their exact values are mostly open. For a general lattice $L\\subset \\R^n$ of rank $n$, the problem of determining its Rankin invariant $γ_{n,k}(L)$ is to find the discriminant of such a densest sublattice. There are no general formulas to compute the discriminant of any arbitrary rank $k$ sublattice. This paper specializes to the case of ideal lattices arising from ideals of number fields, and provides two approaches to study Rankin constants: first, we propose a systematic approach to approximate the minimum discriminant by introducing subideal lattices and proving a closed-form formula to compute $γ^{ideal}_{n,k}(L)$, the ideal Rankin invariant of the ideal lattice. Subsequently, we establish necessary conditions on the underlying number field for the existence of an ideal lattice admitting an optimal subideal lattice with a prescribed minimum discriminant. Secondly, we consider ideal lattices with arbitrary sublattices. We compute $γ_{9,2}$ and improve the current known bounds of the Rankin constants $γ_{5,2}$, $γ_{7,2}$ and $γ_{9,3},γ_{9,4}$, and provide an algebraic construction of the lattice that was used in dimensions $5$ and $7$.",
+      "published": "2026-11-08T07:07:21Z",
+      "updated": "2026-11-08T07:07:21Z",
+      "paper_url": "http://arxiv.org/abs/2611.11190v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.11190v1",
+      "categories": [
+        "math.NT"
+      ],
+      "seed_topic": "arithmetic_geometry",
+      "matches": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "score": 0.42,
+          "base_score": 0.376,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.044,
+          "level": "medium",
+          "reason": "关键词命中：number field；arXiv 分类重合：math.NT；时效加分 +0.04",
+          "keyword_hits": [
+            "number field"
+          ]
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "score": 0.186,
+          "base_score": 0.142,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.044,
+          "level": "low",
+          "reason": "关键词命中：Spec；时效加分 +0.04",
+          "keyword_hits": [
+            "Spec"
+          ]
+        },
+        {
+          "topic_id": "motivic_k_theory",
+          "topic_name": "Motivic Homotopy & K-Theory",
+          "score": 0.048,
+          "base_score": 0.004,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.044,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "homotopy_theory",
+          "topic_name": "Homotopy Theory",
+          "score": 0.044,
+          "base_score": 0.0,
+          "bridge_bonus": 0.0,
+          "preference_bonus": 0.0,
+          "recency_bonus": 0.044,
+          "level": "low",
+          "reason": "时效加分 +0.04",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "arithmetic_geometry",
+        "topic_name": "Arithmetic Geometry",
+        "score": 0.42,
+        "base_score": 0.376,
+        "bridge_bonus": 0.0,
+        "preference_bonus": 0.0,
+        "recency_bonus": 0.044,
+        "level": "medium",
+        "reason": "关键词命中：number field；arXiv 分类重合：math.NT；时效加分 +0.04",
+        "keyword_hits": [
+          "number field"
+        ]
+      },
+      "top_labels": [
+        {
+          "topic_id": "arithmetic_geometry",
+          "topic_name": "Arithmetic Geometry",
+          "base_score": 0.376,
+          "score": 0.42,
+          "level": "medium",
+          "keyword_hits": [
+            "number field"
+          ]
+        },
+        {
+          "topic_id": "algebraic_geometry",
+          "topic_name": "Algebraic Geometry",
+          "base_score": 0.142,
+          "score": 0.186,
+          "level": "low",
+          "keyword_hits": [
+            "Spec"
+          ]
+        }
+      ],
+      "backfilled_from_recent_arxiv": true,
+      "newly_discovered_from_recent_arxiv": true,
+      "fulltext_excerpt": "[2611.11190] On Rankin Invariants of Ideal Lattices Skip to main content Search arXiv Press Enter to search · Advanced search --> Mathematics > Number Theory arXiv:2611.11190 (math) [Submitted on 8 Nov 2026] Title: On Rankin Invariants of Ideal Lattices Authors: Yuan Xiang Chew , Frédérique Oggier View a PDF of the paper titled On Rankin Invariants of Ideal Lattices, by Yuan Xiang Chew and 1 other authors View PDF HTML (experimental) Abstract: The Rankin constant $\\gamma_{n,k}$ measures the largest discriminant of a densest rank $k$ sublattice of a lattice in $\\R^n$ over all such lattices of rank $n$ and their exact values are mostly open. For a general lattice $L\\subset \\R^n$ of rank $n$, the problem of determining its Rankin invariant $\\gamma_{n,k}(L)$ is to find the discriminant of such a densest sublattice. There are no general formulas to compute the discriminant of any arbitrary rank $k$ sublattice. This paper specializes to the case of ideal lattices arising from ideals of number fields, and provides two approaches to study Rankin constants: first, we propose a systematic approach to approximate the minimum discriminant by introducing subideal lattices and proving a closed-form formula to compute $\\gamma^{ideal}_{n,k}(L)$, the ideal Rankin invariant of the ideal lattice. Subsequently, we establish necessary conditions on the underlying number field for the existence of an ideal lattice admitting an optimal subideal lattice with a prescribed minimum discriminant. Secondly, we consider ideal lattices with arbitrary sublattices. We compute $\\gamma_{9,2}$ and improve the current known bounds of the Rankin constants $\\gamma_{5,2}$, $\\gamma_{7,2}$ and $\\gamma_{9,3},\\gamma_{9,4}$, and provide an algebraic construction of the lattice that was used in dimensions $5$ and $7$. Subjects: Number Theory (math.NT) MSC classes: 11R04, 11H06 Cite as: arXiv:2611.11190 [math.NT] (or arXiv:2611.11190v1 [math.NT] for this version) https://doi.org/10.48550/arXiv.2611.11190 Focus to learn more arXiv-issued DOI via DataCite (pending registration) Submission history From: Yuan Xiang Chew [ view email ] [v1] Sun, 8 Nov 2026 07:07:21 UTC (39 KB) Full-text links: Access Paper: View a PDF of the paper titled On Rankin Invariants of Ideal Lattices, by Yuan Xiang Chew and 1 other authors View PDF HTML (experimental) TeX Source view license Current browse context: math.NT < prev | next > new | recent | 2026-11 Change to browse by: math References & Citations SciX Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation × loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
+      "fulltext_source_url": "https://ar5iv.labs.arxiv.org/html/2611.11190",
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "The Rankin constant $γ_{n,k}$ measures the largest discriminant of a densest rank $k$ sublattice of a lattice in $\\R^n$ over all such lattices of rank $n$ and their exact values are mostly open.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：number field；arXiv 分类重合：math.NT；时效加分 +0.04"
+      },
+      "first_seen_at": "2026-11-12T07:57:14.189458+00:00",
+      "last_seen_at": "2026-11-12T07:57:14.189458+00:00",
+      "retained_from_previous_run": false
+    },
+    {
       "id": "2611.05217v1",
       "source": "arXiv",
       "title": "On the $abc$ conjecture",
@@ -19272,28 +19175,28 @@
     }
   ],
   "stats": {
-    "candidate_paper_count": 165,
-    "daily_candidate_paper_count": 165,
+    "candidate_paper_count": 147,
+    "daily_candidate_paper_count": 147,
     "raw_daily_candidate_count": 341,
-    "daily_outside_cutoff_count": 211,
-    "newly_discovered_backfill_count": 116,
+    "daily_outside_cutoff_count": 260,
+    "newly_discovered_backfill_count": 147,
     "daily_backfill_days": 14,
-    "daily_backfill_candidate_count": 48,
+    "daily_backfill_candidate_count": 63,
     "daily_backfill_added_count": 0,
     "min_daily_papers": 8,
     "filtered_low_relevance_count": 0,
     "filtered_wrong_category_count": 81,
     "filtered_disliked_count": 0,
     "arxiv_category_filter": [
+      "math.CT",
       "math.AT",
       "math.NT",
       "math.AG",
-      "math.KT",
-      "math.CT"
+      "math.KT"
     ],
     "days": 1,
     "collection_mode": "incremental",
-    "collection_cutoff_iso": "2026-11-10T07:59:34.099736+00:00",
+    "collection_cutoff_iso": "2026-11-11T07:29:14.832232+00:00",
     "max_per_topic": 25,
     "max_new_papers": 30,
     "sources": [
@@ -19335,12 +19238,12 @@
     "dropped_disliked_count": 0,
     "max_stored_papers": 150,
     "max_data_bytes": 8388608,
-    "data_bytes": 1215980,
+    "data_bytes": 1235853,
     "storage_trimmed_count": 30,
     "storage_trimmed_by_level": {
       "high": 1,
-      "medium": 29,
-      "low": 0,
+      "medium": 19,
+      "low": 10,
       "unknown": 0
     },
     "storage_limit_exceeded_by_likes": false
